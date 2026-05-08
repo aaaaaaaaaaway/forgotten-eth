@@ -296,6 +296,15 @@
     "deployed": "August 2018",
     "slug": "fomo3d-ultra"
   },
+  "spankchain_auction": {
+    "name": "SpankChain Auction",
+    "desc": "December 2017 Dutch auction for the SPANK token (SpankChain adult-entertainment platform). Buyers deposited ETH; the auction settled at a strike price and refunds the unused portion via withdraw(). 463 ETH still in the contract — 100% recoverable across 105 buyers, every per-address refund amount wei-exact computed via debug_traceCall (source unverified, so a static balance lookup wasn't possible). The largest single buyer is owed ~287 ETH.",
+    "category": "ico",
+    "color": "#ec4899",
+    "contract": "0x4d1886daf2617cbd9e27abfd0f18a54f04f33c41",
+    "deployed": "December 2017",
+    "slug": "spankchain-auction"
+  },
   "etherdelta_m0": {
     "name": "EtherDelta v0",
     "desc": "The earliest EtherDelta contract, deployed around August 2016 using Solidity v0.3.6 \u2014 one of the very first DEX contracts on Ethereum, deployed just months after the DAO hack. The team iterated through multiple versions (Oct 2016, Feb 2017) before the well-known v2; each upgrade required manual migration.",
