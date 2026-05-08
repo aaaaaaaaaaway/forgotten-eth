@@ -665,6 +665,70 @@
     <div class="changelog-month">May 2026</div>
 
     <div class="changelog-entry">
+      <span class="changelog-date">May 8</span>
+      <div class="changelog-body">
+        <div class="changelog-name">FoMo3D Ultra <span class="changelog-tag">+131 ETH</span></div>
+        <div class="changelog-desc">An August 2018 FoMo3D-derivative "Ultra" variant with unverified source holding 469 ETH. Surfaced from the BigQuery Tier 2 unverified-bytecode queue. ~163 holders can withdraw ~131 ETH combined; the remaining ~338 ETH lives in round-end jackpot/community pots that aren't mapped to per-user balances. Same trace-based custom refresh as Bingo4Beast — every claim amount is wei-exact verified via debug_traceCall.</div>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
+      <span class="changelog-date">May 8</span>
+      <div class="changelog-body">
+        <div class="changelog-name">Bingo4Beast (deploys 1 + 2) <span class="changelog-tag">+176 ETH</span></div>
+        <div class="changelog-desc">Two B4B FoMo3D-derivative deploys recovered from the Tier 2 unverified queue. Deploy 1 (0x05aa2fdf, 120 ETH / 303 holders / 99.8% coverage) follows the standard FoMo3D layout. Deploy 2 (0x4fb7d68e, 56 ETH / 571 holders / 57.6% coverage) is partially insolvent — the standard balanceTransform over getPlayerInfoByAddress returns inflated round-mask values, so we use a custom debug_traceCall-based refresh (data/refresh_bingo4beast.py) that simulates withdraw() per holder and records the exact wei the contract transfers. A third deploy (0x18b59a4d, 71 ETH) is bricked — withdraw reverts for all 463 candidates — and was rejected.</div>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
+      <span class="changelog-date">May 8</span>
+      <div class="changelog-body">
+        <div class="changelog-name">LD3D Official + CryptoCats v2 <span class="changelog-tag">+96 ETH</span></div>
+        <div class="changelog-desc">Two more from the BigQuery unverified-bytecode tier: LD3D Official is an August 2018 FoMo3D fork (87 ETH / 1,024 player vaults / 99.9% coverage, standard plyr_/getPlayerInfoByAddress/withdraw); CryptoCats v2 is the March 2018 predecessor of the v3 marketplace (9 ETH user-claimable from buyCat sellers — the remaining ~35 ETH accumulated from getCat() calls during 2021 is permanently stuck due to a v1/v2 bug that v3 explicitly fixed).</div>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
+      <span class="changelog-date">May 8</span>
+      <div class="changelog-body">
+        <div class="changelog-name">CryptoPhunks &amp; CryptoCats Marketplaces <span class="changelog-tag">+148 ETH</span></div>
+        <div class="changelog-desc">Two CryptoPunks-style NFT marketplaces with stranded sale proceeds and outbid bids: CryptoPhunks (Dec 2021, 102.93 ETH across 139 sellers/bidders) and CryptoCats (Dec 2017, 45.49 ETH across 10 holders, with the project deployer accounting for ~35 ETH of project fees). Both expose a public withdraw() that drains the caller's pendingWithdrawals; wei-exact verified via Tenderly.</div>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
+      <span class="changelog-date">May 8</span>
+      <div class="changelog-body">
+        <div class="changelog-name">FoMo3D family — 7 forks <span class="changelog-tag">+243 ETH</span></div>
+        <div class="changelog-desc">Seven independent FoMo3D clones from July–August 2018 surfaced from the BigQuery sweep: FoMo3Dshort v2 (137 ETH), FoMoJP (76 ETH), F3DPLUS (35 ETH), SnowStorm × 2 (60 ETH combined), FoMo3Dlong v2 (21 ETH, partially insolvent), Fomo (15 ETH). All share the standard PlayerBook ABI (plyr_, getPlayerInfoByAddress, withdraw); each round ended with un-claimed gen/aff/jackpot vault balances. Wei-exact verified via Tenderly across all seven. Note: isHuman modifier — only EOAs can withdraw.</div>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
+      <span class="changelog-date">May 8</span>
+      <div class="changelog-body">
+        <div class="changelog-name">ArbitrageETHStaking <span class="changelog-tag">+216 ETH</span></div>
+        <div class="changelog-desc">August 2018 PoWH3D-style staking pool. Users sent ETH and paid a 2% fee that boosted the pool's globalFactor (existing stakers got a passive yield). Peak TVL was 1,988 ETH; the pool wound down with 216 ETH still distributed across active stakers. Public withdrawAll() returns the user's accumulated balance — no admin gate.</div>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
+      <span class="changelog-date">May 8</span>
+      <div class="changelog-body">
+        <div class="changelog-name">TruckHash, Jincor, AgroTechFarm, Luckchemy <span class="changelog-tag">+92 ETH</span></div>
+        <div class="changelog-desc">Four 2017–2018 ICOs that missed their soft caps and finalized in refund mode. Each is a single-contract crowdsale with a public refund() that returns the user's wei deposit (TruckHash 45 ETH / 29 holders, Jincor 19 ETH / 48 holders, AgroTechFarm 17 ETH / 12 holders, Luckchemy 11 ETH / 23 holders). Surfaced from the BigQuery sweep alongside Ahoolee.</div>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
+      <span class="changelog-date">May 7</span>
+      <div class="changelog-body">
+        <div class="changelog-name">Ahoolee Token Sale <span class="changelog-tag">+191 ETH</span></div>
+        <div class="changelog-desc">September 2017 ICO that missed its 3,030 ETH soft cap (collected ~581 ETH) and finalized in refund mode. 107 of 323 contributors haven't called refund() yet — 191.5 ETH still sits in the contract waiting. Single-tx claim: refund() returns the original deposit. Wei-exact verified via Tenderly. Surfaced from a BigQuery sweep of all 65M Ethereum contracts deployed 2015–2023.</div>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
       <span class="changelog-date">May 5</span>
       <div class="changelog-body">
         <div class="changelog-name">Crab V2, MicroETH, WETH10, Collective Canvas, ConfinaleToken, Futurists <span class="changelog-tag">+222 ETH</span></div>

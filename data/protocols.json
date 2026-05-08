@@ -153,6 +153,118 @@
     "balance_file": "fomo3d_short_eth_balances.json"
   },
   {
+    "key": "fomo3d_short_v2",
+    "name": "FoMo3Dshort v2",
+    "contract": "0x0ad3227eb47597b566ec138b3afd78cfea752de5",
+    "balance_source": "eth",
+    "category": "gambling",
+    "balance_file": "fomo3d_short_v2_eth_balances.json"
+  },
+  {
+    "key": "fomo3d_long_v2",
+    "name": "FoMo3Dlong v2",
+    "contract": "0xe336d0c8b24d8e20b6f714522f590abadb601493",
+    "balance_source": "eth",
+    "category": "gambling",
+    "balance_file": "fomo3d_long_v2_eth_balances.json"
+  },
+  {
+    "key": "fomojp",
+    "name": "FoMoJP",
+    "contract": "0xcb47c89cb17c10b719fc5ed9665bae157cac2cb1",
+    "balance_source": "eth",
+    "category": "gambling",
+    "balance_file": "fomojp_eth_balances.json"
+  },
+  {
+    "key": "f3dplus",
+    "name": "F3DPLUS",
+    "contract": "0x0f90ef4e2526e3d1791862574f9fb26a0f39ec86",
+    "balance_source": "eth",
+    "category": "gambling",
+    "balance_file": "f3dplus_eth_balances.json"
+  },
+  {
+    "key": "snowstorm_a",
+    "name": "SnowStorm",
+    "contract": "0xda8d7ff0d043848a689125e2c7ab87b16a0cbe81",
+    "balance_source": "eth",
+    "category": "gambling",
+    "balance_file": "snowstorm_a_eth_balances.json"
+  },
+  {
+    "key": "snowstorm_b",
+    "name": "SnowStorm B",
+    "contract": "0xb2b30d39074c52a60283a26f238abff31fcb4217",
+    "balance_source": "eth",
+    "category": "gambling",
+    "balance_file": "snowstorm_b_eth_balances.json"
+  },
+  {
+    "key": "fomo",
+    "name": "Fomo",
+    "contract": "0xaff69c67f5dbbdd088ccbc6d47cb9e0ea547e132",
+    "balance_source": "eth",
+    "category": "gambling",
+    "balance_file": "fomo_eth_balances.json"
+  },
+  {
+    "key": "cryptophunks_market",
+    "name": "CryptoPhunks Marketplace",
+    "contract": "0xd6c037be7fa60587e174db7a6710f7635d2971e7",
+    "balance_source": "eth",
+    "category": "nft",
+    "balance_file": "cryptophunks_market_eth_balances.json"
+  },
+  {
+    "key": "cryptocats_market",
+    "name": "CryptoCats Marketplace",
+    "contract": "0x19c320b43744254ebdbcb1f1bd0e2a3dc08e01dc",
+    "balance_source": "eth",
+    "category": "nft",
+    "balance_file": "cryptocats_market_eth_balances.json"
+  },
+  {
+    "key": "cryptocats_v1",
+    "name": "CryptoCats v0/v1",
+    "contract": "0x9508008227b6b3391959334604677d60169ef540",
+    "balance_source": "eth",
+    "category": "nft",
+    "balance_file": "cryptocats_v1_eth_balances.json"
+  },
+  {
+    "key": "ld3d_official",
+    "name": "LD3D Official",
+    "contract": "0x47663541167ece0b96d9e5c60f9e470b2a20f598",
+    "balance_source": "eth",
+    "category": "gambling",
+    "balance_file": "ld3d_official_eth_balances.json"
+  },
+  {
+    "key": "bingo4beast_1",
+    "name": "Bingo4Beast Long Official",
+    "contract": "0x05aa2fdf9f58b426b49900834cce0565d88e52eb",
+    "balance_source": "eth",
+    "category": "gambling",
+    "balance_file": "bingo4beast_1_eth_balances.json"
+  },
+  {
+    "key": "bingo4beast_2",
+    "name": "Bingo4Beast Long Official (deploy 2)",
+    "contract": "0x4fb7d68e0116f35ade131b6535b2db1027bf7650",
+    "balance_source": "eth",
+    "category": "gambling",
+    "balance_file": "bingo4beast_2_eth_balances.json"
+  },
+  {
+    "key": "fomo3d_ultra",
+    "name": "FoMo3D Ultra",
+    "contract": "0xab83d96de35bad6f234178fbb6507203488e9626",
+    "balance_source": "eth",
+    "category": "gambling",
+    "balance_file": "fomo3d_ultra_eth_balances.json"
+  },
+  {
     "key": "etherdelta_m0",
     "name": "EtherDelta v0",
     "contract": "0x4aea7cf559f67cedcad07e12ae6bc00f07e8cf65",
@@ -1003,6 +1115,54 @@
     "balance_source": "token",
     "category": "defi",
     "balance_file": "aave_v1_eth_balances.json"
+  },
+  {
+    "key": "ahoolee_token_sale",
+    "name": "Ahoolee Token Sale",
+    "contract": "0x575cb87ab3c2329a0248c7d70e0ead8e57f3e3f7",
+    "balance_source": "token",
+    "category": "ico",
+    "balance_file": "ahoolee_token_sale_eth_balances.json"
+  },
+  {
+    "key": "th_token_sale",
+    "name": "TruckHash Token Sale",
+    "contract": "0xcd806502ad2f9aeb32e23f8d647341d4b568201d",
+    "balance_source": "token",
+    "category": "ico",
+    "balance_file": "th_token_sale_eth_balances.json"
+  },
+  {
+    "key": "jincor_token_ico",
+    "name": "Jincor Token ICO",
+    "contract": "0xb3b33f59174f2ef62167770e4c9cabaa3879eb5d",
+    "balance_source": "token",
+    "category": "ico",
+    "balance_file": "jincor_token_ico_eth_balances.json"
+  },
+  {
+    "key": "agrotechfarm_crowdsale",
+    "name": "AgroTechFarm Crowdsale",
+    "contract": "0x3fd30f3e1fbf4f3ea6bdf3e3bb11826266708869",
+    "balance_source": "token",
+    "category": "ico",
+    "balance_file": "agrotechfarm_crowdsale_eth_balances.json"
+  },
+  {
+    "key": "luckchemy_crowdsale",
+    "name": "Luckchemy Crowdsale",
+    "contract": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+    "balance_source": "token",
+    "category": "ico",
+    "balance_file": "luckchemy_crowdsale_eth_balances.json"
+  },
+  {
+    "key": "arbitrage_eth_staking",
+    "name": "ArbitrageETHStaking",
+    "contract": "0x5eee354e36ac51e9d3f7283005cab0c55f423b23",
+    "balance_source": "token",
+    "category": "powh",
+    "balance_file": "arbitrage_eth_staking_eth_balances.json"
   },
   {
     "key": "vlb",

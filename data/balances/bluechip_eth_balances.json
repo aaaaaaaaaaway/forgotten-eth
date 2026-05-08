@@ -4,31 +4,35 @@
   "token_checked": "0x0000000000000000000000000000000000000000",
   "description": "ETH balances in defunct BlueChip contract",
   "scan_date": "2026-04-09 13:18:57 UTC",
-  "contract_eth_balance": "52.239356632926465848",
+  "contract_eth_balance": 52.178782,
   "total_addresses_scanned": 720,
-  "addresses_with_balance": 669,
-  "total_eth_in_balances": 34.47689321212324,
-  "coverage_pct": 66.0,
+  "addresses_with_balance": 668,
+  "total_eth_in_balances": 34.416318,
+  "coverage_pct": 65.96,
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0.0
+    },
     "10-100 ETH": {
       "count": 1,
-      "total_eth": 10.682523930700183
+      "total_eth": 10.682524
     },
     "1-10 ETH": {
       "count": 5,
-      "total_eth": 14.221103508863052
+      "total_eth": 14.221104
     },
     "0.1-1 ETH": {
       "count": 25,
-      "total_eth": 6.919368679153518
+      "total_eth": 6.919368
     },
     "0.01-0.1 ETH": {
-      "count": 49,
-      "total_eth": 1.997817727657796
+      "count": 48,
+      "total_eth": 1.937245
     },
     "<0.01 ETH": {
       "count": 589,
-      "total_eth": 0.6560793657486853
+      "total_eth": 0.656072
     }
   },
   "balances": [
@@ -289,12 +293,6 @@
       "address": "0xdF30eDd4463cf580D4C5D4433974959EEC7d081F",
       "balance_wei": "62321169970271563",
       "balance_eth": "0.062321169970271560"
-    },
-    {
-      "rank": 44,
-      "address": "0xb410Ea464319781EC0314608a625d21A93fFCb1d",
-      "balance_wei": "60574813949735827",
-      "balance_eth": "0.060574813949735830"
     },
     {
       "rank": 45,
@@ -4046,5 +4044,6 @@
       "balance_wei": "2759812185",
       "balance_eth": "0.000000002759812185"
     }
-  ]
+  ],
+  "last_event_refresh": "2026-05-07 23:23:08 UTC"
 }

@@ -1,30 +1,34 @@
 {
   "contract": "0x0b7fFc1f4AD541A4ED16b40D8c37f0929158D101",
-  "contract_eth_balance": 307.81053878,
-  "total_eth_in_balances": 305.9102143,
-  "addresses_with_balance": 109,
+  "contract_eth_balance": 306.309539,
+  "total_eth_in_balances": 304.409214,
+  "addresses_with_balance": 107,
   "coverage_pct": 99.38,
   "scan_date": "2026-04-17 17:18:56 UTC",
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0.0
+    },
     "10-100 ETH": {
       "count": 5,
-      "total_eth": 239.95893878
+      "total_eth": 239.958939
     },
     "1-10 ETH": {
-      "count": 18,
-      "total_eth": 49.37536927
+      "count": 17,
+      "total_eth": 48.374369
     },
     "0.1-1 ETH": {
-      "count": 55,
-      "total_eth": 15.25543661
+      "count": 54,
+      "total_eth": 14.755437
     },
     "0.01-0.1 ETH": {
       "count": 26,
-      "total_eth": 1.30573324
+      "total_eth": 1.305732
     },
     "<0.01 ETH": {
       "count": 5,
-      "total_eth": 0.0147364
+      "total_eth": 0.014736
     }
   },
   "balances": [
@@ -506,27 +510,6 @@
       "rank": 20
     },
     {
-      "address": "0x29a9A733546d64FB2ff620ABE99B3F41303bC5c2",
-      "balance_wei": "1001000000000000000",
-      "balance_eth": 1.001,
-      "user_id": 8567,
-      "unclaimed_auctions": 1,
-      "auction_refunds": [
-        {
-          "auction_id": 40,
-          "weth_refund_wei": "1001000000000000000",
-          "tokens_owed_wei": "0",
-          "orders": [
-            {
-              "buy": "834166666666666666666",
-              "sell": "1001000000000000000"
-            }
-          ]
-        }
-      ],
-      "rank": 21
-    },
-    {
       "address": "0xF4B0400eB76fb71e111322360cea2eFdC6BE0Bfb",
       "balance_wei": "1000000000000000000",
       "balance_eth": 1.0,
@@ -672,27 +655,6 @@
         }
       ],
       "rank": 28
-    },
-    {
-      "address": "0xFdB3001A5e1a9Abe4b4C76CFBe3950de1da6Ad28",
-      "balance_wei": "500000000000000000",
-      "balance_eth": 0.5,
-      "user_id": 11667,
-      "unclaimed_auctions": 1,
-      "auction_refunds": [
-        {
-          "auction_id": 98,
-          "weth_refund_wei": "500000000000000000",
-          "tokens_owed_wei": "0",
-          "orders": [
-            {
-              "buy": "16666666666666666666666",
-              "sell": "500000000000000000"
-            }
-          ]
-        }
-      ],
-      "rank": 29
     },
     {
       "address": "0x896b94f4f27f12369698C302e2049cAe86936BbB",
@@ -2485,5 +2447,6 @@
     "coverage_type": "exact_weth_refund"
   },
   "description": "Gnosis EasyAuction unclaimed WETH refunds. Users placed bids (sellAmount WETH for auctioningToken) across 565 auctions. For each bid below the clearing price (not filled), the WETH is refundable via claimFromParticipantOrder. Bids at/above clearing price are fully or partially filled and return auctioning tokens instead. The gnosis-auction.eth.limo UI is dead; the contract remains immutable and has no deadline. Per-user balance is the exact WETH refund computed by simulating claimFromParticipantOrder via eth_call.",
-  "balance_source": "weth"
+  "balance_source": "weth",
+  "last_event_refresh": "2026-05-07 21:23:07 UTC"
 }

@@ -170,6 +170,132 @@
     "deployed": "July 2018",
     "slug": "fomo3d-short"
   },
+  "fomo3d_short_v2": {
+    "name": "FoMo3Dshort v2",
+    "desc": "An independent FoMo3D Short clone deployed July 20, 2018, sharing the standard P3D-style player vault and isHuman gating. Distinct from the canonical 0x52083b1a deploy. ~137 ETH remained unwithdrawn after the round wound down. Note: isHuman modifier \u2014 smart contract wallets cannot withdraw.",
+    "category": "gambling",
+    "color": "#ef4444",
+    "contract": "0x0ad3227eb47597b566ec138b3afd78cfea752de5",
+    "deployed": "July 2018",
+    "slug": "fomo3d-short-v2"
+  },
+  "fomo3d_long_v2": {
+    "name": "FoMo3Dlong v2",
+    "desc": "A FoMo3D Long clone deployed August 6, 2018, with the standard countdown / key-purchase / dividend mechanics. Distinct from the canonical 0xA62142 deploy. The contract is partially insolvent: ~21 ETH in the contract maps to ~32 ETH in player vaults; the largest holder's vault (~25 ETH) exceeds the contract balance and cannot be withdrawn, but ~110 smaller players can claim ~7.7 ETH combined. Note: isHuman modifier.",
+    "category": "gambling",
+    "color": "#ef4444",
+    "contract": "0xe336d0c8b24d8e20b6f714522f590abadb601493",
+    "deployed": "August 2018",
+    "slug": "fomo3d-long-v2"
+  },
+  "fomojp": {
+    "name": "FoMoJP",
+    "desc": "A Japanese-themed FoMo3D fork deployed July 31, 2018. Standard plyr_/getPlayerInfoByAddress/withdraw ABI. ~76 ETH still in player vaults. Note: isHuman modifier.",
+    "category": "gambling",
+    "color": "#f97316",
+    "contract": "0xcb47c89cb17c10b719fc5ed9665bae157cac2cb1",
+    "deployed": "July 2018",
+    "slug": "fomojp"
+  },
+  "f3dplus": {
+    "name": "F3DPLUS",
+    "desc": "A FoMo3D variant deployed July 22, 2018, branding itself as a \"PLUS\" version with the standard PlayerBook key purchase / dividend mechanics. ~35 ETH in player vaults. Note: isHuman modifier.",
+    "category": "gambling",
+    "color": "#fb923c",
+    "contract": "0x0f90ef4e2526e3d1791862574f9fb26a0f39ec86",
+    "deployed": "July 2018",
+    "slug": "f3dplus"
+  },
+  "snowstorm_a": {
+    "name": "SnowStorm",
+    "desc": "A FoMo3D fork deployed July 29, 2018 with the standard key-buy / countdown / vault mechanics. ~35 ETH in player vaults. Note: isHuman modifier.",
+    "category": "gambling",
+    "color": "#0ea5e9",
+    "contract": "0xda8d7ff0d043848a689125e2c7ab87b16a0cbe81",
+    "deployed": "July 2018",
+    "slug": "snowstorm-a"
+  },
+  "snowstorm_b": {
+    "name": "SnowStorm B",
+    "desc": "A second deployment of the SnowStorm FoMo3D fork from July 29, 2018, with identical bytecode to the primary contract. ~25 ETH in player vaults. Note: isHuman modifier.",
+    "category": "gambling",
+    "color": "#0ea5e9",
+    "contract": "0xb2b30d39074c52a60283a26f238abff31fcb4217",
+    "deployed": "July 2018",
+    "slug": "snowstorm-b"
+  },
+  "fomo": {
+    "name": "Fomo",
+    "desc": "A minimally-named FoMo3D fork deployed August 20, 2018. Standard PlayerBook ABI and isHuman gating. ~15 ETH in player vaults.",
+    "category": "gambling",
+    "color": "#ef4444",
+    "contract": "0xaff69c67f5dbbdd088ccbc6d47cb9e0ea547e132",
+    "deployed": "August 2018",
+    "slug": "fomo"
+  },
+  "cryptophunks_market": {
+    "name": "CryptoPhunks Marketplace",
+    "desc": "An on-chain marketplace deployed December 2021 for the CryptoPhunks NFT collection — a flipped-pixel CryptoPunks parody by NotLarvaLabs. Like the original CryptoPunks marketplace, sale proceeds and outbid bids accumulate in a public pendingWithdrawals mapping; sellers and outbid bidders call withdraw() to pull their ETH out. ~107 ETH still sits in the contract waiting for sellers and bidders who never came back.",
+    "category": "nft",
+    "color": "#f43f5e",
+    "contract": "0xd6c037be7fa60587e174db7a6710f7635d2971e7",
+    "deployed": "December 2021",
+    "slug": "cryptophunks-marketplace"
+  },
+  "cryptocats_market": {
+    "name": "CryptoCats Marketplace",
+    "desc": "A late-2017 marketplace contract for the CryptoCats NFT collection, one of the early CryptoPunks-clone projects. Sale proceeds and outbid bids accrue in pendingWithdrawals; sellers and outbid bidders call withdraw() (no args) to pull their ETH. ~45 ETH still in the contract.",
+    "category": "nft",
+    "color": "#fb923c",
+    "contract": "0x19c320b43744254ebdbcb1f1bd0e2a3dc08e01dc",
+    "deployed": "December 2017",
+    "slug": "cryptocats-marketplace"
+  },
+  "cryptocats_v1": {
+    "name": "CryptoCats v2",
+    "desc": "The March 2018 CryptoCats deployment (contractVersion()==2, predecessor of the v3 marketplace at 0x19c320b4 which references this as previousContractAddress). User claim path: withdraw() drains pendingWithdrawals[msg.sender] — only sellers from buyCat() are credited. The contract holds ~44 ETH but only ~9 ETH is mapped to users; the remaining ~35 ETH was paid in via getCat() calls during 2021 and is stuck — v1/v2's getCat() did not credit pendingWithdrawals[owner], a bug the v3 deployment explicitly fixed (\"3.0 — Bug fix to make ETH value sent in with getCat function withdrawable by contract owner\"). No admin sweep exists in v2 bytecode (all 45 selectors verified).",
+    "category": "nft",
+    "color": "#f59e0b",
+    "contract": "0x9508008227b6b3391959334604677d60169ef540",
+    "deployed": "March 2018",
+    "slug": "cryptocats-v2"
+  },
+  "ld3d_official": {
+    "name": "LD3D Official",
+    "desc": "An August 2018 FoMo3D fork branded as \"LD3D\" — standard PlayerBook key-buy / countdown / dividend mechanics with the canonical plyr_/getPlayerInfoByAddress/withdraw ABI. ~87 ETH remained in player vaults after the round wound down. Note: isHuman modifier — only EOAs can withdraw.",
+    "category": "gambling",
+    "color": "#a855f7",
+    "contract": "0x47663541167ece0b96d9e5c60f9e470b2a20f598",
+    "deployed": "August 2018",
+    "slug": "ld3d-official"
+  },
+  "bingo4beast_1": {
+    "name": "Bingo4Beast Long Official",
+    "desc": "An August 2018 FoMo3D-derivative game (B4B token) with non-standard player enumeration — plyr_(uint256) reverts with a custom \"eth less\" guard, but the rest of the standard FoMo3D ABI works (getPlayerInfoByAddress, withdraw, pIDxAddr_). Balance file enumerates players via event-log scan. ~120 ETH still in player vaults across 278 holders.",
+    "category": "gambling",
+    "color": "#7c3aed",
+    "contract": "0x05aa2fdf9f58b426b49900834cce0565d88e52eb",
+    "deployed": "August 2018",
+    "slug": "bingo4beast"
+  },
+  "bingo4beast_2": {
+    "name": "Bingo4Beast Long Official (deploy 2)",
+    "desc": "Second deployment of the Bingo4Beast B4B game (August 2018). Partially insolvent: ~571 holders can claim ~56 ETH out of the contract's 97.83 ETH; the rest is unmapped (round-mask accounting that exceeds the contract's actual balance). All claim amounts wei-exact verified via debug_traceCall.",
+    "category": "gambling",
+    "color": "#7c3aed",
+    "contract": "0x4fb7d68e0116f35ade131b6535b2db1027bf7650",
+    "deployed": "August 2018",
+    "slug": "bingo4beast-2"
+  },
+  "fomo3d_ultra": {
+    "name": "FoMo3D Ultra",
+    "desc": "An August 2018 FoMo3D-derivative \"Ultra\" variant (unverified source) holding 469 ETH. Standard withdraw() works for individual player vaults; ~163 holders can claim ~131 ETH combined (the remaining ~338 ETH lives in round-end jackpot/community pots that aren't mapped to per-user balances). All claim amounts wei-exact verified via debug_traceCall trace; no admin gate.",
+    "category": "gambling",
+    "color": "#a855f7",
+    "contract": "0xab83d96de35bad6f234178fbb6507203488e9626",
+    "deployed": "August 2018",
+    "slug": "fomo3d-ultra"
+  },
   "etherdelta_m0": {
     "name": "EtherDelta v0",
     "desc": "The earliest EtherDelta contract, deployed around August 2016 using Solidity v0.3.6 \u2014 one of the very first DEX contracts on Ethereum, deployed just months after the DAO hack. The team iterated through multiple versions (Oct 2016, Feb 2017) before the well-known v2; each upgrade required manual migration.",
@@ -1121,6 +1247,60 @@
     "contract": "0x3a3A65aAb0dd2A17E3F1947bA16138cd37d08c04",
     "deployed": "January 2020",
     "slug": "aave-v1"
+  },
+  "ahoolee_token_sale": {
+    "name": "Ahoolee Token Sale",
+    "desc": "Ahoolee's September 2017 ICO. The sale collected ~581 ETH against a 3,030 ETH soft cap and finalized in refund mode. 191 ETH still sits in the contract waiting for the long tail of stragglers — 107 of 323 contributors haven't called refund() yet. Single-tx claim: call refund() on the contract, no arguments needed.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x575cb87ab3c2329a0248c7d70e0ead8e57f3e3f7",
+    "deployed": "September 2017",
+    "slug": "ahoolee"
+  },
+  "th_token_sale": {
+    "name": "TruckHash Token Sale",
+    "desc": "TruckHash's 2018 ICO missed its soft cap. Owner enabled refund mode (refundAllowed=true). Per-user balance lives in weiBalances(addr). Public refund() returns the deposit; no further admin action needed.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xcd806502ad2f9aeb32e23f8d647341d4b568201d",
+    "deployed": "March 2018",
+    "slug": "truckhash"
+  },
+  "jincor_token_ico": {
+    "name": "Jincor Token ICO",
+    "desc": "Jincor's late-2017 ICO did not reach soft cap. Per-user balance is tracked in deposited(addr); refund mode is automatic (softCapReached=false). Public refund() returns the deposit and emits Refunded(holder, amount).",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xb3b33f59174f2ef62167770e4c9cabaa3879eb5d",
+    "deployed": "November 2017",
+    "slug": "jincor"
+  },
+  "agrotechfarm_crowdsale": {
+    "name": "AgroTechFarm Crowdsale",
+    "desc": "AgroTechFarm's 2018 crowdsale failed; the owner switched the state to Refunding. Per-user balance is in balances(addr). Public refund() returns the deposit while the contract is in Refunding state.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x3fd30f3e1fbf4f3ea6bdf3e3bb11826266708869",
+    "deployed": "April 2018",
+    "slug": "agrotechfarm"
+  },
+  "luckchemy_crowdsale": {
+    "name": "Luckchemy Crowdsale",
+    "desc": "Luckchemy's 2018 ICO finished without hitting soft cap, opening the refund branch (or, if soft cap was met but tokens never released within 30 days, the alternate branch). Per-user balance is in deposits(addr). Public refund() returns the deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+    "deployed": "April 2018",
+    "slug": "luckchemy"
+  },
+  "arbitrage_eth_staking": {
+    "name": "ArbitrageETHStaking",
+    "desc": "August 2018 PoWH3D-style staking pool. Users sent ETH and paid a 2% fee that boosted the pool's globalFactor (existing stakers got a passive yield). The contract is dormant — public withdrawAll() returns the user's accumulated balance to msg.sender, no admin gate.",
+    "category": "powh",
+    "color": "#7c2d12",
+    "contract": "0x5eee354e36ac51e9d3f7283005cab0c55f423b23",
+    "deployed": "August 2018",
+    "slug": "arbitrage-eth-staking"
   },
   "vlb": {
     "name": "VLB Token",
