@@ -235,7 +235,7 @@
   },
   "cryptophunks_market": {
     "name": "CryptoPhunks Marketplace",
-    "desc": "An on-chain marketplace deployed December 2021 for the CryptoPhunks NFT collection — a flipped-pixel CryptoPunks parody by NotLarvaLabs. Like the original CryptoPunks marketplace, sale proceeds and outbid bids accumulate in a public pendingWithdrawals mapping; sellers and outbid bidders call withdraw() to pull their ETH out. ~107 ETH still sits in the contract waiting for sellers and bidders who never came back.",
+    "desc": "An on-chain marketplace deployed December 2021 for the CryptoPhunks NFT collection \u2014 a flipped-pixel CryptoPunks parody by NotLarvaLabs. Like the original CryptoPunks marketplace, sale proceeds and outbid bids accumulate in a public pendingWithdrawals mapping; sellers and outbid bidders call withdraw() to pull their ETH out. ~107 ETH still sits in the contract waiting for sellers and bidders who never came back.",
     "category": "nft",
     "color": "#f43f5e",
     "contract": "0xd6c037be7fa60587e174db7a6710f7635d2971e7",
@@ -253,7 +253,7 @@
   },
   "cryptocats_v1": {
     "name": "CryptoCats v2",
-    "desc": "The March 2018 CryptoCats deployment (contractVersion()==2, predecessor of the v3 marketplace at 0x19c320b4 which references this as previousContractAddress). User claim path: withdraw() drains pendingWithdrawals[msg.sender] — only sellers from buyCat() are credited. The contract holds ~44 ETH but only ~9 ETH is mapped to users; the remaining ~35 ETH was paid in via getCat() calls during 2021 and is stuck — v1/v2's getCat() did not credit pendingWithdrawals[owner], a bug the v3 deployment explicitly fixed (\"3.0 — Bug fix to make ETH value sent in with getCat function withdrawable by contract owner\"). No admin sweep exists in v2 bytecode (all 45 selectors verified).",
+    "desc": "The March 2018 CryptoCats deployment (contractVersion()==2, predecessor of the v3 marketplace at 0x19c320b4 which references this as previousContractAddress). User claim path: withdraw() drains pendingWithdrawals[msg.sender] \u2014 only sellers from buyCat() are credited. The contract holds ~44 ETH but only ~9 ETH is mapped to users; the remaining ~35 ETH was paid in via getCat() calls during 2021 and is stuck \u2014 v1/v2's getCat() did not credit pendingWithdrawals[owner], a bug the v3 deployment explicitly fixed (\"3.0 \u2014 Bug fix to make ETH value sent in with getCat function withdrawable by contract owner\"). No admin sweep exists in v2 bytecode (all 45 selectors verified).",
     "category": "nft",
     "color": "#f59e0b",
     "contract": "0x9508008227b6b3391959334604677d60169ef540",
@@ -262,7 +262,7 @@
   },
   "ld3d_official": {
     "name": "LD3D Official",
-    "desc": "An August 2018 FoMo3D fork branded as \"LD3D\" — standard PlayerBook key-buy / countdown / dividend mechanics with the canonical plyr_/getPlayerInfoByAddress/withdraw ABI. ~87 ETH remained in player vaults after the round wound down. Note: isHuman modifier — only EOAs can withdraw.",
+    "desc": "An August 2018 FoMo3D fork branded as \"LD3D\" \u2014 standard PlayerBook key-buy / countdown / dividend mechanics with the canonical plyr_/getPlayerInfoByAddress/withdraw ABI. ~87 ETH remained in player vaults after the round wound down. Note: isHuman modifier \u2014 only EOAs can withdraw.",
     "category": "gambling",
     "color": "#a855f7",
     "contract": "0x47663541167ece0b96d9e5c60f9e470b2a20f598",
@@ -271,7 +271,7 @@
   },
   "bingo4beast_1": {
     "name": "Bingo4Beast Long Official",
-    "desc": "An August 2018 FoMo3D-derivative game (B4B token) with non-standard player enumeration — plyr_(uint256) reverts with a custom \"eth less\" guard, but the rest of the standard FoMo3D ABI works (getPlayerInfoByAddress, withdraw, pIDxAddr_). Balance file enumerates players via event-log scan. ~120 ETH still in player vaults across 278 holders.",
+    "desc": "An August 2018 FoMo3D-derivative game (B4B token) with non-standard player enumeration \u2014 plyr_(uint256) reverts with a custom \"eth less\" guard, but the rest of the standard FoMo3D ABI works (getPlayerInfoByAddress, withdraw, pIDxAddr_). Balance file enumerates players via event-log scan. ~120 ETH still in player vaults across 278 holders.",
     "category": "gambling",
     "color": "#7c3aed",
     "contract": "0x05aa2fdf9f58b426b49900834cce0565d88e52eb",
@@ -298,7 +298,7 @@
   },
   "spankchain_auction": {
     "name": "SpankChain Auction",
-    "desc": "December 2017 Dutch auction for the SPANK token (SpankChain adult-entertainment platform). Buyers deposited ETH; the auction settled at a strike price and refunds the unused portion via withdraw(). 463 ETH still in the contract — 100% recoverable across 105 buyers, every per-address refund amount wei-exact computed via debug_traceCall (source unverified, so a static balance lookup wasn't possible). The largest single buyer is owed ~287 ETH.",
+    "desc": "December 2017 Dutch auction for the SPANK token (SpankChain adult-entertainment platform). Buyers deposited ETH; the auction settled at a strike price and refunds the unused portion via withdraw(). 463 ETH still in the contract \u2014 100% recoverable across 105 buyers, every per-address refund amount wei-exact computed via debug_traceCall (source unverified, so a static balance lookup wasn't possible). The largest single buyer is owed ~287 ETH.",
     "category": "ico",
     "color": "#ec4899",
     "contract": "0x4d1886daf2617cbd9e27abfd0f18a54f04f33c41",
@@ -322,6 +322,60 @@
     "contract": "0x39590f0b13693aeb5e16a414be8ba28b4c382cc6",
     "deployed": "May 2017",
     "slug": "presale-pool-3959"
+  },
+  "statusbuyer": {
+    "name": "Status Buyer",
+    "desc": "Status (SNT) ICO pooled-buy contract from June 2017 (unverified). Held ~76 ETH from 14 contributors. withdraw() returns each contributor's pro-rata share \u2014 100% recoverable, all wei-exact verified via debug_traceCall.",
+    "category": "ico",
+    "color": "#06b6d4",
+    "contract": "0xcc89405e3cfd38412093840a3ac2f851dd395dfb",
+    "deployed": "June 2017",
+    "slug": "status-buyer"
+  },
+  "presalepool_48c1": {
+    "name": "Presale Pool 0x48c128",
+    "desc": "An early-2018 ICO presale pool (unverified) holding ~98 ETH for 7 contributors. withdrawAll() returns each contributor's full deposit \u2014 100% recoverable, wei-exact verified via debug_traceCall.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0x48c128eafc3b937fb1f97889ad174ac02b4952cb",
+    "deployed": "March 2018",
+    "slug": "presale-pool-48c1"
+  },
+  "presalepool_ff2c": {
+    "name": "Presale Pool 0xff2c68",
+    "desc": "A May 2018 ICO presale pool (unverified) \u2014 holds 50 ETH for one large contributor. withdrawAll() returns the full deposit. 100% recoverable, wei-exact verified.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0xff2c689cb750f2a7d46e7471521189ced948f965",
+    "deployed": "May 2018",
+    "slug": "presale-pool-ff2c"
+  },
+  "sawgamespass": {
+    "name": "SAW Games Pass",
+    "desc": "A 2022 NFT mint contract (verified ERC-721). The contract owner accumulated 39 ETH in mint proceeds and never called withdraw(). Like CryptoCats v3, the contract owner is the legitimate user-recoverable counterparty here. 100% recoverable via withdraw().",
+    "category": "nft",
+    "color": "#f59e0b",
+    "contract": "0x347e3513ca6d5118cb2df3bc386eade1e8f25ceb",
+    "deployed": "March 2022",
+    "slug": "saw-games-pass"
+  },
+  "presalepool_b990": {
+    "name": "Presale Pool 0xb9906c",
+    "desc": "An April 2018 ICO presale pool (unverified) \u2014 small remaining balance after most contributors withdrew. ~2.5 ETH recoverable across 2 holders via withdrawAll(). Trace-verified.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0xb9906cf500d5e61b9673115151104c990a804dcb",
+    "deployed": "April 2018",
+    "slug": "presale-pool-b990"
+  },
+  "presalepool_d677": {
+    "name": "Presale Pool 0xd6770a",
+    "desc": "A mid-2018 ICO presale pool (unverified) holding ~37 ETH across 23 contributors. withdrawAll() returns each contributor's deposit \u2014 100% recoverable, wei-exact verified.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0xd6770aac65a48f5715889a4cdbf30a4faf73a073",
+    "deployed": "August 2018",
+    "slug": "presale-pool-d677"
   },
   "etherdelta_m0": {
     "name": "EtherDelta v0",
@@ -1277,7 +1331,7 @@
   },
   "ahoolee_token_sale": {
     "name": "Ahoolee Token Sale",
-    "desc": "Ahoolee's September 2017 ICO. The sale collected ~581 ETH against a 3,030 ETH soft cap and finalized in refund mode. 191 ETH still sits in the contract waiting for the long tail of stragglers — 107 of 323 contributors haven't called refund() yet. Single-tx claim: call refund() on the contract, no arguments needed.",
+    "desc": "Ahoolee's September 2017 ICO. The sale collected ~581 ETH against a 3,030 ETH soft cap and finalized in refund mode. 191 ETH still sits in the contract waiting for the long tail of stragglers \u2014 107 of 323 contributors haven't called refund() yet. Single-tx claim: call refund() on the contract, no arguments needed.",
     "category": "ico",
     "color": "#0d9488",
     "contract": "0x575cb87ab3c2329a0248c7d70e0ead8e57f3e3f7",
@@ -1322,7 +1376,7 @@
   },
   "arbitrage_eth_staking": {
     "name": "ArbitrageETHStaking",
-    "desc": "August 2018 PoWH3D-style staking pool. Users sent ETH and paid a 2% fee that boosted the pool's globalFactor (existing stakers got a passive yield). The contract is dormant — public withdrawAll() returns the user's accumulated balance to msg.sender, no admin gate.",
+    "desc": "August 2018 PoWH3D-style staking pool. Users sent ETH and paid a 2% fee that boosted the pool's globalFactor (existing stakers got a passive yield). The contract is dormant \u2014 public withdrawAll() returns the user's accumulated balance to msg.sender, no admin gate.",
     "category": "powh",
     "color": "#7c2d12",
     "contract": "0x5eee354e36ac51e9d3f7283005cab0c55f423b23",
