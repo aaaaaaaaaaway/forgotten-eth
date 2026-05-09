@@ -377,6 +377,78 @@
     "deployed": "August 2018",
     "slug": "presale-pool-d677"
   },
+  "presalepool_796d": {
+    "name": "Presale Pool 0x796dbc",
+    "desc": "An August 2018 ICO presale pool (unverified) holding 35 ETH for 3 contributors. withdrawAll() returns each contributor's deposit; 100% recoverable, wei-exact verified.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0x796dbc51b37f2d92b0af1271fd9520c8efd1be61",
+    "deployed": "August 2018",
+    "slug": "presale-pool-796d"
+  },
+  "presalepool_50c1": {
+    "name": "Presale Pool 0x50c19f",
+    "desc": "An August 2018 ICO presale pool (unverified) holding 34 ETH for 2 large contributors. withdrawAll() returns each deposit; 100% recoverable, wei-exact verified.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0x50c19ffdbda85d1a07c09f01e113a94923801d32",
+    "deployed": "August 2018",
+    "slug": "presale-pool-50c1"
+  },
+  "presalepool_6f40": {
+    "name": "Presale Pool 0x6f40d9",
+    "desc": "A 2018 ICO presale pool (unverified) holding 28 ETH across 285 contributors \u2014 the largest by holder count in this batch. withdrawAll() returns each contributor's deposit; 100% recoverable, wei-exact verified.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0x6f40d96713b60d5083bc2493251907ca673de1b8",
+    "deployed": "2018",
+    "slug": "presale-pool-6f40"
+  },
+  "ambassadors_fund": {
+    "name": "Ambassadors Fund",
+    "desc": "A 2019 OpenZeppelin PaymentSplitter holding 17.5 ETH across 12 fund-share holders. release(address) pays each beneficiary their pro-rata share. 100% recoverable, wei-exact verified.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0xe9426198aec621203ba1fe07cf292b3796ba6248",
+    "deployed": "2019",
+    "slug": "ambassadors-fund"
+  },
+  "just_hodl_it": {
+    "name": "JustHodlIt",
+    "desc": "A 2018 ICO contribution pool (unverified) \u2014 16 ETH recoverable via withdrawAll() across 8 contributors (78% coverage; the rest is in admin/fee buckets and not user-claimable). Wei-exact verified per holder.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0x344285b2082d9c7981241dcc160beca6057637e6",
+    "deployed": "2018",
+    "slug": "just-hodl-it"
+  },
+  "game_fair": {
+    "name": "GameFair",
+    "desc": "A 2018 gambling/redemption contract (unverified). Partially insolvent \u2014 4 holders can claim a combined 14 ETH against 13 ETH of contract balance via redeem(). Late redeemers will revert. Wei-exact verified.",
+    "category": "gambling",
+    "color": "#a855f7",
+    "contract": "0x86ab844a067094ec2c5a4bade21fcf2aeee32122",
+    "deployed": "2018",
+    "slug": "game-fair"
+  },
+  "ibc_lottery": {
+    "name": "IBC Lottery",
+    "desc": "An August 2018 IBC-themed lottery game (unverified). 8 holders can claim 12.4 ETH via withdraw(); 97% coverage. Wei-exact verified per holder.",
+    "category": "gambling",
+    "color": "#a855f7",
+    "contract": "0xc5aafe85775fe97bee49d16cc4f38aaf8dbf20c5",
+    "deployed": "August 2018",
+    "slug": "ibc-lottery"
+  },
+  "contribution_pool": {
+    "name": "Contribution Pool",
+    "desc": "A 2017 contribution pool (verified ERC20-style) holding 10.6 ETH for one large contributor. withdraw() returns the full deposit; 100% recoverable, wei-exact verified.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0xa812137eff2b368d0b2880a39b609fb60c426850",
+    "deployed": "2017",
+    "slug": "contribution-pool"
+  },
   "etherdelta_m0": {
     "name": "EtherDelta v0",
     "desc": "The earliest EtherDelta contract, deployed around August 2016 using Solidity v0.3.6 \u2014 one of the very first DEX contracts on Ethereum, deployed just months after the DAO hack. The team iterated through multiple versions (Oct 2016, Feb 2017) before the well-known v2; each upgrade required manual migration.",
