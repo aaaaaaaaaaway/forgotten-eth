@@ -3,16 +3,16 @@
   "balance_source": "token",
   "contract_eth_balance": 100.664,
   "total_eth_in_balances": 48.49634011,
-  "addresses_with_balance": 589,
+  "addresses_with_balance": 588,
   "coverage_pct": 48.18,
-  "scan_date": "2026-05-08 04:18:07 UTC",
+  "scan_date": "2026-05-09 10:18:16 UTC",
   "distribution": {
     ">=100": 0,
     "10-100": 2,
     "1-10": 5,
     "0.1-1": 31,
     "0.01-0.1": 54,
-    "<0.01": 497
+    "<0.01": 496
   },
   "isMultiAssetNft": true,
   "affectedAssets": [
@@ -10035,30 +10035,6 @@
           "decimals": 6,
           "amount": 2.680657,
           "amount_wei": 2680657
-        }
-      ]
-    },
-    {
-      "address": "0xd91432ea17a0b4ff2c28af958d4b175353c7c730",
-      "balance_eth": 0.0,
-      "balance_wei": "0",
-      "allowlisted": true,
-      "nft_details": [
-        {
-          "nft_id": 243,
-          "asset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
-          "asset_symbol": "USDT",
-          "decimals": 6,
-          "amount": 56.846266,
-          "amount_wei": 56846266
-        },
-        {
-          "nft_id": 244,
-          "asset_address": "0x6b175474e89094c44da98b954eedeac495271d0f",
-          "asset_symbol": "DAI",
-          "decimals": 18,
-          "amount": 13.62821520715244,
-          "amount_wei": 13628215207152439680
         }
       ]
     },

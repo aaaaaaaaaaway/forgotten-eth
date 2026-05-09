@@ -1,9 +1,9 @@
 {
   "contract": "0x0cba81ba02c58a4c2c160fdd2e7411ad9cdf5dbe",
   "balance_source": "eth",
-  "contract_eth_balance": 194.18,
-  "total_eth_in_balances": 194.18,
-  "addresses_with_balance": 119,
+  "contract_eth_balance": 187.45,
+  "total_eth_in_balances": 187.45,
+  "addresses_with_balance": 117,
   "coverage_pct": 100.0,
   "scan_date": "2026-04-23 22:16:09 UTC",
   "description": "Anata NFT Metadrop sealed-bid auction. Unclaimed bidder refunds.",
@@ -17,12 +17,12 @@
       "total_eth": 34.05
     },
     "1-10 ETH": {
-      "count": 42,
-      "total_eth": 126.17
+      "count": 41,
+      "total_eth": 119.84
     },
     "0.1-1 ETH": {
-      "count": 74,
-      "total_eth": 33.96
+      "count": 73,
+      "total_eth": 33.56
     },
     "0.01-0.1 ETH": {
       "count": 0,
@@ -162,26 +162,6 @@
         "0xf8f67359dd438f95d4747fba41f619c57c30552033bbd4b91e483e50c01bdf3c"
       ],
       "rank": 6
-    },
-    {
-      "address": "0x1fafb618033fb07d3a99704a47451971976cb586",
-      "balance_wei": "6330000000000000000",
-      "balance_eth": 6.33,
-      "merkle_proof": [
-        "0xe67033dee7b93d1b096353f2e66c9d988cf0456770b29ba26f229e2265ffce5d",
-        "0xa46acd76698d9b892c2d8af8336edbdd3566c244253120952a536a62ecbc0d76",
-        "0x8701d9bfa8e1b610400e0583604cf42bb79dd7c8e4f0af3c9b67ad063aec416e",
-        "0xdc77d5ec0f183af98fd84c0435f442065cfece04b16e7d9657379d2f1367ceac",
-        "0x027e621e4abb07bc7765d833c6e0f77ed145e569c7f175a0c91d5592bc1e2876",
-        "0x3a8c94da6b798b16cc99a3f090f92e0a152bba89bc48e3f7f88ff0d5692cfd71",
-        "0xc949934e6b4a3831e27c317dcc54d1396f328263fb7cf0ae57a375efc4223979",
-        "0x1750ec0dafe496b5e3fe84e47b9c387f6ebfb617b431f5d7ca4442aa59bc5fd0",
-        "0x9fa3da0b4af5bd34433004f07549f703221da78abee7e46287b4150412e0e8e7",
-        "0xdaad70eafbc07d8ffc4d29e8173613f2fa53520bf9f241031f38763a2c88a2b3",
-        "0x439472c64c4b3dc6f43dc8bf76db1637300240767c1d8ac8349912460975ff1d",
-        "0xc879eefbd1d218690d611f227db1952f98daa4cf517826a6e056f9e8ed300161"
-      ],
-      "rank": 7
     },
     {
       "address": "0x262411787954c1c347b5df2fe08875b88bc952e9",
@@ -1696,26 +1676,6 @@
       "rank": 84
     },
     {
-      "address": "0xab930e565cad29ece7d143fc81ab876c68088fdd",
-      "balance_wei": "400000000000000000",
-      "balance_eth": 0.4,
-      "merkle_proof": [
-        "0xe3e6def205e542f550330c7623423f12c55bcb03847a189da65aeccf16996068",
-        "0x8b2a5b5da553191eb6dbb2d350c0b97883a566d8d111737d00e8a45acaf54baa",
-        "0x8986f06a3a9d549080ef62c2c7b28851fa39c77e298f6e14345935fa1df2d1d1",
-        "0x31b4fbe3ca12cb4eb8642f0e79cb40890e1331a9b400785f9c34ca0f3159a967",
-        "0xb0f63f0aec2ac60de8e343f995a3e4ef7abb6febe50c28f3e73b7ae23f3c802f",
-        "0xa662fe737cf9ad891c1ada49544dfad676adb6fdf8a94d14400ed08d0ed37aa5",
-        "0xc949934e6b4a3831e27c317dcc54d1396f328263fb7cf0ae57a375efc4223979",
-        "0x1750ec0dafe496b5e3fe84e47b9c387f6ebfb617b431f5d7ca4442aa59bc5fd0",
-        "0x9fa3da0b4af5bd34433004f07549f703221da78abee7e46287b4150412e0e8e7",
-        "0xdaad70eafbc07d8ffc4d29e8173613f2fa53520bf9f241031f38763a2c88a2b3",
-        "0x439472c64c4b3dc6f43dc8bf76db1637300240767c1d8ac8349912460975ff1d",
-        "0xc879eefbd1d218690d611f227db1952f98daa4cf517826a6e056f9e8ed300161"
-      ],
-      "rank": 85
-    },
-    {
       "address": "0x41fa2d305a3a479c33a9e99ed7315480d369ec37",
       "balance_wei": "360000000000000000",
       "balance_eth": 0.36,
@@ -2413,5 +2373,5 @@
       "rank": 120
     }
   ],
-  "last_event_refresh": "2026-05-04 13:23:08 UTC"
+  "last_event_refresh": "2026-05-09 10:23:10 UTC"
 }

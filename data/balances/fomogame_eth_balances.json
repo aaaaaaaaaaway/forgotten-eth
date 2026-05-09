@@ -4,27 +4,35 @@
   "token_checked": "0x0000000000000000000000000000000000000000",
   "description": "ETH balances in defunct FoMoGame contract",
   "scan_date": "2026-03-18 11:36:29 UTC",
-  "contract_eth_balance": 13.602011,
+  "contract_eth_balance": 13.601603,
   "total_addresses_scanned": 469,
-  "addresses_with_balance": 268,
-  "total_eth_in_balances": 13.514520898134993,
+  "addresses_with_balance": 267,
+  "total_eth_in_balances": 13.514113,
   "coverage_pct": 99.36,
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0.0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0.0
+    },
     "1-10 ETH": {
       "count": 2,
-      "total_eth": 2.766258573449785
+      "total_eth": 2.766259
     },
     "0.1-1 ETH": {
       "count": 25,
-      "total_eth": 8.156278891798216
+      "total_eth": 8.15628
     },
     "0.01-0.1 ETH": {
       "count": 62,
-      "total_eth": 2.3237220396862317
+      "total_eth": 2.323722
     },
     "<0.01 ETH": {
-      "count": 179,
-      "total_eth": 0.26826139320075776
+      "count": 178,
+      "total_eth": 0.267845
     }
   },
   "balances": [
@@ -959,12 +967,6 @@
       "balance_eth": "0.000446563552798757"
     },
     {
-      "rank": 156,
-      "address": "0xcD6eDCb42D6Dd56c5A057AEfc0006fe1EdBA754E",
-      "balance_wei": "408182047896029",
-      "balance_eth": "0.000408182047896029"
-    },
-    {
       "rank": 157,
       "address": "0x3668815cB2B91C6FB9bC20020e31838a51D20358",
       "balance_wei": "398055912632597",
@@ -1636,5 +1638,6 @@
       "balance_wei": "11009937675744",
       "balance_eth": "0.000011009937675744"
     }
-  ]
+  ],
+  "last_event_refresh": "2026-05-09 10:23:10 UTC"
 }
