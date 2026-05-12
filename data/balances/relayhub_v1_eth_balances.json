@@ -1,0 +1,1020 @@
+{
+  "contract": "0xd216153c06e857cd7f72665e0af1d7d82172f494",
+  "balance_source": "eth",
+  "contract_eth_balance": 514.69404505,
+  "total_eth_in_balances": 514.69404505,
+  "addresses_with_balance": 111,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-05-12 10:43:12 UTC",
+  "description": "OpenZeppelin's original meta-transaction relay hub (2019). Holds dApp deposits made via depositFor() and accumulated relay-operator fees. Withdraw via withdraw(amount, dest); msg.sender must equal the balance holder.",
+  "meta": {
+    "withdraw_signature": "withdraw(uint256,address)",
+    "withdraw_recipient": "dest arg (caller can self-withdraw with dest=msg.sender)",
+    "contract_total_eth": 517.7940450470014,
+    "mapped_total_eth": 514.6940450470014,
+    "stake_unmapped_eth": 3.1
+  },
+  "balances": [
+    {
+      "address": "0xb342a81d57bb9ba8b81111523cd10ea550df67f8",
+      "balance_wei": "503557001922154441967",
+      "balance_eth": 503.5570019221545,
+      "roles": [
+        "owner"
+      ],
+      "is_contract": false
+    },
+    {
+      "address": "0x0be1241468df7e9d3b74a84869ddf05c36fd7e50",
+      "balance_wei": "1722398146743751154",
+      "balance_eth": 1.7223981467437512,
+      "roles": [
+        "owner"
+      ],
+      "is_contract": false
+    },
+    {
+      "address": "0x16154f7e9de01e6b39dac3159805e9b1531ee3cf",
+      "balance_wei": "1263552413889212013",
+      "balance_eth": 1.2635524138892118,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x6a343113c4e58b85585636855a364c12c83bb687",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x7bdd938cd24272e96ec39cea4a98492706519da1",
+      "balance_wei": "999422358080000000",
+      "balance_eth": 0.99942235808,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x9d9c46aca6a2c5ff6824a92d521b6381f9f8f1a9",
+      "balance_wei": "994720879148364583",
+      "balance_eth": 0.9947208791483645,
+      "roles": [
+        "owner"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xd76ea1e14f848e801c59de8b16b89f778e2827f1",
+      "balance_wei": "929388338365388025",
+      "balance_eth": 0.929388338365388,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x21ca4d039cd5e556fbf0013c9c1f156dd9e62fea",
+      "balance_wei": "746687665517270912",
+      "balance_eth": 0.746687665517271,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xab45c5a4b0c941a2f231c04c3f49182e1a254052",
+      "balance_wei": "583157115200142959",
+      "balance_eth": 0.583157115200143,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xb6b79d857858004bf475e4a57d4a446da4884866",
+      "balance_wei": "479372001431453333",
+      "balance_eth": 0.4793720014314533,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x9fa160f92a10b431f255bf1a70a1c1e5808e5128",
+      "balance_wei": "411314673797658134",
+      "balance_eth": 0.4113146737976581,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xf6c55695ecef64716719dba2ac0835f87b77e158",
+      "balance_wei": "260478462720000000",
+      "balance_eth": 0.26047846272,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xd7a236fb3a079f360315cc6be14f45efe654c65a",
+      "balance_wei": "251672888400000000",
+      "balance_eth": 0.2516728884,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xf3f7e999fd26566fa02040d9cd6506ca83d7f9b3",
+      "balance_wei": "130000000000000000",
+      "balance_eth": 0.13,
+      "roles": [
+        "recipient",
+        "relay"
+      ],
+      "is_contract": false
+    },
+    {
+      "address": "0x0405c8df2ba531ba3db19aee11831083828b44a7",
+      "balance_wei": "107950000000000000",
+      "balance_eth": 0.10795,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x7cb023185e60a1404be1c9bc6c9b1e20c20c17d9",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xe0eff46f88103cdc40f386a4d35009994024addd",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xfca9e7387159d46516f59842fb6c6806e2a18d0a",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x5cc3c71a77086875d5d56fb512faae93e8ac9b85",
+      "balance_wei": "87432181857787844",
+      "balance_eth": 0.08743218185778784,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xbe9375c6a420d2eeb258962efb95551a5b722803",
+      "balance_wei": "85955305000000000",
+      "balance_eth": 0.085955305,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xf45c0a404aac29a89f80e0aa16cd03918c7b4384",
+      "balance_wei": "83111622441625139",
+      "balance_eth": 0.08311162244162514,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x12388850ee7a309e548b33369f3c1ee42462631f",
+      "balance_wei": "81288319472715107",
+      "balance_eth": 0.0812883194727151,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xe6a4cef69ac5c9a14be9f5e0f22518a76045a8c3",
+      "balance_wei": "74343862034611975",
+      "balance_eth": 0.07434386203461196,
+      "roles": [
+        "owner"
+      ],
+      "is_contract": false
+    },
+    {
+      "address": "0x496de9be02b9269f476b9252fa4c6a98ad308640",
+      "balance_wei": "70187608912790406",
+      "balance_eth": 0.07018760891279041,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x05bbed16620b352a7f889e23e3cf427d1d379ffe",
+      "balance_wei": "57217806559854510",
+      "balance_eth": 0.05721780655985451,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x0d43d69d8a5580c9b9f736b9476440ef9578cbc7",
+      "balance_wei": "55887296991491413",
+      "balance_eth": 0.05588729699149141,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x23a6f0bdbd6b5e6dbe5768f3aa68ddc3acf610d8",
+      "balance_wei": "50000000000000000",
+      "balance_eth": 0.05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x4f72999731ed31a12ad69d24a51c1453062a22fb",
+      "balance_wei": "50000000000000000",
+      "balance_eth": 0.05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x4bbcca869e9931280cb46ae0dff18881be581a4d",
+      "balance_wei": "39393877387252744",
+      "balance_eth": 0.039393877387252745,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x771ce62ff0090e16eccf44fdc94fa9115113590d",
+      "balance_wei": "38071578846040609",
+      "balance_eth": 0.03807157884604061,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x59321e308a55c8316413f7cd118c55123c32772e",
+      "balance_wei": "30000000000000000",
+      "balance_eth": 0.03,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x028b4749fbf4e9d3d690531dc58dbc55feda03ae",
+      "balance_wei": "29593722350000000",
+      "balance_eth": 0.02959372235,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xe8f0b0ef4ef717f951f113b9ef101a74858bfe7e",
+      "balance_wei": "26906720495772365",
+      "balance_eth": 0.026906720495772363,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x2bcd341de805f6095e700b5f70188d0796b2e1fb",
+      "balance_wei": "18948239969713802",
+      "balance_eth": 0.0189482399697138,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x70be979bf4193faf77eaada12cbb068ff0479a5a",
+      "balance_wei": "18148278096670622",
+      "balance_eth": 0.018148278096670623,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x332c218cdd4cad4295a9ddc7c693f33ded6e98c6",
+      "balance_wei": "17529532130668127",
+      "balance_eth": 0.01752953213066813,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x2bf1ce7d6f81c2cc9885da5b501614c1107ca39e",
+      "balance_wei": "10000000000000000",
+      "balance_eth": 0.01,
+      "roles": [
+        "recipient",
+        "relay"
+      ],
+      "is_contract": false
+    },
+    {
+      "address": "0x472ec745968fd933fdbcf01a055b00b4d3826759",
+      "balance_wei": "10000000000000000",
+      "balance_eth": 0.01,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x87a820b49870a93b913aeca7ae58c7c7a8ed8b70",
+      "balance_wei": "10000000000000000",
+      "balance_eth": 0.01,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xa91b113022847ef16a8019db3722420bc7bd8585",
+      "balance_wei": "10000000000000000",
+      "balance_eth": 0.01,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xbc7c9caea3848d75eb6c2db5efdc212b8101797e",
+      "balance_wei": "288964030883399",
+      "balance_eth": 0.000288964030883399,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x1843d7696373fd543c3673e3cde6119c9d1bd295",
+      "balance_wei": "121660677731955",
+      "balance_eth": 0.000121660677731955,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xd31eb2fe0f30b9bf09d635cc70f3727d7c16cad3",
+      "balance_wei": "117125438145788",
+      "balance_eth": 0.000117125438145788,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x960c6d43199e34dfdd9022e7ebdb9d154acc1c8b",
+      "balance_wei": "109720489430257",
+      "balance_eth": 0.000109720489430257,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xe34bb610505541b3fceff472dc5449053b632944",
+      "balance_wei": "97697068134518",
+      "balance_eth": 9.7697068134518e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x58aabc167fcac5a18f03552ad0eb60e17a940f4e",
+      "balance_wei": "53958086511991",
+      "balance_eth": 5.3958086511991e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x0aa6875bdd1e5795a3e3db10ffef02ca3b808847",
+      "balance_wei": "53901283591663",
+      "balance_eth": 5.3901283591663e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x0c029d15b8bb0fc6129b2d5b11689fc784938b7e",
+      "balance_wei": "53431462382536",
+      "balance_eth": 5.3431462382536e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x6c85e15838034b7bba6c63badd8839fd4c5be606",
+      "balance_wei": "46569989073166",
+      "balance_eth": 4.6569989073166e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x09e666e01d25b409a94da56869b5449bc2b352a9",
+      "balance_wei": "45602435621911",
+      "balance_eth": 4.5602435621911e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xf22c2e3475e4a066f4e9f44567c950dd36112d05",
+      "balance_wei": "44392096429635",
+      "balance_eth": 4.4392096429635e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x3b73bd01ed8bfb49fa6d1048d02d0a7790ba4243",
+      "balance_wei": "43882697960354",
+      "balance_eth": 4.3882697960354e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x894767c649887e61582dc54af0696d22929d7434",
+      "balance_wei": "43763459308008",
+      "balance_eth": 4.3763459308008e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xc1d075d415100071f6cac95244a68e2e96ac7fce",
+      "balance_wei": "43486436812140",
+      "balance_eth": 4.348643681214e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x617592b603a57b88dc4d2d9cff180669390134bf",
+      "balance_wei": "43290496580303",
+      "balance_eth": 4.3290496580303e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x6ed4d595358a0451d71f7e98980c407d079b43c1",
+      "balance_wei": "43081353002047",
+      "balance_eth": 4.3081353002047e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x70aaecc36b2a8d59d630dec468400ec3cfb70aa5",
+      "balance_wei": "42740944978275",
+      "balance_eth": 4.2740944978275e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x888420fa85b4787dfb2cd11aa2fa380dbb032713",
+      "balance_wei": "42586986635723",
+      "balance_eth": 4.2586986635723e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x5a4edad272ae5d02f6bc6d780ab22dddc810912d",
+      "balance_wei": "41936700318071",
+      "balance_eth": 4.1936700318071e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xf945442c378217c4de525c2db5e218d5186edaaf",
+      "balance_wei": "41208179911442",
+      "balance_eth": 4.1208179911442e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x78075adc4d07202562ec68f1fd3eca9de0bb5499",
+      "balance_wei": "40851381232294",
+      "balance_eth": 4.0851381232294e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x77fd00aa38e6f0322ef98d72c04f7f6500bb2f3e",
+      "balance_wei": "40438916292914",
+      "balance_eth": 4.0438916292914e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x9f60e2e51a79609821da32880fc2b92e34f5cf2e",
+      "balance_wei": "39745020621793",
+      "balance_eth": 3.9745020621793e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xfa8b4e3355474c14ca29a15e9d52d729e52ec027",
+      "balance_wei": "38846799063804",
+      "balance_eth": 3.8846799063804e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x47935c9a5c45418c79445f55c068fcbeb0460ed1",
+      "balance_wei": "38656027302797",
+      "balance_eth": 3.8656027302797e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x12438b62d4e0b572bde752d2f69a2c423c5af137",
+      "balance_wei": "38651555981191",
+      "balance_eth": 3.8651555981191e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x1f31324e2a2210286621f91c72c26aefefb0349b",
+      "balance_wei": "38649518888310",
+      "balance_eth": 3.864951888831e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x03d751ce16a45f1d707b87b66e53ae9da40dab9d",
+      "balance_wei": "38633626278492",
+      "balance_eth": 3.8633626278492e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xa8dd2043aa8b48236f249ee9823459d45d799e8a",
+      "balance_wei": "38628472819717",
+      "balance_eth": 3.8628472819717e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xbf7fb536ea729269279efa62aacee1d05b85272b",
+      "balance_wei": "38620576945528",
+      "balance_eth": 3.8620576945528e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x740711e27f5bb130d4d0be3f62a8b4a0c8726832",
+      "balance_wei": "38604704603498",
+      "balance_eth": 3.8604704603498e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x4b719c7a4b2ebc45a800e5b52a3c346c9e3a250d",
+      "balance_wei": "38599706702718",
+      "balance_eth": 3.8599706702718e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x09016b0ca4429de7e091ff1d0b3ceff8e27b4748",
+      "balance_wei": "38598951421277",
+      "balance_eth": 3.8598951421277e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xde5eedfa96e8c5e7b529adbee2a8bc9563a97c34",
+      "balance_wei": "38508335590626",
+      "balance_eth": 3.8508335590626e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xc4e09e578b10736a318eaa235157f8b4772837a2",
+      "balance_wei": "38500951573169",
+      "balance_eth": 3.8500951573169e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x26f86d644b48c9288a27fab2e5fda65a52e9c014",
+      "balance_wei": "38485767912414",
+      "balance_eth": 3.8485767912414e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x6e02942eb227f3625ce89d68a029706536dfcb68",
+      "balance_wei": "38459270798975",
+      "balance_eth": 3.8459270798975e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x52d7906efde012cfa313cc9a66acb9f6205e2b07",
+      "balance_wei": "38455873861850",
+      "balance_eth": 3.845587386185e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x659f50bd48bc5d697177415c5294391a0d086fd3",
+      "balance_wei": "37397654065462",
+      "balance_eth": 3.7397654065462e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x68e236ecc9946c58f836cbe1a741a3a3a6530019",
+      "balance_wei": "37276302493484",
+      "balance_eth": 3.7276302493484e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x07f724660dc0f874eca822a6b05c5adfa56024ad",
+      "balance_wei": "36562507038116",
+      "balance_eth": 3.6562507038116e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xedf15558990b07617af6e10de75a053d3835da66",
+      "balance_wei": "36499601079843",
+      "balance_eth": 3.6499601079843e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xcaaa1e32bca3be0f93bff40dbcec33f1f390ae3f",
+      "balance_wei": "35700198049185",
+      "balance_eth": 3.5700198049185e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x35db75fc0d5457eab9c21afb5857716427f8129d",
+      "balance_wei": "34984588299777",
+      "balance_eth": 3.4984588299777e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xb445beb4e6c7800ac952b21e325a581f5d8b2069",
+      "balance_wei": "33552266525268",
+      "balance_eth": 3.3552266525268e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x171927400a3f1baa7dd163e290546a61413d13d4",
+      "balance_wei": "33105778097070",
+      "balance_eth": 3.310577809707e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x7d4a43b60da2445299ef37fbcd986981edb87546",
+      "balance_wei": "32836227742277",
+      "balance_eth": 3.2836227742277e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xc3da5f77cc46624f02611661fcf29906aad7ea08",
+      "balance_wei": "31764518459740",
+      "balance_eth": 3.176451845974e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x0752bc0237c4914d6757b0976c1c0613e850c2de",
+      "balance_wei": "31552308202798",
+      "balance_eth": 3.1552308202798e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x57be80a340c310bf4211c8bfed8c846bd92c5c55",
+      "balance_wei": "31255376160708",
+      "balance_eth": 3.1255376160708e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x058b555481b71957864a750f142104194fa2e917",
+      "balance_wei": "30945171785228",
+      "balance_eth": 3.0945171785228e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xb65735084e3b3820745673384c82214dfbdd92c1",
+      "balance_wei": "27558721172904",
+      "balance_eth": 2.7558721172904e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x5216dd52888ce0b484a4deaa0fb88aac44231fe5",
+      "balance_wei": "27057627714459",
+      "balance_eth": 2.7057627714459e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xbd3edc170284f45f23265853a2432c373b612132",
+      "balance_wei": "24469753163749",
+      "balance_eth": 2.4469753163749e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x34d0abb941565d034ac54515e5ad2f6efdc9cc46",
+      "balance_wei": "22542559888213",
+      "balance_eth": 2.2542559888213e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xae0c1645f27386c74511e9d5c96733f1965f56b6",
+      "balance_wei": "21770469132971",
+      "balance_eth": 2.1770469132971e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xddc05b7e9822b4a4af89ca951c467022afcc0a75",
+      "balance_wei": "21629281657302",
+      "balance_eth": 2.1629281657302e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xfcabf55969c6e84b29140a3b572762fc9f6ead35",
+      "balance_wei": "21341340642191",
+      "balance_eth": 2.1341340642191e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xcdec88ca8854fc98fc4c120519572434c95ce360",
+      "balance_wei": "21008678482952",
+      "balance_eth": 2.1008678482952e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x9fe350dfa5f66bc086243f21a8f0932514316627",
+      "balance_wei": "20661243749341",
+      "balance_eth": 2.0661243749341e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xd5a781c588392e12878c30bece7836dfb7150af6",
+      "balance_wei": "19750324651129",
+      "balance_eth": 1.9750324651129e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x9a72f205d2f0d4f789b2d0810b72e6f8e888d031",
+      "balance_wei": "18888121027590",
+      "balance_eth": 1.888812102759e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xd87b9b73de727af6357af34bd99c0ce47054e0e6",
+      "balance_wei": "18028434789865",
+      "balance_eth": 1.8028434789865e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x0dde1cac091d4020e2bcaf87ad1dd158a41c6d05",
+      "balance_wei": "16828984231109",
+      "balance_eth": 1.6828984231109e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xed2638dfa95d832a0df03ef728ad5689ff566e40",
+      "balance_wei": "15653524238502",
+      "balance_eth": 1.5653524238502e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xb4479f0f48e2dc36cab776e1088054a584dd247a",
+      "balance_wei": "13158461611445",
+      "balance_eth": 1.3158461611445e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x19b7a09cfec17039bd652ecea81ccc9370949c4c",
+      "balance_wei": "11026137427941",
+      "balance_eth": 1.1026137427941e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x222f980ae15253740dd5c568ccab89f6f246b5d4",
+      "balance_wei": "10527406794137",
+      "balance_eth": 1.0527406794137e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x9b1c776f98381afcb655b54b773e57d75c1be5a6",
+      "balance_wei": "10103106930208",
+      "balance_eth": 1.0103106930208e-05,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x13801a89aaa97ef5101d3aa09b2eca4a646385cd",
+      "balance_wei": "7729776000000",
+      "balance_eth": 7.729776e-06,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xccb0dffb34493cdf3127f6a060c115a50a660c39",
+      "balance_wei": "126784062500",
+      "balance_eth": 1.267840625e-07,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    }
+  ]
+}

@@ -2212,5 +2212,23 @@
     "contract": "0x3a56ab63c7ef4f07fe353beb132e0fd5ad270ca0",
     "deployed": "2021",
     "slug": "collective-canvas"
+  },
+  "keep_bonding": {
+    "name": "Keep Network Bonding",
+    "desc": "Keep Network's KeepBonding contract held operator-staked ETH as collateral for tBTC v1 signing groups. After tBTC v1 wound down, operators can withdraw their unbonded value via withdraw(amount, operator). The ETH lands at the operator's pre-set beneficiary, not the caller \u2014 so the wallet that signs the transaction must be the operator key (or the operator's token owner / grantee).",
+    "category": "defi",
+    "color": "#48cfb0",
+    "contract": "0x27321f84704a599ab740281e285cc4463d89a3d5",
+    "deployed": "August 2020",
+    "slug": "keep-bonding"
+  },
+  "relayhub_v1": {
+    "name": "OpenGSN RelayHub v1",
+    "desc": "OpenZeppelin's original meta-transaction relay hub (2019). dApps deposited ETH via depositFor() so users could call them without paying gas; relay operators accumulated fees from successful TransactionRelayed events. Both kinds of balance are recoverable via withdraw(amount, dest) \u2014 the caller must be the balance holder. Contract recipients without a withdraw forwarder cannot directly recover; their addresses are marked pending in the table.",
+    "category": "defi",
+    "color": "#7c3aed",
+    "contract": "0xd216153c06e857cd7f72665e0af1d7d82172f494",
+    "deployed": "August 2019",
+    "slug": "relayhub-v1"
   }
 }

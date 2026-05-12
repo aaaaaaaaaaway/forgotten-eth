@@ -4287,6 +4287,30 @@ const EXCHANGES = {
     withdrawArgs: (_amount, _user, tokenId, amount) => [tokenId, amount],
     withdrawCall: 'withdraw',
   },
+  keep_bonding: {
+    name: 'Keep Network Bonding',
+    desc: "Keep Network's KeepBonding contract held operator-staked ETH as collateral for tBTC v1 signing groups. Operators withdraw via withdraw(amount, operator); ETH lands at the operator's pre-set beneficiary, not the caller. Sign with the operator key.",
+    category: 'defi',
+    color: '#48cfb0',
+    contract: '0x27321f84704a599ab740281e285cc4463d89a3d5',
+    deployed: 'August 2020',
+    noWalletCheck: true,
+    withdrawAbi: 'function withdraw(uint256 amount, address operator)',
+    withdrawArgs: (amount, user) => [amount, user],
+    withdrawCall: 'withdraw',
+  },
+  relayhub_v1: {
+    name: 'OpenGSN RelayHub v1',
+    desc: "OpenZeppelin's original meta-transaction relay hub (2019). Holds dApp deposits and accumulated relay-operator fees. Withdraw via withdraw(amount, dest); msg.sender must equal the balance holder.",
+    category: 'defi',
+    color: '#7c3aed',
+    contract: '0xd216153c06e857cd7f72665e0af1d7d82172f494',
+    deployed: 'August 2019',
+    noWalletCheck: true,
+    withdrawAbi: 'function withdraw(uint256 amount, address dest)',
+    withdrawArgs: (amount, user) => [amount, user],
+    withdrawCall: 'withdraw',
+  },
 };
 
 // Per-tab state

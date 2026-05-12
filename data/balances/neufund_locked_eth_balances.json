@@ -1,11 +1,11 @@
 {
   "contract": "0xb1E4675f0dBE360bA90447A7e58c62C762Ad62D4",
   "balance_source": "token",
-  "contract_eth_balance": 3879.713253,
-  "total_eth_in_balances": 3733.887767,
+  "contract_eth_balance": 3881.803253,
+  "total_eth_in_balances": 3733.88776734,
   "addresses_with_balance": 536,
-  "coverage_pct": 96.24,
-  "scan_date": "2026-05-09 10:17:54 UTC",
+  "coverage_pct": 96.19,
+  "scan_date": "2026-05-12 10:17:59 UTC",
   "description": "ETH balances in defunct Neufund LockedAccount contract",
   "distribution": {
     ">=100 ETH": {
@@ -14,21 +14,13 @@
     },
     "10-100 ETH": {
       "count": 34,
-      "total_eth": 736.982568
+      "total_eth": 736.9825674455816
     },
     "1-10 ETH": {
       "count": 493,
-      "total_eth": 1069.904601
+      "total_eth": 1069.9045998607448
     },
-    "0.1-1 ETH": {
-      "count": 0,
-      "total_eth": 0.0
-    },
-    "0.01-0.1 ETH": {
-      "count": 0,
-      "total_eth": 0.0
-    },
-    "<0.01 ETH": {
+    "<1 ETH": {
       "count": 2,
       "total_eth": 0.0006
     }

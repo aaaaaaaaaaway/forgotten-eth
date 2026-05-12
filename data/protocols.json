@@ -2002,5 +2002,23 @@
     "category": "nft",
     "balance_file": "collective_canvas_eth_balances.json",
     "multi_step": true
+  },
+  {
+    "key": "keep_bonding",
+    "name": "Keep Network Bonding",
+    "contract": "0x27321f84704a599ab740281e285cc4463d89a3d5",
+    "balance_source": "eth",
+    "category": "defi",
+    "balance_file": "keep_bonding_eth_balances.json",
+    "multi_step": true
+  },
+  {
+    "key": "relayhub_v1",
+    "name": "OpenGSN RelayHub v1",
+    "contract": "0xd216153c06e857cd7f72665e0af1d7d82172f494",
+    "balance_source": "eth",
+    "category": "defi",
+    "balance_file": "relayhub_v1_eth_balances.json",
+    "multi_step": true
   }
 ]
