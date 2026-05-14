@@ -5,7 +5,7 @@
   "total_eth_in_balances": 276.15841144,
   "addresses_with_balance": 373,
   "coverage_pct": 100.0,
-  "scan_date": "2026-05-12 10:17:30 UTC",
+  "scan_date": "2026-05-14 10:17:24 UTC",
   "distribution": {
     ">=10 ETH": 4,
     "1-10 ETH": 43,
@@ -15,7 +15,7 @@
   },
   "meta": {
     "manager": "0xa86e412109f77c45a3bc1c5870b880492fb86a14",
-    "current_cycle": 420,
+    "current_cycle": 421,
     "weth_address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
     "ready_to_withdraw_count": 92,
     "ready_to_withdraw_eth": 94.059973,
@@ -1502,6 +1502,10 @@
       "address": "0x30b342d51d09fc3a56136eb2d0232d653687c085",
       "balance_wei": "35000000000000000",
       "balance_eth": 0.035,
+      "pending_min_cycle": 422,
+      "pending_amount_wei": "35000000000000000",
+      "pending_amount_eth": 0.035,
+      "ready": false,
       "rank": 207
     },
     {

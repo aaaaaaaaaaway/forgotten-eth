@@ -8449,6 +8449,12 @@ async function claimENSDeed(index) {
     const registrar = new ethers.Contract(ENS_REGISTRAR, ENS_REGISTRAR_ABI, walletSigner);
     const ethAmount = ethers.formatEther(deed.value);
     window.va?.track?.('claim_initiated', { exchange: 'ENS Old Registrar', amount_eth: ethAmount });
+    // Fire claim_started BEFORE the wallet popup so we capture intent even
+    // if the user rejects or closes the tab before tx.wait() resolves. Without
+    // this, the per-deed listing flow leaves no /api/log trace of in-site
+    // intent — only ensManualRelease() at L8539 was instrumented. Cost us a
+    // clean via-site attribution for vitalik.eth's 75.42 ETH release on 5/14.
+    logEvent('claim_started', { address: walletAddress, contract: 'ens_old', amount_eth: parseFloat(ethAmount), extra: { deed_name: deed.name || null, deed_hash: deed.labelHash } });
 
     const tx = await registrar.releaseDeed(deed.labelHash);
     btn.textContent = 'Pending...';

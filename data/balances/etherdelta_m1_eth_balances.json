@@ -1,9 +1,9 @@
 {
   "contract": "0x373c55c277b866a69dc047cad488154ab9759466",
   "balance_source": "eth",
-  "contract_eth_balance": 123.007541,
-  "total_eth_in_balances": 123.358541,
-  "addresses_with_balance": 267,
+  "contract_eth_balance": 122.657541,
+  "total_eth_in_balances": 123.008541,
+  "addresses_with_balance": 266,
   "coverage_pct": 100.29,
   "scan_date": "2026-03-17 06:05:51 UTC",
   "description": "ETH balances in defunct EtherDelta (Dec 2016) contract",
@@ -21,8 +21,8 @@
       "total_eth": 38.108696
     },
     "0.1-1 ETH": {
-      "count": 42,
-      "total_eth": 14.027319
+      "count": 41,
+      "total_eth": 13.677319
     },
     "0.01-0.1 ETH": {
       "count": 66,
@@ -35,7 +35,7 @@
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 571,
-  "last_event_refresh": "2026-05-09 10:23:10 UTC",
+  "last_event_refresh": "2026-05-14 00:23:06 UTC",
   "balances": [
     {
       "rank": 1,
@@ -235,12 +235,6 @@
       "balance_wei": "351000000000000000",
       "balance_eth": 0.351,
       "claimed": true
-    },
-    {
-      "rank": 34,
-      "address": "0xd73621616d8b79e396beabff8a2e25ad6ddd11aa",
-      "balance_wei": "350000000000000000",
-      "balance_eth": 0.35
     },
     {
       "rank": 35,
