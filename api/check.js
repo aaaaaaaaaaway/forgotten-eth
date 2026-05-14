@@ -281,18 +281,20 @@ export default async function handler(req, res) {
     }
   }
 
-  // Build claimed_balances for protocols not in active results.
-  // Shows "Already Claimed" cards instead of the Madotsuki blanket when a user
-  // re-scans after withdrawing. Data comes from claimed_addresses (populated by
-  // Dune webhook, site claims, and historical backfill).
+  // Build claimed_balances. Shows "Already Claimed" cards instead of the
+  // Madotsuki blanket when a user re-scans after withdrawing. Data comes from
+  // claimed_addresses (Dune webhook, site claims, historical backfill).
+  // For single-item protocols, skip when an active balance still exists
+  // (showing both would be confusing). For multi-item protocols (ENS deeds,
+  // Bounties, Augur, etc.), always render — a user can simultaneously have
+  // unclaimed deeds AND past per-deed claim history.
   const claimedBalances = {};
   let totalClaimedEth = 0;
   for (const [proto, detail] of Object.entries(claimedDetails)) {
-    if (results[proto]) continue; // still has active balance — don't show as claimed
     const contractMeta = meta[proto];
     if (!contractMeta) continue;
-    // Include per-item breakdown for multi-item protocols (ENS deeds, Augur, Bounties, etc.)
     const hasMultipleItems = detail.items.some(i => i.item_id);
+    if (results[proto] && !hasMultipleItems) continue;
     claimedBalances[proto] = {
       contract: contractMeta.c,
       balance_eth: detail.total_eth.toFixed(8),

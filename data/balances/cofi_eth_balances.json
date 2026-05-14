@@ -1,10 +1,10 @@
 {
   "contract": "0x0061c52768378b84306b2665f098c3e0b2c03308",
   "balance_source": "weth",
-  "contract_eth_balance": 50.097148,
+  "contract_eth_balance": 50.10545994,
   "total_eth_in_balances": 49.759032,
-  "addresses_with_balance": 349,
-  "coverage_pct": 99.33,
+  "addresses_with_balance": 414,
+  "coverage_pct": 99.31,
   "scan_date": "2026-04-10 22:46:41 UTC",
   "description": "CoFiX (Computable Finance) launched in October 2020. Users staked CoFi tokens and earned WETH rewards. The project is defunct. Unclaimed WETH rewards are claimable via getReward().",
   "distribution": {
@@ -33,6 +33,7 @@
       "total_eth": 0.53947
     }
   },
+  "last_event_refresh": "2026-05-14 10:23:06 UTC",
   "balances": [
     {
       "address": "0xa8a3feb60a2ef80213c9e5263c36cc8af42dacc2",
@@ -2518,6 +2519,5 @@
       "balance_eth": 0.0,
       "rank": 415
     }
-  ],
-  "last_event_refresh": "2026-05-14 10:23:06 UTC"
+  ]
 }
