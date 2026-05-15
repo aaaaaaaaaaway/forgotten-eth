@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Forgotten ETH — v2 claim card mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf8f1;
+    --text: #2a2520;
+    --text2: #8a7d6e;
+    --border: #e6dfd2;
+    --accent: #6b9b8e;
+    --gold: #c39c4a;
+    --radius: 6px;
+    --font-display: 'Cormorant Garamond', 'Georgia', serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+    --tok-wbtc: #d57b1a;
+    --tok-dai:  #c19024;
+    --tok-usdc: #2775ca;
+    --tok-usdt: #1d8a66;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    background-image:
+      radial-gradient(rgba(138,125,110,0.05) 1px, transparent 1px),
+      radial-gradient(rgba(138,125,110,0.04) 1px, transparent 1px);
+    background-size: 7px 7px, 11px 11px;
+    color: var(--text);
+    font-family: var(--font-display);
+    -webkit-font-smoothing: antialiased;
+  }
+  .frame { max-width: 720px; margin: 0 auto; padding: 56px 24px 96px; }
+  .section-tag {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 14px;
+    color: var(--text2);
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid var(--border);
+    padding: 0 0 6px;
+    margin: 0 0 18px;
+  }
+  .section-tag b { font-style: normal; font-weight: 700; color: var(--text); margin-right: 6px; }
+  .notes {
+    margin: 28px 0 0;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 13px;
+    color: var(--text2);
+    line-height: 1.6;
+  }
+  .notes b { font-style: normal; color: var(--text); font-weight: 600; }
+
+  /* ── Existing claim card styles, copied from index.html (light theme only) ── */
+  .claim-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  .claim-card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: var(--accent);
+    border-radius: 10px 0 0 10px;
+  }
+  /* Per-token left-rail color — D3 variant */
+  .claim-card.dai::before  { background: var(--tok-dai); }
+  .claim-card.usdc::before { background: var(--tok-usdc); }
+  .claim-card.usdt::before { background: var(--tok-usdt); }
+  .claim-card.wbtc::before { background: var(--tok-wbtc); }
+
+  .claim-card:hover { border-color: var(--accent); box-shadow: 2px 2px 0 var(--accent); }
+  .claim-card.dai:hover  { border-color: var(--tok-dai);  box-shadow: 2px 2px 0 var(--tok-dai); }
+  .claim-card.usdc:hover { border-color: var(--tok-usdc); box-shadow: 2px 2px 0 var(--tok-usdc); }
+  .claim-card.usdt:hover { border-color: var(--tok-usdt); box-shadow: 2px 2px 0 var(--tok-usdt); }
+  .claim-card.wbtc:hover { border-color: var(--tok-wbtc); box-shadow: 2px 2px 0 var(--tok-wbtc); }
+
+  .claim-card-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 16px;
+  }
+  .claim-card-name {
+    font-weight: 800;
+    font-size: 18px;
+    white-space: nowrap;
+    color: var(--text);
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .claim-card-amount {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: -0.3px;
+    white-space: nowrap;
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+  .claim-card-amount .denom {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.65;
+    margin-left: 2px;
+  }
+  /* The token chip — D3 design */
+  .token-chip {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 2px 7px 3px;
+    border: 1px solid currentColor;
+    border-radius: 3px;
+    line-height: 1;
+    /* color set per-token below */
+  }
+  .token-chip.dai  { color: var(--tok-dai); }
+  .token-chip.usdc { color: var(--tok-usdc); }
+  .token-chip.usdt { color: var(--tok-usdt); }
+  .token-chip.wbtc { color: var(--tok-wbtc); }
+
+  .claim-card-meta {
+    padding: 10px 16px 12px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border-top: 1px solid var(--border);
+  }
+  .claim-card-meta-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-size: 11px;
+    line-height: 1.6;
+    color: var(--text);
+  }
+  .claim-card-meta-label {
+    color: var(--text2);
+    font-weight: 600;
+    white-space: nowrap;
+    min-width: 62px;
+  }
+  .claim-card-meta-value {
+    font-family: var(--font-mono);
+    color: var(--text);
+  }
+  .claim-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 16px 14px;
+    gap: 8px;
+  }
+  .claim-btn {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    padding: 8px 18px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: var(--font-display);
+    transition: background 0.15s;
+  }
+  .claim-btn:hover { filter: brightness(1.05); }
+  .claim-card.dai  .claim-btn { background: var(--tok-dai); }
+  .claim-card.usdc .claim-btn { background: var(--tok-usdc); }
+  .claim-card.usdt .claim-btn { background: var(--tok-usdt); }
+  .claim-card.wbtc .claim-btn { background: var(--tok-wbtc); }
+</style>
+</head>
+<body>
+<div class="frame">
+
+  <div class="section-tag"><b>D3</b> token chip per claim card · ETH cards unchanged, ERC20 cards get a small chip in the token's brand color</div>
+
+  <!-- Current ETH card — no chip, no token color, baseline reference -->
+  <div class="claim-card">
+    <div class="claim-card-header">
+      <span class="claim-card-name">EtherDelta v2</span>
+      <span class="claim-card-amount">1.2345 <span class="denom">ETH</span></span>
+    </div>
+    <div class="claim-card-meta">
+      <div class="claim-card-meta-row"><span class="claim-card-meta-label">Contract</span><span class="claim-card-meta-value">0x8d12A197cB00D4747a1fe03395095ce2A5CC6819</span></div>
+      <div class="claim-card-meta-row"><span class="claim-card-meta-label">Function</span><span class="claim-card-meta-value">withdraw(uint256)</span></div>
+    </div>
+    <div class="claim-actions"><button class="claim-btn">Release 1.2345 ETH</button></div>
+  </div>
+
+  <!-- DAI claim — token chip, token-tinted left rail + button -->
+  <div class="claim-card dai">
+    <div class="claim-card-header">
+      <span class="claim-card-name">Tribe Redeemer <span class="token-chip dai">DAI</span></span>
+      <span class="claim-card-amount">1,250.00 <span class="denom">DAI</span></span>
+    </div>
+    <div class="claim-card-meta">
+      <div class="claim-card-meta-row"><span class="claim-card-meta-label">Contract</span><span class="claim-card-meta-value">0x4d9629e80118082b939e3d59e69c82a2ec08b4d5</span></div>
+      <div class="claim-card-meta-row"><span class="claim-card-meta-label">Function</span><span class="claim-card-meta-value">redeem(address to, uint256 amountIn)</span></div>
+    </div>
+    <div class="claim-actions"><button class="claim-btn">Redeem 1,250.00 DAI</button></div>
+  </div>
+
+  <!-- USDC claim -->
+  <div class="claim-card usdc">
+    <div class="claim-card-header">
+      <span class="claim-card-name">Example USDC Vault <span class="token-chip usdc">USDC</span></span>
+      <span class="claim-card-amount">580.00 <span class="denom">USDC</span></span>
+    </div>
+    <div class="claim-card-meta">
+      <div class="claim-card-meta-row"><span class="claim-card-meta-label">Contract</span><span class="claim-card-meta-value">0x0000000000000000000000000000000000000000</span></div>
+      <div class="claim-card-meta-row"><span class="claim-card-meta-label">Function</span><span class="claim-card-meta-value">withdraw(uint256)</span></div>
+    </div>
+    <div class="claim-actions"><button class="claim-btn">Release 580.00 USDC</button></div>
+  </div>
+
+  <!-- USDT claim -->
+  <div class="claim-card usdt">
+    <div class="claim-card-header">
+      <span class="claim-card-name">Example USDT Pool <span class="token-chip usdt">USDT</span></span>
+      <span class="claim-card-amount">290.00 <span class="denom">USDT</span></span>
+    </div>
+    <div class="claim-card-meta">
+      <div class="claim-card-meta-row"><span class="claim-card-meta-label">Contract</span><span class="claim-card-meta-value">0x0000000000000000000000000000000000000000</span></div>
+      <div class="claim-card-meta-row"><span class="claim-card-meta-label">Function</span><span class="claim-card-meta-value">withdraw(uint256)</span></div>
+    </div>
+    <div class="claim-actions"><button class="claim-btn">Release 290.00 USDT</button></div>
+  </div>
+
+  <!-- WBTC claim -->
+  <div class="claim-card wbtc">
+    <div class="claim-card-header">
+      <span class="claim-card-name">Example WBTC Custody <span class="token-chip wbtc">WBTC</span></span>
+      <span class="claim-card-amount">0.0150 <span class="denom">WBTC</span></span>
+    </div>
+    <div class="claim-card-meta">
+      <div class="claim-card-meta-row"><span class="claim-card-meta-label">Contract</span><span class="claim-card-meta-value">0x0000000000000000000000000000000000000000</span></div>
+      <div class="claim-card-meta-row"><span class="claim-card-meta-label">Function</span><span class="claim-card-meta-value">withdraw(uint256)</span></div>
+    </div>
+    <div class="claim-actions"><button class="claim-btn">Release 0.0150 WBTC</button></div>
+  </div>
+
+  <p class="notes">
+    <b>What changed for D3:</b><br>
+    1. The <b>left rail</b> takes the token's brand color (orange/yellow/blue/green) instead of the default accent teal — instant visual classification at a glance.<br>
+    2. A small <b>uppercase token chip</b> sits inline next to the protocol name, outlined in the token color. Same vocabulary as the hero sub-counter labels.<br>
+    3. The <b>amount</b> stays gold for the number (matching ETH cards) and gets a small dimmed <code>DAI</code>/<code>USDC</code>/<code>USDT</code>/<code>WBTC</code> suffix in place of "ETH". Same font, same size, just relabelled.<br>
+    4. The <b>Release button</b> picks up the token color too, reinforcing what's being claimed at the moment of action.<br>
+    5. Hover state: border and box-shadow shift to the token color, again — instead of the default accent.<br><br>
+    The ETH card at the top is the baseline reference — completely unchanged from production. Only non-ETH cards get the chip + per-token coloring. A user with mixed ETH + DAI claims sees the same flat list, with the v2 entries gently color-coded.
+  </p>
+</div>
+</body>
+</html>

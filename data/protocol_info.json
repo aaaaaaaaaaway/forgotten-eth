@@ -2230,5 +2230,14 @@
     "contract": "0xd216153c06e857cd7f72665e0af1d7d82172f494",
     "deployed": "August 2019",
     "slug": "relayhub-v1"
+  },
+  "tribe_redeemer": {
+    "name": "Tribe Redeemer",
+    "desc": "Tribe DAO's post-shutdown redemption contract. After Fei/Tribe dissolved in 2022, TRIBE holders can redeem their tokens for a proportional share of a 4-token basket (stETH, LQTY, FOX, DAI) at the rate set by the contract's redeemBase. Single-step approve + redeem. First v2 ERC20 integration on Forgotten ETH \u2014 only the DAI portion contributes to the hero token counter.",
+    "category": "defi",
+    "color": "#c19024",
+    "contract": "0x4d9629e80118082b939e3d59e69c82a2ec08b4d5",
+    "deployed": "August 2022",
+    "slug": "tribe-redeemer"
   }
 }

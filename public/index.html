@@ -516,11 +516,137 @@
     text-shadow: 0 0 10px rgba(126, 200, 190, 0.3);
   }
 
+  /* ── v2 ERC20 sub-counters (gated by SHOW_V2_SUBCOUNTERS in app.js) ── */
+  :root {
+    --tok-wbtc: #d57b1a;
+    --tok-dai:  #c19024;
+    --tok-usdc: #2775ca;
+    --tok-usdt: #1d8a66;
+  }
+  [data-theme="dark"] {
+    --tok-wbtc: #f7931a;
+    --tok-dai:  #f5ac37;
+    --tok-usdc: #4592e0;
+    --tok-usdt: #50bb95;
+  }
+  [data-theme^="corrupt"] {
+    --tok-wbtc: #ff9020;
+    --tok-dai:  #ffcc00;
+    --tok-usdc: #00ffff;
+    --tok-usdt: #00ff65;
+  }
+  /* Direction B: per-token mini pixel-progress bars, half-scale of the ETH
+     hero's 77-block bar. Each token gets a 24-block bar in its brand color
+     plus tiny label/percentage/counter text. The whole row is muted
+     (opacity 0.62) so the ETH hero stays dominant and the connect-wallet
+     section below carries more relative visual weight. Single-row layout
+     on desktop; 2x2 on tablet; stacked on mobile. */
+  .subcounters-rows {
+    margin: 22px auto 0;
+    max-width: 720px;
+    display: none;            /* feature-flag default; app.js flips when v2 data is wired */
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    opacity: 1;
+  }
+  .subcounters-rows.show { display: flex; }
+  .subcounters-rows .row {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+  .sub {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1 1 140px;
+    min-width: 130px;
+    max-width: 180px;
+    text-decoration: none;
+    font-family: var(--font-display);
+    transition: transform 0.18s ease;
+  }
+  .sub:hover { transform: translateY(-1px); }
+
+  .sub .token-label {
+    color: inherit;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .sub-progress-blocks {
+    display: flex;
+    gap: 1.5px;
+    margin-bottom: 5px;
+    height: 7px;
+    color: inherit;
+  }
+  .sub-progress-block {
+    flex: 1;
+    border: 1px solid currentColor;
+    border-radius: 1px;
+    opacity: 0.22;
+    transition: opacity 0.3s, background 0.3s;
+  }
+  .sub-progress-block.filled {
+    background: currentColor;
+    opacity: 1;
+  }
+  [data-theme="dark"] .sub-progress-block { opacity: 0.28; }
+  [data-theme="dark"] .sub-progress-block.filled { opacity: 1; }
+
+  .sub-counter {
+    color: inherit;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 11px;
+    opacity: 0.85;
+    line-height: 1.35;
+  }
+  .sub-counter .claimed-val {
+    font-family: var(--font-mono);
+    font-style: normal;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.2px;
+  }
+  .sub-counter .total-val {
+    font-family: var(--font-mono);
+    font-style: normal;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.2px;
+    opacity: 0.65;
+  }
+
+  .sub.wbtc { color: var(--tok-wbtc); }
+  .sub.dai  { color: var(--tok-dai); }
+  .sub.usdc { color: var(--tok-usdc); }
+  .sub.usdt { color: var(--tok-usdt); }
+
+  @media (max-width: 720px) {
+    .subcounters-rows .row { gap: 22px 32px; }
+    .sub { flex: 1 1 38%; max-width: 230px; }
+  }
+  @media (max-width: 480px) {
+    .sub { flex: 1 1 100%; max-width: 100%; }
+  }
+
   /* ── Project description ── */
   .project-desc { color: var(--text2); font-size: 13px; line-height: 1.6; margin-bottom: 16px; }
 
   /* ── Connect Section ── */
-  .connect-section { background: var(--connect-bg); border: 1px solid var(--connect-border); border-left: 3px solid var(--accent); border-radius: 4px 14px 14px 4px; padding: 28px 32px; margin: 12px auto; font-size: 13px; display: flex; flex-direction: column; align-items: stretch; gap: 16px; max-width: 680px; }
+  /* Stronger accent left-border + soft glow so the connect section reads as
+     the primary CTA below the hero, even when the v2 sub-counters are visible
+     above it. The sub-counters are intentionally faded (opacity ~0.62) so
+     this section carries more relative visual weight. */
+  .connect-section { background: var(--connect-bg); border: 1px solid var(--connect-border); border-left: 5px solid var(--accent); border-radius: 4px 14px 14px 4px; padding: 28px 32px; margin: 16px auto; font-size: 13px; display: flex; flex-direction: column; align-items: stretch; gap: 16px; max-width: 680px; box-shadow: 0 1px 3px rgba(0,0,0,0.02), -8px 0 24px -16px var(--accent); }
   .connect-input-row { display: flex; gap: 10px; align-items: flex-start; }
   .connect-divider { display: flex; align-items: center; gap: 12px; color: var(--text2); font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 500; opacity: 0.5; }
   .connect-divider::before, .connect-divider::after { content: ''; flex: 1; height: 1px; background: var(--border); }
@@ -654,6 +780,60 @@
     display: none;
     align-self: center;
   }
+  /* v2 ERC20 claim card — D3: per-token left rail + small uppercase token chip
+     inline next to the protocol name. The amount stays in gold (matching ETH)
+     but the denomination flips to DAI / USDC / USDT / WBTC. */
+  .claim-card.v2-dai::before  { background: var(--tok-dai); }
+  .claim-card.v2-usdc::before { background: var(--tok-usdc); }
+  .claim-card.v2-usdt::before { background: var(--tok-usdt); }
+  .claim-card.v2-wbtc::before { background: var(--tok-wbtc); }
+  .claim-card.v2-dai:hover,
+  .claim-card.v2-usdc:hover,
+  .claim-card.v2-usdt:hover,
+  .claim-card.v2-wbtc:hover { border-color: currentColor; }
+  .claim-card.v2-dai:hover  { color: var(--tok-dai); }
+  .claim-card.v2-usdc:hover { color: var(--tok-usdc); }
+  .claim-card.v2-usdt:hover { color: var(--tok-usdt); }
+  .claim-card.v2-wbtc:hover { color: var(--tok-wbtc); }
+  .v2-token-chip {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 2px 7px 3px;
+    border: 1px solid currentColor;
+    border-radius: 3px;
+    line-height: 1;
+    vertical-align: 2px;
+    margin-left: 10px;
+  }
+  .v2-token-chip.dai  { color: var(--tok-dai); }
+  .v2-token-chip.usdc { color: var(--tok-usdc); }
+  .v2-token-chip.usdt { color: var(--tok-usdt); }
+  .v2-token-chip.wbtc { color: var(--tok-wbtc); }
+  .claim-card-amount .denom {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.65;
+    margin-left: 2px;
+  }
+  /* Multi-asset hero — token symbols get their brand color, ETH stays accent. */
+  .claim-hero .hero-asset-amount { font-variant-numeric: tabular-nums; }
+  .claim-hero .hero-asset-sym {
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    opacity: 0.85;
+    margin-left: 4px;
+  }
+  .claim-hero .hero-asset-sym-eth  { color: inherit; }
+  .claim-hero .hero-asset-sym-dai  { color: var(--tok-dai); opacity: 1; }
+  .claim-hero .hero-asset-sym-usdc { color: var(--tok-usdc); opacity: 1; }
+  .claim-hero .hero-asset-sym-usdt { color: var(--tok-usdt); opacity: 1; }
+  .claim-hero .hero-asset-sym-wbtc { color: var(--tok-wbtc); opacity: 1; }
+  .claim-hero .claim-hero-amount + .claim-hero-amount { margin-top: 4px; }
   .claim-card-meta {
     padding: 10px 16px 12px 16px;
     display: flex;
@@ -1266,7 +1446,7 @@
 
   <main id="main">
   <div class="hero fade-in fade-in-2">
-    <p class="hero-tagline"><span style="font-weight:600">Thousands of ETH sit forgotten in defunct contracts from the 2015&ndash;2022 era.</span><br><span style="color:var(--text2)">The original frontends are offline. <a href="https://debank.com" target="_blank" rel="noopener noreferrer">DeBank</a>, <a href="https://zapper.xyz" target="_blank" rel="noopener noreferrer">Zapper</a>, and other portfolio trackers don't detect them.</span></p>
+    <p class="hero-tagline"><span style="font-weight:600">Thousands of ETH sit forgotten in defunct contracts.</span><br><span style="color:var(--text2)">The original frontends are offline. <a href="https://debank.com" target="_blank" rel="noopener noreferrer">DeBank</a>, <a href="https://zapper.xyz" target="_blank" rel="noopener noreferrer">Zapper</a>, and other portfolio trackers don't detect them.</span></p>
     <div class="hero-stat fade-in fade-in-3">
       <div class="hero-amount" id="totalAllEth"><span class="hero-eth-value">&mdash;</span> <span class="hero-eth-label">ETH</span><span class="hero-cursor"></span></div>
       <div class="hero-label">forgotten across <span id="totalContracts">&mdash;</span> contracts</div>
@@ -1275,6 +1455,31 @@
           <span class="hero-progress-pct" id="heroPct"></span>
         </div>
         <div class="hero-progress-counter" id="heroCounter"></div>
+      </div>
+      <!-- v2 ERC20 sub-counters — gated by SHOW_V2_SUBCOUNTERS in app.js. Populated from /api/v2-totals when wired. -->
+      <div class="subcounters-rows" id="v2SubCounters">
+        <div class="row">
+          <a class="sub usdc" href="#" data-token="usdc">
+            <span class="token-label">USDC</span>
+            <div class="sub-progress-blocks" id="v2UsdcBlocks"></div>
+            <div class="sub-counter"><span class="claimed-val" id="v2UsdcClaimed">—</span> of <span class="total-val" id="v2UsdcTotal">—</span> claimed</div>
+          </a>
+          <a class="sub dai" href="#" data-token="dai">
+            <span class="token-label">DAI</span>
+            <div class="sub-progress-blocks" id="v2DaiBlocks"></div>
+            <div class="sub-counter"><span class="claimed-val" id="v2DaiClaimed">—</span> of <span class="total-val" id="v2DaiTotal">—</span> claimed</div>
+          </a>
+          <a class="sub usdt" href="#" data-token="usdt">
+            <span class="token-label">USDT</span>
+            <div class="sub-progress-blocks" id="v2UsdtBlocks"></div>
+            <div class="sub-counter"><span class="claimed-val" id="v2UsdtClaimed">—</span> of <span class="total-val" id="v2UsdtTotal">—</span> claimed</div>
+          </a>
+          <a class="sub wbtc" href="#" data-token="wbtc">
+            <span class="token-label">WBTC</span>
+            <div class="sub-progress-blocks" id="v2WbtcBlocks"></div>
+            <div class="sub-counter"><span class="claimed-val" id="v2WbtcClaimed">—</span> of <span class="total-val" id="v2WbtcTotal">—</span> claimed</div>
+          </a>
+        </div>
       </div>
     </div>
   </div>

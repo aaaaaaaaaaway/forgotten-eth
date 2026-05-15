@@ -199,6 +199,10 @@ export default async function handler(req, res) {
       let neufundClaimable = typeof val === 'object' && 'ncl' in val ? val.ncl : null;
       let neufundNeuNeededWei = typeof val === 'object' && val.nn ? val.nn : null;
       let neufundNeuBalanceWei = typeof val === 'object' && val.nbb ? val.nbb : null;
+      // v2 ERC20 token balances (D3 claim card) + optional redemption-token
+      // balance (e.g., TRIBE for tribe_redeemer's approve+redeem flow).
+      let v2TokenBalances = typeof val === 'object' && val.tkb ? val.tkb : null;
+      let v2TribeRaw      = typeof val === 'object' && val.trb ? val.trb : null;
 
       if (itemsClaimed && itemsClaimed.size > 0) {
         if (deeds) {
@@ -300,6 +304,8 @@ export default async function handler(req, res) {
           ...(neufundNeuNeededWei ? { neufund_neu_needed_wei: neufundNeuNeededWei } : {}),
           ...(neufundNeuBalanceWei ? { neufund_neu_balance_wei: neufundNeuBalanceWei } : {}),
         } : {}),
+        ...(v2TokenBalances ? { token_balances: v2TokenBalances } : {}),
+        ...(v2TribeRaw ? { tribe_balance_raw: v2TribeRaw } : {}),
       };
     }
   }

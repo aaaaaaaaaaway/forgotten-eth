@@ -362,6 +362,13 @@ function fmtUsd(v) { return '$' + parseFloat(v).toLocaleString('en', {minimumFra
 
 // Donation flow
 const DONATION_ADDRESS = '0x95a708aAAB1D336bB60EF2F40212672F4cf65736';
+const WETH9_ADDRESS = '0xC02aaa39b223FE8D0A0e5C4F27eAD9083C756Cc2';
+// Set by showDonationModal when the just-completed claim returned WETH (rather
+// than native ETH). sendDonation reads this and routes the donation through
+// WETH9.transfer instead of a native value-bearing tx — the user usually
+// doesn't have ETH lying around for gas+donation when their balance arrived
+// as WETH.
+var _lastClaimWasWETH = false;
 
 async function sendDonation(amountWei) {
   if (!walletSigner) { throw new Error('Please connect your wallet first.'); }
@@ -369,8 +376,15 @@ async function sendDonation(amountWei) {
   if (!ethers.isAddress(DONATION_ADDRESS)) { throw new Error('Donation address not configured'); }
   if (!await checkNetwork()) { throw new Error('Please switch to Ethereum Mainnet'); }
 
-  var tx = await walletSigner.sendTransaction({ to: DONATION_ADDRESS, value: amountWei });
-  window.va?.track?.('donation_sent', { amount_eth: ethers.formatEther(amountWei), tx_hash: tx.hash });
+  var tx;
+  if (_lastClaimWasWETH) {
+    var iface = new ethers.Interface(['function transfer(address to, uint256 amount) returns (bool)']);
+    var data = iface.encodeFunctionData('transfer', [DONATION_ADDRESS, amountWei]);
+    tx = await walletSigner.sendTransaction({ to: WETH9_ADDRESS, data: data });
+  } else {
+    tx = await walletSigner.sendTransaction({ to: DONATION_ADDRESS, value: amountWei });
+  }
+  window.va?.track?.('donation_sent', { amount_eth: ethers.formatEther(amountWei), tx_hash: tx.hash, asset: _lastClaimWasWETH ? 'WETH' : 'ETH' });
   var receipt = await tx.wait();
   if (!receipt || receipt.status !== 1) { throw new Error('Donation transaction failed'); }
   logEvent('claim_confirmed', {
@@ -427,8 +441,14 @@ var _donationModalShown = false;
 var _donationModalSuppressed = false;
 var _lastClaimTxHash = null; // Track last claim tx for donation modal link
 
-function showDonationModal(totalEth) {
-  console.log('[Donation] showDonationModal called:', totalEth, 'ETH | shown:', _donationModalShown, '| suppressed:', _donationModalSuppressed);
+function showDonationModal(totalEth, protocolKey) {
+  // protocolKey is optional — when present, look up balance_source so a
+  // WETH-payout claim opens the modal in WETH-donation mode (transfer the
+  // WETH9 ERC-20 the user just received, rather than asking for native ETH
+  // they probably don't have).
+  _lastClaimWasWETH = !!(protocolKey && EXCHANGES[protocolKey] && EXCHANGES[protocolKey].balance_source === 'weth');
+  var assetLabel = _lastClaimWasWETH ? 'WETH' : 'ETH';
+  console.log('[Donation] showDonationModal called:', totalEth, assetLabel, '| shown:', _donationModalShown, '| suppressed:', _donationModalSuppressed);
   if (_donationModalShown) { logEvent('found', { extra: { donation_modal: 'skipped_already_shown', eth: totalEth } }); return; }
   if (_donationModalSuppressed) { logEvent('found', { extra: { donation_modal: 'skipped_suppressed', eth: totalEth } }); return; }
   if (totalEth < 0.1) { console.log('[Donation] Below threshold:', totalEth); return; }
@@ -508,7 +528,7 @@ function showDonationModal(totalEth) {
   recoveredAmount.id = 'donationModalTitle';
   recoveredAmount.style.cssText = 'font-size:32px;font-weight:800;letter-spacing:-1px;line-height:1.2;background:linear-gradient(90deg, #b45309 0%, #d97706 20%, #fbbf24 50%, #d97706 80%, #b45309 100%);background-size:200% 100%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 2s ease-in-out infinite;';
   var ethVal = fmtEth(totalEth.toString());
-  recoveredAmount.textContent = ethVal + ' ETH';
+  recoveredAmount.textContent = ethVal + ' ' + assetLabel;
   var recoveredSub = document.createElement('div');
   recoveredSub.style.cssText = 'font-size:12px;color:var(--text2);font-weight:500;margin-top:4px;letter-spacing:0.3px;';
   if (_lastClaimTxHash) {
@@ -635,7 +655,7 @@ function showDonationModal(totalEth) {
   var ethPreview = document.createElement('span');
   ethPreview.id = 'modalDonationUsd';
   ethPreview.style.cssText = 'font-size:11px;color:var(--text2);opacity:0.7;';
-  var ethPreviewText = '= ' + defaultAmt + ' ETH';
+  var ethPreviewText = '= ' + defaultAmt + ' ' + assetLabel;
   if (_ethPrice) ethPreviewText += ' (' + fmtUsd(parseFloat(defaultAmt) * _ethPrice) + ')';
   ethPreview.textContent = ethPreviewText;
   customRow.appendChild(ethPreview);
@@ -644,7 +664,7 @@ function showDonationModal(totalEth) {
   var confirmBtn = document.createElement('button');
   confirmBtn.id = 'modalDonateBtn';
   confirmBtn.style.cssText = 'display:inline-block;padding:10px 28px;font-family:inherit;font-size:13px;font-weight:600;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;transition:all 0.15s;';
-  confirmBtn.textContent = 'Donate ' + defaultAmt + ' ETH';
+  confirmBtn.textContent = 'Donate ' + defaultAmt + ' ' + assetLabel;
   confirmBtn.addEventListener('mouseenter', function() { confirmBtn.style.transform = 'translateY(-1px)'; confirmBtn.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)'; });
   confirmBtn.addEventListener('mouseleave', function() { confirmBtn.style.transform = ''; confirmBtn.style.boxShadow = ''; });
   confirmWrap.appendChild(confirmBtn);
@@ -787,10 +807,10 @@ function showDonationModal(totalEth) {
     var claimEth = parseFloat(amtInput.dataset.claimEth) || 0;
     var ethAmt = claimEth * pct / 100;
     var ethStr = fmtDonation(ethAmt);
-    var hint = '= ' + ethStr + ' ETH';
+    var hint = '= ' + ethStr + ' ' + assetLabel;
     if (_ethPrice) hint += ' (' + fmtUsd(ethAmt * _ethPrice) + ')';
     ethPreview.textContent = ethAmt > 0 ? hint : '';
-    var label = 'Donate ' + ethStr + ' ETH';
+    var label = 'Donate ' + ethStr + ' ' + assetLabel;
     if (_ethPrice) label += ' (' + fmtUsd(ethAmt * _ethPrice) + ')';
     confirmBtn.textContent = label;
     confirmBtn.dataset.ethAmt = ethStr;
@@ -984,6 +1004,13 @@ async function checkLiveBalance(address, contractAddr) {
     return null;
   }
 }
+
+// ─── Feature flags ───
+// v2 ERC20 hero sub-counters (WBTC/DAI/USDC/USDT under the main ETH number).
+// Markup + CSS already live in index.html. On the v2-hero-subcounters branch
+// this is true and points at a stub /api/v2-totals returning illustrative
+// numbers — main has it false so the markup ships dark.
+const SHOW_V2_SUBCOUNTERS = true;
 
 // ─── ENS Deed Lookup ───
 const ENS_REGISTRAR = '0x6090A6e47849629b7245Dfa1Ca21D94cd15878Ef';
@@ -4311,6 +4338,26 @@ const EXCHANGES = {
     withdrawArgs: (amount, user) => [amount, user],
     withdrawCall: 'withdraw',
   },
+  // v2 ERC20 — first non-ETH-payout protocol. `payoutToken` triggers the
+  // D3 claim-card chip + DAI denomination. `tribeTokenAddress` + `approveAbi`
+  // mark the two-step approve→redeem flow.
+  tribe_redeemer: {
+    name: 'Tribe Redeemer',
+    desc: "Post-shutdown redemption for Tribe DAO. TRIBE token holders can redeem for a proportional share of a 4-token basket (stETH, LQTY, FOX, DAI). Two-step: approve TRIBE → call redeem(to, amount). Only DAI counts on the v2 hero counter.",
+    category: 'defi',
+    color: '#c19024',
+    contract: '0x4d9629e80118082b939e3d59e69c82a2ec08b4d5',
+    deployed: 'August 2022',
+    payoutToken: 'DAI',
+    payoutTokenAddress: '0x6b175474e89094c44da98b954eedeac495271d0f',
+    tribeTokenAddress: '0xc7283b66eb1eb5fb86327f08e1b5816b0720212b',
+    noWalletCheck: true,
+    multiStep: true,
+    approveAbi: 'function approve(address spender, uint256 amount)',
+    withdrawAbi: 'function redeem(address to, uint256 amountIn)',
+    withdrawArgs: (amount, user) => [user, amount],
+    withdrawCall: 'redeem',
+  },
 };
 
 // Per-tab state
@@ -4398,6 +4445,146 @@ function fmtEth(v) {
   return n.toLocaleString('en', {minimumFractionDigits: 2, maximumFractionDigits: 2});
 }
 function fmtNum(n) { return Number(n).toLocaleString('en'); }
+
+// v2 ERC20 token decimals (single source of truth used by formatters + handlers).
+const V2_TOKEN_DECIMALS = { DAI: 18, USDC: 6, USDT: 6, WBTC: 8 };
+
+// Sum claimable amounts across all matched protocols, grouped by asset symbol.
+// Returns { ETH: number, DAI: number, ... } — missing symbols → 0.
+// ETH comes from `balance_eth`; ERC20s come from `token_balances`.
+function computeAssetTotals(apiBalances) {
+  const totals = { ETH: 0 };
+  if (!apiBalances) return totals;
+  for (const entry of Object.values(apiBalances)) {
+    if (!entry) continue;
+    const ethVal = parseFloat(entry.balance_eth || '0');
+    if (isFinite(ethVal) && ethVal > 0) totals.ETH += ethVal;
+    const tb = entry.token_balances || {};
+    for (const [sym, raw] of Object.entries(tb)) {
+      const dec = V2_TOKEN_DECIMALS[sym] || 18;
+      try {
+        const amt = parseFloat(ethers.formatUnits(BigInt(raw), dec));
+        if (amt > 0) totals[sym] = (totals[sym] || 0) + amt;
+      } catch (_) { /* ignore parse errors */ }
+    }
+  }
+  return totals;
+}
+
+// Render the claim-hero block: one line per non-zero asset, ETH first, then
+// tokens alphabetically. USD shown only when ETH > 0 (stablecoin USD ≈ amount;
+// we surface it implicitly via the larger DAI/USDC number).
+function renderHeroAmounts(totals, ethPrice) {
+  const entries = Object.entries(totals).filter(([_, v]) => v > 0);
+  if (entries.length === 0) return '';
+  entries.sort((a, b) => {
+    if (a[0] === 'ETH') return -1;
+    if (b[0] === 'ETH') return 1;
+    return a[0].localeCompare(b[0]);
+  });
+  let html = '';
+  for (const [sym, amt] of entries) {
+    let formatted;
+    if (sym === 'ETH') {
+      formatted = fmtEth(amt);
+    } else if (sym === 'WBTC') {
+      formatted = amt.toLocaleString('en', { maximumFractionDigits: 4 });
+    } else {
+      formatted = amt.toLocaleString('en', { maximumFractionDigits: 2 });
+    }
+    html += `<div class="claim-hero-amount"><span class="hero-asset-amount">${esc(formatted)}</span> <span class="hero-asset-sym hero-asset-sym-${sym.toLowerCase()}">${esc(sym)}</span></div>`;
+  }
+  if (totals.ETH > 0 && ethPrice) {
+    html += `<div class="claim-hero-usd">${fmtUsd(totals.ETH * ethPrice)}</div>`;
+  }
+  return html;
+}
+
+// Used in the banner title — single asset shows "Claimable ETH Found";
+// mixed assets show "Claimable Assets Found".
+function bannerTitleFor(totals) {
+  const nonZero = Object.entries(totals).filter(([_, v]) => v > 0);
+  if (nonZero.length === 0) return 'Scan Complete';
+  if (nonZero.length === 1) return `Claimable ${nonZero[0][0]} Found`;
+  return 'Claimable Assets Found';
+}
+
+// Compact-format big numbers as "1.84M", "32.4K", or "32.4" — used by v2 sub-counters.
+// Returns { value: "1.84", unit: "M" } so the caller can style the unit suffix dimmer.
+function fmtCompact(n) {
+  const v = parseFloat(n);
+  if (!isFinite(v) || v === 0) return { value: '—', unit: '' };
+  const abs = Math.abs(v);
+  if (abs >= 1e9) return { value: (v / 1e9).toFixed(2), unit: 'B' };
+  if (abs >= 1e6) return { value: (v / 1e6).toFixed(2), unit: 'M' };
+  if (abs >= 1e3) return { value: (v / 1e3).toFixed(1), unit: 'K' };
+  if (abs >= 100) return { value: v.toFixed(0), unit: '' };
+  if (abs >= 1)   return { value: v.toFixed(2), unit: '' };
+  return { value: v.toFixed(4), unit: '' };
+}
+
+// Full-amount formatter for v2 sub-counters: thousand-separated integers for
+// large amounts (e.g. "2,300,000"), up to 2 decimals for small ones (e.g.
+// "33.9", "1.5"). Matches the ETH hero's full-number style — no K/M truncation.
+function fmtFullAmount(n) {
+  const v = parseFloat(n);
+  if (!isFinite(v) || v === 0) return '0';
+  if (Math.abs(v) >= 1000) return Math.round(v).toLocaleString('en');
+  if (Math.abs(v) >= 1)    return v.toLocaleString('en', { minimumFractionDigits: 0, maximumFractionDigits: 2 });
+  return v.toLocaleString('en', { minimumFractionDigits: 0, maximumFractionDigits: 4 });
+}
+
+// v2 sub-counter populator. Pulls per-token { claimed, total } from /api/v2-totals
+// and renders the "Direction B" mini progress UI: 24-block pixel bar + percentage
+// header + italic "X of Y claimed" subline, all in the token's brand color.
+// Reuses the ETH hero's pixel-block visual vocabulary at half-scale.
+//
+// Expected endpoint shape:
+//   { tokens: { wbtc: { claimed, total }, dai: {...}, usdc: {...}, usdt: {...} } }
+async function populateV2SubCounters() {
+  let data;
+  try {
+    const resp = await fetch('/api/v2-totals');
+    if (!resp.ok) return;
+    data = await resp.json();
+  } catch (e) { return; }
+  if (!data || !data.tokens) return;
+
+  const SUB_BLOCKS = 24;
+
+  const setCell = (key, label) => {
+    const t = data.tokens[key] || { claimed: 0, total: 0 };
+    const claimed = parseFloat(t.claimed) || 0;
+    const total   = parseFloat(t.total)   || 0;
+    const pct     = total > 0 ? (claimed / total * 100) : 0;
+
+    const cEl = document.getElementById('v2' + label + 'Claimed');
+    const tEl = document.getElementById('v2' + label + 'Total');
+    if (cEl) cEl.textContent = fmtFullAmount(claimed);
+    if (tEl) tEl.textContent = fmtFullAmount(total);
+
+    // 24-block bar — at least 1 filled if claimed > 0, capped at SUB_BLOCKS.
+    const blocksEl = document.getElementById('v2' + label + 'Blocks');
+    if (blocksEl) {
+      let filled = Math.round(pct / 100 * SUB_BLOCKS);
+      if (claimed > 0 && filled < 1) filled = 1;
+      if (filled > SUB_BLOCKS) filled = SUB_BLOCKS;
+      blocksEl.replaceChildren();
+      for (let i = 0; i < SUB_BLOCKS; i++) {
+        const b = document.createElement('div');
+        b.className = 'sub-progress-block' + (i < filled ? ' filled' : '');
+        blocksEl.appendChild(b);
+      }
+    }
+  };
+  setCell('wbtc', 'Wbtc');
+  setCell('dai',  'Dai');
+  setCell('usdc', 'Usdc');
+  setCell('usdt', 'Usdt');
+
+  const container = document.getElementById('v2SubCounters');
+  if (container) container.classList.add('show');
+}
 function truncAddr(a) { return a.slice(0, 8) + '...' + a.slice(-6); }
 function etherscanAddr(a) { return `https://etherscan.io/address/${encodeURIComponent(a)}`; }
 function etherscanTx(h) { return `https://etherscan.io/tx/${encodeURIComponent(h)}`; }
@@ -4638,6 +4825,14 @@ async function checkUserBalances(overrideAddress) {
       if (cfg.noWalletCheck) {
         if (apiEntry) {
           if (apiEntry.deeds) window._apiDeeds = apiEntry.deeds;
+          // v2 ERC20 protocols (payoutToken set) have balance_wei = 0 because
+          // the claim is denominated in DAI/USDC/etc, not ETH. Return a
+          // sentinel 1n so the protocol passes the `balance > 0n` gate; the
+          // actual claim amount lives in apiEntry.token_balances and the
+          // render branch reads it directly.
+          if (cfg.payoutToken && apiEntry.token_balances && Object.keys(apiEntry.token_balances).length > 0) {
+            return { key, balance: 1n };
+          }
           console.log('[Scan] noWalletCheck HIT:', key, 'wei:', apiEntry.balance_wei);
           return { key, balance: BigInt(apiEntry.balance_wei) };
         }
@@ -4843,6 +5038,23 @@ async function checkUserBalances(overrideAddress) {
       } catch (e) {
         console.warn(`Failed to check lock state for ${key}:`, e);
       }
+    }
+  }
+
+  // v2 ERC20 redemption flows — preload the redemption-token balance +
+  // allowance to the protocol contract. Mirrors _digixState. Anonymous
+  // address lookups skip this (no wallet to sign with anyway).
+  window._v2State = {};
+  for (const { key } of balanceResults) {
+    const cfg = EXCHANGES[key];
+    if (!cfg.payoutToken || !cfg.tribeTokenAddress || !walletProvider) continue;
+    try {
+      const tribeC = new ethers.Contract(cfg.tribeTokenAddress, ['function balanceOf(address) view returns (uint256)', 'function allowance(address,address) view returns (uint256)'], walletProvider);
+      const tribeBal = await tribeC.balanceOf(checkAddr);
+      const tribeAllowance = await tribeC.allowance(checkAddr, cfg.contract);
+      window._v2State[key] = { tribeBal, tribeAllowance };
+    } catch (e) {
+      console.warn('Failed to read v2 state for', key, e.message || e);
     }
   }
 
@@ -5177,6 +5389,62 @@ async function checkUserBalances(overrideAddress) {
                 <div class="claim-card-meta-row"><span class="claim-card-meta-label">${msigLabel}</span><span class="claim-card-meta-value"><a href="${etherscanAddr(msigAddr)}" target="_blank" rel="noopener noreferrer">${msigAddr}</a></span></div>
                 <div class="claim-card-meta-row"><span class="claim-card-meta-label">Step 1</span><span class="claim-card-meta-value"><span style="color:var(--text)">${isParityMultisig ? 'execute(DAO, 0, approve(WithdrawDAO, balance))' : 'approve(WithdrawDAO, balance)'}</span></span></div>
                 <div class="claim-card-meta-row"><span class="claim-card-meta-label">Step 2</span><span class="claim-card-meta-value"><span style="color:var(--text)">${isParityMultisig ? 'execute(WithdrawDAO, 0, withdraw())' : 'withdraw()'}</span></span></div>
+                ${stepInfo}
+              </div>
+              <div class="claim-card-actions">
+                ${actionBtn}
+              </div>
+              <div class="claim-card-status" id="claimStatus-${key}"></div>
+            </div>`;
+        } else if (cfg.payoutToken) {
+          // v2 ERC20 claim card (D3). First instance: TribeRedeemer paying DAI.
+          // Reads redemption-token balance + allowance from window._v2State
+          // (populated by the preflight loop above). Amount + chip + per-token
+          // left-rail use cfg.payoutToken to drive the styling and denomination.
+          const TOKEN_DECIMALS = { DAI: 18, USDC: 6, USDT: 6, WBTC: 8 };
+          const tokenSym = cfg.payoutToken;
+          const tokenSymLc = tokenSym.toLowerCase();
+          const decimals = TOKEN_DECIMALS[tokenSym] || 18;
+          const tokenBalances = (apiBalances[key] || {}).token_balances || {};
+          const rawAmount = BigInt(tokenBalances[tokenSym] || '0');
+          const amountHuman = ethers.formatUnits(rawAmount, decimals);
+          const amountDisplay = parseFloat(amountHuman).toLocaleString('en', {
+            minimumFractionDigits: 0,
+            maximumFractionDigits: decimals === 18 ? 4 : decimals,
+          });
+
+          const v2State = window._v2State?.[key];
+          const tribeBal = v2State?.tribeBal || 0n;
+          const tribeAllowance = v2State?.tribeAllowance || 0n;
+          const needsApproval = tribeAllowance < tribeBal;
+
+          let actionBtn, stepInfo;
+          if (!walletProvider) {
+            actionBtn = `<button class="claim-btn" disabled style="opacity:0.5">Connect wallet to redeem</button>`;
+            stepInfo = `<div class="claim-card-meta-row" style="margin-top:4px;padding-top:6px;border-top:1px solid rgba(255,255,255,0.06)"><span class="claim-card-meta-label" style="color:#facc15">Connect wallet</span><span class="claim-card-meta-value" style="color:#facc15">Required to sign the 2-step approve + redeem.</span></div>`;
+          } else if (tribeBal === 0n) {
+            actionBtn = `<button class="claim-btn" disabled style="opacity:0.5">No TRIBE</button>`;
+            stepInfo = `<div class="claim-card-meta-row" style="margin-top:4px;padding-top:6px;border-top:1px solid rgba(255,255,255,0.06)"><span class="claim-card-meta-label" style="color:var(--red)">Blocked</span><span class="claim-card-meta-value" style="color:var(--red)">TRIBE balance is 0. Tokens may have been transferred or sold.</span></div>`;
+          } else if (needsApproval) {
+            actionBtn = `<button class="claim-btn" id="claimBtn-${key}" data-action="tribe-approve" data-key="${key}">Step 1: Approve TRIBE</button><button class="claim-btn" disabled style="opacity:0.35">Step 2: Redeem ${tokenSym}</button>`;
+            stepInfo = `<div class="claim-card-meta-row" style="margin-top:4px;padding-top:6px;border-top:1px solid rgba(255,255,255,0.06)"><span class="claim-card-meta-label" style="color:#facc15">Status</span><span class="claim-card-meta-value" style="color:#facc15">Redeems ALL TRIBE at once for the basket [stETH, LQTY, FOX, ${tokenSym}].</span></div>`;
+          } else {
+            actionBtn = `<button class="claim-btn" disabled style="opacity:0.35">Step 1: Approved</button><button class="claim-btn" id="claimBtn-${key}" data-action="tribe-redeem" data-key="${key}">Step 2: Redeem ${tokenSym}</button>`;
+            stepInfo = `<div class="claim-card-meta-row" style="margin-top:4px;padding-top:6px;border-top:1px solid rgba(255,255,255,0.06)"><span class="claim-card-meta-label" style="color:var(--green)">Ready</span><span class="claim-card-meta-value" style="color:var(--green)">TRIBE approved. Click Step 2 to redeem the basket.</span></div>`;
+          }
+
+          const lastTx = apiBalances[key]?.last_tx_date ? apiBalances[key] : null;
+          html += `
+            <div class="claim-card v2-${tokenSymLc}">
+              <div class="claim-card-header">
+                <span class="claim-card-name">${esc(cfg.name)}<span class="v2-token-chip ${tokenSymLc}">${esc(tokenSym)}</span></span>
+                <span class="claim-card-amount">${esc(amountDisplay)} <span class="denom">${esc(tokenSym)}</span></span>
+              </div>
+              <div class="claim-card-meta" id="claimDetails-${key}">
+                ${lastTx ? `<div class="claim-card-meta-row"><span class="claim-card-meta-label">Last tx</span><span class="claim-card-meta-value">${esc(lastTx.last_tx_date)} · <a href="${etherscanTx(lastTx.last_tx_hash)}" target="_blank" rel="noopener noreferrer">view tx</a></span></div>` : ''}
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Contract</span><span class="claim-card-meta-value"><a href="${etherscanAddr(cfg.contract)}" target="_blank" rel="noopener noreferrer">${cfg.contract}</a></span></div>
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Step 1</span><span class="claim-card-meta-value"><span style="color:var(--text)">approve(redeemer, balance)</span></span></div>
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Step 2</span><span class="claim-card-meta-value"><span style="color:var(--text)">${esc(cfg.withdrawCall)}(to, amountIn)</span></span></div>
                 ${stepInfo}
               </div>
               <div class="claim-card-actions">
@@ -5907,12 +6175,16 @@ async function checkUserBalances(overrideAddress) {
     <div class="claim-rows-list">${claimedHtml}</div>` + _botCTA;
     var _bannerTitle = 'Scan Complete';
   } else {
-    let totalEth = 0;
-    for (const b of Object.values(userBalances)) { if (b > 0n) totalEth += parseFloat(ethers.formatEther(b)); }
-    const usdStr = ethPrice ? fmtUsd(totalEth * ethPrice) : '';
+    // Multi-asset totals: sum per-token across all matched protocols using
+    // the API response (not userBalances — which carries the sentinel 1n
+    // for v2 ERC20 protocols where balance_eth = 0). Hero renders one line
+    // per non-zero asset; banner title flips to "Claimable Assets Found"
+    // when more than one asset is present.
+    const assetTotals = computeAssetTotals(apiBalances);
+    const totalEth = assetTotals.ETH || 0;
+    const heroAmountsHtml = renderHeroAmounts(assetTotals, ethPrice);
     const prefix = `<div class="claim-hero">
-      <div class="claim-hero-amount">${fmtEth(totalEth)} ETH</div>
-      ${usdStr ? '<div class="claim-hero-usd">' + usdStr + '</div>' : ''}
+      ${heroAmountsHtml}
       <div class="claim-hero-contracts">${claimCount} contract${claimCount > 1 ? 's' : ''}</div>
     </div>`;
     const isMismatch = overrideAddress && overrideAddress.toLowerCase() !== walletAddress.toLowerCase();
@@ -5922,7 +6194,7 @@ async function checkUserBalances(overrideAddress) {
         </div>` : '';
     const claimedSection = claimedHtml ? `<div style="margin-top:16px;padding-top:12px;border-top:1px dashed var(--border)"><div style="font-size:11px;color:var(--text2);margin-bottom:8px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px">Previously Claimed</div>${claimedHtml}</div>` : '';
     html = prefix + '<div class="claim-rows-list">' + html + claimedSection + '</div>' + mismatchNote + _botCTA;
-    var _bannerTitle = 'Claimable ETH Found';
+    var _bannerTitle = bannerTitleFor(assetTotals);
     var _celebrate = true;
     logEvent('found', { address: checkAddr, contracts_found: claimCount, total_eth: totalEth });
   }
@@ -6144,7 +6416,7 @@ async function claimETH(key) {
         <div class="claim-recovered-amount">${fmtEth(ethAmount)} ETH${claimUsd}</div>
         <div class="claim-recovered-tx"><a href="${etherscanTx(tx.hash)}" target="_blank" rel="noopener noreferrer">View transaction on Etherscan</a></div>
       </div>`;
-    showDonationModal(claimedEthNum);
+    showDonationModal(claimedEthNum, key);
     userBalances[key] = 0n;
   } catch (e) {
     if (e.code === 'ACTION_REJECTED' || e.code === 4001) {
@@ -6282,7 +6554,7 @@ async function nucypherRefund(key) {
     const fakeTxHash = '0x' + Array.from({length: 64}, () => '0123456789abcdef'[Math.floor(Math.random()*16)]).join('');
     btn.textContent = '\u2713 Claimed'; btn.classList.remove('pending'); btn.classList.add('claimed'); btn.disabled = true;
     statusEl.innerHTML = `<div class="claim-recovered"><div class="claim-recovered-label">Recovered</div><div class="claim-recovered-amount">${fmtEth(ethAmount)} ETH${claimUsd}</div><div class="claim-recovered-tx"><a href="${etherscanTx(fakeTxHash)}" target="_blank" rel="noopener noreferrer">View transaction on Etherscan</a></div><div style="font-size:10px;color:var(--yellow);margin-top:2px">[TEST MODE]</div></div>`;
-    showDonationModal(claimedEthNum);
+    showDonationModal(claimedEthNum, key);
     userBalances[key] = 0n;
     return;
   }
@@ -6306,7 +6578,7 @@ async function nucypherRefund(key) {
     logEvent('claim_confirmed', { address: walletAddress, contract: key, amount_eth: claimedEthNum, tx_hash: tx.hash, block_num: receipt.blockNumber });
     btn.textContent = '\u2713 Claimed'; btn.classList.remove('pending'); btn.classList.add('claimed'); btn.disabled = true;
     statusEl.innerHTML = `<div class="claim-recovered"><div class="claim-recovered-label">Recovered</div><div class="claim-recovered-amount">${fmtEth(ethAmount)} ETH${claimUsd}</div><div class="claim-recovered-tx"><a href="${etherscanTx(tx.hash)}" target="_blank" rel="noopener noreferrer">View transaction on Etherscan</a></div></div>`;
-    showDonationModal(claimedEthNum);
+    showDonationModal(claimedEthNum, key);
     userBalances[key] = 0n;
   } catch (e) {
     btn.disabled = false; btn.textContent = 'Step 2: Refund ETH'; btn.classList.remove('pending');
@@ -6410,7 +6682,7 @@ async function digixBurn(key) {
       btn.style.opacity = '0.7';
       var claimUsd = _ethPrice ? ' (' + fmtUsd(claimedEthNum * _ethPrice) + ')' : '';
       statusEl.innerHTML = '<div class="claim-recovered"><div class="claim-recovered-label" style="color:var(--green)">Simulation Passed</div><div class="claim-recovered-amount">' + fmtEth(ethAmount) + ' ETH' + claimUsd + '</div><div style="font-size:10px;color:#d946ef;margin-top:2px">[TEST] burn() would succeed</div></div>';
-      showDonationModal(claimedEthNum);
+      showDonationModal(claimedEthNum, key);
     } else {
       btn.textContent = 'SIM FAIL'; btn.classList.remove('pending'); btn.style.background = '#ef4444';
       statusEl.innerHTML = '<span style="color:#ef4444">[TEST] burn() reverted: ' + esc((result.error || '').slice(0, 200)) + '</span>';
@@ -6450,7 +6722,7 @@ async function digixBurn(key) {
         <div class="claim-recovered-tx"><a href="${etherscanTx(tx.hash)}" target="_blank" rel="noopener noreferrer">View transaction on Etherscan</a></div>
       </div>
       `;
-    showDonationModal(claimedEthNum);
+    showDonationModal(claimedEthNum, key);
     userBalances[key] = 0n;
   } catch (e) {
     btn.disabled = false;
@@ -6460,6 +6732,116 @@ async function digixBurn(key) {
       statusEl.textContent = 'Rejected';
     } else {
       statusEl.textContent = 'Burn failed: ' + (e.reason || e.message || 'Unknown error');
+    }
+  }
+}
+
+// ─── v2 ERC20 redemption (2-step: approve redemption token + call redeem) ───
+// First instance: TribeRedeemer paying DAI. cfg fields used:
+//   tribeTokenAddress   — ERC20 to approve (TRIBE)
+//   contract            — the redeemer contract that spends TRIBE and pays out
+//   payoutToken         — the symbol of the basket asset we track (DAI here)
+//   withdrawCall        — name of the redeem function on the contract
+//   withdrawArgs        — (amount, user) => [user, amount] for redeem(to, amountIn)
+
+const TOKEN_DECIMALS_V2 = { DAI: 18, USDC: 6, USDT: 6, WBTC: 8 };
+
+async function tribeApprove(key) {
+  const cfg = EXCHANGES[key];
+  const btn = document.getElementById('claimBtn-' + key);
+  const statusEl = document.getElementById('claimStatus-' + key);
+  if (!await checkNetwork()) { showInlineError('networkWarn', 'Please switch to Ethereum Mainnet.', 0); document.getElementById('networkWarn').classList.add('visible'); return; }
+  if (!walletSigner) { showInlineError('walletError', 'Please connect your wallet first.'); return; }
+
+  btn.disabled = true;
+  btn.textContent = 'Approving...';
+  btn.classList.add('pending');
+  try {
+    const tribe = new ethers.Contract(cfg.tribeTokenAddress, ['function balanceOf(address) view returns (uint256)', 'function approve(address,uint256) returns (bool)'], walletSigner);
+    const tribeBal = await tribe.balanceOf(walletAddress);
+    const tx = await tribe.approve(cfg.contract, tribeBal);
+    statusEl.textContent = 'Waiting for confirmation...';
+    await tx.wait();
+    btn.textContent = 'Step 1: Approved';
+    btn.classList.remove('pending');
+    btn.disabled = true;
+    btn.style.opacity = '0.35';
+    const step2Btn = btn.nextElementSibling;
+    if (step2Btn) {
+      step2Btn.disabled = false;
+      step2Btn.style.opacity = '1';
+      step2Btn.id = 'claimBtn-' + key;
+      step2Btn.dataset.action = 'tribe-redeem';
+      step2Btn.dataset.key = key;
+    }
+    statusEl.innerHTML = '<span style="color:var(--green)">Approved. Click Step 2 to redeem the basket.</span>';
+    logEvent('claim_started', { address: walletAddress, contract: key, extra: { step: 'approve', tx_hash: tx.hash } });
+  } catch (e) {
+    btn.disabled = false;
+    btn.textContent = 'Step 1: Approve TRIBE';
+    btn.classList.remove('pending');
+    statusEl.textContent = (e.code === 'ACTION_REJECTED' || e.code === 4001)
+      ? 'Rejected'
+      : 'Approve failed: ' + (e.reason || e.message || 'Unknown error');
+  }
+}
+
+async function tribeRedeem(key) {
+  const cfg = EXCHANGES[key];
+  const btn = document.getElementById('claimBtn-' + key);
+  const statusEl = document.getElementById('claimStatus-' + key);
+  if (!await checkNetwork()) { showInlineError('networkWarn', 'Please switch to Ethereum Mainnet.', 0); document.getElementById('networkWarn').classList.add('visible'); return; }
+  if (!walletSigner) { showInlineError('walletError', 'Please connect your wallet first.'); return; }
+
+  btn.disabled = true;
+  btn.textContent = 'Redeeming...';
+  btn.classList.add('pending');
+  try {
+    // Live TRIBE balance — user may have moved tokens since the scan.
+    const tribe = new ethers.Contract(cfg.tribeTokenAddress, ['function balanceOf(address) view returns (uint256)'], walletSigner);
+    const tribeBal = await tribe.balanceOf(walletAddress);
+    if (tribeBal === 0n) {
+      btn.disabled = false;
+      btn.textContent = 'Step 2: Redeem ' + cfg.payoutToken;
+      btn.classList.remove('pending');
+      statusEl.innerHTML = '<span style="color:var(--red)">No TRIBE balance to redeem.</span>';
+      return;
+    }
+    const redeemer = new ethers.Contract(cfg.contract, [cfg.withdrawAbi], walletSigner);
+    const [arg0, arg1] = cfg.withdrawArgs(tribeBal, walletAddress);
+    logEvent('claim_started', { address: walletAddress, contract: key, extra: { step: 'redeem', tribe_wei: tribeBal.toString() } });
+    const tx = await redeemer[cfg.withdrawCall](arg0, arg1);
+    btn.textContent = 'Pending...';
+    statusEl.innerHTML = `Tx submitted: <a href="${etherscanTx(tx.hash)}" target="_blank" rel="noopener noreferrer">${tx.hash.slice(0, 18)}...</a>`;
+    const receipt = await tx.wait();
+
+    // Pull the payout-token amount from the apiBalances snapshot for display
+    // (real on-chain amount may differ slightly from snapshot due to rate drift).
+    const decimals = TOKEN_DECIMALS_V2[cfg.payoutToken] || 18;
+    const rawAmount = BigInt(((apiBalances[key] || {}).token_balances || {})[cfg.payoutToken] || '0');
+    const amountHuman = ethers.formatUnits(rawAmount, decimals);
+    logEvent('claim_confirmed', { address: walletAddress, contract: key, tx_hash: tx.hash, block_num: receipt.blockNumber, extra: { payout_token: cfg.payoutToken, payout_amount: amountHuman } });
+
+    btn.textContent = '✓ Redeemed';
+    btn.classList.remove('pending');
+    btn.classList.add('claimed');
+    statusEl.innerHTML =
+      '<div class="claim-recovered">' +
+        '<div class="claim-recovered-label">Redeemed</div>' +
+        '<div class="claim-recovered-amount">' + esc(parseFloat(amountHuman).toLocaleString('en', {maximumFractionDigits: 2})) + ' ' + esc(cfg.payoutToken) + '</div>' +
+        '<div class="claim-recovered-tx"><a href="' + etherscanTx(tx.hash) + '" target="_blank" rel="noopener noreferrer">View transaction on Etherscan</a></div>' +
+      '</div>';
+  } catch (e) {
+    btn.disabled = false;
+    btn.textContent = 'Step 2: Redeem ' + cfg.payoutToken;
+    btn.classList.remove('pending');
+    if (e.code === 'ACTION_REJECTED' || e.code === 4001) {
+      statusEl.textContent = 'Rejected';
+      logEvent('claim_failed', { address: walletAddress, contract: key, extra: { reason: 'rejected' } });
+    } else {
+      console.error('tribeRedeem error:', e);
+      statusEl.textContent = 'Redeem failed: ' + (e.reason || e.message || 'Unknown error').slice(0, 200);
+      logEvent('claim_failed', { address: walletAddress, contract: key, extra: { reason: (e.reason || e.message || 'unknown').slice(0, 200) } });
     }
   }
 }
@@ -6554,7 +6936,7 @@ async function daoWithdrawExecute(key) {
       <div style="font-size:10px;color:var(--yellow);margin-top:2px">[TEST MODE]</div>
     </div>
     `;
-    showDonationModal(claimedEthNum);
+    showDonationModal(claimedEthNum, key);
     userBalances[key] = 0n;
     return;
   }
@@ -6589,7 +6971,7 @@ async function daoWithdrawExecute(key) {
         <div class="claim-recovered-tx"><a href="${etherscanTx(tx.hash)}" target="_blank" rel="noopener noreferrer">View transaction on Etherscan</a></div>
       </div>
       `;
-    showDonationModal(claimedEthNum);
+    showDonationModal(claimedEthNum, key);
     userBalances[key] = 0n;
   } catch (e) {
     btn.disabled = false;
@@ -6819,7 +7201,7 @@ async function neufundWithdrawEthT(key) {
         <div class="claim-recovered-tx"><a href="${etherscanTx(tx.hash)}" target="_blank" rel="noopener noreferrer">View transaction on Etherscan</a></div>
       </div>
       `;
-    showDonationModal(claimedEthNum);
+    showDonationModal(claimedEthNum, key);
     userBalances[key] = 0n;
     window.va?.track?.('claim_confirmed', { exchange: cfg.name, amount_eth: ethAmount, tx_hash: tx.hash });
   } catch (e) {
@@ -6892,7 +7274,7 @@ async function switcheoWithdraw(key) {
     btn.classList.add('claimed');
     btn.disabled = true;
     statusEl.innerHTML = '<div class="claim-recovered"><div class="claim-recovered-label">Recovered</div><div class="claim-recovered-amount">' + fmtEth(ethAmount) + ' ETH' + claimUsd + '</div><div class="claim-recovered-tx"><a href="' + etherscanTx(tx.hash) + '" target="_blank" rel="noopener noreferrer">View transaction on Etherscan</a></div></div>';
-    showDonationModal(parseFloat(ethAmount));
+    showDonationModal(parseFloat(ethAmount), key);
     userBalances[key] = 0n;
   } catch (e) {
     btn.disabled = false;
@@ -6966,7 +7348,7 @@ async function gnosisClaim(key, auctionIdx, btn) {
     btn.classList.add('claimed');
     btn.disabled = true;
     buildRecoveredStatus(statusEl, 'Recovered from auction #' + ar.auction_id, ethAmount, 'WETH', tx.hash);
-    showDonationModal(parseFloat(ethAmount));
+    showDonationModal(parseFloat(ethAmount), key);
   } catch (e) {
     btn.disabled = false;
     btn.classList.remove('pending');
@@ -7311,7 +7693,7 @@ async function tweetMarketCancel(key, tweetId, btn) {
     btn.disabled = true;
     const bid = (window._lastApiBalances?.[key]?.tweetmarket_bids || []).find(b => String(b.tweet_id) === String(tweetId));
     buildRecoveredStatus(statusEl, 'Recovered from tweet #' + tweetId, bid?.eth || '0', 'ETH', tx.hash);
-    showDonationModal(parseFloat(bid?.eth || '0'));
+    showDonationModal(parseFloat(bid?.eth || '0'), key);
   } catch (e) {
     btn.disabled = false;
     btn.classList.remove('pending');
@@ -7378,7 +7760,7 @@ async function treasureSellingWithdraw(key) {
     btn.classList.add('claimed');
     btn.disabled = true;
     buildRecoveredStatus(statusEl, 'Recovered', ethers.formatEther(userBalances[key] || 0n), 'ETH', tx.hash);
-    showDonationModal(parseFloat(ethers.formatEther(userBalances[key] || 0n)));
+    showDonationModal(parseFloat(ethers.formatEther(userBalances[key] || 0n)), key);
     userBalances[key] = 0n;
   } catch (e) {
     btn.disabled = false;
@@ -9206,16 +9588,20 @@ async function checkManualAddress() {
     var _manualTitle = 'Scan Complete';
     var _manualCelebrate = false;
   } else {
-    const usdStr = ethPrice ? fmtUsd(grandTotalEth * ethPrice) : '';
+    // Multi-asset hero — same shape as the main flow. Manual scan only
+    // resolves one address at a time (resolvedAddrs is a single-element
+    // array) so we can read the per-protocol token_balances directly
+    // from result.apiBalances.
+    const assetTotals = computeAssetTotals(result.apiBalances);
+    const heroAmountsHtml = renderHeroAmounts(assetTotals, ethPrice);
     var claimedSection = mClaimedHtml ? '<div style="margin-top:16px;padding-top:12px;border-top:1px dashed var(--border)"><div style="font-size:11px;color:var(--text2);margin-bottom:8px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px">Previously Claimed</div>' + mClaimedHtml + '</div>' : '';
-    finalHtml = '<div class="claim-hero"><div class="claim-hero-amount">' + fmtEth(grandTotalEth) + ' ETH</div>' +
-      (usdStr ? '<div class="claim-hero-usd">' + usdStr + '</div>' : '') +
+    finalHtml = '<div class="claim-hero">' + heroAmountsHtml +
       '<div class="claim-hero-contracts">' + grandFound + ' contract' + (grandFound > 1 ? 's' : '') + (resolvedAddrs.length > 1 ? ' across ' + resolvedAddrs.length + ' addresses' : '') + '</div></div>' +
       '<div class="claim-rows-list">' + allHtml + claimedSection + '</div>' +
       '<div style="text-align:center;margin-top:16px">' +
         '<button class="wallet-btn" data-action="connect-for-manual" style="padding:8px 18px;font-size:14px">Connect Wallet to Claim</button>' +
       '</div>' + _botCTA;
-    var _manualTitle = 'Claimable ETH Found';
+    var _manualTitle = bannerTitleFor(assetTotals);
     var _manualCelebrate = true;
     logEvent('found', { address: resolvedAddrs[0], contracts_found: grandFound, total_eth: grandTotalEth });
     pendingManualAddress = resolvedAddrs[0];
@@ -9300,7 +9686,7 @@ async function _testClaimETH(key, cfg, btn, statusEl, balance) {
       var claimedEthNum = parseFloat(ethAmount);
       var claimUsd = _ethPrice ? ' (' + fmtUsd(claimedEthNum * _ethPrice) + ')' : '';
       statusEl.innerHTML = '<div class="claim-recovered"><div class="claim-recovered-label" style="color:var(--green)">Simulation Passed</div><div class="claim-recovered-amount">' + fmtEth(ethAmount) + ' ETH' + claimUsd + '</div><div style="font-size:10px;color:#d946ef;margin-top:2px">[TEST MODE] ' + esc(cfg.withdrawCall) + '() would succeed</div></div>';
-      showDonationModal(claimedEthNum);
+      showDonationModal(claimedEthNum, key);
     } else {
       btn.textContent = 'SIM FAIL';
       btn.classList.remove('pending');
@@ -9392,6 +9778,15 @@ async function _testClaimETH(key, cfg, btn, statusEl, balance) {
         counterEl.appendChild(labelSpan);
 
         document.getElementById('heroProgress').style.display = '';
+      }
+
+      // v2 sub-counters — populate from /api/v2-totals if available, else
+      // keep hidden. Gated by SHOW_V2_SUBCOUNTERS so the markup ships dark
+      // until the v2 data pipeline lands. Numbers are kept human-readable
+      // (32.4, 1.84M, 2.10M) via fmtCompact below; USD hint uses _ethPrice
+      // fallback (USDC/USDT/DAI ≈ 1, WBTC priced via BTC fetch).
+      if (SHOW_V2_SUBCOUNTERS) {
+        populateV2SubCounters().catch(function() {});
       }
   } catch(e) {}
 
@@ -9563,6 +9958,10 @@ document.getElementById('claimBanner').addEventListener('click', function(e) {
     digixApprove(btn.dataset.key);
   } else if (action === 'digix-burn') {
     digixBurn(btn.dataset.key);
+  } else if (action === 'tribe-approve') {
+    tribeApprove(btn.dataset.key);
+  } else if (action === 'tribe-redeem') {
+    tribeRedeem(btn.dataset.key);
   } else if (action === 'dao-approve') {
     daoApprove(btn.dataset.key);
   } else if (action === 'dao-withdraw') {

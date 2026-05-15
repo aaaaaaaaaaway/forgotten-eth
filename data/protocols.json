@@ -2020,5 +2020,16 @@
     "category": "defi",
     "balance_file": "relayhub_v1_eth_balances.json",
     "multi_step": true
+  },
+  {
+    "key": "tribe_redeemer",
+    "name": "Tribe Redeemer",
+    "contract": "0x4d9629e80118082b939e3d59e69c82a2ec08b4d5",
+    "balance_source": "token",
+    "category": "defi",
+    "balance_file": "tribe_redeemer_balances.json",
+    "payout_tokens": ["DAI"],
+    "peak_token_amounts": {"DAI": 1839948.2122},
+    "multi_step": true
   }
 ]
