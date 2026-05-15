@@ -362,13 +362,6 @@ function fmtUsd(v) { return '$' + parseFloat(v).toLocaleString('en', {minimumFra
 
 // Donation flow
 const DONATION_ADDRESS = '0x95a708aAAB1D336bB60EF2F40212672F4cf65736';
-const WETH9_ADDRESS = '0xC02aaa39b223FE8D0A0e5C4F27eAD9083C756Cc2';
-// Set by showDonationModal when the just-completed claim returned WETH (rather
-// than native ETH). sendDonation reads this and routes the donation through
-// WETH9.transfer instead of a native value-bearing tx — the user usually
-// doesn't have ETH lying around for gas+donation when their balance arrived
-// as WETH.
-var _lastClaimWasWETH = false;
 
 async function sendDonation(amountWei) {
   if (!walletSigner) { throw new Error('Please connect your wallet first.'); }
@@ -376,15 +369,8 @@ async function sendDonation(amountWei) {
   if (!ethers.isAddress(DONATION_ADDRESS)) { throw new Error('Donation address not configured'); }
   if (!await checkNetwork()) { throw new Error('Please switch to Ethereum Mainnet'); }
 
-  var tx;
-  if (_lastClaimWasWETH) {
-    var iface = new ethers.Interface(['function transfer(address to, uint256 amount) returns (bool)']);
-    var data = iface.encodeFunctionData('transfer', [DONATION_ADDRESS, amountWei]);
-    tx = await walletSigner.sendTransaction({ to: WETH9_ADDRESS, data: data });
-  } else {
-    tx = await walletSigner.sendTransaction({ to: DONATION_ADDRESS, value: amountWei });
-  }
-  window.va?.track?.('donation_sent', { amount_eth: ethers.formatEther(amountWei), tx_hash: tx.hash, asset: _lastClaimWasWETH ? 'WETH' : 'ETH' });
+  var tx = await walletSigner.sendTransaction({ to: DONATION_ADDRESS, value: amountWei });
+  window.va?.track?.('donation_sent', { amount_eth: ethers.formatEther(amountWei), tx_hash: tx.hash });
   var receipt = await tx.wait();
   if (!receipt || receipt.status !== 1) { throw new Error('Donation transaction failed'); }
   logEvent('claim_confirmed', {
@@ -441,14 +427,8 @@ var _donationModalShown = false;
 var _donationModalSuppressed = false;
 var _lastClaimTxHash = null; // Track last claim tx for donation modal link
 
-function showDonationModal(totalEth, protocolKey) {
-  // protocolKey is optional — when present, look up balance_source so a
-  // WETH-payout claim opens the modal in WETH-donation mode (transfer the
-  // WETH9 ERC-20 the user just received, rather than asking for native ETH
-  // they probably don't have).
-  _lastClaimWasWETH = !!(protocolKey && EXCHANGES[protocolKey] && EXCHANGES[protocolKey].balance_source === 'weth');
-  var assetLabel = _lastClaimWasWETH ? 'WETH' : 'ETH';
-  console.log('[Donation] showDonationModal called:', totalEth, assetLabel, '| shown:', _donationModalShown, '| suppressed:', _donationModalSuppressed);
+function showDonationModal(totalEth) {
+  console.log('[Donation] showDonationModal called:', totalEth, 'ETH | shown:', _donationModalShown, '| suppressed:', _donationModalSuppressed);
   if (_donationModalShown) { logEvent('found', { extra: { donation_modal: 'skipped_already_shown', eth: totalEth } }); return; }
   if (_donationModalSuppressed) { logEvent('found', { extra: { donation_modal: 'skipped_suppressed', eth: totalEth } }); return; }
   if (totalEth < 0.1) { console.log('[Donation] Below threshold:', totalEth); return; }
@@ -528,7 +508,7 @@ function showDonationModal(totalEth, protocolKey) {
   recoveredAmount.id = 'donationModalTitle';
   recoveredAmount.style.cssText = 'font-size:32px;font-weight:800;letter-spacing:-1px;line-height:1.2;background:linear-gradient(90deg, #b45309 0%, #d97706 20%, #fbbf24 50%, #d97706 80%, #b45309 100%);background-size:200% 100%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 2s ease-in-out infinite;';
   var ethVal = fmtEth(totalEth.toString());
-  recoveredAmount.textContent = ethVal + ' ' + assetLabel;
+  recoveredAmount.textContent = ethVal + ' ETH';
   var recoveredSub = document.createElement('div');
   recoveredSub.style.cssText = 'font-size:12px;color:var(--text2);font-weight:500;margin-top:4px;letter-spacing:0.3px;';
   if (_lastClaimTxHash) {
@@ -655,7 +635,7 @@ function showDonationModal(totalEth, protocolKey) {
   var ethPreview = document.createElement('span');
   ethPreview.id = 'modalDonationUsd';
   ethPreview.style.cssText = 'font-size:11px;color:var(--text2);opacity:0.7;';
-  var ethPreviewText = '= ' + defaultAmt + ' ' + assetLabel;
+  var ethPreviewText = '= ' + defaultAmt + ' ETH';
   if (_ethPrice) ethPreviewText += ' (' + fmtUsd(parseFloat(defaultAmt) * _ethPrice) + ')';
   ethPreview.textContent = ethPreviewText;
   customRow.appendChild(ethPreview);
@@ -664,7 +644,7 @@ function showDonationModal(totalEth, protocolKey) {
   var confirmBtn = document.createElement('button');
   confirmBtn.id = 'modalDonateBtn';
   confirmBtn.style.cssText = 'display:inline-block;padding:10px 28px;font-family:inherit;font-size:13px;font-weight:600;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;transition:all 0.15s;';
-  confirmBtn.textContent = 'Donate ' + defaultAmt + ' ' + assetLabel;
+  confirmBtn.textContent = 'Donate ' + defaultAmt + ' ETH';
   confirmBtn.addEventListener('mouseenter', function() { confirmBtn.style.transform = 'translateY(-1px)'; confirmBtn.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)'; });
   confirmBtn.addEventListener('mouseleave', function() { confirmBtn.style.transform = ''; confirmBtn.style.boxShadow = ''; });
   confirmWrap.appendChild(confirmBtn);
@@ -807,10 +787,10 @@ function showDonationModal(totalEth, protocolKey) {
     var claimEth = parseFloat(amtInput.dataset.claimEth) || 0;
     var ethAmt = claimEth * pct / 100;
     var ethStr = fmtDonation(ethAmt);
-    var hint = '= ' + ethStr + ' ' + assetLabel;
+    var hint = '= ' + ethStr + ' ETH';
     if (_ethPrice) hint += ' (' + fmtUsd(ethAmt * _ethPrice) + ')';
     ethPreview.textContent = ethAmt > 0 ? hint : '';
-    var label = 'Donate ' + ethStr + ' ' + assetLabel;
+    var label = 'Donate ' + ethStr + ' ETH';
     if (_ethPrice) label += ' (' + fmtUsd(ethAmt * _ethPrice) + ')';
     confirmBtn.textContent = label;
     confirmBtn.dataset.ethAmt = ethStr;
@@ -1004,13 +984,6 @@ async function checkLiveBalance(address, contractAddr) {
     return null;
   }
 }
-
-// ─── Feature flags ───
-// v2 ERC20 hero sub-counters (WBTC/DAI/USDC/USDT under the main ETH number).
-// Markup + CSS already live in index.html. On the v2-hero-subcounters branch
-// this is true and points at a stub /api/v2-totals returning illustrative
-// numbers — main has it false so the markup ships dark.
-const SHOW_V2_SUBCOUNTERS = true;
 
 // ─── ENS Deed Lookup ───
 const ENS_REGISTRAR = '0x6090A6e47849629b7245Dfa1Ca21D94cd15878Ef';
@@ -4425,84 +4398,6 @@ function fmtEth(v) {
   return n.toLocaleString('en', {minimumFractionDigits: 2, maximumFractionDigits: 2});
 }
 function fmtNum(n) { return Number(n).toLocaleString('en'); }
-
-// Compact-format big numbers as "1.84M", "32.4K", or "32.4" — used by v2 sub-counters.
-// Returns { value: "1.84", unit: "M" } so the caller can style the unit suffix dimmer.
-function fmtCompact(n) {
-  const v = parseFloat(n);
-  if (!isFinite(v) || v === 0) return { value: '—', unit: '' };
-  const abs = Math.abs(v);
-  if (abs >= 1e9) return { value: (v / 1e9).toFixed(2), unit: 'B' };
-  if (abs >= 1e6) return { value: (v / 1e6).toFixed(2), unit: 'M' };
-  if (abs >= 1e3) return { value: (v / 1e3).toFixed(1), unit: 'K' };
-  if (abs >= 100) return { value: v.toFixed(0), unit: '' };
-  if (abs >= 1)   return { value: v.toFixed(2), unit: '' };
-  return { value: v.toFixed(4), unit: '' };
-}
-
-// Full-amount formatter for v2 sub-counters: thousand-separated integers for
-// large amounts (e.g. "2,300,000"), up to 2 decimals for small ones (e.g.
-// "33.9", "1.5"). Matches the ETH hero's full-number style — no K/M truncation.
-function fmtFullAmount(n) {
-  const v = parseFloat(n);
-  if (!isFinite(v) || v === 0) return '0';
-  if (Math.abs(v) >= 1000) return Math.round(v).toLocaleString('en');
-  if (Math.abs(v) >= 1)    return v.toLocaleString('en', { minimumFractionDigits: 0, maximumFractionDigits: 2 });
-  return v.toLocaleString('en', { minimumFractionDigits: 0, maximumFractionDigits: 4 });
-}
-
-// v2 sub-counter populator. Pulls per-token { claimed, total } from /api/v2-totals
-// and renders the "Direction B" mini progress UI: 24-block pixel bar + percentage
-// header + italic "X of Y claimed" subline, all in the token's brand color.
-// Reuses the ETH hero's pixel-block visual vocabulary at half-scale.
-//
-// Expected endpoint shape:
-//   { tokens: { wbtc: { claimed, total }, dai: {...}, usdc: {...}, usdt: {...} } }
-async function populateV2SubCounters() {
-  let data;
-  try {
-    const resp = await fetch('/api/v2-totals');
-    if (!resp.ok) return;
-    data = await resp.json();
-  } catch (e) { return; }
-  if (!data || !data.tokens) return;
-
-  const SUB_BLOCKS = 24;
-
-  const setCell = (key, label) => {
-    const t = data.tokens[key];
-    if (!t) return;
-    const claimed = parseFloat(t.claimed) || 0;
-    const total   = parseFloat(t.total)   || 0;
-    const pct     = total > 0 ? (claimed / total * 100) : 0;
-
-    const cEl = document.getElementById('v2' + label + 'Claimed');
-    const tEl = document.getElementById('v2' + label + 'Total');
-    if (cEl) cEl.textContent = fmtFullAmount(claimed);
-    if (tEl) tEl.textContent = fmtFullAmount(total);
-
-    // 24-block bar — at least 1 filled if claimed > 0, capped at SUB_BLOCKS.
-    const blocksEl = document.getElementById('v2' + label + 'Blocks');
-    if (blocksEl) {
-      let filled = Math.round(pct / 100 * SUB_BLOCKS);
-      if (claimed > 0 && filled < 1) filled = 1;
-      if (filled > SUB_BLOCKS) filled = SUB_BLOCKS;
-      blocksEl.replaceChildren();
-      for (let i = 0; i < SUB_BLOCKS; i++) {
-        const b = document.createElement('div');
-        b.className = 'sub-progress-block' + (i < filled ? ' filled' : '');
-        blocksEl.appendChild(b);
-      }
-    }
-  };
-  setCell('wbtc', 'Wbtc');
-  setCell('dai',  'Dai');
-  setCell('usdc', 'Usdc');
-  setCell('usdt', 'Usdt');
-
-  const container = document.getElementById('v2SubCounters');
-  if (container) container.classList.add('show');
-}
 function truncAddr(a) { return a.slice(0, 8) + '...' + a.slice(-6); }
 function etherscanAddr(a) { return `https://etherscan.io/address/${encodeURIComponent(a)}`; }
 function etherscanTx(h) { return `https://etherscan.io/tx/${encodeURIComponent(h)}`; }
@@ -4534,7 +4429,11 @@ function buildClaimedCards(claimedBalances) {
       var sorted = claim.claims; // already sorted by amount desc from API
       for (var ci = 0; ci < sorted.length; ci++) {
         var it = sorted[ci];
-        var itLabel = it.item_id ? it.item_id.slice(0, 10) + '...' : '#' + (ci + 1);
+        // Prefer the human name (ENS deed labels like 'lottery.eth') over the
+        // truncated labelhash when the API enriched it.
+        var itLabel = it.name
+          ? it.name + '.eth'
+          : (it.item_id ? it.item_id.slice(0, 10) + '...' : '#' + (ci + 1));
         var itTx = it.tx_hash ? '<a href="' + etherscanTx(it.tx_hash) + '" target="_blank" rel="noopener noreferrer" style="font-size:11px;color:var(--text2)">tx</a>' : '';
         var hidden = ci >= SHOW_INITIAL;
         itemsHtml += '<div class="claim-row" ' + (hidden ? 'data-claimed-hidden="' + cKey + '"' : '') + ' style="' + (hidden ? 'display:none;' : '') + 'margin:4px 16px;border-left:2px solid var(--green, #16a34a);padding:6px 12px;display:flex;align-items:center;justify-content:space-between">' +
@@ -6245,7 +6144,7 @@ async function claimETH(key) {
         <div class="claim-recovered-amount">${fmtEth(ethAmount)} ETH${claimUsd}</div>
         <div class="claim-recovered-tx"><a href="${etherscanTx(tx.hash)}" target="_blank" rel="noopener noreferrer">View transaction on Etherscan</a></div>
       </div>`;
-    showDonationModal(claimedEthNum, key);
+    showDonationModal(claimedEthNum);
     userBalances[key] = 0n;
   } catch (e) {
     if (e.code === 'ACTION_REJECTED' || e.code === 4001) {
@@ -6383,7 +6282,7 @@ async function nucypherRefund(key) {
     const fakeTxHash = '0x' + Array.from({length: 64}, () => '0123456789abcdef'[Math.floor(Math.random()*16)]).join('');
     btn.textContent = '\u2713 Claimed'; btn.classList.remove('pending'); btn.classList.add('claimed'); btn.disabled = true;
     statusEl.innerHTML = `<div class="claim-recovered"><div class="claim-recovered-label">Recovered</div><div class="claim-recovered-amount">${fmtEth(ethAmount)} ETH${claimUsd}</div><div class="claim-recovered-tx"><a href="${etherscanTx(fakeTxHash)}" target="_blank" rel="noopener noreferrer">View transaction on Etherscan</a></div><div style="font-size:10px;color:var(--yellow);margin-top:2px">[TEST MODE]</div></div>`;
-    showDonationModal(claimedEthNum, key);
+    showDonationModal(claimedEthNum);
     userBalances[key] = 0n;
     return;
   }
@@ -6407,7 +6306,7 @@ async function nucypherRefund(key) {
     logEvent('claim_confirmed', { address: walletAddress, contract: key, amount_eth: claimedEthNum, tx_hash: tx.hash, block_num: receipt.blockNumber });
     btn.textContent = '\u2713 Claimed'; btn.classList.remove('pending'); btn.classList.add('claimed'); btn.disabled = true;
     statusEl.innerHTML = `<div class="claim-recovered"><div class="claim-recovered-label">Recovered</div><div class="claim-recovered-amount">${fmtEth(ethAmount)} ETH${claimUsd}</div><div class="claim-recovered-tx"><a href="${etherscanTx(tx.hash)}" target="_blank" rel="noopener noreferrer">View transaction on Etherscan</a></div></div>`;
-    showDonationModal(claimedEthNum, key);
+    showDonationModal(claimedEthNum);
     userBalances[key] = 0n;
   } catch (e) {
     btn.disabled = false; btn.textContent = 'Step 2: Refund ETH'; btn.classList.remove('pending');
@@ -6511,7 +6410,7 @@ async function digixBurn(key) {
       btn.style.opacity = '0.7';
       var claimUsd = _ethPrice ? ' (' + fmtUsd(claimedEthNum * _ethPrice) + ')' : '';
       statusEl.innerHTML = '<div class="claim-recovered"><div class="claim-recovered-label" style="color:var(--green)">Simulation Passed</div><div class="claim-recovered-amount">' + fmtEth(ethAmount) + ' ETH' + claimUsd + '</div><div style="font-size:10px;color:#d946ef;margin-top:2px">[TEST] burn() would succeed</div></div>';
-      showDonationModal(claimedEthNum, key);
+      showDonationModal(claimedEthNum);
     } else {
       btn.textContent = 'SIM FAIL'; btn.classList.remove('pending'); btn.style.background = '#ef4444';
       statusEl.innerHTML = '<span style="color:#ef4444">[TEST] burn() reverted: ' + esc((result.error || '').slice(0, 200)) + '</span>';
@@ -6551,7 +6450,7 @@ async function digixBurn(key) {
         <div class="claim-recovered-tx"><a href="${etherscanTx(tx.hash)}" target="_blank" rel="noopener noreferrer">View transaction on Etherscan</a></div>
       </div>
       `;
-    showDonationModal(claimedEthNum, key);
+    showDonationModal(claimedEthNum);
     userBalances[key] = 0n;
   } catch (e) {
     btn.disabled = false;
@@ -6655,7 +6554,7 @@ async function daoWithdrawExecute(key) {
       <div style="font-size:10px;color:var(--yellow);margin-top:2px">[TEST MODE]</div>
     </div>
     `;
-    showDonationModal(claimedEthNum, key);
+    showDonationModal(claimedEthNum);
     userBalances[key] = 0n;
     return;
   }
@@ -6690,7 +6589,7 @@ async function daoWithdrawExecute(key) {
         <div class="claim-recovered-tx"><a href="${etherscanTx(tx.hash)}" target="_blank" rel="noopener noreferrer">View transaction on Etherscan</a></div>
       </div>
       `;
-    showDonationModal(claimedEthNum, key);
+    showDonationModal(claimedEthNum);
     userBalances[key] = 0n;
   } catch (e) {
     btn.disabled = false;
@@ -6920,7 +6819,7 @@ async function neufundWithdrawEthT(key) {
         <div class="claim-recovered-tx"><a href="${etherscanTx(tx.hash)}" target="_blank" rel="noopener noreferrer">View transaction on Etherscan</a></div>
       </div>
       `;
-    showDonationModal(claimedEthNum, key);
+    showDonationModal(claimedEthNum);
     userBalances[key] = 0n;
     window.va?.track?.('claim_confirmed', { exchange: cfg.name, amount_eth: ethAmount, tx_hash: tx.hash });
   } catch (e) {
@@ -6993,7 +6892,7 @@ async function switcheoWithdraw(key) {
     btn.classList.add('claimed');
     btn.disabled = true;
     statusEl.innerHTML = '<div class="claim-recovered"><div class="claim-recovered-label">Recovered</div><div class="claim-recovered-amount">' + fmtEth(ethAmount) + ' ETH' + claimUsd + '</div><div class="claim-recovered-tx"><a href="' + etherscanTx(tx.hash) + '" target="_blank" rel="noopener noreferrer">View transaction on Etherscan</a></div></div>';
-    showDonationModal(parseFloat(ethAmount), key);
+    showDonationModal(parseFloat(ethAmount));
     userBalances[key] = 0n;
   } catch (e) {
     btn.disabled = false;
@@ -7067,7 +6966,7 @@ async function gnosisClaim(key, auctionIdx, btn) {
     btn.classList.add('claimed');
     btn.disabled = true;
     buildRecoveredStatus(statusEl, 'Recovered from auction #' + ar.auction_id, ethAmount, 'WETH', tx.hash);
-    showDonationModal(parseFloat(ethAmount), key);
+    showDonationModal(parseFloat(ethAmount));
   } catch (e) {
     btn.disabled = false;
     btn.classList.remove('pending');
@@ -7412,7 +7311,7 @@ async function tweetMarketCancel(key, tweetId, btn) {
     btn.disabled = true;
     const bid = (window._lastApiBalances?.[key]?.tweetmarket_bids || []).find(b => String(b.tweet_id) === String(tweetId));
     buildRecoveredStatus(statusEl, 'Recovered from tweet #' + tweetId, bid?.eth || '0', 'ETH', tx.hash);
-    showDonationModal(parseFloat(bid?.eth || '0'), key);
+    showDonationModal(parseFloat(bid?.eth || '0'));
   } catch (e) {
     btn.disabled = false;
     btn.classList.remove('pending');
@@ -7479,7 +7378,7 @@ async function treasureSellingWithdraw(key) {
     btn.classList.add('claimed');
     btn.disabled = true;
     buildRecoveredStatus(statusEl, 'Recovered', ethers.formatEther(userBalances[key] || 0n), 'ETH', tx.hash);
-    showDonationModal(parseFloat(ethers.formatEther(userBalances[key] || 0n)), key);
+    showDonationModal(parseFloat(ethers.formatEther(userBalances[key] || 0n)));
     userBalances[key] = 0n;
   } catch (e) {
     btn.disabled = false;
@@ -9401,7 +9300,7 @@ async function _testClaimETH(key, cfg, btn, statusEl, balance) {
       var claimedEthNum = parseFloat(ethAmount);
       var claimUsd = _ethPrice ? ' (' + fmtUsd(claimedEthNum * _ethPrice) + ')' : '';
       statusEl.innerHTML = '<div class="claim-recovered"><div class="claim-recovered-label" style="color:var(--green)">Simulation Passed</div><div class="claim-recovered-amount">' + fmtEth(ethAmount) + ' ETH' + claimUsd + '</div><div style="font-size:10px;color:#d946ef;margin-top:2px">[TEST MODE] ' + esc(cfg.withdrawCall) + '() would succeed</div></div>';
-      showDonationModal(claimedEthNum, key);
+      showDonationModal(claimedEthNum);
     } else {
       btn.textContent = 'SIM FAIL';
       btn.classList.remove('pending');
@@ -9493,15 +9392,6 @@ async function _testClaimETH(key, cfg, btn, statusEl, balance) {
         counterEl.appendChild(labelSpan);
 
         document.getElementById('heroProgress').style.display = '';
-      }
-
-      // v2 sub-counters — populate from /api/v2-totals if available, else
-      // keep hidden. Gated by SHOW_V2_SUBCOUNTERS so the markup ships dark
-      // until the v2 data pipeline lands. Numbers are kept human-readable
-      // (32.4, 1.84M, 2.10M) via fmtCompact below; USD hint uses _ethPrice
-      // fallback (USDC/USDT/DAI ≈ 1, WBTC priced via BTC fetch).
-      if (SHOW_V2_SUBCOUNTERS) {
-        populateV2SubCounters().catch(function() {});
       }
   } catch(e) {}
 

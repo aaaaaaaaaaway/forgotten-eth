@@ -9,6 +9,21 @@ import { sql } from '@vercel/postgres';
 let metaData = null;
 const shardCache = {};
 
+// labelhash → name lookup for ENS deeds — used to enrich claimed_balances
+// items so the "Previously Claimed" cards show "lottery.eth" instead of
+// "0x9ba8f5e2...". Loaded lazily on first ens_old claim row.
+let ensNamesIndex = null;
+function loadEnsNames() {
+  if (ensNamesIndex) return ensNamesIndex;
+  try {
+    const raw = readFileSync(join(process.cwd(), 'data', 'ens_label_names.json'), 'utf8');
+    ensNamesIndex = JSON.parse(raw);
+  } catch (e) {
+    ensNamesIndex = {};
+  }
+  return ensNamesIndex;
+}
+
 function loadMeta() {
   if (metaData) return metaData;
   const raw = readFileSync(join(process.cwd(), 'data', 'index_shards', 'meta.json'), 'utf8');
@@ -105,11 +120,19 @@ export default async function handler(req, res) {
         if (!claimedDetails[r.protocol]) claimedDetails[r.protocol] = { total_eth: 0, last_tx: null, last_claimed: null, count: 0, items: [] };
         claimedDetails[r.protocol].total_eth += eth;
         claimedDetails[r.protocol].count++;
+        // For ENS deeds, resolve labelhash → human name so the UI can
+        // render "lottery.eth" instead of "0x9ba8f5e2...".
+        let itemName = null;
+        if (r.protocol === 'ens_old' && r.item_id) {
+          const names = loadEnsNames();
+          itemName = names[String(r.item_id).toLowerCase()] || null;
+        }
         claimedDetails[r.protocol].items.push({
           item_id: r.item_id || null,
           amount_eth: eth,
           tx_hash: r.tx_hash || null,
           claimed_at: r.claimed_at || null,
+          ...(itemName ? { name: itemName } : {}),
         });
         const ts = r.claimed_at ? new Date(r.claimed_at).getTime() : 0;
         const prev = claimedDetails[r.protocol].last_claimed ? new Date(claimedDetails[r.protocol].last_claimed).getTime() : 0;
