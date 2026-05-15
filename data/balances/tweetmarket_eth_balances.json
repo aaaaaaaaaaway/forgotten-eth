@@ -2,9 +2,9 @@
   "contract": "0xe14ab3ee81abe340b45bb26b1b166a7d2df22585",
   "balance_source": "eth",
   "contract_eth_balance": 105.37633467,
-  "total_eth_in_balances": 105.37541916,
-  "addresses_with_balance": 1830,
-  "coverage_pct": 100.0,
+  "total_eth_in_balances": 104.795643,
+  "addresses_with_balance": 1829,
+  "coverage_pct": 99.45,
   "scan_date": "2026-05-02 14:51:01 UTC",
   "description": "Current TweetMarket high bidders can cancel each bid by tweet ID after the lockup.",
   "meta": {
@@ -844,28 +844,6 @@
         }
       ],
       "rank": 18
-    },
-    {
-      "address": "0x621f2a5ef987e064e76da1eb378e7193cefc0baa",
-      "balance_wei": "579775820000000000",
-      "balance_eth": 0.57977582,
-      "tweetmarket_bids": [
-        {
-          "tweet_id": "1368561563574145027",
-          "wei": "301818270000000000",
-          "eth": "0.301818270000000000",
-          "last_tx_hash": "0x2aabc0e57eff697a58b3242c61689cdd1d1f83dfe873b085095eb6bf9756cbf5",
-          "last_tx_date": "2021-03-07 13:59:52.000 UTC"
-        },
-        {
-          "tweet_id": "1369721618247782400",
-          "wei": "277957550000000000",
-          "eth": "0.277957549999999998",
-          "last_tx_hash": "0xa0a1ebc57f2d817fffbfc8063fd4e9752e8593fcf504df2ef56540beb1319cd8",
-          "last_tx_date": "2021-03-11 08:58:13.000 UTC"
-        }
-      ],
-      "rank": 19
     },
     {
       "address": "0x53f7050d7a91b19116ba06b4ca89150b4c6690a8",
@@ -36572,5 +36550,6 @@
       ],
       "rank": 1831
     }
-  ]
+  ],
+  "last_event_refresh": "2026-05-15 21:23:05 UTC"
 }
