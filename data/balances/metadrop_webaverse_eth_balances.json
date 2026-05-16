@@ -2,13 +2,17 @@
   "contract": "0x1ecb59aecf1fc5da695242c6e78c2007e775d40f",
   "balance_source": "eth",
   "contract_eth_balance": 134.15,
-  "total_eth_in_balances": 134.15,
-  "addresses_with_balance": 90,
-  "coverage_pct": 100.0,
+  "total_eth_in_balances": 133.9,
+  "addresses_with_balance": 89,
+  "coverage_pct": 99.81,
   "scan_date": "2026-04-23 22:16:16 UTC",
   "description": "Webaverse NFT Metadrop sealed-bid auction. Unclaimed bidder refunds.",
   "distribution": {
-    "10+ ETH": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0.0
+    },
+    "10-100 ETH": {
       "count": 3,
       "total_eth": 75.0
     },
@@ -17,12 +21,16 @@
       "total_eth": 35.45
     },
     "0.1-1 ETH": {
-      "count": 63,
-      "total_eth": 23.200000000000014
+      "count": 62,
+      "total_eth": 22.95
     },
     "0.01-0.1 ETH": {
       "count": 10,
-      "total_eth": 0.49999999999999994
+      "total_eth": 0.5
+    },
+    "<0.01 ETH": {
+      "count": 0,
+      "total_eth": 0.0
     }
   },
   "meta": {
@@ -1304,25 +1312,6 @@
       "rank": 64
     },
     {
-      "address": "0xacc993013812e5524102474ba78f3a278c6d2efc",
-      "balance_wei": "250000000000000000",
-      "balance_eth": 0.25,
-      "merkle_proof": [
-        "0xce16e4745b81a5894b4d2f598a6bc2ed089482eb61136efd346e193cffb676ed",
-        "0xfd5fb4ba23d1ddee3ce4f37fe3aa9b90241700505050da5648366f878669bf7a",
-        "0x5753b78c565916d047f7685bb66d9695d3923a2544a795bd8cba424e13eb15d9",
-        "0xa7dac32535ca75ddbaf7fe798852f87ac10f71d8a5c685bc78d55d19c5c452b5",
-        "0x4bee3a2881fd7aac8cf3cb43e48c9a30e7a02808119d0eb99904c7e6c3e77427",
-        "0x0782dd64ba27d693504b2e0312cf71eb00d476fbd50eccdb217c2cf3c99bb157",
-        "0x4769e55b54368135dafd6bd5592805a57ee15efd56813343de634d10fd6d9c3e",
-        "0x0e8eab4d8f00482ce1e8b98288eac7f811739a59d31afdded7fa535ba3bf315e",
-        "0x7dd7e9a87d05f52134687fd55c5826b06eaad0a819b897c5b927b57da19fde0f",
-        "0x5eaa87b9c5034da3f37f47092e7f3a8d183d73edc6dae815d4de648ff288a444",
-        "0x12435943c79f8078e4b4c75dd81c2d736172019c12d58240144dba03fa06ef2d"
-      ],
-      "rank": 65
-    },
-    {
       "address": "0x5759dc3c450d55751a5804bfeb9c6a72080c2f8b",
       "balance_wei": "250000000000000000",
       "balance_eth": 0.25,
@@ -1803,5 +1792,6 @@
       ],
       "rank": 90
     }
-  ]
+  ],
+  "last_event_refresh": "2026-05-16 14:23:06 UTC"
 }

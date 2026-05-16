@@ -5830,6 +5830,31 @@ async function checkUserBalances(overrideAddress) {
             html += `<div style="margin:8px 16px;font-size:12px;color:var(--text2)">Bounty IDs not available. <a href="${etherscanAddr(cfg.contract)}#writeContract" target="_blank" rel="noopener noreferrer">Use Etherscan</a> to call killBounty with your bounty ID.</div>`;
           }
           html += `<div class="claim-card-status" id="claimStatus-${key}"></div></div>`;
+        } else if (cfg.collectiveCanvasMulti) {
+          // Collective Canvas: per-tokenId withdraw(tokenId, wei) buttons
+          const canvasItems = apiBalances[key]?.canvas_items || [];
+          html += `
+            <div class="claim-card">
+              <div class="claim-card-header">
+                <span class="claim-card-name">${esc(cfg.name)}</span>
+                <span class="claim-card-amount">${fmtEth(ethAmount)} ETH</span>
+              </div>
+              <div class="claim-card-meta">
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Contract</span><span class="claim-card-meta-value"><a href="${etherscanAddr(cfg.contract)}" target="_blank" rel="noopener noreferrer">${cfg.contract}</a></span></div>
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Function</span><span class="claim-card-meta-value">withdraw(tokenId, amount) per NFT</span></div>
+              </div>`;
+          if (canvasItems.length > 0) {
+            for (const it of canvasItems) {
+              const itEth = it.wei ? ' · ' + fmtEth(Number(BigInt(it.wei)) / 1e18) + ' ETH' : '';
+              html += `<div class="claim-row" style="margin:4px 16px;border-left:2px solid var(--accent);padding:6px 12px;display:flex;align-items:center;justify-content:space-between">
+                <span style="font-size:13px">Token #${esc(String(it.token_id))}<span style="color:var(--text2);font-size:12px">${itEth}</span></span>
+                <button class="claim-btn" data-action="canvas-withdraw" data-key="${key}" data-token-id="${esc(String(it.token_id))}" data-wei="${esc(String(it.wei))}">Withdraw</button>
+              </div>`;
+            }
+          } else {
+            html += `<div style="margin:8px 16px;font-size:12px;color:var(--text2)">Token IDs not available. <a href="${etherscanAddr(cfg.contract)}#writeContract" target="_blank" rel="noopener noreferrer">Use Etherscan</a> to call withdraw(tokenId, amount).</div>`;
+          }
+          html += `<div class="claim-card-status" id="claimStatus-${key}"></div></div>`;
         } else if (cfg.nftMulti) {
           // Nomad Recovery: per-NFT recover() buttons, gated on allowlist
           const nftDetails = apiBalances[key]?.nft_details || [];
@@ -8018,6 +8043,47 @@ async function killBounty(key, bountyId, btn) {
   }
 }
 
+async function canvasWithdraw(key, tokenId, weiStr, btn) {
+  if (!walletAddress || !walletSigner) { showInlineError('walletError', 'Please connect your wallet first.'); return; }
+  if (!await checkNetwork()) { showInlineError('networkWarn', 'Please switch to Ethereum Mainnet.', 0); document.getElementById('networkWarn').classList.add('visible'); return; }
+
+  btn.disabled = true;
+  btn.textContent = 'Withdrawing...';
+  btn.classList.add('pending');
+  var statusEl = document.getElementById('claimStatus-' + key);
+
+  try {
+    var cfg = EXCHANGES[key];
+    var contract = new ethers.Contract(cfg.contract, ['function withdraw(uint256 tokenId, uint256 amount)'], walletSigner);
+    var amountWei = BigInt(weiStr);
+    var ethAmount = ethers.formatEther(amountWei);
+    logEvent('claim_started', { address: walletAddress, contract: key, amount_eth: parseFloat(ethAmount), extra: { token_id: tokenId } });
+    var tx = await contract.withdraw(BigInt(tokenId), amountWei);
+    btn.textContent = 'Pending...';
+    if (statusEl) statusEl.textContent = 'Tx submitted: ' + tx.hash.slice(0, 22) + '...';
+    var receipt = await tx.wait();
+    btn.textContent = '\u2713 Claimed';
+    btn.classList.remove('pending');
+    btn.classList.add('claimed');
+    btn.disabled = true;
+    logEvent('claim_confirmed', { address: walletAddress, contract: key, amount_eth: parseFloat(ethAmount), tx_hash: tx.hash, block_num: receipt.blockNumber, extra: { token_id: tokenId } });
+    if (statusEl) statusEl.textContent = 'Token #' + tokenId + ' withdrawn \u2014 ' + fmtEth(ethAmount) + ' ETH';
+    var ethNum = parseFloat(ethAmount);
+    if (ethNum >= 0.1) showDonationModal(ethNum, key);
+  } catch (e) {
+    btn.disabled = false;
+    btn.textContent = 'Withdraw';
+    btn.classList.remove('pending');
+    if (e.code === 'ACTION_REJECTED' || e.code === 4001) {
+      if (statusEl) statusEl.textContent = 'Rejected';
+      logEvent('claim_failed', { address: walletAddress, contract: key, extra: { reason: 'rejected', token_id: tokenId } });
+    } else {
+      if (statusEl) statusEl.textContent = 'Failed: ' + (e.reason || e.message || 'Unknown error');
+      logEvent('claim_failed', { address: walletAddress, contract: key, extra: { reason: (e.reason || e.message || 'unknown').slice(0, 120), token_id: tokenId } });
+    }
+  }
+}
+
 // Nomad Recovery: claim a single NFT via recover(tokenId). One tx per NFT.
 // The contract requires BOTH msg.sender == ownerOf(id) AND allowList[msg.sender].
 // Non-allowlisted users see the button disabled via the render logic.
@@ -9467,6 +9533,14 @@ async function checkSingleAddress(addr) {
           html += '<div style="margin:4px 16px;border-left:2px solid var(--accent);padding:4px 12px;font-size:13px">Bounty #' + esc(String(bds[bi].id)) + '<span style="color:var(--text2);font-size:12px">' + bdEth + '</span></div>';
         }
       }
+      // Show per-tokenId breakdown in manual check flow (Collective Canvas)
+      if (cfg.collectiveCanvasMulti && apiBalances[key]?.canvas_items) {
+        var cvs = apiBalances[key].canvas_items;
+        for (var ci = 0; ci < cvs.length; ci++) {
+          var cvEth = cvs[ci].wei ? ' · ' + fmtEth(Number(BigInt(cvs[ci].wei)) / 1e18) + ' ETH' : '';
+          html += '<div style="margin:4px 16px;border-left:2px solid var(--accent);padding:4px 12px;font-size:13px">Token #' + esc(String(cvs[ci].token_id)) + '<span style="color:var(--text2);font-size:12px">' + cvEth + '</span></div>';
+        }
+      }
       // Show per-NFT breakdown in manual check flow (Nomad Recovery)
       if (cfg.nftMulti && apiBalances[key]?.nft_details) {
         var nfts = apiBalances[key].nft_details;
@@ -10008,6 +10082,8 @@ document.getElementById('claimBanner').addEventListener('click', function(e) {
     augurClaimShares(btn.dataset.key, btn.dataset.market, btn);
   } else if (action === 'kill-bounty') {
     killBounty(btn.dataset.key, parseInt(btn.dataset.bountyId), btn);
+  } else if (action === 'canvas-withdraw') {
+    canvasWithdraw(btn.dataset.key, btn.dataset.tokenId, btn.dataset.wei, btn);
   } else if (action === 'nomad-recover') {
     nomadRecover(btn.dataset.key, btn.dataset.nftId, btn.dataset.assetSymbol, btn);
   } else if (action === 'opyn-redeem-all') {

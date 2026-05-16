@@ -170,6 +170,7 @@ export default async function handler(req, res) {
       const itemsClaimed = claimedItems[key];
       let deeds = typeof val === 'object' && val.d ? val.d : null;
       let bounties = typeof val === 'object' && val.b ? val.b : null;
+      let canvasItems = typeof val === 'object' && val.cv ? val.cv : null;
       let nftDetails = typeof val === 'object' && val.nft ? val.nft : null;
       let nftAllowlisted = typeof val === 'object' && 'al' in val ? val.al : null;
       let epochs = typeof val === 'object' && val.ep ? val.ep : null;
@@ -215,6 +216,11 @@ export default async function handler(req, res) {
           if (bounties.length === 0) continue;
           balanceEth = bounties.reduce((s, b) => s + parseFloat(b.eth || 0), 0).toFixed(8);
         }
+        if (canvasItems) {
+          canvasItems = canvasItems.filter(it => !isClaimedItem(itemsClaimed, it.token_id, 'canvas'));
+          if (canvasItems.length === 0) continue;
+          balanceEth = (canvasItems.reduce((s, it) => s + Number(BigInt(it.wei || '0')), 0) / 1e18).toFixed(8);
+        }
         if (epochs) {
           epochs = epochs.filter(e => !isClaimedItem(itemsClaimed, e.epoch, 'reward'));
           if (epochs.length === 0) continue;
@@ -252,6 +258,7 @@ export default async function handler(req, res) {
         ...(deeds ? { deeds } : {}),
         ...(adoptionRequests ? { adoption_requests: adoptionRequests } : {}),
         ...(bounties ? { bounty_details: bounties } : {}),
+        ...(canvasItems ? { canvas_items: canvasItems } : {}),
         ...(nftDetails ? { nft_details: nftDetails } : {}),
         ...(nftAllowlisted !== null ? { allowlisted: nftAllowlisted } : {}),
         ...(epochs ? { epoch_details: epochs } : {}),
