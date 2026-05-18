@@ -1,11 +1,11 @@
 {
   "contract": "0xa17a8883da1abd57c690df9ebf58fc194edab66f",
-  "contract_eth_balance": 54.600218,
-  "total_eth_in_balances": 54.600218,
+  "balance_source": "weth",
+  "contract_eth_balance": 54.59837162,
+  "total_eth_in_balances": 54.600224,
   "addresses_with_balance": 386,
   "coverage_pct": 100.0,
   "scan_date": "2026-04-10 22:47:08 UTC",
-  "balance_source": "weth",
   "description": "Pickle Finance v1 staking let users stake PICKLE tokens to earn WETH rewards. Pickle migrated to v2 and Arbitrum, abandoning this pool. Unclaimed WETH is claimable via getReward().",
   "distribution": {
     "1_plus": 3,
