@@ -1,18 +1,18 @@
 {
   "contract": "0xa4B86BcbB18639D8e708d6163a0c734aFcDB770c",
   "balance_source": "token",
-  "contract_eth_balance": 100.664,
-  "total_eth_in_balances": 48.49634011,
-  "addresses_with_balance": 587,
+  "contract_eth_balance": 100.661738,
+  "total_eth_in_balances": 48.49407758,
+  "addresses_with_balance": 585,
   "coverage_pct": 48.18,
-  "scan_date": "2026-05-18 16:18:24 UTC",
+  "scan_date": "2026-05-26 04:18:35 UTC",
   "distribution": {
     ">=100": 0,
     "10-100": 2,
     "1-10": 5,
     "0.1-1": 31,
     "0.01-0.1": 54,
-    "<0.01": 495
+    "<0.01": 493
   },
   "isMultiAssetNft": true,
   "affectedAssets": [
@@ -2883,22 +2883,6 @@
           "decimals": 6,
           "amount": 1.772609,
           "amount_wei": 1772609
-        }
-      ]
-    },
-    {
-      "address": "0xae66f023f3bd067f2c58e25b225eded462f9c99c",
-      "balance_eth": 0.00226252423170609,
-      "balance_wei": "2262524231706090",
-      "allowlisted": true,
-      "nft_details": [
-        {
-          "nft_id": 630,
-          "asset_address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-          "asset_symbol": "WETH",
-          "decimals": 18,
-          "amount": 0.00226252423170609,
-          "amount_wei": 2262524231706090
         }
       ]
     },
@@ -9675,22 +9659,6 @@
           "decimals": 6,
           "amount": 9.066419,
           "amount_wei": 9066419
-        }
-      ]
-    },
-    {
-      "address": "0xc99b9d4bbb924e3dec23db4a65cadd250845e8db",
-      "balance_eth": 0.0,
-      "balance_wei": "0",
-      "allowlisted": true,
-      "nft_details": [
-        {
-          "nft_id": 242,
-          "asset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "asset_symbol": "USDC",
-          "decimals": 6,
-          "amount": 4.2491,
-          "amount_wei": 4249100
         }
       ]
     },

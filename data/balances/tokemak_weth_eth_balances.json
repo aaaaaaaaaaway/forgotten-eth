@@ -5,7 +5,7 @@
   "total_eth_in_balances": 276.15841144,
   "addresses_with_balance": 373,
   "coverage_pct": 100.0,
-  "scan_date": "2026-05-18 16:17:34 UTC",
+  "scan_date": "2026-05-26 04:17:46 UTC",
   "distribution": {
     ">=10 ETH": 4,
     "1-10 ETH": 43,
@@ -15,10 +15,10 @@
   },
   "meta": {
     "manager": "0xa86e412109f77c45a3bc1c5870b880492fb86a14",
-    "current_cycle": 421,
+    "current_cycle": 422,
     "weth_address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-    "ready_to_withdraw_count": 92,
-    "ready_to_withdraw_eth": 94.059973,
+    "ready_to_withdraw_count": 93,
+    "ready_to_withdraw_eth": 94.094973,
     "note": "Tokemak v1 EthPool (tWETH reactor). 2-step withdraw: requestWithdrawal(amount) then withdraw(amount, false) after manager rolls cycles (~weekly). Holders with `ready: true` have a pending request that has matured and can call step 2 immediately. Manager: 0xa86e412109f77c45a3bc1c5870b880492fb86a14."
   },
   "balances": [
@@ -1505,7 +1505,7 @@
       "pending_min_cycle": 422,
       "pending_amount_wei": "35000000000000000",
       "pending_amount_eth": 0.035,
-      "ready": false,
+      "ready": true,
       "rank": 207
     },
     {

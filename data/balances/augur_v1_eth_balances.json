@@ -1,18 +1,36 @@
 {
   "contract": "0xd5524179cB7AE012f5B642C1D6D700Bbaa76B96b",
   "balance_source": "token",
-  "contract_eth_balance": 770.339898,
-  "total_eth_in_balances": 429.79847435,
+  "contract_eth_balance": 769.935353,
+  "total_eth_in_balances": 429.798474,
   "addresses_with_balance": 937,
-  "coverage_pct": 55.79,
+  "coverage_pct": 55.82,
   "scan_date": "2026-05-01 04:18:10 UTC",
   "distribution": {
-    "0-0.01": 208,
-    "0.01-0.1": 348,
-    "0.1-1": 347,
-    "1-10": 67,
-    "10-100": 3,
-    "100+": 0
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0.0
+    },
+    "10-100 ETH": {
+      "count": 3,
+      "total_eth": 158.00291
+    },
+    "1-10 ETH": {
+      "count": 65,
+      "total_eth": 156.139838
+    },
+    "0.1-1 ETH": {
+      "count": 331,
+      "total_eth": 102.34911
+    },
+    "0.01-0.1 ETH": {
+      "count": 344,
+      "total_eth": 12.763839
+    },
+    "<0.01 ETH": {
+      "count": 194,
+      "total_eth": 0.542773
+    }
   },
   "note": "Merged from 3 claim paths: mailbox Cash withdrawals, open order cancellations, and winning share redemptions. EOA share holders only (53 contract-held shares excluded as stuck).",
   "claim_path_summary": {
@@ -166955,5 +166973,6 @@
       ],
       "balance_wei": "5000000000000"
     }
-  ]
+  ],
+  "last_event_refresh": "2026-05-25 22:23:06 UTC"
 }

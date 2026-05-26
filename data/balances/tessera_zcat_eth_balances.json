@@ -6,16 +6,34 @@
   "scan_date": "2026-04-15 14:30:52 UTC",
   "contract_eth_balance": 15.59816673,
   "total_addresses_scanned": 192,
-  "addresses_with_balance": 185,
-  "total_eth_in_balances": 15.59816673,
-  "coverage_pct": 100.0,
+  "addresses_with_balance": 180,
+  "total_eth_in_balances": 15.460447,
+  "coverage_pct": 99.12,
   "distribution": {
-    ">0 ETH": 79,
-    ">0.01 ETH": 72,
-    ">0.1 ETH": 33,
-    ">1 ETH": 1,
-    ">10 ETH": 0,
-    ">100 ETH": 0
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0.0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0.0
+    },
+    "1-10 ETH": {
+      "count": 1,
+      "total_eth": 2.084867
+    },
+    "0.1-1 ETH": {
+      "count": 32,
+      "total_eth": 10.328458
+    },
+    "0.01-0.1 ETH": {
+      "count": 72,
+      "total_eth": 2.879272
+    },
+    "<0.01 ETH": {
+      "count": 75,
+      "total_eth": 0.16785
+    }
   },
   "balances": [
     {
@@ -191,12 +209,6 @@
       "token_balance": "13339940000000000000000",
       "balance_wei": "142733357445333574",
       "balance_eth": 0.14273336
-    },
-    {
-      "address": "0x08109a9be5dd5387e9b3982c73da41cb1df1ce4a",
-      "token_balance": "12871399999999994851440",
-      "balance_wei": "137720119957201144",
-      "balance_eth": 0.13772012
     },
     {
       "address": "0x5af3ecc4be55c97cd10a72ea55df83e89a0c5a29",
@@ -1129,6 +1141,6 @@
       "balance_eth": 0.0
     }
   ],
-  "last_event_refresh": "2026-04-04T05:21:16Z",
+  "last_event_refresh": "2026-05-22 00:23:05 UTC",
   "total_supply": "1457813449937818456637357"
 }

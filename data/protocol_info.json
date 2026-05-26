@@ -2013,7 +2013,7 @@
   },
   "metadrop_anata": {
     "name": "Metadrop: Anata",
-    "desc": "In April 2022, Metadrop ran a sealed-bid auction for the Anata NFT collection \u2014 1,920 items at a uniform clearing price. Bidders submitted ETH-backed orders above a minimum reserve; those who bid above the clearing price won NFTs while the difference between their bid and the clearing price was refundable via a merkle-gated claim. Metadrop set the refund merkle root on-chain and shut down metadrop.com shortly after. The contract is immutable with no deadline \u2014 120 bidders across 197.33 ETH have never claimed their refund. The root is frozen on-chain and matching proofs were reconstructed from archived frontend JS bundles.",
+    "desc": "In April 2022, Metadrop ran a sealed-bid auction for the Anata NFT collection \u2014 1,920 items at a uniform clearing price. Bidders submitted ETH-backed orders above a minimum reserve; those who bid above the clearing price won NFTs while the difference between their bid and the clearing price was refundable via a merkle-gated claim. On 2026-05-17 the auction operator (treasury wallet 0x1ffe9762...) swept the residual 187.45 ETH out of the contract \u2014 the merkle root remains on-chain and 117 bidders still hold valid proofs, but claimRefund() now reverts because the contract is empty. Those refunds are no longer recoverable through the original contract.",
     "category": "nft",
     "color": "#9b59b6",
     "contract": "0x0cba81ba02c58a4c2c160fdd2e7411ad9cdf5dbe",

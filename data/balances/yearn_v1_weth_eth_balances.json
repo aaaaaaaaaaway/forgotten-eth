@@ -2,16 +2,35 @@
   "contract": "0xe1237aA7f535b0CC33Fd973D66cBf830354d16c7",
   "balance_source": "weth",
   "contract_eth_balance": 495.09421232,
-  "total_eth_in_balances": 495.68349657,
-  "addresses_with_balance": 535,
-  "coverage_pct": 100.12,
+  "total_eth_in_balances": 495.603638,
+  "addresses_with_balance": 538,
+  "coverage_pct": 100.1,
   "scan_date": "2026-04-16 14:47:15 UTC",
   "distribution": {
-    ">=10 ETH": 8,
-    "1-10 ETH": 33,
-    "0.1-1 ETH": 83,
-    "0.01-0.1 ETH": 83,
-    "<0.01 ETH": 332
+    ">=100 ETH": {
+      "count": 1,
+      "total_eth": 100.715529
+    },
+    "10-100 ETH": {
+      "count": 7,
+      "total_eth": 269.611765
+    },
+    "1-10 ETH": {
+      "count": 33,
+      "total_eth": 88.718411
+    },
+    "0.1-1 ETH": {
+      "count": 83,
+      "total_eth": 33.060272
+    },
+    "0.01-0.1 ETH": {
+      "count": 82,
+      "total_eth": 3.275887
+    },
+    "<0.01 ETH": {
+      "count": 332,
+      "total_eth": 0.22176
+    }
   },
   "meta": {
     "vault": "0xe1237aA7f535b0CC33Fd973D66cBf830354d16c7",
@@ -21,7 +40,7 @@
     "vault_weth_balance": 495.8437643336386,
     "note": "Yearn v1 yWETH vault. Users hold yWETH shares redeemable for WETH via withdraw(uint256) or withdrawETH(uint256). balance_eth is the WETH equivalent = yWETH_balance * pricePerFullShare / 1e18."
   },
-  "last_event_refresh": "2026-05-07T04:17:17Z",
+  "last_event_refresh": "2026-05-23 03:23:06 UTC",
   "balances": [
     {
       "address": "0xd34586c03198eb659671daf9dc3449dc0bda4d04",
@@ -962,13 +981,6 @@
       "yweth_balance": 0.07898334,
       "rank": 134,
       "balance_wei": "80084200000000000"
-    },
-    {
-      "address": "0xf190e84991ae3201dfd764bce08b3ab193247241",
-      "balance_eth": 0.07985815,
-      "yweth_balance": 0.0787604,
-      "rank": 135,
-      "balance_wei": "79858150000000000"
     },
     {
       "address": "0x343cae6bef9534d2127971768f0a101cee2541c9",
