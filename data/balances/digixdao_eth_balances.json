@@ -1,11 +1,11 @@
 {
   "contract": "0xe0b7927c4af23765cb51314a0e0521a9645f0e2a",
   "balance_source": "token",
-  "contract_eth_balance": 11900.776413,
-  "total_eth_in_balances": 11098.238291,
+  "contract_eth_balance": 11900.60201,
+  "total_eth_in_balances": 11098.238726,
   "addresses_with_balance": 6014,
   "coverage_pct": 93.26,
-  "scan_date": "2026-05-26 04:18:14 UTC",
+  "scan_date": "2026-05-27 10:18:17 UTC",
   "description": "ETH claimable by DGD holders via Acid.burn() (approve DGD + burn flow)",
   "distribution": {
     ">=100 ETH": 9,
@@ -20,15 +20,15 @@
     "formula": "eth_wei = dgd_raw * weiPerNanoDGD",
     "acid_contract": "0x23Ea10CC1e6EBdB499D24E45369A35f43627062f",
     "dgd_token": "0xe0b7927c4af23765cb51314a0e0521a9645f0e2a",
-    "skipped_stuck_contracts": 1,
-    "skipped_stuck_eth_entitlement": 73.827994,
+    "skipped_stuck_contracts": 2,
+    "skipped_stuck_eth_entitlement": 90.813767,
     "pending_integration_count": 43,
     "pending_integration_eth": 204.659467,
     "skipped_dust_holders": 0,
     "note": "Acid.burn() is first-come-first-served. If total_eth_in_balances exceeds contract_eth_balance, the last callers will revert with 'Contract does not have enough funds'. Site should warn when coverage_pct > 100."
   },
   "token_checked": "0xe0b7927c4af23765cb51314a0e0521a9645f0e2a",
-  "total_addresses_scanned": 6015,
+  "total_addresses_scanned": 6016,
   "balances": [
     {
       "address": "0xba843fe812f747f479b140f02c330b32ef89acaf",
@@ -21858,45 +21858,45 @@
       "rank": 3105
     },
     {
+      "address": "0xcd6b980029e6e6e0733ac8ec3e02be9410d09799",
+      "balance_eth": 0.071455,
+      "balance_wei": "71454917995022630",
+      "dgd_raw": "370128835",
+      "rank": 3106
+    },
+    {
       "address": "0x5ca4eca475d506bdba234e74a3e13a14d4de576c",
       "balance_eth": 0.07143,
       "balance_wei": "71430045860000000",
       "dgd_raw": "370000000",
-      "rank": 3106
+      "rank": 3107
     },
     {
       "address": "0xe04de3d0953f18537400d1b0ed5608b4dcd98f55",
       "balance_eth": 0.071353,
       "balance_wei": "71352824188800000",
       "dgd_raw": "369600000",
-      "rank": 3107
+      "rank": 3108
     },
     {
       "address": "0xcab44961ba917764b43a83676880b40138a6ba97",
       "balance_eth": 0.07116,
       "balance_wei": "71159963064978000",
       "dgd_raw": "368601000",
-      "rank": 3108
+      "rank": 3109
     },
     {
       "address": "0x6831321b7e88797f476c4cdb4eef5bb55e52ea6d",
       "balance_eth": 0.071115,
       "balance_wei": "71114552861228840",
       "dgd_raw": "368365780",
-      "rank": 3109
+      "rank": 3110
     },
     {
       "address": "0x3d30e4085a4dc567e2157e076423090ae93df3c9",
       "balance_eth": 0.071088,
       "balance_wei": "71087671997484120",
       "dgd_raw": "368226540",
-      "rank": 3110
-    },
-    {
-      "address": "0xcd6b980029e6e6e0733ac8ec3e02be9410d09799",
-      "balance_eth": 0.07102,
-      "balance_wei": "71019645303728082",
-      "dgd_raw": "367874169",
       "rank": 3111
     },
     {

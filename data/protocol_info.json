@@ -2239,5 +2239,14 @@
     "contract": "0x4d9629e80118082b939e3d59e69c82a2ec08b4d5",
     "deployed": "August 2022",
     "slug": "tribe-redeemer"
+  },
+  "gro_ust_comp": {
+    "name": "Gro UST Compensation",
+    "desc": "Gro Protocol compensated addresses hit by the May-2022 UST/Terra depeg with PWRD, its USD stablecoin, vested over two years through a merkle claim contract. The schedule started July 2022 and finished 31 May 2024, so every eligible address can now claim its full remaining allocation in a single transaction — initialClaim(proof, amount) for first-time claimers, claim() for those who started but stopped. PWRD is redeemable roughly 1:1 to USDC via Gro's withdraw handler, which is what the v2 hero counter tracks. Roughly 956k PWRD across 123 addresses is still unclaimed years after vesting completed.",
+    "category": "defi",
+    "color": "#1a7a6b",
+    "contract": "0x02c133b9fbffb8d2e8cb7b7a94c7c880b331c720",
+    "deployed": "July 2022",
+    "slug": "gro-ust-compensation"
   }
 }

@@ -204,6 +204,11 @@ export default async function handler(req, res) {
       // balance (e.g., TRIBE for tribe_redeemer's approve+redeem flow).
       let v2TokenBalances = typeof val === 'object' && val.tkb ? val.tkb : null;
       let v2TribeRaw      = typeof val === 'object' && val.trb ? val.trb : null;
+      // gro_ust_comp: PWRD merkle vesting (USDC-denominated). gca = full PWRD
+      // allocation for initialClaim(proof, amount); gni = needs_initial (true →
+      // initialClaim with proof, false → the no-arg claim()).
+      let groClaimAmount  = typeof val === 'object' && val.gca ? val.gca : null;
+      let groNeedsInitial = typeof val === 'object' && 'gni' in val ? val.gni : null;
 
       if (itemsClaimed && itemsClaimed.size > 0) {
         if (deeds) {
@@ -313,6 +318,7 @@ export default async function handler(req, res) {
         } : {}),
         ...(v2TokenBalances ? { token_balances: v2TokenBalances } : {}),
         ...(v2TribeRaw ? { tribe_balance_raw: v2TribeRaw } : {}),
+        ...(groClaimAmount ? { gro_claim_amount: groClaimAmount, gro_needs_initial: groNeedsInitial } : {}),
       };
     }
   }

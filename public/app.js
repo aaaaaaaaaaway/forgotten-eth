@@ -4358,6 +4358,30 @@ const EXCHANGES = {
     withdrawArgs: (amount, user) => [user, amount],
     withdrawCall: 'redeem',
   },
+  // v2 ERC20 — PWRD merkle vesting denominated in USDC. The May-2022 UST/Terra
+  // depeg compensation: PWRD (Gro's USD stablecoin) vested over 2 years via a
+  // GMerkleVestor; vesting ended 2024-05-31 so the full allocation is claimable
+  // in one tx. `groMerkleVesting` triggers the dedicated claim card; the
+  // initialClaim-vs-claim() dispatch lives in groClaim(). PWRD is then
+  // optionally redeemable ~1:1 to USDC via Gro's withdraw handler.
+  gro_ust_comp: {
+    name: 'Gro UST Compensation',
+    desc: "Gro Protocol compensated addresses hit by the May-2022 UST/Terra depeg with PWRD, its USD stablecoin, vested over two years via a merkle claim contract. Vesting finished 31 May 2024, so every eligible address can now claim its full remaining allocation in a single tx — initialClaim(proof, amount) for first-time claimers, claim() for those who started but stopped. PWRD is redeemable ~1:1 to USDC via Gro's withdraw handler; only USDC counts on the v2 hero counter.",
+    category: 'defi',
+    color: '#1a7a6b',
+    contract: '0x02c133b9fbffb8d2e8cb7b7a94c7c880b331c720',
+    deployed: 'July 2022',
+    payoutToken: 'USDC',
+    payoutTokenAddress: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48',
+    vestedToken: 'PWRD',
+    vestedTokenAddress: '0xf0a93d4994b3d98fb5e3a2f90dbc2d69073cb86b',
+    redeemHandler: '0xd4139e090e43ff77172d9dd8ba449d2a9683790d',
+    groMerkleVesting: true,
+    noWalletCheck: true,
+    multiStep: true,
+    initialClaimAbi: 'function initialClaim(bytes32[] proof, uint256 amount)',
+    claimAbi: 'function claim()',
+  },
 };
 
 // Per-tab state
@@ -4375,7 +4399,7 @@ for (const key of Object.keys(EXCHANGES)) {
   for (const [key, cfg] of Object.entries(EXCHANGES)) {
     // Tab button — <a> for SEO (Google follows href), onclick prevents navigation for users
     const tab = document.createElement('a');
-    const slugAliases = { ens_old: 'ens' };
+    const slugAliases = { ens_old: 'ens', gro_ust_comp: 'gro-ust-compensation' };
     tab.href = '/' + (slugAliases[key] || key.replace(/_/g, '-'));
     tab.className = 'tab' + (isFirst ? ' active' : '');
     tab.dataset.tab = key;
@@ -5390,6 +5414,39 @@ async function checkUserBalances(overrideAddress) {
                 <div class="claim-card-meta-row"><span class="claim-card-meta-label">Step 1</span><span class="claim-card-meta-value"><span style="color:var(--text)">${isParityMultisig ? 'execute(DAO, 0, approve(WithdrawDAO, balance))' : 'approve(WithdrawDAO, balance)'}</span></span></div>
                 <div class="claim-card-meta-row"><span class="claim-card-meta-label">Step 2</span><span class="claim-card-meta-value"><span style="color:var(--text)">${isParityMultisig ? 'execute(WithdrawDAO, 0, withdraw())' : 'withdraw()'}</span></span></div>
                 ${stepInfo}
+              </div>
+              <div class="claim-card-actions">
+                ${actionBtn}
+              </div>
+              <div class="claim-card-status" id="claimStatus-${key}"></div>
+            </div>`;
+        } else if (cfg.groMerkleVesting) {
+          // gro_ust_comp: PWRD merkle vesting, USDC-denominated. Single-step
+          // claim (initialClaim(proof,amount) for first-timers, claim() for
+          // partials — dispatched in groClaim() via the API's gro_needs_initial
+          // flag). No token approval needed. PWRD is then optionally redeemable
+          // ~1:1 to USDC via Gro's withdraw handler.
+          const apiE = apiBalances[key] || {};
+          const rawAmount = BigInt((apiE.token_balances || {})['USDC'] || '0');
+          const amountDisplay = parseFloat(ethers.formatUnits(rawAmount, 6)).toLocaleString('en', {
+            minimumFractionDigits: 0, maximumFractionDigits: 2,
+          });
+          const needsInitial = apiE.gro_needs_initial !== false;
+          const claimFn = needsInitial ? 'initialClaim(proof, amount)' : 'claim()';
+          const actionBtn = walletProvider
+            ? `<button class="claim-btn" id="claimBtn-${key}" data-action="gro-claim" data-key="${key}">Claim PWRD</button>`
+            : `<button class="claim-btn" disabled style="opacity:0.5">Connect wallet to claim</button>`;
+          html += `
+            <div class="claim-card v2-usdc">
+              <div class="claim-card-header">
+                <span class="claim-card-name">${esc(cfg.name)}<span class="v2-token-chip usdc">USDC</span></span>
+                <span class="claim-card-amount">${esc(amountDisplay)} <span class="denom">USDC</span></span>
+              </div>
+              <div class="claim-card-meta" id="claimDetails-${key}">
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Contract</span><span class="claim-card-meta-value"><a href="${etherscanAddr(cfg.contract)}" target="_blank" rel="noopener noreferrer">${cfg.contract}</a></span></div>
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Step 1</span><span class="claim-card-meta-value"><span style="color:var(--text)">${esc(claimFn)}</span> → receive PWRD</span></div>
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Step 2</span><span class="claim-card-meta-value">optional: redeem PWRD → USDC (~1:1) via Gro's handler</span></div>
+                <div class="claim-card-meta-row" style="margin-top:4px;padding-top:6px;border-top:1px solid rgba(255,255,255,0.06)"><span class="claim-card-meta-label" style="color:var(--text2)">Vesting</span><span class="claim-card-meta-value" style="color:var(--text2)">Complete (ended May 2024) — full allocation claimable now. PWRD is Gro's USD stablecoin.</span></div>
               </div>
               <div class="claim-card-actions">
                 ${actionBtn}
@@ -6866,6 +6923,98 @@ async function tribeRedeem(key) {
     } else {
       console.error('tribeRedeem error:', e);
       statusEl.textContent = 'Redeem failed: ' + (e.reason || e.message || 'Unknown error').slice(0, 200);
+      logEvent('claim_failed', { address: walletAddress, contract: key, extra: { reason: (e.reason || e.message || 'unknown').slice(0, 200) } });
+    }
+  }
+}
+
+// gro_ust_comp: claim vested PWRD from the GMerkleVestor. The function differs
+// per user — never-claimed addresses call initialClaim(proof, amount) (the leaf
+// is over the FULL allocation; vesting is complete so it pays out in one tx),
+// partial claimers call the no-arg claim() for the remainder. The merkle proof
+// + full allocation come from the API entry (gro_claim_amount / merkle_proof /
+// gro_needs_initial). After claiming PWRD, the user can optionally redeem it
+// ~1:1 to USDC via Gro's withdraw handler (surfaced as a follow-up hint).
+// Status DOM is built with createElement/textContent (no innerHTML) so no
+// interpolated value can be interpreted as markup.
+async function groClaim(key) {
+  const cfg = EXCHANGES[key];
+  const btn = document.getElementById('claimBtn-' + key);
+  const statusEl = document.getElementById('claimStatus-' + key);
+  if (!await checkNetwork()) { showInlineError('networkWarn', 'Please switch to Ethereum Mainnet.', 0); document.getElementById('networkWarn').classList.add('visible'); return; }
+  if (!walletSigner) { showInlineError('walletError', 'Please connect your wallet first.'); return; }
+  if (btn.disabled) return;
+
+  const apiE = apiBalances[key] || {};
+  const needsInitial = apiE.gro_needs_initial !== false;
+  if (needsInitial && (!apiE.merkle_proof || !apiE.gro_claim_amount)) {
+    statusEl.textContent = 'Missing merkle data — refresh and try again.';
+    return;
+  }
+
+  const txAnchor = (hash, label) => {
+    const a = document.createElement('a');
+    a.href = etherscanTx(hash); a.target = '_blank'; a.rel = 'noopener noreferrer';
+    a.textContent = label;
+    return a;
+  };
+
+  btn.disabled = true;
+  btn.textContent = 'Claiming...';
+  btn.classList.add('pending');
+  let tx;
+  try {
+    const abi = needsInitial ? cfg.initialClaimAbi : cfg.claimAbi;
+    const vestor = new ethers.Contract(cfg.contract, [abi], walletSigner);
+    logEvent('claim_started', { address: walletAddress, contract: key, extra: { step: needsInitial ? 'initialClaim' : 'claim' } });
+    tx = needsInitial
+      ? await vestor.initialClaim(apiE.merkle_proof, BigInt(apiE.gro_claim_amount))
+      : await vestor.claim();
+
+    btn.textContent = 'Pending...';
+    statusEl.textContent = 'Tx submitted: ';
+    statusEl.appendChild(txAnchor(tx.hash, tx.hash.slice(0, 18) + '...'));
+    const receipt = await tx.wait();
+
+    const rawAmount = BigInt((apiE.token_balances || {})['USDC'] || '0');
+    const amountHuman = ethers.formatUnits(rawAmount, 6);
+    const amountStr = parseFloat(amountHuman).toLocaleString('en', { maximumFractionDigits: 2 });
+    logEvent('claim_confirmed', { address: walletAddress, contract: key, tx_hash: tx.hash, block_num: receipt.blockNumber, extra: { payout_token: 'PWRD', usdc_value: amountHuman } });
+
+    btn.textContent = '✓ Claimed';
+    btn.classList.remove('pending');
+    btn.classList.add('claimed');
+
+    statusEl.textContent = '';
+    const box = document.createElement('div');
+    box.className = 'claim-recovered';
+    const lbl = document.createElement('div');
+    lbl.className = 'claim-recovered-label'; lbl.textContent = 'Claimed PWRD';
+    const amt = document.createElement('div');
+    amt.className = 'claim-recovered-amount'; amt.textContent = '≈ ' + amountStr + ' USDC';
+    const txRow = document.createElement('div');
+    txRow.className = 'claim-recovered-tx';
+    txRow.appendChild(txAnchor(tx.hash, 'View transaction on Etherscan'));
+    const hint = document.createElement('div');
+    hint.style.cssText = 'font-size:11px;color:var(--text2);margin-top:6px';
+    hint.appendChild(document.createTextNode('PWRD is now in your wallet. To convert to USDC (~1:1), redeem via Gro’s withdraw handler '));
+    const handlerLink = document.createElement('a');
+    handlerLink.href = etherscanAddr(cfg.redeemHandler); handlerLink.target = '_blank'; handlerLink.rel = 'noopener noreferrer';
+    handlerLink.textContent = cfg.redeemHandler.slice(0, 10) + '…';
+    hint.appendChild(handlerLink);
+    hint.appendChild(document.createTextNode('.'));
+    box.append(lbl, amt, txRow, hint);
+    statusEl.appendChild(box);
+  } catch (e) {
+    btn.disabled = false;
+    btn.textContent = 'Claim PWRD';
+    btn.classList.remove('pending');
+    if (e.code === 'ACTION_REJECTED' || e.code === 4001) {
+      statusEl.textContent = 'Rejected';
+      logEvent('claim_failed', { address: walletAddress, contract: key, extra: { reason: 'rejected' } });
+    } else {
+      console.error('groClaim error:', e);
+      statusEl.textContent = 'Claim failed: ' + (e.reason || e.message || 'Unknown error').slice(0, 200);
       logEvent('claim_failed', { address: walletAddress, contract: key, extra: { reason: (e.reason || e.message || 'unknown').slice(0, 200) } });
     }
   }
@@ -10036,6 +10185,8 @@ document.getElementById('claimBanner').addEventListener('click', function(e) {
     tribeApprove(btn.dataset.key);
   } else if (action === 'tribe-redeem') {
     tribeRedeem(btn.dataset.key);
+  } else if (action === 'gro-claim') {
+    groClaim(btn.dataset.key);
   } else if (action === 'dao-approve') {
     daoApprove(btn.dataset.key);
   } else if (action === 'dao-withdraw') {

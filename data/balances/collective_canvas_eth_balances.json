@@ -1,10 +1,10 @@
 {
   "contract": "0x3a56ab63c7ef4f07fe353beb132e0fd5ad270ca0",
   "balance_source": "token",
-  "contract_eth_balance": 65.10774303,
-  "total_eth_in_balances": 63.758252,
-  "addresses_with_balance": 272,
-  "coverage_pct": 97.93,
+  "contract_eth_balance": 63.750755,
+  "total_eth_in_balances": 62.401265,
+  "addresses_with_balance": 271,
+  "coverage_pct": 97.88,
   "scan_date": "2026-05-05 16:07:20 UTC",
   "description": "Collective Canvas per-NFT mint-fee escrow. NFT owner calls withdraw(tokenId, amount) to claim accumulated ETH share for each owned tokenId.",
   "meta": {
@@ -316,18 +316,6 @@
         }
       ],
       "rank": 13
-    },
-    {
-      "address": "0x865c2f85c9fea1c6ac7f53de07554d68cb92ed88",
-      "balance_wei": "1356987769246443754",
-      "balance_eth": 1.3569877692464438,
-      "collective_canvas_items": [
-        {
-          "token_id": 78,
-          "wei": 1356987769246443754
-        }
-      ],
-      "rank": 14
     },
     {
       "address": "0x08797952462b82db639ddbfdef2ab1718ffa7676",
@@ -3998,5 +3986,5 @@
       "rank": 273
     }
   ],
-  "last_event_refresh": "2026-05-16 00:23:06 UTC"
+  "last_event_refresh": "2026-05-26 07:58:31 UTC"
 }
