@@ -2,9 +2,9 @@
   "contract": "0xe1237aA7f535b0CC33Fd973D66cBf830354d16c7",
   "balance_source": "weth",
   "contract_eth_balance": 495.09421232,
-  "total_eth_in_balances": 495.603638,
-  "addresses_with_balance": 538,
-  "coverage_pct": 100.1,
+  "total_eth_in_balances": 492.99165,
+  "addresses_with_balance": 537,
+  "coverage_pct": 99.58,
   "scan_date": "2026-04-16 14:47:15 UTC",
   "distribution": {
     ">=100 ETH": {
@@ -16,8 +16,8 @@
       "total_eth": 269.611765
     },
     "1-10 ETH": {
-      "count": 33,
-      "total_eth": 88.718411
+      "count": 32,
+      "total_eth": 86.106423
     },
     "0.1-1 ETH": {
       "count": 83,
@@ -40,7 +40,7 @@
     "vault_weth_balance": 495.8437643336386,
     "note": "Yearn v1 yWETH vault. Users hold yWETH shares redeemable for WETH via withdraw(uint256) or withdrawETH(uint256). balance_eth is the WETH equivalent = yWETH_balance * pricePerFullShare / 1e18."
   },
-  "last_event_refresh": "2026-05-23 03:23:06 UTC",
+  "last_event_refresh": "2026-05-27 20:23:05 UTC",
   "balances": [
     {
       "address": "0xd34586c03198eb659671daf9dc3449dc0bda4d04",
@@ -195,13 +195,6 @@
       "yweth_balance": 2.9842925,
       "rank": 22,
       "balance_wei": "3025887040000000000"
-    },
-    {
-      "address": "0x1f540e4d3211d393c31fa343cffd080d9b11b29e",
-      "balance_eth": 2.61198847,
-      "yweth_balance": 2.57608347,
-      "rank": 23,
-      "balance_wei": "2611988470000000000"
     },
     {
       "address": "0x2f34b9f94ab55cbff1be0044a463a0715cab45ec",

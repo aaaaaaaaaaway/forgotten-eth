@@ -2,9 +2,9 @@
   "contract": "0xe14ab3ee81abe340b45bb26b1b166a7d2df22585",
   "balance_source": "eth",
   "contract_eth_balance": 105.37633467,
-  "total_eth_in_balances": 104.795643,
-  "addresses_with_balance": 1829,
-  "coverage_pct": 99.45,
+  "total_eth_in_balances": 97.936495,
+  "addresses_with_balance": 1828,
+  "coverage_pct": 92.94,
   "scan_date": "2026-05-02 14:51:01 UTC",
   "description": "Current TweetMarket high bidders can cancel each bid by tweet ID after the lockup.",
   "meta": {
@@ -44,42 +44,6 @@
         }
       ],
       "rank": 2
-    },
-    {
-      "address": "0x93681e7a57dabc0e57633d15dccf880de4831426",
-      "balance_wei": "6859148120000000000",
-      "balance_eth": 6.85914812,
-      "tweetmarket_bids": [
-        {
-          "tweet_id": "1340573003579617280",
-          "wei": "6054606400000000000",
-          "eth": "6.054606399999999944",
-          "last_tx_hash": "0x074725b7686a3bba0f665642997aea9b514b8a85017b0080cc317ae9733b8f55",
-          "last_tx_date": "2021-03-09 07:40:09.000 UTC"
-        },
-        {
-          "tweet_id": "1367337699355611136",
-          "wei": "362916740000000000",
-          "eth": "0.362916740000000015",
-          "last_tx_hash": "0x5066919c43c85db85cf29e98047bfe32fe01cabb2d53beedf34ef59ed51a0a3b",
-          "last_tx_date": "2021-03-09 08:54:11.000 UTC"
-        },
-        {
-          "tweet_id": "1196524372044861440",
-          "wei": "221237530000000000",
-          "eth": "0.221237529999999988",
-          "last_tx_hash": "0x2543bfd294aa59cbfe2adfb9ab5243ec16a328fb7e6a049afb0d5e3ee78b724a",
-          "last_tx_date": "2021-03-09 07:37:08.000 UTC"
-        },
-        {
-          "tweet_id": "1080203006539227138",
-          "wei": "220387450000000000",
-          "eth": "0.220387450000000013",
-          "last_tx_hash": "0xb3dc2a72c6840e5e34555d9113062d1b5409f4c6b9413974f236ce462e981fd8",
-          "last_tx_date": "2021-03-09 07:44:39.000 UTC"
-        }
-      ],
-      "rank": 3
     },
     {
       "address": "0x1ea974dda00eb0174ac8d015e6694e3e166e7ede",
@@ -36551,5 +36515,5 @@
       "rank": 1831
     }
   ],
-  "last_event_refresh": "2026-05-15 21:23:05 UTC"
+  "last_event_refresh": "2026-05-30 08:23:05 UTC"
 }

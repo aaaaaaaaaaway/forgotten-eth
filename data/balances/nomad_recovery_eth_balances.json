@@ -3,16 +3,16 @@
   "balance_source": "token",
   "contract_eth_balance": 100.661738,
   "total_eth_in_balances": 48.49407758,
-  "addresses_with_balance": 585,
+  "addresses_with_balance": 584,
   "coverage_pct": 48.18,
-  "scan_date": "2026-05-27 10:18:38 UTC",
+  "scan_date": "2026-05-31 04:18:57 UTC",
   "distribution": {
     ">=100": 0,
     "10-100": 2,
     "1-10": 5,
     "0.1-1": 31,
     "0.01-0.1": 54,
-    "<0.01": 493
+    "<0.01": 492
   },
   "isMultiAssetNft": true,
   "affectedAssets": [
@@ -27,7 +27,7 @@
   ],
   "allowlisted_owners": 765,
   "total_owners_seen": 848,
-  "total_nfts": 1596,
+  "total_nfts": 1598,
   "github_source": "https://github.com/nomad-xyz/hack-data",
   "balances": [
     {
@@ -10835,22 +10835,6 @@
           "decimals": 6,
           "amount": 0.338819,
           "amount_wei": 338819
-        }
-      ]
-    },
-    {
-      "address": "0xf84975c731e88bd46c7017887b66c8e62efce9a3",
-      "balance_eth": 0.0,
-      "balance_wei": "0",
-      "allowlisted": true,
-      "nft_details": [
-        {
-          "nft_id": 137,
-          "asset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
-          "asset_symbol": "USDT",
-          "decimals": 6,
-          "amount": 4.73425,
-          "amount_wei": 4734250
         }
       ]
     },

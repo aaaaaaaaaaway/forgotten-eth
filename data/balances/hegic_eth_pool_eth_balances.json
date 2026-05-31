@@ -1,18 +1,44 @@
 {
-  "contract": "0x878f15ffc8b894a1ba7647c7176e4c01f74e140b",
+  "contract": "0x878F15ffC8b894A1BA7647c7176E4C01f74e140b",
   "balance_source": "eth",
-  "contract_eth_balance": 62.250451,
-  "total_eth_in_balances": 60.29739473,
-  "addresses_with_balance": 403,
+  "contract_eth_balance": 62.16672691,
+  "total_eth_in_balances": 60.21358683,
+  "addresses_with_balance": 402,
   "coverage_pct": 96.86,
   "scan_date": "2026-04-10 12:57:53 UTC",
   "description": "Hegic ETH Pool v1.1 \u2014 writeETH LP token holders. Direct holders call withdraw(amount, maxBurn). Stakers in StakingRewards call exit() first to unstake writeETH, then withdraw from pool.",
+  "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0.0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0.0
+    },
+    "1-10 ETH": {
+      "count": 8,
+      "total_eth": 39.146908
+    },
+    "0.1-1 ETH": {
+      "count": 40,
+      "total_eth": 18.239571
+    },
+    "0.01-0.1 ETH": {
+      "count": 47,
+      "total_eth": 2.578458
+    },
+    "<0.01 ETH": {
+      "count": 306,
+      "total_eth": 0.248652
+    }
+  },
   "staking_contracts": [
     "0x8fcaef0dbf40d36e5397ae1979c9075bf34c180e",
     "0x4f439c4f249f382c91e5b5c2b98ef746e4e5789a",
     "0x9b18975e64763bda591618cdf02d2f14a9875981"
   ],
-  "distribution": {},
+  "last_event_refresh": "2026-05-28 16:23:05 UTC",
   "balances": [
     {
       "address": "0xc6e028b261dbf755df997e3af86af104674c183b",
@@ -479,12 +505,6 @@
         "0x4f439c4f249f382c91e5b5c2b98ef746e4e5789a",
         "0x9b18975e64763bda591618cdf02d2f14a9875981"
       ]
-    },
-    {
-      "address": "0xef93b3fe19749650f933e75e3dc07ef3c657cd16",
-      "balance_wei": "83807897091010439",
-      "balance_eth": 0.08380789709101043,
-      "writeETH_balance": "100000000000000000000"
     },
     {
       "address": "0x59f4cdf0276be7c3e48de82acfb068fc4e6c2cd8",
