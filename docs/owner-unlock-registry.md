@@ -7,12 +7,12 @@ and the function(s) to call.
 | Bucket | Meaning | Contracts | Live ETH |
 |---|---|---:|---:|
 | **A** | Owner flips one flag → users claim themselves | 3 | 211.8 |
-| **D** | Owner sets state/oracle/role → users/contributors can then act | 6 | 654.8 |
-| **B** | Only `onlyOwner` withdraw exists → owner sweeps + redistributes off-chain | 42 | 688.4 |
-| **L** | Governance / dependency / operator — not a single owner key | 19 | 6,562 |
+| **D** | Owner sets state/oracle/role → users/contributors can then act | 7 | 661.3 |
+| **B** | Only `onlyOwner` withdraw exists → owner sweeps + redistributes off-chain | 46 | 2,268.3 |
+| **L** | Governance / dependency / operator — not a single owner key | 14 | 4,975.9 |
 | **Bricked** | Dead owner address / bug / broken bytecode — no recovery path | 3 | 11,699 |
 
-Owner-actionable headline: **A + D = 9 contracts, ~867 ETH**. The Bricked total (11,699 ETH)
+Owner-actionable headline: **A + D = 10 contracts, ~873 ETH**. The Bricked total (11,699 ETH)
 is dominated by AkuDreams and is unrecoverable; bucket L is governance/operator-gated.
 
 ## A — Paused user claims (Tenderly bundle-verified)
@@ -35,6 +35,7 @@ is dominated by AkuDreams and is unrecoverable; bucket L is governance/operator-
 | CapitalConverter / Nsure | [0xa6b6…fb84](https://etherscan.io/address/0xa6b658ce4b1cdb4e7d8f97dffb549b8688cafb84) | 91.18 | [0x1995…299c](https://etherscan.io/address/0x1995dc62b91163e4693f63eae7af6559c8ab299c) | renounce `operator` role | `exit()` (original depositors only) |
 | PembiCoinICO | [0x5535…a1cc](https://etherscan.io/address/0x5535a72556727c221c567e0fc4208c5a99dba1cc) | 69.24 | [0xa977…2608](https://etherscan.io/address/0xa977aadc92473abe464bef836e57d4203ccb2608) | `setFailed()` | `refund()` |
 | RefundVault (Circles) | [0x93d8…f534](https://etherscan.io/address/0x93d812bf90a575d628e246b0966505a9e466f534) | 24.10 | [0x61db…eb0d](https://etherscan.io/address/0x61db4c9db2bb58da4777b73463257a6dde90eb0d) | `enableRefunds()` | `claimRefund()` |
+| RefundVault (2017-18) | [0x58fc…3e17](https://etherscan.io/address/0x58fcf11196abaeefdf23198ec4ec9c5237963e17) | 6.46 | [0x958e…c0df](https://etherscan.io/address/0x958ef37ee01ab3b97e95d2957658262b1003c0df) | `enableRefunds()` | `claimRefund()` |
 
 ## B — Admin sweep required
 
@@ -42,6 +43,10 @@ No user-callable path: owner calls the admin fn (ETH → owner), then redistribu
 
 | Protocol | Contract | Live ETH | Owner / authority | Admin function |
 |---|---|---:|---|---|
+| BlackFortGenesisNFT | [0x6c31…cf8b](https://etherscan.io/address/0x6c3197c9f3954b682b0e64b520e6da5fe74fcf8b) | 551.10 | [0x46b8…f932](https://etherscan.io/address/0x46b8d2eaae1b4a63acaa83b0f5c8769cc3e9f932) | `withdraw` |
+| unverified_bd6 | [0x5978…aeaa](https://etherscan.io/address/0x5978c6153a06b141cd0935569f600a83eb44aeaa) | 476.39 | operator/keyholder (off-chain sig) | signed `withdraw` |
+| MintedTokenCappedCrowdsaleExtv1 | [0xc9d7…ea03](https://etherscan.io/address/0xc9d7bd1fad7d5621dda20335818e9575ae07ea03) | 451.32 | [0xc7ca…c834](https://etherscan.io/address/0xc7ca2e13d2e5f2f99ff615e893afbd08ad63c834) | `withdraw` (owner can redirect) |
+| EtherkingJackpot | [0xab5c…65ac](https://etherscan.io/address/0xab5cffaaec03efc94ab5c0c4c0bc85ae2b2b65ac) | 101.00 | [0x1e6a…f7b2](https://etherscan.io/address/0x1e6a18cf6434eca56f83b3a3495d9c4d043ff7b2) | owner jackpot/pending drain |
 | Token | [0x9237…3333](https://etherscan.io/address/0x92373e9ad216762eeb0794086f5ad63883343333) | 43.05 | [0xed1b…b62a](https://etherscan.io/address/0xed1bdbc93bc6741af76910f223b9282732c9b62a) | `withdraw`, `withdrawAll` |
 | Treasury | [0xa0da…0f82](https://etherscan.io/address/0xa0da53447c0f6c4987964d8463da7e6628b30f82) | 40.20 | [0x3c1f…95fe](https://etherscan.io/address/0x3c1ff68f5aa342d296d4dee4bb1cacca912d95fe) | admin-only ETH-out |
 | SAWGamesPass | [0x347e…5ceb](https://etherscan.io/address/0x347e3513ca6d5118cb2df3bc386eade1e8f25ceb) | 39.18 | [0x96c8…57e6](https://etherscan.io/address/0x96c80ab80a920efd32485bc2fb9dfec601f357e6) | `withdraw` |
@@ -93,23 +98,18 @@ Not single-owner-key unlocks (governance, dead dependency, operator custody). Re
 |---|---|---:|---|---|
 | ThreeFMutual | [0x66be…cb32](https://etherscan.io/address/0x66be1bc6c6af47900bbd4f3711801be6c2c6cb32) | 1,918.82 | MakerDAO governance (external) | `claim()` needs Maker `Vat.live()==0`; Maker still live |
 | BETFI/BFI Launchpad | [0xa205…4f41](https://etherscan.io/address/0xa205d797243126f312ae63bb0a5ea9a32fb14f41) | 1,012.60 | project owner (non-standard role) | Owner `setupLiquidity()` pays team/LP, not depositors |
-| BlackFortGenesisNFT | [0x6c31…cf8b](https://etherscan.io/address/0x6c3197c9f3954b682b0e64b520e6da5fe74fcf8b) | 551.10 | owner `0x46b8…f932` | Sold-out mint; `withdraw` is `onlyOwner` |
-| unverified_bd6 | [0x5978…aeaa](https://etherscan.io/address/0x5978c6153a06b141cd0935569f600a83eb44aeaa) | 476.39 | operator/keyholder (off-chain sig) | Operator-signed custodial vault |
-| MintedTokenCappedCrowdsaleExtv1 | [0xc9d7…ea03](https://etherscan.io/address/0xc9d7bd1fad7d5621dda20335818e9575ae07ea03) | 451.32 | owner `0xc7ca…c834` | Goal reached, no `claimRefund()`; owner can redirect |
-| DavyJones | [0xaba5…6833](https://etherscan.io/address/0xaba513097f04d637727fdcda0246636e0d5d6833) | 348.24 | project owner (non-standard role) | No user ETH-out; owner controls unwinds |
-| Custodian | [0xe5c4…a0c2](https://etherscan.io/address/0xe5c405c5578d84c5231d3a9a29ef4374423fa0c2) | 304.81 | exchange/custodian operator | Whitelisted custodian flow |
+| DavyJones | [0xaba5…6833](https://etherscan.io/address/0xaba513097f04d637727fdcda0246636e0d5d6833) | 348.24 | owner `0xf488…01f4` (storage) | No user ETH-out; owner controls unwinds |
+| Custodian | [0xe5c4…a0c2](https://etherscan.io/address/0xe5c405c5578d84c5231d3a9a29ef4374423fa0c2) | 304.81 | operator `0xb2d3…f451` (storage) | Whitelisted custodian flow |
 | GuildBank | [0x83d0…c8e7](https://etherscan.io/address/0x83d0d842e6db3b020f384a2af11bd14787bec8e7) | 283.01 | owner `0xf2b8…500a` | Owner/burner-oriented, not depositor claim |
 | Miner | [0x6435…52de](https://etherscan.io/address/0x64356f9e79957fa6d84564fa75f53028799c52de) | 245.95 | owner `0x2aaf…a841` | `withdraw`/`userWithdraw` both admin-gated |
 | Kyber reserve A | [0x9149…c79e](https://etherscan.io/address/0x9149c59f087e891b659481ed665768a57247c79e) | 196.95 | admin `0xef94…c8a7` | `withdraw` operator-gated to approved destinations |
 | XifraICO2 | [0x7488…529e](https://etherscan.io/address/0x7488451db91df618759b8af15e36f70c0fdd529e) | 193.59 | fixed `xifraWallet` recipient | `withdrawICOFunds()` sends to immutable `xifraWallet` |
 | R1Exchange | [0xc7c9…8302](https://etherscan.io/address/0xc7c9b856d33651cc2bcd9e0099efa85f59f78302) | 150.36 | owner `0xfe2d…45e7` | `withdrawEnabled()` false; balances near-zero |
 | Kyber reserve B | [0x773a…44c3](https://etherscan.io/address/0x773a58c0ae122f56d6747bc1264f00174b3144c3) | 117.75 | admin `0x02ce…ba633` | As reserve A |
-| EtherkingJackpot | [0xab5c…65ac](https://etherscan.io/address/0xab5cffaaec03efc94ab5c0c4c0bc85ae2b2b65ac) | 101.00 | owner `0x1e6a…f7b2` | Jackpot/pending drains are owner-only |
 | NativeOFT | [0x4f7a…b38e](https://etherscan.io/address/0x4f7a67464b5976d7547c860109e4432d50afb38e) | 68.59 | owner `0x707e…6bca` | LayerZero bridge wrapper; ETH backs OFT accounting |
 | ApeToken | [0x22ad…394b](https://etherscan.io/address/0x22ad3fab750fb53118e4d6aa85343056a736394b) | 59.64 | admin `0x22f6…760f` | `claimPresale()` mints tokens; only dev spends ETH |
-| EmCandyPool | [0x1863…269e](https://etherscan.io/address/0x18639f44f946983bf3413d9b51322d05c29d269e) | 50.00 | project admin (non-standard role) | Queue/admin flow, not public refund |
+| EmCandyPool | [0x1863…269e](https://etherscan.io/address/0x18639f44f946983bf3413d9b51322d05c29d269e) | 50.00 | admin `0x06a6…e5ee` (storage) | Queue/admin flow, not public refund |
 | RocketSmoothingPool | [0xd4e9…05b7](https://etherscan.io/address/0xd4e96ef8eee8678dbff4d535e033ed1a4f7605b7) | 25.63 | Rocket Pool protocol (RocketStorage) | ETH-out gated by `onlyLatestNetworkContract` |
-| 2017-18 refund vault | [0x58fc…3e17](https://etherscan.io/address/0x58fcf11196abaeefdf23198ec4ec9c5237963e17) | 6.46 | `0x958e…c0df` | OZ RefundVault stuck `Active`; never finalized |
 
 ## Bricked — no recovery path
 
