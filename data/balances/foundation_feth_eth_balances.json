@@ -2,9 +2,9 @@
   "contract": "0x49128CF8ABE9071ee24540a296b5DED3F9D50443",
   "balance_source": "token",
   "contract_eth_balance": 296.027731,
-  "total_eth_in_balances": 289.577731,
-  "addresses_with_balance": 1275,
-  "coverage_pct": 97.82,
+  "total_eth_in_balances": 283.577731,
+  "addresses_with_balance": 1274,
+  "coverage_pct": 95.79,
   "scan_date": "2026-05-03 11:25:45 UTC",
   "description": "Foundation NFT marketplace bid escrow (FETH). Single-call withdrawAvailableBalance() returns the holder's full balance, including auto-collected expired lockups.",
   "meta": {
@@ -28,12 +28,6 @@
       "balance_wei": "7875000000000000000",
       "balance_eth": 7.875,
       "rank": 4
-    },
-    {
-      "address": "0x270b79f0a3af0e85260344d1a768d981131740cf",
-      "balance_wei": "6000000000000000000",
-      "balance_eth": 6.0,
-      "rank": 5
     },
     {
       "address": "0x34cae1d9e2d014b7b9e6295c66c554d7e79713d3",
@@ -7662,5 +7656,5 @@
       "rank": 1284
     }
   ],
-  "last_event_refresh": "2026-05-28 10:23:05 UTC"
+  "last_event_refresh": "2026-05-31 08:23:05 UTC"
 }

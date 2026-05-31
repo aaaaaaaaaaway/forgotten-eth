@@ -5,8 +5,8 @@
   "contract_eth_balance": "90.37330410000001",
   "total_addresses_scanned": 4555,
   "addresses_with_balance": 192,
-  "total_eth_in_balances": 90.373304,
-  "coverage_pct": 100.0,
+  "total_eth_in_balances": 89.173304,
+  "coverage_pct": 98.67,
   "balances": [
     {
       "address": "0x0c54FcCd2e384b4BB6f2E405Bf5Cbc15a017AaFb",
@@ -175,30 +175,15 @@
     },
     {
       "address": "0x00De4B13153673BCAE2616b67bf822500d325Fc3",
-      "balance_wei": "2800000000000000512",
-      "balance_eth": "2.800000000000000266",
+      "balance_wei": "1600000000000000000",
+      "balance_eth": 1.6,
       "bounty_ids": [
-        1072,
-        2569,
-        3381,
-        4168,
-        4264,
-        4288
+        "4168",
+        "4264",
+        "4288"
       ],
       "rank": 7,
       "bounty_details": [
-        {
-          "id": 1072,
-          "eth": 0.15
-        },
-        {
-          "id": 2569,
-          "eth": 0.5
-        },
-        {
-          "id": 3381,
-          "eth": 0.55
-        },
         {
           "id": 4168,
           "eth": 0.7
@@ -3639,5 +3624,5 @@
       ]
     }
   ],
-  "last_event_refresh": "2026-05-09 02:23:07 UTC"
+  "last_event_refresh": "2026-05-31 15:23:05 UTC"
 }

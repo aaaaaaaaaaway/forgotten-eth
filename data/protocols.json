@@ -1295,6 +1295,14 @@
     "balance_file": "luckchemy_crowdsale_eth_balances.json"
   },
   {
+    "key": "hong",
+    "name": "HONG",
+    "contract": "0x9fa8fa61a10ff892e4ebceb7f4e0fc684c2ce0a9",
+    "balance_source": "token",
+    "category": "ico",
+    "balance_file": "hong_eth_balances.json"
+  },
+  {
     "key": "arbitrage_eth_staking",
     "name": "ArbitrageETHStaking",
     "contract": "0x5eee354e36ac51e9d3f7283005cab0c55f423b23",
@@ -2028,8 +2036,12 @@
     "balance_source": "token",
     "category": "defi",
     "balance_file": "tribe_redeemer_balances.json",
-    "payout_tokens": ["DAI"],
-    "peak_token_amounts": {"DAI": 1839948.2122},
+    "payout_tokens": [
+      "DAI"
+    ],
+    "peak_token_amounts": {
+      "DAI": 1839948.2122
+    },
     "multi_step": true
   },
   {
@@ -2039,8 +2051,12 @@
     "balance_source": "token",
     "category": "defi",
     "balance_file": "gro_ust_comp_balances.json",
-    "payout_tokens": ["USDC"],
-    "peak_token_amounts": {"USDC": 955684.587688},
+    "payout_tokens": [
+      "USDC"
+    ],
+    "peak_token_amounts": {
+      "USDC": 955684.587688
+    },
     "multi_step": true
   }
 ]

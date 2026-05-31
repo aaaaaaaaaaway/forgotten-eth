@@ -1921,6 +1921,22 @@ const EXCHANGES = {
     withdrawCall: 'refund',
     category: 'ico',
   },
+  hong: {
+    name: 'HONG',
+    desc: 'HONG is a 2016 token-creation contract with a built-in ICO refund path. The verified source tracks each contributor\'s original ETH in weiGiven and refundMyIcoInvestment() returns that tracked deposit while the fund remains unlocked. The balance file is reconstructed from creation/refund events and filtered to wallets that still hold HONG units required by the contract.',
+    color: '#0d9488',
+    contract: '0x9fa8fa61a10ff892e4ebceb7f4e0fc684c2ce0a9',
+    deployed: 'August 2016',
+    // weiGiven is an internal mapping, so the site uses precomputed balances.
+    balanceAbi: null,
+    balanceArgs: null,
+    balanceCall: null,
+    noWalletCheck: true,
+    withdrawAbi: 'function refundMyIcoInvestment()',
+    withdrawArgs: () => [],
+    withdrawCall: 'refundMyIcoInvestment',
+    category: 'ico',
+  },
   arbitrage_eth_staking: {
     name: 'ArbitrageETHStaking',
     desc: 'August 2018 PoWH3D-style staking pool. Users sent ETH and paid a 2% fee that boosted the pool\'s globalFactor. Single-tx claim: withdrawAll() returns msg.sender\'s accumulated balance.',

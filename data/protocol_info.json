@@ -2242,11 +2242,20 @@
   },
   "gro_ust_comp": {
     "name": "Gro UST Compensation",
-    "desc": "Gro Protocol compensated addresses hit by the May-2022 UST/Terra depeg with PWRD, its USD stablecoin, vested over two years through a merkle claim contract. The schedule started July 2022 and finished 31 May 2024, so every eligible address can now claim its full remaining allocation in a single transaction — initialClaim(proof, amount) for first-time claimers, claim() for those who started but stopped. PWRD is redeemable roughly 1:1 to USDC via Gro's withdraw handler, which is what the v2 hero counter tracks. Roughly 956k PWRD across 123 addresses is still unclaimed years after vesting completed.",
+    "desc": "Gro Protocol compensated addresses hit by the May-2022 UST/Terra depeg with PWRD, its USD stablecoin, vested over two years through a merkle claim contract. The schedule started July 2022 and finished 31 May 2024, so every eligible address can now claim its full remaining allocation in a single transaction \u2014 initialClaim(proof, amount) for first-time claimers, claim() for those who started but stopped. PWRD is redeemable roughly 1:1 to USDC via Gro's withdraw handler, which is what the v2 hero counter tracks. Roughly 956k PWRD across 123 addresses is still unclaimed years after vesting completed.",
     "category": "defi",
     "color": "#1a7a6b",
     "contract": "0x02c133b9fbffb8d2e8cb7b7a94c7c880b331c720",
     "deployed": "July 2022",
     "slug": "gro-ust-compensation"
+  },
+  "hong": {
+    "name": "HONG",
+    "desc": "HONG is a 2016 token-creation contract with a built-in ICO refund path. The verified source keeps each contributor's original ETH in an internal weiGiven ledger and exposes refundMyIcoInvestment(), which returns that tracked deposit while the fund remains unlocked. Forgotten ETH uses event reconstruction plus a live token-holder filter because the weiGiven mapping is not public and the contract also requires the caller to still hold HONG units.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x9fa8fa61a10ff892e4ebceb7f4e0fc684c2ce0a9",
+    "deployed": "August 2016",
+    "slug": "hong"
   }
 }
