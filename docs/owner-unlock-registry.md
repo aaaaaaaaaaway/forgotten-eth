@@ -1,22 +1,32 @@
-# Owner-Unlock Registry
+# Access-Control Recovery Registry
 
-Contracts holding ETH that a project owner/admin/authority must act on before the
-original users can recover funds. Each row lists the contract, the controlling address,
-and the function(s) to call.
+Contracts holding ETH where recovery depends on an access-control boundary rather
+than a normal public withdrawal path. Each row identifies the contract, the current
+authority or blocker, the action that would move funds, and whether the result is a
+user self-claim, an admin redistribution, a governance/operator dependency, or a
+true brick.
+
+## Snapshot totals
 
 | Bucket | Meaning | Contracts | Live ETH |
 |---|---|---:|---:|
-| **A** | Owner flips one flag → users claim themselves; already-live rows move to Forgotten ETH | 1 verified / 1 stale / 1 integrated | 161.0 verified / 42.6 stale / 8.13 integrated |
-| **D** | Owner sets state/oracle/role → users/contributors can then act | 3 verified / 1 partial / 3 pending | 369.4 verified / 91.2 partial / 200.7 pending |
-| **B** | Only `onlyOwner` withdraw exists → owner sweeps + redistributes off-chain | 46 | 2,268.3 |
-| **L** | Governance / dependency / operator — not a single owner key | 14 | 4,975.9 |
-| **Bricked** | Dead owner address / bug / broken bytecode — no recovery path | 3 | 11,699 |
+| **A** | Authority flips one flag → users claim themselves; already-live rows move to Forgotten ETH | 1 verified / 1 stale / 1 integrated | 161.0 verified / 42.6 stale / 8.13 integrated |
+| **D** | Authority sets state/oracle/role → users/contributors can then act | 3 verified / 1 partial / 3 pending | 369.4 verified / 91.2 partial / 200.7 pending |
+| **B** | Admin-only withdraw exists → authority sweeps + redistributes off-chain | 46 | 2,268.3 |
+| **L** | Governance / dependency / operator-gated; not a single-key unfreeze | 14 | 4,975.9 |
+| **Bricked** | Dead owner address / bug / broken bytecode; no known recovery path | 3 | 11,698.9 |
 
-Owner-actionable candidate headline after EpikStaking migration: **A + D = 9 remaining contracts, ~865 ETH**. Local fork PoCs currently prove
-five full contract rows (~538.6 ETH) plus one partial original-depositor exit on CapitalConverter/Nsure.
+Headline counts from the row inventory below:
+
+- **Locally PoC-verified user-restoring unfreezes, excluding integrated EpikStaking: 4 contracts / 530.38 ETH.** These are the only remaining A/D rows where the authority action plus the user/beneficiary ETH-out path is locally proven: TransitFinanceRefund, InstantListingV2, RemovePutinBounty, and PembiCoinICO.
+- **Partial only: 1 contract / 91.18 ETH.** CapitalConverter/Nsure has one original-depositor `exit()` proof; the full balance is not proven recoverable and must not be counted as fully unfreezable.
+- **Stale or pending proof: 4 contracts / 243.24 ETH.** Tito reverts in the tested owner path, ICO+Kraken is unverified/pending ABI proof, and both RefundVault rows still need depositor enumeration plus local refund proof. These are not counted as locally verified unfreezes.
+- **Admin-sweep inventory (B): 46 contracts / 2,268.26 ETH.** These have admin-only ETH-out functions and would require off-chain redistribution. They are potential authority recoveries, not locally verified user self-claim unfreezes.
+- **Governance/operator-blocked (L): 14 contracts / 4,975.94 ETH.** These are research/outreach targets, not single-key unfreezes.
+- **Bricked: 3 contracts / 11,698.86 ETH.** This total is dominated by AkuDreams and has no known onchain recovery path.
+
 EpikStaking is no longer an owner-unlock item: it is already unpaused and has been moved to the Forgotten ETH site integration.
-Tito, ICO+Kraken, and both RefundVault rows need more evidence before being described as PoC-verified.
-The Bricked total (11,699 ETH) is dominated by AkuDreams and is unrecoverable; bucket L is governance/operator-gated.
+Do not present Tito, ICO+Kraken, CapitalConverter/Nsure, or either RefundVault row as fully PoC-verified until the missing/reverting paths above are resolved.
 
 ## A — Paused/live user claims (local fork-verified unless marked stale)
 
