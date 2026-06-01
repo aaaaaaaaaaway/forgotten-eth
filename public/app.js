@@ -4194,6 +4194,18 @@ const EXCHANGES = {
     withdrawArgs: () => [ZERO_ADDR],
     withdrawCall: 'receiveReward',
   },
+  epik_staking: {
+    name: 'EpikStaking',
+    desc: 'EpikStaking is a legacy EPIK Prime staking rewards contract. The contract is live and unpaused; stakers with accrued native ETH rewards can claim them directly.',
+    category: 'defi',
+    color: '#6366f1',
+    contract: '0x59accd277add23ee736e70a456a3d2c89e9a62a3',
+    deployed: 'June 2021',
+    noWalletCheck: true,
+    withdrawAbi: 'function claimReward()',
+    withdrawArgs: () => [],
+    withdrawCall: 'claimReward',
+  },
   meme_limited_collections: {
     name: 'Meme Limited Collections',
     desc: 'Meme Limited Collections split marketplace and pool fees into per-recipient pending withdrawal balances. Artists and controllers with old accrued fees can still call withdrawFee() to receive their ETH.',

@@ -1,0 +1,1797 @@
+{
+  "contract": "0x59accd277add23ee736e70a456a3d2c89e9a62a3",
+  "balance_source": "token",
+  "contract_eth_balance": 8.13103205,
+  "total_eth_in_balances": 8.13103205,
+  "addresses_with_balance": 220,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-01 01:28:33 UTC",
+  "description": "EpikStaking accrued native ETH rewards; eligible stakers can call claimReward() while the contract is unpaused.",
+  "distribution": {
+    ">=1 ETH": {
+      "count": 1,
+      "total_eth": 5.420841196311105
+    },
+    "0.1-1 ETH": {
+      "count": 3,
+      "total_eth": 1.1663284233444764
+    },
+    "0.01-0.1 ETH": {
+      "count": 38,
+      "total_eth": 1.2082472073036092
+    },
+    "<0.01 ETH": {
+      "count": 178,
+      "total_eth": 0.3356152266333233
+    }
+  },
+  "meta": {
+    "contract_native_eth_balance": "8.168093165509040077",
+    "claimable_earned_eth": "8.131032053592514686",
+    "historical_stakers_scanned": 250,
+    "paused": false,
+    "refreshed_at": "2026-06-01T01:28:33Z"
+  },
+  "balances": [
+    {
+      "address": "0xdb6b6317650d86c28174690ab1fc0406cc1d20eb",
+      "balance_wei": "5420841196311105388",
+      "balance_eth": 5.420841196311105,
+      "stored_reward_wei": "5420841196311105388",
+      "staked_wei": "13872714000000000000000000",
+      "rank": 1
+    },
+    {
+      "address": "0xe4b80e6bee8c748d96a2bf28b7b6412a83cb4907",
+      "balance_wei": "830404516054174782",
+      "balance_eth": 0.8304045160541748,
+      "stored_reward_wei": "0",
+      "staked_wei": "2031267000000000000000000",
+      "rank": 2
+    },
+    {
+      "address": "0x8f6c05d77698508a3f74cadc26fd8471d0e32165",
+      "balance_wei": "206573074594721622",
+      "balance_eth": 0.20657307459472163,
+      "stored_reward_wei": "0",
+      "staked_wei": "462564703171180000000000",
+      "rank": 3
+    },
+    {
+      "address": "0xde849560cbb5198289ce2785e7b24288b5674535",
+      "balance_wei": "129350832695580000",
+      "balance_eth": 0.12935083269558,
+      "stored_reward_wei": "65367347803540000",
+      "staked_wei": "6860000000000000000000000",
+      "rank": 4
+    },
+    {
+      "address": "0xbe535c49d8e65da9cd9a809a3d59248a89a2496b",
+      "balance_wei": "89701817552598181",
+      "balance_eth": 0.08970181755259818,
+      "stored_reward_wei": "0",
+      "staked_wei": "527183051280000000000000",
+      "rank": 5
+    },
+    {
+      "address": "0x0ea526be84e9041eccb50b8a975c160f2d934286",
+      "balance_wei": "82568694840422692",
+      "balance_eth": 0.08256869484042269,
+      "stored_reward_wei": "3702219622470465",
+      "staked_wei": "1098298024000000000000000",
+      "rank": 6
+    },
+    {
+      "address": "0x309c7655063bf940deaf6e6b25ba8c4a02a68838",
+      "balance_wei": "79140565213086684",
+      "balance_eth": 0.07914056521308668,
+      "stored_reward_wei": "0",
+      "staked_wei": "204274885686930000000000",
+      "rank": 7
+    },
+    {
+      "address": "0x3ba78eb02436c81dfbd61c133a9cce686bdee212",
+      "balance_wei": "67410197176946052",
+      "balance_eth": 0.06741019717694605,
+      "stored_reward_wei": "67410197176946052",
+      "staked_wei": "0",
+      "rank": 8
+    },
+    {
+      "address": "0xb72d84ba7f68b19202d8ff151a25d032557e621b",
+      "balance_wei": "56913227881274269",
+      "balance_eth": 0.056913227881274266,
+      "stored_reward_wei": "0",
+      "staked_wei": "133611204163163175529904",
+      "rank": 9
+    },
+    {
+      "address": "0x4ec7941946cc2386ea8252af42617ca348859cb7",
+      "balance_wei": "53406052479722026",
+      "balance_eth": 0.05340605247972203,
+      "stored_reward_wei": "53406052479560334",
+      "staked_wei": "483645565513",
+      "rank": 10
+    },
+    {
+      "address": "0xccdbd26c0d61a8e6569e253a6429c76aa11efaf1",
+      "balance_wei": "52818876552864441",
+      "balance_eth": 0.05281887655286444,
+      "stored_reward_wei": "52818876552864441",
+      "staked_wei": "0",
+      "rank": 11
+    },
+    {
+      "address": "0x64ea54d6eb932d5439f29d70ade2c227fd5807d1",
+      "balance_wei": "52817550939744010",
+      "balance_eth": 0.05281755093974401,
+      "stored_reward_wei": "0",
+      "staked_wei": "449666000000000000000000",
+      "rank": 12
+    },
+    {
+      "address": "0x331ef05e5c26c66a25467491aff2bcd09b434b09",
+      "balance_wei": "45670419452014249",
+      "balance_eth": 0.04567041945201425,
+      "stored_reward_wei": "45670419452014249",
+      "staked_wei": "0",
+      "rank": 13
+    },
+    {
+      "address": "0x1fbcbbe36c95c0bad57001b2b94b876a1e58fb25",
+      "balance_wei": "45260002795744789",
+      "balance_eth": 0.04526000279574479,
+      "stored_reward_wei": "0",
+      "staked_wei": "101998106400000000000000",
+      "rank": 14
+    },
+    {
+      "address": "0xa58013629f6485faf99143759a01dbff61be1173",
+      "balance_wei": "39410066811870000",
+      "balance_eth": 0.03941006681187,
+      "stored_reward_wei": "0",
+      "staked_wei": "90000000000000000000000",
+      "rank": 15
+    },
+    {
+      "address": "0x13fecf92d26c3c01e9c8f207c670ed6de1270c36",
+      "balance_wei": "34295424037287477",
+      "balance_eth": 0.03429542403728748,
+      "stored_reward_wei": "34295424037287477",
+      "staked_wei": "0",
+      "rank": 16
+    },
+    {
+      "address": "0x18224f7fd13070b3bb1a8fd9c91c87ac82607058",
+      "balance_wei": "30424092507904925",
+      "balance_eth": 0.030424092507904926,
+      "stored_reward_wei": "0",
+      "staked_wei": "83389635513633606213858",
+      "rank": 17
+    },
+    {
+      "address": "0x30f5117504c6467e8079df34b5da4cc6535bb474",
+      "balance_wei": "29460165055938165",
+      "balance_eth": 0.029460165055938164,
+      "stored_reward_wei": "5036581160000",
+      "staked_wei": "65868890720720000000000",
+      "rank": 18
+    },
+    {
+      "address": "0x294f544ac33a0de3c2d1bd8024c18b0128738c0c",
+      "balance_wei": "26576061136320000",
+      "balance_eth": 0.02657606113632,
+      "stored_reward_wei": "196567560000",
+      "staked_wei": "60000000000000000038027",
+      "rank": 19
+    },
+    {
+      "address": "0xca604e1ed57bc25edcae00b4834feb2f3970f140",
+      "balance_wei": "24794302387375348",
+      "balance_eth": 0.024794302387375348,
+      "stored_reward_wei": "0",
+      "staked_wei": "108323474494200000000000",
+      "rank": 20
+    },
+    {
+      "address": "0x1420d88a9ad62362b2b392d8f750a8958d97eeda",
+      "balance_wei": "24694827238088551",
+      "balance_eth": 0.02469482723808855,
+      "stored_reward_wei": "24694752168138150",
+      "staked_wei": "354253720000000000",
+      "rank": 21
+    },
+    {
+      "address": "0x37032e904c8725e93faf4305c9e07ad881f1a238",
+      "balance_wei": "24639432850399687",
+      "balance_eth": 0.024639432850399687,
+      "stored_reward_wei": "0",
+      "staked_wei": "164314199000000000000000",
+      "rank": 22
+    },
+    {
+      "address": "0x16995a6ab915f04956cb336bb5315e0a3473b79e",
+      "balance_wei": "24635244397125228",
+      "balance_eth": 0.02463524439712523,
+      "stored_reward_wei": "0",
+      "staked_wei": "102925150300000000014310",
+      "rank": 23
+    },
+    {
+      "address": "0x27a7852cb8d61f247d67de55a6bd42dcef2ca44c",
+      "balance_wei": "23285318268849893",
+      "balance_eth": 0.023285318268849893,
+      "stored_reward_wei": "57013141000",
+      "staked_wei": "114415510474946296216313",
+      "rank": 24
+    },
+    {
+      "address": "0x07ff7874e5f15f322391799f19325306787f0068",
+      "balance_wei": "22523176707046596",
+      "balance_eth": 0.022523176707046597,
+      "stored_reward_wei": "22523176707046596",
+      "staked_wei": "6574414",
+      "rank": 25
+    },
+    {
+      "address": "0xc3130f83bdcf5e84f777d58580ce99d811aea108",
+      "balance_wei": "21255314344960715",
+      "balance_eth": 0.021255314344960714,
+      "stored_reward_wei": "0",
+      "staked_wei": "102500879411726309807820",
+      "rank": 26
+    },
+    {
+      "address": "0xa71caa1f6791300a91b09fafcf5b410f20576fcb",
+      "balance_wei": "19712898823214354",
+      "balance_eth": 0.019712898823214354,
+      "stored_reward_wei": "19712520243851389",
+      "staked_wei": "1339597767983450449",
+      "rank": 27
+    },
+    {
+      "address": "0x572bab644908c8dd84fa2f41eb46d8c37364a727",
+      "balance_wei": "18837628196073580",
+      "balance_eth": 0.01883762819607358,
+      "stored_reward_wei": "18031632521096956",
+      "staked_wei": "101423255655610958573029",
+      "rank": 28
+    },
+    {
+      "address": "0xccd917241ae046cee7e56559dd195d35aea5946e",
+      "balance_wei": "18594523354637591",
+      "balance_eth": 0.018594523354637592,
+      "stored_reward_wei": "0",
+      "staked_wei": "43204725000000000000000",
+      "rank": 29
+    },
+    {
+      "address": "0xdf77da839b438a86a8e50097236c9c0e65e1f33c",
+      "balance_wei": "18403623455387913",
+      "balance_eth": 0.018403623455387912,
+      "stored_reward_wei": "12401820000",
+      "staked_wei": "127133122428621088748534",
+      "rank": 30
+    },
+    {
+      "address": "0xeb4f1e0a9f3f42a341249dbf49332ae4882cf662",
+      "balance_wei": "18290598033278046",
+      "balance_eth": 0.018290598033278045,
+      "stored_reward_wei": "0",
+      "staked_wei": "42701252838380000000000",
+      "rank": 31
+    },
+    {
+      "address": "0xe9cc8167f3dc85c86d85e77c2375fe5c8e4efa53",
+      "balance_wei": "18107038895561885",
+      "balance_eth": 0.018107038895561884,
+      "stored_reward_wei": "18107038895561885",
+      "staked_wei": "0",
+      "rank": 32
+    },
+    {
+      "address": "0xa6ae3fcb9f5adb26c1a53e26189cbb9075cddbdb",
+      "balance_wei": "18068924671654167",
+      "balance_eth": 0.018068924671654166,
+      "stored_reward_wei": "0",
+      "staked_wei": "429984920707550000000000",
+      "rank": 33
+    },
+    {
+      "address": "0xdc8f3430e118a08bc3e945710bf372abbb3eed0d",
+      "balance_wei": "16707881368545600",
+      "balance_eth": 0.0167078813685456,
+      "stored_reward_wei": "16707881368545600",
+      "staked_wei": "0",
+      "rank": 34
+    },
+    {
+      "address": "0xeab8c38edf8295e70cbc97c51b3f78a3c3d3655a",
+      "balance_wei": "16551575922777438",
+      "balance_eth": 0.016551575922777437,
+      "stored_reward_wei": "4405841950030000",
+      "staked_wei": "45541326259978109813219",
+      "rank": 35
+    },
+    {
+      "address": "0x3ac1ccb00f5cccd7deab404c6b849d5ff9868051",
+      "balance_wei": "15548586919250000",
+      "balance_eth": 0.01554858691925,
+      "stored_reward_wei": "0",
+      "staked_wei": "35000000000000000000000",
+      "rank": 36
+    },
+    {
+      "address": "0x180d8b6be9fa37f7ed1632e178430e23bc53ed54",
+      "balance_wei": "15251505612470355",
+      "balance_eth": 0.015251505612470354,
+      "stored_reward_wei": "1016530783559484",
+      "staked_wei": "35082475815641930509144",
+      "rank": 37
+    },
+    {
+      "address": "0x04ccd02223c4c0fdbf943fcc1015f66e60f40e95",
+      "balance_wei": "14155523690240000",
+      "balance_eth": 0.01415552369024,
+      "stored_reward_wei": "0",
+      "staked_wei": "40000000000000000000000",
+      "rank": 38
+    },
+    {
+      "address": "0xd06705b7490040b53d69b8178241e7f08b9da846",
+      "balance_wei": "13205085203507964",
+      "balance_eth": 0.013205085203507964,
+      "stored_reward_wei": "289163204574540",
+      "staked_wei": "142024000000000000000000",
+      "rank": 39
+    },
+    {
+      "address": "0xe08c59954087dd21f504235998cea77f7934ee29",
+      "balance_wei": "12708775150797165",
+      "balance_eth": 0.012708775150797165,
+      "stored_reward_wei": "0",
+      "staked_wei": "173877000000000000000000",
+      "rank": 40
+    },
+    {
+      "address": "0xad41c9de41a0fe258da84c084e703eb04f189604",
+      "balance_wei": "11647644853991489",
+      "balance_eth": 0.011647644853991489,
+      "stored_reward_wei": "37348000000",
+      "staked_wei": "344206506000000000000000",
+      "rank": 41
+    },
+    {
+      "address": "0xa79b922610d6bcb8e4116966f4e7d4a7aa11c348",
+      "balance_wei": "10754562524637192",
+      "balance_eth": 0.010754562524637192,
+      "stored_reward_wei": "10754559484504644",
+      "staked_wei": "530423760000000000",
+      "rank": 42
+    },
+    {
+      "address": "0x34ee3baee96195cb3cf74353f587f1c800b09537",
+      "balance_wei": "9980888666190675",
+      "balance_eth": 0.009980888666190676,
+      "stored_reward_wei": "134326761000",
+      "staked_wei": "22475350354660000000000",
+      "rank": 43
+    },
+    {
+      "address": "0xc09bf29796eccf7fdd2fb1f777fe6eafee9460ab",
+      "balance_wei": "8882918764920000",
+      "balance_eth": 0.00888291876492,
+      "stored_reward_wei": "0",
+      "staked_wei": "20000000000000000000000",
+      "rank": 44
+    },
+    {
+      "address": "0x41fddde60cdc20c546bb9e4e0fe5c0bd781b3486",
+      "balance_wei": "8815667479676905",
+      "balance_eth": 0.008815667479676905,
+      "stored_reward_wei": "8815662387162578",
+      "staked_wei": "784148020000000000",
+      "rank": 45
+    },
+    {
+      "address": "0xd2cbf91ffeeee53a443f03885e21fc24ea6dd579",
+      "balance_wei": "8784355318020000",
+      "balance_eth": 0.00878435531802,
+      "stored_reward_wei": "0",
+      "staked_wei": "20000000000000000000000",
+      "rank": 46
+    },
+    {
+      "address": "0xd8993c98d2dd225f0448429b793ee9e7d624f14f",
+      "balance_wei": "8729526117128454",
+      "balance_eth": 0.008729526117128454,
+      "stored_reward_wei": "8729526117128454",
+      "staked_wei": "0",
+      "rank": 47
+    },
+    {
+      "address": "0x1533dd59b655838d5d6df2bb9f315d6d5fdf2f1b",
+      "balance_wei": "8664064348147748",
+      "balance_eth": 0.008664064348147748,
+      "stored_reward_wei": "8664064348147748",
+      "staked_wei": "0",
+      "rank": 48
+    },
+    {
+      "address": "0x1809485a48faabbef9d26bc1dc9cc9551bdecded",
+      "balance_wei": "7955317488547616",
+      "balance_eth": 0.007955317488547616,
+      "stored_reward_wei": "7955301634710112",
+      "staked_wei": "82010688925629037",
+      "rank": 49
+    },
+    {
+      "address": "0x9079926e858c15647dde8dea9309cd6a1501b241",
+      "balance_wei": "7860057952757210",
+      "balance_eth": 0.00786005795275721,
+      "stored_reward_wei": "0",
+      "staked_wei": "7696154000000000000000000",
+      "rank": 50
+    },
+    {
+      "address": "0x8625d262e2e2f5529499c79f5e26ff20d644f3a9",
+      "balance_wei": "7828713743538975",
+      "balance_eth": 0.007828713743538974,
+      "stored_reward_wei": "7828713743538975",
+      "staked_wei": "2260602",
+      "rank": 51
+    },
+    {
+      "address": "0xcff9dd2c80140a8c72b9d6a04fb68a8a845c46e5",
+      "balance_wei": "7630122583330000",
+      "balance_eth": 0.00763012258333,
+      "stored_reward_wei": "40157069780000",
+      "staked_wei": "50000000000000000000000",
+      "rank": 52
+    },
+    {
+      "address": "0x75a09dca49e645e988016c0c00f2e285e3b5eb85",
+      "balance_wei": "7070890604555198",
+      "balance_eth": 0.007070890604555198,
+      "stored_reward_wei": "0",
+      "staked_wei": "30915530822654821359651",
+      "rank": 53
+    },
+    {
+      "address": "0x7c3eed3cb9e7fe8d71b017988453aab2ce4dc899",
+      "balance_wei": "6934927940091079",
+      "balance_eth": 0.006934927940091079,
+      "stored_reward_wei": "6934927940091079",
+      "staked_wei": "0",
+      "rank": 54
+    },
+    {
+      "address": "0xb25cb3926566ea79064a22bad2c9fecdeff634e2",
+      "balance_wei": "6643349707917180",
+      "balance_eth": 0.00664334970791718,
+      "stored_reward_wei": "0",
+      "staked_wei": "136521789698240000000000",
+      "rank": 55
+    },
+    {
+      "address": "0x7ceafd11836738eca8da42a8153830a8d36e0473",
+      "balance_wei": "6530482537471106",
+      "balance_eth": 0.006530482537471106,
+      "stored_reward_wei": "6530469229014309",
+      "staked_wei": "191000000000000000",
+      "rank": 56
+    },
+    {
+      "address": "0x37337a521aa3b3b895fdb1e33ccc560f4de24b25",
+      "balance_wei": "6529298078766339",
+      "balance_eth": 0.006529298078766339,
+      "stored_reward_wei": "0",
+      "staked_wei": "137607696549840000000000",
+      "rank": 57
+    },
+    {
+      "address": "0x8301a7e81f54c88bbe706481864787d25cab49de",
+      "balance_wei": "6326048288300000",
+      "balance_eth": 0.0063260482883,
+      "stored_reward_wei": "0",
+      "staked_wei": "100000000000000000000000",
+      "rank": 58
+    },
+    {
+      "address": "0x190e018817732cf10cbeaa6285c444c241b4276a",
+      "balance_wei": "6130490075118103",
+      "balance_eth": 0.006130490075118103,
+      "stored_reward_wei": "6130488245749936",
+      "staked_wei": "196136013100000000",
+      "rank": 59
+    },
+    {
+      "address": "0xc6e9ea01d51910ae7f278cb047171347f84d9dd9",
+      "balance_wei": "6106333955835000",
+      "balance_eth": 0.006106333955835,
+      "stored_reward_wei": "6106333955835000",
+      "staked_wei": "1500000000000000000000000",
+      "rank": 60
+    },
+    {
+      "address": "0x693eeae27374b57673bb009e0faa88d908985a30",
+      "balance_wei": "5970102977386403",
+      "balance_eth": 0.005970102977386403,
+      "stored_reward_wei": "0",
+      "staked_wei": "21915853309200191605310",
+      "rank": 61
+    },
+    {
+      "address": "0x4f6e7af6e3f86aadb097afa95b14346bcaa4d879",
+      "balance_wei": "5630433292551797",
+      "balance_eth": 0.005630433292551797,
+      "stored_reward_wei": "5630433292551797",
+      "staked_wei": "0",
+      "rank": 62
+    },
+    {
+      "address": "0xe7b139b21152e6d6b006321528071c5c96f040fc",
+      "balance_wei": "5504699206929015",
+      "balance_eth": 0.005504699206929015,
+      "stored_reward_wei": "0",
+      "staked_wei": "5389911000000000000000000",
+      "rank": 63
+    },
+    {
+      "address": "0x8b8ed57ddec110f4413c0b86661410cb09f17fbc",
+      "balance_wei": "5374728081341750",
+      "balance_eth": 0.00537472808134175,
+      "stored_reward_wei": "0",
+      "staked_wei": "218950000000000000000000",
+      "rank": 64
+    },
+    {
+      "address": "0xbb0d56d2bc82d33ba8879ec3604619d32dd567b6",
+      "balance_wei": "5159290917687500",
+      "balance_eth": 0.0051592909176875,
+      "stored_reward_wei": "0",
+      "staked_wei": "27500000000000000000000",
+      "rank": 65
+    },
+    {
+      "address": "0xe8058ad41ec0dada2696a8ecdb8b16c7d0144262",
+      "balance_wei": "5082845472465406",
+      "balance_eth": 0.005082845472465406,
+      "stored_reward_wei": "0",
+      "staked_wei": "11431167917794620259455",
+      "rank": 66
+    },
+    {
+      "address": "0x180675f0050bfa35a6bd1e9771a4172e51c5991e",
+      "balance_wei": "4525342752999400",
+      "balance_eth": 0.0045253427529994,
+      "stored_reward_wei": "0",
+      "staked_wei": "10658991427089798729826",
+      "rank": 67
+    },
+    {
+      "address": "0x9a2fbacbfbfd4aa3cb9d63cd22fec4b7ab2ed099",
+      "balance_wei": "4423758818310000",
+      "balance_eth": 0.00442375881831,
+      "stored_reward_wei": "4423758818310000",
+      "staked_wei": "0",
+      "rank": 68
+    },
+    {
+      "address": "0xf35cf33c40715f58c3190e9b102cf4b6d90bc0c4",
+      "balance_wei": "4403312657981060",
+      "balance_eth": 0.00440331265798106,
+      "stored_reward_wei": "3524851127663088",
+      "staked_wei": "24999999999800000000000",
+      "rank": 69
+    },
+    {
+      "address": "0xdf9453c6b41ed67f9d9100f0ecd7e2d8f8838b4e",
+      "balance_wei": "4150854680780000",
+      "balance_eth": 0.00415085468078,
+      "stored_reward_wei": "0",
+      "staked_wei": "20000000000000000000000",
+      "rank": 70
+    },
+    {
+      "address": "0x8b82c9e190b3358f4b5dbb015b405dfd8241ef60",
+      "balance_wei": "4133114494800000",
+      "balance_eth": 0.0041331144948,
+      "stored_reward_wei": "4133114494800000",
+      "staked_wei": "0",
+      "rank": 71
+    },
+    {
+      "address": "0x6e5de945f867a55cb6e444708213210c9159729b",
+      "balance_wei": "4102674830893036",
+      "balance_eth": 0.004102674830893036,
+      "stored_reward_wei": "0",
+      "staked_wei": "14762926410530000000000",
+      "rank": 72
+    },
+    {
+      "address": "0xc87ddbcac7fe32cefa1d1519d8a11a9515eb0c21",
+      "balance_wei": "4057222106953683",
+      "balance_eth": 0.004057222106953683,
+      "stored_reward_wei": "0",
+      "staked_wei": "18375293932572845765853",
+      "rank": 73
+    },
+    {
+      "address": "0x690d9cdfa72a30c520c73f714c9f4ea1b98dbf2d",
+      "balance_wei": "4003471508309364",
+      "balance_eth": 0.004003471508309364,
+      "stored_reward_wei": "4003471508309364",
+      "staked_wei": "0",
+      "rank": 74
+    },
+    {
+      "address": "0x2444ee6eac5489f05b33042c282f481febbd0a14",
+      "balance_wei": "3892032796903686",
+      "balance_eth": 0.003892032796903686,
+      "stored_reward_wei": "53491680000",
+      "staked_wei": "46654000000000000000000",
+      "rank": 75
+    },
+    {
+      "address": "0x4c1a55dc5315b2fd5ec8df624a7e1012f38851fa",
+      "balance_wei": "3572944729401601",
+      "balance_eth": 0.003572944729401601,
+      "stored_reward_wei": "0",
+      "staked_wei": "16676930063977880372811",
+      "rank": 76
+    },
+    {
+      "address": "0xb61e780a016696eafad66138621052ff0a4da836",
+      "balance_wei": "3520345227410000",
+      "balance_eth": 0.00352034522741,
+      "stored_reward_wei": "0",
+      "staked_wei": "10000000000000000000000",
+      "rank": 77
+    },
+    {
+      "address": "0xdf9f5bcc426b56d683f2e92c3211354f712e8284",
+      "balance_wei": "3425093977295115",
+      "balance_eth": 0.003425093977295115,
+      "stored_reward_wei": "0",
+      "staked_wei": "92857000000000000000000",
+      "rank": 78
+    },
+    {
+      "address": "0xb597ac9a19c753736c3c0527e83d7d16c24e3d3c",
+      "balance_wei": "3413728305674203",
+      "balance_eth": 0.003413728305674203,
+      "stored_reward_wei": "0",
+      "staked_wei": "17998457397650000000000",
+      "rank": 79
+    },
+    {
+      "address": "0x2b3912229ac616aee80f9838be73ea5b82b51f37",
+      "balance_wei": "3366272164332000",
+      "balance_eth": 0.003366272164332,
+      "stored_reward_wei": "0",
+      "staked_wei": "21000000000000000000000",
+      "rank": 80
+    },
+    {
+      "address": "0xe043a67f8d78a7afee93fa700e718cec0d99edf3",
+      "balance_wei": "3307380342560804",
+      "balance_eth": 0.003307380342560804,
+      "stored_reward_wei": "0",
+      "staked_wei": "8023438290790000000000",
+      "rank": 81
+    },
+    {
+      "address": "0x14a59125a0e35389d050ddaff25d177b20a0a3f1",
+      "balance_wei": "3253899528142395",
+      "balance_eth": 0.003253899528142395,
+      "stored_reward_wei": "3253899528142395",
+      "staked_wei": "0",
+      "rank": 82
+    },
+    {
+      "address": "0x408146374e1e276b7d7807ffa7beb6116fdc7751",
+      "balance_wei": "3051337783967013",
+      "balance_eth": 0.003051337783967013,
+      "stored_reward_wei": "3051337783926714",
+      "staked_wei": "260000000000",
+      "rank": 83
+    },
+    {
+      "address": "0x37dda4154dee100152578b22c1e0d4d02415d941",
+      "balance_wei": "3034685190236007",
+      "balance_eth": 0.003034685190236007,
+      "stored_reward_wei": "3034685190236007",
+      "staked_wei": "0",
+      "rank": 84
+    },
+    {
+      "address": "0xbc873f54209655d28256bad775783346cb11d73e",
+      "balance_wei": "2933657198640000",
+      "balance_eth": 0.00293365719864,
+      "stored_reward_wei": "0",
+      "staked_wei": "17500000000000000000000",
+      "rank": 85
+    },
+    {
+      "address": "0xdeb16e5a8a96c150301c1c0516f78cc3886c121d",
+      "balance_wei": "2776999539549283",
+      "balance_eth": 0.002776999539549283,
+      "stored_reward_wei": "2776999539549283",
+      "staked_wei": "0",
+      "rank": 86
+    },
+    {
+      "address": "0x6d51241f1ca020ef659f6e94f53708f0cf40ac53",
+      "balance_wei": "2725237492340000",
+      "balance_eth": 0.00272523749234,
+      "stored_reward_wei": "0",
+      "staked_wei": "20000000000000000000000",
+      "rank": 87
+    },
+    {
+      "address": "0x33a932f8f6f9f55d3255cc0d3a1b1645beaade5d",
+      "balance_wei": "2696089700360000",
+      "balance_eth": 0.00269608970036,
+      "stored_reward_wei": "2696089700360000",
+      "staked_wei": "0",
+      "rank": 88
+    },
+    {
+      "address": "0xd28eba6dd8d350c6680f5d37b5ab16989b1d611a",
+      "balance_wei": "2578412445530336",
+      "balance_eth": 0.002578412445530336,
+      "stored_reward_wei": "0",
+      "staked_wei": "20984249000000000000000",
+      "rank": 89
+    },
+    {
+      "address": "0xa72a739036173e3e70a6570dcb8c1490e6bc5ca7",
+      "balance_wei": "2543360747528390",
+      "balance_eth": 0.00254336074752839,
+      "stored_reward_wei": "2543360747526247",
+      "staked_wei": "330000000000",
+      "rank": 90
+    },
+    {
+      "address": "0x1d73b73ce8076be2a457b04714faa97cfec80dff",
+      "balance_wei": "2519192658189392",
+      "balance_eth": 0.002519192658189392,
+      "stored_reward_wei": "2519185075471104",
+      "staked_wei": "248622477719486245",
+      "rank": 91
+    },
+    {
+      "address": "0xe2cec76e3f7e5bd45ff104fd1757c35640bbc3c5",
+      "balance_wei": "2377748121400000",
+      "balance_eth": 0.0023777481214,
+      "stored_reward_wei": "245520000",
+      "staked_wei": "20000000000000000000000",
+      "rank": 92
+    },
+    {
+      "address": "0xd3c2635086c1ac6853c6f566b32b525ff4af797d",
+      "balance_wei": "2348292610085639",
+      "balance_eth": 0.002348292610085639,
+      "stored_reward_wei": "0",
+      "staked_wei": "6549213251530000000000",
+      "rank": 93
+    },
+    {
+      "address": "0x421534498ec6e977902bf75b9ccb2df2f5ae0381",
+      "balance_wei": "2336245465368582",
+      "balance_eth": 0.002336245465368582,
+      "stored_reward_wei": "2336230161125271",
+      "staked_wei": "539119022101209629",
+      "rank": 94
+    },
+    {
+      "address": "0xef11ff64b7cb7621a99ffee16fce1227fa5dc7ba",
+      "balance_wei": "2171586279820000",
+      "balance_eth": 0.00217158627982,
+      "stored_reward_wei": "0",
+      "staked_wei": "20000000000000000000000",
+      "rank": 95
+    },
+    {
+      "address": "0x3af77b97956c17b9135a8132a82dc0bc02ea66ae",
+      "balance_wei": "2086361903800000",
+      "balance_eth": 0.0020863619038,
+      "stored_reward_wei": "2086361903800000",
+      "staked_wei": "0",
+      "rank": 96
+    },
+    {
+      "address": "0x0087625b0112cbb16179921b59c82fe161ebd07f",
+      "balance_wei": "1933844627520000",
+      "balance_eth": 0.00193384462752,
+      "stored_reward_wei": "0",
+      "staked_wei": "20000000000000000000000",
+      "rank": 97
+    },
+    {
+      "address": "0x1f36f8ee0ba18a78e01ca89637df4aab1b4ac53e",
+      "balance_wei": "1845091103070467",
+      "balance_eth": 0.001845091103070467,
+      "stored_reward_wei": "1845091103070467",
+      "staked_wei": "0",
+      "rank": 98
+    },
+    {
+      "address": "0x33f5e94cda8c03047435f0fa13ab7f58baa4ff8b",
+      "balance_wei": "1785940159850000",
+      "balance_eth": 0.00178594015985,
+      "stored_reward_wei": "1785940159850000",
+      "staked_wei": "0",
+      "rank": 99
+    },
+    {
+      "address": "0xcd4881688ee45efcfdff19cfbe6fb549ff2f73c5",
+      "balance_wei": "1772287512511839",
+      "balance_eth": 0.001772287512511839,
+      "stored_reward_wei": "1772287512511839",
+      "staked_wei": "0",
+      "rank": 100
+    },
+    {
+      "address": "0x09e06b9929447cd401056ec1a5f3c9c4716459b5",
+      "balance_wei": "1764295958680000",
+      "balance_eth": 0.00176429595868,
+      "stored_reward_wei": "0",
+      "staked_wei": "20000000000000006243333",
+      "rank": 101
+    },
+    {
+      "address": "0x0c7a7fc3b4bc432efa34ef3370c9cbfc21628c2b",
+      "balance_wei": "1734921056146401",
+      "balance_eth": 0.001734921056146401,
+      "stored_reward_wei": "0",
+      "staked_wei": "41285793500000000000000",
+      "rank": 102
+    },
+    {
+      "address": "0xc775184377213b042d46069829346a9914481e62",
+      "balance_wei": "1716370951769472",
+      "balance_eth": 0.001716370951769472,
+      "stored_reward_wei": "1716370951769472",
+      "staked_wei": "0",
+      "rank": 103
+    },
+    {
+      "address": "0x106e5b1ee8b03fce241f4f82eb8375e28446bfc7",
+      "balance_wei": "1641269156188067",
+      "balance_eth": 0.001641269156188067,
+      "stored_reward_wei": "1641269156188067",
+      "staked_wei": "2059094",
+      "rank": 104
+    },
+    {
+      "address": "0xfed943efcdc0c5e516df1b7e371c085861bbc395",
+      "balance_wei": "1594072438292907",
+      "balance_eth": 0.001594072438292907,
+      "stored_reward_wei": "1594072438292907",
+      "staked_wei": "12529834",
+      "rank": 105
+    },
+    {
+      "address": "0x2835a8dd61e4c8c3afab3899b45c2378bd322e22",
+      "balance_wei": "1563151128412000",
+      "balance_eth": 0.001563151128412,
+      "stored_reward_wei": "0",
+      "staked_wei": "3833802550260726792385",
+      "rank": 106
+    },
+    {
+      "address": "0x11b1fd2848268f0ba505fc8e29fee995377edb18",
+      "balance_wei": "1523743171012019",
+      "balance_eth": 0.001523743171012019,
+      "stored_reward_wei": "0",
+      "staked_wei": "5932348060000000000000",
+      "rank": 107
+    },
+    {
+      "address": "0x9d969f47c7d503bb56556bec3ab4115deae60122",
+      "balance_wei": "1494957643520000",
+      "balance_eth": 0.00149495764352,
+      "stored_reward_wei": "0",
+      "staked_wei": "20000000000000000000000",
+      "rank": 108
+    },
+    {
+      "address": "0xfc4e4dbfa78a9018958b0320cd24d2322cc2ae76",
+      "balance_wei": "1491900795979600",
+      "balance_eth": 0.0014919007959796,
+      "stored_reward_wei": "1491900795979600",
+      "staked_wei": "34635669247243525971820",
+      "rank": 109
+    },
+    {
+      "address": "0x4f94d9dde544adf04ff258b036e4e33cc97f8f20",
+      "balance_wei": "1472130553103797",
+      "balance_eth": 0.001472130553103797,
+      "stored_reward_wei": "1453904415653745",
+      "staked_wei": "98694597590000000000",
+      "rank": 110
+    },
+    {
+      "address": "0x3784a174f8a6a2990c90ee73b19f4f3f1ecd5450",
+      "balance_wei": "1461646667415961",
+      "balance_eth": 0.001461646667415961,
+      "stored_reward_wei": "0",
+      "staked_wei": "3272166755989967636286",
+      "rank": 111
+    },
+    {
+      "address": "0x9a2d994048ce1b8ed5f665150443c58e7d529e16",
+      "balance_wei": "1413431224140000",
+      "balance_eth": 0.00141343122414,
+      "stored_reward_wei": "0",
+      "staked_wei": "20000000000000000000000",
+      "rank": 112
+    },
+    {
+      "address": "0x2ed56d17d8216b8dfddb579580d230e42c9f710a",
+      "balance_wei": "1340706671683783",
+      "balance_eth": 0.001340706671683783,
+      "stored_reward_wei": "0",
+      "staked_wei": "3108283162980000000000",
+      "rank": 113
+    },
+    {
+      "address": "0xb715b999c5c1b4724af4368f5507d0b9630a6a73",
+      "balance_wei": "1312471234428900",
+      "balance_eth": 0.0013124712344289,
+      "stored_reward_wei": "0",
+      "staked_wei": "9660000000000000000000",
+      "rank": 114
+    },
+    {
+      "address": "0x2dd7e37d7d726b20ab323185cf38c5aa64b7fbe0",
+      "balance_wei": "1273038146098600",
+      "balance_eth": 0.0012730381460986,
+      "stored_reward_wei": "0",
+      "staked_wei": "4347009423787007954359",
+      "rank": 115
+    },
+    {
+      "address": "0x754dbcbb25571bd5405832303d230fbf5a17a087",
+      "balance_wei": "1261744386442372",
+      "balance_eth": 0.001261744386442372,
+      "stored_reward_wei": "0",
+      "staked_wei": "20138282372115284994212",
+      "rank": 116
+    },
+    {
+      "address": "0xcef121a3ff830af4ec84085ec3aed8fe2ae4d88f",
+      "balance_wei": "1229592510241649",
+      "balance_eth": 0.001229592510241649,
+      "stored_reward_wei": "0",
+      "staked_wei": "189333297900000000000000",
+      "rank": 117
+    },
+    {
+      "address": "0x4eaa025ef375cfeff3460813d7d0a77be3ac5f2e",
+      "balance_wei": "1130075212034352",
+      "balance_eth": 0.001130075212034352,
+      "stored_reward_wei": "113086861621803",
+      "staked_wei": "10017427400000000000000",
+      "rank": 118
+    },
+    {
+      "address": "0xf7e555c1dc52f46b69beae4ded6d27bef5e4044b",
+      "balance_wei": "1117638373227653",
+      "balance_eth": 0.001117638373227653,
+      "stored_reward_wei": "0",
+      "staked_wei": "32492310300000000000000",
+      "rank": 119
+    },
+    {
+      "address": "0xebe326182f484b4c3039d80fdd0f7d011297f990",
+      "balance_wei": "1112768163860000",
+      "balance_eth": 0.00111276816386,
+      "stored_reward_wei": "1112768163860000",
+      "staked_wei": "0",
+      "rank": 120
+    },
+    {
+      "address": "0xc8db4cd7e429d1b02229d072122b5a70652109b0",
+      "balance_wei": "1108933300967895",
+      "balance_eth": 0.001108933300967895,
+      "stored_reward_wei": "0",
+      "staked_wei": "23290968870000000000000",
+      "rank": 121
+    },
+    {
+      "address": "0x062e51611890728d3783699e0fb8064bbc8383b1",
+      "balance_wei": "1075311002226468",
+      "balance_eth": 0.001075311002226468,
+      "stored_reward_wei": "0",
+      "staked_wei": "4932180136940000000000",
+      "rank": 122
+    },
+    {
+      "address": "0xaf52a23a1a8edfea0cf4963b8adde2dabde70d17",
+      "balance_wei": "1032427423205166",
+      "balance_eth": 0.001032427423205166,
+      "stored_reward_wei": "0",
+      "staked_wei": "2599443912080000000000",
+      "rank": 123
+    },
+    {
+      "address": "0x8ed798794b20e677a23ee9a4a0d9ec8762cac870",
+      "balance_wei": "1012738727449580",
+      "balance_eth": 0.00101273872744958,
+      "stored_reward_wei": "0",
+      "staked_wei": "10124875718176158848249",
+      "rank": 124
+    },
+    {
+      "address": "0x5abdd4318c137cbfcdf611d55e43ac5a18afa777",
+      "balance_wei": "965327753131250",
+      "balance_eth": 0.00096532775313125,
+      "stored_reward_wei": "965327753131250",
+      "staked_wei": "0",
+      "rank": 125
+    },
+    {
+      "address": "0x94a0d596272c628b1d7987f68ae0eee5b4ccdc70",
+      "balance_wei": "916182762260000",
+      "balance_eth": 0.00091618276226,
+      "stored_reward_wei": "916182762260000",
+      "staked_wei": "0",
+      "rank": 126
+    },
+    {
+      "address": "0x212bca344f2648b4fee579f64f04ff7e440d6f47",
+      "balance_wei": "821222071743438",
+      "balance_eth": 0.000821222071743438,
+      "stored_reward_wei": "821222071743438",
+      "staked_wei": "0",
+      "rank": 127
+    },
+    {
+      "address": "0x3d27ac860065e1106d876d0c61d2a56725a54ffe",
+      "balance_wei": "819177889099215",
+      "balance_eth": 0.000819177889099215,
+      "stored_reward_wei": "0",
+      "staked_wei": "17085969900000000000000",
+      "rank": 128
+    },
+    {
+      "address": "0xf913b9da7ff8405fc1a18f57a95155187c9d0fb5",
+      "balance_wei": "789094943446919",
+      "balance_eth": 0.000789094943446919,
+      "stored_reward_wei": "0",
+      "staked_wei": "1794151508310000000000",
+      "rank": 129
+    },
+    {
+      "address": "0x44537beefda25503da0317628298c6c8369b3ee3",
+      "balance_wei": "786673491561477",
+      "balance_eth": 0.000786673491561477,
+      "stored_reward_wei": "786673223276666",
+      "staked_wei": "4736000000000000",
+      "rank": 130
+    },
+    {
+      "address": "0x8c579a7e39b42c3dd0d061d445d1e2bc93dfa9f7",
+      "balance_wei": "783174656066438",
+      "balance_eth": 0.000783174656066438,
+      "stored_reward_wei": "783174656066438",
+      "staked_wei": "375906504857347",
+      "rank": 131
+    },
+    {
+      "address": "0x1140c4d3737ca9af41f169267096a7049c1b2b9b",
+      "balance_wei": "756677916375404",
+      "balance_eth": 0.000756677916375404,
+      "stored_reward_wei": "0",
+      "staked_wei": "5792012459320000000000",
+      "rank": 132
+    },
+    {
+      "address": "0xdb8c3735cdb4ee5588ea085c95e7a24f8e639a4a",
+      "balance_wei": "725559672709158",
+      "balance_eth": 0.000725559672709158,
+      "stored_reward_wei": "725559672708177",
+      "staked_wei": "40000000000",
+      "rank": 133
+    },
+    {
+      "address": "0x7a465df0d9cf784ec02e3fe902c2ff8eec80944d",
+      "balance_wei": "718353961093443",
+      "balance_eth": 0.000718353961093443,
+      "stored_reward_wei": "610162163073208",
+      "staked_wei": "1011123456000000000000",
+      "rank": 134
+    },
+    {
+      "address": "0x32cea55c014ad3162dc5b325be49de3ff639d3f7",
+      "balance_wei": "677394938186747",
+      "balance_eth": 0.000677394938186747,
+      "stored_reward_wei": "677394938186747",
+      "staked_wei": "0",
+      "rank": 135
+    },
+    {
+      "address": "0x2a133091b7aad92e4c813bc8cfd59aac61190c32",
+      "balance_wei": "675662178204116",
+      "balance_eth": 0.000675662178204116,
+      "stored_reward_wei": "675662178204116",
+      "staked_wei": "0",
+      "rank": 136
+    },
+    {
+      "address": "0x389ca2236703884745cf8e5afb756970a05b60ac",
+      "balance_wei": "667257737854527",
+      "balance_eth": 0.000667257737854527,
+      "stored_reward_wei": "23816117988720",
+      "staked_wei": "53446821297820000000000",
+      "rank": 137
+    },
+    {
+      "address": "0xd40fa0cf60d19172b3eb6211df597a96f70563a9",
+      "balance_wei": "664717175030970",
+      "balance_eth": 0.00066471717503097,
+      "stored_reward_wei": "664717175030970",
+      "staked_wei": "0",
+      "rank": 138
+    },
+    {
+      "address": "0x1b190a0c7f3ca7119cf9d88fd669c394b5cfaa8e",
+      "balance_wei": "658621425704224",
+      "balance_eth": 0.000658621425704224,
+      "stored_reward_wei": "658621425704224",
+      "staked_wei": "0",
+      "rank": 139
+    },
+    {
+      "address": "0x74a861942a5e0100458ce5ddc860c9a808aa5ecb",
+      "balance_wei": "650488886000000",
+      "balance_eth": 0.000650488886,
+      "stored_reward_wei": "0",
+      "staked_wei": "50000000000000000000000",
+      "rank": 140
+    },
+    {
+      "address": "0x5cff699da9b79b7ea415a888fb2b620cd36a279c",
+      "balance_wei": "648768937438000",
+      "balance_eth": 0.000648768937438,
+      "stored_reward_wei": "648768937438000",
+      "staked_wei": "0",
+      "rank": 141
+    },
+    {
+      "address": "0x1f28fabba765e7bf90d3154deea3ab8e115821b3",
+      "balance_wei": "624384843119359",
+      "balance_eth": 0.000624384843119359,
+      "stored_reward_wei": "0",
+      "staked_wei": "1725920000000000000000",
+      "rank": 142
+    },
+    {
+      "address": "0x8260c20b4ce2014d760be6de7cdd98c4f12b68f8",
+      "balance_wei": "597137004366000",
+      "balance_eth": 0.000597137004366,
+      "stored_reward_wei": "0",
+      "staked_wei": "6000000000000000052675",
+      "rank": 143
+    },
+    {
+      "address": "0x069e66c7b2150be5bd6612a2ef7574339edb38e9",
+      "balance_wei": "596310861513344",
+      "balance_eth": 0.000596310861513344,
+      "stored_reward_wei": "0",
+      "staked_wei": "1346111423210000000000",
+      "rank": 144
+    },
+    {
+      "address": "0xf91bd87ae53add6ef6cfd114ee2ec343c9be6b50",
+      "balance_wei": "529604527740500",
+      "balance_eth": 0.0005296045277405,
+      "stored_reward_wei": "0",
+      "staked_wei": "7250000000000000000000",
+      "rank": 145
+    },
+    {
+      "address": "0xc05e2c82a5c7093fc890ec3ee946e9e041115063",
+      "balance_wei": "505747156970700",
+      "balance_eth": 0.0005057471569707,
+      "stored_reward_wei": "0",
+      "staked_wei": "1338240456654811828354",
+      "rank": 146
+    },
+    {
+      "address": "0x77480dc0e9e9c30772640f95ec19599cac0b56a6",
+      "balance_wei": "476174002200729",
+      "balance_eth": 0.000476174002200729,
+      "stored_reward_wei": "0",
+      "staked_wei": "10373265798644654113873",
+      "rank": 147
+    },
+    {
+      "address": "0xa99f09fcf5742b47a796be83a6cb6f1ca95e183a",
+      "balance_wei": "467668705552000",
+      "balance_eth": 0.000467668705552,
+      "stored_reward_wei": "467668705552000",
+      "staked_wei": "0",
+      "rank": 148
+    },
+    {
+      "address": "0x51876ca4db4b440d476952a0294a928ee1de2507",
+      "balance_wei": "462681551934369",
+      "balance_eth": 0.000462681551934369,
+      "stored_reward_wei": "0",
+      "staked_wei": "43802030636430000000000",
+      "rank": 149
+    },
+    {
+      "address": "0x9164e91f59c83c9226ec961127fde11cdade9701",
+      "balance_wei": "431673962188000",
+      "balance_eth": 0.000431673962188,
+      "stored_reward_wei": "0",
+      "staked_wei": "1000000000000000000000",
+      "rank": 150
+    },
+    {
+      "address": "0x1556b9d719346a9d5e32ade5b766f5c1e2153ade",
+      "balance_wei": "390220836570000",
+      "balance_eth": 0.00039022083657,
+      "stored_reward_wei": "390220836570000",
+      "staked_wei": "0",
+      "rank": 151
+    },
+    {
+      "address": "0x0a8dca9b3638797534ae0ba9a3c7aff3d9367666",
+      "balance_wei": "387134108764520",
+      "balance_eth": 0.00038713410876452,
+      "stored_reward_wei": "386992321476330",
+      "staked_wei": "2000000000000000000",
+      "rank": 152
+    },
+    {
+      "address": "0x2ac1c4a46c8c187348df048c7bff0d9ce37bfebc",
+      "balance_wei": "384781013013600",
+      "balance_eth": 0.0003847810130136,
+      "stored_reward_wei": "384781013013600",
+      "staked_wei": "0",
+      "rank": 153
+    },
+    {
+      "address": "0xf89d0e31c790e134b3a66e0fc4d1435cc48007c5",
+      "balance_wei": "375314700670129",
+      "balance_eth": 0.000375314700670129,
+      "stored_reward_wei": "375312942961949",
+      "staked_wei": "24456071012205368",
+      "rank": 154
+    },
+    {
+      "address": "0xe1ac8abc7741ff86b7a074638fdc73a20ebe4ffd",
+      "balance_wei": "360933257038000",
+      "balance_eth": 0.000360933257038,
+      "stored_reward_wei": "0",
+      "staked_wei": "1000000000000000000000",
+      "rank": 155
+    },
+    {
+      "address": "0x996b147e292b9ce9060d93921ff3ac4090f85251",
+      "balance_wei": "348585870901010",
+      "balance_eth": 0.00034858587090101,
+      "stored_reward_wei": "348585870901010",
+      "staked_wei": "0",
+      "rank": 156
+    },
+    {
+      "address": "0x81283fb59862cfd7bfc8d5ba79aa3f2668a06b38",
+      "balance_wei": "348198611219000",
+      "balance_eth": 0.000348198611219,
+      "stored_reward_wei": "0",
+      "staked_wei": "1000000000000000000000",
+      "rank": 157
+    },
+    {
+      "address": "0x7f4715f2a9ee7dd8ac645e867c9c1dc46c152f71",
+      "balance_wei": "346219499283916",
+      "balance_eth": 0.000346219499283916,
+      "stored_reward_wei": "346219499283916",
+      "staked_wei": "0",
+      "rank": 158
+    },
+    {
+      "address": "0x25723598212988399b06b377c8d4e903aa8536df",
+      "balance_wei": "343955761549000",
+      "balance_eth": 0.000343955761549,
+      "stored_reward_wei": "0",
+      "staked_wei": "1000000000000000000000",
+      "rank": 159
+    },
+    {
+      "address": "0x1376f132bbe7d5279f0a63e0fbbc00f42427e085",
+      "balance_wei": "337418670160000",
+      "balance_eth": 0.00033741867016,
+      "stored_reward_wei": "337418670160000",
+      "staked_wei": "0",
+      "rank": 160
+    },
+    {
+      "address": "0xafdd72c3a7a34703b7ddbacab8ac8387357dcaf5",
+      "balance_wei": "328774744301492",
+      "balance_eth": 0.000328774744301492,
+      "stored_reward_wei": "0",
+      "staked_wei": "1512916800000000000000",
+      "rank": 161
+    },
+    {
+      "address": "0xa8659f1358974c26657063980e8e85e6843ec7fc",
+      "balance_wei": "319930510143768",
+      "balance_eth": 0.000319930510143768,
+      "stored_reward_wei": "319930510143768",
+      "staked_wei": "0",
+      "rank": 162
+    },
+    {
+      "address": "0xfad237f708a3964bb4689ce1fca7e150fe1db398",
+      "balance_wei": "311044812622000",
+      "balance_eth": 0.000311044812622,
+      "stored_reward_wei": "0",
+      "staked_wei": "1000000000000000000000",
+      "rank": 163
+    },
+    {
+      "address": "0x21977c643829fa142e3bdda3672407d6f762f622",
+      "balance_wei": "309544180800000",
+      "balance_eth": 0.0003095441808,
+      "stored_reward_wei": "309544180800000",
+      "staked_wei": "0",
+      "rank": 164
+    },
+    {
+      "address": "0x3772614e0fa3ffcd8bf9117d1460babf467dd41c",
+      "balance_wei": "303581575554000",
+      "balance_eth": 0.000303581575554,
+      "stored_reward_wei": "303581575554000",
+      "staked_wei": "1644402279675169117",
+      "rank": 165
+    },
+    {
+      "address": "0x903bf5e9e632f9bc8647c248883a26cea420a077",
+      "balance_wei": "302194461546115",
+      "balance_eth": 0.000302194461546115,
+      "stored_reward_wei": "302194461546115",
+      "staked_wei": "0",
+      "rank": 166
+    },
+    {
+      "address": "0x04ce3fcb704e38f86fd6b08f0e9ba70a5ad21f06",
+      "balance_wei": "300128763202646",
+      "balance_eth": 0.000300128763202646,
+      "stored_reward_wei": "300128763202646",
+      "staked_wei": "0",
+      "rank": 167
+    },
+    {
+      "address": "0xd157c1b3802cd1e00350ba8c853a5a2d28f53c0f",
+      "balance_wei": "272430588103918",
+      "balance_eth": 0.000272430588103918,
+      "stored_reward_wei": "272430587951335",
+      "staked_wei": "982940541018",
+      "rank": 168
+    },
+    {
+      "address": "0x54b2bc420f9d59a4a4eda1c5121d6fa43ad80193",
+      "balance_wei": "264199927372415",
+      "balance_eth": 0.000264199927372415,
+      "stored_reward_wei": "205926347648859",
+      "staked_wei": "1003123315143938237126",
+      "rank": 169
+    },
+    {
+      "address": "0xd73cbaec1e3d05b78c8ea780900752a37faa78e9",
+      "balance_wei": "251464685420000",
+      "balance_eth": 0.00025146468542,
+      "stored_reward_wei": "251464685420000",
+      "staked_wei": "0",
+      "rank": 170
+    },
+    {
+      "address": "0xa7c5405e4aa8d61baec9af066520d7304ffc0440",
+      "balance_wei": "247916942945466",
+      "balance_eth": 0.000247916942945466,
+      "stored_reward_wei": "247916925084415",
+      "staked_wei": "463710000000000",
+      "rank": 171
+    },
+    {
+      "address": "0x70b9ef8c4bc3e4daf6d910d66e601b35bd9dd92c",
+      "balance_wei": "241156407720000",
+      "balance_eth": 0.00024115640772,
+      "stored_reward_wei": "241156407720000",
+      "staked_wei": "0",
+      "rank": 172
+    },
+    {
+      "address": "0xe2ffac444188165d8831a0ae0614af60c91f2d3f",
+      "balance_wei": "239960285966000",
+      "balance_eth": 0.000239960285966,
+      "stored_reward_wei": "0",
+      "staked_wei": "1000000000000000000000",
+      "rank": 173
+    },
+    {
+      "address": "0x2b98fcf52e69b2c2cfe80f6976c29981394bf21d",
+      "balance_wei": "220465718140000",
+      "balance_eth": 0.00022046571814,
+      "stored_reward_wei": "220465718140000",
+      "staked_wei": "0",
+      "rank": 174
+    },
+    {
+      "address": "0x95097aa290067a0d74241ca1a54c4b49568b55c0",
+      "balance_wei": "215052173564635",
+      "balance_eth": 0.000215052173564635,
+      "stored_reward_wei": "215051106417018",
+      "staked_wei": "3589770000000000",
+      "rank": 175
+    },
+    {
+      "address": "0xee0923e51923a0eeb7db13541add4cb1ec8cbb7f",
+      "balance_wei": "207244478551095",
+      "balance_eth": 0.000207244478551095,
+      "stored_reward_wei": "207244477712122",
+      "staked_wei": "12130000000000",
+      "rank": 176
+    },
+    {
+      "address": "0x1166ff03f5a03ecd1a656206b69c21275a717f84",
+      "balance_wei": "202572657031477",
+      "balance_eth": 0.000202572657031477,
+      "stored_reward_wei": "202565134041396",
+      "staked_wei": "150418391668502473",
+      "rank": 177
+    },
+    {
+      "address": "0x6de303c9dbe17743be7ae5b928146bb4732bc084",
+      "balance_wei": "186540772280000",
+      "balance_eth": 0.00018654077228,
+      "stored_reward_wei": "0",
+      "staked_wei": "20000000000000000000000",
+      "rank": 178
+    },
+    {
+      "address": "0x2689e50cf84b2ab7bdba1a651e01e17cbd612efb",
+      "balance_wei": "176132397665399",
+      "balance_eth": 0.000176132397665399,
+      "stored_reward_wei": "176132397665399",
+      "staked_wei": "1191094",
+      "rank": 179
+    },
+    {
+      "address": "0xfba1c2b32aaf85d7c8032ce93e861bdc9e008519",
+      "balance_wei": "157024320656459",
+      "balance_eth": 0.000157024320656459,
+      "stored_reward_wei": "157023381927489",
+      "staked_wei": "513362533634655550",
+      "rank": 180
+    },
+    {
+      "address": "0x839084719e2e507badaa2725e5b6036a71d38d78",
+      "balance_wei": "136852704112353",
+      "balance_eth": 0.000136852704112353,
+      "stored_reward_wei": "13226110148",
+      "staked_wei": "19211586349730000000000",
+      "rank": 181
+    },
+    {
+      "address": "0xac9b3de3c2bf51f0a15a9c1f668ed787ee5a2d96",
+      "balance_wei": "130097778449816",
+      "balance_eth": 0.000130097778449816,
+      "stored_reward_wei": "0",
+      "staked_wei": "10000000096067470302574",
+      "rank": 182
+    },
+    {
+      "address": "0x5b94eaf1e908367cb72bd8e773ec05f31aafdb29",
+      "balance_wei": "129866454000000",
+      "balance_eth": 0.000129866454,
+      "stored_reward_wei": "129866454000000",
+      "staked_wei": "0",
+      "rank": 183
+    },
+    {
+      "address": "0x09320f2674e595a964e776ba3b7dce632bc34db2",
+      "balance_wei": "124255153448931",
+      "balance_eth": 0.000124255153448931,
+      "stored_reward_wei": "0",
+      "staked_wei": "4604006900000000000000",
+      "rank": 184
+    },
+    {
+      "address": "0xc038f94fa9d60dfa0b375c8407db4aa2534c9128",
+      "balance_wei": "107609385699060",
+      "balance_eth": 0.00010760938569906,
+      "stored_reward_wei": "107609385699060",
+      "staked_wei": "1671197",
+      "rank": 185
+    },
+    {
+      "address": "0x95e9409682ced8d6dd00364927ee48faa2c44d56",
+      "balance_wei": "100658849103060",
+      "balance_eth": 0.00010065884910306,
+      "stored_reward_wei": "100658849027316",
+      "staked_wei": "470000000000",
+      "rank": 186
+    },
+    {
+      "address": "0x210251750d243ff84be24dcd17e8d8d619ea06a1",
+      "balance_wei": "88111271082000",
+      "balance_eth": 8.8111271082e-05,
+      "stored_reward_wei": "0",
+      "staked_wei": "3400000000000000000000",
+      "rank": 187
+    },
+    {
+      "address": "0xe114697970810fb30910c458757b2c61199eba86",
+      "balance_wei": "75067100942912",
+      "balance_eth": 7.5067100942912e-05,
+      "stored_reward_wei": "75067100942912",
+      "staked_wei": "2056668",
+      "rank": 188
+    },
+    {
+      "address": "0x33b3917f3be11f5ce7cbf2e33111c334e0bfa467",
+      "balance_wei": "74730058474582",
+      "balance_eth": 7.4730058474582e-05,
+      "stored_reward_wei": "74730058474582",
+      "staked_wei": "0",
+      "rank": 189
+    },
+    {
+      "address": "0x75ce8562f12e362bc065d6724554037d7646c0bb",
+      "balance_wei": "74480734154064",
+      "balance_eth": 7.4480734154064e-05,
+      "stored_reward_wei": "0",
+      "staked_wei": "2352000000000000000000",
+      "rank": 190
+    },
+    {
+      "address": "0x4ff43de2f698fa27fbbcd5be8c54cdbefddaf5b4",
+      "balance_wei": "68317635396000",
+      "balance_eth": 6.8317635396e-05,
+      "stored_reward_wei": "0",
+      "staked_wei": "1000000000000000000000",
+      "rank": 191
+    },
+    {
+      "address": "0x972ef7e490459e71789eaf649dde0f147383605c",
+      "balance_wei": "59806446957270",
+      "balance_eth": 5.980644695727e-05,
+      "stored_reward_wei": "59806446957270",
+      "staked_wei": "0",
+      "rank": 192
+    },
+    {
+      "address": "0x504fd3d45f2d89bdd8fb01648fb715e7d618cfdb",
+      "balance_wei": "46654825792159",
+      "balance_eth": 4.6654825792159e-05,
+      "stored_reward_wei": "46654825792159",
+      "staked_wei": "606240000000000",
+      "rank": 193
+    },
+    {
+      "address": "0x58cc9ae6b52c45fd3d9ccf162d230a02bca1f48d",
+      "balance_wei": "45595882844000",
+      "balance_eth": 4.5595882844e-05,
+      "stored_reward_wei": "45595882844000",
+      "staked_wei": "0",
+      "rank": 194
+    },
+    {
+      "address": "0x0c439c264d4c66a964ae915b20969411ef22667b",
+      "balance_wei": "45264398507046",
+      "balance_eth": 4.5264398507046e-05,
+      "stored_reward_wei": "0",
+      "staked_wei": "24753733003210000000000",
+      "rank": 195
+    },
+    {
+      "address": "0x26456fc697341111ae5cc571f6dca07f63fc7d5e",
+      "balance_wei": "42022228691000",
+      "balance_eth": 4.2022228691e-05,
+      "stored_reward_wei": "0",
+      "staked_wei": "1000000000000000000000",
+      "rank": 196
+    },
+    {
+      "address": "0x28c4fc1146f5907ad2087682cb614d9ea8f52c5a",
+      "balance_wei": "29203787238194",
+      "balance_eth": 2.9203787238194e-05,
+      "stored_reward_wei": "29203787238194",
+      "staked_wei": "295867",
+      "rank": 197
+    },
+    {
+      "address": "0x7b51a53c25cb1bc38fb40b214c0e968d7f5c81e5",
+      "balance_wei": "21909544374181",
+      "balance_eth": 2.1909544374181e-05,
+      "stored_reward_wei": "21909544374181",
+      "staked_wei": "1000000",
+      "rank": 198
+    },
+    {
+      "address": "0xc488446cbf76dc68c6cb0b5d6f58214ce1e76953",
+      "balance_wei": "18170593325195",
+      "balance_eth": 1.8170593325195e-05,
+      "stored_reward_wei": "18170593325195",
+      "staked_wei": "0",
+      "rank": 199
+    },
+    {
+      "address": "0x5efec2646eb5d768dfa12c9943ee2f1cc458913b",
+      "balance_wei": "17828213455000",
+      "balance_eth": 1.7828213455e-05,
+      "stored_reward_wei": "17828213455000",
+      "staked_wei": "0",
+      "rank": 200
+    },
+    {
+      "address": "0xc090750b0a2ee31e29a10e3da1ed5284f5ac989a",
+      "balance_wei": "3378236121552",
+      "balance_eth": 3.378236121552e-06,
+      "stored_reward_wei": "0",
+      "staked_wei": "1031307658005711218924",
+      "rank": 201
+    },
+    {
+      "address": "0x23c6ebeada037cbc9dce7265e7cbb5ed0b58e6f3",
+      "balance_wei": "2932816510260",
+      "balance_eth": 2.93281651026e-06,
+      "stored_reward_wei": "2932816510260",
+      "staked_wei": "0",
+      "rank": 202
+    },
+    {
+      "address": "0x88acb5964cc41e484bf832d37076d8a8aa385fb1",
+      "balance_wei": "2090879430239",
+      "balance_eth": 2.090879430239e-06,
+      "stored_reward_wei": "2072665439920",
+      "staked_wei": "238859272999682048",
+      "rank": 203
+    },
+    {
+      "address": "0x7941941b09415343742d4f3f8b23509baf7442da",
+      "balance_wei": "575024690848",
+      "balance_eth": 5.75024690848e-07,
+      "stored_reward_wei": "575024619867",
+      "staked_wei": "230000000000",
+      "rank": 204
+    },
+    {
+      "address": "0x29f76bced133c1f552b4fb8f31b731ab84772d93",
+      "balance_wei": "331544199252",
+      "balance_eth": 3.31544199252e-07,
+      "stored_reward_wei": "331544199252",
+      "staked_wei": "0",
+      "rank": 205
+    },
+    {
+      "address": "0xa661b8c2d6aa0289847a34b40f49fa94ad5c500f",
+      "balance_wei": "324426497024",
+      "balance_eth": 3.24426497024e-07,
+      "stored_reward_wei": "0",
+      "staked_wei": "1686103800000000000",
+      "rank": 206
+    },
+    {
+      "address": "0x37806eac855a0c74343fcc3bc4fd8ce4fff3d976",
+      "balance_wei": "146025346967",
+      "balance_eth": 1.46025346967e-07,
+      "stored_reward_wei": "146025327144",
+      "staked_wei": "110000000000",
+      "rank": 207
+    },
+    {
+      "address": "0xba507528a968ca351161438132272ad3b48a0f62",
+      "balance_wei": "143491494603",
+      "balance_eth": 1.43491494603e-07,
+      "stored_reward_wei": "143491494594",
+      "staked_wei": "126998752",
+      "rank": 208
+    },
+    {
+      "address": "0x0678977f9424edf82b84f1515d794aa65ff8fe72",
+      "balance_wei": "97676838075",
+      "balance_eth": 9.7676838075e-08,
+      "stored_reward_wei": "97676838075",
+      "staked_wei": "0",
+      "rank": 209
+    },
+    {
+      "address": "0x69f4fac8770ea4dbbaf6ce9d4bfd58be09719165",
+      "balance_wei": "66472737664",
+      "balance_eth": 6.6472737664e-08,
+      "stored_reward_wei": "0",
+      "staked_wei": "896978420000000000",
+      "rank": 210
+    },
+    {
+      "address": "0xcb1f7d35ae645621606c60805c0525c2cf610e59",
+      "balance_wei": "26865401365",
+      "balance_eth": 2.6865401365e-08,
+      "stored_reward_wei": "26865400000",
+      "staked_wei": "44832698728",
+      "rank": 211
+    },
+    {
+      "address": "0x1e99b43aec44f02f27bdcba8c5410b8ffbdf06d8",
+      "balance_wei": "21374960000",
+      "balance_eth": 2.137496e-08,
+      "stored_reward_wei": "21374960000",
+      "staked_wei": "0",
+      "rank": 212
+    },
+    {
+      "address": "0x963ba2e26bac10e189fb842c8346686034cfcafe",
+      "balance_wei": "17158258304",
+      "balance_eth": 1.7158258304e-08,
+      "stored_reward_wei": "17158258304",
+      "staked_wei": "0",
+      "rank": 213
+    },
+    {
+      "address": "0x1418ca5821c7cae3de4d8caddd20d494539f766c",
+      "balance_wei": "875775407",
+      "balance_eth": 8.75775407e-10,
+      "stored_reward_wei": "0",
+      "staked_wei": "4865480567105241",
+      "rank": 214
+    },
+    {
+      "address": "0x6261789a26e4c3c9c6b4ad83330bd3ee7aaba6da",
+      "balance_wei": "16917001",
+      "balance_eth": 1.6917001e-11,
+      "stored_reward_wei": "0",
+      "staked_wei": "75523992262355",
+      "rank": 215
+    },
+    {
+      "address": "0x90812b5d265f381cc20a3f2e46da6177d43a9664",
+      "balance_wei": "71538",
+      "balance_eth": 7.1538e-14,
+      "stored_reward_wei": "0",
+      "staked_wei": "800000000000",
+      "rank": 216
+    },
+    {
+      "address": "0xf4d360be29324bc4c7cce35e7926e835b17d9c22",
+      "balance_wei": "63836",
+      "balance_eth": 6.3836e-14,
+      "stored_reward_wei": "0",
+      "staked_wei": "237377609853",
+      "rank": 217
+    },
+    {
+      "address": "0xd72b7eaab14d376a51f2441393145c942b5d0985",
+      "balance_wei": "3043",
+      "balance_eth": 3.043e-15,
+      "stored_reward_wei": "0",
+      "staked_wei": "80000000000",
+      "rank": 218
+    },
+    {
+      "address": "0xeea98f5ca041c3f5ac33e1c7d730a9781b051ee3",
+      "balance_wei": "19",
+      "balance_eth": 1.9e-17,
+      "stored_reward_wei": "0",
+      "staked_wei": "142815524",
+      "rank": 219
+    },
+    {
+      "address": "0x6ed4c081a76929a8f8871c0a687eaae0dded6a71",
+      "balance_wei": "6",
+      "balance_eth": 6e-18,
+      "stored_reward_wei": "0",
+      "staked_wei": "82925526",
+      "rank": 220
+    }
+  ]
+}

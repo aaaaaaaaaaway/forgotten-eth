@@ -662,6 +662,24 @@
   <div class="changelog fade-in fade-in-2">
     <div class="changelog-title">Changelog</div>
 
+    <div class="changelog-month">June 2026</div>
+
+    <div class="changelog-entry">
+      <span class="changelog-date">Jun 1</span>
+      <div class="changelog-body">
+        <div class="changelog-name"><a href="/hong">HONG</a> <span class="changelog-tag">+882 ETH</span></div>
+        <div class="changelog-desc">Added the HONG duplicate refund contract after source-level review of the 2016 token-creation logic. The refund path returns each caller's original weiGiven contribution through refundMyIcoInvestment(); the balance file reconstructs live claimants from creation/refund events and filters to addresses that still satisfy the HONG token-holder gate. 46 wallets have 882.08 ETH claimable, with 97.24% of the live ETH mapped to safe user refunds; the remaining residual is intentionally not counted as user-claimable.</div>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
+      <span class="changelog-date">Jun 1</span>
+      <div class="changelog-body">
+        <div class="changelog-name"><a href="/epik-staking">EpikStaking</a> <span class="changelog-tag">+8 ETH</span></div>
+        <div class="changelog-desc">Moved EpikStaking out of the owner-unlock outreach bucket and into the normal Forgotten ETH claim flow. The contract is already unpaused; a local-node refresh scanned 250 historical stakers, found 220 wallets with accrued native ETH rewards, and mapped 8.13103205 ETH of earned(address) balances at 100% claimable coverage. The claim path is claimReward(), with RewardPaid(address,uint256) subscribed for monitoring.</div>
+      </div>
+    </div>
+
     <div class="changelog-month">May 2026</div>
 
     <div class="changelog-entry">
