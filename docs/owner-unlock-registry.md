@@ -6,14 +6,15 @@ and the function(s) to call.
 
 | Bucket | Meaning | Contracts | Live ETH |
 |---|---|---:|---:|
-| **A** | Owner flips one flag or claims are already live → users claim themselves | 2 verified / 1 stale | 169.2 verified / 42.6 stale |
+| **A** | Owner flips one flag → users claim themselves; already-live rows move to Forgotten ETH | 1 verified / 1 stale / 1 integrated | 161.0 verified / 42.6 stale / 8.13 integrated |
 | **D** | Owner sets state/oracle/role → users/contributors can then act | 3 verified / 1 partial / 3 pending | 369.4 verified / 91.2 partial / 200.7 pending |
 | **B** | Only `onlyOwner` withdraw exists → owner sweeps + redistributes off-chain | 46 | 2,268.3 |
 | **L** | Governance / dependency / operator — not a single owner key | 14 | 4,975.9 |
 | **Bricked** | Dead owner address / bug / broken bytecode — no recovery path | 3 | 11,699 |
 
-Owner-actionable candidate headline: **A + D = 10 contracts, ~873 ETH**. Local fork PoCs currently prove
+Owner-actionable candidate headline after EpikStaking migration: **A + D = 9 remaining contracts, ~865 ETH**. Local fork PoCs currently prove
 five full contract rows (~538.6 ETH) plus one partial original-depositor exit on CapitalConverter/Nsure.
+EpikStaking is no longer an owner-unlock item: it is already unpaused and has been moved to the Forgotten ETH site integration.
 Tito, ICO+Kraken, and both RefundVault rows need more evidence before being described as PoC-verified.
 The Bricked total (11,699 ETH) is dominated by AkuDreams and is unrecoverable; bucket L is governance/operator-gated.
 
@@ -23,13 +24,13 @@ The Bricked total (11,699 ETH) is dominated by AkuDreams and is unrecoverable; b
 |---|---|---:|---|---|---|
 | TransitFinanceRefund ¹ | [0xc213…7f63](https://etherscan.io/address/0xc213f258f4142f53d086f9edb7a36e67eb347f63) | 161.02 | [0x8576…0c55](https://etherscan.io/address/0x8576910497930b79a97a24de1acb0333399d0c55) | `setClaim(false, 0)` | `claim()` |
 | Tito Surf MasterChef ² | [0x6db1…f4be](https://etherscan.io/address/0x6db1c1b318275df254bb47c63e7f316380baf4be) | 42.57 | [0xa81e…c3bb](https://etherscan.io/address/0xa81eac3009bd6e6cce36602d6851fda789ddc3bb) | stale: source exposes `activateSurfPool()`, not `setSurfPoolActive(true)` | not locally proven |
-| EpikStaking ³ | [0x59ac…62a3](https://etherscan.io/address/0x59accd277add23ee736e70a456a3d2c89e9a62a3) | 8.17 | [0xbada…d7d4](https://etherscan.io/address/0xbada7b23a99e46f9739719f291f646b2b2d1d7d4) | no action needed on local latest: already unpaused | `claimReward()` |
+| EpikStaking ³ | [0x59ac…62a3](https://etherscan.io/address/0x59accd277add23ee736e70a456a3d2c89e9a62a3) | 8.13 claimable | n/a | **moved to Forgotten ETH integration** | `claimReward()` |
 
 ¹ Insolvent for unclaimed users: 300 unclaimed hold 1,056.86 ETH of entitlements but only 161.02 ETH remains — post-unpause claims succeed FCFS until the balance runs out.
 ² Local fork check: `activateSurfPool()` reverted with `SafeMath: division by zero` while `initialSurfPoolETH()` and `donatedETH()` were zero. Keep this row as stale/pending, not PoC-verified.
-³ Local fork check: `paused() == false`; a sample earned balance was claimed successfully via `claimReward()`.
+³ Removed from owner outreach 2026-06-01: `paused() == false`; local-node refresh found 220 claimable wallets / 8.13103205 ETH, and a sample `claimReward()` trace paid exactly the expected wei.
 
-## D — Owner/gate unlock (state/oracle/role must change first)
+## D — Owner/gate unlock (state/oracle/role must change first; public outreach details should stay abbreviated until PoC-complete)
 
 | Protocol | Contract | Live ETH | Owner / authority | Owner action | User call |
 |---|---|---:|---|---|---|
