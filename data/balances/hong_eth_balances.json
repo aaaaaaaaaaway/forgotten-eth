@@ -2,9 +2,9 @@
   "contract": "0x9fa8fa61a10ff892e4ebceb7f4e0fc684c2ce0a9",
   "balance_source": "token",
   "contract_eth_balance": 907.12404837,
-  "total_eth_in_balances": 907.12404837,
-  "addresses_with_balance": 47,
-  "coverage_pct": 100.0,
+  "total_eth_in_balances": 882.075815,
+  "addresses_with_balance": 46,
+  "coverage_pct": 97.24,
   "scan_date": "2026-05-31 15:43:26 UTC",
   "description": "HONG duplicate contract. Verified source exposes refundMyIcoInvestment(), which refunds the caller's tracked weiGiven amount while the fund is not locked. Balances are reconstructed from evCreatedToken minus successful evRefund events and filtered to wallets that still hold HONG units required by onlyTokenHolders.",
   "meta": {
@@ -85,14 +85,6 @@
       "balance_eth": 25.9964500536,
       "hong_tokens": 1,
       "wei_given": "25996450053600000000",
-      "refunded_wei": "0"
-    },
-    {
-      "address": "0x61377598304bfe4f08d90ba2e1dae92d7a35c121",
-      "balance_wei": "25048233080000000000",
-      "balance_eth": 25.04823308,
-      "hong_tokens": 1,
-      "wei_given": "25048233080000000000",
       "refunded_wei": "0"
     },
     {
@@ -391,5 +383,6 @@
       "wei_given": "70000000000000000",
       "refunded_wei": "0"
     }
-  ]
+  ],
+  "last_event_refresh": "2026-06-01 00:23:05 UTC"
 }
