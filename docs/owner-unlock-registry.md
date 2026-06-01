@@ -6,36 +6,45 @@ and the function(s) to call.
 
 | Bucket | Meaning | Contracts | Live ETH |
 |---|---|---:|---:|
-| **A** | Owner flips one flag → users claim themselves | 3 | 211.8 |
-| **D** | Owner sets state/oracle/role → users/contributors can then act | 7 | 661.3 |
+| **A** | Owner flips one flag or claims are already live → users claim themselves | 2 verified / 1 stale | 169.2 verified / 42.6 stale |
+| **D** | Owner sets state/oracle/role → users/contributors can then act | 3 verified / 1 partial / 3 pending | 369.4 verified / 91.2 partial / 200.7 pending |
 | **B** | Only `onlyOwner` withdraw exists → owner sweeps + redistributes off-chain | 46 | 2,268.3 |
 | **L** | Governance / dependency / operator — not a single owner key | 14 | 4,975.9 |
 | **Bricked** | Dead owner address / bug / broken bytecode — no recovery path | 3 | 11,699 |
 
-Owner-actionable headline: **A + D = 10 contracts, ~873 ETH**. The Bricked total (11,699 ETH)
-is dominated by AkuDreams and is unrecoverable; bucket L is governance/operator-gated.
+Owner-actionable candidate headline: **A + D = 10 contracts, ~873 ETH**. Local fork PoCs currently prove
+five full contract rows (~538.6 ETH) plus one partial original-depositor exit on CapitalConverter/Nsure.
+Tito, ICO+Kraken, and both RefundVault rows need more evidence before being described as PoC-verified.
+The Bricked total (11,699 ETH) is dominated by AkuDreams and is unrecoverable; bucket L is governance/operator-gated.
 
-## A — Paused user claims (Tenderly bundle-verified)
+## A — Paused/live user claims (local fork-verified unless marked stale)
 
 | Protocol | Contract | Live ETH | Owner / authority | Owner action | User call |
 |---|---|---:|---|---|---|
 | TransitFinanceRefund ¹ | [0xc213…7f63](https://etherscan.io/address/0xc213f258f4142f53d086f9edb7a36e67eb347f63) | 161.02 | [0x8576…0c55](https://etherscan.io/address/0x8576910497930b79a97a24de1acb0333399d0c55) | `setClaim(false, 0)` | `claim()` |
-| Tito Surf MasterChef | [0x6db1…f4be](https://etherscan.io/address/0x6db1c1b318275df254bb47c63e7f316380baf4be) | 42.57 | [0xa81e…c3bb](https://etherscan.io/address/0xa81eac3009bd6e6cce36602d6851fda789ddc3bb) | `setSurfPoolActive(true)` | `withdraw(pid, amount)` per pool |
-| EpikStaking | [0x59ac…62a3](https://etherscan.io/address/0x59accd277add23ee736e70a456a3d2c89e9a62a3) | 8.17 | [0xbada…d7d4](https://etherscan.io/address/0xbada7b23a99e46f9739719f291f646b2b2d1d7d4) | `unpause()` | `claimReward()` |
+| Tito Surf MasterChef ² | [0x6db1…f4be](https://etherscan.io/address/0x6db1c1b318275df254bb47c63e7f316380baf4be) | 42.57 | [0xa81e…c3bb](https://etherscan.io/address/0xa81eac3009bd6e6cce36602d6851fda789ddc3bb) | stale: source exposes `activateSurfPool()`, not `setSurfPoolActive(true)` | not locally proven |
+| EpikStaking ³ | [0x59ac…62a3](https://etherscan.io/address/0x59accd277add23ee736e70a456a3d2c89e9a62a3) | 8.17 | [0xbada…d7d4](https://etherscan.io/address/0xbada7b23a99e46f9739719f291f646b2b2d1d7d4) | no action needed on local latest: already unpaused | `claimReward()` |
 
 ¹ Insolvent for unclaimed users: 300 unclaimed hold 1,056.86 ETH of entitlements but only 161.02 ETH remains — post-unpause claims succeed FCFS until the balance runs out.
+² Local fork check: `activateSurfPool()` reverted with `SafeMath: division by zero` while `initialSurfPoolETH()` and `donatedETH()` were zero. Keep this row as stale/pending, not PoC-verified.
+³ Local fork check: `paused() == false`; a sample earned balance was claimed successfully via `claimReward()`.
 
 ## D — Owner/gate unlock (state/oracle/role must change first)
 
 | Protocol | Contract | Live ETH | Owner / authority | Owner action | User call |
 |---|---|---:|---|---|---|
-| InstantListingV2 | [0xb9fb…009a](https://etherscan.io/address/0xb9fbe1315824a466d05df4882ffac592ce9c009a) | 200.00 | [0x39e9…07e4](https://etherscan.io/address/0x39e951f197b9f4c704f7290ce7accad0b5e607e4) | `setRefundable(token, futureTime)` per token | `refund(token)` → original proposer |
-| ICO+Kraken (unverified) | [0xe29b…a9c9](https://etherscan.io/address/0xe29bbc8fcd866dfff36dcac6b006a3a97adba9c9) | 170.11 | [0x8a97…8314](https://etherscan.io/address/0x8a970573f88dbc7b69dfed2ba193c98c2d5d8314) | set Kraken oracle + rates + unpause | `redeemAll()` |
+| InstantListingV2 ⁴ | [0xb9fb…009a](https://etherscan.io/address/0xb9fbe1315824a466d05df4882ffac592ce9c009a) | 200.00 | [0x39e9…07e4](https://etherscan.io/address/0x39e951f197b9f4c704f7290ce7accad0b5e607e4) | locally proven owner path is `initialize(attacker)` + two `reset(...)` calls | owner-selected beneficiary receives ETH |
+| ICO+Kraken (unverified) ⁵ | [0xe29b…a9c9](https://etherscan.io/address/0xe29bbc8fcd866dfff36dcac6b006a3a97adba9c9) | 170.11 | [0x8a97…8314](https://etherscan.io/address/0x8a970573f88dbc7b69dfed2ba193c98c2d5d8314) | set Kraken oracle + rates + unpause | `redeemAll()` pending ABI/source proof |
 | RemovePutinBounty | [0xaf5f…4b99](https://etherscan.io/address/0xaf5fc45258b5d0af72031ab154bf6dfcfec74b99) | 100.12 | [0x7ac4…9d94](https://etherscan.io/address/0x7ac476a319b07faf75fdd07a72800732d8b59d94) | `cancel()` | `redeem()` |
-| CapitalConverter / Nsure | [0xa6b6…fb84](https://etherscan.io/address/0xa6b658ce4b1cdb4e7d8f97dffb549b8688cafb84) | 91.18 | [0x1995…299c](https://etherscan.io/address/0x1995dc62b91163e4693f63eae7af6559c8ab299c) | renounce `operator` role | `exit()` (original depositors only) |
+| CapitalConverter / Nsure ⁶ | [0xa6b6…fb84](https://etherscan.io/address/0xa6b658ce4b1cdb4e7d8f97dffb549b8688cafb84) | 91.18 | [0x1995…299c](https://etherscan.io/address/0x1995dc62b91163e4693f63eae7af6559c8ab299c) | operator is still active; original depositors can call `exit()` | partial: one 0.1 ETH original-depositor exit proven |
 | PembiCoinICO | [0x5535…a1cc](https://etherscan.io/address/0x5535a72556727c221c567e0fc4208c5a99dba1cc) | 69.24 | [0xa977…2608](https://etherscan.io/address/0xa977aadc92473abe464bef836e57d4203ccb2608) | `setFailed()` | `refund()` |
-| RefundVault (Circles) | [0x93d8…f534](https://etherscan.io/address/0x93d812bf90a575d628e246b0966505a9e466f534) | 24.10 | [0x61db…eb0d](https://etherscan.io/address/0x61db4c9db2bb58da4777b73463257a6dde90eb0d) | `enableRefunds()` | `claimRefund()` |
-| RefundVault (2017-18) | [0x58fc…3e17](https://etherscan.io/address/0x58fcf11196abaeefdf23198ec4ec9c5237963e17) | 6.46 | [0x958e…c0df](https://etherscan.io/address/0x958ef37ee01ab3b97e95d2957658262b1003c0df) | `enableRefunds()` | `claimRefund()` |
+| RefundVault (Circles) ⁷ | [0x93d8…f534](https://etherscan.io/address/0x93d812bf90a575d628e246b0966505a9e466f534) | 24.10 | [0x61db…eb0d](https://etherscan.io/address/0x61db4c9db2bb58da4777b73463257a6dde90eb0d) | `enableRefunds()` | `refund(address)` / paired crowdsale path needs depositor PoC |
+| RefundVault (2017-18) ⁷ | [0x58fc…3e17](https://etherscan.io/address/0x58fcf11196abaeefdf23198ec4ec9c5237963e17) | 6.46 | [0x958e…c0df](https://etherscan.io/address/0x958ef37ee01ab3b97e95d2957658262b1003c0df) | `enableRefunds()` | `refund(address)` / paired crowdsale path needs depositor PoC |
+
+⁴ Local fork PoC moved 200 ETH through the owner-controlled initialize/reset path, not the previously listed `setRefundable(token, futureTime)` → `refund(token)` path.
+⁵ Not locally PoC-verified in this pass: source is unverified and no callable ABI sequence was proven.
+⁶ Do not present the full 91.18 ETH as proven user-recoverable until original-depositor enumeration is complete.
+⁷ Needs depositor enumeration and a local `enableRefunds()` + real depositor refund proof before being called PoC-verified.
 
 ## B — Admin sweep required
 
