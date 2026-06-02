@@ -4410,6 +4410,30 @@ const EXCHANGES = {
     initialClaimAbi: 'function initialClaim(bytes32[] proof, uint256 amount)',
     claimAbi: 'function claim()',
   },
+  // Lido AnchorVault — stETH↔bETH bridge to Anchor Protocol on Terra. Users
+  // deposited stETH to receive bETH, which could be bridged to Terra for ~20%
+  // APY. Terra/LUNA collapsed May 2022; Lido DAO Proposal 29 (Jun 2022) shut
+  // the integration. withdraw() remains open — vault holds the burner role on
+  // bETH so no approval step is needed. ~835 bETH locked in the Wormhole
+  // bridge is excluded (permanently inaccessible). Rate is 1:1 stETH per bETH.
+  lido_anchor_vault: {
+    name: 'Lido AnchorVault',
+    desc: 'Lido\'s stETH→Anchor Protocol integration, shut down after the Terra/LUNA collapse in May 2022. Users deposited stETH to receive bETH (bonded ETH), which could be bridged to Terra to earn ~20% APY on Anchor. Lido DAO Proposal 29 (June 2022) disabled new deposits and shut the UI. Withdrawals remain open: bETH holders on Ethereum can reclaim stETH 1:1 by calling withdraw() — no approval required, as the vault holds the burner role on the bETH token.',
+    category: 'defi',
+    color: '#00a3ff',
+    contract: '0xA2F987A546D4CD1c607Ee8141276876C26b72Bdf',
+    deployed: 'July 2021',
+    payoutToken: 'stETH',
+    payoutTokenAddress: '0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84',
+    bethTokenAddress: '0x707F9118e33A9B8998beA41dd0d46f38bb963FC8',
+    balanceContract: '0x707F9118e33A9B8998beA41dd0d46f38bb963FC8',
+    balanceAbi: 'function balanceOf(address) view returns (uint256)',
+    balanceArgs: (user) => [user],
+    balanceCall: 'balanceOf',
+    withdrawAbi: 'function withdraw(uint256 _beth_amount, uint256 _expected_version, address _recipient)',
+    withdrawArgs: (amount, user) => [amount, 4n, user],
+    withdrawCall: 'withdraw',
+  },
 };
 
 // Per-tab state

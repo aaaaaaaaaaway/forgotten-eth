@@ -2066,5 +2066,16 @@
       "USDC": 955684.587688
     },
     "multi_step": true
+  },
+  {
+  "key": "lido_anchor_vault",
+  "name": "Lido AnchorVault",
+  "contract": "0xA2F987A546D4CD1c607Ee8141276876C26b72Bdf",
+  "balance_source": "token",
+  "category": "defi",
+  "balance_file": "lido_anchor_vault_steth_balances.json",
+  "payout_tokens": ["stETH"],
+  "peak_token_amounts": { "stETH": 816.754 },
+  "multi_step": false
   }
 ]
