@@ -2066,5 +2066,21 @@
       "USDC": 955684.587688
     },
     "multi_step": true
+  },
+  {
+    "key": "p4rty_dao_vault",
+    "name": "P4RTY DAO Vault",
+    "contract": "0x9465A32618a9172b3c14d82cecdCa788dE1ef878",
+    "balance_source": "eth",
+    "category": "gambling",
+    "balance_file": "p4rty_dao_vault_eth_balances.json"
+  },
+  {
+    "key": "lido_anchor_vault",
+    "name": "Lido AnchorVault",
+    "contract": "0xA2F987A546D4CD1c607Ee8141276876C26b72Bdf",
+    "balance_source": "eth",
+    "category": "defi",
+    "balance_file": "lido_anchor_vault_eth_balances.json"
   }
 ]

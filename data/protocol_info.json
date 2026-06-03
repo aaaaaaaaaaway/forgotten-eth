@@ -2266,5 +2266,23 @@
     "contract": "0x59accd277add23ee736e70a456a3d2c89e9a62a3",
     "deployed": "June 2021",
     "slug": "epik-staking"
+  },
+  "p4rty_dao_vault": {
+    "name": "P4RTY DAO Vault",
+    "desc": "P4RTY DAO Vault was a 2018 dividend vault from p4rty.io. Users staked P4RTY tokens, and ETH sent to the vault was distributed pro-rata to stakers. The frontend is gone, but accumulated ETH dividends remain withdrawable via withdraw(); staked P4RTY itself is not unstaked by this vault.",
+    "category": "gambling",
+    "color": "#a855f7",
+    "contract": "0x9465A32618a9172b3c14d82cecdCa788dE1ef878",
+    "deployed": "August 2018",
+    "slug": "p4rty-dao-vault"
+  },
+  "lido_anchor_vault": {
+    "name": "Lido AnchorVault",
+    "desc": "Lido's stETH→Anchor Protocol (Terra) integration, shut down after the May-2022 Terra/LUNA collapse via Lido DAO Proposal 29. bETH (bonded ETH) holders on Ethereum can redeem 1:1 for stETH by calling withdraw() — no approval needed, as the vault holds the bETH burner role. Balances are stETH-denominated (~1:1 with ETH). bETH locked in the Wormhole bridge and held by exchanges or other contracts is excluded as non-claimable.",
+    "category": "defi",
+    "color": "#00a3ff",
+    "contract": "0xA2F987A546D4CD1c607Ee8141276876C26b72Bdf",
+    "deployed": "July 2021",
+    "slug": "lido-anchor-vault"
   }
 }
