@@ -281,14 +281,6 @@
     "balance_file": "presalepool_f058_eth_balances.json"
   },
   {
-    "key": "presalepool_3959",
-    "name": "Presale Pool (OMG/Streamr/VIU)",
-    "contract": "0x39590f0b13693aeb5e16a414be8ba28b4c382cc6",
-    "balance_source": "eth",
-    "category": "ico",
-    "balance_file": "presalepool_3959_eth_balances.json"
-  },
-  {
     "key": "statusbuyer",
     "name": "Status Buyer",
     "contract": "0xcc89405e3cfd38412093840a3ac2f851dd395dfb",
@@ -892,14 +884,6 @@
     "balance_file": "divsnetwork_eth_balances.json"
   },
   {
-    "key": "ethercenter",
-    "name": "EtherCenter",
-    "contract": "0x0e7c28fb8ed4f5f63aabd022deaeeba40ecc335c",
-    "balance_source": "eth",
-    "category": "gambling",
-    "balance_file": "ethercenter_eth_balances.json"
-  },
-  {
     "key": "redchip",
     "name": "RedChip",
     "contract": "0xcd2de0bd5347f617f832442ebcc1c23a4d618847",
@@ -1018,14 +1002,6 @@
     "balance_source": "eth",
     "category": "gambling",
     "balance_file": "etherdiamond_eth_balances.json"
-  },
-  {
-    "key": "powh_clone5",
-    "name": "Hourglass Clone E",
-    "contract": "0x12528042299e0fca4d44ae4f42359319b8901fa2",
-    "balance_source": "eth",
-    "category": "gambling",
-    "balance_file": "powh_clone5_eth_balances.json"
   },
   {
     "key": "cryptosurge",
@@ -1849,15 +1825,6 @@
     "balance_file": "x2y2_presale_eth_balances.json"
   },
   {
-    "key": "metadrop_anata",
-    "name": "Metadrop: Anata",
-    "contract": "0x0cba81ba02c58a4c2c160fdd2e7411ad9cdf5dbe",
-    "balance_source": "eth",
-    "category": "nft",
-    "balance_file": "metadrop_anata_eth_balances.json",
-    "multi_step": true
-  },
-  {
     "key": "metadrop_webaverse",
     "name": "Metadrop: Webaverse",
     "contract": "0x1ecb59aecf1fc5da695242c6e78c2007e775d40f",
@@ -2082,5 +2049,45 @@
     "balance_source": "eth",
     "category": "defi",
     "balance_file": "lido_anchor_vault_eth_balances.json"
+  },
+  {
+    "key": "transit_refund_admin_unlock",
+    "name": "Transit Finance Refund (admin unlock required)",
+    "contract": "0xc213f258f4142f53d086f9edb7a36e67eb347f63",
+    "balance_source": "eth",
+    "category": "owner-action-required",
+    "balance_file": "transit_refund_admin_unlock_eth_balances.json",
+    "admin_unlock_required": true,
+    "owner_action_bucket": "Type A"
+  },
+  {
+    "key": "remove_putin_bounty_admin_unlock",
+    "name": "RemovePutinBounty (admin unlock required)",
+    "contract": "0xaf5fc45258b5d0af72031ab154bf6dfcfec74b99",
+    "balance_source": "eth",
+    "category": "owner-action-required",
+    "balance_file": "remove_putin_bounty_admin_unlock_eth_balances.json",
+    "admin_unlock_required": true,
+    "owner_action_bucket": "Type D"
+  },
+  {
+    "key": "pembicoin_ico_admin_unlock",
+    "name": "PembiCoinICO (admin unlock required)",
+    "contract": "0x5535a72556727c221c567e0fc4208c5a99dba1cc",
+    "balance_source": "eth",
+    "category": "owner-action-required",
+    "balance_file": "pembicoin_ico_admin_unlock_eth_balances.json",
+    "admin_unlock_required": true,
+    "owner_action_bucket": "Type D"
+  },
+  {
+    "key": "circles_refund_vault_admin_unlock",
+    "name": "Circles RefundVault (admin unlock required)",
+    "contract": "0x93d812bf90a575d628e246b0966505a9e466f534",
+    "balance_source": "eth",
+    "category": "owner-action-required",
+    "balance_file": "circles_refund_vault_admin_unlock_eth_balances.json",
+    "admin_unlock_required": true,
+    "owner_action_bucket": "Type D"
   }
 ]

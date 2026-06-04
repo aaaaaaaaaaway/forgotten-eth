@@ -1,0 +1,225 @@
+{
+  "contract": "0x5535a72556727c221c567e0fc4208c5a99dba1cc",
+  "balance_source": "eth",
+  "contract_eth_balance": 69.23904994,
+  "total_eth_in_balances": 69.23904994,
+  "addresses_with_balance": 23,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-03 23:15:08 UTC",
+  "description": "PembiCoinICO contributor balances. The crowdsale is Idle; owner must setFailed() before contributors can refund().",
+  "meta": {
+    "owner_action_required": true,
+    "bucket": "Type D",
+    "required_admin_action": "setFailed()",
+    "user_call_after_unlock": "refund()"
+  },
+  "balances": [
+    {
+      "address": "0x185ce939be187707f20a2984a927d8ca3f16f06b",
+      "balance_wei": "18780805855000000000",
+      "balance_eth": 18.780805855,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0xe45eecbbcc59bd5565eb50520e569693e2d65b30",
+      "balance_wei": "9000000000000000000",
+      "balance_eth": 9.0,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0xe10deb660162b62f7886c0668656f94d18c26051",
+      "balance_wei": "8536973440000000000",
+      "balance_eth": 8.53697344,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0xa4ea3f94320ae78f94976ad5cd9f10b988c77837",
+      "balance_wei": "7980000000000000000",
+      "balance_eth": 7.98,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0x4d0c1324fcf28cf7ff4fdd3ed53187acda869d84",
+      "balance_wei": "5000000000000000000",
+      "balance_eth": 5.0,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0xc5db6eecab9ea3cb3966e400238d9989bbed4a24",
+      "balance_wei": "4500000000000000000",
+      "balance_eth": 4.5,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0xfb16e21a3a120a83a215995c02190d2a186d1921",
+      "balance_wei": "2140000000000000000",
+      "balance_eth": 2.14,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0xee0037843195c79d1bb6eee782a7d19b613768da",
+      "balance_wei": "2000000000000000000",
+      "balance_eth": 2.0,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0x98e0496775b04f3bd49a4d4b20064337bd933ae8",
+      "balance_wei": "2000000000000000000",
+      "balance_eth": 2.0,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0xdcbf34f9fd53cc278121090b3f697a0672486ad6",
+      "balance_wei": "1950882080000000000",
+      "balance_eth": 1.95088208,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0x69844f12cfaf0905bd21aa3a738def0bd6e5af1a",
+      "balance_wei": "1692401495000000000",
+      "balance_eth": 1.692401495,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0xbbded872a7e36692360930dc59c477f6da903ced",
+      "balance_wei": "1248531575000000000",
+      "balance_eth": 1.248531575,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0x6521407a8c75b6bf85fc408565aab0a515dc83b8",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0x1d09a61a49cd49f758fbc73529370429512eeb25",
+      "balance_wei": "947455495000000000",
+      "balance_eth": 0.947455495,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0x1566e2f9bc6d04412bdc6f9901cf5983f71453cd",
+      "balance_wei": "925000000000000000",
+      "balance_eth": 0.925,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0x47e4f7a77eef2dfc5fe572ee7ff96febd81202ad",
+      "balance_wei": "860000000000000000",
+      "balance_eth": 0.86,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0x923839b305077359e9b675927d6b036dba00f445",
+      "balance_wei": "500000000000000000",
+      "balance_eth": 0.5,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0x877957faa0f0d006b8a3e02808bacf9c1d97914b",
+      "balance_wei": "80000000000000000",
+      "balance_eth": 0.08,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0xa59a64b7eb32eff23ee3c81fd5db418782d35a62",
+      "balance_wei": "66000000000000000",
+      "balance_eth": 0.066,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0xef96d4c30d5678a06f59ee4ddb252042b2dd951c",
+      "balance_wei": "10000000000000000",
+      "balance_eth": 0.01,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0x1d7704bf4169cc8a9609c4d56cd05cc91bc51a78",
+      "balance_wei": "10000000000000000",
+      "balance_eth": 0.01,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0xf236ad86c6e1e98e79e96515a1d6f64dd54cddef",
+      "balance_wei": "10000000000000000",
+      "balance_eth": 0.01,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0xa977aadc92473abe464bef836e57d4203ccb2608",
+      "balance_wei": "1000000000000000",
+      "balance_eth": 0.001,
+      "admin_unlock_required": true,
+      "admin_action": "owner setFailed()",
+      "user_call": "refund()",
+      "recovery_type": "owner_state_transition"
+    }
+  ]
+}

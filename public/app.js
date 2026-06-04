@@ -2320,22 +2320,7 @@ const EXCHANGES = {
     withdrawAbi: 'function withdraw()',
     withdrawArgs: () => [],
     withdrawCall: 'withdraw',
-  },
-  presalepool_3959: {
-    name: 'Presale Pool (OMG/Streamr/VIU)',
-    desc: 'A 2017 Cintix-style ICO presale pool (unverified) using `contribute(address)`. Holds ~42 ETH plus tokens from OMG Network, Streamr (XDATA), and VIU. One large contributor accounts for the full refund. 100% coverage via debug_traceCall.',
-    category: 'ico',
-    color: '#10b981',
-    contract: '0x39590f0b13693aeb5e16a414be8ba28b4c382cc6',
-    deployed: 'May 2017',
-    balanceAbi: 'function balances(address) view returns (uint256)',
-    balanceArgs: (user) => [user],
-    balanceCall: 'balances',
-    withdrawAbi: 'function withdraw()',
-    withdrawArgs: () => [],
-    withdrawCall: 'withdraw',
-  },
-  statusbuyer: {
+  },  statusbuyer: {
     name: 'Status Buyer',
     desc: 'June 2017 SNT (Status Network Token) ICO pooled-buy contract. Holds ~76 ETH from 14 contributors who never withdrew their share. withdraw() returns the contributor\'s pro-rata refund. Wei-exact verified via debug_traceCall.',
     category: 'ico',
@@ -3118,6 +3103,46 @@ const EXCHANGES = {
     withdrawArgs: (amount, user) => [amount, 4n, user],
     withdrawCall: 'withdraw',
   },
+  transit_refund_admin_unlock: {
+    name: 'Transit Finance Refund',
+    desc: 'Transit Finance refund entitlements that are still recorded on-chain but currently blocked by the contract claim pause. The owner must call setClaim(false, 0) before affected users can call claim().',
+    category: 'owner-action-required',
+    color: '#f59e0b',
+    contract: '0xc213f258f4142f53d086f9edb7a36e67eb347f63',
+    deployed: 'October 2022',
+    noWalletCheck: true,
+    adminUnlockRequired: { bucket: 'Type A', action: 'owner setClaim(false, 0)', userCall: 'claim()' },
+  },
+  remove_putin_bounty_admin_unlock: {
+    name: 'RemovePutinBounty',
+    desc: 'Contributor balances in the RemovePutinBounty contract. The bounty is still in its Initial state; owner cancellation is required before contributors can redeem.',
+    category: 'owner-action-required',
+    color: '#f59e0b',
+    contract: '0xaf5fc45258b5d0af72031ab154bf6dfcfec74b99',
+    deployed: 'March 2022',
+    noWalletCheck: true,
+    adminUnlockRequired: { bucket: 'Type D', action: 'owner cancel()', userCall: 'redeem()' },
+  },
+  pembicoin_ico_admin_unlock: {
+    name: 'PembiCoinICO',
+    desc: 'Contributor balances in the PembiCoin crowdsale. The crowdsale is still Idle; the owner must move it to Failed before contributors can refund.',
+    category: 'owner-action-required',
+    color: '#f59e0b',
+    contract: '0x5535a72556727c221c567e0fc4208c5a99dba1cc',
+    deployed: 'August 2017',
+    noWalletCheck: true,
+    adminUnlockRequired: { bucket: 'Type D', action: 'owner setFailed()', userCall: 'refund()' },
+  },
+  circles_refund_vault_admin_unlock: {
+    name: 'Circles RefundVault',
+    desc: 'CirclesTokenOffering deposits held in an OpenZeppelin RefundVault. The crowdsale owner must finalize the sale into refunding state before depositors can call claimRefund().',
+    category: 'owner-action-required',
+    color: '#f59e0b',
+    contract: '0x93d812bf90a575d628e246b0966505a9e466f534',
+    deployed: 'August 2017',
+    noWalletCheck: true,
+    adminUnlockRequired: { bucket: 'Type D', action: 'crowdsale owner finalize() / enableRefunds()', userCall: 'claimRefund()' },
+  },
   p4rty_dao_vault: {
     name: 'P4RTY DAO Vault',
     desc: 'P4RTY DAO Vault was a 2018 dividend vault from p4rty.io. Users staked P4RTY tokens, and ETH sent to the vault was distributed pro-rata to stakers. The frontend is gone, but accumulated ETH dividends remain withdrawable via withdraw(); staked P4RTY itself is not unstaked by this vault.',
@@ -3353,9 +3378,7 @@ const EXCHANGES = {
   e25: { name: 'E25 Booster', desc: 'Deployed February 2019, a PoWH3D clone with a modified fee structure hinted at by its "25" branding. Has an isHuman modifier, so smart contract wallets cannot withdraw.', category: 'gambling', color: '#581c87', contract: '0xc3ad35d351b33783f27777e2ee1a4b6f96e4ee34', deployed: 'February 2019', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
   bitconnect2: { name: 'BitConnect v2', desc: 'The second in a series of BitConnect-themed PoWH3D clones, deployed June 2019. Reused the infamous brand name purely for attention; standard P3D dividend token under the hood.', category: 'gambling', color: '#581c87', contract: '0x568a693e1094b1e51e8053b2fc642da7161603f5', deployed: 'June 2019', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
   ethplatinum: { name: 'ETHPlatinum', desc: 'Deployed November 2021, one of the last PoWH3D clones ever created on Ethereum mainnet. By this point gas fees made the P3D dividend model largely impractical for small deposits.', category: 'gambling', color: '#581c87', contract: '0x510f9a9642ac14ded91629a1aad552be4b24b5f0', deployed: 'November 2021', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
-  divsnetwork: { name: 'DivsNetwork', desc: 'A July 2020 PoWH3D fork that framed itself as a dividend distribution network. Fully autonomous contract with no owner, running the same Hourglass token model as every other P3D clone.', category: 'gambling', color: '#581c87', contract: '0x26e6c899b5a5dc1d4874d828fda515a7eb7baf00', deployed: 'July 2020', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
-  ethercenter: { name: 'EtherCenter', desc: 'Deployed July 2019, EtherCenter was a PoWH3D fork that added no meaningful features over the original. Standard 10% fee on every transaction, distributed pro rata to all token holders.', category: 'gambling', color: '#581c87', contract: '0x0e7c28fb8ed4f5f63aabd022deaeeba40ecc335c', deployed: 'July 2019', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
-  redchip: { name: 'RedChip', desc: 'An October 2019 PoWH3D clone that borrowed stock market terminology. "Red chip" refers to mainland China companies listed in Hong Kong. Standard Hourglass dividend mechanics beneath the branding.', category: 'gambling', color: '#581c87', contract: '0xcd2de0bd5347f617f832442ebcc1c23a4d618847', deployed: 'October 2019', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
+  divsnetwork: { name: 'DivsNetwork', desc: 'A July 2020 PoWH3D fork that framed itself as a dividend distribution network. Fully autonomous contract with no owner, running the same Hourglass token model as every other P3D clone.', category: 'gambling', color: '#581c87', contract: '0x26e6c899b5a5dc1d4874d828fda515a7eb7baf00', deployed: 'July 2020', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },  redchip: { name: 'RedChip', desc: 'An October 2019 PoWH3D clone that borrowed stock market terminology. "Red chip" refers to mainland China companies listed in Hong Kong. Standard Hourglass dividend mechanics beneath the branding.', category: 'gambling', color: '#581c87', contract: '0xcd2de0bd5347f617f832442ebcc1c23a4d618847', deployed: 'October 2019', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
   cxxmain: { name: 'CxxMain', desc: 'Deployed November 2019 with a cryptic name that may reference C++ programming. A PoWH3D fork with unmodified Hourglass contract code and the same fee-redistribution mechanics.', category: 'gambling', color: '#581c87', contract: '0xa4dce3845cb88a6fca0291d4eca9e5a96e75e2b4', deployed: 'November 2019', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
   familyonly: { name: 'FamilyOnlyToken', desc: 'An August 2020 PoWH3D fork with an invitation-only theme suggested by its name. Same Hourglass dividend model where ETH deposits mint tokens and every trade generates passive income for all holders.', category: 'gambling', color: '#581c87', contract: '0xbedde30d3532165843f07b1b0e3e90fddbb75918', deployed: 'August 2020', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
   spw: { name: 'SPW', desc: 'Deployed June 2020, SPW was a minimal PoWH3D clone with no discernible branding or website. Pure Hourglass dividend contract mechanics.', category: 'gambling', color: '#581c87', contract: '0x586f3d9e3524eb02448691b158fdcf5ffc2c57b0', deployed: 'June 2020', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
@@ -3369,9 +3392,7 @@ const EXCHANGES = {
   decentether: { name: 'DecentEther', desc: 'Deployed August 2020 during DeFi Summer, though it had nothing to do with DeFi, just another PoWH3D clone running the old Hourglass dividend model on a chain now dominated by Uniswap and Compound.', category: 'gambling', color: '#581c87', contract: '0x7d2d58d7add0b2d6e06fa85590b60da7741c18c9', deployed: 'August 2020', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
   bitconnect3: { name: 'BitConnect v3', desc: 'The third BitConnect-branded PoWH3D fork, deployed October 2019. By this point the BitConnect name was the subject of SEC enforcement actions, but clone deployers kept reusing it.', category: 'gambling', color: '#581c87', contract: '0x38e219ee67a5e1536c5a89fec2da0d69c254cac4', deployed: 'October 2019', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
   furious: { name: 'Furious', desc: 'A July 2020 PoWH3D clone with an aggressive name but stock-standard mechanics. Same autonomous Hourglass contract where buy/sell fees are distributed to all token holders in perpetuity.', category: 'gambling', color: '#581c87', contract: '0xb0c4382d4355cdfe94a132fadf92a509b1e25939', deployed: 'July 2020', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
-  etherdiamond: { name: 'EtherDiamond', desc: 'Deployed July 2020, a sibling to ETHDIAMOND with nearly identical branding. Both are straight PoWH3D forks where token holders earn a cut of every future transaction.', category: 'gambling', color: '#581c87', contract: '0x4af078e47490c0e761a3de260952d9eb4a6ad693', deployed: 'July 2020', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
-  powh_clone5: { name: 'Hourglass Clone E', desc: 'An October 2019 unnamed Hourglass fork, one of several unbranded P3D copies deployed with no website or community, just the raw contract on Ethereum.', category: 'gambling', color: '#581c87', contract: '0x12528042299e0fca4d44ae4f42359319b8901fa2', deployed: 'October 2019', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
-  cryptosurge: { name: 'CryptoSurge', desc: 'Deployed October 2019 with a name evoking price surges. A PoWH3D fork using the proven Hourglass mechanics where buying tokens costs a 10% fee that goes straight to existing holders.', category: 'gambling', color: '#581c87', contract: '0x11e165dd03c63771004f929d58b75e4aaf2d1a23', deployed: 'October 2019', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
+  etherdiamond: { name: 'EtherDiamond', desc: 'Deployed July 2020, a sibling to ETHDIAMOND with nearly identical branding. Both are straight PoWH3D forks where token holders earn a cut of every future transaction.', category: 'gambling', color: '#581c87', contract: '0x4af078e47490c0e761a3de260952d9eb4a6ad693', deployed: 'July 2020', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },  cryptosurge: { name: 'CryptoSurge', desc: 'Deployed October 2019 with a name evoking price surges. A PoWH3D fork using the proven Hourglass mechanics where buying tokens costs a 10% fee that goes straight to existing holders.', category: 'gambling', color: '#581c87', contract: '0x11e165dd03c63771004f929d58b75e4aaf2d1a23', deployed: 'October 2019', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
   hourglass_clone6: { name: 'Hourglass Clone F', desc: 'A November 2018 unbranded Hourglass contract. Deployed during the crypto winter bear market when ETH had fallen over 90% from its peak, yet P3D clones were still appearing.', category: 'gambling', color: '#581c87', contract: '0x77b541f90ecfa09f854209eefeca24c295050e2e', deployed: 'November 2018', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
   upower: { name: 'UPower', desc: 'Deployed July 2018, UPower was a PoWH3D fork from the summer of the P3D craze. Standard dividend token. Deposit ETH, receive tokens, earn from every future transaction on the contract.', category: 'gambling', color: '#581c87', contract: '0x5044ac8da9601edf970dcc91a10c5f41c5c548c0', deployed: 'July 2018', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
   hourglass_clone7: { name: 'Hourglass Clone G', desc: 'A May 2018 unbranded Hourglass fork, one of the earliest nameless P3D copies. Deployed during the peak month of clone activity when dozens of identical contracts appeared on Ethereum.', category: 'gambling', color: '#581c87', contract: '0xaa4ec8484e89bed69570825688789589d38eea5e', deployed: 'May 2018', balanceAbi: 'function dividendsOf(address) view returns (uint256)', balanceArgs: (user) => [user], balanceCall: 'dividendsOf', withdrawAbi: 'function withdraw()', withdrawArgs: () => [], withdrawCall: 'withdraw', exitAbi: 'function exit()', exitArgs: () => [], exitCall: 'exit' },
@@ -3963,27 +3984,7 @@ const EXCHANGES = {
     withdrawAbi: 'function harvest()',
     withdrawArgs: () => [],
     withdrawCall: 'harvest',
-  },
-  metadrop_anata: {
-    name: 'Metadrop: Anata',
-    desc: 'In April 2022, Metadrop ran a sealed-bid auction for the Anata NFT collection (1,920 items). Bidders above the clearing price won NFTs; the difference between their bid and the clearing price is refundable via a merkle-gated claim. 120 bidders have never claimed their refund (197.33 ETH). The on-chain root is frozen and matching proofs were reconstructed from archived Metadrop frontend JS.',
-    category: 'nft',
-    color: '#9b59b6',
-    contract: '0x0cba81ba02c58a4c2c160fdd2e7411ad9cdf5dbe',
-    deployed: 'April 2022',
-    noWalletCheck: true,
-    merkleClaim: true,
-    withdrawAbi: 'function claimRefund(uint256 refundAmount_, bytes32[] proof_)',
-    withdrawArgs: (amount, addr) => {
-      const api = window._lastApiBalances?.metadrop_anata;
-      if (!api?.merkle_proof || !api?.merkle_wei) {
-        throw new Error('Missing merkle data — refresh and try again');
-      }
-      return [BigInt(api.merkle_wei), api.merkle_proof];
-    },
-    withdrawCall: 'claimRefund',
-  },
-  metadrop_webaverse: {
+  },  metadrop_webaverse: {
     name: 'Metadrop: Webaverse',
     desc: 'In August 2022, Metadrop ran a sealed-bid auction for the Webaverse metaverse NFT collection (7,870 items). Bidders above the clearing price won NFTs; the difference between their bid and the clearing price is refundable via a merkle-gated claim. Webaverse went dormant late 2023. 90 bidders have never claimed their refund (134.15 ETH). The on-chain root is frozen and matching proofs were reconstructed from archived Metadrop frontend JS.',
     category: 'nft',
@@ -4533,11 +4534,12 @@ const V2_TOKEN_DECIMALS = { DAI: 18, USDC: 6, USDT: 6, WBTC: 8 };
 // Sum claimable amounts across all matched protocols, grouped by asset symbol.
 // Returns { ETH: number, DAI: number, ... } — missing symbols → 0.
 // ETH comes from `balance_eth`; ERC20s come from `token_balances`.
-function computeAssetTotals(apiBalances) {
+function computeAssetTotals(apiBalances, opts = {}) {
   const totals = { ETH: 0 };
   if (!apiBalances) return totals;
-  for (const entry of Object.values(apiBalances)) {
+  for (const [key, entry] of Object.entries(apiBalances)) {
     if (!entry) continue;
+    if (opts.excludeAdminLocked && EXCHANGES[key]?.adminUnlockRequired) continue;
     const ethVal = parseFloat(entry.balance_eth || '0');
     if (isFinite(ethVal) && ethVal > 0) totals.ETH += ethVal;
     const tb = entry.token_balances || {};
@@ -4863,6 +4865,8 @@ async function checkUserBalances(overrideAddress) {
   const rowsEl = document.getElementById('claimRows');
   let html = '';
   let hasBalance = false;
+  let actionableFound = 0;
+  let conditionalFound = 0;
 
   // Fetch pre-computed balances from API (avoids loading full JSON)
   let apiBalances = {};
@@ -5218,7 +5222,39 @@ async function checkUserBalances(overrideAddress) {
         hasBalance = true;
         const ethAmount = ethers.formatEther(balance);
 
-        if (cfg.ensDeeds) {
+        if (cfg.adminUnlockRequired) {
+          conditionalFound++;
+          const apiEntry = apiBalances[key] || {};
+          const unlock = cfg.adminUnlockRequired || {};
+          const action = apiEntry.admin_action || unlock.action || 'owner/admin action';
+          const userCall = apiEntry.user_call || unlock.userCall || 'user claim';
+          const bucket = (apiEntry.meta && apiEntry.meta.bucket) || unlock.bucket || 'Owner action';
+          const recoveryType = apiEntry.recovery_type ? `<div class="claim-card-meta-row"><span class="claim-card-meta-label">Recovery type</span><span class="claim-card-meta-value">${esc(apiEntry.recovery_type.replace(/_/g, ' '))}</span></div>` : '';
+          const lastTx = apiEntry.last_tx_date ? apiEntry : null;
+          html += `
+            <div class="claim-card">
+              <div class="claim-card-header">
+                <span class="claim-card-name">${esc(cfg.name)}</span>
+                <span class="claim-card-amount">${fmtEth(ethAmount)} ETH</span>
+                <span class="claim-card-tag" style="border-color:#facc15;color:#facc15">Owner action required</span>
+              </div>
+              <div class="claim-card-meta" id="claimDetails-${key}">
+                ${lastTx ? `<div class="claim-card-meta-row"><span class="claim-card-meta-label">Last tx</span><span class="claim-card-meta-value">${esc(lastTx.last_tx_date)} · <a href="${etherscanTx(lastTx.last_tx_hash)}" target="_blank" rel="noopener noreferrer">view tx</a></span></div>` : ''}
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Contract</span><span class="claim-card-meta-value"><a href="${etherscanAddr(cfg.contract)}" target="_blank" rel="noopener noreferrer">${cfg.contract}</a></span></div>
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Required first</span><span class="claim-card-meta-value"><span style="color:#facc15">${esc(action)}</span></span></div>
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Then user call</span><span class="claim-card-meta-value"><span style="color:var(--text)">${esc(userCall)}</span></span></div>
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Bucket</span><span class="claim-card-meta-value">${esc(bucket)}</span></div>
+                ${recoveryType}
+                <div class="claim-card-meta-row" style="margin-top:4px;padding-top:6px;border-top:1px solid rgba(255,255,255,0.06)"><span class="claim-card-meta-label" style="color:#facc15">Potential claim</span><span class="claim-card-meta-value" style="color:#facc15">This wallet appears eligible to claim after the project owner/admin completes the unlock action above. Until then, a user claim transaction would fail, so Forgotten ETH shows the path but will not send a transaction from this card.</span></div>
+              </div>
+              <div class="claim-card-actions">
+                <button class="claim-btn" disabled title="Owner/admin action required before this claim can succeed" style="opacity:0.5;cursor:not-allowed;filter:grayscale(0.75)">Claim after unlock</button>
+              </div>
+              <div class="claim-card-status" id="claimStatus-${key}"></div>
+            </div>`;
+        } else {
+          actionableFound++;
+          if (cfg.ensDeeds) {
           // ENS: check for pre-mapped deed data first, fall back to event log lookup
           // Check API response first, then local JSON data
           const apiDeeds = window._apiDeeds || null;
@@ -6255,11 +6291,11 @@ async function checkUserBalances(overrideAddress) {
               </div>
               <div class="claim-card-status" id="claimStatus-${key}"></div>
             </div>`;
+          }
         }
       }
   }
 
-  const claimCount = Object.values(userBalances).filter(b => b > 0n).length;
   const ethPrice = await getEthPrice();
   // Append Parity multisig card if connected wallet owns one (works alongside personal balances)
   if (window._daoMultisigMatch) {
@@ -6272,6 +6308,7 @@ async function checkUserBalances(overrideAddress) {
       ? `<button class="claim-btn" id="claimBtn-msig-${mm.key}" data-action="dao-msig-approve" data-key="${mm.key}" data-msig="${esc(mm.multisigAddr)}" data-allow-mismatch="true">Step 1: Approve (via multisig)</button><button class="claim-btn" disabled style="opacity:0.35">Step 2: Withdraw (via multisig)</button>`
       : `<button class="claim-btn" disabled style="opacity:0.35">Step 1: Approved</button><button class="claim-btn" id="claimBtn-msig-${mm.key}" data-action="dao-msig-withdraw" data-key="${mm.key}" data-msig="${esc(mm.multisigAddr)}" data-allow-mismatch="true">Step 2: Withdraw (via multisig)</button>`;
     hasBalance = true;
+    actionableFound++;
     userBalances[mm.key] = (userBalances[mm.key] || 0n) + mm.daoBal;
     html += `<div class="claim-card">
         <div class="claim-card-header">
@@ -6290,6 +6327,7 @@ async function checkUserBalances(overrideAddress) {
         <div class="claim-card-status" id="claimStatus-msig-${mm.key}"></div>
       </div>`;
   }
+  const claimCount = Object.values(userBalances).filter(b => b > 0n).length;
   // ── Build "Already Claimed" cards from API response ──
   var _cc = buildClaimedCards(apiResp && apiResp.data ? apiResp.data.claimed_balances : null);
   var claimedHtml = _cc.html;
@@ -6320,8 +6358,10 @@ async function checkUserBalances(overrideAddress) {
     // per non-zero asset; banner title flips to "Claimable Assets Found"
     // when more than one asset is present.
     const assetTotals = computeAssetTotals(apiBalances);
-    const totalEth = assetTotals.ETH || 0;
-    const heroAmountsHtml = renderHeroAmounts(assetTotals, ethPrice);
+    const actionableAssetTotals = computeAssetTotals(apiBalances, { excludeAdminLocked: true });
+    const displayAssetTotals = actionableFound > 0 ? actionableAssetTotals : assetTotals;
+    const totalEth = actionableFound > 0 ? (actionableAssetTotals.ETH || 0) : (assetTotals.ETH || 0);
+    const heroAmountsHtml = renderHeroAmounts(displayAssetTotals, ethPrice);
     const prefix = `<div class="claim-hero">
       ${heroAmountsHtml}
       <div class="claim-hero-contracts">${claimCount} contract${claimCount > 1 ? 's' : ''}</div>
@@ -6333,9 +6373,9 @@ async function checkUserBalances(overrideAddress) {
         </div>` : '';
     const claimedSection = claimedHtml ? `<div style="margin-top:16px;padding-top:12px;border-top:1px dashed var(--border)"><div style="font-size:11px;color:var(--text2);margin-bottom:8px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px">Previously Claimed</div>${claimedHtml}</div>` : '';
     html = prefix + '<div class="claim-rows-list">' + html + claimedSection + '</div>' + mismatchNote + _botCTA;
-    var _bannerTitle = bannerTitleFor(assetTotals);
-    var _celebrate = true;
-    logEvent('found', { address: checkAddr, contracts_found: claimCount, total_eth: totalEth });
+    var _bannerTitle = actionableFound > 0 ? bannerTitleFor(actionableAssetTotals) : 'Potential Claim Found';
+    var _celebrate = actionableFound > 0;
+    logEvent('found', { address: checkAddr, contracts_found: claimCount, actionable_contracts_found: actionableFound, conditional_contracts_found: conditionalFound, total_eth: totalEth });
   }
 
   // Wait for minimum spinner display time before showing results
@@ -9609,6 +9649,8 @@ async function checkSingleAddress(addr) {
   // Returns { found, totalEth, html, apiBalances }
   let html = '';
   let found = 0;
+  let actionableFound = 0;
+  let conditionalFound = 0;
   let totalEth = 0;
 
   let apiBalances = {};
@@ -9684,6 +9726,26 @@ async function checkSingleAddress(addr) {
       // misrepresenting the redeemed asset. The wallet-connected scan already
       // did this correctly — now both paths agree.
       const mUnit = cfg.returnsWeth ? 'WETH' : 'ETH';
+      if (cfg.adminUnlockRequired) {
+        conditionalFound++;
+        const apiEntry = apiBalances[key] || {};
+        const unlock = cfg.adminUnlockRequired || {};
+        const action = apiEntry.admin_action || unlock.action || 'owner/admin action';
+        const userCall = apiEntry.user_call || unlock.userCall || 'user claim';
+        const bucket = (apiEntry.meta && apiEntry.meta.bucket) || unlock.bucket || 'Owner action';
+        const recoveryType = apiEntry.recovery_type ? '<div class="claim-card-meta-row"><span class="claim-card-meta-label">Recovery type</span><span class="claim-card-meta-value">' + esc(apiEntry.recovery_type.replace(/_/g, ' ')) + '</span></div>' : '';
+        html += '<div class="claim-card"><div class="claim-card-header"><span class="claim-card-name">' + esc(cfg.name) + mLastTxHtml + '</span><span class="claim-card-amount">' + fmtEth(ethAmount) + ' ' + mUnit + '</span><span class="claim-card-tag" style="border-color:#facc15;color:#facc15">Owner action required</span></div>' +
+          '<div class="claim-card-meta" id="claimDetails-' + key + '">' +
+            '<div class="claim-card-meta-row"><span class="claim-card-meta-label">Contract</span><span class="claim-card-meta-value"><a href="' + etherscanAddr(cfg.contract) + '" target="_blank" rel="noopener noreferrer">' + cfg.contract + '</a></span></div>' +
+            '<div class="claim-card-meta-row"><span class="claim-card-meta-label">Required first</span><span class="claim-card-meta-value"><span style="color:#facc15">' + esc(action) + '</span></span></div>' +
+            '<div class="claim-card-meta-row"><span class="claim-card-meta-label">Then user call</span><span class="claim-card-meta-value"><span style="color:var(--text)">' + esc(userCall) + '</span></span></div>' +
+            '<div class="claim-card-meta-row"><span class="claim-card-meta-label">Bucket</span><span class="claim-card-meta-value">' + esc(bucket) + '</span></div>' +
+            recoveryType +
+            '<div class="claim-card-meta-row" style="margin-top:4px;padding-top:6px;border-top:1px solid rgba(255,255,255,0.06)"><span class="claim-card-meta-label" style="color:#facc15">Potential claim</span><span class="claim-card-meta-value" style="color:#facc15">This wallet appears eligible to claim after the project owner/admin completes the unlock action above. Until then, a user claim transaction would fail, so Forgotten ETH shows the path but will not send a transaction from this card.</span></div>' +
+          '</div><div class="claim-card-actions"><button class="claim-btn" disabled title="Owner/admin action required before this claim can succeed" style="opacity:0.5;cursor:not-allowed;filter:grayscale(0.75)">Claim after unlock</button></div><div class="claim-card-status" id="claimStatus-' + key + '"></div></div>';
+        continue;
+      }
+      actionableFound++;
       html += '<div class="claim-card"><div class="claim-card-header"><span class="claim-card-name">' + esc(cfg.name) + mLastTxHtml + '</span><span class="claim-card-amount">' + fmtEth(ethAmount) + ' ' + mUnit + '</span><span class="claim-card-tag">Claimable</span></div>';
       // Kyber: show per-epoch breakdown
       if (cfg.kyberFeeHandler && apiBalances[key]?.epoch_details) {
@@ -9781,7 +9843,7 @@ async function checkSingleAddress(addr) {
     }
   }
 
-  return { found, totalEth, html, apiBalances, claimedBalances };
+  return { found, actionableFound, conditionalFound, totalEth, html, apiBalances, claimedBalances };
 }
 
 async function checkManualAddress() {
@@ -9873,16 +9935,19 @@ async function checkManualAddress() {
     // array) so we can read the per-protocol token_balances directly
     // from result.apiBalances.
     const assetTotals = computeAssetTotals(result.apiBalances);
-    const heroAmountsHtml = renderHeroAmounts(assetTotals, ethPrice);
+    const actionableAssetTotals = computeAssetTotals(result.apiBalances, { excludeAdminLocked: true });
+    const displayAssetTotals = result.actionableFound > 0 ? actionableAssetTotals : assetTotals;
+    const heroAmountsHtml = renderHeroAmounts(displayAssetTotals, ethPrice);
     var claimedSection = mClaimedHtml ? '<div style="margin-top:16px;padding-top:12px;border-top:1px dashed var(--border)"><div style="font-size:11px;color:var(--text2);margin-bottom:8px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px">Previously Claimed</div>' + mClaimedHtml + '</div>' : '';
+    const connectForManualHtml = result.actionableFound > 0
+      ? '<div style="text-align:center;margin-top:16px"><button class="wallet-btn" data-action="connect-for-manual" style="padding:8px 18px;font-size:14px">Connect Wallet to Claim</button></div>'
+      : '';
     finalHtml = '<div class="claim-hero">' + heroAmountsHtml +
       '<div class="claim-hero-contracts">' + grandFound + ' contract' + (grandFound > 1 ? 's' : '') + (resolvedAddrs.length > 1 ? ' across ' + resolvedAddrs.length + ' addresses' : '') + '</div></div>' +
       '<div class="claim-rows-list">' + allHtml + claimedSection + '</div>' +
-      '<div style="text-align:center;margin-top:16px">' +
-        '<button class="wallet-btn" data-action="connect-for-manual" style="padding:8px 18px;font-size:14px">Connect Wallet to Claim</button>' +
-      '</div>' + _botCTA;
-    var _manualTitle = bannerTitleFor(assetTotals);
-    var _manualCelebrate = true;
+      connectForManualHtml + _botCTA;
+    var _manualTitle = result.actionableFound > 0 ? bannerTitleFor(actionableAssetTotals) : 'Potential Claim Found';
+    var _manualCelebrate = result.actionableFound > 0;
     logEvent('found', { address: resolvedAddrs[0], contracts_found: grandFound, total_eth: grandTotalEth });
     pendingManualAddress = resolvedAddrs[0];
   }
@@ -9988,27 +10053,27 @@ async function _testClaimETH(key, cfg, btn, statusEl, balance) {
 
 // Lightweight init: fetch total first, then badge data for all tabs
 (async () => {
-  // Fetch pre-computed total immediately (single fast request, retry once on failure)
+  // Fetch pre-computed total immediately. Production uses /api/total; static
+  // mirrors mounted under a subpath (for example /main/forgotteneth/) do not
+  // have API routes, so fall back to the mirrored static total.json using a
+  // relative URL before using the baked-in last resort.
   var totalData = null;
-  for (var _attempt = 0; _attempt < 2 && !totalData; _attempt++) {
-    try {
-      var totalResp = await fetch('/api/total');
-      if (totalResp.ok) totalData = await totalResp.json();
-      else if (_attempt === 0) await new Promise(r => setTimeout(r, 1500));
-    } catch { if (_attempt === 0) await new Promise(r => setTimeout(r, 1500)); }
+  var totalSources = ['/api/total', 'data/total.json'];
+  for (var _src of totalSources) {
+    for (var _attempt = 0; _attempt < 2 && !totalData; _attempt++) {
+      try {
+        var totalResp = await fetch(_src);
+        if (totalResp.ok) totalData = await totalResp.json();
+        else if (_attempt === 0) await new Promise(r => setTimeout(r, 1500));
+      } catch { if (_attempt === 0) await new Promise(r => setTimeout(r, 1500)); }
+    }
+    if (totalData) break;
   }
-  // Fallback: use values baked into the page if API is unreachable.
-  // A prior commit had a second fallback that fetched /data/total.json, but
-  // that URL always 404'd in production (Vercel only serves public/; data/
-  // is bundled via includeFiles into API handlers, never served as a static
-  // asset). The fetch was dead code and has been removed. The hardcoded
-  // values below are the real last resort — update them when adding
-  // protocols (grep for this comment).
-  // Fallback matches data/total.json at 2026-04-21 after the WETH heal landed.
-  // contract_count derives from EXCHANGES at runtime if the API/file fails —
-  // that's always-fresh. Update total_eth / eth_claimed / peak_eth after each
-  // protocol addition (grep for this comment in app.js).
-  if (!totalData) totalData = { total_eth: 167566, total_contract_eth: 169380, contract_count: Object.keys(EXCHANGES).length, eth_claimed: 1469, peak_eth: 168798 };
+  // Fallback: use values baked into the page if API/static JSON is unreachable.
+  // contract_count derives from EXCHANGES at runtime if both fail — that's
+  // always-fresh. Update total_eth / eth_claimed / peak_eth after each protocol
+  // addition (grep for this comment in app.js).
+  if (!totalData) totalData = { total_eth: 166428, total_contract_eth: 169691, contract_count: Object.keys(EXCHANGES).length, eth_claimed: 14584, peak_eth: 181012 };
   try {
       var totalEthVal = Math.round(totalData.total_eth);
       const contractCount = totalData.contract_count || Object.keys(EXCHANGES).length;

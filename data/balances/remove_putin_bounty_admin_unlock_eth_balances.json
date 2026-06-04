@@ -1,0 +1,36 @@
+{
+  "contract": "0xaf5fc45258b5d0af72031ab154bf6dfcfec74b99",
+  "balance_source": "eth",
+  "contract_eth_balance": 100.12,
+  "total_eth_in_balances": 100.12,
+  "addresses_with_balance": 2,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-03 23:15:08 UTC",
+  "description": "RemovePutinBounty contributor balances. The contract remains Initial; owner must cancel() before contributors can redeem().",
+  "meta": {
+    "owner_action_required": true,
+    "bucket": "Type D",
+    "required_admin_action": "cancel()",
+    "user_call_after_unlock": "redeem()"
+  },
+  "balances": [
+    {
+      "address": "0x34dec1e2fec2e1a09950b01c6ef9b610230395ce",
+      "balance_wei": "100000000000000000000",
+      "balance_eth": 100.0,
+      "admin_unlock_required": true,
+      "admin_action": "owner cancel()",
+      "user_call": "redeem()",
+      "recovery_type": "owner_state_transition"
+    },
+    {
+      "address": "0x129dcd1136aa26c78413ab2ce2644f66cea178f2",
+      "balance_wei": "120000000000000000",
+      "balance_eth": 0.12,
+      "admin_unlock_required": true,
+      "admin_action": "owner cancel()",
+      "user_call": "redeem()",
+      "recovery_type": "owner_state_transition"
+    }
+  ]
+}

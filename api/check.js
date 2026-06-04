@@ -151,6 +151,7 @@ export default async function handler(req, res) {
 
   const results = {};
   let totalClaimable = 0;
+  let totalConditionalLocked = 0;
   const isClaimedItem = (itemsClaimed, rawId, prefix = '') => {
     if (!itemsClaimed || rawId === null || rawId === undefined) return false;
     const id = String(rawId);
@@ -209,6 +210,7 @@ export default async function handler(req, res) {
       // initialClaim with proof, false → the no-arg claim()).
       let groClaimAmount  = typeof val === 'object' && val.gca ? val.gca : null;
       let groNeedsInitial = typeof val === 'object' && 'gni' in val ? val.gni : null;
+      let adminUnlockState = typeof val === 'object' && val.au ? val.au : null;
 
       if (itemsClaimed && itemsClaimed.size > 0) {
         if (deeds) {
@@ -254,7 +256,8 @@ export default async function handler(req, res) {
       }
 
       const balFloat = parseFloat(balanceEth);
-      totalClaimable += balFloat;
+      if (adminUnlockState) totalConditionalLocked += balFloat;
+      else totalClaimable += balFloat;
       const balanceWei = merkleWei || BigInt(Math.round(balFloat * 1e18)).toString();
       results[key] = {
         contract: contractMeta.c,
@@ -319,6 +322,18 @@ export default async function handler(req, res) {
         ...(v2TokenBalances ? { token_balances: v2TokenBalances } : {}),
         ...(v2TribeRaw ? { tribe_balance_raw: v2TribeRaw } : {}),
         ...(groClaimAmount ? { gro_claim_amount: groClaimAmount, gro_needs_initial: groNeedsInitial } : {}),
+        ...(adminUnlockState ? {
+          admin_unlock_required: true,
+          admin_action: adminUnlockState.a || null,
+          user_call: adminUnlockState.u || null,
+          recovery_type: adminUnlockState.r || null,
+          meta: {
+            owner_action_required: true,
+            bucket: adminUnlockState.b || null,
+            required_admin_action: adminUnlockState.a || null,
+            user_call_after_unlock: adminUnlockState.u || null,
+          },
+        } : {}),
       };
     }
   }
@@ -381,6 +396,10 @@ export default async function handler(req, res) {
     contracts_checked: Object.keys(meta).length,
     contracts_with_balance: Object.keys(results).length,
     total_claimable_eth: totalClaimable.toFixed(6),
+    ...(totalConditionalLocked > 0 ? {
+      total_conditional_locked_eth: totalConditionalLocked.toFixed(6),
+      total_potential_claim_eth: (totalClaimable + totalConditionalLocked).toFixed(6),
+    } : {}),
     balances: results,
     ...(Object.keys(claimedBalances).length > 0 ? {
       claimed_balances: claimedBalances,
