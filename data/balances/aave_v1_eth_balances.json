@@ -5,7 +5,7 @@
   "total_eth_in_balances": 937.49667563,
   "addresses_with_balance": 5011,
   "coverage_pct": 99.9,
-  "scan_date": "2026-06-03 14:00:28 UTC",
+  "scan_date": "2026-06-04 16:20:18 UTC",
   "description": "aETH token balances (Aave v1 lending pool, ETH market). Users call aETH.redeem(amount) to unwrap shares into ETH from LendingPoolCore. Aave v1 is frozen \u2014 the official UI dropped support but the contracts remain callable.",
   "distribution": {
     "100+ ETH": {
@@ -883,21 +883,21 @@
       "rank": 141
     },
     {
-      "address": "0x9323161faf56dd09cb32ace72c20dbd96b96d386",
-      "balance_wei": "612165346614332984",
-      "balance_eth": 0.61216535,
-      "rank": 142
-    },
-    {
       "address": "0x6dd9a085e3a3a3dea9d196dc589aa8a735805c7f",
       "balance_wei": "612040851631068061",
       "balance_eth": 0.61204085,
-      "rank": 143
+      "rank": 142
     },
     {
       "address": "0x666c855e4c2f7221ba3c6da2b7abdadeeb8d3977",
       "balance_wei": "608834757669926063",
       "balance_eth": 0.60883476,
+      "rank": 143
+    },
+    {
+      "address": "0x9323161faf56dd09cb32ace72c20dbd96b96d386",
+      "balance_wei": "606949606895038615",
+      "balance_eth": 0.60694961,
       "rank": 144
     },
     {
@@ -1249,15 +1249,15 @@
       "rank": 202
     },
     {
-      "address": "0x4264eeff1653723deee9b12e4b17119a99e6bd70",
-      "balance_wei": "438742552932860538",
-      "balance_eth": 0.43874255,
+      "address": "0x000000000004444c5dc75cb358380d2e3de08a90",
+      "balance_wei": "442079036554312884",
+      "balance_eth": 0.44207904,
       "rank": 203
     },
     {
-      "address": "0x000000000004444c5dc75cb358380d2e3de08a90",
-      "balance_wei": "436863296835018515",
-      "balance_eth": 0.4368633,
+      "address": "0x4264eeff1653723deee9b12e4b17119a99e6bd70",
+      "balance_wei": "438742552932860538",
+      "balance_eth": 0.43874255,
       "rank": 204
     },
     {
