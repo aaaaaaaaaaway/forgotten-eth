@@ -6,6 +6,9 @@
     "viem": "^2.39.0"
   },
   "scripts": {
-    "check:address": "node scripts/check-address.js"
+    "check:address": "node scripts/check-address.js",
+    "check:api-imports": "node scripts/check-api-imports.js",
+    "check:vercel-functions": "node scripts/check-vercel-functions.js",
+    "check:deploy": "npm run check:api-imports && npm run check:vercel-functions"
   }
 }
