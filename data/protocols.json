@@ -2089,5 +2089,33 @@
     "balance_file": "circles_refund_vault_admin_unlock_eth_balances.json",
     "admin_unlock_required": true,
     "owner_action_bucket": "Type D"
+  },
+  {
+    "key": "fds_1",
+    "name": "FDS ISO \u2014 Contract 1",
+    "contract": "0x44f58b8c6ca2dceba72d61a4d59b0098d48f915e",
+    "balance_source": "token",
+    "category": "ico",
+    "balance_file": "fds_1_bnb_balances.json",
+    "payout_tokens": [
+      "BNB"
+    ],
+    "peak_token_amounts": {
+      "BNB": 249966.64
+    }
+  },
+  {
+    "key": "fds_2",
+    "name": "FDS ISO \u2014 Contract 2",
+    "contract": "0x3D5C2B398F514Dfe452d7FA9A39c7094594d013D",
+    "balance_source": "token",
+    "category": "ico",
+    "balance_file": "fds_2_bnb_balances.json",
+    "payout_tokens": [
+      "BNB"
+    ],
+    "peak_token_amounts": {
+      "BNB": 27269.08
+    }
   }
 ]

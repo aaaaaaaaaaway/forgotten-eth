@@ -1,0 +1,34 @@
+{
+  "contract": "0x3D5C2B398F514Dfe452d7FA9A39c7094594d013D",
+  "balance_source": "token",
+  "contract_eth_balance": 0,
+  "total_eth_in_balances": 0,
+  "payout_token": "BNB",
+  "payout_token_address": "0xB8c77482e45F1F44dE1745F52C74426C631bDD52",
+  "contract_token_balances": {
+    "BNB": "71198642297650130548"
+  },
+  "addresses_with_balance": 2,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-05 12:00:00 UTC",
+  "description": "FDS ISO Contract 2. 2 winners eligible for 35.59932114882506 BNB each via withdraw(uint8 colorid) with colorid=1.",
+  "distribution": {},
+  "balances": [
+    {
+      "address": "0xa9899f10b5d5d74335b801c4738b692d8e4ab1f3",
+      "balance_eth": 0,
+      "balance_wei": "0",
+      "token_balances": {
+        "BNB": "35599321148825065274"
+      }
+    },
+    {
+      "address": "0x0ad5d0e38deca53e95f5e06670ca433e9625650a",
+      "balance_eth": 0,
+      "balance_wei": "0",
+      "token_balances": {
+        "BNB": "35599321148825065274"
+      }
+    }
+  ]
+}

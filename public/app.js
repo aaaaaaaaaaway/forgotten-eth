@@ -4440,6 +4440,30 @@ const EXCHANGES = {
     initialClaimAbi: 'function initialClaim(bytes32[] proof, uint256 amount)',
     claimAbi: 'function claim()',
   },
+  fds_1: {
+    name: 'FDS ISO — Contract 1',
+    desc: 'FDS (Fair Dollars Sharing) was a 2019 BNB-funded ISO on Ethereum. ~25,000 participants funded a distribution contract; contract 1 holds the prize pool for 18,006 winners, each eligible for 13.88240808 BNB. Payout is in BNB (ERC-20). Call withdraw() to claim.',
+    category: 'ico',
+    color: '#F3BA2F',
+    contract: '0x44f58b8c6ca2dceba72d61a4d59b0098d48f915e',
+    deployed: 'April 2019',
+    noWalletCheck: true,
+    withdrawAbi: 'function withdraw()',
+    withdrawArgs: () => [],
+    withdrawCall: 'withdraw',
+  },
+  fds_2: {
+    name: 'FDS ISO — Contract 2',
+    desc: 'FDS (Fair Dollars Sharing) ISO contract 2. Holds the prize pool for 766 winners, each eligible for 35.599321148825065274 BNB. Payout is in BNB (ERC-20). Call withdraw(1) to claim.',
+    category: 'ico',
+    color: '#F3BA2F',
+    contract: '0x3D5C2B398F514Dfe452d7FA9A39c7094594d013D',
+    deployed: 'May 2019',
+    noWalletCheck: true,
+    withdrawAbi: 'function withdraw(uint8 colorid)',
+    withdrawArgs: (amount, user) => [1],
+    withdrawCall: 'withdraw',
+  },
 };
 
 // Per-tab state

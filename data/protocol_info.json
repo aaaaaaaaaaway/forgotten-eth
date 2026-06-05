@@ -2284,5 +2284,23 @@
     "contract": "0x93d812bf90a575d628e246b0966505a9e466f534",
     "deployed": "August 2017",
     "slug": "circles-refund-vault-admin-unlock"
+  },
+  "fds_1": {
+    "name": "FDS ISO — Contract 1",
+    "desc": "FDS (Fair Dollars Sharing) was a 2019 BNB-funded ISO (Initial Sharing Offering) on Ethereum. ~25,000 participants sent BNB to a distribution contract; contract 1 holds the prize pool for 18,006 selected winners, each eligible for exactly 13.88240808 BNB. Call withdraw() to claim.",
+    "category": "ico",
+    "color": "#F3BA2F",
+    "contract": "0x44f58b8c6ca2dceba72d61a4d59b0098d48f915e",
+    "deployed": "April 2019",
+    "slug": "fds-1"
+  },
+  "fds_2": {
+    "name": "FDS ISO — Contract 2",
+    "desc": "FDS (Fair Dollars Sharing) ISO contract 2. Holds the prize pool for 766 selected winners from the same 2019 BNB distribution event, each eligible for exactly 35.599321148825065274 BNB. Call withdraw(uint8 colorid) with colorid=1 to claim.",
+    "category": "ico",
+    "color": "#F3BA2F",
+    "contract": "0x3D5C2B398F514Dfe452d7FA9A39c7094594d013D",
+    "deployed": "May 2019",
+    "slug": "fds-2"
   }
 }
