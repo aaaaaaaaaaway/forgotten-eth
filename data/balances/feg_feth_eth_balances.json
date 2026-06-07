@@ -1,9 +1,9 @@
 {
   "contract": "0xf786c34106762ab4eeb45a51b42a62470e9d5332",
   "balance_source": "token",
-  "contract_eth_balance": 403.43595525,
-  "total_eth_in_balances": 46.44580154,
-  "addresses_with_balance": 4037,
+  "contract_eth_balance": 403.425506,
+  "total_eth_in_balances": 46.435246,
+  "addresses_with_balance": 4007,
   "coverage_pct": 11.51,
   "scan_date": "2026-05-03 16:16:44 UTC",
   "description": "FEG Wrapped ETH. Holders call withdraw(amt) for 99% of their balance as ETH (1% reflection fee). Contract eth_getBalance over-states user-claimable by ~7\u00d7 because feesAccrued (0.9% of every deposit + 7/8 of every withdraw fee + voluntary burns) is permanently stranded by design \u2014 no function exists to redeem it.",
@@ -2449,13 +2449,6 @@
       "balance_eth": 0.010469383191385661,
       "fETH_balance_wei": "10575134536753194",
       "rank": 348
-    },
-    {
-      "address": "0x732da764b0372f7fde40155ddda2f497af6aa32e",
-      "balance_wei": "10402303912735848",
-      "balance_eth": 0.010402303912735849,
-      "fETH_balance_wei": "10507377689632170",
-      "rank": 349
     },
     {
       "address": "0x2366a1e18a8410c2ed138208930710c583567045",
@@ -9666,13 +9659,6 @@
       "balance_eth": 0.000153522604863854,
       "fETH_balance_wei": "155073338246318",
       "rank": 1379
-    },
-    {
-      "address": "0xb81de3dc462af75f2a2d81aa8bc1357f94eab906",
-      "balance_wei": "152993973808310",
-      "balance_eth": 0.00015299397380831,
-      "fETH_balance_wei": "154539367483142",
-      "rank": 1380
     },
     {
       "address": "0x4d3ba7aa6f8a1b34bf231cbf27b1eaea4f0ad287",
@@ -26888,13 +26874,6 @@
       "rank": 3839
     },
     {
-      "address": "0xc6facc12b38d5d728d8b827484eb3d4b32d0f539",
-      "balance_wei": "408523942",
-      "balance_eth": 4.08523942e-10,
-      "fETH_balance_wei": "412650447",
-      "rank": 3840
-    },
-    {
       "address": "0xc1f7ffc731cd7a0c4ee35c095b089951986ed44f",
       "balance_wei": "389841218",
       "balance_eth": 3.89841218e-10,
@@ -28273,5 +28252,6 @@
       "fETH_balance_wei": "1",
       "rank": 4037
     }
-  ]
+  ],
+  "last_event_refresh": "2026-06-05 15:23:05 UTC"
 }

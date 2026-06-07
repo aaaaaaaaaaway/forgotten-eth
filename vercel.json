@@ -29,6 +29,16 @@
       "maxDuration": 10,
       "includeFiles": "{data/index_shards/**/*.json,data/eligible_checkers/recognition.json,data/ens_label_names.json}"
     },
+    "api/check-batch.js": {
+      "memory": 512,
+      "maxDuration": 15,
+      "includeFiles": "data/index_shards/**/*.json"
+    },
+    "api/health.js": {
+      "memory": 256,
+      "maxDuration": 10,
+      "includeFiles": "{data/health.json,data/total.json,data/index_shards/meta.json,data/index_shards/13.json,data/index_shards/61.json,data/index_shards/1d.json,data/index_shards/e1.json}"
+    },
     "api/table.js": {
       "memory": 256,
       "maxDuration": 10,
@@ -70,6 +80,13 @@
       "memory": 128,
       "maxDuration": 5,
       "includeFiles": "public/changelog.html"
+    },
+    "api/dune-webhook.js": {
+      "maxDuration": 60,
+      "includeFiles": "{data/protocols.json,data/withdrawal_events.json,data/balances/gnosis_auction_eth_balances.json}"
+    },
+    "api/quick-scan.js": {
+      "includeFiles": "{data/protocols.json,data/balances/**/*.json}"
     }
   },
   "headers": [
@@ -137,7 +154,7 @@
       ]
     },
     {
-      "source": "/api/(check|summary|table|total|stats|claims|sitemap|feed|eligible-recognition-seen)",
+      "source": "/api/(check|check-batch|summary|table|total|stats|claims|sitemap|feed)",
       "headers": [
         {
           "key": "Cache-Control",

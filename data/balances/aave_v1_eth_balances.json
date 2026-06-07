@@ -2,10 +2,10 @@
   "contract": "0x3a3A65aAb0dd2A17E3F1947bA16138cd37d08c04",
   "balance_source": "token",
   "contract_eth_balance": 938.43783565,
-  "total_eth_in_balances": 937.49667563,
+  "total_eth_in_balances": 937.49667562,
   "addresses_with_balance": 5011,
   "coverage_pct": 99.9,
-  "scan_date": "2026-06-04 16:20:18 UTC",
+  "scan_date": "2026-06-05 16:19:39 UTC",
   "description": "aETH token balances (Aave v1 lending pool, ETH market). Users call aETH.redeem(amount) to unwrap shares into ETH from LendingPoolCore. Aave v1 is frozen \u2014 the official UI dropped support but the contracts remain callable.",
   "distribution": {
     "100+ ETH": {
@@ -22,7 +22,7 @@
     },
     "0.1-1 ETH": {
       "count": 530,
-      "total_eth": 145.44171327999996
+      "total_eth": 145.44171326999995
     },
     "0.01-0.1 ETH": {
       "count": 1280,
@@ -895,33 +895,33 @@
       "rank": 143
     },
     {
-      "address": "0x9323161faf56dd09cb32ace72c20dbd96b96d386",
-      "balance_wei": "606949606895038615",
-      "balance_eth": 0.60694961,
-      "rank": 144
-    },
-    {
       "address": "0xd0579fffebc2cf0d2ef2ef6e1900fb6a5b7ca3dc",
       "balance_wei": "606800355650259511",
       "balance_eth": 0.60680036,
-      "rank": 145
+      "rank": 144
     },
     {
       "address": "0x7c28f6600a8a715793737584af9b66e6e7e7c05c",
       "balance_wei": "603052267348937849",
       "balance_eth": 0.60305227,
-      "rank": 146
+      "rank": 145
     },
     {
       "address": "0x9cf626b48c38755c1ff1a5af49fa9cd16f53f05c",
       "balance_wei": "600872624720125359",
       "balance_eth": 0.60087262,
-      "rank": 147
+      "rank": 146
     },
     {
       "address": "0x0749ce9e54dd0ad617b34ac9e88e6c80dd5ce937",
       "balance_wei": "599577875678506358",
       "balance_eth": 0.59957788,
+      "rank": 147
+    },
+    {
+      "address": "0x9323161faf56dd09cb32ace72c20dbd96b96d386",
+      "balance_wei": "596474664085496115",
+      "balance_eth": 0.59647466,
       "rank": 148
     },
     {
@@ -1243,15 +1243,15 @@
       "rank": 201
     },
     {
-      "address": "0x0674031b4d891ed01bc51ef8e313d45ce0aa325b",
-      "balance_wei": "442751125681096462",
-      "balance_eth": 0.44275113,
+      "address": "0x000000000004444c5dc75cb358380d2e3de08a90",
+      "balance_wei": "452553979363855384",
+      "balance_eth": 0.45255398,
       "rank": 202
     },
     {
-      "address": "0x000000000004444c5dc75cb358380d2e3de08a90",
-      "balance_wei": "442079036554312884",
-      "balance_eth": 0.44207904,
+      "address": "0x0674031b4d891ed01bc51ef8e313d45ce0aa325b",
+      "balance_wei": "442751125681096462",
+      "balance_eth": 0.44275113,
       "rank": 203
     },
     {

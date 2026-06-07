@@ -2,9 +2,9 @@
   "contract": "0x1d90d50d5dd04fa7c8bef89aa5872f0701be7982",
   "balance_source": "token",
   "contract_eth_balance": 51.5132,
-  "total_eth_in_balances": 28.5342,
-  "addresses_with_balance": 19,
-  "coverage_pct": 55.39,
+  "total_eth_in_balances": 25.8342,
+  "addresses_with_balance": 17,
+  "coverage_pct": 50.15,
   "scan_date": "2026-05-02 14:51:01 UTC",
   "description": "Artists and controllers can call withdrawFee() to collect accrued Meme Limited Collections ETH fees.",
   "meta": {
@@ -31,18 +31,6 @@
       "balance_wei": "4400000000000000000",
       "balance_eth": 4.4,
       "rank": 3
-    },
-    {
-      "address": "0x58a24fa9ae8847cbcf245dd2ef7fcef205927af1",
-      "balance_wei": "1500000000000000000",
-      "balance_eth": 1.5,
-      "rank": 4
-    },
-    {
-      "address": "0xf64579f9f76e060e6e3fc88441d5147f722e9405",
-      "balance_wei": "1200000000000000000",
-      "balance_eth": 1.2,
-      "rank": 5
     },
     {
       "address": "0xdb473d2d8fa8c0c74283eb2b286cada543f45925",
@@ -128,5 +116,6 @@
       "balance_eth": 0.008,
       "rank": 20
     }
-  ]
+  ],
+  "last_event_refresh": "2026-06-07 05:16:58 UTC"
 }
