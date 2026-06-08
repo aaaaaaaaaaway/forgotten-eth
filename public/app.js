@@ -4431,7 +4431,7 @@ const EXCHANGES = {
   },
   marketing_mining: {
     name: 'MarketingMining',
-    desc: 'NFTX/Shard-era liquidity mining contract from March 2021. Users deposited NFT and social-token assets into per-token pools; the old UI is gone, but current userInfo entries can still be withdrawn per pool with withdraw(pid, amount).',
+    desc: 'NFTX/Shard-era liquidity mining contract from March 2021. Users deposited NFT and social-token assets into per-token pools; the old UI is gone, but current userInfo entries can still be withdrawn per pool. Token pools use withdraw(pid, amount); the ETH/WETH pool uses withdrawETH(pid, amount).',
     category: 'defi',
     color: '#8b5cf6',
     contract: '0x0feccb11c5b61b3922c511d0f002c0b72d770dce',
@@ -4950,12 +4950,14 @@ async function checkUserBalances(overrideAddress) {
       if (cfg.noWalletCheck) {
         if (apiEntry) {
           if (apiEntry.deeds) window._apiDeeds = apiEntry.deeds;
-          // v2 ERC20 protocols (payoutToken set) have balance_wei = 0 because
-          // the claim is denominated in DAI/USDC/etc, not ETH. Return a
-          // sentinel 1n so the protocol passes the `balance > 0n` gate; the
+          // Token-denominated protocols have balance_wei = 0 because the
+          // claim is denominated in ERC20s rather than ETH. Return a sentinel
+          // 1n so the protocol passes the `balance > 0n` display gate; the
           // actual claim amount lives in apiEntry.token_balances and the
-          // render branch reads it directly.
-          if (cfg.payoutToken && apiEntry.token_balances && Object.keys(apiEntry.token_balances).length > 0) {
+          // render branch reads it directly. This must key off token_balances,
+          // not cfg.payoutToken: multi-token protocols such as MarketingMining
+          // cannot declare a single payoutToken.
+          if (apiEntry.token_balances && Object.keys(apiEntry.token_balances).length > 0) {
             return { key, balance: 1n };
           }
           console.log('[Scan] noWalletCheck HIT:', key, 'wei:', apiEntry.balance_wei);
@@ -4969,6 +4971,17 @@ async function checkUserBalances(overrideAddress) {
       // This reduces RPC calls from ~110 to only the contracts with balance
       if (!apiEntry) {
         return { key, balance: 0n };
+      }
+
+      // Token-denominated protocols have balance_wei = 0 because the
+      // claim is denominated in ERC20s rather than ETH. Return a sentinel
+      // 1n so the protocol passes the `balance > 0n` display gate; the
+      // actual claim amount lives in apiEntry.token_balances and the render
+      // branch reads it directly. This must key off token_balances, not
+      // cfg.payoutToken: multi-token protocols such as MarketingMining cannot
+      // declare a single payoutToken.
+      if (apiEntry.token_balances && Object.keys(apiEntry.token_balances).length > 0) {
+        return { key, balance: 1n };
       }
 
       // HAS API balance: verify onchain to confirm it's still claimable.
@@ -6098,7 +6111,7 @@ async function checkUserBalances(overrideAddress) {
               </div>
               <div class="claim-card-meta">
                 <div class="claim-card-meta-row"><span class="claim-card-meta-label">Contract</span><span class="claim-card-meta-value"><a href="${etherscanAddr(cfg.contract)}" target="_blank" rel="noopener noreferrer">${cfg.contract}</a></span></div>
-                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Function</span><span class="claim-card-meta-value">withdraw(pid, amount) per token pool</span></div>
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Function</span><span class="claim-card-meta-value">withdraw(pid, amount); WETH pool uses withdrawETH(pid, amount)</span></div>
               </div>`;
           if (mmItems.length > 0) {
             for (const it of mmItems) {
@@ -8476,8 +8489,14 @@ async function marketingMiningWithdraw(key, pid, amountRaw, symbol, btn) {
   const statusEl = document.getElementById('claimStatus-' + key);
   try {
     const cfg = EXCHANGES[key];
-    const contract = new ethers.Contract(cfg.contract, [cfg.withdrawAbi], walletSigner);
-    const tx = await contract.withdraw(BigInt(pid), BigInt(amountRaw));
+    const isEthPool = String(symbol || '').toUpperCase() === 'WETH' || String(symbol || '').toUpperCase() === 'ETH';
+    const abi = isEthPool
+      ? 'function withdrawETH(uint256 pid, uint256 amount)'
+      : 'function withdraw(uint256 pid, uint256 amount)';
+    const contract = new ethers.Contract(cfg.contract, [abi], walletSigner);
+    const tx = isEthPool
+      ? await contract.withdrawETH(BigInt(pid), BigInt(amountRaw))
+      : await contract.withdraw(BigInt(pid), BigInt(amountRaw));
     if (statusEl) statusEl.textContent = 'Waiting for confirmation...';
     const receipt = await tx.wait();
     btn.textContent = '\u2713 Claimed';
@@ -9925,15 +9944,19 @@ async function checkSingleAddress(addr) {
     try {
       const covPct = apiCoverage[key]?.coverage_pct ?? 0;
       const apiEntry = apiBalances[key];
+      const apiHasTokens = apiEntry?.token_balances && Object.keys(apiEntry.token_balances).length > 0;
       if (cfg.noWalletCheck) {
-        return { key, balance: apiEntry ? BigInt(apiEntry.balance_wei) : 0n };
+        return { key, balance: apiHasTokens ? 1n : (apiEntry ? BigInt(apiEntry.balance_wei) : 0n) };
       }
       if (covPct >= HIGH_COVERAGE_THRESHOLD && !apiEntry) {
         return { key, balance: 0n };
       }
       if (covPct >= HIGH_COVERAGE_THRESHOLD && apiEntry) {
-        // API balance_wei is already in ETH terms (transform applied in data pipeline)
-        return { key, balance: BigInt(apiEntry.balance_wei) };
+        // API balance_wei is already in ETH terms (transform applied in data pipeline).
+        // Token-denominated protocols keep balance_wei at 0 and carry their
+        // claim amount in token_balances, so use a sentinel to pass the card
+        // display gate while renderHeroAmounts/render rows show the real token.
+        return { key, balance: apiHasTokens ? 1n : BigInt(apiEntry.balance_wei) };
       }
       if (!provider) provider = new ethers.JsonRpcProvider(PUBLIC_RPC);
       const balanceAddr = cfg.balanceContract || cfg.contract;
@@ -9943,7 +9966,8 @@ async function checkSingleAddress(addr) {
       return { key, balance };
     } catch (e) {
       const apiEntry = apiBalances[key];
-      if (apiEntry) return { key, balance: BigInt(apiEntry.balance_wei) };
+      const apiHasTokens = apiEntry?.token_balances && Object.keys(apiEntry.token_balances).length > 0;
+      if (apiEntry) return { key, balance: apiHasTokens ? 1n : BigInt(apiEntry.balance_wei) };
       return { key, balance: 0n };
     } finally {
       _manualChecked++;
@@ -9959,6 +9983,8 @@ async function checkSingleAddress(addr) {
       totalEth += parseFloat(ethAmount);
       const mLastTx = apiBalances[key]?.last_tx_date || '';
       const mLastTxHtml = mLastTx ? '<span style="font-size:11px;color:var(--text2);margin-left:8px">last tx: ' + esc(mLastTx) + '</span>' : '';
+      const tokenBalances = apiBalances[key]?.token_balances || {};
+      const hasTokenBalances = Object.keys(tokenBalances).length > 0;
       // Unit label matches the asset the user actually gets back: WETH for
       // WETH-wrapped protocols, ETH for native. Before: all manual-scan cards
       // showed 'ETH' even when the protocol returns WETH (tokemak_weth,
@@ -9966,6 +9992,49 @@ async function checkSingleAddress(addr) {
       // misrepresenting the redeemed asset. The wallet-connected scan already
       // did this correctly — now both paths agree.
       const mUnit = cfg.returnsWeth ? 'WETH' : 'ETH';
+
+      if (hasTokenBalances && (cfg.marketingMiningMulti || cfg.hegicWbtcPool)) {
+        actionableFound++;
+        const tokenSummary = Object.entries(tokenBalances).map(function(pair) {
+          const sym = pair[0];
+          const raw = pair[1];
+          const dec = V2_TOKEN_DECIMALS[sym] || 18;
+          try {
+            const val = parseFloat(ethers.formatUnits(BigInt(raw), dec));
+            const maxFrac = sym === 'WBTC' ? 6 : (val < 1 ? 6 : 2);
+            return val.toLocaleString('en', { maximumFractionDigits: maxFrac }) + ' ' + sym;
+          } catch (_) { return raw + ' ' + sym; }
+        }).join(' + ');
+        html += '<div class="claim-card"><div class="claim-card-header"><span class="claim-card-name">' + esc(cfg.name) + mLastTxHtml + '</span><span class="claim-card-amount">' + esc(tokenSummary || 'token assets') + '</span><span class="claim-card-tag">Claimable</span></div>' +
+          '<div class="claim-card-meta"><div class="claim-card-meta-row"><span class="claim-card-meta-label">Contract</span><span class="claim-card-meta-value"><a href="' + etherscanAddr(cfg.contract) + '" target="_blank" rel="noopener noreferrer">' + cfg.contract + '</a></span></div>';
+        if (cfg.marketingMiningMulti) {
+          html += '<div class="claim-card-meta-row"><span class="claim-card-meta-label">Function</span><span class="claim-card-meta-value">withdraw(pid, amount); WETH pool uses withdrawETH(pid, amount)</span></div></div>';
+          const mmItems = apiBalances[key]?.marketing_mining_items || [];
+          for (var mmi = 0; mmi < mmItems.length; mmi++) {
+            const it = mmItems[mmi];
+            const raw = String(it.amount_raw || '0');
+            const dec = Number(it.decimals || V2_TOKEN_DECIMALS[it.symbol] || 18);
+            let display = String(it.amount || '');
+            if (!display) { try { display = ethers.formatUnits(BigInt(raw), dec); } catch (_) { display = raw; } }
+            const displayNum = parseFloat(display);
+            const displayShort = isFinite(displayNum) ? displayNum.toLocaleString('en', { maximumFractionDigits: displayNum < 1 ? 8 : 4 }) : display;
+            html += '<div class="claim-row" style="margin:4px 16px;border-left:2px solid var(--accent);padding:6px 12px;font-size:13px">Pool #' + esc(String(it.pid)) + '<span style="color:var(--text2);font-size:12px"> · ' + esc(displayShort) + ' ' + esc(it.symbol || 'tokens') + '</span></div>';
+          }
+        } else {
+          const hwb = apiBalances[key]?.hegic_wbtc || {};
+          const nominalRaw = String(hwb.nominal_total_wbtc_raw || '0');
+          let nominalDisplay = '';
+          try {
+            const nominal = parseFloat(ethers.formatUnits(BigInt(nominalRaw), 8));
+            if (nominal > 0) nominalDisplay = nominal.toLocaleString('en', { maximumFractionDigits: 6 }) + ' WBTC total pool share';
+          } catch (_) {}
+          html += '<div class="claim-card-meta-row"><span class="claim-card-meta-label">Function</span><span class="claim-card-meta-value">withdraw(amount, maxBurn)</span></div>' +
+            (nominalDisplay ? '<div class="claim-card-meta-row"><span class="claim-card-meta-label">Pool share</span><span class="claim-card-meta-value">' + esc(nominalDisplay) + '; only available WBTC is shown as claimable</span></div>' : '') + '</div>';
+        }
+        html += '<div style="margin:8px 16px 4px;font-size:12px;color:var(--text2)">Connect this wallet to withdraw.</div></div>';
+        continue;
+      }
+
       if (cfg.adminUnlockRequired) {
         conditionalFound++;
         const apiEntry = apiBalances[key] || {};

@@ -2287,7 +2287,7 @@
   },
   "marketing_mining": {
     "name": "MarketingMining",
-    "desc": "NFTX/Shard-era liquidity mining contract from March 2021. Users deposited NFT and social-token assets into per-token pools; the old UI is gone, but current userInfo entries can still be withdrawn per pool with withdraw(pid, amount).",
+    "desc": "NFTX/Shard-era liquidity mining contract from March 2021. Users deposited NFT and social-token assets into per-token pools; the old UI is gone, but current userInfo entries can still be withdrawn per pool. Token pools use withdraw(pid, amount); the ETH/WETH pool uses withdrawETH(pid, amount).",
     "category": "defi",
     "color": "#8b5cf6",
     "contract": "0x0feccb11c5b61b3922c511d0f002c0b72d770dce",
