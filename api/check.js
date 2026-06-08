@@ -172,11 +172,13 @@ export default async function handler(req, res) {
       let deeds = typeof val === 'object' && val.d ? val.d : null;
       let bounties = typeof val === 'object' && val.b ? val.b : null;
       let canvasItems = typeof val === 'object' && val.cv ? val.cv : null;
+      let pledgeDeposits = typeof val === 'object' && val.pd ? val.pd : null;
       let nftDetails = typeof val === 'object' && val.nft ? val.nft : null;
       let nftAllowlisted = typeof val === 'object' && 'al' in val ? val.al : null;
       let epochs = typeof val === 'object' && val.ep ? val.ep : null;
       let augurClaims = typeof val === 'object' && val.ac ? val.ac : null;
       let keeperdaoItems = typeof val === 'object' && val.kd ? val.kd : null;
+      let marketingMiningItems = typeof val === 'object' && val.mm ? val.mm : null;
       let trancheDetails = typeof val === 'object' && val.tr ? val.tr : null;
       let opynPositions = typeof val === 'object' && val.op ? val.op : null;
       let refundPrice = typeof val === 'object' && val.rp ? val.rp : null;
@@ -205,6 +207,7 @@ export default async function handler(req, res) {
       // balance (e.g., TRIBE for tribe_redeemer's approve+redeem flow).
       let v2TokenBalances = typeof val === 'object' && val.tkb ? val.tkb : null;
       let v2TribeRaw      = typeof val === 'object' && val.trb ? val.trb : null;
+      let hegicWbtcState  = typeof val === 'object' && val.hwb ? val.hwb : null;
       // gro_ust_comp: PWRD merkle vesting (USDC-denominated). gca = full PWRD
       // allocation for initialClaim(proof, amount); gni = needs_initial (true →
       // initialClaim with proof, false → the no-arg claim()).
@@ -228,6 +231,11 @@ export default async function handler(req, res) {
           if (canvasItems.length === 0) continue;
           balanceEth = (canvasItems.reduce((s, it) => s + Number(BigInt(it.wei || '0')), 0) / 1e18).toFixed(8);
         }
+        if (pledgeDeposits) {
+          pledgeDeposits = pledgeDeposits.filter(it => !isClaimedItem(itemsClaimed, it.deposit_id, 'deposit'));
+          if (pledgeDeposits.length === 0) continue;
+          balanceEth = (pledgeDeposits.reduce((s, it) => s + Number(BigInt(it.wei || '0')), 0) / 1e18).toFixed(8);
+        }
         if (epochs) {
           epochs = epochs.filter(e => !isClaimedItem(itemsClaimed, e.epoch, 'reward'));
           if (epochs.length === 0) continue;
@@ -241,6 +249,10 @@ export default async function handler(req, res) {
           celerChannels = celerChannels.filter(c => !isClaimedItem(itemsClaimed, c.channel_id || '', 'channel'));
           if (celerChannels.length === 0) continue;
           balanceEth = (celerChannels.reduce((s, c) => s + Number(BigInt(c.claimable_wei || '0')), 0) / 1e18).toFixed(8);
+        }
+        if (marketingMiningItems) {
+          marketingMiningItems = marketingMiningItems.filter(it => !isClaimedItem(itemsClaimed, it.pid, 'pid'));
+          if (marketingMiningItems.length === 0) continue;
         }
         if (adoptionRequests) {
           adoptionRequests = adoptionRequests.filter(r => !isClaimedItem(itemsClaimed, r.catId || r.cat_id || ''));
@@ -267,11 +279,13 @@ export default async function handler(req, res) {
         ...(adoptionRequests ? { adoption_requests: adoptionRequests } : {}),
         ...(bounties ? { bounty_details: bounties } : {}),
         ...(canvasItems ? { canvas_items: canvasItems } : {}),
+        ...(pledgeDeposits ? { pledge_deposits: pledgeDeposits } : {}),
         ...(nftDetails ? { nft_details: nftDetails } : {}),
         ...(nftAllowlisted !== null ? { allowlisted: nftAllowlisted } : {}),
         ...(epochs ? { epoch_details: epochs } : {}),
         ...(augurClaims ? { augur_claims: augurClaims } : {}),
         ...(keeperdaoItems ? { keeperdao_items: keeperdaoItems } : {}),
+        ...(marketingMiningItems ? { marketing_mining_items: marketingMiningItems } : {}),
         ...(trancheDetails ? { tranche_details: trancheDetails } : {}),
         ...(opynPositions ? { positions: opynPositions } : {}),
         ...(refundPrice ? { refund_price: refundPrice, token_balance: tokenBalance } : {}),
@@ -321,6 +335,13 @@ export default async function handler(req, res) {
         } : {}),
         ...(v2TokenBalances ? { token_balances: v2TokenBalances } : {}),
         ...(v2TribeRaw ? { tribe_balance_raw: v2TribeRaw } : {}),
+        ...(hegicWbtcState ? {
+          hegic_wbtc: {
+            write_wbtc_balance_raw: hegicWbtcState.w,
+            available_wbtc_raw: hegicWbtcState.a,
+            nominal_total_wbtc_raw: hegicWbtcState.n,
+          }
+        } : {}),
         ...(groClaimAmount ? { gro_claim_amount: groClaimAmount, gro_needs_initial: groNeedsInitial } : {}),
         ...(adminUnlockState ? {
           admin_unlock_required: true,

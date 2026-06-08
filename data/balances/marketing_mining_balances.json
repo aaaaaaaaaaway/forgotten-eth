@@ -1,0 +1,676 @@
+{
+  "contract": "0x0feccb11c5b61b3922c511d0f002c0b72d770dce",
+  "balance_source": "token",
+  "contract_eth_balance": 0.0,
+  "total_eth_in_balances": 0.0,
+  "addresses_with_balance": 23,
+  "coverage_pct": 0.0,
+  "scan_date": "2026-06-08 11:24:17 UTC",
+  "description": "Current userInfo(pid,user) balances for MarketingMining per-pool token withdrawals. Candidate set from corrected Dune Deposit/Withdraw log reconstruction; current RPC state filters already-withdrawn positions.",
+  "meta": {
+    "candidate_source": "Dune query 7675864 / execution 01KTK9D5KJF1XDEQQK706ZA801",
+    "contract": "0x0feccb11c5b61b3922c511d0f002c0b72d770dce",
+    "pool_tokens": {
+      "0": {
+        "pid": 0,
+        "token_amount_raw": "5999900000",
+        "token_address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+        "symbol": "WBTC",
+        "decimals": 8,
+        "alloc_point": 14630
+      },
+      "1": {
+        "pid": 1,
+        "token_amount_raw": "1523405898938311367990",
+        "token_address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "symbol": "WETH",
+        "decimals": 18,
+        "alloc_point": 14630
+      },
+      "2": {
+        "pid": 2,
+        "token_amount_raw": "2123211003",
+        "token_address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+        "symbol": "USDT",
+        "decimals": 6,
+        "alloc_point": 15675
+      },
+      "3": {
+        "pid": 3,
+        "token_amount_raw": "8195255591542600257644",
+        "token_address": "0xc4De189Abf94c57f396bD4c52ab13b954FebEfD8",
+        "symbol": "B20",
+        "decimals": 18,
+        "alloc_point": 7315
+      },
+      "4": {
+        "pid": 4,
+        "token_amount_raw": "2000000",
+        "token_address": "0xD5525D397898e5502075Ea5E830d8914f6F0affe",
+        "symbol": "MEME",
+        "decimals": 8,
+        "alloc_point": 7315
+      },
+      "5": {
+        "pid": 5,
+        "token_amount_raw": "316538722165780302112",
+        "token_address": "0xB6Ca7399B4F9CA56FC27cBfF44F4d2e4Eef1fc81",
+        "symbol": "MUSE",
+        "decimals": 18,
+        "alloc_point": 7315
+      },
+      "6": {
+        "pid": 6,
+        "token_amount_raw": "1000410000000000000004",
+        "token_address": "0xFca59Cd816aB1eaD66534D82bc21E7515cE441CF",
+        "symbol": "RARI",
+        "decimals": 18,
+        "alloc_point": 7315
+      },
+      "7": {
+        "pid": 7,
+        "token_amount_raw": "12807282",
+        "token_address": "0x9355372396e3F6daF13359B7b607a3374cc638e0",
+        "symbol": "WHALE",
+        "decimals": 4,
+        "alloc_point": 7315
+      },
+      "8": {
+        "pid": 8,
+        "token_amount_raw": "10000000000000000",
+        "token_address": "0x87d73E916D7057945c9BcD8cdd94e42A6F47f776",
+        "symbol": "NFTX",
+        "decimals": 18,
+        "alloc_point": 7315
+      },
+      "9": {
+        "pid": 9,
+        "token_amount_raw": "81000000000000000000",
+        "token_address": "0x0F5D2fB29fb7d3CFeE444a200298f468908cC942",
+        "symbol": "MANA",
+        "decimals": 18,
+        "alloc_point": 5225
+      },
+      "10": {
+        "pid": 10,
+        "token_amount_raw": "71000000000000000000",
+        "token_address": "0x3845badAde8e6dFF049820680d1F14bD3903a5d0",
+        "symbol": "SAND",
+        "decimals": 18,
+        "alloc_point": 5225
+      }
+    },
+    "token_totals_raw": {
+      "B20": "8195255591542600257644",
+      "MUSE": "316538722165780302112",
+      "RARI": "1000410000000000000004",
+      "MEME": "2000000",
+      "WBTC": "5999900000",
+      "WETH": "1523405898938311367990",
+      "USDT": "2123211003",
+      "WHALE": "12807282",
+      "MANA": "81000000000000000000",
+      "NFTX": "10000000000000000",
+      "SAND": "71000000000000000000"
+    }
+  },
+  "balances": [
+    {
+      "address": "0x00326e37cef76788f6b0cf643c94481d60bd3d58",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "B20": "7862000000000000000000",
+        "MUSE": "170600000000000000000",
+        "RARI": "1000400000000000000000"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 3,
+          "token_address": "0xc4De189Abf94c57f396bD4c52ab13b954FebEfD8",
+          "symbol": "B20",
+          "decimals": 18,
+          "amount_raw": "7862000000000000000000",
+          "amount": "7862",
+          "item_id": "pid:3"
+        },
+        {
+          "pid": 5,
+          "token_address": "0xB6Ca7399B4F9CA56FC27cBfF44F4d2e4Eef1fc81",
+          "symbol": "MUSE",
+          "decimals": 18,
+          "amount_raw": "170600000000000000000",
+          "amount": "170.6",
+          "item_id": "pid:5"
+        },
+        {
+          "pid": 6,
+          "token_address": "0xFca59Cd816aB1eaD66534D82bc21E7515cE441CF",
+          "symbol": "RARI",
+          "decimals": 18,
+          "amount_raw": "1000400000000000000000",
+          "amount": "1000.4",
+          "item_id": "pid:6"
+        }
+      ]
+    },
+    {
+      "address": "0x0662596a2a8f7fe81e13f5b68f77e851a1251f73",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "MEME": "1000000"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 4,
+          "token_address": "0xD5525D397898e5502075Ea5E830d8914f6F0affe",
+          "symbol": "MEME",
+          "decimals": 8,
+          "amount_raw": "1000000",
+          "amount": "0.01",
+          "item_id": "pid:4"
+        }
+      ]
+    },
+    {
+      "address": "0x0c4b11dd46bf2234bd4cc7d4aa586282430a0ada",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "B20": "269277302249994560868"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 3,
+          "token_address": "0xc4De189Abf94c57f396bD4c52ab13b954FebEfD8",
+          "symbol": "B20",
+          "decimals": 18,
+          "amount_raw": "269277302249994560868",
+          "amount": "269.277302249994560868",
+          "item_id": "pid:3"
+        }
+      ]
+    },
+    {
+      "address": "0x13e252df0cafe34116cec052177b7540afc75f76",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "WBTC": "5999900000",
+        "WETH": "1499990000000000000000"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 0,
+          "token_address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+          "symbol": "WBTC",
+          "decimals": 8,
+          "amount_raw": "5999900000",
+          "amount": "59.999",
+          "item_id": "pid:0"
+        },
+        {
+          "pid": 1,
+          "token_address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "symbol": "WETH",
+          "decimals": 18,
+          "amount_raw": "1499990000000000000000",
+          "amount": "1499.99",
+          "item_id": "pid:1"
+        }
+      ]
+    },
+    {
+      "address": "0x223f5ad8881db34a24b8604e2cbc19e2361847d3",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "USDT": "2122211003"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 2,
+          "token_address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+          "symbol": "USDT",
+          "decimals": 6,
+          "amount_raw": "2122211003",
+          "amount": "2122.211003",
+          "item_id": "pid:2"
+        }
+      ]
+    },
+    {
+      "address": "0x278ba1da4e4ff2541234f19487fd94a12061ca55",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "WHALE": "704426"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 7,
+          "token_address": "0x9355372396e3F6daF13359B7b607a3374cc638e0",
+          "symbol": "WHALE",
+          "decimals": 4,
+          "amount_raw": "704426",
+          "amount": "70.4426",
+          "item_id": "pid:7"
+        }
+      ]
+    },
+    {
+      "address": "0x2fcad7d8d577aeaaf478e61e994780c82079034a",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "WETH": "100000000000000000"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 1,
+          "token_address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "symbol": "WETH",
+          "decimals": 18,
+          "amount_raw": "100000000000000000",
+          "amount": "0.1",
+          "item_id": "pid:1"
+        }
+      ]
+    },
+    {
+      "address": "0x3649514ed903724698e0ea386a8d35ae79710acf",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "WETH": "314898938311367990"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 1,
+          "token_address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "symbol": "WETH",
+          "decimals": 18,
+          "amount_raw": "314898938311367990",
+          "amount": "0.31489893831136799",
+          "item_id": "pid:1"
+        }
+      ]
+    },
+    {
+      "address": "0x38916c98ca9da9cf471cb8f5dbd26d2f49f6f538",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "RARI": "4"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 6,
+          "token_address": "0xFca59Cd816aB1eaD66534D82bc21E7515cE441CF",
+          "symbol": "RARI",
+          "decimals": 18,
+          "amount_raw": "4",
+          "amount": "0.000000000000000004",
+          "item_id": "pid:6"
+        }
+      ]
+    },
+    {
+      "address": "0x3cf08d6a9436a1798c18d24a70f5ad0bea31775e",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "B20": "10000000000000000",
+        "MANA": "81000000000000000000",
+        "MEME": "1000000",
+        "MUSE": "10000000000000000",
+        "NFTX": "10000000000000000",
+        "RARI": "10000000000000000",
+        "SAND": "71000000000000000000",
+        "USDT": "1000000",
+        "WHALE": "100"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 2,
+          "token_address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+          "symbol": "USDT",
+          "decimals": 6,
+          "amount_raw": "1000000",
+          "amount": "1",
+          "item_id": "pid:2"
+        },
+        {
+          "pid": 3,
+          "token_address": "0xc4De189Abf94c57f396bD4c52ab13b954FebEfD8",
+          "symbol": "B20",
+          "decimals": 18,
+          "amount_raw": "10000000000000000",
+          "amount": "0.01",
+          "item_id": "pid:3"
+        },
+        {
+          "pid": 4,
+          "token_address": "0xD5525D397898e5502075Ea5E830d8914f6F0affe",
+          "symbol": "MEME",
+          "decimals": 8,
+          "amount_raw": "1000000",
+          "amount": "0.01",
+          "item_id": "pid:4"
+        },
+        {
+          "pid": 5,
+          "token_address": "0xB6Ca7399B4F9CA56FC27cBfF44F4d2e4Eef1fc81",
+          "symbol": "MUSE",
+          "decimals": 18,
+          "amount_raw": "10000000000000000",
+          "amount": "0.01",
+          "item_id": "pid:5"
+        },
+        {
+          "pid": 6,
+          "token_address": "0xFca59Cd816aB1eaD66534D82bc21E7515cE441CF",
+          "symbol": "RARI",
+          "decimals": 18,
+          "amount_raw": "10000000000000000",
+          "amount": "0.01",
+          "item_id": "pid:6"
+        },
+        {
+          "pid": 7,
+          "token_address": "0x9355372396e3F6daF13359B7b607a3374cc638e0",
+          "symbol": "WHALE",
+          "decimals": 4,
+          "amount_raw": "100",
+          "amount": "0.01",
+          "item_id": "pid:7"
+        },
+        {
+          "pid": 8,
+          "token_address": "0x87d73E916D7057945c9BcD8cdd94e42A6F47f776",
+          "symbol": "NFTX",
+          "decimals": 18,
+          "amount_raw": "10000000000000000",
+          "amount": "0.01",
+          "item_id": "pid:8"
+        },
+        {
+          "pid": 9,
+          "token_address": "0x0F5D2fB29fb7d3CFeE444a200298f468908cC942",
+          "symbol": "MANA",
+          "decimals": 18,
+          "amount_raw": "81000000000000000000",
+          "amount": "81",
+          "item_id": "pid:9"
+        },
+        {
+          "pid": 10,
+          "token_address": "0x3845badAde8e6dFF049820680d1F14bD3903a5d0",
+          "symbol": "SAND",
+          "decimals": 18,
+          "amount_raw": "71000000000000000000",
+          "amount": "71",
+          "item_id": "pid:10"
+        }
+      ]
+    },
+    {
+      "address": "0x3f923a45e473331de342e98db7a07c867308c849",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "MUSE": "97511724993967947",
+        "WHALE": "10000"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 5,
+          "token_address": "0xB6Ca7399B4F9CA56FC27cBfF44F4d2e4Eef1fc81",
+          "symbol": "MUSE",
+          "decimals": 18,
+          "amount_raw": "97511724993967947",
+          "amount": "0.097511724993967947",
+          "item_id": "pid:5"
+        },
+        {
+          "pid": 7,
+          "token_address": "0x9355372396e3F6daF13359B7b607a3374cc638e0",
+          "symbol": "WHALE",
+          "decimals": 4,
+          "amount_raw": "10000",
+          "amount": "1",
+          "item_id": "pid:7"
+        }
+      ]
+    },
+    {
+      "address": "0x47169f78750be1e6ec2deb2974458ac4f8751714",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "B20": "10000000000000000"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 3,
+          "token_address": "0xc4De189Abf94c57f396bD4c52ab13b954FebEfD8",
+          "symbol": "B20",
+          "decimals": 18,
+          "amount_raw": "10000000000000000",
+          "amount": "0.01",
+          "item_id": "pid:3"
+        }
+      ]
+    },
+    {
+      "address": "0x505846a0a89dd26fa5cd0677fd5406039c218620",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "WETH": "5000000000000000000"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 1,
+          "token_address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "symbol": "WETH",
+          "decimals": 18,
+          "amount_raw": "5000000000000000000",
+          "amount": "5",
+          "item_id": "pid:1"
+        }
+      ]
+    },
+    {
+      "address": "0x6b7678276516a7b6d4bd9ba3fdcb167c0f6f327a",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "WETH": "11000000000000000000"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 1,
+          "token_address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "symbol": "WETH",
+          "decimals": 18,
+          "amount_raw": "11000000000000000000",
+          "amount": "11",
+          "item_id": "pid:1"
+        }
+      ]
+    },
+    {
+      "address": "0x7ae05e6cf60cefa1c34fee8b4d295d1f33a1a1c0",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "B20": "47945152564248283585"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 3,
+          "token_address": "0xc4De189Abf94c57f396bD4c52ab13b954FebEfD8",
+          "symbol": "B20",
+          "decimals": 18,
+          "amount_raw": "47945152564248283585",
+          "amount": "47.945152564248283585",
+          "item_id": "pid:3"
+        }
+      ]
+    },
+    {
+      "address": "0x9522368481c84250fd4b2a4ea03fb875024d9956",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "WETH": "1000000000000000"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 1,
+          "token_address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "symbol": "WETH",
+          "decimals": 18,
+          "amount_raw": "1000000000000000",
+          "amount": "0.001",
+          "item_id": "pid:1"
+        }
+      ]
+    },
+    {
+      "address": "0xa856e29e76036d6914cd91897b5c1eef31775775",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "MUSE": "145831210440786334165"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 5,
+          "token_address": "0xB6Ca7399B4F9CA56FC27cBfF44F4d2e4Eef1fc81",
+          "symbol": "MUSE",
+          "decimals": 18,
+          "amount_raw": "145831210440786334165",
+          "amount": "145.831210440786334165",
+          "item_id": "pid:5"
+        }
+      ]
+    },
+    {
+      "address": "0xba39bf5db0cc53337ffbf4ab2bd2c014f12d0ae2",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "B20": "6315159036644073"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 3,
+          "token_address": "0xc4De189Abf94c57f396bD4c52ab13b954FebEfD8",
+          "symbol": "B20",
+          "decimals": 18,
+          "amount_raw": "6315159036644073",
+          "amount": "0.006315159036644073",
+          "item_id": "pid:3"
+        }
+      ]
+    },
+    {
+      "address": "0xbaf3f8e7797003be711b86a871fa70603601d9d8",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "WETH": "1000000000000000000"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 1,
+          "token_address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "symbol": "WETH",
+          "decimals": 18,
+          "amount_raw": "1000000000000000000",
+          "amount": "1",
+          "item_id": "pid:1"
+        }
+      ]
+    },
+    {
+      "address": "0xc8d4a8970035f9f3fd01dbd238c97b5348aa3199",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "WHALE": "12092756"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 7,
+          "token_address": "0x9355372396e3F6daF13359B7b607a3374cc638e0",
+          "symbol": "WHALE",
+          "decimals": 4,
+          "amount_raw": "12092756",
+          "amount": "1209.2756",
+          "item_id": "pid:7"
+        }
+      ]
+    },
+    {
+      "address": "0xe120ed22a0cd12d5de6122aa7d5b6d93ac218b49",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "WETH": "5000000000000000000"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 1,
+          "token_address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "symbol": "WETH",
+          "decimals": 18,
+          "amount_raw": "5000000000000000000",
+          "amount": "5",
+          "item_id": "pid:1"
+        }
+      ]
+    },
+    {
+      "address": "0xec920601a41973a80d27bf14a7d1c969969d15ef",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "B20": "16006821569320769118"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 3,
+          "token_address": "0xc4De189Abf94c57f396bD4c52ab13b954FebEfD8",
+          "symbol": "B20",
+          "decimals": 18,
+          "amount_raw": "16006821569320769118",
+          "amount": "16.006821569320769118",
+          "item_id": "pid:3"
+        }
+      ]
+    },
+    {
+      "address": "0xee270808044fcfe04100c53ad74d3d9a62e72393",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "token_balances": {
+        "WETH": "1000000000000000000"
+      },
+      "marketing_mining_items": [
+        {
+          "pid": 1,
+          "token_address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "symbol": "WETH",
+          "decimals": 18,
+          "amount_raw": "1000000000000000000",
+          "amount": "1",
+          "item_id": "pid:1"
+        }
+      ]
+    }
+  ]
+}

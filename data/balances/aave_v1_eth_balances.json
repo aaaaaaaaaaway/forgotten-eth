@@ -5,7 +5,7 @@
   "total_eth_in_balances": 937.49667562,
   "addresses_with_balance": 5011,
   "coverage_pct": 99.9,
-  "scan_date": "2026-06-05 16:19:39 UTC",
+  "scan_date": "2026-06-08 04:19:55 UTC",
   "description": "aETH token balances (Aave v1 lending pool, ETH market). Users call aETH.redeem(amount) to unwrap shares into ETH from LendingPoolCore. Aave v1 is frozen \u2014 the official UI dropped support but the contracts remain callable.",
   "distribution": {
     "100+ ETH": {
@@ -34,7 +34,7 @@
     }
   },
   "eth_source": "0x3dfd23A6c5E8BbcFc9581d2E864a68feb6a076d3",
-  "total_addresses_scanned": 14762,
+  "total_addresses_scanned": 14763,
   "balances": [
     {
       "address": "0xbf2c8b606974e36567b4a6ddf548b70cb622442d",
@@ -919,27 +919,27 @@
       "rank": 147
     },
     {
-      "address": "0x9323161faf56dd09cb32ace72c20dbd96b96d386",
-      "balance_wei": "596474664085496115",
-      "balance_eth": 0.59647466,
-      "rank": 148
-    },
-    {
       "address": "0xd9a08adef10f3ee568a30880c3f4bcea9335a09f",
       "balance_wei": "588369633794700506",
       "balance_eth": 0.58836963,
-      "rank": 149
+      "rank": 148
     },
     {
       "address": "0x54287320ae23943d366fa274e43a3e7090d18d7b",
       "balance_wei": "577311634085950272",
       "balance_eth": 0.57731163,
-      "rank": 150
+      "rank": 149
     },
     {
       "address": "0x5a014b64c1812bbf30c7268bd713509a8e883289",
       "balance_wei": "573392828652181504",
       "balance_eth": 0.57339283,
+      "rank": 150
+    },
+    {
+      "address": "0x9323161faf56dd09cb32ace72c20dbd96b96d386",
+      "balance_wei": "568563338499676156",
+      "balance_eth": 0.56856334,
       "rank": 151
     },
     {
@@ -1183,69 +1183,69 @@
       "rank": 191
     },
     {
+      "address": "0x000000000004444c5dc75cb358380d2e3de08a90",
+      "balance_wei": "480465304949675343",
+      "balance_eth": 0.4804653,
+      "rank": 192
+    },
+    {
       "address": "0x2024e3b7d91b60672ae39654d2883423fa979265",
       "balance_wei": "478878747681311879",
       "balance_eth": 0.47887875,
-      "rank": 192
+      "rank": 193
     },
     {
       "address": "0x65553ab09ee12a7f45ebb5497a8ea76b98969a97",
       "balance_wei": "478480128905197215",
       "balance_eth": 0.47848013,
-      "rank": 193
+      "rank": 194
     },
     {
       "address": "0x23a4c2a5a9bae396680e14c38f20dae0e66241be",
       "balance_wei": "472691101012875633",
       "balance_eth": 0.4726911,
-      "rank": 194
+      "rank": 195
     },
     {
       "address": "0x22735cd3b75f1f0948c5f74ca38af09e3a094032",
       "balance_wei": "467359841883552436",
       "balance_eth": 0.46735984,
-      "rank": 195
+      "rank": 196
     },
     {
       "address": "0x7f9fbab8dcfb657a2b6260ce65671936e2ca1e0a",
       "balance_wei": "466018278339091902",
       "balance_eth": 0.46601828,
-      "rank": 196
+      "rank": 197
     },
     {
       "address": "0x0675182195661f8fb984f61c98842628382702a0",
       "balance_wei": "461168408747502943",
       "balance_eth": 0.46116841,
-      "rank": 197
+      "rank": 198
     },
     {
       "address": "0x5d3777b57ff52aa4461af9f69144b90f9e15e2e9",
       "balance_wei": "460375939607599265",
       "balance_eth": 0.46037594,
-      "rank": 198
+      "rank": 199
     },
     {
       "address": "0xb8698123a206856a8ab66fd347f269b976e03626",
       "balance_wei": "456806663184014644",
       "balance_eth": 0.45680666,
-      "rank": 199
+      "rank": 200
     },
     {
       "address": "0xdd3745287a5f3f87fb3964ee32a4b1a64e6fcfa4",
       "balance_wei": "453615276981344129",
       "balance_eth": 0.45361528,
-      "rank": 200
+      "rank": 201
     },
     {
       "address": "0xcca71249bf068869c05b621df45a0fa15ba5e3fc",
       "balance_wei": "452891732982758516",
       "balance_eth": 0.45289173,
-      "rank": 201
-    },
-    {
-      "address": "0x000000000004444c5dc75cb358380d2e3de08a90",
-      "balance_wei": "452553979363855384",
-      "balance_eth": 0.45255398,
       "rank": 202
     },
     {

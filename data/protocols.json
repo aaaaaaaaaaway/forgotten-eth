@@ -1624,6 +1624,20 @@
     "balance_file": "hegic_eth_pool_eth_balances.json"
   },
   {
+    "key": "hegic_wbtc_pool",
+    "name": "Hegic WBTC Pool",
+    "contract": "0x20dd9e22d22dd0a6ef74a520cb08303b5fad5de7",
+    "balance_source": "token",
+    "category": "defi",
+    "balance_file": "hegic_wbtc_pool_balances.json",
+    "payout_tokens": [
+      "WBTC"
+    ],
+    "peak_token_amounts": {
+      "WBTC": 3.34652316
+    }
+  },
+  {
     "key": "shrimp",
     "name": "Shrimp Finance",
     "contract": "0x7127ee43fafba873ce985683ab79df2ce2912198",
@@ -2089,5 +2103,35 @@
     "balance_file": "circles_refund_vault_admin_unlock_eth_balances.json",
     "admin_unlock_required": true,
     "owner_action_bucket": "Type D"
+  },
+  {
+    "key": "marketing_mining",
+    "name": "MarketingMining",
+    "contract": "0x0feccb11c5b61b3922c511d0f002c0b72d770dce",
+    "balance_source": "token",
+    "category": "defi",
+    "balance_file": "marketing_mining_balances.json",
+    "payout_tokens": [
+      "WBTC",
+      "WETH",
+      "USDT",
+      "B20",
+      "MEME",
+      "MUSE",
+      "RARI",
+      "WHALE",
+      "NFTX",
+      "MANA",
+      "SAND"
+    ],
+    "multi_step": true
+  },
+  {
+    "key": "pledge_deposit",
+    "name": "PledgeDeposit ETH Pool",
+    "contract": "0xf7686cf0d88b3c1b474ec76735b4e94a0c3a28f3",
+    "balance_source": "eth",
+    "category": "defi",
+    "balance_file": "pledge_deposit_eth_balances.json"
   }
 ]

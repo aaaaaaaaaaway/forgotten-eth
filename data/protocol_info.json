@@ -2284,5 +2284,30 @@
     "contract": "0x93d812bf90a575d628e246b0966505a9e466f534",
     "deployed": "August 2017",
     "slug": "circles-refund-vault-admin-unlock"
+  },
+  "marketing_mining": {
+    "name": "MarketingMining",
+    "desc": "NFTX/Shard-era liquidity mining contract from March 2021. Users deposited NFT and social-token assets into per-token pools; the old UI is gone, but current userInfo entries can still be withdrawn per pool with withdraw(pid, amount).",
+    "category": "defi",
+    "color": "#8b5cf6",
+    "contract": "0x0feccb11c5b61b3922c511d0f002c0b72d770dce",
+    "deployed": "March 2021",
+    "slug": "marketing-mining"
+  },
+  "pledge_deposit": {
+    "name": "PledgeDeposit ETH Pool",
+    "desc": "PledgeDeposit was a 2021 Zild pledge/deposit contract. ETH-pool users with matured deposits can still recover each remaining ETH deposit through withdraw(0, depositId); the old UI no longer surfaces these per-deposit rows.",
+    "category": "defi",
+    "color": "#4f46e5",
+    "contract": "0xf7686cf0d88b3c1b474ec76735b4e94a0c3a28f3",
+    "deployed": "May 2021",
+    "slug": "pledge-deposit"
+  },
+  "hegic_wbtc_pool": {
+    "name": "Hegic WBTC Pool",
+    "category": "defi",
+    "slug": "hegic-wbtc-pool",
+    "description": "Hegic WBTC Pool was a V1 liquidity pool where LPs received writeWBTC tokens representing shares of the Bitcoin options pool. The old pool is deprecated; remaining writeWBTC holders can withdraw their currently available WBTC liquidity through the pool contract.",
+    "contract": "0x20dd9e22d22dd0a6ef74a520cb08303b5fad5de7"
   }
 }

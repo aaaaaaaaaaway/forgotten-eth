@@ -1,0 +1,292 @@
+{
+  "contract": "0xf7686cf0d88b3c1b474ec76735b4e94a0c3a28f3",
+  "balance_source": "eth",
+  "contract_eth_balance": 25.6388406,
+  "total_eth_in_balances": 25.6388406,
+  "addresses_with_balance": 15,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-08 00:00:00 UTC",
+  "description": "PledgeDeposit ETH pool deposits reconstructed from Deposit/Withdraw events. Users withdraw each matured ETH deposit with withdraw(0, depositId).",
+  "meta": {
+    "candidate_source": "local source + Deposit/Withdraw event reconstruction",
+    "multi_item": true,
+    "pool_id": 0,
+    "pool_symbol": "ETH",
+    "withdraw_selector": "0x441a3e70",
+    "withdraw_event_topic": "0x71fdb72c1f1e2ed8cad11cf616c93bfb3cb055d5b69a046434e7b1c81989cc57",
+    "latest_block": 25271135,
+    "source_file": "data/.scan_state/sources/PledgeDeposit_0xf7686cf0d88b3c1b474ec76735b4e94a0c3a28f3.sol"
+  },
+  "balances": [
+    {
+      "address": "0xa37d7c95ccdfd42082e8a5785112bd33cd58482d",
+      "pledge_deposits": [
+        {
+          "pool_id": 0,
+          "deposit_id": 0,
+          "user_order_id": 14,
+          "wei": "10000000000000000000",
+          "eth": 10.0,
+          "pledge_wei": "19328200000000000000",
+          "first_block": 12438872,
+          "last_block": 12438872
+        }
+      ],
+      "balance_wei": "10000000000000000000",
+      "balance_eth": 10.0,
+      "rank": 1
+    },
+    {
+      "address": "0xa23850c32a6a43984376a883241ddf4ed41e1c9f",
+      "pledge_deposits": [
+        {
+          "pool_id": 0,
+          "deposit_id": 0,
+          "user_order_id": 2,
+          "wei": "6500000000000000000",
+          "eth": 6.5,
+          "pledge_wei": "17419600000000000000",
+          "first_block": 12612174,
+          "last_block": 12612174
+        }
+      ],
+      "balance_wei": "6500000000000000000",
+      "balance_eth": 6.5,
+      "rank": 2
+    },
+    {
+      "address": "0x0d50f42c42775c4e68873b30bd908f08d2fb3b6d",
+      "pledge_deposits": [
+        {
+          "pool_id": 0,
+          "deposit_id": 1,
+          "user_order_id": 12,
+          "wei": "4700000000000000000",
+          "eth": 4.7,
+          "pledge_wei": "9860000000000000000",
+          "first_block": 12401472,
+          "last_block": 12401472
+        }
+      ],
+      "balance_wei": "4700000000000000000",
+      "balance_eth": 4.7,
+      "rank": 3
+    },
+    {
+      "address": "0xd7283d54e1e16a528f129097feba164ca0331c3c",
+      "pledge_deposits": [
+        {
+          "pool_id": 0,
+          "deposit_id": 0,
+          "user_order_id": 3,
+          "wei": "1126000000000000000",
+          "eth": 1.126,
+          "pledge_wei": "4046300000000000000",
+          "first_block": 12785882,
+          "last_block": 12785882
+        }
+      ],
+      "balance_wei": "1126000000000000000",
+      "balance_eth": 1.126,
+      "rank": 4
+    },
+    {
+      "address": "0xa11969fbd50346f3bac41eebeef059510acca3e8",
+      "pledge_deposits": [
+        {
+          "pool_id": 0,
+          "deposit_id": 0,
+          "user_order_id": 4,
+          "wei": "1100000000000000000",
+          "eth": 1.1,
+          "pledge_wei": "4243300000000000000",
+          "first_block": 12836215,
+          "last_block": 12836215
+        }
+      ],
+      "balance_wei": "1100000000000000000",
+      "balance_eth": 1.1,
+      "rank": 5
+    },
+    {
+      "address": "0x48a3c458020569baf8164e83e8965662a853f02b",
+      "pledge_deposits": [
+        {
+          "pool_id": 0,
+          "deposit_id": 1,
+          "user_order_id": 3,
+          "wei": "1000000000000000000",
+          "eth": 1.0,
+          "pledge_wei": "2966700000000000000",
+          "first_block": 12733738,
+          "last_block": 12733738
+        }
+      ],
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0,
+      "rank": 6
+    },
+    {
+      "address": "0xe38186b5439f1bb63d2c2273b481ed8ba4941fef",
+      "pledge_deposits": [
+        {
+          "pool_id": 0,
+          "deposit_id": 0,
+          "user_order_id": 4,
+          "wei": "420000000000000000",
+          "eth": 0.42,
+          "pledge_wei": "1438500000000000000",
+          "first_block": 12820206,
+          "last_block": 12820206
+        }
+      ],
+      "balance_wei": "420000000000000000",
+      "balance_eth": 0.42,
+      "rank": 7
+    },
+    {
+      "address": "0x3d2bf99ab3e889f314b5a81cd1fd4eb3a94d4373",
+      "pledge_deposits": [
+        {
+          "pool_id": 0,
+          "deposit_id": 0,
+          "user_order_id": 20,
+          "wei": "300000000000000000",
+          "eth": 0.3,
+          "pledge_wei": "654900000000000000",
+          "first_block": 12508070,
+          "last_block": 12508070
+        }
+      ],
+      "balance_wei": "300000000000000000",
+      "balance_eth": 0.3,
+      "rank": 8
+    },
+    {
+      "address": "0x210254d102e2b11ffe3272aa56f9c52c91ee30cc",
+      "pledge_deposits": [
+        {
+          "pool_id": 0,
+          "deposit_id": 0,
+          "user_order_id": 12,
+          "wei": "160000000000000000",
+          "eth": 0.16,
+          "pledge_wei": "167900000000000000",
+          "first_block": 12223514,
+          "last_block": 12223514
+        }
+      ],
+      "balance_wei": "160000000000000000",
+      "balance_eth": 0.16,
+      "rank": 9
+    },
+    {
+      "address": "0x6605f57689bba5efbb8245bbcd8bc36ec12a76dc",
+      "pledge_deposits": [
+        {
+          "pool_id": 0,
+          "deposit_id": 0,
+          "user_order_id": 2,
+          "wei": "100000000000000000",
+          "eth": 0.1,
+          "pledge_wei": "338300000000000000",
+          "first_block": 12605070,
+          "last_block": 12605070
+        }
+      ],
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1,
+      "rank": 10
+    },
+    {
+      "address": "0x914c36ce7b28481137b365e13e3bbd282b1b461f",
+      "pledge_deposits": [
+        {
+          "pool_id": 0,
+          "deposit_id": 0,
+          "user_order_id": 2,
+          "wei": "73470600000000000",
+          "eth": 0.0734706,
+          "pledge_wei": "203500000000000000",
+          "first_block": 12733274,
+          "last_block": 12733274
+        }
+      ],
+      "balance_wei": "73470600000000000",
+      "balance_eth": 0.0734706,
+      "rank": 11
+    },
+    {
+      "address": "0x830e0551cd6988995159a1a38e741425280b8b20",
+      "pledge_deposits": [
+        {
+          "pool_id": 0,
+          "deposit_id": 0,
+          "user_order_id": 1,
+          "wei": "60000000000000000",
+          "eth": 0.06,
+          "pledge_wei": "59400000000000000",
+          "first_block": 12231748,
+          "last_block": 12231748
+        }
+      ],
+      "balance_wei": "60000000000000000",
+      "balance_eth": 0.06,
+      "rank": 12
+    },
+    {
+      "address": "0x9e711cd41eea980dd2794595801b47082b2b5417",
+      "pledge_deposits": [
+        {
+          "pool_id": 0,
+          "deposit_id": 0,
+          "user_order_id": 2,
+          "wei": "50000000000000000",
+          "eth": 0.05,
+          "pledge_wei": "48800000000000000",
+          "first_block": 12275080,
+          "last_block": 12275080
+        }
+      ],
+      "balance_wei": "50000000000000000",
+      "balance_eth": 0.05,
+      "rank": 13
+    },
+    {
+      "address": "0x8d35d804e69fb658af8147627fe6905d018f914c",
+      "pledge_deposits": [
+        {
+          "pool_id": 0,
+          "deposit_id": 0,
+          "user_order_id": 4,
+          "wei": "49270000000000000",
+          "eth": 0.04927,
+          "pledge_wei": "48900000000000000",
+          "first_block": 12231635,
+          "last_block": 12231635
+        }
+      ],
+      "balance_wei": "49270000000000000",
+      "balance_eth": 0.04927,
+      "rank": 14
+    },
+    {
+      "address": "0x2127dde6647573a1b5d420b6a00bfed686192f04",
+      "pledge_deposits": [
+        {
+          "pool_id": 0,
+          "deposit_id": 0,
+          "user_order_id": 1,
+          "wei": "100000000000000",
+          "eth": 0.0001,
+          "pledge_wei": "100000000000000",
+          "first_block": 11820716,
+          "last_block": 11820716
+        }
+      ],
+      "balance_wei": "100000000000000",
+      "balance_eth": 0.0001,
+      "rank": 15
+    }
+  ]
+}

@@ -3658,6 +3658,19 @@ const EXCHANGES = {
     withdrawArgs: (amount) => [amount, amount * 2000n],
     withdrawCall: 'withdraw',
   },
+  hegic_wbtc_pool: {
+    name: 'Hegic WBTC Pool',
+    desc: 'Hegic WBTC Pool was the V1 liquidity pool backing Bitcoin options on Hegic. Liquidity providers received writeWBTC tokens representing their pool share. The old pool is deprecated; current writeWBTC holders can withdraw the portion of WBTC that is available in the pool today.',
+    category: 'defi',
+    color: '#f7931a',
+    contract: '0x20dd9e22d22dd0a6ef74a520cb08303b5fad5de7',
+    deployed: 'October 2020',
+    noWalletCheck: true,
+    payoutToken: 'WBTC',
+    hegicWbtcPool: true,
+    withdrawAbi: 'function withdraw(uint256 amount, uint256 maxBurn) returns (uint256)',
+    withdrawCall: 'withdraw',
+  },
   hegic_call: {
     name: 'Hegic V1 Call',
     desc: 'Hegic V1 launched in 2021 as a peer-to-pool options protocol. Liquidity providers deposited WETH into the call options pool and received ERC-721 tranche NFTs representing their share. The protocol migrated to V2/V3 and the V1 pool is deprecated. All lockup periods have expired — tranche owners can withdraw their proportional share of the remaining pool liquidity.',
@@ -4416,6 +4429,33 @@ const EXCHANGES = {
     withdrawArgs: (amount, user) => [user, amount],
     withdrawCall: 'redeem',
   },
+  marketing_mining: {
+    name: 'MarketingMining',
+    desc: 'NFTX/Shard-era liquidity mining contract from March 2021. Users deposited NFT and social-token assets into per-token pools; the old UI is gone, but current userInfo entries can still be withdrawn per pool with withdraw(pid, amount).',
+    category: 'defi',
+    color: '#8b5cf6',
+    contract: '0x0feccb11c5b61b3922c511d0f002c0b72d770dce',
+    deployed: 'March 2021',
+    noWalletCheck: true,
+    marketingMiningMulti: true,
+    multiStep: true,
+    withdrawAbi: 'function withdraw(uint256 pid, uint256 amount)',
+    withdrawArgs: () => [],
+    withdrawCall: 'withdraw',
+  },
+  pledge_deposit: {
+    name: 'PledgeDeposit ETH Pool',
+    desc: 'PledgeDeposit was a 2021 Zild pledge/deposit contract. ETH-pool users with matured deposits can still recover each remaining ETH deposit through withdraw(0, depositId); the old UI no longer surfaces these per-deposit rows.',
+    category: 'defi',
+    color: '#4f46e5',
+    contract: '0xf7686cf0d88b3c1b474ec76735b4e94a0c3a28f3',
+    deployed: 'May 2021',
+    noWalletCheck: true,
+    pledgeDepositMulti: true,
+    withdrawAbi: 'function withdraw(uint256 poolId, uint256 depositId)',
+    withdrawArgs: () => [],
+    withdrawCall: 'withdraw',
+  },
   // v2 ERC20 — PWRD merkle vesting denominated in USDC. The May-2022 UST/Terra
   // depeg compensation: PWRD (Gro's USD stablecoin) vested over 2 years via a
   // GMerkleVestor; vesting ended 2024-05-31 so the full allocation is claimable
@@ -4529,7 +4569,7 @@ function fmtEth(v) {
 function fmtNum(n) { return Number(n).toLocaleString('en'); }
 
 // v2 ERC20 token decimals (single source of truth used by formatters + handlers).
-const V2_TOKEN_DECIMALS = { DAI: 18, USDC: 6, USDT: 6, WBTC: 8 };
+const V2_TOKEN_DECIMALS = { DAI: 18, USDC: 6, USDT: 6, WBTC: 8, WETH: 18, B20: 18, MEME: 8, MUSE: 18, RARI: 18, WHALE: 4, NFTX: 18, MANA: 18, SAND: 18 };
 
 // Sum claimable amounts across all matched protocols, grouped by asset symbol.
 // Returns { ETH: number, DAI: number, ... } — missing symbols → 0.
@@ -6003,6 +6043,105 @@ async function checkUserBalances(overrideAddress) {
             }
           } else {
             html += `<div style="margin:8px 16px;font-size:12px;color:var(--text2)">Token IDs not available. <a href="${etherscanAddr(cfg.contract)}#writeContract" target="_blank" rel="noopener noreferrer">Use Etherscan</a> to call withdraw(tokenId, amount).</div>`;
+          }
+          html += `<div class="claim-card-status" id="claimStatus-${key}"></div></div>`;
+        } else if (cfg.hegicWbtcPool) {
+          const tokenBalances = apiBalances[key]?.token_balances || {};
+          const hwb = apiBalances[key]?.hegic_wbtc || {};
+          const rawAmount = String(tokenBalances.WBTC || hwb.available_wbtc_raw || '0');
+          const writeRaw = String(hwb.write_wbtc_balance_raw || '0');
+          const nominalRaw = String(hwb.nominal_total_wbtc_raw || '0');
+          let display = rawAmount;
+          let nominalDisplay = '';
+          try {
+            const val = parseFloat(ethers.formatUnits(BigInt(rawAmount), 8));
+            display = val.toLocaleString('en', { maximumFractionDigits: 6 }) + ' WBTC';
+            if (nominalRaw && BigInt(nominalRaw) > 0n) {
+              const nominalVal = parseFloat(ethers.formatUnits(BigInt(nominalRaw), 8));
+              nominalDisplay = nominalVal.toLocaleString('en', { maximumFractionDigits: 6 }) + ' WBTC total pool share';
+            }
+          } catch (_) {}
+          html += `
+            <div class="claim-card">
+              <div class="claim-card-header">
+                <span class="claim-card-name">${esc(cfg.name)}</span>
+                <span class="claim-card-amount">${esc(display)}</span>
+              </div>
+              <div class="claim-card-meta">
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Contract</span><span class="claim-card-meta-value"><a href="${etherscanAddr(cfg.contract)}" target="_blank" rel="noopener noreferrer">${cfg.contract}</a></span></div>
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Function</span><span class="claim-card-meta-value">withdraw(amount, maxBurn)</span></div>
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Currently available</span><span class="claim-card-meta-value">${esc(display)}</span></div>
+                ${nominalDisplay ? `<div class="claim-card-meta-row"><span class="claim-card-meta-label">Pool share</span><span class="claim-card-meta-value">${esc(nominalDisplay)}; only the available WBTC is shown as claimable</span></div>` : ''}
+              </div>
+              <div class="claim-card-actions">
+                <button class="claim-btn" id="claimBtn-${key}" data-action="hegic-wbtc-withdraw" data-key="${key}" data-amount-raw="${esc(rawAmount)}" data-max-burn="${esc(writeRaw)}">Withdraw WBTC</button>
+              </div>
+              <div class="claim-card-status" id="claimStatus-${key}"></div>
+            </div>`;
+        } else if (cfg.marketingMiningMulti) {
+          // MarketingMining: per-pool token withdraw(pid, amount) buttons.
+          const mmItems = apiBalances[key]?.marketing_mining_items || [];
+          const tokenBalances = apiBalances[key]?.token_balances || {};
+          const tokenSummary = Object.entries(tokenBalances).map(([sym, raw]) => {
+            const dec = V2_TOKEN_DECIMALS[sym] || 18;
+            try {
+              const val = parseFloat(ethers.formatUnits(BigInt(raw), dec));
+              const maxFrac = sym === 'WBTC' ? 6 : (val < 1 ? 6 : 2);
+              return val.toLocaleString('en', { maximumFractionDigits: maxFrac }) + ' ' + sym;
+            } catch (_) { return raw + ' ' + sym; }
+          }).join(' + ');
+          html += `
+            <div class="claim-card">
+              <div class="claim-card-header">
+                <span class="claim-card-name">${esc(cfg.name)}</span>
+                <span class="claim-card-amount">${esc(tokenSummary || 'token')} assets</span>
+              </div>
+              <div class="claim-card-meta">
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Contract</span><span class="claim-card-meta-value"><a href="${etherscanAddr(cfg.contract)}" target="_blank" rel="noopener noreferrer">${cfg.contract}</a></span></div>
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Function</span><span class="claim-card-meta-value">withdraw(pid, amount) per token pool</span></div>
+              </div>`;
+          if (mmItems.length > 0) {
+            for (const it of mmItems) {
+              const raw = String(it.amount_raw || '0');
+              const dec = Number(it.decimals || V2_TOKEN_DECIMALS[it.symbol] || 18);
+              let display = String(it.amount || '');
+              if (!display) {
+                try { display = ethers.formatUnits(BigInt(raw), dec); } catch (_) { display = raw; }
+              }
+              const displayNum = parseFloat(display);
+              const displayShort = isFinite(displayNum) ? displayNum.toLocaleString('en', { maximumFractionDigits: displayNum < 1 ? 8 : 4 }) : display;
+              html += `<div class="claim-row" style="margin:4px 16px;border-left:2px solid var(--accent);padding:6px 12px;display:flex;align-items:center;justify-content:space-between">
+                <span style="font-size:13px">Pool #${esc(String(it.pid))}<span style="color:var(--text2);font-size:12px"> · ${esc(displayShort)} ${esc(it.symbol || 'tokens')}</span></span>
+                <button class="claim-btn" data-action="marketing-mining-withdraw" data-key="${key}" data-pid="${esc(String(it.pid))}" data-amount-raw="${esc(raw)}" data-symbol="${esc(it.symbol || '')}">Withdraw</button>
+              </div>`;
+            }
+          } else {
+            html += `<div style="margin:8px 16px;font-size:12px;color:var(--text2)">Pool IDs not available. <a href="${etherscanAddr(cfg.contract)}#writeContract" target="_blank" rel="noopener noreferrer">Use Etherscan</a> to call withdraw(pid, amount).</div>`;
+          }
+          html += `<div class="claim-card-status" id="claimStatus-${key}"></div></div>`;
+        } else if (cfg.pledgeDepositMulti) {
+          // PledgeDeposit: per-deposit withdraw(0, depositId) buttons.
+          const pledgeDeposits = apiBalances[key]?.pledge_deposits || [];
+          html += `
+            <div class="claim-card">
+              <div class="claim-card-header">
+                <span class="claim-card-name">${esc(cfg.name)}</span>
+                <span class="claim-card-amount">${fmtEth(ethAmount)} ETH</span>
+              </div>
+              <div class="claim-card-meta">
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Contract</span><span class="claim-card-meta-value"><a href="${etherscanAddr(cfg.contract)}" target="_blank" rel="noopener noreferrer">${cfg.contract}</a></span></div>
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Function</span><span class="claim-card-meta-value">withdraw(0, depositId) per ETH-pool deposit</span></div>
+              </div>`;
+          if (pledgeDeposits.length > 0) {
+            for (const pd of pledgeDeposits) {
+              const pdEth = pd.wei ? ' · ' + fmtEth(Number(BigInt(pd.wei)) / 1e18) + ' ETH' : '';
+              html += `<div class="claim-row" style="margin:4px 16px;border-left:2px solid var(--accent);padding:6px 12px;display:flex;align-items:center;justify-content:space-between">
+                <span style="font-size:13px">Deposit #${esc(String(pd.deposit_id))}<span style="color:var(--text2);font-size:12px">${pdEth}</span></span>
+                <button class="claim-btn" data-action="pledge-deposit-withdraw" data-key="${key}" data-deposit-id="${esc(String(pd.deposit_id))}" data-wei="${esc(String(pd.wei || '0'))}">Withdraw</button>
+              </div>`;
+            }
+          } else {
+            html += `<div style="margin:8px 16px;font-size:12px;color:var(--text2)">Deposit IDs not available. <a href="${etherscanAddr(cfg.contract)}#writeContract" target="_blank" rel="noopener noreferrer">Use Etherscan</a> to call withdraw(0, depositId).</div>`;
           }
           html += `<div class="claim-card-status" id="claimStatus-${key}"></div></div>`;
         } else if (cfg.nftMulti) {
@@ -8289,6 +8428,107 @@ async function killBounty(key, bountyId, btn) {
   }
 }
 
+async function hegicWbtcWithdraw(key, amountRaw, maxBurnRaw, btn) {
+  if (!walletAddress || !walletSigner) { showInlineError('walletError', 'Please connect your wallet first.'); return; }
+  if (!await checkNetwork()) { showInlineError('networkWarn', 'Please switch to Ethereum Mainnet.', 0); document.getElementById('networkWarn').classList.add('visible'); return; }
+
+  btn.disabled = true;
+  btn.textContent = 'Withdrawing...';
+  btn.classList.add('pending');
+  const statusEl = document.getElementById('claimStatus-' + key);
+  try {
+    const cfg = EXCHANGES[key];
+    const amount = BigInt(amountRaw || '0');
+    const maxBurn = BigInt(maxBurnRaw || '0');
+    if (amount <= 0n || maxBurn <= 0n) throw new Error('No available WBTC amount to withdraw');
+    const contract = new ethers.Contract(cfg.contract, [cfg.withdrawAbi], walletSigner);
+    const tx = await contract.withdraw(amount, maxBurn);
+    if (statusEl) statusEl.textContent = 'Waiting for confirmation...';
+    const receipt = await tx.wait();
+    btn.textContent = '\u2713 Claimed';
+    btn.classList.remove('pending');
+    btn.classList.add('claimed');
+    const display = ethers.formatUnits(amount, 8);
+    buildRecoveredStatus(statusEl, 'Recovered Hegic WBTC', display, 'WBTC', tx.hash);
+    logEvent('claim_confirmed', {
+      address: walletAddress,
+      contract: key,
+      amount_eth: 0,
+      tx_hash: tx.hash,
+      block_num: receipt.blockNumber,
+      extra: { amount_raw: String(amountRaw), token_symbol: 'WBTC', max_burn_raw: String(maxBurnRaw), tx_hash: tx.hash }
+    });
+  } catch (e) {
+    btn.disabled = false;
+    btn.textContent = 'Withdraw WBTC';
+    btn.classList.remove('pending');
+    if (statusEl) statusEl.textContent = (e.code === 'ACTION_REJECTED' || e.code === 4001) ? 'Rejected' : 'Failed: ' + (e.reason || e.message || 'Unknown error');
+  }
+}
+
+async function marketingMiningWithdraw(key, pid, amountRaw, symbol, btn) {
+  if (!walletAddress || !walletSigner) { showInlineError('walletError', 'Please connect your wallet first.'); return; }
+  if (!await checkNetwork()) { showInlineError('networkWarn', 'Please switch to Ethereum Mainnet.', 0); document.getElementById('networkWarn').classList.add('visible'); return; }
+
+  btn.disabled = true;
+  btn.textContent = 'Withdrawing...';
+  btn.classList.add('pending');
+  const statusEl = document.getElementById('claimStatus-' + key);
+  try {
+    const cfg = EXCHANGES[key];
+    const contract = new ethers.Contract(cfg.contract, [cfg.withdrawAbi], walletSigner);
+    const tx = await contract.withdraw(BigInt(pid), BigInt(amountRaw));
+    if (statusEl) statusEl.textContent = 'Waiting for confirmation...';
+    const receipt = await tx.wait();
+    btn.textContent = '\u2713 Claimed';
+    btn.classList.remove('pending');
+    btn.classList.add('claimed');
+    buildRecoveredStatus(statusEl, 'Recovered pool #' + pid, 'tokens', symbol || 'asset', tx.hash);
+    logEvent('claim_confirmed', {
+      address: walletAddress,
+      contract: key,
+      amount_eth: 0,
+      tx_hash: tx.hash,
+      block_num: receipt.blockNumber,
+      extra: { pid: String(pid), item_id: 'pid:' + String(pid), amount_raw: String(amountRaw), symbol: symbol || null, tx_hash: tx.hash }
+    });
+  } catch (e) {
+    btn.disabled = false;
+    btn.textContent = 'Withdraw';
+    btn.classList.remove('pending');
+    if (statusEl) statusEl.textContent = (e.code === 'ACTION_REJECTED' || e.code === 4001) ? 'Rejected' : 'Failed: ' + (e.reason || e.message || 'Unknown error');
+  }
+}
+
+async function pledgeDepositWithdraw(key, depositId, weiStr, btn) {
+  if (!walletAddress || !walletSigner) { showInlineError('walletError', 'Please connect your wallet first.'); return; }
+  if (!await checkNetwork()) { showInlineError('networkWarn', 'Please switch to Ethereum Mainnet.', 0); document.getElementById('networkWarn').classList.add('visible'); return; }
+
+  btn.disabled = true;
+  btn.textContent = 'Withdrawing...';
+  btn.classList.add('pending');
+  const statusEl = document.getElementById('claimStatus-' + key);
+  try {
+    const cfg = EXCHANGES[key];
+    const contract = new ethers.Contract(cfg.contract, [cfg.withdrawAbi], walletSigner);
+    const tx = await contract.withdraw(0n, BigInt(depositId));
+    if (statusEl) statusEl.textContent = 'Waiting for confirmation...';
+    await tx.wait();
+    const ethAmount = weiStr ? ethers.formatEther(BigInt(weiStr)) : '0';
+    btn.textContent = '\u2713 Claimed';
+    btn.classList.remove('pending');
+    btn.classList.add('claimed');
+    buildRecoveredStatus(statusEl, 'Recovered deposit #' + depositId, ethAmount, 'ETH', tx.hash);
+    logEvent('claim_confirmed', { address: walletAddress, contract: key, amount_eth: parseFloat(ethAmount), tx_hash: tx.hash, extra: { deposit_id: String(depositId), item_id: 'deposit:' + String(depositId), tx_hash: tx.hash } });
+    showDonationModal(parseFloat(ethAmount), key);
+  } catch (e) {
+    btn.disabled = false;
+    btn.textContent = 'Withdraw';
+    btn.classList.remove('pending');
+    if (statusEl) statusEl.textContent = (e.code === 'ACTION_REJECTED' || e.code === 4001) ? 'Rejected' : 'Failed: ' + (e.reason || e.message || 'Unknown error');
+  }
+}
+
 async function canvasWithdraw(key, tokenId, weiStr, btn) {
   if (!walletAddress || !walletSigner) { showInlineError('walletError', 'Please connect your wallet first.'); return; }
   if (!await checkNetwork()) { showInlineError('networkWarn', 'Please switch to Ethereum Mainnet.', 0); document.getElementById('networkWarn').classList.add('visible'); return; }
@@ -10357,6 +10597,12 @@ document.getElementById('claimBanner').addEventListener('click', function(e) {
     killBounty(btn.dataset.key, parseInt(btn.dataset.bountyId), btn);
   } else if (action === 'canvas-withdraw') {
     canvasWithdraw(btn.dataset.key, btn.dataset.tokenId, btn.dataset.wei, btn);
+  } else if (action === 'pledge-deposit-withdraw') {
+    pledgeDepositWithdraw(btn.dataset.key, btn.dataset.depositId, btn.dataset.wei, btn);
+  } else if (action === 'marketing-mining-withdraw') {
+    marketingMiningWithdraw(btn.dataset.key, btn.dataset.pid, btn.dataset.amountRaw, btn.dataset.symbol, btn);
+  } else if (action === 'hegic-wbtc-withdraw') {
+    hegicWbtcWithdraw(btn.dataset.key, btn.dataset.amountRaw, btn.dataset.maxBurn, btn);
   } else if (action === 'nomad-recover') {
     nomadRecover(btn.dataset.key, btn.dataset.nftId, btn.dataset.assetSymbol, btn);
   } else if (action === 'opyn-redeem-all') {

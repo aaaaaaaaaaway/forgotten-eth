@@ -665,6 +665,22 @@
     <div class="changelog-month">June 2026</div>
 
     <div class="changelog-entry">
+      <span class="changelog-date">Jun 8</span>
+      <div class="changelog-body">
+        <div class="changelog-name"><a href="/hegic-wbtc-pool">Hegic WBTC Pool</a> <span class="changelog-tag">+3.346 WBTC</span></div>
+        <div class="changelog-desc">Added the deprecated Hegic writeWBTC pool with a partial-liquidity model. The pool still has 3.34650926 WBTC currently available to 111 externally claimable holders; the integration deliberately uses live availableBalance() rather than totalBalance() because full pro-rata withdrawals can revert while part of the pool remains unavailable or self-held. Claim buttons call withdraw(amount, maxBurn) with the holder's current writeWBTC burn cap.</div>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
+      <span class="changelog-date">Jun 8</span>
+      <div class="changelog-body">
+        <div class="changelog-name"><a href="/marketing-mining">MarketingMining</a> <span class="changelog-tag">+35 token positions</span></div>
+        <div class="changelog-desc">Added the March-2021 NFTX/Shard-era MarketingMining liquidity-mining contract. A corrected Dune Deposit/Withdraw reconstruction plus current local-RPC userInfo checks found 23 wallets with 35 still-withdrawable per-pool token positions across WBTC, WETH, USDT, B20, MEME, MUSE, RARI, WHALE, NFTX, MANA, and SAND. The old campaign UI is gone; users can still recover each live pool balance through withdraw(pid, amount).</div>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
       <span class="changelog-date">Jun 3</span>
       <div class="changelog-body">
         <div class="changelog-name"><a href="/p4rty-dao-vault">P4RTY DAO Vault</a> <span class="changelog-tag">+0.43 ETH</span></div>
