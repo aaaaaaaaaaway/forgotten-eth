@@ -1,0 +1,3750 @@
+{
+  "contract": "0xb9812e2fa995ec53b5b6df34d21f9304762c5497",
+  "balance_source": "token",
+  "contract_eth_balance": 113.0,
+  "total_eth_in_balances": 106.737902,
+  "total_sai_in_balances": 2586.859884,
+  "addresses_with_balance": 37,
+  "addresses_weth": 35,
+  "addresses_sai": 6,
+  "coverage_pct": 94.5,
+  "scan_date": "2026-06-09 00:00:00 UTC",
+  "description": "DutchX exchange proxy (dx_2). Three claim layers \u2014 L1 direct WETH/SAI balances (withdraw only), L2 unclaimed auction positions (claimBuyerFunds/claimSellerFunds + withdraw), L3 partially-claimed positions (same two-step flow). Positions use compressed fields: t=type(buyer/seller), st=sellToken, bt=buyToken, ai=auctionIndex, w=claimable_weth. Unattributable gap: ~6.3 ETH.",
+  "distribution": {
+    "<0.01": 5,
+    "0.01-0.1": 10,
+    "0.1-1": 8,
+    "1-10": 10,
+    ">10": 4
+  },
+  "balances": [
+    {
+      "address": "0x50654d2ccbdf89d108bfbec9b2cda491a0b52fb5",
+      "balance_wei": "22123161046329000000",
+      "balance_eth": 22.12316105,
+      "rank": 1,
+      "weth_direct": 22.12316105,
+      "weth_direct_wei": "22123161046329443682"
+    },
+    {
+      "address": "0xb4c757a71d084df8f9f393cc47639701f595fd87",
+      "balance_wei": "15025198772320000000",
+      "balance_eth": 15.02519877,
+      "rank": 2,
+      "weth_direct": 15.02519877,
+      "weth_direct_wei": "15025198772319560448"
+    },
+    {
+      "address": "0x00ecd4635c80d47a8b5ffbfd2eb794e0ce6a8689",
+      "balance_wei": "13409839570273000000",
+      "balance_eth": 13.40983957,
+      "rank": 3,
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "bt": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "ai": 224,
+          "w": 0.0995,
+          "w_wei": "99500000000000000"
+        }
+      ],
+      "weth_direct": 13.31033957,
+      "weth_direct_wei": "13310339570272959809"
+    },
+    {
+      "address": "0x01a6e0f4e7f723c7110be5a88644eb4763810563",
+      "balance_wei": "11332263442001000000",
+      "balance_eth": 11.33226344,
+      "rank": 4,
+      "sai_balance": 982.36752776,
+      "sai_balance_wei": "982367527757423043825",
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2",
+          "bt": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "ai": 657,
+          "w": 5.652805,
+          "w_wei": "5652800000000000000"
+        }
+      ],
+      "weth_direct": 5.67945844,
+      "weth_direct_wei": "5679458442001132987"
+    },
+    {
+      "address": "0x02352e6dcf0c77577222adee8c63d52243b5c33f",
+      "balance_wei": "8277963618474000000",
+      "balance_eth": 8.27796362,
+      "rank": 5,
+      "weth_direct": 8.27796362,
+      "weth_direct_wei": "8277963618474229034"
+    },
+    {
+      "address": "0x2259099897afaf3813fef3284b91d2b227b66ad4",
+      "balance_wei": "6507983370306000000",
+      "balance_eth": 6.50798337,
+      "rank": 6,
+      "positions": [
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xdd974d5c2e2928dea5f71b9825b8b646686bd200",
+          "ai": 2,
+          "w": 5.988024,
+          "w_wei": "5988020000000000000"
+        }
+      ],
+      "weth_direct": 0.51995937,
+      "weth_direct_wei": "519959370306265940"
+    },
+    {
+      "address": "0x2dd2afa618f497efdb3a8c1707b06dc00b31fa19",
+      "balance_wei": "6302299000000000000",
+      "balance_eth": 6.302299,
+      "rank": 7,
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "bt": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "ai": 191,
+          "w": 6.302299,
+          "w_wei": "6302290000000000000"
+        }
+      ]
+    },
+    {
+      "address": "0x00000000af5a61acaf76190794e3fdf1289288a1",
+      "balance_wei": "6174220000000000000",
+      "balance_eth": 6.17422,
+      "rank": 8,
+      "positions": [
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "ai": 565,
+          "w": 0.248912,
+          "w_wei": "248910000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x12b19d3e2ccc14da04fae33e63652ce469b3f2fd",
+          "ai": 28,
+          "w": 0.219721,
+          "w_wei": "219720000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x985dd3d42de1e256d09e1c10f112bccb8015ad41",
+          "ai": 30,
+          "w": 0.211455,
+          "w_wei": "211450000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 1,
+          "w": 0.170635,
+          "w_wei": "170630000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "ai": 606,
+          "w": 0.128048,
+          "w_wei": "128040000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 216,
+          "w": 0.120182,
+          "w_wei": "120180000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 501,
+          "w": 0.10849,
+          "w_wei": "108490000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 383,
+          "w": 0.085255,
+          "w_wei": "85250000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xbbbbca6a901c926f240b89eacb641d8aec7aeafd",
+          "ai": 68,
+          "w": 0.081111,
+          "w_wei": "81110000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 207,
+          "w": 0.07868,
+          "w_wei": "78680000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xbbbbca6a901c926f240b89eacb641d8aec7aeafd",
+          "ai": 149,
+          "w": 0.077385,
+          "w_wei": "77380000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 301,
+          "w": 0.068329,
+          "w_wei": "68320000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x985dd3d42de1e256d09e1c10f112bccb8015ad41",
+          "ai": 10,
+          "w": 0.063239,
+          "w_wei": "63230000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 365,
+          "w": 0.062344,
+          "w_wei": "62340000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 338,
+          "w": 0.061846,
+          "w_wei": "61840000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 552,
+          "w": 0.060788,
+          "w_wei": "60780000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 489,
+          "w": 0.058333,
+          "w_wei": "58330000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 486,
+          "w": 0.058201,
+          "w_wei": "58200000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 472,
+          "w": 0.057641,
+          "w_wei": "57640000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 291,
+          "w": 0.055468,
+          "w_wei": "55460000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 415,
+          "w": 0.051954,
+          "w_wei": "51950000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 369,
+          "w": 0.043814,
+          "w_wei": "43810000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 337,
+          "w": 0.037955,
+          "w_wei": "37950000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 212,
+          "w": 0.037753,
+          "w_wei": "37750000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 375,
+          "w": 0.03426,
+          "w_wei": "34260000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x744d70fdbe2ba4cf95131626614a1763df805b9e",
+          "ai": 3,
+          "w": 0.033528,
+          "w_wei": "33520000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 306,
+          "w": 0.032152,
+          "w_wei": "32150000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 450,
+          "w": 0.031361,
+          "w_wei": "31360000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 4,
+          "w": 0.029865,
+          "w_wei": "29860000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 303,
+          "w": 0.027942,
+          "w_wei": "27940000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 379,
+          "w": 0.027895,
+          "w_wei": "27890000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 538,
+          "w": 0.02725,
+          "w_wei": "27250000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 8,
+          "w": 0.02447,
+          "w_wei": "24470000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "ai": 644,
+          "w": 0.024341,
+          "w_wei": "24340000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 391,
+          "w": 0.02409,
+          "w_wei": "24090000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 431,
+          "w": 0.022901,
+          "w_wei": "22900000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 13,
+          "w": 0.022285,
+          "w_wei": "22280000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 393,
+          "w": 0.022229,
+          "w_wei": "22220000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x12b19d3e2ccc14da04fae33e63652ce469b3f2fd",
+          "ai": 24,
+          "w": 0.020322,
+          "w_wei": "20320000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 503,
+          "w": 0.020109,
+          "w_wei": "20100000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 7,
+          "w": 0.019433,
+          "w_wei": "19430000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 198,
+          "w": 0.017542,
+          "w_wei": "17540000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 629,
+          "w": 0.01706,
+          "w_wei": "17060000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 893,
+          "w": 0.016365,
+          "w_wei": "16360000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "ai": 661,
+          "w": 0.01571,
+          "w_wei": "15710000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 488,
+          "w": 0.014645,
+          "w_wei": "14640000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 596,
+          "w": 0.014494,
+          "w_wei": "14490000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 352,
+          "w": 0.013753,
+          "w_wei": "13750000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 622,
+          "w": 0.01347,
+          "w_wei": "13470000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 187,
+          "w": 0.013193,
+          "w_wei": "13190000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 312,
+          "w": 0.012942,
+          "w_wei": "12940000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 20,
+          "w": 0.012428,
+          "w_wei": "12420000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 379,
+          "w": 0.012036,
+          "w_wei": "12030000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 623,
+          "w": 0.01189,
+          "w_wei": "11890000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 25,
+          "w": 0.011733,
+          "w_wei": "11730000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 410,
+          "w": 0.011354,
+          "w_wei": "11350000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 17,
+          "w": 0.011353,
+          "w_wei": "11350000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 19,
+          "w": 0.011208,
+          "w_wei": "11200000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 21,
+          "w": 0.01081,
+          "w_wei": "10810000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 541,
+          "w": 0.010195,
+          "w_wei": "10190000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 18,
+          "w": 0.00926,
+          "w_wei": "9260000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 369,
+          "w": 0.009197,
+          "w_wei": "9190000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 15,
+          "w": 0.008828,
+          "w_wei": "8820000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "ai": 614,
+          "w": 0.008712,
+          "w_wei": "8710000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 22,
+          "w": 0.008627,
+          "w_wei": "8620000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 16,
+          "w": 0.008433,
+          "w_wei": "8430000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 426,
+          "w": 0.008101,
+          "w_wei": "8100000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "ai": 591,
+          "w": 0.007266,
+          "w_wei": "7260000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 124,
+          "w": 0.007144,
+          "w_wei": "7140000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x8f8221afbb33998d8584a2b05749ba73c37a938a",
+          "ai": 2,
+          "w": 0.00685,
+          "w_wei": "6850000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xa4e8c3ec456107ea67d3075bf9e3df3a75823db0",
+          "ai": 91,
+          "w": 0.006691,
+          "w_wei": "6690000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 336,
+          "w": 0.005436,
+          "w_wei": "5430000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 500,
+          "w": 0.004933,
+          "w_wei": "4930000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 437,
+          "w": 0.003746,
+          "w_wei": "3740000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 247,
+          "w": 0.003665,
+          "w_wei": "3660000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "ai": 631,
+          "w": 0.003296,
+          "w_wei": "3290000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x985dd3d42de1e256d09e1c10f112bccb8015ad41",
+          "ai": 118,
+          "w": 0.003205,
+          "w_wei": "3200000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 308,
+          "w": 0.003189,
+          "w_wei": "3180000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 706,
+          "w": 0.002808,
+          "w_wei": "2800000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x985dd3d42de1e256d09e1c10f112bccb8015ad41",
+          "ai": 14,
+          "w": 0.002657,
+          "w_wei": "2650000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 517,
+          "w": 0.002623,
+          "w_wei": "2620000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 580,
+          "w": 0.002367,
+          "w_wei": "2360000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 572,
+          "w": 0.00229,
+          "w_wei": "2290000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 179,
+          "w": 0.002139,
+          "w_wei": "2130000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xbbbbca6a901c926f240b89eacb641d8aec7aeafd",
+          "ai": 95,
+          "w": 0.002035,
+          "w_wei": "2030000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xbbbbca6a901c926f240b89eacb641d8aec7aeafd",
+          "ai": 125,
+          "w": 0.001788,
+          "w_wei": "1780000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 476,
+          "w": 0.001565,
+          "w_wei": "1560000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x8f8221afbb33998d8584a2b05749ba73c37a938a",
+          "ai": 5,
+          "w": 0.001512,
+          "w_wei": "1510000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 340,
+          "w": 0.001251,
+          "w_wei": "1250000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 566,
+          "w": 0.000999,
+          "w_wei": "990000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 741,
+          "w": 0.000998,
+          "w_wei": "990000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x1776e1f26f98b1a5df9cd347953a26dd3cb46671",
+          "ai": 42,
+          "w": 0.000822,
+          "w_wei": "820000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "ai": 669,
+          "w": 0.000311,
+          "w_wei": "310000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 755,
+          "w": 0.000125,
+          "w_wei": "120000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 698,
+          "w": 8.8e-05,
+          "w_wei": "88000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "ai": 565,
+          "w": 0.248912,
+          "w_wei": "248910000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x12b19d3e2ccc14da04fae33e63652ce469b3f2fd",
+          "ai": 28,
+          "w": 0.219721,
+          "w_wei": "219720000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x985dd3d42de1e256d09e1c10f112bccb8015ad41",
+          "ai": 30,
+          "w": 0.211455,
+          "w_wei": "211450000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 1,
+          "w": 0.170635,
+          "w_wei": "170630000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "ai": 606,
+          "w": 0.128048,
+          "w_wei": "128040000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 216,
+          "w": 0.120182,
+          "w_wei": "120180000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 501,
+          "w": 0.10849,
+          "w_wei": "108490000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 383,
+          "w": 0.085255,
+          "w_wei": "85250000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xbbbbca6a901c926f240b89eacb641d8aec7aeafd",
+          "ai": 68,
+          "w": 0.081111,
+          "w_wei": "81110000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 207,
+          "w": 0.07868,
+          "w_wei": "78680000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xbbbbca6a901c926f240b89eacb641d8aec7aeafd",
+          "ai": 149,
+          "w": 0.077385,
+          "w_wei": "77380000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 301,
+          "w": 0.068329,
+          "w_wei": "68320000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x985dd3d42de1e256d09e1c10f112bccb8015ad41",
+          "ai": 10,
+          "w": 0.063239,
+          "w_wei": "63230000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 365,
+          "w": 0.062344,
+          "w_wei": "62340000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 338,
+          "w": 0.061846,
+          "w_wei": "61840000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 552,
+          "w": 0.060788,
+          "w_wei": "60780000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 489,
+          "w": 0.058333,
+          "w_wei": "58330000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 486,
+          "w": 0.058201,
+          "w_wei": "58200000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 472,
+          "w": 0.057641,
+          "w_wei": "57640000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 291,
+          "w": 0.055468,
+          "w_wei": "55460000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 415,
+          "w": 0.051954,
+          "w_wei": "51950000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 369,
+          "w": 0.043814,
+          "w_wei": "43810000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 337,
+          "w": 0.037955,
+          "w_wei": "37950000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 212,
+          "w": 0.037753,
+          "w_wei": "37750000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 375,
+          "w": 0.03426,
+          "w_wei": "34260000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x744d70fdbe2ba4cf95131626614a1763df805b9e",
+          "ai": 3,
+          "w": 0.033528,
+          "w_wei": "33520000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 306,
+          "w": 0.032152,
+          "w_wei": "32150000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 450,
+          "w": 0.031361,
+          "w_wei": "31360000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 4,
+          "w": 0.029865,
+          "w_wei": "29860000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 303,
+          "w": 0.027942,
+          "w_wei": "27940000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 379,
+          "w": 0.027895,
+          "w_wei": "27890000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 538,
+          "w": 0.02725,
+          "w_wei": "27250000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 8,
+          "w": 0.02447,
+          "w_wei": "24470000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "ai": 644,
+          "w": 0.024341,
+          "w_wei": "24340000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 391,
+          "w": 0.02409,
+          "w_wei": "24090000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 431,
+          "w": 0.022901,
+          "w_wei": "22900000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 13,
+          "w": 0.022285,
+          "w_wei": "22280000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 393,
+          "w": 0.022229,
+          "w_wei": "22220000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x12b19d3e2ccc14da04fae33e63652ce469b3f2fd",
+          "ai": 24,
+          "w": 0.020322,
+          "w_wei": "20320000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 503,
+          "w": 0.020109,
+          "w_wei": "20100000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 7,
+          "w": 0.019433,
+          "w_wei": "19430000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 198,
+          "w": 0.017542,
+          "w_wei": "17540000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 629,
+          "w": 0.01706,
+          "w_wei": "17060000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 893,
+          "w": 0.016365,
+          "w_wei": "16360000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "ai": 661,
+          "w": 0.01571,
+          "w_wei": "15710000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 488,
+          "w": 0.014645,
+          "w_wei": "14640000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 596,
+          "w": 0.014494,
+          "w_wei": "14490000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 352,
+          "w": 0.013753,
+          "w_wei": "13750000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 622,
+          "w": 0.01347,
+          "w_wei": "13470000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 187,
+          "w": 0.013193,
+          "w_wei": "13190000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 312,
+          "w": 0.012942,
+          "w_wei": "12940000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 20,
+          "w": 0.012428,
+          "w_wei": "12420000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 379,
+          "w": 0.012036,
+          "w_wei": "12030000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 623,
+          "w": 0.01189,
+          "w_wei": "11890000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 25,
+          "w": 0.011733,
+          "w_wei": "11730000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 410,
+          "w": 0.011354,
+          "w_wei": "11350000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 17,
+          "w": 0.011353,
+          "w_wei": "11350000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 19,
+          "w": 0.011208,
+          "w_wei": "11200000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 21,
+          "w": 0.01081,
+          "w_wei": "10810000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 541,
+          "w": 0.010195,
+          "w_wei": "10190000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 18,
+          "w": 0.00926,
+          "w_wei": "9260000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 369,
+          "w": 0.009197,
+          "w_wei": "9190000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 15,
+          "w": 0.008828,
+          "w_wei": "8820000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "ai": 614,
+          "w": 0.008712,
+          "w_wei": "8710000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 22,
+          "w": 0.008627,
+          "w_wei": "8620000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 16,
+          "w": 0.008433,
+          "w_wei": "8430000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 426,
+          "w": 0.008101,
+          "w_wei": "8100000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "ai": 591,
+          "w": 0.007266,
+          "w_wei": "7260000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 124,
+          "w": 0.007144,
+          "w_wei": "7140000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x8f8221afbb33998d8584a2b05749ba73c37a938a",
+          "ai": 2,
+          "w": 0.00685,
+          "w_wei": "6850000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xa4e8c3ec456107ea67d3075bf9e3df3a75823db0",
+          "ai": 91,
+          "w": 0.006691,
+          "w_wei": "6690000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 336,
+          "w": 0.005436,
+          "w_wei": "5430000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 500,
+          "w": 0.004933,
+          "w_wei": "4930000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 437,
+          "w": 0.003746,
+          "w_wei": "3740000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 247,
+          "w": 0.003665,
+          "w_wei": "3660000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "ai": 631,
+          "w": 0.003296,
+          "w_wei": "3290000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x985dd3d42de1e256d09e1c10f112bccb8015ad41",
+          "ai": 118,
+          "w": 0.003205,
+          "w_wei": "3200000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 308,
+          "w": 0.003189,
+          "w_wei": "3180000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 706,
+          "w": 0.002808,
+          "w_wei": "2800000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x985dd3d42de1e256d09e1c10f112bccb8015ad41",
+          "ai": 14,
+          "w": 0.002657,
+          "w_wei": "2650000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 517,
+          "w": 0.002623,
+          "w_wei": "2620000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 580,
+          "w": 0.002367,
+          "w_wei": "2360000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 572,
+          "w": 0.00229,
+          "w_wei": "2290000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca",
+          "ai": 179,
+          "w": 0.002139,
+          "w_wei": "2130000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xbbbbca6a901c926f240b89eacb641d8aec7aeafd",
+          "ai": 95,
+          "w": 0.002035,
+          "w_wei": "2030000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xbbbbca6a901c926f240b89eacb641d8aec7aeafd",
+          "ai": 125,
+          "w": 0.001788,
+          "w_wei": "1780000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 476,
+          "w": 0.001565,
+          "w_wei": "1560000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x8f8221afbb33998d8584a2b05749ba73c37a938a",
+          "ai": 5,
+          "w": 0.001512,
+          "w_wei": "1510000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 340,
+          "w": 0.001251,
+          "w_wei": "1250000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 566,
+          "w": 0.000999,
+          "w_wei": "990000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 741,
+          "w": 0.000998,
+          "w_wei": "990000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x1776e1f26f98b1a5df9cd347953a26dd3cb46671",
+          "ai": 42,
+          "w": 0.000822,
+          "w_wei": "820000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "ai": 669,
+          "w": 0.000311,
+          "w_wei": "310000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 755,
+          "w": 0.000125,
+          "w_wei": "120000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 698,
+          "w": 8.8e-05,
+          "w_wei": "88000000000000"
+        }
+      ]
+    },
+    {
+      "address": "0x009b56330ae5ec5042b9ca46ddb3043cc0d006f3",
+      "balance_wei": "4800000000000000000",
+      "balance_eth": 4.8,
+      "rank": 9,
+      "sai_balance": 34.36323842,
+      "sai_balance_wei": "34363238420071228101",
+      "weth_direct": 4.8,
+      "weth_direct_wei": "4800000000000000000"
+    },
+    {
+      "address": "0x2a1049062c6cfd69bd38fbaf3b0559df1dbbc92c",
+      "balance_wei": "2888521134265000000",
+      "balance_eth": 2.88852113,
+      "rank": 10,
+      "weth_direct": 2.88852113,
+      "weth_direct_wei": "2888521134265407206"
+    },
+    {
+      "address": "0x7f8919fde017c5ff8408e4def990bc81f20d3ca4",
+      "balance_wei": "2746827133156000000",
+      "balance_eth": 2.74682713,
+      "rank": 11,
+      "weth_direct": 2.74682713,
+      "weth_direct_wei": "2746827133156415235"
+    },
+    {
+      "address": "0xd6000fda0b38f4bff4cfab188e0bd18e8725a5e7",
+      "balance_wei": "2539652000000000000",
+      "balance_eth": 2.539652,
+      "rank": 12,
+      "positions": [
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 301,
+          "w": 0.081885,
+          "w_wei": "81880000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 473,
+          "w": 0.080737,
+          "w_wei": "80730000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 589,
+          "w": 0.080653,
+          "w_wei": "80650000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 417,
+          "w": 0.078304,
+          "w_wei": "78300000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xdd974d5c2e2928dea5f71b9825b8b646686bd200",
+          "ai": 184,
+          "w": 0.075797,
+          "w_wei": "75790000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 401,
+          "w": 0.053357,
+          "w_wei": "53350000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 220,
+          "w": 0.050705,
+          "w_wei": "50700000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 383,
+          "w": 0.046883,
+          "w_wei": "46880000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 358,
+          "w": 0.045814,
+          "w_wei": "45810000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 309,
+          "w": 0.043266,
+          "w_wei": "43260000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 410,
+          "w": 0.039797,
+          "w_wei": "39790000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xdd974d5c2e2928dea5f71b9825b8b646686bd200",
+          "ai": 173,
+          "w": 0.029326,
+          "w_wei": "29320000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 415,
+          "w": 0.026373,
+          "w_wei": "26370000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 315,
+          "w": 0.026023,
+          "w_wei": "26020000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 411,
+          "w": 0.025977,
+          "w_wei": "25970000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 129,
+          "w": 0.025885,
+          "w_wei": "25880000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xdd974d5c2e2928dea5f71b9825b8b646686bd200",
+          "ai": 31,
+          "w": 0.024485,
+          "w_wei": "24480000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 490,
+          "w": 0.02288,
+          "w_wei": "22880000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 303,
+          "w": 0.022576,
+          "w_wei": "22570000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 450,
+          "w": 0.020434,
+          "w_wei": "20430000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 443,
+          "w": 0.019759,
+          "w_wei": "19750000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 499,
+          "w": 0.019358,
+          "w_wei": "19350000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xdd974d5c2e2928dea5f71b9825b8b646686bd200",
+          "ai": 169,
+          "w": 0.01901,
+          "w_wei": "19010000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 17,
+          "w": 0.017607,
+          "w_wei": "17600000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 462,
+          "w": 0.017518,
+          "w_wei": "17510000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 281,
+          "w": 0.016909,
+          "w_wei": "16900000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 404,
+          "w": 0.015418,
+          "w_wei": "15410000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 416,
+          "w": 0.013874,
+          "w_wei": "13870000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 8,
+          "w": 0.013708,
+          "w_wei": "13700000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 434,
+          "w": 0.013071,
+          "w_wei": "13070000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 678,
+          "w": 0.010398,
+          "w_wei": "10390000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 282,
+          "w": 0.009735,
+          "w_wei": "9730000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 393,
+          "w": 0.009039,
+          "w_wei": "9030000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 407,
+          "w": 0.007175,
+          "w_wei": "7170000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 359,
+          "w": 0.00691,
+          "w_wei": "6910000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 387,
+          "w": 0.006766,
+          "w_wei": "6760000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 270,
+          "w": 0.006336,
+          "w_wei": "6330000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 786,
+          "w": 0.005985,
+          "w_wei": "5980000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 432,
+          "w": 0.005977,
+          "w_wei": "5970000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 356,
+          "w": 0.005939,
+          "w_wei": "5930000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 622,
+          "w": 0.005777,
+          "w_wei": "5770000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 340,
+          "w": 0.005709,
+          "w_wei": "5700000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 893,
+          "w": 0.005494,
+          "w_wei": "5490000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 322,
+          "w": 0.004906,
+          "w_wei": "4900000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 483,
+          "w": 0.004714,
+          "w_wei": "4710000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 538,
+          "w": 0.00449,
+          "w_wei": "4490000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 1,
+          "w": 0.004438,
+          "w_wei": "4430000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 369,
+          "w": 0.0044,
+          "w_wei": "4400000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 327,
+          "w": 0.004243,
+          "w_wei": "4240000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 390,
+          "w": 0.004146,
+          "w_wei": "4140000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 371,
+          "w": 0.004137,
+          "w_wei": "4130000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 374,
+          "w": 0.003854,
+          "w_wei": "3850000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 346,
+          "w": 0.003826,
+          "w_wei": "3820000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 427,
+          "w": 0.003667,
+          "w_wei": "3660000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 363,
+          "w": 0.00359,
+          "w_wei": "3590000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 522,
+          "w": 0.003539,
+          "w_wei": "3530000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 446,
+          "w": 0.003514,
+          "w_wei": "3510000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 142,
+          "w": 0.003406,
+          "w_wei": "3400000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 445,
+          "w": 0.003314,
+          "w_wei": "3310000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 385,
+          "w": 0.003244,
+          "w_wei": "3240000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 341,
+          "w": 0.003177,
+          "w_wei": "3170000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 292,
+          "w": 0.002856,
+          "w_wei": "2850000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 900,
+          "w": 0.002835,
+          "w_wei": "2830000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 370,
+          "w": 0.002575,
+          "w_wei": "2570000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 105,
+          "w": 0.002304,
+          "w_wei": "2300000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 350,
+          "w": 0.002249,
+          "w_wei": "2240000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 95,
+          "w": 0.002067,
+          "w_wei": "2060000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 180,
+          "w": 0.001983,
+          "w_wei": "1980000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 112,
+          "w": 0.001773,
+          "w_wei": "1770000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 227,
+          "w": 0.001691,
+          "w_wei": "1690000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 138,
+          "w": 0.001625,
+          "w_wei": "1620000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 489,
+          "w": 0.001609,
+          "w_wei": "1600000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 589,
+          "w": 0.001585,
+          "w_wei": "1580000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 418,
+          "w": 0.001304,
+          "w_wei": "1300000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 628,
+          "w": 0.001301,
+          "w_wei": "1300000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 411,
+          "w": 0.001215,
+          "w_wei": "1210000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 793,
+          "w": 0.001098,
+          "w_wei": "1090000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 438,
+          "w": 0.00108,
+          "w_wei": "1080000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 322,
+          "w": 0.001052,
+          "w_wei": "1050000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 571,
+          "w": 0.000898,
+          "w_wei": "890000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 353,
+          "w": 0.000829,
+          "w_wei": "820000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xdd974d5c2e2928dea5f71b9825b8b646686bd200",
+          "ai": 142,
+          "w": 0.000717,
+          "w_wei": "710000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 235,
+          "w": 0.000644,
+          "w_wei": "640000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 350,
+          "w": 0.000625,
+          "w_wei": "620000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 299,
+          "w": 0.000518,
+          "w_wei": "510000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 196,
+          "w": 0.000469,
+          "w_wei": "460000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 615,
+          "w": 0.000442,
+          "w_wei": "440000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 515,
+          "w": 0.00041,
+          "w_wei": "410000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 389,
+          "w": 0.000368,
+          "w_wei": "360000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 481,
+          "w": 0.000349,
+          "w_wei": "340000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 38,
+          "w": 0.000326,
+          "w_wei": "320000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 546,
+          "w": 0.000304,
+          "w_wei": "300000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 136,
+          "w": 0.000298,
+          "w_wei": "290000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 369,
+          "w": 0.000279,
+          "w_wei": "270000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 478,
+          "w": 0.00019,
+          "w_wei": "190000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 426,
+          "w": 0.000145,
+          "w_wei": "140000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 110,
+          "w": 0.000123,
+          "w_wei": "120000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 598,
+          "w": 0.000117,
+          "w_wei": "110000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 379,
+          "w": 0.000106,
+          "w_wei": "100000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 435,
+          "w": 9.8e-05,
+          "w_wei": "98000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 628,
+          "w": 9.3e-05,
+          "w_wei": "93000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 226,
+          "w": 3.6e-05,
+          "w_wei": "36000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 548,
+          "w": 5e-06,
+          "w_wei": "5000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 359,
+          "w": 1e-06,
+          "w_wei": "1000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 301,
+          "w": 0.081885,
+          "w_wei": "81880000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 473,
+          "w": 0.080737,
+          "w_wei": "80730000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 589,
+          "w": 0.080653,
+          "w_wei": "80650000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 417,
+          "w": 0.078304,
+          "w_wei": "78300000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xdd974d5c2e2928dea5f71b9825b8b646686bd200",
+          "ai": 184,
+          "w": 0.075797,
+          "w_wei": "75790000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 401,
+          "w": 0.053357,
+          "w_wei": "53350000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 220,
+          "w": 0.050705,
+          "w_wei": "50700000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 383,
+          "w": 0.046883,
+          "w_wei": "46880000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 358,
+          "w": 0.045814,
+          "w_wei": "45810000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 309,
+          "w": 0.043266,
+          "w_wei": "43260000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 410,
+          "w": 0.039797,
+          "w_wei": "39790000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xdd974d5c2e2928dea5f71b9825b8b646686bd200",
+          "ai": 173,
+          "w": 0.029326,
+          "w_wei": "29320000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 415,
+          "w": 0.026373,
+          "w_wei": "26370000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 315,
+          "w": 0.026023,
+          "w_wei": "26020000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 411,
+          "w": 0.025977,
+          "w_wei": "25970000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 129,
+          "w": 0.025885,
+          "w_wei": "25880000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xdd974d5c2e2928dea5f71b9825b8b646686bd200",
+          "ai": 31,
+          "w": 0.024485,
+          "w_wei": "24480000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 490,
+          "w": 0.02288,
+          "w_wei": "22880000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 303,
+          "w": 0.022576,
+          "w_wei": "22570000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 450,
+          "w": 0.020434,
+          "w_wei": "20430000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 443,
+          "w": 0.019759,
+          "w_wei": "19750000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 499,
+          "w": 0.019358,
+          "w_wei": "19350000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xdd974d5c2e2928dea5f71b9825b8b646686bd200",
+          "ai": 169,
+          "w": 0.01901,
+          "w_wei": "19010000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 17,
+          "w": 0.017607,
+          "w_wei": "17600000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 462,
+          "w": 0.017518,
+          "w_wei": "17510000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 281,
+          "w": 0.016909,
+          "w_wei": "16900000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 404,
+          "w": 0.015418,
+          "w_wei": "15410000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 416,
+          "w": 0.013874,
+          "w_wei": "13870000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 8,
+          "w": 0.013708,
+          "w_wei": "13700000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 434,
+          "w": 0.013071,
+          "w_wei": "13070000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 678,
+          "w": 0.010398,
+          "w_wei": "10390000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 282,
+          "w": 0.009735,
+          "w_wei": "9730000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 393,
+          "w": 0.009039,
+          "w_wei": "9030000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 407,
+          "w": 0.007175,
+          "w_wei": "7170000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 359,
+          "w": 0.00691,
+          "w_wei": "6910000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 387,
+          "w": 0.006766,
+          "w_wei": "6760000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 270,
+          "w": 0.006336,
+          "w_wei": "6330000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 786,
+          "w": 0.005985,
+          "w_wei": "5980000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 432,
+          "w": 0.005977,
+          "w_wei": "5970000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 356,
+          "w": 0.005939,
+          "w_wei": "5930000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 622,
+          "w": 0.005777,
+          "w_wei": "5770000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 340,
+          "w": 0.005709,
+          "w_wei": "5700000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 893,
+          "w": 0.005494,
+          "w_wei": "5490000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 322,
+          "w": 0.004906,
+          "w_wei": "4900000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 483,
+          "w": 0.004714,
+          "w_wei": "4710000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 538,
+          "w": 0.00449,
+          "w_wei": "4490000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 1,
+          "w": 0.004438,
+          "w_wei": "4430000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 369,
+          "w": 0.0044,
+          "w_wei": "4400000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 327,
+          "w": 0.004243,
+          "w_wei": "4240000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 390,
+          "w": 0.004146,
+          "w_wei": "4140000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 371,
+          "w": 0.004137,
+          "w_wei": "4130000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 374,
+          "w": 0.003854,
+          "w_wei": "3850000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 346,
+          "w": 0.003826,
+          "w_wei": "3820000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 427,
+          "w": 0.003667,
+          "w_wei": "3660000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 363,
+          "w": 0.00359,
+          "w_wei": "3590000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 522,
+          "w": 0.003539,
+          "w_wei": "3530000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 446,
+          "w": 0.003514,
+          "w_wei": "3510000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 142,
+          "w": 0.003406,
+          "w_wei": "3400000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 445,
+          "w": 0.003314,
+          "w_wei": "3310000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 385,
+          "w": 0.003244,
+          "w_wei": "3240000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 341,
+          "w": 0.003177,
+          "w_wei": "3170000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 292,
+          "w": 0.002856,
+          "w_wei": "2850000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 900,
+          "w": 0.002835,
+          "w_wei": "2830000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 370,
+          "w": 0.002575,
+          "w_wei": "2570000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 105,
+          "w": 0.002304,
+          "w_wei": "2300000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 350,
+          "w": 0.002249,
+          "w_wei": "2240000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 95,
+          "w": 0.002067,
+          "w_wei": "2060000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 180,
+          "w": 0.001983,
+          "w_wei": "1980000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 112,
+          "w": 0.001773,
+          "w_wei": "1770000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 227,
+          "w": 0.001691,
+          "w_wei": "1690000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 138,
+          "w": 0.001625,
+          "w_wei": "1620000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 489,
+          "w": 0.001609,
+          "w_wei": "1600000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 589,
+          "w": 0.001585,
+          "w_wei": "1580000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 418,
+          "w": 0.001304,
+          "w_wei": "1300000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 628,
+          "w": 0.001301,
+          "w_wei": "1300000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 411,
+          "w": 0.001215,
+          "w_wei": "1210000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 793,
+          "w": 0.001098,
+          "w_wei": "1090000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 438,
+          "w": 0.00108,
+          "w_wei": "1080000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 322,
+          "w": 0.001052,
+          "w_wei": "1050000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 571,
+          "w": 0.000898,
+          "w_wei": "890000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 353,
+          "w": 0.000829,
+          "w_wei": "820000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xdd974d5c2e2928dea5f71b9825b8b646686bd200",
+          "ai": 142,
+          "w": 0.000717,
+          "w_wei": "710000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 235,
+          "w": 0.000644,
+          "w_wei": "640000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 350,
+          "w": 0.000625,
+          "w_wei": "620000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 299,
+          "w": 0.000518,
+          "w_wei": "510000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 196,
+          "w": 0.000469,
+          "w_wei": "460000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 615,
+          "w": 0.000442,
+          "w_wei": "440000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 515,
+          "w": 0.00041,
+          "w_wei": "410000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 389,
+          "w": 0.000368,
+          "w_wei": "360000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 481,
+          "w": 0.000349,
+          "w_wei": "340000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 38,
+          "w": 0.000326,
+          "w_wei": "320000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 546,
+          "w": 0.000304,
+          "w_wei": "300000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 136,
+          "w": 0.000298,
+          "w_wei": "290000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 369,
+          "w": 0.000279,
+          "w_wei": "270000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 478,
+          "w": 0.00019,
+          "w_wei": "190000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 426,
+          "w": 0.000145,
+          "w_wei": "140000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 110,
+          "w": 0.000123,
+          "w_wei": "120000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 598,
+          "w": 0.000117,
+          "w_wei": "110000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 379,
+          "w": 0.000106,
+          "w_wei": "100000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 435,
+          "w": 9.8e-05,
+          "w_wei": "98000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 628,
+          "w": 9.3e-05,
+          "w_wei": "93000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 226,
+          "w": 3.6e-05,
+          "w_wei": "36000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 548,
+          "w": 5e-06,
+          "w_wei": "5000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 359,
+          "w": 1e-06,
+          "w_wei": "1000000000000"
+        }
+      ]
+    },
+    {
+      "address": "0x1fe29c3ce2f6f7d57136b95c4083e515bf155eb5",
+      "balance_wei": "1186161746257000000",
+      "balance_eth": 1.18616175,
+      "rank": 13,
+      "weth_direct": 1.18616175,
+      "weth_direct_wei": "1186161746257375716"
+    },
+    {
+      "address": "0x000000001e29fcd9b1469a7954dc65ff254fffc0",
+      "balance_wei": "1073636000000000000",
+      "balance_eth": 1.073636,
+      "rank": 14,
+      "positions": [
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2",
+          "ai": 239,
+          "w": 0.283657,
+          "w_wei": "283650000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 206,
+          "w": 0.205033,
+          "w_wei": "205030000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 245,
+          "w": 0.045917,
+          "w_wei": "45910000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 311,
+          "w": 0.002211,
+          "w_wei": "2210000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2",
+          "ai": 239,
+          "w": 0.283657,
+          "w_wei": "283650000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "ai": 206,
+          "w": 0.205033,
+          "w_wei": "205030000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 245,
+          "w": 0.045917,
+          "w_wei": "45910000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 311,
+          "w": 0.002211,
+          "w_wei": "2210000000000000"
+        }
+      ]
+    },
+    {
+      "address": "0x6260204b5714c692804d1c71f325fdb0e184339d",
+      "balance_wei": "510000000000000000",
+      "balance_eth": 0.51,
+      "rank": 15,
+      "weth_direct": 0.51,
+      "weth_direct_wei": "510000000000000000"
+    },
+    {
+      "address": "0x144ce006a426227340247c2ff6dcfd058775bd32",
+      "balance_wei": "455409725136000000",
+      "balance_eth": 0.45540973,
+      "rank": 16,
+      "positions": [
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 14,
+          "w": 0.069389,
+          "w_wei": "69380000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "ai": 84,
+          "w": 0.054518,
+          "w_wei": "54510000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "ai": 68,
+          "w": 0.018048,
+          "w_wei": "18040000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 24,
+          "w": 0.014719,
+          "w_wei": "14710000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "ai": 68,
+          "w": 0.018048,
+          "w_wei": "18040000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 24,
+          "w": 0.014719,
+          "w_wei": "14710000000000000"
+        }
+      ],
+      "weth_direct": 0.26596873,
+      "weth_direct_wei": "265968725136134646"
+    },
+    {
+      "address": "0x8ce17ff2c7376e9adfe9c63c47a801097fa6c525",
+      "balance_wei": "250000000000000000",
+      "balance_eth": 0.25,
+      "rank": 17,
+      "sai_balance": 35.79620299,
+      "sai_balance_wei": "35796202986171796962",
+      "weth_direct": 0.25,
+      "weth_direct_wei": "250000000000000000"
+    },
+    {
+      "address": "0x35c628aca882e435a5b2bbb5e5769578a690fd0f",
+      "balance_wei": "200543389902000000",
+      "balance_eth": 0.20054339,
+      "rank": 18,
+      "weth_direct": 0.20054339,
+      "weth_direct_wei": "200543389901639430"
+    },
+    {
+      "address": "0x6dd5f1bf1ffa6a3173e333c1588f4cdde8c6799e",
+      "balance_wei": "195659000000000000",
+      "balance_eth": 0.195659,
+      "rank": 19,
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0x985dd3d42de1e256d09e1c10f112bccb8015ad41",
+          "bt": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "ai": 112,
+          "w": 0.195659,
+          "w_wei": "195650000000000000"
+        }
+      ]
+    },
+    {
+      "address": "0x33329f5a360649eb1c473b998cf3b975feb109f6",
+      "balance_wei": "120000000000000000",
+      "balance_eth": 0.12,
+      "rank": 20,
+      "sai_balance": 21.39316934,
+      "sai_balance_wei": "21393169341290736417",
+      "weth_direct": 0.12,
+      "weth_direct_wei": "120000000000000000"
+    },
+    {
+      "address": "0x1fa06c90982ca2d27108ba5c533ea1647aaf02ae",
+      "balance_wei": "118598000000000000",
+      "balance_eth": 0.118598,
+      "rank": 21,
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+          "bt": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "ai": 205,
+          "w": 0.118598,
+          "w_wei": "118590000000000000"
+        }
+      ]
+    },
+    {
+      "address": "0xf43d1be79e59df4912f5274c25668e1861462aa1",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1,
+      "rank": 22,
+      "weth_direct": 0.1,
+      "weth_direct_wei": "100000000000000000"
+    },
+    {
+      "address": "0xdfbe002af52497f4812748437834e9be54bc52a2",
+      "balance_wei": "85825000000000000",
+      "balance_eth": 0.085825,
+      "rank": 23,
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+          "bt": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "ai": 248,
+          "w": 0.085825,
+          "w_wei": "85820000000000000"
+        }
+      ]
+    },
+    {
+      "address": "0x8e7c83d8a6577bbfa48493c94e7784b5b164caf0",
+      "balance_wei": "72101320349000000",
+      "balance_eth": 0.07210132,
+      "rank": 24,
+      "positions": [
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 17,
+          "w": 0.000762,
+          "w_wei": "760000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 17,
+          "w": 0.000762,
+          "w_wei": "760000000000000"
+        }
+      ],
+      "weth_direct": 0.07057732,
+      "weth_direct_wei": "70577320348963253"
+    },
+    {
+      "address": "0x635a8235189d62e9f048e246bd8a240e2a7bacbe",
+      "balance_wei": "71770723206000000",
+      "balance_eth": 0.07177072,
+      "rank": 25,
+      "weth_direct": 0.07177072,
+      "weth_direct_wei": "71770723206062630"
+    },
+    {
+      "address": "0xd5bc4a8e0704c0a76b9531318a756a9fef969f95",
+      "balance_wei": "30027102586000000",
+      "balance_eth": 0.0300271,
+      "rank": 26,
+      "weth_direct": 0.0300271,
+      "weth_direct_wei": "30027102585557402"
+    },
+    {
+      "address": "0x4defa30195094963cfac7285d8d6e6e523c7f90d",
+      "balance_wei": "27760000000000000",
+      "balance_eth": 0.02776,
+      "rank": 27,
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "bt": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "ai": 326,
+          "w": 0.02776,
+          "w_wei": "27760000000000000"
+        }
+      ]
+    },
+    {
+      "address": "0x7ccf2d36f8646a395a3af7b4087337532a03bc49",
+      "balance_wei": "23818116680000000",
+      "balance_eth": 0.02381812,
+      "rank": 28,
+      "weth_direct": 0.02381812,
+      "weth_direct_wei": "23818116679775863"
+    },
+    {
+      "address": "0xa343618637bcecb12a723c9007360c305b0507c2",
+      "balance_wei": "20000000000000000",
+      "balance_eth": 0.02,
+      "rank": 29,
+      "weth_direct": 0.02,
+      "weth_direct_wei": "20000000000000000"
+    },
+    {
+      "address": "0xa14e2e3277cca8098c3236c592eba07a54d58a3d",
+      "balance_wei": "20000000000000000",
+      "balance_eth": 0.02,
+      "rank": 30,
+      "weth_direct": 0.02,
+      "weth_direct_wei": "20000000000000000"
+    },
+    {
+      "address": "0x5aac52c0b1d1e74a3bb0d0da0c82e89637714146",
+      "balance_wei": "14038653648000000",
+      "balance_eth": 0.01403865,
+      "rank": 31,
+      "weth_direct": 0.01403865,
+      "weth_direct_wei": "14038653647976219"
+    },
+    {
+      "address": "0x65a3c844ff07c44bfef7557973f17b05d9d762e7",
+      "balance_wei": "10245546171000000",
+      "balance_eth": 0.01024555,
+      "rank": 32,
+      "positions": [
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 63,
+          "w": 0.004954,
+          "w_wei": "4950000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 63,
+          "w": 0.004954,
+          "w_wei": "4950000000000000"
+        }
+      ],
+      "weth_direct": 0.00033755,
+      "weth_direct_wei": "337546170587345"
+    },
+    {
+      "address": "0x0a342f40d456fd1aa5c1adae6e6a87eaf9d9fe90",
+      "balance_wei": "9829275659000000",
+      "balance_eth": 0.00982928,
+      "rank": 33,
+      "positions": [
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x12b19d3e2ccc14da04fae33e63652ce469b3f2fd",
+          "ai": 28,
+          "w": 0.005931,
+          "w_wei": "5930000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x12b19d3e2ccc14da04fae33e63652ce469b3f2fd",
+          "ai": 17,
+          "w": 0.00358,
+          "w_wei": "3580000000000000"
+        }
+      ],
+      "weth_direct": 0.00031828,
+      "weth_direct_wei": "318275658711192"
+    },
+    {
+      "address": "0x52df85e9de71aa1c210873bcf37ec46d36c99dc2",
+      "balance_wei": "5000000000000000",
+      "balance_eth": 0.005,
+      "rank": 34,
+      "weth_direct": 0.005,
+      "weth_direct_wei": "5000000000000000"
+    },
+    {
+      "address": "0xe2a65f52a18e848f9e2e86cbdea43469c7462744",
+      "balance_wei": "5000000000000000",
+      "balance_eth": 0.005,
+      "rank": 35,
+      "weth_direct": 0.005,
+      "weth_direct_wei": "5000000000000000"
+    },
+    {
+      "address": "0x8018280076d7fa2caa1147e441352e8a89e1ddbe",
+      "balance_wei": "4549142005000000",
+      "balance_eth": 0.00454914,
+      "rank": 36,
+      "sai_balance": 10.26511175,
+      "sai_balance_wei": "10265111754667034098",
+      "weth_direct": 0.00454914,
+      "weth_direct_wei": "4549142004675651"
+    },
+    {
+      "address": "0xa5eb6fef4ec26cc99a1c61dd892b8deee37484b5",
+      "balance_wei": "0",
+      "balance_eth": 0.0,
+      "rank": 37,
+      "sai_balance": 1500.0,
+      "sai_balance_wei": "1500000000000000000000"
+    }
+  ]
+}
