@@ -2,9 +2,9 @@
   "contract": "0xc2f44bc508b6b50047a2f3afb1984ed105070be1",
   "balance_source": "token",
   "contract_eth_balance": 27.090388,
-  "total_eth_in_balances": 27.090388,
-  "addresses_with_balance": 201,
-  "coverage_pct": 100.0,
+  "total_eth_in_balances": 26.789648,
+  "addresses_with_balance": 200,
+  "coverage_pct": 98.89,
   "scan_date": "2026-04-23 21:22:04 UTC",
   "description": "Pending WETH rewards in the X2Y2 Presale staking contract",
   "distribution": {
@@ -21,8 +21,8 @@
       "total_eth": 0.0
     },
     "0.1-1 ETH": {
-      "count": 67,
-      "total_eth": 25.864459
+      "count": 66,
+      "total_eth": 25.56372
     },
     "0.01-0.1 ETH": {
       "count": 30,
@@ -458,14 +458,6 @@
       "tokens_claimed": "3470403846153846153846",
       "reward_debt": "38647825255381002",
       "rank": 53
-    },
-    {
-      "address": "0x7d3d7e5bd56509fa5a7c6d2167a97fc172aeab15",
-      "balance_wei": "300739412697637837",
-      "balance_eth": 0.3007394126976378,
-      "tokens_claimed": "3677910256410256410256",
-      "reward_debt": "50830881681876669",
-      "rank": 54
     },
     {
       "address": "0x6e8578d20974a25b910cda74d134b1f0bc44fbbd",
@@ -1652,5 +1644,5 @@
       "rank": 202
     }
   ],
-  "last_event_refresh": "2026-05-09 10:23:10 UTC"
+  "last_event_refresh": "2026-06-08 14:23:05 UTC"
 }
