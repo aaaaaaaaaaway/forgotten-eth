@@ -2133,5 +2133,54 @@
     "balance_source": "eth",
     "category": "defi",
     "balance_file": "pledge_deposit_eth_balances.json"
+  },
+  {
+    "key": "digipulse_token_sale",
+    "name": "DigiPulse (DGT) Token Sale",
+    "contract": "0x9aca6abfe63a5ae0dc6258cefb65207ec990aa4d",
+    "balance_source": "token",
+    "category": "ico",
+    "balance_file": "digipulse_token_sale_eth_balances.json"
+  },
+  {
+    "key": "directcrypt_presale",
+    "name": "DirectCrypt Token Presale",
+    "contract": "0x12d5b7c26dd8dc6e2f71f5bf240d5e76452b2fe5",
+    "balance_source": "token",
+    "category": "ico",
+    "balance_file": "directcrypt_presale_eth_balances.json"
+  },
+  {
+    "key": "qcotoken_ico",
+    "name": "QCOToken (Quantum1Net) Sale",
+    "contract": "0x3a8a97123bccd826228e5eb4144b48cce169517b",
+    "balance_source": "token",
+    "category": "ico",
+    "balance_file": "qcotoken_ico_eth_balances.json"
+  },
+  {
+    "key": "hodl_ethereum",
+    "name": "hodlEthereum",
+    "contract": "0x1bb28e79f2482df6bf60efc7a33365703bcf1536",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "hodl_ethereum_eth_balances.json"
+  },
+  {
+    "key": "blocklancer_ico",
+    "name": "Blocklancer (LNC) Token Sale",
+    "contract": "0x9ea80e204045329ba752d03c395f82a12799f13d",
+    "balance_source": "token",
+    "category": "ico",
+    "balance_file": "blocklancer_ico_eth_balances.json"
+  },
+  {
+    "key": "ztcrowdsale",
+    "name": "ZTCrowdsale (ZeroTraffic)",
+    "contract": "0xaf7aea249098f2c2f50cc11d4000ccf798194373",
+    "balance_source": "token",
+    "category": "ico",
+    "balance_file": "ztcrowdsale_eth_balances.json",
+    "multi_step": true
   }
 ]

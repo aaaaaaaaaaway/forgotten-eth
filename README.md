@@ -79,6 +79,7 @@ Full list in [`data/protocols.json`](data/protocols.json).
 
 | Date | Protocol | ETH | Addresses | Notes |
 |------|----------|-----|-----------|-------|
+| Jun 10 | Failed-ICO refund vaults (×6) | 262 | 209 | DigiPulse, DirectCrypt, QCOToken, hodlEthereum, Blocklancer, ZTCrowdsale. Per-user refund of own deposit (failed soft caps / aborted sales / time-lock vault). BigQuery discovery beyond the existing set; each fork-verified + safety-audited; holder lists filtered to self-claimable EOAs (exchange addresses excluded). ZTCrowdsale is a permissionless 2-step (endCrowdsale → refund). Community PR [@webmixgamer]. |
 | May 2 | Score70 recovery batch | 1,510 | 10,099 | MCDEX Perpetual, Quantfury QDT, Monolith TKN Holder, EKS, TweetMarket, Treasure, Celer EthPool, ETH Staking Rewards, Meme Limited Collections. Dune enumeration + local reth verification; contract-holder rows with reverting withdrawal calls excluded. |
 | Apr 15 | Celer Payment Channels | 151 | 1,551 | Unilateral intendWithdraw → 10k-block window → confirmWithdraw (OSP slice excluded) |
 | Apr 13 | GavCoin | 47 | 115 | 2015 bonding-curve ICO, per-user refund |

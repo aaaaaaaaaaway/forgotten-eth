@@ -1,0 +1,23 @@
+{
+  "contract": "0xaf7aea249098f2c2f50cc11d4000ccf798194373",
+  "balance_source": "token",
+  "contract_eth_balance": 21.17467,
+  "total_eth_in_balances": 21.17467,
+  "addresses_with_balance": 11,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-10 00:00:00 UTC",
+  "description": "Failed 2017 ZeroTraffic crowdsale (raised ~21 ETH vs a 20,000 ETH minimum). Permissionless 2-step: anyone calls endCrowdsale() (now past end, no owner gate) to open the Ended stage, then each contributor refund()s their own balances[] deposit. withdraw() needs raised>=min (never) -- company cannot drain. Per-owner amounts read from private storage slot 23; pre-ICO deposits were auto-forwarded out and excluded. 11 self-claimable contributors are unclaimed (contracts and exchange-deposit addresses excluded).",
+  "balances": {
+    "0xfa1abcce17531a2e75e176c5e583fec226c79206": 12.5,
+    "0xacce2fe2e119959849ba5680b00f50251d66e0d1": 5.0,
+    "0xaaf1c2498e36d02ab2bbc32f90fb8cfced8ee63a": 1.0,
+    "0xf791134fd5df3672bf42712de661aef43ead19bd": 1.0,
+    "0x1c1a71d6f11992d1d4094b44224d8b0ace8552af": 0.6,
+    "0x76028214bfed438812b1640f282b718720a3156a": 0.598,
+    "0x6eb792b869ec440585b2ff8b1ca2c29fe9363ff0": 0.2,
+    "0x7c96b8862f8e2ceec91f512274207797a8155903": 0.10267,
+    "0xb12162eb18236ccf7727b11a1ebe77a024f3fe33": 0.094,
+    "0xd4b81a36d26f4ecc7e5155173654343915512e7d": 0.04,
+    "0xb9334eadb857499b9f2483065beeffd7b3377e32": 0.04
+  }
+}
