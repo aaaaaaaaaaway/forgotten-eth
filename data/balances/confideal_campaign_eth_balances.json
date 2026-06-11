@@ -1,0 +1,56 @@
+{
+  "contract": "0x17681500757628c7aa56d7e6546e119f94dd9479",
+  "balance_source": "eth",
+  "contract_eth_balance": 8.625,
+  "total_eth_in_balances": 8.2,
+  "addresses_with_balance": 4,
+  "coverage_pct": 95.07,
+  "scan_date": "2026-06-11 00:00:00 UTC",
+  "description": "A Dec-2017 Confideal crowdsale (Campaign) that raised 9.6141 ETH against a 1,000 ETH funding threshold, so stage() is permanently Stage.Failure. withdrawRefund() (nonReentrant) returns each contributor their own contributions[] deposit. The beneficiary payout withdrawPayout() needs Stage.Success (unreachable) and reclaimEther() reverts, so funds cannot be drained.",
+  "distribution": {
+    "1-10 ETH": {
+      "count": 3,
+      "total_eth": 8.0
+    },
+    "0.1-1 ETH": {
+      "count": 1,
+      "total_eth": 0.2
+    }
+  },
+  "name": "Confideal Campaign",
+  "claim_flow": "withdrawRefund()",
+  "refund_selector": "0x110f8874",
+  "balance_selector": "0x42e94c90",
+  "state_checks": [
+    "stage() == 3 (Stage.Failure)"
+  ],
+  "total_addresses_scanned": 5,
+  "residual_unattributed_eth": 0.425,
+  "residual_note": "Excess over the sum of self-claimable EOA ledgers is held by contract / exchange-deposit addresses that are not simple self-claimable owners; excluded from the holder list above.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0xa0b8b814f2ab93f63a42e37ddcab994b5b21a29b",
+      "balance_wei": "3000000000000000000",
+      "balance_eth": 3.0
+    },
+    {
+      "rank": 2,
+      "address": "0xa64087caef3451e2ef8d96735ba1408e77812033",
+      "balance_wei": "3000000000000000000",
+      "balance_eth": 3.0
+    },
+    {
+      "rank": 3,
+      "address": "0xc4a6c9020257a594565b5325a935215b20eb1357",
+      "balance_wei": "2000000000000000000",
+      "balance_eth": 2.0
+    },
+    {
+      "rank": 4,
+      "address": "0x9a015e1f453ccd7c64518f496ad964e395c60234",
+      "balance_wei": "200000000000000000",
+      "balance_eth": 0.2
+    }
+  ]
+}

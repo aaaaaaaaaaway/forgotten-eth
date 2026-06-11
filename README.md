@@ -79,6 +79,7 @@ Full list in [`data/protocols.json`](data/protocols.json).
 
 | Date | Protocol | ETH | Addresses | Notes |
 |------|----------|-----|-----------|-------|
+| Jun 11 | Failed-ICO refund vaults (x13) | 57 | 87 | Abyss DAICO, Confideal, Start Mining (STM), I2Presale, Bayesin (BYS), Mahala Coin (MHC), Crowdsale x3, CrowdsaleWatch, SingularDTV Launch, Reservation2, Gateway. Per-user refund of own deposit (failed soft caps / aborted sales). 1-10 ETH BigQuery discovery sweep beyond the existing set; each fork-verified (Foundry mainnet fork, 39/39 tests) + safety-audited; holder lists filtered to self-claimable EOAs (Binance + service/contract addresses excluded). Community PR [@webmixgamer]. |
 | May 2 | Score70 recovery batch | 1,510 | 10,099 | MCDEX Perpetual, Quantfury QDT, Monolith TKN Holder, EKS, TweetMarket, Treasure, Celer EthPool, ETH Staking Rewards, Meme Limited Collections. Dune enumeration + local reth verification; contract-holder rows with reverting withdrawal calls excluded. |
 | Apr 15 | Celer Payment Channels | 151 | 1,551 | Unilateral intendWithdraw → 10k-block window → confirmWithdraw (OSP slice excluded) |
 | Apr 13 | GavCoin | 47 | 115 | 2015 bonding-curve ICO, per-user refund |

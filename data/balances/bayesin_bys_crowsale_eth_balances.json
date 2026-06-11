@@ -1,0 +1,63 @@
+{
+  "contract": "0xe8b1b40f2d307bce891833f46eef1f69560e6926",
+  "balance_source": "eth",
+  "contract_eth_balance": 5.4279,
+  "total_eth_in_balances": 5.4279,
+  "addresses_with_balance": 5,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-11 00:00:00 UTC",
+  "description": "A failed BYS crowdsale past its deadline (freeCrawDeadline 1536681600, Sep-2018) with the max goal unmet, so safeWithdrawal() (in the !goalReached branch) returns each contributor their own fundBalance[] deposit. The owner payout branch needs goalReached (never), so the stuck ETH is refund-only.",
+  "distribution": {
+    "1-10 ETH": {
+      "count": 1,
+      "total_eth": 3.0
+    },
+    "0.1-1 ETH": {
+      "count": 4,
+      "total_eth": 2.4279
+    }
+  },
+  "name": "Bayesin (BYS) CrowSale",
+  "claim_flow": "safeWithdrawal()",
+  "refund_selector": "0xfd6b7ef8",
+  "balance_selector": "0x0ad5a865",
+  "state_checks": [
+    "now >= freeCrawDeadline()",
+    "amountRaised < maxGoal"
+  ],
+  "total_addresses_scanned": 5,
+  "residual_unattributed_eth": 0.0,
+  "residual_note": "Excess over the sum of self-claimable EOA ledgers is held by contract / exchange-deposit addresses that are not simple self-claimable owners; excluded from the holder list above.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0x33a43d70127caae87cc6b14ffb2fda99d2c8299c",
+      "balance_wei": "3000000000000000000",
+      "balance_eth": 3.0
+    },
+    {
+      "rank": 2,
+      "address": "0x6170cf7272d897801fc174529f3c2537c672ee69",
+      "balance_wei": "997900000000000000",
+      "balance_eth": 0.9979
+    },
+    {
+      "rank": 3,
+      "address": "0x15933a3325220068a340a6e8de34ea510e620de3",
+      "balance_wei": "880000000000000000",
+      "balance_eth": 0.88
+    },
+    {
+      "rank": 4,
+      "address": "0x164dd67a6095af86870ceeab541cab140fcb0115",
+      "balance_wei": "450000000000000000",
+      "balance_eth": 0.45
+    },
+    {
+      "rank": 5,
+      "address": "0x1be1807e1e223700d8f6e78079259fca1f7ffdd1",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1
+    }
+  ]
+}

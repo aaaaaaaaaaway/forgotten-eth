@@ -1,0 +1,91 @@
+{
+  "contract": "0xa8df33a40fe2e3278e4d94a974f70778043fbd20",
+  "balance_source": "eth",
+  "contract_eth_balance": 5.795,
+  "total_eth_in_balances": 5.795,
+  "addresses_with_balance": 9,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-11 00:00:00 UTC",
+  "description": "A 2018 presale (I2Presale, solc 0.4.20) past its deadline (1521417823, Mar-2018) with the funding goal unmet, so the afterDeadline + goal-not-reached gate opens safeWithdrawal(), which returns each contributor their own balanceOf[] deposit. The beneficiary path requires the goal reached (never), so the owner cannot drain.",
+  "distribution": {
+    "1-10 ETH": {
+      "count": 3,
+      "total_eth": 4.46
+    },
+    "0.1-1 ETH": {
+      "count": 4,
+      "total_eth": 1.263
+    },
+    "0.01-0.1 ETH": {
+      "count": 2,
+      "total_eth": 0.072
+    }
+  },
+  "name": "I2 Presale",
+  "claim_flow": "safeWithdrawal()",
+  "refund_selector": "0xfd6b7ef8",
+  "balance_selector": "0x70a08231",
+  "state_checks": [
+    "now >= deadline()",
+    "fundingGoal not reached"
+  ],
+  "total_addresses_scanned": 9,
+  "residual_unattributed_eth": 0.0,
+  "residual_note": "Excess over the sum of self-claimable EOA ledgers is held by contract / exchange-deposit addresses that are not simple self-claimable owners; excluded from the holder list above.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0x90b3cd92f207f7a118f3e4a3ebfab248656a27de",
+      "balance_wei": "2000000000000000000",
+      "balance_eth": 2.0
+    },
+    {
+      "rank": 2,
+      "address": "0xd5b1480f142020b409eb4808af5b2fc274354119",
+      "balance_wei": "1460000000000000000",
+      "balance_eth": 1.46
+    },
+    {
+      "rank": 3,
+      "address": "0x563805c2056dd0f8daf5719a8222d935098e1848",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0
+    },
+    {
+      "rank": 4,
+      "address": "0x34f79d3072348f993ddd1dabfc1cf2b7baadd9cd",
+      "balance_wei": "421000000000000000",
+      "balance_eth": 0.421
+    },
+    {
+      "rank": 5,
+      "address": "0x979f58ec7f80eaa8ec85fea90b36bc09247442e6",
+      "balance_wei": "400000000000000000",
+      "balance_eth": 0.4
+    },
+    {
+      "rank": 6,
+      "address": "0x9cb6247bf9e22da514b1b32acae28c560c73d848",
+      "balance_wei": "300000000000000000",
+      "balance_eth": 0.3
+    },
+    {
+      "rank": 7,
+      "address": "0x46799e47592928ea6d8b30497eead7dcf7e6b2e6",
+      "balance_wei": "142000000000000000",
+      "balance_eth": 0.142
+    },
+    {
+      "rank": 8,
+      "address": "0xe60a9ab929514848d5100a67677beba09b9e0da7",
+      "balance_wei": "60000000000000000",
+      "balance_eth": 0.06
+    },
+    {
+      "rank": 9,
+      "address": "0x24676a678723c49ed3390ba315220027b1805ade",
+      "balance_wei": "12000000000000000",
+      "balance_eth": 0.012
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "contract": "0x6f303642844f734ad4176d0dfe93ef7e0776ef46",
+  "balance_source": "eth",
+  "contract_eth_balance": 2.0,
+  "total_eth_in_balances": 2.0,
+  "addresses_with_balance": 1,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-11 00:00:00 UTC",
+  "description": "An OpenZeppelin-template crowdsale (CrowdsaleWatch) where amountRaised (2.000 ETH) never reached fundingGoal, so the !fundingGoalReached branch of safeWithdrawal() returns each contributor their own balanceOf[] deposit. The owner payout branch is unreachable, so the stuck ETH is refund-only.",
+  "distribution": {
+    "1-10 ETH": {
+      "count": 1,
+      "total_eth": 2.0
+    }
+  },
+  "name": "CrowdsaleWatch",
+  "claim_flow": "safeWithdrawal()",
+  "refund_selector": "0xfd6b7ef8",
+  "balance_selector": "0x70a08231",
+  "state_checks": [
+    "amountRaised() < fundingGoal() (deadline passed)"
+  ],
+  "total_addresses_scanned": 1,
+  "residual_unattributed_eth": 0.0,
+  "residual_note": "Excess over the sum of self-claimable EOA ledgers is held by contract / exchange-deposit addresses that are not simple self-claimable owners; excluded from the holder list above.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0x287e2c76aab4720786076c3deedd7dd386092050",
+      "balance_wei": "2000000000000000000",
+      "balance_eth": 2.0
+    }
+  ]
+}

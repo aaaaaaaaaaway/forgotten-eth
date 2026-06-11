@@ -1,0 +1,88 @@
+{
+  "contract": "0x3091d37ef18cb33af72cf7ca63714733172ce724",
+  "balance_source": "eth",
+  "contract_eth_balance": 1.41257813,
+  "total_eth_in_balances": 1.40079855,
+  "addresses_with_balance": 8,
+  "coverage_pct": 99.17,
+  "scan_date": "2026-06-11 00:00:00 UTC",
+  "description": "A failed ICO (Gateway) whose refund() returns each contributor their own balances[] deposit. The owner ETH-out is gated by the unreached goal, so the owner cannot drain the stuck ETH.",
+  "distribution": {
+    "1-10 ETH": {
+      "count": 1,
+      "total_eth": 1.0
+    },
+    "0.1-1 ETH": {
+      "count": 3,
+      "total_eth": 0.32892482
+    },
+    "0.01-0.1 ETH": {
+      "count": 3,
+      "total_eth": 0.06246174
+    },
+    "<0.01 ETH": {
+      "count": 1,
+      "total_eth": 0.009412
+    }
+  },
+  "name": "Gateway ICO (0x3091d3)",
+  "claim_flow": "refund()",
+  "refund_selector": "0x590e1ae3",
+  "balance_selector": "0x27e235e3",
+  "state_checks": [
+    "failed-ICO refund gate (balance < goal after end)"
+  ],
+  "total_addresses_scanned": 8,
+  "residual_unattributed_eth": 0.01177958,
+  "residual_note": "Excess over the sum of self-claimable EOA ledgers is held by contract / exchange-deposit addresses that are not simple self-claimable owners; excluded from the holder list above.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0x3856d3d5ec20486193dd4efe6e74d9e67e4d5cc5",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0
+    },
+    {
+      "rank": 2,
+      "address": "0x5d618eb3807d7cacaeaf68627bd22c60c3c87ca5",
+      "balance_wei": "114482785340101523",
+      "balance_eth": 0.11448279
+    },
+    {
+      "rank": 3,
+      "address": "0xd89d5c6850f6b1abdeae90496373199586b0c89e",
+      "balance_wei": "113754079119000000",
+      "balance_eth": 0.11375408
+    },
+    {
+      "rank": 4,
+      "address": "0xa924e9df267343f47354b37e55b386403c169013",
+      "balance_wei": "100687950567527921",
+      "balance_eth": 0.10068795
+    },
+    {
+      "rank": 5,
+      "address": "0xdc9ea6c7a3245cf7294a06280b8e46bb4dc1f5e2",
+      "balance_wei": "32614022000000000",
+      "balance_eth": 0.03261402
+    },
+    {
+      "rank": 6,
+      "address": "0xc26afae9b3b93d5806c4b3ec6aa16b9283c7caec",
+      "balance_wei": "19847715736040610",
+      "balance_eth": 0.01984772
+    },
+    {
+      "rank": 7,
+      "address": "0x46f51bb1ec957baeb4a7bee244e697c2124d7fcf",
+      "balance_wei": "10000000000000000",
+      "balance_eth": 0.01
+    },
+    {
+      "rank": 8,
+      "address": "0xc051c98a0aed9f1257c02cb53f57a46f3dbf69c3",
+      "balance_wei": "9411999999999998",
+      "balance_eth": 0.009412
+    }
+  ]
+}

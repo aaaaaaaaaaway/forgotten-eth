@@ -1,0 +1,64 @@
+{
+  "contract": "0xc699d90671cb8373f21060592d41a7c92280adc4",
+  "balance_source": "eth",
+  "contract_eth_balance": 2.4175959,
+  "total_eth_in_balances": 2.3175959,
+  "addresses_with_balance": 6,
+  "coverage_pct": 95.86,
+  "scan_date": "2026-06-11 00:00:00 UTC",
+  "description": "A failed ICO (same softcap-miss design as Mahala): balance < softcap after endIco opens refund(), returning each contributor their own balances[] deposit. The owner payout needs softcap reached (never), so the stuck ETH is refund-only.",
+  "distribution": {
+    "0.1-1 ETH": {
+      "count": 6,
+      "total_eth": 2.3175959
+    }
+  },
+  "name": "Crowdsale (0xc699d9)",
+  "claim_flow": "refund()",
+  "refund_selector": "0x590e1ae3",
+  "balance_selector": "0x27e235e3",
+  "state_checks": [
+    "this.balance < softcap && now > endIco"
+  ],
+  "total_addresses_scanned": 7,
+  "residual_unattributed_eth": 0.1,
+  "residual_note": "Excess over the sum of self-claimable EOA ledgers is held by contract / exchange-deposit addresses that are not simple self-claimable owners; excluded from the holder list above.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0xa46e3aac59412b0e1458badeabd1061254ecefa6",
+      "balance_wei": "979000000000000000",
+      "balance_eth": 0.979
+    },
+    {
+      "rank": 2,
+      "address": "0x16ae442cb793ca94c1b1764beb7a1a5e4e0dbf19",
+      "balance_wei": "410000000000000000",
+      "balance_eth": 0.41
+    },
+    {
+      "rank": 3,
+      "address": "0x68bb8089fbf5bfc17495721070a2716e582e620b",
+      "balance_wei": "300000000000000000",
+      "balance_eth": 0.3
+    },
+    {
+      "rank": 4,
+      "address": "0x59269d50b9769d37f8464b11ac739cee2074bf4c",
+      "balance_wei": "254897900000000000",
+      "balance_eth": 0.2548979
+    },
+    {
+      "rank": 5,
+      "address": "0x922f5ba9782da5c94669b942babc7918e8d891cd",
+      "balance_wei": "201402445000000000",
+      "balance_eth": 0.20140245
+    },
+    {
+      "rank": 6,
+      "address": "0xe5e3e51977bdc9c2a9a2836430ff4eddf4a41cd3",
+      "balance_wei": "172295556821709923",
+      "balance_eth": 0.17229556
+    }
+  ]
+}

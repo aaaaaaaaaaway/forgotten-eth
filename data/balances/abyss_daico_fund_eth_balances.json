@@ -1,0 +1,110 @@
+{
+  "contract": "0xe4972421f88c1f47986f54cbfd2d1e2e671680ac",
+  "balance_source": "eth",
+  "contract_eth_balance": 9.89995077,
+  "total_eth_in_balances": 9.89995077,
+  "addresses_with_balance": 13,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-11 00:00:00 UTC",
+  "description": "The 2018 Abyss (ABYSS) DAICO raised ~803 ETH against an ~11,538 ETH soft cap (~93% short). The crowdsale called enableCrowdsaleRefund(), latching the Fund into state CrowdsaleRefund (==1, on-chain now) with no code path out. refundCrowdsaleContributor() returns each contributor their own contributions[] deposit (zeroed before send). The team withdraw paths need the unreachable TeamWithdraw(2) state and the pooled refundTokenHolder() needs the unreachable Refund(3), so the owner cannot drain. 269 contributors already refunded; the balance reconciles to the wei across the unrefunded contributors.",
+  "distribution": {
+    "1-10 ETH": {
+      "count": 6,
+      "total_eth": 8.0618
+    },
+    "0.1-1 ETH": {
+      "count": 7,
+      "total_eth": 1.83815077
+    }
+  },
+  "name": "Abyss DAICO Fund (PollManagedFund)",
+  "claim_flow": "refundCrowdsaleContributor()",
+  "refund_selector": "0xff01ffa8",
+  "balance_selector": "0x42e94c90",
+  "state_checks": [
+    "state() == 1 (FundState.CrowdsaleRefund)"
+  ],
+  "total_addresses_scanned": 13,
+  "residual_unattributed_eth": 0.0,
+  "residual_note": "Excess over the sum of self-claimable EOA ledgers is held by contract / exchange-deposit addresses that are not simple self-claimable owners; excluded from the holder list above.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0x14ff306bc291f53001dbfbc0584cbf117799ff12",
+      "balance_wei": "2800000000000000000",
+      "balance_eth": 2.8
+    },
+    {
+      "rank": 2,
+      "address": "0x8884706b9d6e0b8a59b7b658f9bd1d094c2d5cae",
+      "balance_wei": "1261800000000000000",
+      "balance_eth": 1.2618
+    },
+    {
+      "rank": 3,
+      "address": "0x745c28e5f72700cfea5e91882a83ae928bcc3b99",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0
+    },
+    {
+      "rank": 4,
+      "address": "0x921c1caaab432e83f61eebc0855d7c120e95911b",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0
+    },
+    {
+      "rank": 5,
+      "address": "0xabeb030b48745fa8c8acac279135851b9649195c",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0
+    },
+    {
+      "rank": 6,
+      "address": "0xcbbfda3c747e51babdec86bed0e277fec03f6cca",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0
+    },
+    {
+      "rank": 7,
+      "address": "0xac21b53ebec5e67fc7321c25a529c267e86758d8",
+      "balance_wei": "423203524000000000",
+      "balance_eth": 0.42320352
+    },
+    {
+      "rank": 8,
+      "address": "0x845dbb80bd79d1193c4d3f620dcbf937f54b8064",
+      "balance_wei": "381151890000000000",
+      "balance_eth": 0.38115189
+    },
+    {
+      "rank": 9,
+      "address": "0x17b3793de7f8239a7bfc0d2b2047933e8f2b6e3f",
+      "balance_wei": "233795360000000000",
+      "balance_eth": 0.23379536
+    },
+    {
+      "rank": 10,
+      "address": "0x792de3f7a7c4b71ca6786f193a98a1516ba58488",
+      "balance_wei": "200000000000000000",
+      "balance_eth": 0.2
+    },
+    {
+      "rank": 11,
+      "address": "0x8f41122ff5874620141a8952156c9dcd3d0fe930",
+      "balance_wei": "200000000000000000",
+      "balance_eth": 0.2
+    },
+    {
+      "rank": 12,
+      "address": "0xa8a34ca7f1ae812a6a5cb02f90d89f6429b8cca8",
+      "balance_wei": "200000000000000000",
+      "balance_eth": 0.2
+    },
+    {
+      "rank": 13,
+      "address": "0xaa1de66335ed5360b5ed91f6cf8d185d3342511f",
+      "balance_wei": "200000000000000000",
+      "balance_eth": 0.2
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "contract": "0xe8da050c3140183d4f5f01e048ac136e2da5253f",
+  "balance_source": "eth",
+  "contract_eth_balance": 5.98113793,
+  "total_eth_in_balances": 5.98113793,
+  "addresses_with_balance": 16,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-11 00:00:00 UTC",
+  "description": "A failed STM token sale: minting was finished one-way (getFinishStatus()==true) without reaching the token goal, opening manualRefund(), which returns each investor their own recorded ETH (getInvestorsETH(address)). The owner payout path is gated by canMint / the unreached goal and reverts, so the stuck ETH is refund-only.",
+  "distribution": {
+    "1-10 ETH": {
+      "count": 1,
+      "total_eth": 3.02
+    },
+    "0.1-1 ETH": {
+      "count": 6,
+      "total_eth": 2.21575862
+    },
+    "0.01-0.1 ETH": {
+      "count": 9,
+      "total_eth": 0.74537931
+    }
+  },
+  "name": "Start Mining (STM) Token Sale",
+  "claim_flow": "manualRefund()",
+  "refund_selector": "0x14c7bddf",
+  "balance_selector": "0x0c8a611f",
+  "state_checks": [
+    "getFinishStatus() == true (minting finished, token goal unmet)"
+  ],
+  "total_addresses_scanned": 16,
+  "residual_unattributed_eth": 0.0,
+  "residual_note": "Excess over the sum of self-claimable EOA ledgers is held by contract / exchange-deposit addresses that are not simple self-claimable owners; excluded from the holder list above.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0x7cd3ebe1e2e11f8cfdd07326bc700d52ee5aee89",
+      "balance_wei": "3019999999999969800",
+      "balance_eth": 3.02
+    },
+    {
+      "rank": 2,
+      "address": "0x15f715811025b9dfccba1690b519f11aed12997a",
+      "balance_wei": "684482758620676650",
+      "balance_eth": 0.68448276
+    },
+    {
+      "rank": 3,
+      "address": "0x5fada93672a20671cef6e8b839f0869fbd397ad7",
+      "balance_wei": "548275862068955100",
+      "balance_eth": 0.54827586
+    },
+    {
+      "rank": 4,
+      "address": "0x7dbcad020bcacd012605ef282082c1404e2b29b0",
+      "balance_wei": "399999999999992400",
+      "balance_eth": 0.4
+    },
+    {
+      "rank": 5,
+      "address": "0x56fb84e7c768dfed90ce5012be7a8a84edf6674a",
+      "balance_wei": "202999999999996143",
+      "balance_eth": 0.203
+    },
+    {
+      "rank": 6,
+      "address": "0xfda82d198990cabdeb0743feb75023b1071b3ff7",
+      "balance_wei": "199999999999996200",
+      "balance_eth": 0.2
+    },
+    {
+      "rank": 7,
+      "address": "0xd641c1edd60534a3743daad6f795a00dc4802b08",
+      "balance_wei": "179999999999998200",
+      "balance_eth": 0.18
+    },
+    {
+      "rank": 8,
+      "address": "0x3c6211a64508c45f5cd9fee363610d9dcb6000ed",
+      "balance_wei": "99999999999999000",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 9,
+      "address": "0x273e8d3411fbba5be32b20b1fa975607888f5dcb",
+      "balance_wei": "99999999999999000",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 10,
+      "address": "0xbdf9b5bda53c709cce44a073067b3e26afe1d816",
+      "balance_wei": "99999999999998100",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 11,
+      "address": "0xfb9f01f2f8c0d920b88e7d3c171a569a6e07a9f5",
+      "balance_wei": "99999999999998100",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 12,
+      "address": "0xc5de97de45cf59eaa97d89c68fac549167b85d28",
+      "balance_wei": "99999999999998100",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 13,
+      "address": "0x3471bb1a8a0442332a19156e610f1a8f5cfde4b0",
+      "balance_wei": "90379310344825869",
+      "balance_eth": 0.09037931
+    },
+    {
+      "rank": 14,
+      "address": "0x0a481a67cb605cdc9e58b489e296d55ad841eb18",
+      "balance_wei": "59999999999998860",
+      "balance_eth": 0.06
+    },
+    {
+      "rank": 15,
+      "address": "0x9f383498fe44e838a1ac537b0f13047ac54f91a3",
+      "balance_wei": "49999999999999050",
+      "balance_eth": 0.05
+    },
+    {
+      "rank": 16,
+      "address": "0x252c9a3d88da5f70905a161a4c85e1b417e808a7",
+      "balance_wei": "44999999999999550",
+      "balance_eth": 0.045
+    }
+  ]
+}
