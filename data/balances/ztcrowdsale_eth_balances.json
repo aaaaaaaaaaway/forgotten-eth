@@ -1,0 +1,107 @@
+{
+  "contract": "0xaf7AEA249098F2C2f50CC11d4000cCf798194373",
+  "balance_source": "eth",
+  "contract_eth_balance": 21.17467,
+  "total_eth_in_balances": 21.17467,
+  "addresses_with_balance": 11,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-11 04:14:25 UTC",
+  "description": "Failed-ICO direct refund ledger \u2014 ZeroTraffic Crowdsale (ZTT). ETH is held in the sale contract and the claim flow is endCrowdsale() then refund().",
+  "distribution": {
+    "10-100 ETH": {
+      "count": 1,
+      "total_eth": 12.5
+    },
+    "1-10 ETH": {
+      "count": 3,
+      "total_eth": 7.0
+    },
+    "0.1-1 ETH": {
+      "count": 4,
+      "total_eth": 1.50067
+    },
+    "0.01-0.1 ETH": {
+      "count": 3,
+      "total_eth": 0.174
+    }
+  },
+  "name": "ZeroTraffic Crowdsale (ZTT)",
+  "claim_flow": "endCrowdsale() then refund()",
+  "refund_selector": "0x590e1ae3",
+  "balance_selector": "0x70a08231",
+  "state_checks": [
+    "isCrowdsaleFullfilled() == false",
+    "endCrowdsale() is permissionless prerequisite"
+  ],
+  "total_addresses_scanned": 11,
+  "residual_unattributed_eth": 0.0,
+  "residual_note": "Positive live balance minus positive refund ledgers; not counted as self-claimable unless a matching per-user getter returns a positive balance.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0xfa1abcce17531a2e75e176c5e583fec226c79206",
+      "balance_wei": "12500000000000000000",
+      "balance_eth": 12.5
+    },
+    {
+      "rank": 2,
+      "address": "0xacce2fe2e119959849ba5680b00f50251d66e0d1",
+      "balance_wei": "5000000000000000000",
+      "balance_eth": 5.0
+    },
+    {
+      "rank": 3,
+      "address": "0xaaf1c2498e36d02ab2bbc32f90fb8cfced8ee63a",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0
+    },
+    {
+      "rank": 4,
+      "address": "0xf791134fd5df3672bf42712de661aef43ead19bd",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0
+    },
+    {
+      "rank": 5,
+      "address": "0x1c1a71d6f11992d1d4094b44224d8b0ace8552af",
+      "balance_wei": "600000000000000000",
+      "balance_eth": 0.6
+    },
+    {
+      "rank": 6,
+      "address": "0x76028214bfed438812b1640f282b718720a3156a",
+      "balance_wei": "598000000000000000",
+      "balance_eth": 0.598
+    },
+    {
+      "rank": 7,
+      "address": "0x6eb792b869ec440585b2ff8b1ca2c29fe9363ff0",
+      "balance_wei": "200000000000000000",
+      "balance_eth": 0.2
+    },
+    {
+      "rank": 8,
+      "address": "0x7c96b8862f8e2ceec91f512274207797a8155903",
+      "balance_wei": "102670000000000000",
+      "balance_eth": 0.10267
+    },
+    {
+      "rank": 9,
+      "address": "0xb12162eb18236ccf7727b11a1ebe77a024f3fe33",
+      "balance_wei": "94000000000000000",
+      "balance_eth": 0.094
+    },
+    {
+      "rank": 10,
+      "address": "0xd4b81a36d26f4ecc7e5155173654343915512e7d",
+      "balance_wei": "40000000000000000",
+      "balance_eth": 0.04
+    },
+    {
+      "rank": 11,
+      "address": "0xb9334eadb857499b9f2483065beeffd7b3377e32",
+      "balance_wei": "40000000000000000",
+      "balance_eth": 0.04
+    }
+  ]
+}

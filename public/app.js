@@ -4462,6 +4462,93 @@ const EXCHANGES = {
   // in one tx. `groMerkleVesting` triggers the dedicated claim card; the
   // initialClaim-vs-claim() dispatch lives in groClaim(). PWRD is then
   // optionally redeemable ~1:1 to USDC via Gro's withdraw handler.
+  digipulse_token_sale: {
+    name: 'DigiPulse Token Sale (DGT)',
+    desc: 'Failed 2017 token sale with an open per-address refund ledger.',
+    color: '#f97316',
+    contract: '0x9AcA6aBFe63A5ae0Dc6258cefB65207eC990Aa4D',
+    deployed: 'September 2017',
+    balanceAbi: 'function getBalanceInEth(address) view returns (uint256)',
+    balanceArgs: (user) => [user],
+    balanceCall: 'getBalanceInEth',
+    withdrawAbi: 'function refundEther()',
+    withdrawArgs: () => [],
+    withdrawCall: 'refundEther',
+    category: 'ico',
+  },
+  directcrypt_presale: {
+    name: 'DirectCrypt Token Presale (DRCT)',
+    desc: 'Failed 2018 presale with self-paying deposited[address] refunds.',
+    color: '#06b6d4',
+    contract: '0x12D5B7c26dD8Dc6E2F71f5bf240D5e76452B2fe5',
+    deployed: 'February 2018',
+    balanceAbi: 'function deposited(address) view returns (uint256)',
+    balanceArgs: (user) => [user],
+    balanceCall: 'deposited',
+    withdrawAbi: 'function refund()',
+    withdrawArgs: () => [],
+    withdrawCall: 'refund',
+    category: 'ico',
+  },
+  qcotoken_ico: {
+    name: 'QCOToken ICO (QCO)',
+    desc: 'Aborted 2018 crowdsale with remaining ethPossibleRefunds ledger balances.',
+    color: '#8b5cf6',
+    contract: '0x3a8A97123Bccd826228e5eB4144B48cCE169517B',
+    deployed: 'April 2018',
+    balanceAbi: 'function ethPossibleRefunds(address) view returns (uint256)',
+    balanceArgs: (user) => [user],
+    balanceCall: 'ethPossibleRefunds',
+    withdrawAbi: 'function requestRefund()',
+    withdrawArgs: () => [],
+    withdrawCall: 'requestRefund',
+    category: 'ico',
+  },
+  hodl_ethereum: {
+    name: 'hodlEthereum',
+    desc: 'Unlocked 2017 time-lock with remaining hodlers[address] balances.',
+    color: '#eab308',
+    contract: '0x1Bb28E79F2482Df6bF60eFC7a33365703bCf1536',
+    deployed: 'July 2017',
+    balanceAbi: 'function hodlers(address) view returns (uint256)',
+    balanceArgs: (user) => [user],
+    balanceCall: 'hodlers',
+    withdrawAbi: 'function party()',
+    withdrawArgs: () => [],
+    withdrawCall: 'party',
+    category: 'ico',
+  },
+  blocklancer_ico: {
+    name: 'Blocklancer Token Sale (LNC)',
+    desc: 'Failed 2017 LNC crowdsale with balancesEther refunds.',
+    color: '#22c55e',
+    contract: '0x9EA80e204045329Ba752D03C395F82A12799f13d',
+    deployed: 'October 2017',
+    balanceAbi: 'function EtherBalanceOf(address) view returns (uint256)',
+    balanceArgs: (user) => [user],
+    balanceCall: 'EtherBalanceOf',
+    withdrawAbi: 'function refund()',
+    withdrawArgs: () => [],
+    withdrawCall: 'refund',
+    category: 'ico',
+  },
+  ztcrowdsale: {
+    name: 'ZeroTraffic Crowdsale (ZTT)',
+    desc: 'Failed 2017 ZTT crowdsale; requires permissionless endCrowdsale() before refund().',
+    color: '#ef4444',
+    contract: '0xaf7AEA249098F2C2f50CC11d4000cCf798194373',
+    deployed: 'September 2017',
+    balanceAbi: 'function balanceOf(address) view returns (uint256)',
+    balanceArgs: (user) => [user],
+    balanceCall: 'balanceOf',
+    preClaimAbi: 'function endCrowdsale()',
+    preClaimCall: 'endCrowdsale',
+    withdrawAbi: 'function refund()',
+    withdrawArgs: () => [],
+    withdrawCall: 'refund',
+    category: 'ico',
+    multiStep: true,
+  },
   gro_ust_comp: {
     name: 'Gro UST Compensation',
     desc: "Gro Protocol compensated addresses hit by the May-2022 UST/Terra depeg with PWRD, its USD stablecoin, vested over two years via a merkle claim contract. Vesting finished 31 May 2024, so every eligible address can now claim its full remaining allocation in a single tx — initialClaim(proof, amount) for first-time claimers, claim() for those who started but stopped. PWRD is redeemable ~1:1 to USDC via Gro's withdraw handler; only USDC counts on the v2 hero counter.",
@@ -6406,7 +6493,7 @@ async function checkUserBalances(overrideAddress) {
           const wArgs = cfg.withdrawArgs(balance, walletAddress);
           const argsDisplay = wArgs.length > 0 ? wArgs.map(a => typeof a === 'bigint' ? a.toString() + ' wei (' + ethers.formatEther(a) + ' ETH)' : String(a)).join(', ') : 'none';
           const funcSig = cfg.withdrawAbi.replace('function ', '');
-          const withdrawBtn = `<button class="claim-btn" id="claimBtn-${key}" data-action="claim-eth" data-key="${key}">${cfg.exitAbi ? 'Withdraw dividends only' : 'Withdraw'}</button>`;
+          const withdrawBtn = `<button class="claim-btn" id="claimBtn-${key}" data-action="claim-eth" data-key="${key}">${cfg.preClaimAbi ? 'Step 1: Close sale + Step 2: Refund' : (cfg.exitAbi ? 'Withdraw dividends only' : 'Withdraw')}</button>`;
           const exitBtn = cfg.exitAbi ? `<button class="claim-btn" id="exitBtn-${key}" data-action="claim-exit" data-key="${key}">Exit (sell + withdraw)</button>` : '';
           const claimActions = cfg.exitAbi ? `${exitBtn}${withdrawBtn}` : withdrawBtn;
           const lastTx = apiBalances[key]?.last_tx_date ? apiBalances[key] : null;
@@ -6421,7 +6508,7 @@ async function checkUserBalances(overrideAddress) {
               <div class="claim-card-meta" id="claimDetails-${key}">
                 ${lastTx ? `<div class="claim-card-meta-row"><span class="claim-card-meta-label">Last tx</span><span class="claim-card-meta-value">${esc(lastTx.last_tx_date)} · <a href="${etherscanTx(lastTx.last_tx_hash)}" target="_blank" rel="noopener noreferrer">view tx</a></span></div>` : ''}
                 <div class="claim-card-meta-row"><span class="claim-card-meta-label">Contract</span><span class="claim-card-meta-value"><a href="${etherscanAddr(cfg.contract)}" target="_blank" rel="noopener noreferrer">${cfg.contract}</a></span></div>
-                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Function</span><span class="claim-card-meta-value">${esc(funcSig)}${cfg.exitAbi ? ' / ' + cfg.exitAbi.replace('function ', '') : ''}${adoptionReqs ? ' / cancelAdoptionRequest(bytes5)' : ''}</span></div>
+                <div class="claim-card-meta-row"><span class="claim-card-meta-label">Function</span><span class="claim-card-meta-value">${esc(funcSig)}${cfg.exitAbi ? ' / ' + cfg.exitAbi.replace('function ', '') : ''}${cfg.preClaimAbi ? ' after ' + cfg.preClaimAbi.replace('function ', '') : ''}${adoptionReqs ? ' / cancelAdoptionRequest(bytes5)' : ''}</span></div>
               </div>`;
           // MoonCat adoption request escrow — show cancel buttons per catId
           if (adoptionReqs && adoptionReqs.length > 0) {
@@ -6714,12 +6801,25 @@ async function claimETH(key) {
         console.error('Failed to read vault shares:', e.message);
       }
     }
-    const contract = new ethers.Contract(cfg.contract, [cfg.withdrawAbi], walletSigner);
+    const abiList = cfg.preClaimAbi ? [cfg.preClaimAbi, cfg.withdrawAbi] : [cfg.withdrawAbi];
+    const contract = new ethers.Contract(cfg.contract, abiList, walletSigner);
     const args = cfg.withdrawArgs(withdrawBalance, walletAddress);
     const ethAmount = ethers.formatEther(balance);
 
     window.va?.track?.('claim_initiated', { exchange: cfg.name, amount_eth: ethAmount });
     logEvent('claim_started', { address: walletAddress, contract: key, amount_eth: parseFloat(ethAmount) });
+
+    if (cfg.preClaimAbi && cfg.preClaimCall) {
+      statusEl.textContent = 'Confirm prerequisite step in wallet...';
+      const preTx = await contract[cfg.preClaimCall]();
+      statusEl.innerHTML = `<div style="padding:12px 16px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);margin-top:8px">
+        <div style="font-size:12px;color:var(--text2);margin-bottom:4px">Prerequisite submitted — waiting for confirmation...</div>
+        <div style="font-family:monospace;font-size:12px;word-break:break-all"><a href="${etherscanTx(preTx.hash)}" target="_blank" rel="noopener noreferrer">${preTx.hash}</a></div>
+      </div>`;
+      logEvent('claim_started', { address: walletAddress, contract: key, extra: { step: cfg.preClaimCall, tx_hash: preTx.hash } });
+      await preTx.wait();
+      statusEl.textContent = 'Prerequisite confirmed. Confirm refund in wallet...';
+    }
 
     tx = await contract[cfg.withdrawCall](...args);
 

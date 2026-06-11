@@ -1,0 +1,110 @@
+{
+  "contract": "0x1Bb28E79F2482Df6bF60eFC7a33365703bCf1536",
+  "balance_source": "eth",
+  "contract_eth_balance": 22.528081,
+  "total_eth_in_balances": 22.528081,
+  "addresses_with_balance": 11,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-11 04:14:25 UTC",
+  "description": "Failed-ICO direct refund ledger \u2014 hodlEthereum. ETH is held in the sale contract and the claim flow is party().",
+  "distribution": {
+    "10-100 ETH": {
+      "count": 1,
+      "total_eth": 20.0
+    },
+    "1-10 ETH": {
+      "count": 2,
+      "total_eth": 2.0
+    },
+    "0.1-1 ETH": {
+      "count": 2,
+      "total_eth": 0.43
+    },
+    "0.01-0.1 ETH": {
+      "count": 4,
+      "total_eth": 0.09
+    },
+    "<0.01 ETH": {
+      "count": 2,
+      "total_eth": 0.008081
+    }
+  },
+  "name": "hodlEthereum",
+  "claim_flow": "party()",
+  "refund_selector": "0x354284f2",
+  "balance_selector": "0x4a3f17e7",
+  "state_checks": [
+    "partyTime passed"
+  ],
+  "total_addresses_scanned": 11,
+  "residual_unattributed_eth": 0.0,
+  "residual_note": "Positive live balance minus positive refund ledgers; not counted as self-claimable unless a matching per-user getter returns a positive balance.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0xf11cc2152d3e1e44825eb4cc71eac0e9a6f5f2b1",
+      "balance_wei": "20000000000000000000",
+      "balance_eth": 20.0
+    },
+    {
+      "rank": 2,
+      "address": "0x25e52afe36b12a136df044e026f7aef22dd93b7a",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0
+    },
+    {
+      "rank": 3,
+      "address": "0x4812505f744b14813d27d641c8af4d74f13c92bf",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0
+    },
+    {
+      "rank": 4,
+      "address": "0xfdb33f8ac7ce72d7d4795dd8610e323b4c122fbb",
+      "balance_wei": "330000000000000000",
+      "balance_eth": 0.33
+    },
+    {
+      "rank": 5,
+      "address": "0x06603aae348bea45a9cc23ade04296301c1d781d",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 6,
+      "address": "0x8f231e179727784b83351044b272dfb4c4615634",
+      "balance_wei": "40000000000000000",
+      "balance_eth": 0.04
+    },
+    {
+      "rank": 7,
+      "address": "0xcd8e71a93b3cc8417c0dff1ed66d876abba7f9ef",
+      "balance_wei": "30000000000000000",
+      "balance_eth": 0.03
+    },
+    {
+      "rank": 8,
+      "address": "0x7c2c647579f3efcf1ac86751ea7b130712add7a9",
+      "balance_wei": "10000000000000000",
+      "balance_eth": 0.01
+    },
+    {
+      "rank": 9,
+      "address": "0xb9109ab4dcf8ac17f9d7db248dcdb60bd45b77d8",
+      "balance_wei": "10000000000000000",
+      "balance_eth": 0.01
+    },
+    {
+      "rank": 10,
+      "address": "0x8bb5047103cb24da5b5ea9848daa1b9fa2a9bb66",
+      "balance_wei": "8080000000000000",
+      "balance_eth": 0.00808
+    },
+    {
+      "rank": 11,
+      "address": "0x16882f55ef843d062ce799805af50cda4240be52",
+      "balance_wei": "1000000000000",
+      "balance_eth": 1e-06
+    }
+  ]
+}

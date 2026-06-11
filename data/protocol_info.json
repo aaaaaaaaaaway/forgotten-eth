@@ -1403,21 +1403,21 @@
   },
   "agrotechfarm_crowdsale": {
     "name": "AgroTechFarm Crowdsale",
-    "desc": "AgroTechFarm's 2018 crowdsale failed; the owner switched the state to Refunding. Per-user balance is in balances(addr). Public refund() returns the deposit while the contract is in Refunding state.",
+    "desc": "AgroTechFarm ran a 2018 crowdsale with a RefundVault-style state machine. The sale is permanently in Refunding state, so contributors with remaining balances[address] entries can reclaim their own ETH through refund().",
     "category": "ico",
-    "color": "#0d9488",
-    "contract": "0x3fd30f3e1fbf4f3ea6bdf3e3bb11826266708869",
-    "deployed": "April 2018",
-    "slug": "agrotechfarm"
+    "color": "#84cc16",
+    "contract": "0x3fD30f3E1fbF4F3Ea6BDf3E3bb11826266708869",
+    "deployed": "January 2018",
+    "slug": "agrotechfarm-crowdsale"
   },
   "luckchemy_crowdsale": {
     "name": "Luckchemy Crowdsale",
-    "desc": "Luckchemy's 2018 ICO finished without hitting soft cap, opening the refund branch (or, if soft cap was met but tokens never released within 30 days, the alternate branch). Per-user balance is in deposits(addr). Public refund() returns the deposit.",
+    "desc": "Luckchemy ran a 2018 crowdsale whose 2,000 ETH soft cap was never reached. The sale has ended and softCapReached() remains false, leaving contributor deposits[address] balances reclaimable through refund().",
     "category": "ico",
-    "color": "#0d9488",
-    "contract": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
-    "deployed": "April 2018",
-    "slug": "luckchemy"
+    "color": "#ec4899",
+    "contract": "0x18777Aec0B231D1a4A9C66B51253088a03affDFc",
+    "deployed": "August 2018",
+    "slug": "luckchemy-crowdsale"
   },
   "arbitrage_eth_staking": {
     "name": "ArbitrageETHStaking",
@@ -2309,5 +2309,59 @@
     "slug": "hegic-wbtc-pool",
     "description": "Hegic WBTC Pool was a V1 liquidity pool where LPs received writeWBTC tokens representing shares of the Bitcoin options pool. The old pool is deprecated; remaining writeWBTC holders can withdraw their currently available WBTC liquidity through the pool contract.",
     "contract": "0x20dd9e22d22dd0a6ef74a520cb08303b5fad5de7"
+  },
+  "digipulse_token_sale": {
+    "name": "DigiPulse Token Sale (DGT)",
+    "desc": "DigiPulse ran a 2017 DGT token sale with an 8,000 ETH soft cap. The sale was finalized below the cap, leaving the contract in a failed/refund state; contributors with remaining ethBalanceOf ledger entries can reclaim their own ETH directly from the verified sale contract.",
+    "category": "ico",
+    "color": "#f97316",
+    "contract": "0x9AcA6aBFe63A5ae0Dc6258cefB65207eC990Aa4D",
+    "deployed": "September 2017",
+    "slug": "digipulse-token-sale"
+  },
+  "directcrypt_presale": {
+    "name": "DirectCrypt Token Presale (DRCT)",
+    "desc": "DirectCrypt used a whitelisted 2018 presale that recorded each contribution in deposited[address]. The presale did not clear its soft-cap condition, so the verified contract keeps the remaining ETH available through its self-paying refund path.",
+    "category": "ico",
+    "color": "#06b6d4",
+    "contract": "0x12D5B7c26dD8Dc6E2F71f5bf240D5e76452B2fe5",
+    "deployed": "February 2018",
+    "slug": "directcrypt-presale"
+  },
+  "qcotoken_ico": {
+    "name": "QCOToken ICO (QCO)",
+    "desc": "Qravity/QCOToken used a custom 2018 crowdsale with per-address ethPossibleRefunds accounting. The live sale state is aborted, leaving the remaining contributor ledger claimable from the verified sale contract.",
+    "category": "ico",
+    "color": "#8b5cf6",
+    "contract": "0x3a8A97123Bccd826228e5eB4144B48cCE169517B",
+    "deployed": "April 2018",
+    "slug": "qcotoken-ico"
+  },
+  "hodl_ethereum": {
+    "name": "hodlEthereum",
+    "desc": "hodlEthereum is a simple time-lock contract that credited ETH sent to its payable fallback into hodlers[address]. The unlock time has passed, but several original hodlers never called the release function, so their ledger balances remain in the immutable contract.",
+    "category": "ico",
+    "color": "#eab308",
+    "contract": "0x1Bb28E79F2482Df6bF60eFC7a33365703bCf1536",
+    "deployed": "July 2017",
+    "slug": "hodl-ethereum"
+  },
+  "blocklancer_ico": {
+    "name": "Blocklancer Token Sale (LNC)",
+    "desc": "Blocklancer held a 2017 LNC crowdsale with direct ETH custody and per-address balancesEther accounting. The soft cap was not met, so remaining contributors can recover their ledgered ETH through the sale contract refund path.",
+    "category": "ico",
+    "color": "#22c55e",
+    "contract": "0x9EA80e204045329Ba752D03C395F82A12799f13d",
+    "deployed": "October 2017",
+    "slug": "blocklancer-ico"
+  },
+  "ztcrowdsale": {
+    "name": "ZeroTraffic Crowdsale (ZTT)",
+    "desc": "ZeroTraffic ran a 2017 ZTT crowdsale with a very large minimum amount. The sale remains below its minimum; after the permissionless close step, contributors with balances in the crowdsale ledger can reclaim their own ETH.",
+    "category": "ico",
+    "color": "#ef4444",
+    "contract": "0xaf7AEA249098F2C2f50CC11d4000cCf798194373",
+    "deployed": "September 2017",
+    "slug": "ztcrowdsale"
   }
 }

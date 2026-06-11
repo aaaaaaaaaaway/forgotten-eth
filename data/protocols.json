@@ -1257,16 +1257,16 @@
   {
     "key": "agrotechfarm_crowdsale",
     "name": "AgroTechFarm Crowdsale",
-    "contract": "0x3fd30f3e1fbf4f3ea6bdf3e3bb11826266708869",
-    "balance_source": "token",
+    "contract": "0x3fD30f3E1fbF4F3Ea6BDf3E3bb11826266708869",
+    "balance_source": "eth",
     "category": "ico",
     "balance_file": "agrotechfarm_crowdsale_eth_balances.json"
   },
   {
     "key": "luckchemy_crowdsale",
     "name": "Luckchemy Crowdsale",
-    "contract": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
-    "balance_source": "token",
+    "contract": "0x18777Aec0B231D1a4A9C66B51253088a03affDFc",
+    "balance_source": "eth",
     "category": "ico",
     "balance_file": "luckchemy_crowdsale_eth_balances.json"
   },
@@ -2133,5 +2133,54 @@
     "balance_source": "eth",
     "category": "defi",
     "balance_file": "pledge_deposit_eth_balances.json"
+  },
+  {
+    "key": "digipulse_token_sale",
+    "name": "DigiPulse Token Sale (DGT)",
+    "contract": "0x9AcA6aBFe63A5ae0Dc6258cefB65207eC990Aa4D",
+    "balance_source": "eth",
+    "category": "ico",
+    "balance_file": "digipulse_token_sale_eth_balances.json"
+  },
+  {
+    "key": "directcrypt_presale",
+    "name": "DirectCrypt Token Presale (DRCT)",
+    "contract": "0x12D5B7c26dD8Dc6E2F71f5bf240D5e76452B2fe5",
+    "balance_source": "eth",
+    "category": "ico",
+    "balance_file": "directcrypt_presale_eth_balances.json"
+  },
+  {
+    "key": "qcotoken_ico",
+    "name": "QCOToken ICO (QCO)",
+    "contract": "0x3a8A97123Bccd826228e5eB4144B48cCE169517B",
+    "balance_source": "eth",
+    "category": "ico",
+    "balance_file": "qcotoken_ico_eth_balances.json"
+  },
+  {
+    "key": "hodl_ethereum",
+    "name": "hodlEthereum",
+    "contract": "0x1Bb28E79F2482Df6bF60eFC7a33365703bCf1536",
+    "balance_source": "eth",
+    "category": "ico",
+    "balance_file": "hodl_ethereum_eth_balances.json"
+  },
+  {
+    "key": "blocklancer_ico",
+    "name": "Blocklancer Token Sale (LNC)",
+    "contract": "0x9EA80e204045329Ba752D03C395F82A12799f13d",
+    "balance_source": "eth",
+    "category": "ico",
+    "balance_file": "blocklancer_ico_eth_balances.json"
+  },
+  {
+    "key": "ztcrowdsale",
+    "name": "ZeroTraffic Crowdsale (ZTT)",
+    "contract": "0xaf7AEA249098F2C2f50CC11d4000cCf798194373",
+    "balance_source": "eth",
+    "category": "ico",
+    "balance_file": "ztcrowdsale_eth_balances.json",
+    "multi_step": true
   }
 ]
