@@ -362,7 +362,7 @@ function fmtUsd(v) { return '$' + parseFloat(v).toLocaleString('en', {minimumFra
 
 // Donation flow
 const DONATION_ADDRESS = '0x95a708aAAB1D336bB60EF2F40212672F4cf65736';
-const WETH9_ADDRESS = '0xC02aaa39b223FE8D0A0e5C4F27eAD9083C756Cc2';
+const WETH9_ADDRESS = '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2';
 // Set by showDonationModal when the just-completed claim returned WETH (rather
 // than native ETH). sendDonation reads this and routes the donation through
 // WETH9.transfer instead of a native value-bearing tx — the user usually
@@ -4480,7 +4480,7 @@ const EXCHANGES = {
     name: 'DirectCrypt Token Presale (DRCT)',
     desc: 'Failed 2018 presale with self-paying deposited[address] refunds.',
     color: '#06b6d4',
-    contract: '0x12D5B7c26dD8Dc6E2F71f5bf240D5e76452B2fe5',
+    contract: '0x12d5b7c26DD8dc6E2F71f5bF240d5e76452b2FE5',
     deployed: 'February 2018',
     balanceAbi: 'function deposited(address) view returns (uint256)',
     balanceArgs: (user) => [user],
@@ -4494,7 +4494,7 @@ const EXCHANGES = {
     name: 'QCOToken ICO (QCO)',
     desc: 'Aborted 2018 crowdsale with remaining ethPossibleRefunds ledger balances.',
     color: '#8b5cf6',
-    contract: '0x3a8A97123Bccd826228e5eB4144B48cCE169517B',
+    contract: '0x3A8A97123bcCd826228e5EB4144b48cce169517B',
     deployed: 'April 2018',
     balanceAbi: 'function ethPossibleRefunds(address) view returns (uint256)',
     balanceArgs: (user) => [user],
@@ -4508,7 +4508,7 @@ const EXCHANGES = {
     name: 'hodlEthereum',
     desc: 'Unlocked 2017 time-lock with remaining hodlers[address] balances.',
     color: '#eab308',
-    contract: '0x1Bb28E79F2482Df6bF60eFC7a33365703bCf1536',
+    contract: '0x1BB28e79f2482df6bf60efc7a33365703bCF1536',
     deployed: 'July 2017',
     balanceAbi: 'function hodlers(address) view returns (uint256)',
     balanceArgs: (user) => [user],
@@ -4536,7 +4536,7 @@ const EXCHANGES = {
     name: 'ZeroTraffic Crowdsale (ZTT)',
     desc: 'Failed 2017 ZTT crowdsale; requires permissionless endCrowdsale() before refund().',
     color: '#ef4444',
-    contract: '0xaf7AEA249098F2C2f50CC11d4000cCf798194373',
+    contract: '0xaf7aeA249098F2c2f50cc11d4000cCf798194373',
     deployed: 'September 2017',
     balanceAbi: 'function balanceOf(address) view returns (uint256)',
     balanceArgs: (user) => [user],

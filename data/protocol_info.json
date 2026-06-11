@@ -1948,7 +1948,7 @@
     "desc": "Yearn Finance launched the v1 yWETH vault in August 2020 as one of the first wrapped-token yield vaults. Users deposited WETH and received yWETH shares representing proportional ownership of the vault's WETH balance plus accrued yield. The yearn.fi frontend dropped v1 vault support, leaving share holders without an interface. The vault is unpaused and immutable, and all WETH sits directly in the vault (no active strategy), so yWETH holders can still redeem their shares for the underlying WETH at the current pricePerFullShare.",
     "category": "defi",
     "color": "#0657f9",
-    "contract": "0xe1237aA7f535b0CC33Fd973D66cBf830354d16c7",
+    "contract": "0xe1237aA7f535b0CC33Fd973D66cBf830354D16c7",
     "deployed": "August 2020"
   },
   "euler_claims": {
@@ -2324,7 +2324,7 @@
     "desc": "DirectCrypt used a whitelisted 2018 presale that recorded each contribution in deposited[address]. The presale did not clear its soft-cap condition, so the verified contract keeps the remaining ETH available through its self-paying refund path.",
     "category": "ico",
     "color": "#06b6d4",
-    "contract": "0x12D5B7c26dD8Dc6E2F71f5bf240D5e76452B2fe5",
+    "contract": "0x12d5b7c26DD8dc6E2F71f5bF240d5e76452b2FE5",
     "deployed": "February 2018",
     "slug": "directcrypt-presale"
   },
@@ -2333,7 +2333,7 @@
     "desc": "Qravity/QCOToken used a custom 2018 crowdsale with per-address ethPossibleRefunds accounting. The live sale state is aborted, leaving the remaining contributor ledger claimable from the verified sale contract.",
     "category": "ico",
     "color": "#8b5cf6",
-    "contract": "0x3a8A97123Bccd826228e5eB4144B48cCE169517B",
+    "contract": "0x3A8A97123bcCd826228e5EB4144b48cce169517B",
     "deployed": "April 2018",
     "slug": "qcotoken-ico"
   },
@@ -2342,7 +2342,7 @@
     "desc": "hodlEthereum is a simple time-lock contract that credited ETH sent to its payable fallback into hodlers[address]. The unlock time has passed, but several original hodlers never called the release function, so their ledger balances remain in the immutable contract.",
     "category": "ico",
     "color": "#eab308",
-    "contract": "0x1Bb28E79F2482Df6bF60eFC7a33365703bCf1536",
+    "contract": "0x1BB28e79f2482df6bf60efc7a33365703bCF1536",
     "deployed": "July 2017",
     "slug": "hodl-ethereum"
   },
@@ -2360,7 +2360,7 @@
     "desc": "ZeroTraffic ran a 2017 ZTT crowdsale with a very large minimum amount. The sale remains below its minimum; after the permissionless close step, contributors with balances in the crowdsale ledger can reclaim their own ETH.",
     "category": "ico",
     "color": "#ef4444",
-    "contract": "0xaf7AEA249098F2C2f50CC11d4000cCf798194373",
+    "contract": "0xaf7aeA249098F2c2f50cc11d4000cCf798194373",
     "deployed": "September 2017",
     "slug": "ztcrowdsale"
   }
