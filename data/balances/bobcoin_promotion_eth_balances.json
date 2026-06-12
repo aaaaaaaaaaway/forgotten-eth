@@ -1,0 +1,35 @@
+{
+  "contract": "0x3565f84c8cd841ff9f2773d02f492e3b058aec5e",
+  "balance_source": "eth",
+  "contract_eth_balance": 0.1,
+  "total_eth_in_balances": 0.1,
+  "addresses_with_balance": 1,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-12 00:00:00 UTC",
+  "description": "Failed Bobcoin promotion crowdsale: past deadline with the goal unmet, so safeWithdrawal() returns each contributor their own balanceOf deposit. The owner cannot drain (beneficiary path needs goal reached).",
+  "distribution": {
+    "0.1-1 ETH": {
+      "count": 1,
+      "total_eth": 0.1
+    }
+  },
+  "name": "Bobcoin Promotion",
+  "claim_flow": "safeWithdrawal()",
+  "refund_selector": "0xfd6b7ef8",
+  "balance_selector": "0x70a08231",
+  "state_checks": [
+    "now>=deadline()",
+    "fundingGoalReached==false"
+  ],
+  "total_addresses_scanned": 1,
+  "residual_unattributed_eth": 0.0,
+  "residual_note": "Excess over the sum of self-claimable EOA ledgers is held by contract / exchange-deposit addresses excluded from the holder list above.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0xcc05d941d28a147ebc32dee0bb46e5cd35a13ce1",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1
+    }
+  ]
+}

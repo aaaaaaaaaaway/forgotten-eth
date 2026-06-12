@@ -1,0 +1,50 @@
+{
+  "contract": "0x4e61ba9c25d43e802c6be8d160432e4989dea1fc",
+  "balance_source": "eth",
+  "contract_eth_balance": 0.72726519,
+  "total_eth_in_balances": 0.72726519,
+  "addresses_with_balance": 3,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-12 00:00:00 UTC",
+  "description": "A 2017 TenX PAY IOU escrow: buyers sent ETH recorded in eth_sent, to receive PAY tokens that were never delivered. With the IOU's PAY balance at 0, the seller-release path is unreachable and withdraw() returns each buyer their own eth_sent deposit. The owner cannot drain (no PAY to trigger release).",
+  "distribution": {
+    "0.1-1 ETH": {
+      "count": 2,
+      "total_eth": 0.70626519
+    },
+    "0.01-0.1 ETH": {
+      "count": 1,
+      "total_eth": 0.021
+    }
+  },
+  "name": "TenX PAY IOU Escrow",
+  "claim_flow": "withdraw()",
+  "refund_selector": "0x3ccfd60b",
+  "balance_selector": "0x05bc99f8",
+  "state_checks": [
+    "token.balanceOf(IOU)==0 (PAY tokens never delivered)"
+  ],
+  "total_addresses_scanned": 3,
+  "residual_unattributed_eth": 0.0,
+  "residual_note": "Excess over the sum of self-claimable EOA ledgers is held by contract / exchange-deposit addresses excluded from the holder list above.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0xb04b7be9a0d7134ad2cef5f6bc007b2270945606",
+      "balance_wei": "416265190000000000",
+      "balance_eth": 0.41626519
+    },
+    {
+      "rank": 2,
+      "address": "0x1917fb7e92f3619519498b178d06ed7ec87318b9",
+      "balance_wei": "290000000000000000",
+      "balance_eth": 0.29
+    },
+    {
+      "rank": 3,
+      "address": "0x007937cd579875a1b9e4e485a49ee8147bc03a37",
+      "balance_wei": "21000000000000000",
+      "balance_eth": 0.021
+    }
+  ]
+}

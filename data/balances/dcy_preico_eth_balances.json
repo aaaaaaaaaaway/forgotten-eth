@@ -1,0 +1,61 @@
+{
+  "contract": "0x92579f2fa430b20bf6ce9d19938fe061aad992e2",
+  "balance_source": "eth",
+  "contract_eth_balance": 0.2632,
+  "total_eth_in_balances": 0.2632,
+  "addresses_with_balance": 4,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-12 00:00:00 UTC",
+  "description": "Failed DCY token pre-ICO: past deadline with the funding goal unmet, so safeWithdrawal() returns each contributor their own balanceOf deposit (CEI, msg.sender-keyed, not front-runnable). The beneficiary sweep needs fundingGoalReached (never), so the owner cannot drain.",
+  "distribution": {
+    "0.1-1 ETH": {
+      "count": 2,
+      "total_eth": 0.25
+    },
+    "0.01-0.1 ETH": {
+      "count": 1,
+      "total_eth": 0.01
+    },
+    "<0.01 ETH": {
+      "count": 1,
+      "total_eth": 0.0032
+    }
+  },
+  "name": "DCY PreICO",
+  "claim_flow": "safeWithdrawal()",
+  "refund_selector": "0xfd6b7ef8",
+  "balance_selector": "0x70a08231",
+  "state_checks": [
+    "now>=deadline()",
+    "fundingGoalReached==false"
+  ],
+  "total_addresses_scanned": 4,
+  "residual_unattributed_eth": 0.0,
+  "residual_note": "Excess over the sum of self-claimable EOA ledgers is held by contract / exchange-deposit addresses excluded from the holder list above.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0x1301d9fc7be8c5cbc4ec45e5ffe26c143a79dc8e",
+      "balance_wei": "150000000000000000",
+      "balance_eth": 0.15
+    },
+    {
+      "rank": 2,
+      "address": "0x58a1df9f525a38c83c6f103e809a1cc4a41fe245",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 3,
+      "address": "0x24839d51914db5504c8a3a69fa2b7f83ce3e8a62",
+      "balance_wei": "10000000000000000",
+      "balance_eth": 0.01
+    },
+    {
+      "rank": 4,
+      "address": "0x33a6e8f66aa2540eee94b43c439d6231758b4134",
+      "balance_wei": "3200000000000000",
+      "balance_eth": 0.0032
+    }
+  ]
+}

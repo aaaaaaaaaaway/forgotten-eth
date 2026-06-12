@@ -79,6 +79,7 @@ Full list in [`data/protocols.json`](data/protocols.json).
 
 | Date | Protocol | ETH | Addresses | Notes |
 |------|----------|-----|-----------|-------|
+| Jun 12 | Failed-ICO refund vaults (x12) | 5 | 20 | CromIco-band sweep of the 0.1-1 ETH range: 3 SingularDTV Launch deployments, TenX PAY IOU escrow, ChefICO, BUILD PreITO, HC8, DCY PreICO, SmartRetail, Trends, Bobcoin + 2 Crowdsale templates. Per-user refund of own deposit (failed soft caps). Each fork-verified (Foundry mainnet fork) + safety-audited + a 2-skeptic pre-submission adversarial re-audit (6 further candidates withheld for owner-closeable gates / holder-list issues). Self-claimable EOAs only. Community PR [@webmixgamer]. |
 | May 2 | Score70 recovery batch | 1,510 | 10,099 | MCDEX Perpetual, Quantfury QDT, Monolith TKN Holder, EKS, TweetMarket, Treasure, Celer EthPool, ETH Staking Rewards, Meme Limited Collections. Dune enumeration + local reth verification; contract-holder rows with reverting withdrawal calls excluded. |
 | Apr 15 | Celer Payment Channels | 151 | 1,551 | Unilateral intendWithdraw → 10k-block window → confirmWithdraw (OSP slice excluded) |
 | Apr 13 | GavCoin | 47 | 115 | 2015 bonding-curve ICO, per-user refund |

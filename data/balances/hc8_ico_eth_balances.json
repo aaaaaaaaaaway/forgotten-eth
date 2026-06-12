@@ -1,0 +1,40 @@
+{
+  "contract": "0xd9153cfdfb5ec8f82c5e647deb379b10d402d7e4",
+  "balance_source": "eth",
+  "contract_eth_balance": 0.272,
+  "total_eth_in_balances": 0.272,
+  "addresses_with_balance": 2,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-12 00:00:00 UTC",
+  "description": "Failed HC8 ICO: refund() returns each investor their own recorded investors deposit while the failed-sale gate holds. The owner ETH-out is gated by the unreached goal, so the owner cannot drain.",
+  "distribution": {
+    "0.1-1 ETH": {
+      "count": 2,
+      "total_eth": 0.272
+    }
+  },
+  "name": "HC8 ICO",
+  "claim_flow": "refund()",
+  "refund_selector": "0x590e1ae3",
+  "balance_selector": "0x6f7bc9be",
+  "state_checks": [
+    "failed-ICO refund gate satisfied (balance < goal after end)"
+  ],
+  "total_addresses_scanned": 2,
+  "residual_unattributed_eth": 0.0,
+  "residual_note": "Excess over the sum of self-claimable EOA ledgers is held by contract / exchange-deposit addresses excluded from the holder list above.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0xaaaadb2092be78a5d83b099c686927320c80ad9a",
+      "balance_wei": "140000000000000000",
+      "balance_eth": 0.14
+    },
+    {
+      "rank": 2,
+      "address": "0xf7fac47e0240ede81f655f7db33f79c9b9aff026",
+      "balance_wei": "132000000000000000",
+      "balance_eth": 0.132
+    }
+  ]
+}

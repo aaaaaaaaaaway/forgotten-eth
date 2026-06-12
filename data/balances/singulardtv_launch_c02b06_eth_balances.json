@@ -1,0 +1,35 @@
+{
+  "contract": "0xc02b06bde074c1fe192f68ad7df308574089054e",
+  "balance_source": "eth",
+  "contract_eth_balance": 0.75,
+  "total_eth_in_balances": 0.75,
+  "addresses_with_balance": 1,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-12 00:00:00 UTC",
+  "description": "A SingularDTV token-creation sale that ended below its token target, so timedTransitions opens stage EndedAndGoalNotReached. The contributor first approves the launch for their sentTokens, then withdrawContribution() pulls those tokens back and returns their own contributions ETH. withdrawForWorkshop() needs the unreachable goal-reached stage, so the owner cannot drain. (Distinct contract from the other SingularDTV launch deployments.)",
+  "distribution": {
+    "0.1-1 ETH": {
+      "count": 1,
+      "total_eth": 0.75
+    }
+  },
+  "name": "SingularDTV Launch (0xc02b06)",
+  "claim_flow": "approve(token, launch) then withdrawContribution()",
+  "refund_selector": "0x0d616d20",
+  "balance_selector": "0x42e94c90",
+  "state_checks": [
+    "stage()==2 (EndedAndGoalNotReached)",
+    "approve(launch, sentTokens) prerequisite"
+  ],
+  "total_addresses_scanned": 1,
+  "residual_unattributed_eth": 0.0,
+  "residual_note": "Excess over the sum of self-claimable EOA ledgers is held by contract / exchange-deposit addresses excluded from the holder list above.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0xf09151d8dd5dcbf4f8bf47edf54af2d2e60c5865",
+      "balance_wei": "750000000000000000",
+      "balance_eth": 0.75
+    }
+  ]
+}

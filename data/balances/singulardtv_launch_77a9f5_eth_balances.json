@@ -1,0 +1,35 @@
+{
+  "contract": "0x77a9f5881913133072499e7ca899d4a3448f7b95",
+  "balance_source": "eth",
+  "contract_eth_balance": 0.3,
+  "total_eth_in_balances": 0.3,
+  "addresses_with_balance": 1,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-12 00:00:00 UTC",
+  "description": "A SingularDTV token-creation sale (HAGAKURE FILMS) that ended below its token target. Contributor approves their sentTokens, then withdrawContribution() returns their own contributions ETH. Owner cannot drain. NOTE: time-sensitive -- the contributor must still hold their issued tokens for the token-return step.",
+  "distribution": {
+    "0.1-1 ETH": {
+      "count": 1,
+      "total_eth": 0.3
+    }
+  },
+  "name": "SingularDTV Launch (0x77a9f5)",
+  "claim_flow": "approve(token, launch) then withdrawContribution()",
+  "refund_selector": "0x0d616d20",
+  "balance_selector": "0x42e94c90",
+  "state_checks": [
+    "stage()==2 (EndedAndGoalNotReached)",
+    "approve(launch, sentTokens) prerequisite"
+  ],
+  "total_addresses_scanned": 1,
+  "residual_unattributed_eth": 0.0,
+  "residual_note": "Excess over the sum of self-claimable EOA ledgers is held by contract / exchange-deposit addresses excluded from the holder list above.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0x3baff5adb21c9d167c90586d1883c79bb62c63bc",
+      "balance_wei": "300000000000000000",
+      "balance_eth": 0.3
+    }
+  ]
+}

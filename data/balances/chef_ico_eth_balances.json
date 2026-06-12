@@ -1,0 +1,41 @@
+{
+  "contract": "0xf2665a78aec490c1bb5ab3e0927050e1857f70f9",
+  "balance_source": "eth",
+  "contract_eth_balance": 0.65999,
+  "total_eth_in_balances": 0.65999,
+  "addresses_with_balance": 2,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-12 00:00:00 UTC",
+  "description": "Failed ChefICO crowdsale: past deadline with the funding goal unmet, so safeWithdrawal() returns each contributor their own balanceOf deposit. The beneficiary payout needs the goal reached (never).",
+  "distribution": {
+    "0.1-1 ETH": {
+      "count": 2,
+      "total_eth": 0.65999
+    }
+  },
+  "name": "ChefICO",
+  "claim_flow": "safeWithdrawal()",
+  "refund_selector": "0xfd6b7ef8",
+  "balance_selector": "0x70a08231",
+  "state_checks": [
+    "now>=deadline()",
+    "fundingGoal not reached"
+  ],
+  "total_addresses_scanned": 2,
+  "residual_unattributed_eth": 0.0,
+  "residual_note": "Excess over the sum of self-claimable EOA ledgers is held by contract / exchange-deposit addresses excluded from the holder list above.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0x9d11013d475434cf3bd6682b4fffabf541287b12",
+      "balance_wei": "430000000000000000",
+      "balance_eth": 0.43
+    },
+    {
+      "rank": 2,
+      "address": "0x8d7c117061ef29916b0dfdcabffa09efb65880c8",
+      "balance_wei": "229990000000000000",
+      "balance_eth": 0.22999
+    }
+  ]
+}
