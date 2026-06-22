@@ -1,0 +1,27 @@
+{
+  "contract": "0xc213f258f4142f53d086f9edb7a36e67eb347f63",
+  "balance_source": "eth",
+  "contract_eth_balance": 161.0247,
+  "total_eth_in_balances": 0.1122,
+  "addresses_with_balance": 1,
+  "coverage_pct": 0.07,
+  "scan_date": "2026-06-04 00:26:53 UTC",
+  "description": "Transit Finance refunds with ETH-denominated user entitlements. Current state is admin-paused; owner must call setClaim(false, 0) before users can claim.",
+  "meta": {
+    "owner_action_required": true,
+    "bucket": "Type A",
+    "required_admin_action": "setClaim(false, 0)",
+    "user_call_after_unlock": "claim()"
+  },
+  "balances": [
+    {
+      "address": "0xaba60c05fd861452f17bbbcc8872ad5b8f26b322",
+      "balance_wei": "112200000000000000",
+      "balance_eth": 0.1122,
+      "admin_unlock_required": true,
+      "admin_action": "owner setClaim(false, 0)",
+      "user_call": "claim()",
+      "recovery_type": "paused_claims"
+    }
+  ]
+}

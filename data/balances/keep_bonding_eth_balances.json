@@ -1,0 +1,203 @@
+{
+  "contract": "0x27321f84704a599ab740281e285cc4463d89a3d5",
+  "balance_source": "eth",
+  "contract_eth_balance": 234.41869567,
+  "total_eth_in_balances": 234.41869567,
+  "addresses_with_balance": 31,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-05-12 10:37:38 UTC",
+  "description": "Keep Network Bonding (KeepBonding) held operator collateral for tBTC v1 signing groups. Operators withdraw via withdraw(amount, operator); ETH lands at the operator's pre-set beneficiary, not the caller.",
+  "meta": {
+    "withdraw_signature": "withdraw(uint256,address)",
+    "withdraw_recipient": "beneficiaryOf(operator)",
+    "operator_deposit_event": "UnbondedValueDeposited(address,address,uint256)"
+  },
+  "balances": [
+    {
+      "address": "0xd52bfe62a163eb4ec8fc98f06ed3f02695ae491d",
+      "balance_wei": "195246591162616000000",
+      "balance_eth": 195.246591162616,
+      "beneficiary": "0xf0128adcc6bb198bda7a24ec2c530d5004b90ca1"
+    },
+    {
+      "address": "0xabfb52f4cfac3e6631c19a7e4aa752110e1187b5",
+      "balance_wei": "29638587036600000001",
+      "balance_eth": 29.6385870366,
+      "beneficiary": "0x8caa45dafc5eb7f337172e1178236587665ca9bf"
+    },
+    {
+      "address": "0x00cef852246b08b9215772c3f409d28408bb21bd",
+      "balance_wei": "8670938952924500000",
+      "balance_eth": 8.6709389529245,
+      "beneficiary": "0x3c3700c1b3ffe3e0a5ab42243fa0e3607f6e2d61"
+    },
+    {
+      "address": "0xb2d53be158cb8451dfc818bd969877038c1bdea1",
+      "balance_wei": "320000000000000000",
+      "balance_eth": 0.32,
+      "beneficiary": "0xeec3c1430066d240d21c7c60530b5d6af7eeb244"
+    },
+    {
+      "address": "0x190059f25d91affb092d145cebb907817414bcf0",
+      "balance_wei": "300000000000000000",
+      "balance_eth": 0.3,
+      "beneficiary": "0x200f0abeaf597351860cb9b1abf6bb685f1cb390"
+    },
+    {
+      "address": "0x7f746e790e97996ac9fe892d48eb8660dee6786d",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1,
+      "beneficiary": "0x4029b496d25322cb69dcb356bde69a7314bff0ef"
+    },
+    {
+      "address": "0xfed8eac5c0a82c3291977fb3bcf1ad52e57b1b9b",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1,
+      "beneficiary": "0xfed8eac5c0a82c3291977fb3bcf1ad52e57b1b9b"
+    },
+    {
+      "address": "0xa39f6ca62303229873d06395237307cd59de806d",
+      "balance_wei": "26326883843750000",
+      "balance_eth": 0.02632688384375,
+      "beneficiary": "0x4029b496d25322cb69dcb356bde69a7314bff0ef"
+    },
+    {
+      "address": "0xf35343299a4f80dd5d917bbe5ddd54ebb820ebd4",
+      "balance_wei": "8478132510500000",
+      "balance_eth": 0.0084781325105,
+      "beneficiary": "0x4029b496d25322cb69dcb356bde69a7314bff0ef"
+    },
+    {
+      "address": "0x7b1b58d0e525747fc4afdefe397054c8522b3a69",
+      "balance_wei": "4342526250000000",
+      "balance_eth": 0.00434252625,
+      "beneficiary": "0xd404e95f4a8889fdf865e0c8d87f4501945ac7b2"
+    },
+    {
+      "address": "0xa62e990e0229a3247270d6206adf3d883dbed919",
+      "balance_wei": "1550061093749915",
+      "balance_eth": 0.001550061093749915,
+      "beneficiary": "0xabf7335f324873ccb1960c9cdb7278e627dd39ef"
+    },
+    {
+      "address": "0x0f5c422328cba4421361a6aed428acaf7bab9046",
+      "balance_wei": "622504491250000",
+      "balance_eth": 0.00062250449125,
+      "beneficiary": "0x38469c93e88e30f64d90c2a82d3a17abc461ceb8"
+    },
+    {
+      "address": "0x64a8856cbd255765d16b901a0b899daefc78fb13",
+      "balance_wei": "592496820720000",
+      "balance_eth": 0.00059249682072,
+      "beneficiary": "0xa49f1b845a8086ac0b820ce6fa8ce92d223765d2"
+    },
+    {
+      "address": "0x65ab6c2262bf24973d746d18af1794da52183187",
+      "balance_wei": "88480448000000",
+      "balance_eth": 8.8480448e-05,
+      "beneficiary": "0x62852ceff20937d2c720cc1270a22b5ef6111e77"
+    },
+    {
+      "address": "0x003428e767ece053974bdc155bc129cae491ebe2",
+      "balance_wei": "77391350000000",
+      "balance_eth": 7.739135e-05,
+      "beneficiary": "0x20372b154be1338391ddfa23d158491a0e4d62f3"
+    },
+    {
+      "address": "0xd072bb639ca5933f5ca6dc4deebd259066547087",
+      "balance_wei": "71581259250000",
+      "balance_eth": 7.158125925e-05,
+      "beneficiary": "0xa6fcf9dc36e1bd88eebc5bfc0654185384a8cfa1"
+    },
+    {
+      "address": "0x4199b03322b067a3264b40a7ab5e3b6b6b1e046b",
+      "balance_wei": "70661634166667",
+      "balance_eth": 7.0661634166667e-05,
+      "beneficiary": "0x4199b03322b067a3264b40a7ab5e3b6b6b1e046b"
+    },
+    {
+      "address": "0xc010b84528b0809295fcd21cb37415e8c532343a",
+      "balance_wei": "66546207792500",
+      "balance_eth": 6.65462077925e-05,
+      "beneficiary": "0xbf62a4cf0e78b8799dca0b481e4669a760c0f99f"
+    },
+    {
+      "address": "0xf4823b1c060b52d9840a2ec92c40973cb8a8f4d6",
+      "balance_wei": "53458000000000",
+      "balance_eth": 5.3458e-05,
+      "beneficiary": "0x228ba11b30ff902df8f052668d53c8055e530ff9"
+    },
+    {
+      "address": "0xe5f8f4a928a39ed4d21ecfd1bfb1eebd49663e7e",
+      "balance_wei": "51653650000000",
+      "balance_eth": 5.165365e-05,
+      "beneficiary": "0x774f6955bb823b866d4f5992a092a75ca39b1456"
+    },
+    {
+      "address": "0xa620a7ea64202fef1d60466b8d496db656454728",
+      "balance_wei": "36479353500000",
+      "balance_eth": 3.64793535e-05,
+      "beneficiary": "0xc0c854ef9bc2ed720737b2795e25530129914e36"
+    },
+    {
+      "address": "0xe76c773c18d0d305a488b16cf6ef14273b57665d",
+      "balance_wei": "35648950000000",
+      "balance_eth": 3.564895e-05,
+      "beneficiary": "0x40af2bd32a966c6bc61e6f894b31ff2d83a89e3b"
+    },
+    {
+      "address": "0x0ae20e11a065a7e750482e6a7e9eb7eab7a8137f",
+      "balance_wei": "29000000000000",
+      "balance_eth": 2.9e-05,
+      "beneficiary": "0x2876ed82806c275fc92f5dee17f4078477d1c0c9"
+    },
+    {
+      "address": "0x39d2acbcd80d80080541c6eed7e9febb8127b2ab",
+      "balance_wei": "23048435000000",
+      "balance_eth": 2.3048435e-05,
+      "beneficiary": "0x255c5df384c9821b24ccf4d462af2ba33263ca5b"
+    },
+    {
+      "address": "0x08df5bc0dbe3ed798dc25ab8d206028371ec4e53",
+      "balance_wei": "20351464000000",
+      "balance_eth": 2.0351464e-05,
+      "beneficiary": "0x00b878d53e8816048eea4c74603932a1dec4daa9"
+    },
+    {
+      "address": "0x575f7bfd3d5eabaeb6cd1e2710819a5b19753a84",
+      "balance_wei": "17958000000000",
+      "balance_eth": 1.7958e-05,
+      "beneficiary": "0x1098503a90c3224f0e6be7c124a337888c0ba564"
+    },
+    {
+      "address": "0x0ee446643973b3f5fed132d0455fea23fbad0d1e",
+      "balance_wei": "16715883000000",
+      "balance_eth": 1.6715883e-05,
+      "beneficiary": "0x28bb2cb5ee324b827c87a265fbf453b1edf82c6c"
+    },
+    {
+      "address": "0x1b3acbbe36316ae74d4bec49865660b59ff69c7b",
+      "balance_wei": "6916000000000",
+      "balance_eth": 6.916e-06,
+      "beneficiary": "0xb11d02667b6bcc42b040a332a1f2abccc790a760"
+    },
+    {
+      "address": "0x0ebb4fa9dabe68ad18e845d1f915010203e16191",
+      "balance_wei": "9873500000",
+      "balance_eth": 9.8735e-09,
+      "beneficiary": "0x61467dd4969bb4fa5814e715651ed7c866c4a20a"
+    },
+    {
+      "address": "0x85d548b251ceb537f62aed0b6f6f4c48d3c822c8",
+      "balance_wei": "9234370000",
+      "balance_eth": 9.23437e-09,
+      "beneficiary": "0x50adf7a75d7cd6132acc0a2fb21c019011286635"
+    },
+    {
+      "address": "0x692a84140091e1ff6d5b8c138fb184affbee8ae8",
+      "balance_wei": "8000000000",
+      "balance_eth": 8e-09,
+      "beneficiary": "0x50adf7a75d7cd6132acc0a2fb21c019011286635"
+    }
+  ]
+}

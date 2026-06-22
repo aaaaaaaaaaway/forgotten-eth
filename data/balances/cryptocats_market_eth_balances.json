@@ -1,0 +1,88 @@
+{
+  "contract": "0x19c320b43744254ebdbcb1f1bd0e2a3dc08e01dc",
+  "balance_source": "eth",
+  "contract_eth_balance": 45.48933333,
+  "total_eth_in_balances": 45.48933333,
+  "addresses_with_balance": 10,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-05-08 11:40:58 UTC",
+  "description": "ETH balances in defunct CryptoCats Marketplace contract",
+  "distribution": {
+    "10-100 ETH": {
+      "count": 1,
+      "total_eth": 34.88
+    },
+    "1-10 ETH": {
+      "count": 3,
+      "total_eth": 7.49
+    },
+    "0.1-1 ETH": {
+      "count": 6,
+      "total_eth": 3.1193333333333335
+    }
+  },
+  "token_checked": "0x0000000000000000000000000000000000000000",
+  "total_addresses_scanned": 693,
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0xd7148578159b87a9efa2f0290531b44b0f9063d1",
+      "balance_wei": "34880000000000000000",
+      "balance_eth": 34.88
+    },
+    {
+      "rank": 2,
+      "address": "0x0b7dc96b0ed54c319159f23ff749ee4625ba1ddb",
+      "balance_wei": "4900000000000000000",
+      "balance_eth": 4.9
+    },
+    {
+      "rank": 3,
+      "address": "0x20251a0505ead51fb2c6ce5c1f399924ea068322",
+      "balance_wei": "1590000000000000000",
+      "balance_eth": 1.59
+    },
+    {
+      "rank": 4,
+      "address": "0x6d7f0adf1a7a200f45fd734cb708d36533be398e",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0
+    },
+    {
+      "rank": 5,
+      "address": "0x238344ab68949280ba36ea89de0f33092c2766f1",
+      "balance_wei": "890000000000000000",
+      "balance_eth": 0.89
+    },
+    {
+      "rank": 6,
+      "address": "0x8f03f37f89bcd89eeb26ed28af8b1ab4fcabd160",
+      "balance_wei": "796000000000000000",
+      "balance_eth": 0.796
+    },
+    {
+      "rank": 7,
+      "address": "0x90ebbdcd83b62c5528b4c95c58cfc5c054159836",
+      "balance_wei": "550000000000000000",
+      "balance_eth": 0.55
+    },
+    {
+      "rank": 8,
+      "address": "0x21e4a16ea782962b1877f9014a165e3c330bf709",
+      "balance_wei": "400000000000000000",
+      "balance_eth": 0.4
+    },
+    {
+      "rank": 9,
+      "address": "0xbb4068bac37ef5975210fa0cf03c0984f2d1542c",
+      "balance_wei": "333333333333333333",
+      "balance_eth": 0.3333333333333333
+    },
+    {
+      "rank": 10,
+      "address": "0x8b7293e4c344d38080b11e1e36b524201fa08e2d",
+      "balance_wei": "150000000000000000",
+      "balance_eth": 0.15
+    }
+  ]
+}

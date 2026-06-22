@@ -1,0 +1,91 @@
+{
+  "contract": "0xe8205644fef286a2af423b72669e662feec127cd",
+  "balance_source": "eth",
+  "contract_eth_balance": 2.41,
+  "total_eth_in_balances": 2.21,
+  "addresses_with_balance": 9,
+  "coverage_pct": 91.7,
+  "scan_date": "2026-06-15 16:25:16 UTC",
+  "description": "Failed-ICO direct refund ledger \u2014 Crowdsale (0xe82056). ETH is held in the sale contract and the claim flow is safeWithdrawal().",
+  "distribution": {
+    "1-10 ETH": {
+      "count": 1,
+      "total_eth": 1.0
+    },
+    "0.1-1 ETH": {
+      "count": 7,
+      "total_eth": 1.16
+    },
+    "0.01-0.1 ETH": {
+      "count": 1,
+      "total_eth": 0.05
+    }
+  },
+  "name": "Crowdsale (0xe82056)",
+  "claim_flow": "safeWithdrawal()",
+  "refund_selector": "0xfd6b7ef8",
+  "balance_selector": "0x70a08231",
+  "state_checks": [
+    "now >= deadline()",
+    "fundingGoal not reached"
+  ],
+  "total_addresses_scanned": 9,
+  "residual_unattributed_eth": 0.2,
+  "residual_note": "Only positive live per-user ledgers are counted. Contract-minus-ledger residual is excluded unless a source-backed ordinary user path maps it to a wallet.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0x9be60578ef64b9b53db049c8d33855dc94be3cd7",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0
+    },
+    {
+      "rank": 2,
+      "address": "0xc7b43d6a94c388fca9259a2943428980f7661631",
+      "balance_wei": "500000000000000000",
+      "balance_eth": 0.5
+    },
+    {
+      "rank": 3,
+      "address": "0x2db3c22da3ce43dc3314f24295c1d57f78d3616c",
+      "balance_wei": "160000000000000000",
+      "balance_eth": 0.16
+    },
+    {
+      "rank": 4,
+      "address": "0x33b80ea8f35537453af7a3b0943d11f02e27b58d",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 5,
+      "address": "0xaae1cb04c830fa907210355c0dcea3118b445bb0",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 6,
+      "address": "0x95f50e94a3bcc47e8613cf095b148146b15c6376",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 7,
+      "address": "0x9fc90e89f2700f529668c6ebed53a6a3d426b5be",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 8,
+      "address": "0xbc8bc0904fd2864d5b52025bc51005422f2f53c3",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 9,
+      "address": "0x3d7b0e4404de2a8cef04c4f9a62746914242b7b4",
+      "balance_wei": "50000000000000000",
+      "balance_eth": 0.05
+    }
+  ]
+}

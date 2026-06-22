@@ -1,0 +1,2516 @@
+{
+  "idex": {
+    "name": "IDEX v1",
+    "desc": "IDEX launched in October 2017 as the first hybrid DEX combining off-chain order matching with onchain settlement. Originally branded as Aurora, it grew to process over 4 million orders per day during the ICO boom. IDEX v1 was superseded by v2 in fall 2020.",
+    "category": "dex",
+    "color": "#6366f1",
+    "contract": "0x2a0c0DBEcC7E4D658f48E01e3fA353F44050c208",
+    "deployed": "September 2017",
+    "slug": "idex"
+  },
+  "etherdelta": {
+    "name": "EtherDelta v2",
+    "desc": "EtherDelta launched July 12, 2016 as the first widely-used DEX for ERC-20 tokens. It became the go-to venue for ICO token trading in 2017, peaking at ~$10M daily volume. On December 20, 2017, attackers hijacked its DNS to steal $1.4M from users. In November 2018, the SEC charged its creator with operating an unregistered exchange \u2014 the first such action against a DEX.",
+    "category": "dex",
+    "color": "#f97316",
+    "contract": "0x8d12A197cB00D4747a1fe03395095ce2A5CC6819",
+    "deployed": "February 2017",
+    "slug": "etherdelta"
+  },
+  "tokenstore": {
+    "name": "Token.Store",
+    "desc": "Launched July 30, 2017 as a fully onchain DEX with both onchain order matching and settlement. Processed over 500,000 transactions across 100,000+ accounts and later expanded to EOS. The anonymous team shut it down on June 22, 2020, publishing a farewell citing the rise of AMMs like Uniswap as having made order-book DEXs obsolete.",
+    "category": "dex",
+    "color": "#22c55e",
+    "contract": "0x1ce7ae555139c5ef5a57cc8d814a867ee6ee33d8",
+    "deployed": "August 2017",
+    "slug": "tokenstore"
+  },
+  "etherdelta_m1": {
+    "name": "EtherDelta v1",
+    "desc": "An earlier iteration of the EtherDelta exchange (December 2016). Multiple contract versions were deployed, each requiring users to manually withdraw and redeposit. Superseded by the well-known v2 contract at 0x8d12A197.",
+    "category": "dex",
+    "color": "#f59e0b",
+    "contract": "0x373c55c277b866a69dc047cad488154ab9759466",
+    "deployed": "December 2016",
+    "slug": "etherdelta-m1"
+  },
+  "singularx": {
+    "name": "SingularX",
+    "desc": "SingularX (by SingularDTV) launched November 2017 as a DEX for their blockchain entertainment economy. Based on EtherDelta's architecture, it saw over $3M in 24h volume during the CENNZ listing. SingularDTV rebranded to Breaker in 2019 but failed to deliver on its decentralized Netflix vision.",
+    "category": "dex",
+    "color": "#0ea5e9",
+    "contract": "0x9a2d163ab40f88c625fd475e807bbc3556566f80",
+    "deployed": "March 2018",
+    "slug": "singularx"
+  },
+  "enclaves": {
+    "name": "Unknown DEX",
+    "desc": "An unverified EtherDelta-style DEX contract from September 2017. The protocol behind this contract has not been identified \u2014 the source code is not published on Etherscan but follows the standard deposit/withdraw pattern.",
+    "category": "dex",
+    "color": "#14b8a6",
+    "contract": "0x4d55f76ce2dbbae7b48661bef9bd144ce0c9091b",
+    "deployed": "September 2017",
+    "slug": "enclaves"
+  },
+  "decentrex": {
+    "name": "Decentrex",
+    "desc": "An EtherDelta-fork DEX that was notably served directly from GitHub Pages (circa 2017). Minimal presence online \u2014 one of many EtherDelta forks from the 2017-2018 era that attracted small trading communities.",
+    "category": "dex",
+    "color": "#64748b",
+    "contract": "0xbf29685856fae1e228878dfb35b280c0adcc3b05",
+    "deployed": "July 2017",
+    "slug": "decentrex"
+  },
+  "joyso": {
+    "name": "Joyso",
+    "desc": "Launched in Taiwan, May 2018 after a March 2018 ICO, combining off-chain matching with onchain settlement. Partnered with CoolBitX to offer the first cold-storage DEX trading experience.",
+    "category": "dex",
+    "color": "#10b981",
+    "contract": "0x04f062809b244e37e7fdc21d9409469c989c2342",
+    "deployed": "September 2018",
+    "slug": "joyso"
+  },
+  "ethen": {
+    "name": "ETHEN",
+    "desc": "A decentralized exchange for ERC-20 tokens, founded in 2018 and headquartered in Saint Petersburg, Russia. Used a custom contract design with a direct balances mapping rather than the standard EtherDelta token-tracking pattern.",
+    "category": "dex",
+    "color": "#a855f7",
+    "contract": "0xf4c27b8b002389864ac214cb13bfeef4cc5c4e8d",
+    "deployed": "October 2018",
+    "slug": "ethen"
+  },
+  "bitcratic": {
+    "name": "Bitcratic",
+    "desc": "An EtherDelta-style DEX with off-chain orderbook and onchain settlement (2018). One of the more active EtherDelta forks during the post-ICO trading boom.",
+    "category": "dex",
+    "color": "#f43f5e",
+    "contract": "0x3c020e014069df790d4f4e63fd297ba4e1c8e51f",
+    "deployed": "June 2018",
+    "slug": "bitcratic"
+  },
+  "etherc": {
+    "name": "EtherC",
+    "desc": "Claimed to be the first DEX with gas-free trading via its ETHERCToken (EET) reimbursement system (2018). An unusual approach where gas costs were subsidized through the platform's own token.",
+    "category": "dex",
+    "color": "#06b6d4",
+    "contract": "0xd8d48e52f39ab2d169c8b562c53589e6c71ac4d3",
+    "deployed": "April 2018",
+    "slug": "etherc"
+  },
+  "enclavesdex": {
+    "name": "EnclavesDex",
+    "desc": "A DEX and early liquidity aggregator on Ethereum (June 2018) that routed trades through both its own order book and EtherDelta. An early precursor to the aggregator model later popularized by 1inch.",
+    "category": "dex",
+    "color": "#84cc16",
+    "contract": "0xbf45f4280cfbe7c2d2515a7d984b8c71c15e82b7",
+    "deployed": "June 2018",
+    "slug": "enclavesdex"
+  },
+  "ens_old": {
+    "name": "ENS Old Registrar",
+    "desc": "The original .eth registrar launched May 4, 2017 (Star Wars Day) after an earlier March launch was aborted due to a bug. Used Vickrey sealed-bid auctions where winning bids were locked in deed contracts. Replaced by the permanent registrar on May 4, 2019; names not migrated by May 2020 returned to the pool, but deed deposits can still be reclaimed via releaseDeed().",
+    "category": "ens",
+    "color": "#3b82f6",
+    "contract": "0x6090A6e47849629b7245Dfa1Ca21D94cd15878Ef",
+    "deployed": "May 2017",
+    "slug": "ens"
+  },
+  "confideal": {
+    "name": "Confideal",
+    "desc": "Confideal was a smart contract platform letting non-technical users create and manage escrow deals on Ethereum without coding. Conducted an ICO in November 2017 for the CDL token, with a Bittrex listing deal. Included an arbitration module for dispute resolution. Failed to gain adoption and went inactive by 2019.",
+    "category": "ico",
+    "color": "#e11d48",
+    "contract": "0x22a97c80d7e0a9ae616737e3b8b531248f4ef91d",
+    "deployed": "November 2017",
+    "slug": "confideal"
+  },
+  "dada": {
+    "name": "DADA Collectible",
+    "desc": "A collaborative digital art platform. Deployed its \"Creeps &amp; Weirdos\" NFT collection on October 5, 2017 \u2014 after CryptoPunks but before CryptoKitties. Featured 108 unique pieces by 30 artists and was the first NFT project to implement artist royalties coded directly into the smart contract, using a modified CryptoPunks contract.",
+    "category": "nft",
+    "color": "#ec4899",
+    "contract": "0x068696a3cf3c4676b65f1c9975dd094260109d02",
+    "deployed": "October 2017",
+    "slug": "dada"
+  },
+  "mooncatrescue": {
+    "name": "MoonCatRescue",
+    "desc": "Deployed August 9, 2017, one of the earliest NFTs on Ethereum \u2014 before the term \"NFT\" or ERC-721 existed. Features 25,440 generative pixel art cats with a proof-of-work minting mechanism. Only 3,365 cats were rescued in 2017; on March 12, 2021 crypto-archaeologists rediscovered it and all remaining 19,000+ cats were rescued within hours. Note: ~100 ETH from the genesis cat is permanently stuck at address(0) due to a contract bug. Users with pending adoption requests must cancel them to reclaim escrowed ETH.",
+    "category": "nft",
+    "color": "#8b5cf6",
+    "contract": "0x60cd862c9c687a9de49aecdc3a99b74a4fc54ab6",
+    "deployed": "August 2017",
+    "slug": "mooncatrescue"
+  },
+  "fomo3d_long": {
+    "name": "Fomo3D Long",
+    "desc": "Players buy keys that reset a countdown timer; the last buyer wins the jackpot. Round 1 ended August 2018 paying 10,469 ETH (~$2.8M), won via a block-stuffing attack that prevented competing transactions. At peak, the contract held over $43M. Note: the isHuman modifier means smart contract wallets cannot withdraw \u2014 only EOAs.",
+    "category": "gambling",
+    "color": "#ef4444",
+    "contract": "0xA62142888ABa8370742bE823c1782D17A0389Da1",
+    "deployed": "July 2018",
+    "slug": "fomo3d-long"
+  },
+  "fomo3d_quick": {
+    "name": "Fomo3D Quick",
+    "desc": "A faster-round variant of Fomo3D (2018) with shorter countdown durations. Same key-purchase mechanic and dividend system as Fomo3D Long. Note: isHuman modifier \u2014 smart contract wallets cannot withdraw.",
+    "category": "gambling",
+    "color": "#f97316",
+    "contract": "0x4e8ecf79ade5e2c49b9e30d795517a81e0bf00b8",
+    "deployed": "July 2018",
+    "slug": "fomo3d-quick"
+  },
+  "fomo3d_short": {
+    "name": "Fomo3D Short",
+    "desc": "Another variant of Fomo3D (2018). Same core mechanics \u2014 key purchases, countdown timer, dividend distribution. Note: isHuman modifier \u2014 smart contract wallets cannot withdraw.",
+    "category": "gambling",
+    "color": "#fb923c",
+    "contract": "0x52083b1a21a5abc422b1b0bce5c43ca86ef74cd1",
+    "deployed": "July 2018",
+    "slug": "fomo3d-short"
+  },
+  "fomo3d_short_v2": {
+    "name": "FoMo3Dshort v2",
+    "desc": "An independent FoMo3D Short clone deployed July 20, 2018, sharing the standard P3D-style player vault and isHuman gating. Distinct from the canonical 0x52083b1a deploy. ~137 ETH remained unwithdrawn after the round wound down. Note: isHuman modifier \u2014 smart contract wallets cannot withdraw.",
+    "category": "gambling",
+    "color": "#ef4444",
+    "contract": "0x0ad3227eb47597b566ec138b3afd78cfea752de5",
+    "deployed": "July 2018",
+    "slug": "fomo3d-short-v2"
+  },
+  "fomo3d_long_v2": {
+    "name": "FoMo3Dlong v2",
+    "desc": "A FoMo3D Long clone deployed August 6, 2018, with the standard countdown / key-purchase / dividend mechanics. Distinct from the canonical 0xA62142 deploy. The contract is partially insolvent: ~21 ETH in the contract maps to ~32 ETH in player vaults; the largest holder's vault (~25 ETH) exceeds the contract balance and cannot be withdrawn, but ~110 smaller players can claim ~7.7 ETH combined. Note: isHuman modifier.",
+    "category": "gambling",
+    "color": "#ef4444",
+    "contract": "0xe336d0c8b24d8e20b6f714522f590abadb601493",
+    "deployed": "August 2018",
+    "slug": "fomo3d-long-v2"
+  },
+  "fomojp": {
+    "name": "FoMoJP",
+    "desc": "A Japanese-themed FoMo3D fork deployed July 31, 2018. Standard plyr_/getPlayerInfoByAddress/withdraw ABI. ~76 ETH still in player vaults. Note: isHuman modifier.",
+    "category": "gambling",
+    "color": "#f97316",
+    "contract": "0xcb47c89cb17c10b719fc5ed9665bae157cac2cb1",
+    "deployed": "July 2018",
+    "slug": "fomojp"
+  },
+  "f3dplus": {
+    "name": "F3DPLUS",
+    "desc": "A FoMo3D variant deployed July 22, 2018, branding itself as a \"PLUS\" version with the standard PlayerBook key purchase / dividend mechanics. ~35 ETH in player vaults. Note: isHuman modifier.",
+    "category": "gambling",
+    "color": "#fb923c",
+    "contract": "0x0f90ef4e2526e3d1791862574f9fb26a0f39ec86",
+    "deployed": "July 2018",
+    "slug": "f3dplus"
+  },
+  "snowstorm_a": {
+    "name": "SnowStorm",
+    "desc": "A FoMo3D fork deployed July 29, 2018 with the standard key-buy / countdown / vault mechanics. ~35 ETH in player vaults. Note: isHuman modifier.",
+    "category": "gambling",
+    "color": "#0ea5e9",
+    "contract": "0xda8d7ff0d043848a689125e2c7ab87b16a0cbe81",
+    "deployed": "July 2018",
+    "slug": "snowstorm-a"
+  },
+  "snowstorm_b": {
+    "name": "SnowStorm B",
+    "desc": "A second deployment of the SnowStorm FoMo3D fork from July 29, 2018, with identical bytecode to the primary contract. ~25 ETH in player vaults. Note: isHuman modifier.",
+    "category": "gambling",
+    "color": "#0ea5e9",
+    "contract": "0xb2b30d39074c52a60283a26f238abff31fcb4217",
+    "deployed": "July 2018",
+    "slug": "snowstorm-b"
+  },
+  "fomo": {
+    "name": "Fomo",
+    "desc": "A minimally-named FoMo3D fork deployed August 20, 2018. Standard PlayerBook ABI and isHuman gating. ~15 ETH in player vaults.",
+    "category": "gambling",
+    "color": "#ef4444",
+    "contract": "0xaff69c67f5dbbdd088ccbc6d47cb9e0ea547e132",
+    "deployed": "August 2018",
+    "slug": "fomo"
+  },
+  "cryptophunks_market": {
+    "name": "CryptoPhunks Marketplace",
+    "desc": "An on-chain marketplace deployed December 2021 for the CryptoPhunks NFT collection \u2014 a flipped-pixel CryptoPunks parody by NotLarvaLabs. Like the original CryptoPunks marketplace, sale proceeds and outbid bids accumulate in a public pendingWithdrawals mapping; sellers and outbid bidders call withdraw() to pull their ETH out. ~107 ETH still sits in the contract waiting for sellers and bidders who never came back.",
+    "category": "nft",
+    "color": "#f43f5e",
+    "contract": "0xd6c037be7fa60587e174db7a6710f7635d2971e7",
+    "deployed": "December 2021",
+    "slug": "cryptophunks-marketplace"
+  },
+  "cryptocats_market": {
+    "name": "CryptoCats Marketplace",
+    "desc": "A late-2017 marketplace contract for the CryptoCats NFT collection, one of the early CryptoPunks-clone projects. Sale proceeds and outbid bids accrue in pendingWithdrawals; sellers and outbid bidders call withdraw() (no args) to pull their ETH. ~45 ETH still in the contract.",
+    "category": "nft",
+    "color": "#fb923c",
+    "contract": "0x19c320b43744254ebdbcb1f1bd0e2a3dc08e01dc",
+    "deployed": "December 2017",
+    "slug": "cryptocats-marketplace"
+  },
+  "cryptocats_v1": {
+    "name": "CryptoCats v2",
+    "desc": "The March 2018 CryptoCats deployment (contractVersion()==2, predecessor of the v3 marketplace at 0x19c320b4 which references this as previousContractAddress). User claim path: withdraw() drains pendingWithdrawals[msg.sender] \u2014 only sellers from buyCat() are credited. The contract holds ~44 ETH but only ~9 ETH is mapped to users; the remaining ~35 ETH was paid in via getCat() calls during 2021 and is stuck \u2014 v1/v2's getCat() did not credit pendingWithdrawals[owner], a bug the v3 deployment explicitly fixed (\"3.0 \u2014 Bug fix to make ETH value sent in with getCat function withdrawable by contract owner\"). No admin sweep exists in v2 bytecode (all 45 selectors verified).",
+    "category": "nft",
+    "color": "#f59e0b",
+    "contract": "0x9508008227b6b3391959334604677d60169ef540",
+    "deployed": "March 2018",
+    "slug": "cryptocats-v2"
+  },
+  "ld3d_official": {
+    "name": "LD3D Official",
+    "desc": "An August 2018 FoMo3D fork branded as \"LD3D\" \u2014 standard PlayerBook key-buy / countdown / dividend mechanics with the canonical plyr_/getPlayerInfoByAddress/withdraw ABI. ~87 ETH remained in player vaults after the round wound down. Note: isHuman modifier \u2014 only EOAs can withdraw.",
+    "category": "gambling",
+    "color": "#a855f7",
+    "contract": "0x47663541167ece0b96d9e5c60f9e470b2a20f598",
+    "deployed": "August 2018",
+    "slug": "ld3d-official"
+  },
+  "bingo4beast_1": {
+    "name": "Bingo4Beast Long Official",
+    "desc": "An August 2018 FoMo3D-derivative game (B4B token) with non-standard player enumeration \u2014 plyr_(uint256) reverts with a custom \"eth less\" guard, but the rest of the standard FoMo3D ABI works (getPlayerInfoByAddress, withdraw, pIDxAddr_). Balance file enumerates players via event-log scan. ~120 ETH still in player vaults across 278 holders.",
+    "category": "gambling",
+    "color": "#7c3aed",
+    "contract": "0x05aa2fdf9f58b426b49900834cce0565d88e52eb",
+    "deployed": "August 2018",
+    "slug": "bingo4beast"
+  },
+  "bingo4beast_2": {
+    "name": "Bingo4Beast Long Official (deploy 2)",
+    "desc": "Second deployment of the Bingo4Beast B4B game (August 2018). Partially insolvent: ~571 holders can claim ~56 ETH out of the contract's 97.83 ETH; the rest is unmapped (round-mask accounting that exceeds the contract's actual balance). All claim amounts wei-exact verified via debug_traceCall.",
+    "category": "gambling",
+    "color": "#7c3aed",
+    "contract": "0x4fb7d68e0116f35ade131b6535b2db1027bf7650",
+    "deployed": "August 2018",
+    "slug": "bingo4beast-2"
+  },
+  "fomo3d_ultra": {
+    "name": "FoMo3D Ultra",
+    "desc": "An August 2018 FoMo3D-derivative \"Ultra\" variant (unverified source) holding 469 ETH. Standard withdraw() works for individual player vaults; ~163 holders can claim ~131 ETH combined (the remaining ~338 ETH lives in round-end jackpot/community pots that aren't mapped to per-user balances). All claim amounts wei-exact verified via debug_traceCall trace; no admin gate.",
+    "category": "gambling",
+    "color": "#a855f7",
+    "contract": "0xab83d96de35bad6f234178fbb6507203488e9626",
+    "deployed": "August 2018",
+    "slug": "fomo3d-ultra"
+  },
+  "spankchain_auction": {
+    "name": "SpankChain Auction",
+    "desc": "December 2017 Dutch auction for the SPANK token (SpankChain adult-entertainment platform). Buyers deposited ETH; the auction settled at a strike price and refunds the unused portion via withdraw(). 463 ETH still in the contract \u2014 100% recoverable across 105 buyers, every per-address refund amount wei-exact computed via debug_traceCall (source unverified, so a static balance lookup wasn't possible). The largest single buyer is owed ~287 ETH.",
+    "category": "ico",
+    "color": "#ec4899",
+    "contract": "0x4d1886daf2617cbd9e27abfd0f18a54f04f33c41",
+    "deployed": "December 2017",
+    "slug": "spankchain-auction"
+  },
+  "presalepool_f058": {
+    "name": "Presale Pool (LINO / HEALP / Bulleon)",
+    "desc": "An early-2018 ICO presale pool (unverified source) holding ~91 ETH from 65 contributors plus the protocol's allocations of LINO (Lino Network), HEALP (Etheal Promo), and BULLEON PROMO. Per-contributor refund computed via debug_traceCall on each candidate; 100% coverage. withdraw() pays the contributor's refundable share back.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0xf058ee35f381a12b3a0f504025419dcaf047ce7f",
+    "deployed": "January 2018",
+    "slug": "presale-pool-f058"
+  },
+  "statusbuyer": {
+    "name": "Status Buyer",
+    "desc": "Status (SNT) ICO pooled-buy contract from June 2017 (unverified). Held ~76 ETH from 14 contributors. withdraw() returns each contributor's pro-rata share \u2014 100% recoverable, all wei-exact verified via debug_traceCall.",
+    "category": "ico",
+    "color": "#06b6d4",
+    "contract": "0xcc89405e3cfd38412093840a3ac2f851dd395dfb",
+    "deployed": "June 2017",
+    "slug": "status-buyer"
+  },
+  "presalepool_48c1": {
+    "name": "Presale Pool 0x48c128",
+    "desc": "An early-2018 ICO presale pool (unverified) holding ~98 ETH for 7 contributors. withdrawAll() returns each contributor's full deposit \u2014 100% recoverable, wei-exact verified via debug_traceCall.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0x48c128eafc3b937fb1f97889ad174ac02b4952cb",
+    "deployed": "March 2018",
+    "slug": "presale-pool-48c1"
+  },
+  "presalepool_ff2c": {
+    "name": "Presale Pool 0xff2c68",
+    "desc": "A May 2018 ICO presale pool (unverified) \u2014 holds 50 ETH for one large contributor. withdrawAll() returns the full deposit. 100% recoverable, wei-exact verified.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0xff2c689cb750f2a7d46e7471521189ced948f965",
+    "deployed": "May 2018",
+    "slug": "presale-pool-ff2c"
+  },
+  "sawgamespass": {
+    "name": "SAW Games Pass",
+    "desc": "A 2022 NFT mint contract (verified ERC-721). The contract owner accumulated 39 ETH in mint proceeds and never called withdraw(). Like CryptoCats v3, the contract owner is the legitimate user-recoverable counterparty here. 100% recoverable via withdraw().",
+    "category": "nft",
+    "color": "#f59e0b",
+    "contract": "0x347e3513ca6d5118cb2df3bc386eade1e8f25ceb",
+    "deployed": "March 2022",
+    "slug": "saw-games-pass"
+  },
+  "presalepool_b990": {
+    "name": "Presale Pool 0xb9906c",
+    "desc": "An April 2018 ICO presale pool (unverified) \u2014 small remaining balance after most contributors withdrew. ~2.5 ETH recoverable across 2 holders via withdrawAll(). Trace-verified.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0xb9906cf500d5e61b9673115151104c990a804dcb",
+    "deployed": "April 2018",
+    "slug": "presale-pool-b990"
+  },
+  "presalepool_d677": {
+    "name": "Presale Pool 0xd6770a",
+    "desc": "A mid-2018 ICO presale pool (unverified) holding ~37 ETH across 23 contributors. withdrawAll() returns each contributor's deposit \u2014 100% recoverable, wei-exact verified.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0xd6770aac65a48f5715889a4cdbf30a4faf73a073",
+    "deployed": "August 2018",
+    "slug": "presale-pool-d677"
+  },
+  "presalepool_796d": {
+    "name": "Presale Pool 0x796dbc",
+    "desc": "An August 2018 ICO presale pool (unverified) holding 35 ETH for 3 contributors. withdrawAll() returns each contributor's deposit; 100% recoverable, wei-exact verified.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0x796dbc51b37f2d92b0af1271fd9520c8efd1be61",
+    "deployed": "August 2018",
+    "slug": "presale-pool-796d"
+  },
+  "presalepool_50c1": {
+    "name": "Presale Pool 0x50c19f",
+    "desc": "An August 2018 ICO presale pool (unverified) holding 34 ETH for 2 large contributors. withdrawAll() returns each deposit; 100% recoverable, wei-exact verified.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0x50c19ffdbda85d1a07c09f01e113a94923801d32",
+    "deployed": "August 2018",
+    "slug": "presale-pool-50c1"
+  },
+  "presalepool_6f40": {
+    "name": "Presale Pool 0x6f40d9",
+    "desc": "A 2018 ICO presale pool (unverified) holding 28 ETH across 285 contributors \u2014 the largest by holder count in this batch. withdrawAll() returns each contributor's deposit; 100% recoverable, wei-exact verified.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0x6f40d96713b60d5083bc2493251907ca673de1b8",
+    "deployed": "2018",
+    "slug": "presale-pool-6f40"
+  },
+  "ambassadors_fund": {
+    "name": "Ambassadors Fund",
+    "desc": "A 2019 OpenZeppelin PaymentSplitter holding 17.5 ETH across 12 fund-share holders. release(address) pays each beneficiary their pro-rata share. 100% recoverable, wei-exact verified.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0xe9426198aec621203ba1fe07cf292b3796ba6248",
+    "deployed": "2019",
+    "slug": "ambassadors-fund"
+  },
+  "just_hodl_it": {
+    "name": "JustHodlIt",
+    "desc": "A 2018 ICO contribution pool (unverified) \u2014 16 ETH recoverable via withdrawAll() across 8 contributors (78% coverage; the rest is in admin/fee buckets and not user-claimable). Wei-exact verified per holder.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0x344285b2082d9c7981241dcc160beca6057637e6",
+    "deployed": "2018",
+    "slug": "just-hodl-it"
+  },
+  "game_fair": {
+    "name": "GameFair",
+    "desc": "A 2018 gambling/redemption contract (unverified). Partially insolvent \u2014 4 holders can claim a combined 14 ETH against 13 ETH of contract balance via redeem(). Late redeemers will revert. Wei-exact verified.",
+    "category": "gambling",
+    "color": "#a855f7",
+    "contract": "0x86ab844a067094ec2c5a4bade21fcf2aeee32122",
+    "deployed": "2018",
+    "slug": "game-fair"
+  },
+  "ibc_lottery": {
+    "name": "IBC Lottery",
+    "desc": "An August 2018 IBC-themed lottery game (unverified). 8 holders can claim 12.4 ETH via withdraw(); 97% coverage. Wei-exact verified per holder.",
+    "category": "gambling",
+    "color": "#a855f7",
+    "contract": "0xc5aafe85775fe97bee49d16cc4f38aaf8dbf20c5",
+    "deployed": "August 2018",
+    "slug": "ibc-lottery"
+  },
+  "contribution_pool": {
+    "name": "Contribution Pool",
+    "desc": "A 2017 contribution pool (verified ERC20-style) holding 10.6 ETH for one large contributor. withdraw() returns the full deposit; 100% recoverable, wei-exact verified.",
+    "category": "ico",
+    "color": "#10b981",
+    "contract": "0xa812137eff2b368d0b2880a39b609fb60c426850",
+    "deployed": "2017",
+    "slug": "contribution-pool"
+  },
+  "etherdelta_m0": {
+    "name": "EtherDelta v0",
+    "desc": "The earliest EtherDelta contract, deployed around August 2016 using Solidity v0.3.6 \u2014 one of the very first DEX contracts on Ethereum, deployed just months after the DAO hack. The team iterated through multiple versions (Oct 2016, Feb 2017) before the well-known v2; each upgrade required manual migration.",
+    "category": "dex",
+    "color": "#d97706",
+    "contract": "0x4aea7cf559f67cedcad07e12ae6bc00f07e8cf65",
+    "deployed": "August 2016",
+    "slug": "etherdelta-m0"
+  },
+  "neufund": {
+    "name": "Neufund EtherToken",
+    "desc": "Founded in 2016 in Berlin, Neufund conducted the world's first public offering of tokenized equity on Ethereum in November 2018. Deployed over EUR 20M in capital for 11,000 investors from 123 countries; flagship case Greyp Bikes completed the full cycle from tokenization to Porsche acquisition. Shut down January 17, 2022 after years of regulatory uncertainty with BaFin.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xb59a226a2b8a2f2b0512baa35cc348b6b213b671",
+    "deployed": "November 2017",
+    "slug": "neufund"
+  },
+  "ethertoken_v2": {
+    "name": "Neufund EtherToken v2",
+    "desc": "Neufund deployed a second EtherToken (ETH-T) contract in November 2018 for its post-ICBM LockedAccount migration. ETH-T is a WETH-style wrapper: holders can burn their token balance through withdraw(uint256) to receive the same amount of native ETH. This entry tracks directly withdrawable ETH-T holder balances only; LockedAccount-held ETH-T remains tracked separately under Neufund.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x0b7dc5a43ce121b4eaaa41b0f4f43bba47bb8951",
+    "deployed": "November 2018",
+    "slug": "ethertoken-v2"
+  },
+  "neufund_locked": {
+    "name": "Neufund",
+    "desc": "Neufund's ICBM (Initial Capital Building Mechanism) ran two LockedAccount escrows: a v1 contract from November 2017 (0xb1E4675f...) and a post-ICBM v2 contract from November 2018 (0xea4df6f4...) that received migrations from v1 via migrate(). Each escrow holds per-investor ETH-T against a separate EtherToken (v1: 0xb59a226a..., v2: 0x0b7dc5a4...) and tracks a Neumark (NEU) burn debt to unlock. All 540-day lock periods expired in 2019. To recover ETH: approveAndCall on NEU targeting the user's specific LockedAccount (burns NEU + returns ETH-T in one tx), then withdraw ETH-T from the matching EtherToken. The site detects which contract a user belongs to and routes the claim accordingly \u2014 no user action needed beyond confirming the two transactions.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xb1E4675f0dBE360bA90447A7e58c62C762Ad62D4",
+    "secondary_contract": "0xea4df6f41e90dd7b6c482bda228925de159c03f5",
+    "deployed": "November 2017",
+    "slug": "neufund-locked"
+  },
+  "bancor_eth": {
+    "name": "Bancor Old ETH Token",
+    "desc": "Bancor launched June 2017 with a then-record $153M ICO and deployed the first-ever automated market maker contracts on Ethereum, inventing bonding curves and liquidity pool tokens before \"DeFi\" was coined. On July 9, 2018, attackers stole 25,000 ETH (~$12.5M) via a compromised upgrade wallet. This is the legacy ETH wrapper from Bancor's early architecture.",
+    "category": "ico",
+    "color": "#1d4ed8",
+    "contract": "0xD76b5c2A23ef78368d8E34288B5b65D616B746aE",
+    "deployed": "June 2017",
+    "slug": "bancor-eth"
+  },
+  "switchdex": {
+    "name": "SwitchDex",
+    "desc": "An EtherDelta-fork DEX by Switch.ag (2019), notable for being active from 2019-2024 with 8,000+ trades \u2014 unusually long-lived for an order-book DEX in the AMM era.",
+    "category": "dex",
+    "color": "#7c3aed",
+    "contract": "0xc3c12a9e63e466a3ba99e07f3ef1f38b8b81ae1b",
+    "deployed": "March 2019",
+    "slug": "switchdex"
+  },
+  "coinchangex": {
+    "name": "Coinchangex",
+    "desc": "An EtherDelta-fork DEX (2018) that shut down around March 2020. Processed a moderate volume of trades during the ICO token trading era.",
+    "category": "dex",
+    "color": "#dc2626",
+    "contract": "0x2f23228b905ceb4734eb42d9b42805296667c93b",
+    "deployed": "May 2018",
+    "slug": "coinchangex"
+  },
+  "swisscryptoexchange": {
+    "name": "SwissCryptoExchange",
+    "desc": "A whitelisted EtherDelta-fork DEX (2018). Unusual in that deposits required whitelist approval, but the withdraw function is permissionless \u2014 anyone with a balance can withdraw.",
+    "category": "dex",
+    "color": "#b91c1c",
+    "contract": "0xbeeb655808e3bdb83b6998f09dfe1e0f2c66a9be",
+    "deployed": "August 2018",
+    "slug": "swisscryptoexchange"
+  },
+  "lscx": {
+    "name": "LSCX",
+    "desc": "The DEX component of Lescovex, a Spanish platform for issuing and trading Ethereum financial contracts (October 2018). Part of a broader ecosystem that included tokenized securities and smart contract templates.",
+    "category": "dex",
+    "color": "#059669",
+    "contract": "0x3da70c70b9574ff185b31d70878a8e3094603c4c",
+    "deployed": "November 2018",
+    "slug": "lscx"
+  },
+  "bitcratic_v1": {
+    "name": "Bitcratic v1",
+    "desc": "The original Bitcratic contract before the team migrated to a newer version. Users who didn't move their funds to the updated contract still have balances here.",
+    "category": "dex",
+    "color": "#ca8a04",
+    "contract": "0x232ba9f3b3643ab28d28ed7ee18600708d60e5fe",
+    "deployed": "January 2019",
+    "slug": "bitcratic-v1"
+  },
+  "marketplace": {
+    "name": "MarketPlace",
+    "desc": "An EtherDelta-fork DEX from the 2017-2018 era. One of dozens of exchanges that cloned EtherDelta's open-source smart contract to launch competing trading platforms.",
+    "category": "dex",
+    "color": "#16a34a",
+    "contract": "0x2f13fa06c0efd2a5c4cf2175a0467084672e648b",
+    "deployed": "June 2018",
+    "slug": "marketplace"
+  },
+  "bitox": {
+    "name": "Bitox",
+    "desc": "An EtherDelta-fork DEX that also offered airdrop aggregation services (2018). Combined token trading with a directory of active ERC-20 airdrops.",
+    "category": "dex",
+    "color": "#0891b2",
+    "contract": "0xb5adb233f28c86cef693451b67e1f2d41da97d21",
+    "deployed": "April 2018",
+    "slug": "bitox"
+  },
+  "ed_fork_6_9eth": {
+    "name": "ED Fork (0xc513)",
+    "desc": "An unverified EtherDelta v2 fork \u2014 source code not published on Etherscan but bytecode matches the standard pattern.",
+    "category": "dex",
+    "color": "#a855f7",
+    "contract": "0xc5138d4bd0ec5c51b6b6bdfcb8528ad9c333af97",
+    "deployed": "September 2018",
+    "slug": "ed-fork-6-9eth"
+  },
+  "ethernext": {
+    "name": "Ethernext",
+    "desc": "An EtherDelta-fork DEX from the 2017-2018 era. One of dozens of exchanges that cloned EtherDelta's open-source smart contract to launch competing trading platforms.",
+    "category": "dex",
+    "color": "#2563eb",
+    "contract": "0x499197314f9903a1ba9bed7ee54cd9eee5900e49",
+    "deployed": "May 2018",
+    "slug": "ethernext"
+  },
+  "seeddex_v2": {
+    "name": "SeedDex v2",
+    "desc": "An EtherDelta-fork DEX from the 2017-2018 era. One of dozens of exchanges that cloned EtherDelta's open-source smart contract to launch competing trading platforms.",
+    "category": "dex",
+    "color": "#65a30d",
+    "contract": "0xd4cc0cda97ec567235b7019c655ec75cd361f712",
+    "deployed": "September 2018",
+    "slug": "seeddex-v2"
+  },
+  "seeddex_v3": {
+    "name": "SeedDex v3",
+    "desc": "An EtherDelta-fork DEX from the 2017-2018 era. One of dozens of exchanges that cloned EtherDelta's open-source smart contract to launch competing trading platforms.",
+    "category": "dex",
+    "color": "#4d7c0f",
+    "contract": "0xcf25ebd54120cf2e4137fab0a91a7f7403a5debf",
+    "deployed": "May 2018",
+    "slug": "seeddex-v3"
+  },
+  "polarisdex": {
+    "name": "PolarisDEX",
+    "desc": "An EtherDelta-fork DEX from the 2017-2018 era. One of dozens of exchanges that cloned EtherDelta's open-source smart contract to launch competing trading platforms.",
+    "category": "dex",
+    "color": "#0284c7",
+    "contract": "0x25066b77ae6174d372a9fe2b1d7886a2be150e9b",
+    "deployed": "January 2019",
+    "slug": "polarisdex"
+  },
+  "ethmall": {
+    "name": "Ethmall",
+    "desc": "An EtherDelta-fork DEX from the 2017-2018 era. One of dozens of exchanges that cloned EtherDelta's open-source smart contract to launch competing trading platforms.",
+    "category": "dex",
+    "color": "#9333ea",
+    "contract": "0x2b44d68555899dbc1ab0892e7330476183dbc932",
+    "deployed": "July 2018",
+    "slug": "ethmall"
+  },
+  "extoke": {
+    "name": "ExToke",
+    "desc": "A fee-free DEX for ERC-20 tokens (2018) that planned to add an ICO launchpad feature. Conducted its own token sale but failed to gain traction.",
+    "category": "dex",
+    "color": "#0e7490",
+    "contract": "0x97c9e0eccc27efef7330e89a8c9414623ba2ee0f",
+    "deployed": "June 2018",
+    "slug": "extoke"
+  },
+  "algodex": {
+    "name": "AlgoDEX",
+    "desc": "An EtherDelta-fork DEX from the 2017-2018 era. One of dozens of exchanges that cloned EtherDelta's open-source smart contract to launch competing trading platforms.",
+    "category": "dex",
+    "color": "#7e22ce",
+    "contract": "0x4bc78f6619991b029b867b6d88d39c196332aba3",
+    "deployed": "December 2019",
+    "slug": "algodex"
+  },
+  "ndex": {
+    "name": "nDEx",
+    "desc": "An EtherDelta-fork DEX from the 2017-2018 era. One of dozens of exchanges that cloned EtherDelta's open-source smart contract to launch competing trading platforms.",
+    "category": "dex",
+    "color": "#c026d3",
+    "contract": "0x51a2b1a38ec83b56009d5e28e6222dbb56c23c22",
+    "deployed": "September 2018",
+    "slug": "ndex"
+  },
+  "edex": {
+    "name": "EDex",
+    "desc": "An EtherDelta-fork DEX from the 2017-2018 era. One of dozens of exchanges that cloned EtherDelta's open-source smart contract to launch competing trading platforms.",
+    "category": "dex",
+    "color": "#d97706",
+    "contract": "0x4fbcfa90ac5a1f7f70b7ecc6dc1589bbe6904b02",
+    "deployed": "September 2019",
+    "slug": "edex"
+  },
+  "tradexone": {
+    "name": "TradexOne",
+    "desc": "An EtherDelta-fork DEX from the 2017-2018 era. One of dozens of exchanges that cloned EtherDelta's open-source smart contract to launch competing trading platforms.",
+    "category": "dex",
+    "color": "#0d9488",
+    "contract": "0xf61a285edf078536a410a5fbc28013f9660e54a8",
+    "deployed": "October 2018",
+    "slug": "tradexone"
+  },
+  "afrodex": {
+    "name": "Afrodex",
+    "desc": "An EtherDelta-fork DEX from the 2017-2018 era. One of dozens of exchanges that cloned EtherDelta's open-source smart contract to launch competing trading platforms.",
+    "category": "dex",
+    "color": "#ea580c",
+    "contract": "0xe8fff15bb5e14095bfdfa8bb85d83cc900c23c56",
+    "deployed": "December 2019",
+    "slug": "afrodex"
+  },
+  "readyplayerone": {
+    "name": "ReadyPlayerONE",
+    "desc": "Deployed July 2018, a Fomo3D fork named after the Ernest Cline novel and Spielberg film. Same key-purchase countdown mechanic where the last buyer before the timer expires wins the pot. Note: isHuman modifier \u2014 smart contract wallets cannot withdraw.",
+    "category": "gambling",
+    "color": "#ef4444",
+    "contract": "0x6db943251e4126f913e9733821031791e75df713",
+    "deployed": "July 2018",
+    "slug": "readyplayerone"
+  },
+  "fomo3d_lightning": {
+    "name": "FoMo3D Lightning",
+    "desc": "One of the earliest Fomo3D clones, deployed July 2018 within weeks of the original. A speed-round variant of the countdown-timer game where rounds resolved faster than standard Fomo3D. Note: isHuman modifier \u2014 smart contract wallets cannot withdraw.",
+    "category": "gambling",
+    "color": "#f97316",
+    "contract": "0x24da016c06941ec2c92be28e0a2b2e679f0d1dc7",
+    "deployed": "July 2018",
+    "slug": "fomo3d-lightning"
+  },
+  "etherdelta_v3": {
+    "name": "Etheropt Old",
+    "desc": "The first decentralized options exchange on Ethereum (early 2016), from the creator of EtherDelta. Offered vanilla call and put options on ETH/USD using Poloniex and Coindesk data verified by Reality Keys. Entirely autonomous with no owner and no fees. Shut down in late 2016.",
+    "category": "dex",
+    "color": "#78716c",
+    "contract": "0xc6b330df38d6ef288c953f1f2835723531073ce2",
+    "deployed": "July 2016",
+    "slug": "etherdelta-v3"
+  },
+  "gandhiji": {
+    "name": "GandhiJi",
+    "desc": "was a P3D clone (2018) themed around Indian independence. Direct fork of PoWH3D with identical 10% buy/sell fee mechanics. 8,800+ holders. Fully autonomous, no owner.",
+    "category": "gambling",
+    "color": "#f59e0b",
+    "contract": "0x167cB3F2446F829eb327344b66E271D1a7eFeC9A",
+    "deployed": "April 2018",
+    "slug": "gandhiji"
+  },
+  "zethr": {
+    "name": "Zethr",
+    "desc": "was a P3D-style casino token (2018) where holders \"be the house.\" Users pick dividend rates (2-33%). Includes slots and other casino games. This is the token contract holding user dividends.",
+    "category": "gambling",
+    "color": "#7c3aed",
+    "contract": "0xd48b633045af65ff636f3c6edd744748351e020d",
+    "deployed": "June 2018",
+    "slug": "zethr"
+  },
+  "zethr_main": {
+    "name": "Zethr Casino",
+    "desc": "was the main Zethr casino bankroll contract (2018). Holds house funds and player dividends from casino games.",
+    "category": "gambling",
+    "color": "#6d28d9",
+    "contract": "0xb9ab8eed48852de901c13543042204c6c569b811",
+    "deployed": "June 2018",
+    "slug": "zethr-main"
+  },
+  "ethpyramid": {
+    "name": "EthPyramid",
+    "desc": "was the original Ethereum dividend/pyramid token (early 2018), predating PoWH3D. Later rebranded to EthPhoenix.",
+    "category": "gambling",
+    "color": "#b45309",
+    "contract": "0x2fa0ac498d01632f959d3c18e38f4390b005e200",
+    "deployed": "February 2018",
+    "slug": "ethpyramid"
+  },
+  "fomogame": {
+    "name": "FoMoGame",
+    "desc": "was a Fomo3D clone (2018). Same countdown/key-buying mechanics with player vaults.",
+    "category": "gambling",
+    "color": "#ea580c",
+    "contract": "0x86D179c28cCeb120Cd3f64930Cf1820a88B77D60",
+    "deployed": "July 2018",
+    "slug": "fomogame"
+  },
+  "powh3d": {
+    "name": "PoWH3D",
+    "desc": "A self-aware Ponzi-style token game (February 2018) rewritten after the original PoWH was drained of 200+ ETH via an integer overflow bug. Every buy and sell of P3D tokens incurs a 10% fee distributed to all existing holders. At peak held 16,000 ETH (~$6.4M). Spawned thousands of forks including Fomo3D.",
+    "category": "gambling",
+    "color": "#dc2626",
+    "contract": "0xB3775fB83F7D12A36E0475aBdD1FCA35c091efBe",
+    "deployed": "February 2018",
+    "slug": "powh3d"
+  },
+  "powm": {
+    "name": "POWM",
+    "desc": "Proof of Weak Math, deployed April 2018 during the first wave of P3D clones. Named as a jab at PoWL, an earlier clone with a coding error that broke its dividend math. Featured a 20% fee and briefly held over 4,000 ETH.",
+    "category": "gambling",
+    "color": "#b91c1c",
+    "contract": "0xa146240bf2c04005a743032dc0d241ec0bb2ba2b",
+    "deployed": "April 2018",
+    "slug": "powm"
+  },
+  "pooh": {
+    "name": "POOH",
+    "desc": "Deployed April 2018, POOH branded itself as \"the most honest P3D clone\" and an \"honest proof of cloning.\" Same 10% buy/sell fee mechanics as PoWH3D, hosted at number2.io.",
+    "category": "gambling",
+    "color": "#92400e",
+    "contract": "0x4c29d75cc423e8adaa3839892feb66977e295829",
+    "deployed": "April 2018",
+    "slug": "pooh"
+  },
+  "powtf": {
+    "name": "PoWTF",
+    "desc": "Short for \"Proof of World Trade Francs,\" deployed April 2018. Named after a fictional stablecoin jokingly proposed by Vitalik Buterin. Featured higher fees than standard P3D: 20% on buys and 25% on sells.",
+    "category": "gambling",
+    "color": "#9f1239",
+    "contract": "0x702392282255f8c0993dbbbb148d80d2ef6795b1",
+    "deployed": "April 2018",
+    "slug": "powtf"
+  },
+  "powh_clone1": {
+    "name": "Hourglass Clone A",
+    "desc": "An unnamed PoWH3D fork deployed April 2018, using the same Hourglass dividend token contract with no meaningful modifications. One of dozens of near-identical clones launched during the P3D craze.",
+    "category": "gambling",
+    "color": "#881337",
+    "contract": "0xe1c9a03cf690256ff7738cbd508c88cf5238a535",
+    "deployed": "April 2018",
+    "slug": "powh-clone1"
+  },
+  "powh_clone2": {
+    "name": "Hourglass Clone B",
+    "desc": "Another unbranded Hourglass contract deployed April 2018. A direct copy of the PoWH3D source code with identical 10% buy/sell fees distributed to token holders.",
+    "category": "gambling",
+    "color": "#7f1d1d",
+    "contract": "0x34ba9c7402e1df11709c7983008b5a49d59e963f",
+    "deployed": "April 2018",
+    "slug": "powh-clone2"
+  },
+  "lockedin": {
+    "name": "LOCKEDiN",
+    "desc": "Deployed April 2018, LOCKEDiN was a PoWH3D fork that emphasized the \"lock in your ETH for dividends\" angle. Standard Hourglass mechanics where every transaction fee is split among all existing token holders.",
+    "category": "gambling",
+    "color": "#6b21a8",
+    "contract": "0xdb4837c9d84315abcde80a865f15178f86db3966",
+    "deployed": "April 2018",
+    "slug": "lockedin"
+  },
+  "stronghold": {
+    "name": "StrongHold",
+    "desc": "A PoWH3D clone from April 2018 that branded itself as a safer, more resilient version of the P3D dividend model. Used the same autonomous contract mechanics with no owner and no self-destruct.",
+    "category": "gambling",
+    "color": "#5b21b6",
+    "contract": "0x7e7e645e9121dddaf87d0434feb9f113d1dbbb41",
+    "deployed": "April 2018",
+    "slug": "stronghold"
+  },
+  "powh_clone3": {
+    "name": "Hourglass Clone C",
+    "desc": "Deployed April 2018 at the peak of the PoWH3D clone wave. An unmodified copy of the Hourglass dividend contract where holding tokens earns a share of all future buy and sell fees.",
+    "category": "gambling",
+    "color": "#4c1d95",
+    "contract": "0x7b6c511a94d35b9cf9979b727335c9798edb5c64",
+    "deployed": "April 2018",
+    "slug": "powh-clone3"
+  },
+  "powh_clone4": {
+    "name": "Hourglass Clone D",
+    "desc": "Yet another April 2018 Hourglass fork, part of the rapid proliferation of P3D clones that flooded Ethereum in spring 2018. Identical dividend token mechanics with 10% fees on every transaction.",
+    "category": "gambling",
+    "color": "#831843",
+    "contract": "0xf5aa54d121dfe0d5eeb37c83aed42238f4f2c5c6",
+    "deployed": "April 2018",
+    "slug": "powh-clone4"
+  },
+  "unkoin": {
+    "name": "UnKoin",
+    "desc": "A PoWH3D clone from April 2018 with a play on \"unknown coin.\" Standard Hourglass dividend mechanics where ETH deposits mint tokens and all trading activity generates passive income for holders.",
+    "category": "gambling",
+    "color": "#701a75",
+    "contract": "0x5bedf488d29407bc08e77cd9ee292c2041a61c8c",
+    "deployed": "April 2018",
+    "slug": "unkoin"
+  },
+  "acedapp": {
+    "name": "AceDapp",
+    "desc": "Deployed October 2019, a late-era PoWH3D clone that launched well after most P3D forks had already lost their user bases. Standard Hourglass dividend mechanics with 10% buy/sell fees.",
+    "category": "gambling",
+    "color": "#9f1239",
+    "contract": "0xe65f525ec48c7e95654b9824ecc358454ea9185e",
+    "deployed": "October 2019",
+    "slug": "acedapp"
+  },
+  "cryptominertoken": {
+    "name": "CryptoMinerToken",
+    "desc": "was a dividend-yielding PoWH3D clone (September 2018) hosted at minertoken.cloud, with customized fee tiers: 10% deposit, 4% withdrawal, 1% transfer, and 33% referral rewards.",
+    "category": "gambling",
+    "color": "#a16207",
+    "contract": "0x0a97094c19295e320d5121d72139a150021a2702",
+    "deployed": "September 2018",
+    "slug": "cryptominertoken"
+  },
+  "bluechip": {
+    "name": "BlueChip",
+    "desc": "was a PoWH3D clone (September 2019) implementing the standard 10% fee-sharing dividend mechanism where trading activity generates ETH rewards for token holders.",
+    "category": "gambling",
+    "color": "#4338ca",
+    "contract": "0xabefec93451a2cd5d864ff7b0b1604dfc60e9688",
+    "deployed": "September 2019",
+    "slug": "bluechip"
+  },
+  "rev1": {
+    "name": "REV1",
+    "desc": "Deployed May 2018, REV1 was an early PoWH3D fork from the second month of the P3D clone wars. Straightforward dividend token where 10% of every buy and sell is redistributed to holders.",
+    "category": "gambling",
+    "color": "#0e7490",
+    "contract": "0x05215fce25902366480696f38c3093e31dbce69a",
+    "deployed": "May 2018",
+    "slug": "rev1"
+  },
+  "potj": {
+    "name": "POTJ",
+    "desc": "Proof of Trevon James, launched April 2018, was a PoWH3D fork with higher fees (20% buys, 25% sells) themed around a crypto YouTube personality involved in the BitConnect case.",
+    "category": "gambling",
+    "color": "#b45309",
+    "contract": "0xc28e860c9132d55a184f9af53fc85e90aa3a0153",
+    "deployed": "April 2018",
+    "slug": "potj"
+  },
+  "lynia": {
+    "name": "LYNIA",
+    "desc": "A gaming and gambling platform deployed August 2018 that combined PoWH3D-style dividend tokens with provably fair on-chain games. Has an isHuman modifier \u2014 smart contract wallets cannot withdraw.",
+    "category": "gambling",
+    "color": "#86198f",
+    "contract": "0xecfae6f958f7ab15bdf171eeefa568e41eabf641",
+    "deployed": "August 2018",
+    "slug": "lynia"
+  },
+  "blackgold": {
+    "name": "BlackGoldEthereum",
+    "desc": "was a dividend-based PoWH3D clone (July 2020) designed to provide passive income to token holders through a buy/sell/reinvestment mechanism. The project website blackgoldethereum.club is no longer accessible.",
+    "category": "gambling",
+    "color": "#374151",
+    "contract": "0xf72b0b36723f60402cccad7f4358acf2ad474c17",
+    "deployed": "July 2020",
+    "slug": "blackgold"
+  },
+  "proofofcraiggrant": {
+    "name": "ProofOfCraigGrant",
+    "desc": "Deployed April 2018, a meme-themed PoWH3D fork named after Craig Grant, one of BitConnect's most prominent YouTube promoters. Part of a series of personality-themed P3D clones alongside Proof of Trevon James.",
+    "category": "gambling",
+    "color": "#78350f",
+    "contract": "0xea61319f55b6543962fe1d7bd990ef74849fc54f",
+    "deployed": "April 2018",
+    "slug": "proofofcraiggrant"
+  },
+  "sportcrypt": {
+    "name": "SportCrypt",
+    "desc": "was a peer-to-peer decentralized sports betting exchange (January 2018) with zero fees and no KYC requirements. Later rebranded to Degens and received a MakerDAO community grant to accept DAI alongside ETH.",
+    "category": "gambling",
+    "color": "#166534",
+    "contract": "0x37304b0ab297f13f5520c523102797121182fb5b",
+    "deployed": "January 2018",
+    "slug": "sportcrypt"
+  },
+  "dailydivs": {
+    "name": "DailyDivs",
+    "desc": "was a PoWH3D clone (October 2018) offering daily dividend distributions to token holders through a 10% buy/sell fee. Has an isHuman modifier \u2014 smart contract wallets cannot withdraw.",
+    "category": "gambling",
+    "color": "#92400e",
+    "contract": "0xd2bfceeab8ffa24cdf94faa2683df63df4bcbdc8",
+    "deployed": "October 2018",
+    "slug": "dailydivs"
+  },
+  "proofofcommunity": {
+    "name": "ProofOfCommunity",
+    "desc": "A May 2018 PoWH3D fork that rebranded the dividend token concept around community ownership. Same underlying Hourglass mechanics where all transaction fees are split among existing holders.",
+    "category": "gambling",
+    "color": "#1e3a5f",
+    "contract": "0x1739e311ddbf1efdfbc39b74526fd8b600755ada",
+    "deployed": "May 2018",
+    "slug": "proofofcommunity"
+  },
+  "bitconnect_powh": {
+    "name": "BitConnect Token",
+    "desc": "Deployed June 2019, a PoWH3D clone that borrowed the BitConnect name a year and a half after the original lending platform collapsed. Standard dividend token mechanics; unrelated to the actual BitConnect project.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0xfcd3a0f5f416e407647a7518b90354946d316059",
+    "deployed": "June 2019",
+    "slug": "bitconnect-powh"
+  },
+  "eightherbank": {
+    "name": "Eightherbank",
+    "desc": "A November 2019 PoWH3D fork with a banking theme. Uses the Hourglass dividend model with an isHuman modifier \u2014 smart contract wallets cannot withdraw.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0xc6e5e9c6f4f3d1667df6086e91637cc7c64a13eb",
+    "deployed": "November 2019",
+    "slug": "eightherbank"
+  },
+  "nexgen": {
+    "name": "Nexgen",
+    "desc": "Deployed June 2019, a PoWH3D clone that positioned itself as a next-generation dividend token. Identical Hourglass mechanics to P3D with 10% fees on buys and sells.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0xffd31e68bf7af89df862435a138615bd60abf574",
+    "deployed": "June 2019",
+    "slug": "nexgen"
+  },
+  "diamonddividend": {
+    "name": "DiamondDividend",
+    "desc": "A November 2019 PoWH3D fork using diamond-themed branding for the standard Hourglass dividend model. Holders earn ETH from all future transaction fees proportional to their token balance.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0x84cc06eddb26575a7f0afd7ec2e3e98d31321397",
+    "deployed": "November 2019",
+    "slug": "diamonddividend"
+  },
+  "e25": {
+    "name": "E25 Booster",
+    "desc": "Deployed February 2019, a PoWH3D clone with a modified fee structure hinted at by its \"25\" branding. Has an isHuman modifier \u2014 smart contract wallets cannot withdraw.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0xc3ad35d351b33783f27777e2ee1a4b6f96e4ee34",
+    "deployed": "February 2019",
+    "slug": "e25"
+  },
+  "bitconnect2": {
+    "name": "BitConnect v2",
+    "desc": "The second in a series of BitConnect-themed PoWH3D clones, deployed June 2019. Reused the infamous brand name purely for attention; standard P3D dividend token under the hood.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0x568a693e1094b1e51e8053b2fc642da7161603f5",
+    "deployed": "June 2019",
+    "slug": "bitconnect2"
+  },
+  "ethplatinum": {
+    "name": "ETHPlatinum",
+    "desc": "Deployed November 2021, one of the last PoWH3D clones ever created on Ethereum mainnet. By this point gas fees made the P3D dividend model largely impractical for small deposits.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0x510f9a9642ac14ded91629a1aad552be4b24b5f0",
+    "deployed": "November 2021",
+    "slug": "ethplatinum"
+  },
+  "divsnetwork": {
+    "name": "DivsNetwork",
+    "desc": "A July 2020 PoWH3D fork that framed itself as a dividend distribution network. Fully autonomous contract with no owner, running the same Hourglass token model as every other P3D clone.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0x26e6c899b5a5dc1d4874d828fda515a7eb7baf00",
+    "deployed": "July 2020",
+    "slug": "divsnetwork"
+  },
+  "redchip": {
+    "name": "RedChip",
+    "desc": "An October 2019 PoWH3D clone that borrowed stock market terminology \u2014 \"red chip\" refers to mainland China companies listed in Hong Kong. Standard Hourglass dividend mechanics beneath the branding.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0xcd2de0bd5347f617f832442ebcc1c23a4d618847",
+    "deployed": "October 2019",
+    "slug": "redchip"
+  },
+  "cxxmain": {
+    "name": "CxxMain",
+    "desc": "Deployed November 2019 with a cryptic name that may reference C++ programming. A PoWH3D fork with unmodified Hourglass contract code and the same fee-redistribution mechanics.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0xa4dce3845cb88a6fca0291d4eca9e5a96e75e2b4",
+    "deployed": "November 2019",
+    "slug": "cxxmain"
+  },
+  "familyonly": {
+    "name": "FamilyOnlyToken",
+    "desc": "An August 2020 PoWH3D fork with an invitation-only theme suggested by its name. Same Hourglass dividend model where ETH deposits mint tokens and every trade generates passive income for all holders.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0xbedde30d3532165843f07b1b0e3e90fddbb75918",
+    "deployed": "August 2020",
+    "slug": "familyonly"
+  },
+  "spw": {
+    "name": "SPW",
+    "desc": "Deployed June 2020, SPW was a minimal PoWH3D clone with no discernible branding or website. Pure Hourglass dividend contract mechanics.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0x586f3d9e3524eb02448691b158fdcf5ffc2c57b0",
+    "deployed": "June 2020",
+    "slug": "spw"
+  },
+  "ethdiamond": {
+    "name": "ETHDIAMOND",
+    "desc": "A July 2020 PoWH3D clone using diamond-hands imagery. Identical dividend token contract to P3D \u2014 buy and sell fees are pooled and shared among all token holders automatically.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0xca1cc76be1f5e5ee492859d8463653cb231991bc",
+    "deployed": "July 2020",
+    "slug": "ethdiamond"
+  },
+  "ethershares": {
+    "name": "Ethershares",
+    "desc": "Deployed December 2018, Ethershares framed P3D-style token ownership as \"shares\" in an ETH revenue pool. Standard Hourglass mechanics with no technical differences from the original.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0x2c984ec9bb20b33deb84fbeedf20effda481fdc4",
+    "deployed": "December 2018",
+    "slug": "ethershares"
+  },
+  "twelvehour": {
+    "name": "TwelveHourToken",
+    "desc": "An October 2018 PoWH3D fork, possibly named to suggest rapid dividend accumulation. Uses the same Hourglass contract where transaction fees are continuously redistributed to token holders.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0x8f6015289a64c48ccf258c21a999809fc553c3c4",
+    "deployed": "October 2018",
+    "slug": "twelvehour"
+  },
+  "neutrino81": {
+    "name": "Neutrino81",
+    "desc": "Deployed March 2019 with a physics-inspired name. A PoWH3D fork using the same autonomous dividend token contract \u2014 no owner, no admin keys, just the Hourglass buy/sell fee loop.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0x897d6c6772b85bf25b46c6f6da454133478ea6ab",
+    "deployed": "March 2019",
+    "slug": "neutrino81"
+  },
+  "hourglassx": {
+    "name": "HourglassX",
+    "desc": "A December 2018 PoWH3D fork that wore the \"Hourglass\" name openly \u2014 the original P3D contract was called Hourglass internally. Standard dividend mechanics with 10% transaction fees.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0x058a144951e062fc14f310057d2fd9ef0cf5095b",
+    "deployed": "December 2018",
+    "slug": "hourglassx"
+  },
+  "fairexchange": {
+    "name": "FairExchange",
+    "desc": "Deployed October 2018, FairExchange pitched the PoWH3D dividend model as a \"fair\" alternative to centralized exchanges. Under the surface, identical Hourglass contract code.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0xde2b11b71ad892ac3e47ce99d107788d65fe764e",
+    "deployed": "October 2018",
+    "slug": "fairexchange"
+  },
+  "pomda": {
+    "name": "POMDA",
+    "desc": "A June 2018 PoWH3D fork whose name likely riffs on \"Proof of Mass Dividend Accumulation\" or similar. Vanilla Hourglass contract \u2014 ETH in, tokens out, dividends from all activity.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0x0be5e8f107279cc2d9c3a537ed4ea669b45e443d",
+    "deployed": "June 2018",
+    "slug": "pomda"
+  },
+  "decentether": {
+    "name": "DecentEther",
+    "desc": "Deployed August 2020 during DeFi Summer, though it had nothing to do with DeFi \u2014 just another PoWH3D clone running the old Hourglass dividend model on a chain now dominated by Uniswap and Compound.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0x7d2d58d7add0b2d6e06fa85590b60da7741c18c9",
+    "deployed": "August 2020",
+    "slug": "decentether"
+  },
+  "bitconnect3": {
+    "name": "BitConnect v3",
+    "desc": "The third BitConnect-branded PoWH3D fork, deployed October 2019. By this point the BitConnect name was the subject of SEC enforcement actions, but clone deployers kept reusing it.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0x38e219ee67a5e1536c5a89fec2da0d69c254cac4",
+    "deployed": "October 2019",
+    "slug": "bitconnect3"
+  },
+  "furious": {
+    "name": "Furious",
+    "desc": "A July 2020 PoWH3D clone with an aggressive name but stock-standard mechanics. Same autonomous Hourglass contract where buy/sell fees are distributed to all token holders in perpetuity.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0xb0c4382d4355cdfe94a132fadf92a509b1e25939",
+    "deployed": "July 2020",
+    "slug": "furious"
+  },
+  "etherdiamond": {
+    "name": "EtherDiamond",
+    "desc": "Deployed July 2020, a sibling to ETHDIAMOND with nearly identical branding. Both are straight PoWH3D forks where token holders earn a cut of every future transaction.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0x4af078e47490c0e761a3de260952d9eb4a6ad693",
+    "deployed": "July 2020",
+    "slug": "etherdiamond"
+  },
+  "cryptosurge": {
+    "name": "CryptoSurge",
+    "desc": "Deployed October 2019 with a name evoking price surges. A PoWH3D fork using the proven Hourglass mechanics where buying tokens costs a 10% fee that goes straight to existing holders.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0x11e165dd03c63771004f929d58b75e4aaf2d1a23",
+    "deployed": "October 2019",
+    "slug": "cryptosurge"
+  },
+  "hourglass_clone6": {
+    "name": "Hourglass Clone F",
+    "desc": "A November 2018 unbranded Hourglass contract. Deployed during the crypto winter bear market when ETH had fallen over 90% from its peak, yet P3D clones were still appearing.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0x77b541f90ecfa09f854209eefeca24c295050e2e",
+    "deployed": "November 2018",
+    "slug": "hourglass-clone6"
+  },
+  "upower": {
+    "name": "UPower",
+    "desc": "Deployed July 2018, UPower was a PoWH3D fork from the summer of the P3D craze. Standard dividend token \u2014 deposit ETH, receive tokens, earn from every future transaction on the contract.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0x5044ac8da9601edf970dcc91a10c5f41c5c548c0",
+    "deployed": "July 2018",
+    "slug": "upower"
+  },
+  "hourglass_clone7": {
+    "name": "Hourglass Clone G",
+    "desc": "A May 2018 unbranded Hourglass fork, one of the earliest nameless P3D copies. Deployed during the peak month of clone activity when dozens of identical contracts appeared on Ethereum.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0xaa4ec8484e89bed69570825688789589d38eea5e",
+    "deployed": "May 2018",
+    "slug": "hourglass-clone7"
+  },
+  "redchip2": {
+    "name": "RedChip v2",
+    "desc": "The second iteration of RedChip, deployed October 2019 alongside its predecessor. Another PoWH3D fork with the same dividend token mechanics repackaged under a stock-market-inspired name.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0xae384c6e68f5d697d65ed43fd53ef5ea3288f536",
+    "deployed": "October 2019",
+    "slug": "redchip2"
+  },
+  "omnidex": {
+    "name": "OmniDex",
+    "desc": "Deployed August 2018, OmniDex distinguished itself with 18% dividends, masternodes, and 0% transfer fees \u2014 tweaking the standard P3D formula. Despite the \"DEX\" name, it was a dividend token, not an exchange.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0x433e631ac0c03e49ca034dbf5543964c80c6b391",
+    "deployed": "August 2018",
+    "slug": "omnidex"
+  },
+  "spw2": {
+    "name": "SPW v2",
+    "desc": "The second SPW contract, deployed September 2020. A relaunch of the original SPW using the same PoWH3D Hourglass mechanics with no apparent changes.",
+    "category": "gambling",
+    "color": "#581c87",
+    "contract": "0xd446a13f9b9f8bcbc3ded73764d08735561b1638",
+    "deployed": "September 2020",
+    "slug": "spw2"
+  },
+  "bounties": {
+    "name": "Bounties Network",
+    "desc": "was a decentralized bounty platform (December 2017) built by ConsenSys for open-source work and freelance tasks on Ethereum. Bounty issuers who never killed or fulfilled their bounties still have ETH locked in the StandardBounties v1 contract.",
+    "category": "other",
+    "color": "#0369a1",
+    "contract": "0x2af47a65da8cd66729b4209c22017d6a5c2d2400",
+    "deployed": "December 2017",
+    "slug": "bounties"
+  },
+  "ageofdinos": {
+    "name": "Age of Dinos",
+    "desc": "was an NFT Dutch auction (2024). Bidders who overpaid above the clearing price have unclaimed ETH refunds available via claimAndRefund().",
+    "category": "nft",
+    "color": "#65a30d",
+    "contract": "0x19c10FFf96B80208f454034C046CCc4445Cd20ba",
+    "deployed": "January 2024",
+    "slug": "ageofdinos"
+  },
+  "personabid": {
+    "name": "PersonaBid",
+    "desc": "was an NFT raffle auction (2024). Bidders who were not selected or overbid have unclaimed ETH refunds available via claimAndRefund().",
+    "category": "nft",
+    "color": "#059669",
+    "contract": "0xDe5D4949F445650325c7C8739610c3A979C7a6db",
+    "deployed": "March 2024",
+    "slug": "personabid"
+  },
+  "maker_weth": {
+    "name": "Maker W-ETH",
+    "desc": "The original Wrapped Ether contract predating the canonical WETH9. Solved the fundamental problem that native ETH couldn't be used in ERC-20 smart contracts, enabling early DEXs like OasisDEX and Radar Relay. Deprecated when the community converged on WETH9 in late 2017.",
+    "category": "ico",
+    "color": "#1a9641",
+    "contract": "0x2956356cd2a2bf3202f771f50d3d14a367b48070",
+    "deployed": "April 2017",
+    "slug": "maker-weth"
+  },
+  "old_weth": {
+    "name": "Old WETH",
+    "desc": "An early Wrapped Ether contract deployed in June 2016, one of the first attempts at wrapping native ETH into an ERC-20 token. Users deposited ETH and received WETH tokens 1:1. Predates both Maker W-ETH and the canonical WETH9. Over 3,200 ETH remains wrapped by depositors who never unwrapped.",
+    "category": "ico",
+    "color": "#627eea",
+    "contract": "0xECF8F87f810EcF450940c9f60066b4a7a501d6A7",
+    "deployed": "June 2016",
+    "slug": "old-weth"
+  },
+  "lastwinner": {
+    "name": "Last Winner",
+    "desc": "A Fomo3D-style gambling game deployed in 2018, also known as \"Last Winner\" \u2014 one of the largest Fomo3D clones by total ETH volume. Players purchase keys that extend a countdown timer; when the timer runs out, the last buyer wins the pot. Unclaimed dividends and affiliate earnings remain withdrawable. Note: isHuman modifier \u2014 smart contract wallets cannot withdraw.",
+    "category": "gambling",
+    "color": "#ef4444",
+    "contract": "0xDd9fd6b6F8f7ea932997992bbE67EabB3e316f3C",
+    "deployed": "August 2018",
+    "slug": "lastwinner"
+  },
+  "digixdao": {
+    "name": "DigixDAO",
+    "desc": "DigixDAO launched in March 2016 as one of Ethereum's first DAOs, raising 466,648 ETH in a crowdsale that filled its hard cap in just 12 hours. The DAO funded development of Digix's gold-backed DGX token, but after years of limited adoption, token holders voted 97% in favor of dissolution via Project Ragnarok in January 2020. The Acid refund contract was deployed in March 2020, allowing any DGD holder to permanently burn their tokens for a pro-rata share of the treasury at roughly 0.193 ETH per DGD.",
+    "contract": "0xe0b7927c4af23765cb51314a0e0521a9645f0e2a",
+    "deployed": "March 2016",
+    "color": "#d4a017",
+    "category": "ico",
+    "slug": "digixdao"
+  },
+  "p4d": {
+    "name": "P4D",
+    "desc": "A PoWH3D clone from 2018. Standard Hourglass dividend mechanics where ETH deposits mint tokens and trading fees generate passive income for holders.",
+    "contract": "0x96a4ed03206667017777f010dea4445823acb0fc",
+    "deployed": "2018",
+    "color": "#dc2626",
+    "category": "gambling"
+  },
+  "nucypher_worklock": {
+    "name": "NuCypher WorkLock",
+    "desc": "NuCypher launched a WorkLock distribution in September 2020, where participants deposited ETH to receive NU tokens. ETH was refundable after completing staking work. NuCypher merged with Keep Network to form Threshold Network in 2022, and the staking requirement was removed \u2014 all participants now qualify for a full refund regardless of work completed.",
+    "contract": "0xe9778e69a961e64d3cdbb34cf6778281d34667c2",
+    "deployed": "September 2020",
+    "color": "#1e40af",
+    "category": "ico"
+  },
+  "tessera_dead": {
+    "name": "Fractional DEAD Vault",
+    "desc": "Fractional Art (later Tessera) fractionalized NFTs into ERC-20 tokens. When a buyout auction completed, fraction holders could burn tokens for proportional ETH via cash(). Tessera shut down in May 2023; the frontend is dead but contracts remain functional.",
+    "category": "nft",
+    "color": "#9333ea",
+    "contract": "0x0c7060bf06a78aaaab3fac76941318a52a3f4613",
+    "deployed": "August 2021",
+    "slug": "tessera-dead"
+  },
+  "tessera_sweep": {
+    "name": "Fractional SWEEP Vault",
+    "desc": "Fractional Art (later Tessera) fractionalized NFTs into ERC-20 tokens. When a buyout auction completed, fraction holders could burn tokens for proportional ETH via cash(). Tessera shut down in May 2023; the frontend is dead but contracts remain functional.",
+    "category": "nft",
+    "color": "#a855f7",
+    "contract": "0xfe2a5b942083d92135c7fe364bb75218e547cc62",
+    "deployed": "November 2021",
+    "slug": "tessera-sweep"
+  },
+  "tessera_zcat": {
+    "name": "Fractional ZCAT Vault",
+    "desc": "Fractional Art (later Tessera) fractionalized NFTs into ERC-20 tokens. When a buyout auction completed, fraction holders could burn tokens for proportional ETH via cash(). Tessera shut down in May 2023; the frontend is dead but contracts remain functional.",
+    "category": "nft",
+    "color": "#c084fc",
+    "contract": "0xdb846f1cd31acc9a6db72a1c58dc1760485505f4",
+    "deployed": "October 2021",
+    "slug": "tessera-zcat"
+  },
+  "kyber_feehandler": {
+    "name": "Kyber FeeHandler",
+    "desc": "Kyber Network v1 (Katalyst) distributed ETH trading fees to KNC stakers who voted in governance epochs. Kyber has since migrated to KyberSwap with a different architecture. The old staking UI is dead, but the FeeHandler contract still holds unclaimed epoch rewards with no expiration.",
+    "contract": "0xd3d2b5643e506c6d9b7099e9116d7aaa941114fe",
+    "deployed": "July 2020",
+    "color": "#31cb9e",
+    "category": "dex"
+  },
+  "thedao": {
+    "name": "The DAO",
+    "desc": "The DAO launched in April 2016 as the largest crowdfund in history, raising 11.5 million ETH from over 20,000 investors. In June 2016, a reentrancy exploit drained 3.6M ETH, leading to the contentious Ethereum hard fork that split ETH and ETC. After the fork restored the funds, a WithdrawDAO wrapper contract was deployed, allowing any DAO token holder to burn their tokens 1:1 for ETH. Over 81,000 ETH remains unclaimed in the wrapper to this day.",
+    "contract": "0xbb9bc244d798123fde783fcc1c72d3bb8c189413",
+    "deployed": "April 2016",
+    "color": "#c0392b",
+    "category": "ico",
+    "slug": "thedao"
+  },
+  "augur_v1": {
+    "name": "Augur v1",
+    "desc": "Augur launched in July 2018 as Ethereum's first decentralized prediction market protocol. Users could create markets on real-world events, trade outcome shares, and earn fees as market creators. The protocol migrated to v2 in August 2020, but 771 ETH remains locked in the original Cash contract backing unfilled orders, unclaimed market creator fees in mailbox contracts, and unredeemed winning shares from resolved markets.",
+    "contract": "0xd5524179cB7AE012f5B642C1D6D700Bbaa76B96b",
+    "deployed": "July 2018",
+    "color": "#553C9A",
+    "category": "prediction",
+    "slug": "augur-v1"
+  },
+  "ethfinex": {
+    "name": "Ethfinex Trustless",
+    "desc": "Ethfinex Trustless launched in September 2018 as a non-custodial DEX backed by Bitfinex. Users deposited ETH into WrapperLockEth contracts, receiving ETHW tokens for off-chain order matching via the 0x protocol. The platform rebranded to DeversiFi in 2019, then migrated to StarkEx L2 in 2020, and rebranded again to rhino.fi in 2022. The original wrapper contracts are abandoned but fully functional \u2014 all time locks expired years ago, so depositors can withdraw directly without any third-party signature.",
+    "contract": "0xaA7427D8f17D87a28F5e1ba3aDBB270bAdbe1011",
+    "deployed": "September 2018",
+    "color": "#f59e0b",
+    "category": "dex",
+    "slug": "ethfinex"
+  },
+  "ethfinex_v2": {
+    "name": "Ethfinex Trustless v2",
+    "desc": "Ethfinex Trustless launched in September 2018 as a non-custodial DEX backed by Bitfinex. Users deposited ETH into WrapperLockEth contracts, receiving ETHW tokens for off-chain order matching via the 0x protocol. The platform rebranded to DeversiFi in 2019, then migrated to StarkEx L2 in 2020, and rebranded again to rhino.fi in 2022. The original wrapper contracts are abandoned but fully functional \u2014 all time locks expired years ago, so depositors can withdraw directly without any third-party signature.",
+    "contract": "0x50cb61afa3f023d17276dcfb35abf85c710d1cff",
+    "deployed": "2019",
+    "color": "#d97706",
+    "category": "dex",
+    "slug": "ethfinex-v2"
+  },
+  "switcheo_v2": {
+    "name": "Switcheo BrokerV2",
+    "desc": "Switcheo Network launched in 2019 as a cross-chain DEX supporting Ethereum, NEO, and EOS. The BrokerV2 contract combined off-chain order matching with onchain settlement, similar to IDEX. The project pivoted to Switcheo TradeHub (a Cosmos-based DEX) in 2020, then rebranded to Carbon in 2021. The Ethereum broker contract is abandoned but fully functional \u2014 users can withdraw via a 2-step announceWithdraw + slowWithdraw flow with zero delay.",
+    "contract": "0x7ee7ca6e75de79e618e88bdf80d0b1db136b22d0",
+    "deployed": "October 2019",
+    "color": "#00c9a7",
+    "category": "dex",
+    "slug": "switcheo-v2"
+  },
+  "unknown_dex_5995": {
+    "name": "Unknown DEX (0x5995)",
+    "desc": "An anonymous EtherDelta-style order-book DEX deployed in July 2019. Featured deposit/withdraw for ETH and ERC-20 tokens, off-chain order matching, and onchain settlement. The contract is unverified with no known website or team. Activity ceased in March 2020 after ~30,000 transactions across 1,400 users. Standard withdraw function remains fully operational.",
+    "contract": "0x5995ca61d845e045cd1327a32707a66f7daccf6d",
+    "deployed": "July 2019",
+    "color": "#64748b",
+    "category": "dex",
+    "slug": "unknown-dex-5995"
+  },
+  "avastars": {
+    "name": "Avastars",
+    "desc": "Avastars was an NFT project (2020) that allowed users to mint generative avatar NFTs. Users deposited ETH into the minting contract as a prepayment balance, which was drawn down as they minted. The project is defunct since September 2021, but the minting contract still holds unspent deposit balances. Users can withdraw their remaining deposits via withdrawDepositorBalance() with no restrictions.",
+    "contract": "0xe31763aad9294f073ddf18b36503ed037ae5e737",
+    "deployed": "April 2020",
+    "color": "#8b5cf6",
+    "category": "nft",
+    "slug": "avastars"
+  },
+  "aave_v1": {
+    "name": "Aave v1",
+    "desc": "Aave v1 launched in January 2020 as the first version of the Aave lending protocol. Users deposited ETH and received aETH interest-bearing tokens that automatically accrued yield. The protocol migrated to v2 in December 2020 and v3 in March 2022, but the original UI dropped v1 support. aETH token holders can still redeem for ETH by calling redeem() on the aETH contract.",
+    "category": "defi",
+    "color": "#B6509E",
+    "contract": "0x3a3A65aAb0dd2A17E3F1947bA16138cd37d08c04",
+    "deployed": "January 2020",
+    "slug": "aave-v1"
+  },
+  "ahoolee_token_sale": {
+    "name": "Ahoolee Token Sale",
+    "desc": "Ahoolee's September 2017 ICO. The sale collected ~581 ETH against a 3,030 ETH soft cap and finalized in refund mode. 191 ETH still sits in the contract waiting for the long tail of stragglers \u2014 107 of 323 contributors haven't called refund() yet. Single-tx claim: call refund() on the contract, no arguments needed.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x575cb87ab3c2329a0248c7d70e0ead8e57f3e3f7",
+    "deployed": "September 2017",
+    "slug": "ahoolee"
+  },
+  "th_token_sale": {
+    "name": "TruckHash Token Sale",
+    "desc": "TruckHash's 2018 ICO missed its soft cap. Owner enabled refund mode (refundAllowed=true). Per-user balance lives in weiBalances(addr). Public refund() returns the deposit; no further admin action needed.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xcd806502ad2f9aeb32e23f8d647341d4b568201d",
+    "deployed": "March 2018",
+    "slug": "truckhash"
+  },
+  "jincor_token_ico": {
+    "name": "Jincor Token ICO",
+    "desc": "Jincor's late-2017 ICO did not reach soft cap. Per-user balance is tracked in deposited(addr); refund mode is automatic (softCapReached=false). Public refund() returns the deposit and emits Refunded(holder, amount).",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xb3b33f59174f2ef62167770e4c9cabaa3879eb5d",
+    "deployed": "November 2017",
+    "slug": "jincor"
+  },
+  "agrotechfarm_crowdsale": {
+    "name": "AgroTechFarm Crowdsale",
+    "desc": "AgroTechFarm ran a 2018 crowdsale with a RefundVault-style state machine. The sale is permanently in Refunding state, so contributors with remaining balances[address] entries can reclaim their own ETH through refund().",
+    "category": "ico",
+    "color": "#84cc16",
+    "contract": "0x3fD30f3E1fbF4F3Ea6BDf3E3bb11826266708869",
+    "deployed": "January 2018",
+    "slug": "agrotechfarm-crowdsale"
+  },
+  "luckchemy_crowdsale": {
+    "name": "Luckchemy Crowdsale",
+    "desc": "Luckchemy ran a 2018 crowdsale whose 2,000 ETH soft cap was never reached. The sale has ended and softCapReached() remains false, leaving contributor deposits[address] balances reclaimable through refund().",
+    "category": "ico",
+    "color": "#ec4899",
+    "contract": "0x18777Aec0B231D1a4A9C66B51253088a03affDFc",
+    "deployed": "August 2018",
+    "slug": "luckchemy-crowdsale"
+  },
+  "arbitrage_eth_staking": {
+    "name": "ArbitrageETHStaking",
+    "desc": "August 2018 PoWH3D-style staking pool. Users sent ETH and paid a 2% fee that boosted the pool's globalFactor (existing stakers got a passive yield). The contract is dormant \u2014 public withdrawAll() returns the user's accumulated balance to msg.sender, no admin gate.",
+    "category": "powh",
+    "color": "#7c2d12",
+    "contract": "0x5eee354e36ac51e9d3f7283005cab0c55f423b23",
+    "deployed": "August 2018",
+    "slug": "arbitrage-eth-staking"
+  },
+  "vlb": {
+    "name": "VLB Token",
+    "desc": "Velix.AI's December 2017 ICO via the OpenZeppelin RefundableCrowdsale pattern. The sale missed its 5,000 ETH soft cap (raised ~4,900 ETH), the owner finalized into refund mode, and most depositors clawed back over the following months. 81 ETH still sits in the RefundVault waiting for the long tail of stragglers. Single-tx claim: call claimRefund() on the crowdsale, which delegates to the vault and returns your original deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xd7e011ad27b6128934e2afd1763120ede1274ae4",
+    "deployed": "December 2017",
+    "slug": "vlb"
+  },
+  "vlb_lino": {
+    "name": "VLB / Lino",
+    "desc": "A Wings-incubated 2018 ICO that reused the same VLB-style RefundableCrowdsale code. Soft cap (USD-denominated) was missed, the contract finalized into refund mode, and 17 ETH remained in the RefundVault unclaimed. Same single-tx pattern: claimRefund() on the crowdsale returns your deposit through the sibling vault.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xdea2bc436d38d4f8ee6f9e63b63b72a399c24e2c",
+    "deployed": "March 2018",
+    "slug": "vlb-lino"
+  },
+  "fnt": {
+    "name": "Friend Network Token",
+    "desc": "FriendNetwork's 2018 ICO with a 25,000 ETH minimum cap. Only ~3,700 ETH was raised, finalize() routed the contract into refund mode, and 16 ETH still sits in the RefundVault for buyers who never came back to claim. Standard OZ pattern: call claimRefund() on the crowdsale and the vault sends your original ETH back.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x7c33f3d417ef65a5299998bf7bbd35921963336c",
+    "deployed": "June 2018",
+    "slug": "fnt"
+  },
+  "trend": {
+    "name": "Trend (TND)",
+    "desc": "Trend (TND) ran a 2018 ICO via the OpenZeppelin RefundableCrowdsale + CryptoHuntIco template. Soft cap missed, the contract finalized into refund mode, and ~28 ETH still sits in the sibling RefundVault. Single-tx claim: claimRefund() on the crowdsale returns your original deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x5113309c84f7292b5f780748df5869cb9d0e3ad5",
+    "deployed": "March 2018",
+    "slug": "trend"
+  },
+  "global_ico": {
+    "name": "Global ICO Token (GLIF)",
+    "desc": "Global ICO Token (GLIF) reused the OpenZeppelin RefundableCrowdsale + CryptoHuntIco template for its 2018 sale. Soft cap missed (raised ~896 ETH, refunded most), ~16 ETH still sits unclaimed in the sibling RefundVault. Standard claimRefund() returns your deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xd005c3dccd6e7056883dc612770021bc09837098",
+    "deployed": "March 2018",
+    "slug": "global-ico"
+  },
+  "crypto_hunt": {
+    "name": "CryptoHunt (CH)",
+    "desc": "CryptoHunt is a blockchain treasure-hunting game whose 2018 ICO didn't reach its soft cap. The contract is the canonical CryptoHuntIco source \u2014 OpenZeppelin RefundableCrowdsale pattern, public claimRefund() routing to the sibling RefundVault. ~10 ETH still claimable.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xb8f1437c742dc042af73d5bd18c8fc985ec8e3b4",
+    "deployed": "March 2018",
+    "slug": "crypto-hunt"
+  },
+  "alttradex": {
+    "name": "Alttradex (ATXT)",
+    "desc": "Alttradex Token (ATXT) ran an October 2017 ICO using the OpenZeppelin RefundableCrowdsale + CryptoHuntIco template. Soft cap missed; finalize() routed the vault into refund mode. ~5 ETH still in the sibling RefundVault. Single-tx claimRefund() returns your deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x12c33d513d4534e6cb5dc06c56683be52a936d24",
+    "deployed": "October 2017",
+    "slug": "alttradex"
+  },
+  "etcetera_ico": {
+    "name": "Etcetera (ERA)",
+    "desc": "Etcetera (ERA) was a 2018 ICO that used the OpenZeppelin RefundableCrowdsale + CryptoHuntIco template. The sale didn't reach its goal; the contract is in refund mode. ~5 ETH still in the sibling RefundVault waiting for stragglers.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xc49e03bdd6809fd168565b26d27d5cf72f9e9525",
+    "deployed": "January 2018",
+    "slug": "etcetera-ico"
+  },
+  "enkronos": {
+    "name": "Enkronos Token (ENK)",
+    "desc": "EnkronosToken (ENK) \u2014 2018 ICO via the OpenZeppelin RefundableCrowdsale + CryptoHuntIco template. Soft cap missed. ~1 ETH still in the sibling RefundVault. Standard claimRefund() returns your original deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xda3fa12b3d41cd9948db6437f27c0c9978c55cbb",
+    "deployed": "January 2018",
+    "slug": "enkronos"
+  },
+  "deskbell": {
+    "name": "DeskBell (DBT)",
+    "desc": "DeskBell Token (DBT) ran a 2018 ICO via the OpenZeppelin RefundableCrowdsale (DeskBellPresale) template. Soft cap missed; ~4 ETH still sits in the sibling RefundVault. Standard single-tx claimRefund() returns your deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x6e776e93291620dac8f3dde4a0b98c42a5359293",
+    "deployed": "March 2018",
+    "slug": "deskbell"
+  },
+  "quintessence": {
+    "name": "Quintessence (QST)",
+    "desc": "Quintessence Token (QST) \u2014 2018 ICO using the OpenZeppelin RefundableCrowdsale (DeskBellPresale-bytecode) template. ~1.5 ETH still in the sibling RefundVault. Standard claimRefund() returns your deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xc86554bee96fdb3c85f85b576ed52d5e1eacc3a6",
+    "deployed": "April 2018",
+    "slug": "quintessence"
+  },
+  "deck_coin": {
+    "name": "Deck Coin (DEK)",
+    "desc": "Deck Coin (DEK) \u2014 2017 ICO using the OpenZeppelin RefundableCrowdsale template. Soft cap missed. ~1.2 ETH still in the sibling RefundVault. Standard claimRefund() returns your deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xcb7f070fda083e8e5f40559376c360f0709e985c",
+    "deployed": "October 2017",
+    "slug": "deck-coin"
+  },
+  "tokpie": {
+    "name": "Tokpie (TKP)",
+    "desc": "Tokpie (TKP) \u2014 exchange-token ICO from 2018 using the OpenZeppelin RefundableCrowdsale template. The crowdsale didn't reach its soft cap; ~1.2 ETH still sits in the sibling RefundVault. Standard claimRefund() returns your original deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x5e6a22ef928d09e9159737393ca155e9eb021d54",
+    "deployed": "April 2018",
+    "slug": "tokpie"
+  },
+  "globalspy": {
+    "name": "GlobalSpy (SPY)",
+    "desc": "GlobalSpy (SPY) \u2014 2018 ICO using the OpenZeppelin RefundableCrowdsale template. ~1 ETH still in the sibling RefundVault. Standard claimRefund() returns your original deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x05711090b4d375431e841ea79e52666f623d3353",
+    "deployed": "March 2018",
+    "slug": "globalspy"
+  },
+  "bigtoken": {
+    "name": "BigToken (BTK)",
+    "desc": "BigToken (BTK) ran a 2018 ICO via the BigTokenCrowdSale (OpenZeppelin RefundableCrowdsale variant). Soft cap missed (raised ~927 ETH, refunded most). ~6 ETH still in the sibling RefundVault. Standard claimRefund() returns your deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x2f4330e833c76860ea54f15b0195ff80a2c519c4",
+    "deployed": "February 2018",
+    "slug": "bigtoken"
+  },
+  "winiota": {
+    "name": "WINiota (WIT)",
+    "desc": "WINiota Token (WIT) \u2014 June 2018 ICO whose crowdsale bytecode is identical to the FNT (Friend Network) RefundableCrowdsale. Soft cap missed; ~5 ETH still in the sibling RefundVault. Standard claimRefund() returns your deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x3448295659daad4c834e5ce1c18c4e4ef73c7f06",
+    "deployed": "June 2018",
+    "slug": "winiota"
+  },
+  "grapevine": {
+    "name": "Grapevine (GVINE)",
+    "desc": "Grapevine (GVINE) Crowdsale \u2014 2018 ICO using the OpenZeppelin RefundableCrowdsale template. Soft cap missed; ~1 ETH still in the sibling RefundVault. Standard claimRefund() returns your deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xea864a114c648eff4f92e55b870fe1e71fd60083",
+    "deployed": "July 2018",
+    "slug": "grapevine"
+  },
+  "irb": {
+    "name": "IRB Tokens (IRB)",
+    "desc": "IRB Tokens ran a 2018 pre-crowdsale via the OpenZeppelin RefundableCrowdsale template. Soft cap missed, the contract finalized into refund mode, and ~5 ETH still sits in the sibling RefundVault for the long tail of contributors. Standard single-tx claim: claimRefund() on the crowdsale returns your deposit through the vault.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x269b4c23ddab676e2869ae72cd6ae4f24bdfea45",
+    "deployed": "2018",
+    "slug": "irb"
+  },
+  "cam": {
+    "name": "CamToken (CAM)",
+    "desc": "CamToken ran a 2018 ICO via the OpenZeppelin RefundableCrowdsale template. Soft cap missed and the contract finalized into refund mode; ~3 ETH still sits in the sibling RefundVault. Single-tx claim: call claimRefund() on the crowdsale and the vault returns your original deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xa785ecdc8f166d0644b853f29732ae128c5d775b",
+    "deployed": "2018",
+    "slug": "cam"
+  },
+  "linda_pre": {
+    "name": "LINDA Token (Presale)",
+    "desc": "LINDA (LNDA) ran a two-stage 2018 token sale: a presale and a main sale, both using the OpenZeppelin RefundableCrowdsale template against the same LINDA token. The presale missed its soft cap and ~3 ETH still sits in this presale RefundVault. Standard claimRefund() returns your deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x8519f68a987048b879bed6afab25a0414828c236",
+    "deployed": "2018",
+    "slug": "linda-pre"
+  },
+  "linda_main": {
+    "name": "LINDA Token (Main Sale)",
+    "desc": "The main sale stage of LINDA (LNDA), deployed alongside a separate presale contract. The main sale also missed its soft cap and finalized into refund mode; ~2.7 ETH still sits in the sibling RefundVault. Standard claimRefund() returns your deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xfcbc3a54c5663295d075b086441ee51c32ad152c",
+    "deployed": "2018",
+    "slug": "linda-main"
+  },
+  "monoreto": {
+    "name": "Monoreto (MNR)",
+    "desc": "Monoreto ran its 2018 ICO via the OpenZeppelin RefundableCrowdsale template. Soft cap was missed and the contract finalized into refund mode; ~2.5 ETH still sits in the sibling RefundVault. Standard single-tx claim: claimRefund() on the crowdsale returns your original ETH through the vault.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x65320b9aeac77e45369e4892da896b7a987a97f3",
+    "deployed": "2018",
+    "slug": "monoreto"
+  },
+  "ico_refund_79c5": {
+    "name": "Unverified ICO Refund (79c5)",
+    "desc": "An unverified 2018 ICO crowdsale built on the OpenZeppelin RefundableCrowdsale template. Source is not published, but bytecode-level selectors match the canonical pattern, and Tenderly simulation confirms claimRefund() works for current depositors. ~1.5 ETH still sits in the sibling RefundVault.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x79c59c24465fc3cc92e6419d4b59fdd285d874cf",
+    "deployed": "2018",
+    "slug": "ico-refund-79c5"
+  },
+  "treecoin": {
+    "name": "TREECHAIN NETWORK (TREECOIN)",
+    "desc": "TREECHAIN NETWORK ran a 2018 ICO via the OpenZeppelin RefundableCrowdsale template. Soft cap missed and the contract finalized into refund mode; 1 ETH remains in the sibling RefundVault for a single straggler. Standard claimRefund() returns the deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xf36358e9c7f6bf26d9cff44f95bf9521fc3feed4",
+    "deployed": "2018",
+    "slug": "treecoin"
+  },
+  "lendsbay": {
+    "name": "Lendsbay Token (LBT)",
+    "desc": "Lendsbay (LBT) ran a 2018 ICO via the OpenZeppelin RefundableCrowdsale template. Soft cap missed; ~0.85 ETH still in the sibling RefundVault. Standard claimRefund() returns your deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x3adf5ee8777f471407e04a7453133477a2dc0c2c",
+    "deployed": "2018",
+    "slug": "lendsbay"
+  },
+  "furt": {
+    "name": "FURT COIN (FRT)",
+    "desc": "FURT COIN ran a 2018 ICO via the OpenZeppelin RefundableCrowdsale template. Soft cap missed; ~0.7 ETH still in the sibling RefundVault for two contributors. Standard claimRefund() returns your deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xf563549daf64f684858e863e2731f19633d1acb1",
+    "deployed": "2018",
+    "slug": "furt"
+  },
+  "kryptopy": {
+    "name": "Kryptopy Token (KPY)",
+    "desc": "Kryptopy (KPY) ran a 2018 ICO via the OpenZeppelin RefundableCrowdsale template. Soft cap missed; ~0.6 ETH still in the sibling RefundVault. Standard claimRefund() returns your deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x09b8aaa7a883e60c23c6a0635940000c6e2e7560",
+    "deployed": "2018",
+    "slug": "kryptopy"
+  },
+  "digitize": {
+    "name": "DigitizeCoin Presale (DTZ)",
+    "desc": "DigitizeCoin (DTZ) ran a 2018 presale built on the OpenZeppelin RefundableCrowdsale template. The contract uses a 3-arg TokenPurchase event variant (PallyCoin family) but the refund flow is canonical. Soft cap missed and the contract finalized into refund mode; ~1.1 ETH still sits in the sibling RefundVault. Standard claimRefund() returns your deposit.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x9527551ca444f6e5d9a0b281116586427366862a",
+    "deployed": "2018",
+    "slug": "digitize"
+  },
+  "pallycoin": {
+    "name": "PallyCoin (PAL)",
+    "desc": "Merunas Grincalaitis's December 2017 PallyCoin ICO. The contract is a custom OpenZeppelin RefundableCrowdsale variant where claimRefund() additionally calls token.refundTokens(msg.sender, tokensBought[msg.sender]) \u2014 meaning you must still hold your full PAL allocation to claim. Soft cap missed and the contract finalized into refund mode. ~43 ETH remains in the RefundVault, of which ~40.6 ETH is claimable by 35 stragglers who never sold their PAL. The remaining ~2.7 ETH is locked for 9 holders who sold some PAL.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xb4f10530e531c32490c68062662eb5684057afb4",
+    "deployed": "December 2017",
+    "slug": "pallycoin"
+  },
+  "pallycoin_v2": {
+    "name": "PallyCoin Fork (PAL2)",
+    "desc": "A 2018 PallyCoin fork by Manoj Patidar reusing the same RefundableCrowdsale + token-gated refund pattern, but against a separate PAL2 token. Soft cap missed. ~3.77 ETH still in the RefundVault, all claimable by 5 stragglers who still hold their full PAL2 allocation. Standard claimRefund() returns your deposit; you must hold PAL2 \u2265 tokensBought.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x77b275827eb3cf1792852b128a6dbc7a699bbd91",
+    "deployed": "2018",
+    "slug": "pallycoin-v2"
+  },
+  "foreground": {
+    "name": "ForegroundTokenSale (DEAL)",
+    "desc": "Foreground's DEAL token sale used a custom finite-state crowdsale (Prepared \u2192 Configured \u2192 Started \u2192 Ended \u2192 Finalized \u2192 Refunding) and held ETH directly in the crowdsale contract \u2014 no separate vault. The sale ended in the Refunding state and ~12.15 ETH still sits in the contract for 18 buyers. Single-tx claim: claimRefund() reads purchases[msg.sender].weiBalance and transfers it back. No token gating.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x943e99d9efd4b44d808f6c83373a9a2c1e15e0f8",
+    "deployed": "November 2017",
+    "slug": "foreground"
+  },
+  "vuepay": {
+    "name": "VuePayTokenSale (VUP)",
+    "desc": "VuePay's 2017 VUP token sale used a custom crowdsale that holds ETH directly in the contract. Soft cap missed and the owner enabled refunds (allowRefund flag). ~1.2 ETH remains for 4 contributors. Single-tx claim: claimRefund() reads ETHContributed[msg.sender] and transfers it back.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xcba6f10d1147b2c5a3d8d8cbd93c373b31c6c2c8",
+    "deployed": "October 2017",
+    "slug": "vuepay"
+  },
+  "chickenchef": {
+    "name": "ChickenChef",
+    "desc": "ChickenChef is an abandoned SushiSwap-MasterChef-style yield farm from the 2020 DeFi summer. Pool 0 accepted direct WETH stakes (not LP tokens). The farm went silent in late 2024 and ~48 WETH still sits in the contract for 7 stakers (top staker holds 40.7 WETH). Single-tx claim: emergencyWithdraw(0) returns your full stake. The standard withdraw() also works but emergencyWithdraw is safer because it skips reward minting.",
+    "category": "masterchef",
+    "color": "#a855f7",
+    "contract": "0x87ae4928f6582376a0489e9f70750334bbc2eb35",
+    "deployed": "September 2020",
+    "slug": "chickenchef"
+  },
+  "gov_treasurer": {
+    "name": "GovTreasurer",
+    "desc": "GovTreasurer is an abandoned MasterChef-style yield farm. Pool 2 is its WETH staking pool, holding ~19 WETH for 21 stakers. The contract has been dormant since late 2023. Single-tx claim: emergencyWithdraw(2) returns your full stake.",
+    "category": "masterchef",
+    "color": "#a855f7",
+    "contract": "0x4dac3e07316d2a31baabb252d89663dee8f76f09",
+    "deployed": "January 2020",
+    "slug": "gov-treasurer"
+  },
+  "mysteryman": {
+    "name": "MysteryMan",
+    "desc": "MysteryMan is an abandoned MasterChef-style farm. Pool 0 accepted direct WETH stakes; ~4 WETH sits in the contract for 2 stakers. Single-tx claim: emergencyWithdraw(0) returns your full stake.",
+    "category": "masterchef",
+    "color": "#a855f7",
+    "contract": "0x07261a6e37adbfab11e6474bca54634c7782b195",
+    "deployed": "September 2020",
+    "slug": "mysteryman"
+  },
+  "masterstar": {
+    "name": "MasterStar",
+    "desc": "MasterStar is an abandoned MasterChef-style farm. Pool 0 accepted direct WETH stakes; one staker holds the full claimable 3 WETH (the contract also holds an additional 0.1 WETH that was sent directly to the contract address and is not user-claimable). Single-tx claim: emergencyWithdraw(0) returns your full stake.",
+    "category": "masterchef",
+    "color": "#a855f7",
+    "contract": "0xb60c12d2a4069d339f49943fc45df6785b436096",
+    "deployed": "September 2020",
+    "slug": "masterstar"
+  },
+  "bdpmaster": {
+    "name": "BDPMaster",
+    "desc": "BDPMaster is an abandoned MasterChef-style farm. Pool 1 accepted direct WETH stakes; ~1.74 WETH sits in the contract for 8 stakers. The standard withdraw() flow is BROKEN \u2014 the contract tries to mint BDPToken rewards, but BDPToken's minter role was revoked, so withdraw() reverts with `BDPToken: cannot mint for pool`. Use emergencyWithdraw(1) instead \u2014 it skips reward minting and returns your stake cleanly.",
+    "category": "masterchef",
+    "color": "#a855f7",
+    "contract": "0x0de845955e2bf089012f682fe9bc81dd5f11b372",
+    "deployed": "September 2020",
+    "slug": "bdpmaster"
+  },
+  "keeperdao": {
+    "name": "KeeperDAO / Rook",
+    "desc": "launched October 2020 as an on-chain liquidity underwriter backed by 3AC, Polychain and Pantera. Depositors earned yield from flash-loan fees and MEV arbitrage, receiving kTokens as LP shares. The project rebranded to Rook in late 2021, pivoted to MEV coordination, and wound down in 2022. The treasury was liquidated in April 2023 after a governance 'rage quit'. The LiquidityPoolV2 contract is still live and un-paused \u2014 depositors who still hold kETH or kwETH can redeem their proportional share of the pool (~1.08 ETH per kETH, ~1.05 WETH per kwETH, reflecting the final yield accrued before wind-down).",
+    "category": "defi",
+    "color": "#6366f1",
+    "contract": "0x35fFd6E268610E764fF6944d07760D0EFe5E40E5",
+    "deployed": "October 2020",
+    "slug": "keeperdao"
+  },
+  "genesis_weth_pool": {
+    "name": "Pop Finance",
+    "blurb": "Pop Finance WETH staking pool \u2014 defunct yield farm",
+    "slug": "popfinance",
+    "category": "defi",
+    "contract": "0x6b1803a257298292517668a5832bc5a27cb012fb"
+  },
+  "dxmgnpool": {
+    "name": "Gnosis DutchX",
+    "blurb": "Gnosis DutchX magnolia pool \u2014 WETH deposits for DutchX auctions",
+    "slug": "gnosis-dutchx",
+    "category": "defi",
+    "contract": "0xf1d29a124622c06f7026f35553543c833102183b"
+  },
+  "hegic_call": {
+    "name": "Hegic V1 Call",
+    "blurb": "Hegic ETH call options v1 \u2014 LP liquidity tranches",
+    "slug": "hegic-v1-call",
+    "category": "defi",
+    "contract": "0xb9ed94c6d594b2517c4296e24a8c517ff133fb6d"
+  },
+  "hegic_eth_pool": {
+    "name": "Hegic V1 Pool",
+    "blurb": "Hegic ETH options pool v1.1 \u2014 writeETH LP token holders",
+    "slug": "hegic-v1-pool",
+    "category": "defi",
+    "contract": "0x878F15ffC8b894A1BA7647c7176E4C01f74e140b"
+  },
+  "shrimp": {
+    "name": "Shrimp Finance",
+    "desc": "Shrimp Finance launched in September 2020 during DeFi Summer as a Synthetix StakingRewards fork. Users staked WETH to earn SHRIMP governance tokens. The project went defunct within weeks \u2014 the frontend is offline, the SHRIMP token worthless, and the team vanished. All staked WETH remains fully withdrawable via exit() with no time locks or token requirements.",
+    "blurb": "DeFi Summer 2020 yield farm \u2014 WETH staking pool (Synthetix fork)",
+    "slug": "shrimp",
+    "category": "defi",
+    "color": "#f97316",
+    "contract": "0x7127ee43fafba873ce985683ab79df2ce2912198",
+    "deployed": "September 2020"
+  },
+  "bee": {
+    "name": "Bee2 Finance",
+    "desc": "Bee2 Finance launched in September 2020 during DeFi Summer as a Synthetix StakingRewards fork. Users staked WETH to earn BEE governance tokens. The project went defunct within weeks \u2014 the frontend is offline and the BEE token worthless. All staked WETH remains fully withdrawable via exit() with no time locks or token requirements.",
+    "blurb": "DeFi Summer 2020 yield farm \u2014 WETH staking pool (Synthetix fork)",
+    "slug": "bee",
+    "category": "defi",
+    "color": "#eab308",
+    "contract": "0x3e63e6f0d6e90e120eb31e005aa149b476a89492",
+    "deployed": "September 2020"
+  },
+  "kitten": {
+    "name": "Kitten Finance",
+    "desc": "Kitten Finance launched in September 2020 during DeFi Summer as a Synthetix StakingRewards fork. Users staked WETH to earn KIF governance tokens. The project went defunct within weeks \u2014 the frontend is offline and the KIF token worthless. All staked WETH remains fully withdrawable via exit() with no time locks or token requirements.",
+    "blurb": "DeFi Summer 2020 yield farm \u2014 WETH staking pool (Synthetix fork)",
+    "slug": "kitten",
+    "category": "defi",
+    "color": "#ec4899",
+    "contract": "0xb1236770ed9015e331c021347e005b00c8b8a01b",
+    "deployed": "September 2020"
+  },
+  "yam_weth": {
+    "name": "Yam Finance v1",
+    "desc": "Yam Finance v1 launched in August 2020 as one of the first DeFi Summer yield farms. Users staked WETH to earn YAM tokens. The v1 contract had a rebase bug and the project migrated to v2/v3, abandoning this pool. All staked WETH remains fully withdrawable via exit().",
+    "category": "defi",
+    "color": "#e11d48",
+    "contract": "0x587a07ce5c265a38dd6d42def1566ba73eeb06f5",
+    "deployed": "August 2020"
+  },
+  "spaghetti": {
+    "name": "Spaghetti Money",
+    "desc": "Spaghetti Money launched in August 2020 during DeFi Summer as a yield farm fork. Users staked WETH to earn PASTA tokens. The project went defunct within days. All staked WETH remains fully withdrawable via exit().",
+    "category": "defi",
+    "color": "#f59e0b",
+    "contract": "0x4547a86ca6a84b9d60dc57af908472074de7af5f",
+    "deployed": "August 2020"
+  },
+  "dokidoki": {
+    "name": "Doki Doki Finance",
+    "desc": "Doki Doki Finance launched in 2020 as a DeFi yield farm. Users staked WETH to earn DOKI tokens. The project is defunct. All staked WETH remains withdrawable via withdraw().",
+    "category": "defi",
+    "color": "#8b5cf6",
+    "contract": "0xde846827ce3022ecd5efd6ed316a2def9ab299b8",
+    "deployed": "September 2020"
+  },
+  "cofi": {
+    "name": "CoFiX Staking",
+    "desc": "CoFiX (Computable Finance) launched in October 2020. Users staked CoFi tokens and earned WETH rewards. The project is defunct. Unclaimed WETH rewards are claimable via getReward().",
+    "category": "defi",
+    "color": "#06b6d4",
+    "contract": "0x0061c52768378b84306b2665f098c3e0b2c03308",
+    "deployed": "October 2020"
+  },
+  "pickle_staking": {
+    "name": "Pickle Staking v1",
+    "desc": "The Pickle Finance v1 staking contract let users stake tokens to earn WETH rewards. The project migrated to v2 and Arbitrum, abandoning this pool. Unclaimed WETH is claimable via getReward().",
+    "category": "defi",
+    "color": "#22c55e",
+    "contract": "0xa17a8883da1abd57c690df9ebf58fc194edab66f",
+    "deployed": "September 2020"
+  },
+  "opyn_gamma_redeem": {
+    "name": "Opyn v2 Gamma",
+    "desc": "Opyn v2 Gamma was the first major decentralized options protocol on Ethereum, launched in late 2020. Holders of expired in-the-money WETH-collateralized oTokens can redeem their share of the underlying collateral via the Controller contract. The protocol went silent in early 2022 \u2014 these are forgotten redemption claims from 2,613 unique holders across 38 different oToken series.",
+    "category": "options",
+    "color": "#a855f7",
+    "contract": "0x4ccc2339f87f6c59c6893e1a678c2266ca58dc72",
+    "deployed": "December 2020"
+  },
+  "opyn_v1": {
+    "name": "Opyn v1",
+    "desc": "Opyn v1 launched in early 2020 as one of Ethereum's first decentralized options protocols. Vault owners deposited ETH as collateral to write put options (oTokens). After the options expired, vault owners could call redeemVaultBalance() to reclaim their ETH collateral. Opyn v1 was superseded by Gamma (v2) in late 2020 and the original frontend no longer supports v1 contracts. 99 vault owners across 5 expired oToken contracts still have unclaimed ETH collateral.",
+    "category": "options",
+    "color": "#7c3aed",
+    "contract": "0xb529964f86fbf99a6aa67f72a27e59fa3fa4feac",
+    "deployed": "February 2020"
+  },
+  "mesa": {
+    "name": "Mesa / Gnosis Protocol v1",
+    "desc": "Mesa was the precursor to CowSwap (Gnosis Protocol v1), a batch-auction DEX deployed in early 2020. Users deposited tokens to trade across discrete batches and had to explicitly withdraw to retrieve them. The contract has been dormant since early 2022 but the 2-step withdraw path (requestWithdraw \u2192 wait one batch \u2192 withdraw) is still permissionless. 116 unique holders forgot to finalize withdrawals after their last trades.",
+    "category": "dex",
+    "color": "#10b981",
+    "contract": "0x6f400810b62df8e13fded51be75ff5393eaa841f",
+    "deployed": "February 2020"
+  },
+  "uma_yield_dollar": {
+    "name": "UMA Yield Dollar",
+    "desc": "UMA's ExpiringMultiParty contracts let users deposit WETH as collateral to mint synthetic tokens (yUSD, uUSDrBTC, uUSDrETH). All contracts expired in 2020-2021 and the UMA frontend no longer supports v1 settlement. Sponsors can reclaim excess collateral and synthetic token holders can redeem their share via settleExpired() on each EMP contract.",
+    "category": "options",
+    "color": "#FF4A4A",
+    "contract": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
+    "deployed": "June 2020"
+  },
+  "unagii": {
+    "name": "Unagii ETH Vault",
+    "desc": "Unagii was a Yearn-style vault protocol launched in March 2021 where users deposited ETH and received uETH shares representing proportional ownership of the vault. The protocol deployed ETH into yield strategies but went dormant in late 2022. The vault contract is immutable and unpaused with no withdrawal fee. Users can burn their uETH shares to reclaim proportional ETH via withdraw().",
+    "category": "yield",
+    "color": "#6366f1",
+    "contract": "0x77607588222e01bf892a29Abab45796A2047fc7b",
+    "deployed": "March 2021"
+  },
+  "veil_ether": {
+    "name": "Veil Ether",
+    "desc": "ETH wrapper from Veil, a prediction market built on Augur and 0x that shut down in July 2019. Users deposited ETH and received Veil Ether tokens for use on the platform. The tokens can still be unwrapped 1:1 for ETH.",
+    "category": "defi",
+    "color": "#6366f1",
+    "contract": "0x53b04999c1ff2d77fcdde98935bb936a67209e4c",
+    "deployed": "January 2019",
+    "slug": "veil-ether"
+  },
+  "gavcoin": {
+    "name": "GavCoin",
+    "desc": "An early Ethereum bonding curve token created in 2015. Users deposited ETH and received GavCoin tokens at a price determined by the bonding curve. Token holders can refund their tokens for ETH at their original purchase price.",
+    "category": "token",
+    "color": "#8b5cf6",
+    "contract": "0x0b8d56c26d8cf16fe1bddf4967753503d974de06",
+    "deployed": "August 2015",
+    "slug": "gavcoin"
+  },
+  "celer": {
+    "name": "Celer Payment Channels",
+    "desc": "Celer was a state-channel protocol for off-chain micropayments, launched in 2019. CelerWallet is the on-chain vault; CelerLedger is the user entry point that enforces channel accounting. Celer pivoted to cBridge in 2021 and took the official CelerPay UI offline, but the contracts remained live and unpaused. Users who opened channels and never cooperatively settled can still recover their deposits via the unilateral path: intendWithdraw starts a 10,000-block (~1.4 day) dispute window; after the window any tx sender can confirm and the ETH returns to the depositor.",
+    "category": "payment_channel",
+    "color": "#7c3aed",
+    "contract": "0xa6cd930fc92f1634d8183af2fb86bd1766f2f82a",
+    "deployed": "July 2019"
+  },
+  "vader_merkle": {
+    "name": "Vader Protocol",
+    "description": "Vader Protocol was a DeFi liquidity protocol with its own stablecoin (USDV). After the protocol wound down, unclaimed WETH remains in a merkle distribution contract. Users can claim their share by providing a merkle proof.",
+    "contract": "0xf5644345a5a9dc14076b58802dc908b83e62b0e1",
+    "category": "defi",
+    "token": "WETH",
+    "website": "https://www.vaderprotocol.io",
+    "status": "defunct"
+  },
+  "yearn_v1_weth": {
+    "name": "Yearn v1 yWETH",
+    "desc": "Yearn Finance launched the v1 yWETH vault in August 2020 as one of the first wrapped-token yield vaults. Users deposited WETH and received yWETH shares representing proportional ownership of the vault's WETH balance plus accrued yield. The yearn.fi frontend dropped v1 vault support, leaving share holders without an interface. The vault is unpaused and immutable, and all WETH sits directly in the vault (no active strategy), so yWETH holders can still redeem their shares for the underlying WETH at the current pricePerFullShare.",
+    "category": "defi",
+    "color": "#0657f9",
+    "contract": "0xe1237aA7f535b0CC33Fd973D66cBf830354D16c7",
+    "deployed": "August 2020"
+  },
+  "euler_claims": {
+    "name": "Euler Redemptions",
+    "desc": "After the March 2023 Euler exploit, the recovered funds were distributed to depositors via a one-shot merkle-drop contract (EulerClaims) deployed July 2023. Each depositor's index pays out a basket of WETH, DAI, USDC, COMP, and other tokens proportional to their pre-exploit holdings. The euler-redemption-scripts repository was archived June 2024 with 1,638 indices still unclaimed. The contract is unpaused and the merkle root is final \u2014 anyone who never returned to claim can still call claimAndAgreeToTerms with the original index and proof. Each claim sends the entire basket of tokens in a single tx.",
+    "category": "lending",
+    "color": "#1e293b",
+    "contract": "0xbc8021015db2ca0599e0692d63ae6b91564cf026",
+    "deployed": "July 2023"
+  },
+  "tokemak_weth": {
+    "name": "Tokemak v1 tWETH",
+    "desc": "Tokemak launched its v1 reactor system in August 2021. The ETH pool (EthPool) accepted WETH deposits and minted tWETH shares 1:1 with WETH. Tokemak rebranded to Auto Finance in 2024 and the v1 reactor UI was retired. The contract is unpaused and tWETH holders can still exit via a 2-step flow: requestWithdrawal queues the amount at the current manager cycle, and withdraw pays out the WETH after the manager rolls cycles (~weekly). 93 tWETH holders already have matured withdrawal requests pending and can call step 2 directly.",
+    "category": "defi",
+    "color": "#6e40c9",
+    "contract": "0xd3d13a578a53685b4ac36a1bab31912d2b2a2f36",
+    "deployed": "August 2021"
+  },
+  "x2y2_fee_sharing": {
+    "name": "X2Y2 Fee Sharing",
+    "desc": "X2Y2 launched in February 2022 as an NFT marketplace competing with OpenSea. Stakers locked X2Y2 tokens into the FeeSharingSystem to earn a share of marketplace WETH fees. The x2y2.io frontend went offline and the project is dormant; the staking contract remains unpaused and immutable. Stakers can claim accrued WETH rewards at any time via harvest(), or unstake and claim simultaneously via withdraw(shares, true). About 207 WETH of accumulated fees beyond what users can claim is contract dust from accounting precision and is not user-claimable.",
+    "category": "nft",
+    "color": "#1d6d7d",
+    "contract": "0xc8c3cc5be962b6d281e4a53dbcce1359f76a1b85",
+    "deployed": "February 2022"
+  },
+  "x2y2_presale": {
+    "name": "X2Y2 Presale",
+    "desc": "Alongside the February 2022 launch, X2Y2 ran a signer-gated presale that sold 1,000 staking shares at 1.5 ETH each (1,500 ETH raised). Presale depositors received 15,000 X2Y2 tokens per share with a one-year linear unlock, and earned a proportional share of marketplace WETH fees directed to this contract over that period. The staking phase ended in February 2023 and the x2y2.io frontend went offline. The contract is unpaused and immutable \u2014 presale participants who still hold their share of X2Y2 tokens can call harvest() at any time to claim their pending WETH rewards. Depositors who already called withdraw() (which internally harvests and claims the X2Y2 tokens) no longer have any pending rewards. About 121 WETH in the contract is math-stranded from that pattern and can only be swept by the X2Y2 admin multisig via treasuryWithdraw().",
+    "category": "nft",
+    "color": "#2d7d8d",
+    "contract": "0xc2f44bc508b6b50047a2f3afb1984ed105070be1",
+    "deployed": "February 2022",
+    "slug": "x2y2-presale"
+  },
+  "metadrop_webaverse": {
+    "name": "Metadrop: Webaverse",
+    "desc": "In August 2022, Metadrop ran a sealed-bid auction for the Webaverse metaverse NFT collection \u2014 7,870 items at a uniform clearing price. Bidders submitted ETH-backed orders above a reserve; winners received NFTs and the difference between their bid and the clearing price was refundable via a merkle-gated claim. Webaverse as a project went dormant in late 2023 and metadrop.com shut down around the same time. The contract is immutable with no deadline \u2014 90 bidders across 134.15 ETH have never claimed their refund. The on-chain root is frozen and matching proofs were reconstructed from archived frontend JS bundles.",
+    "category": "nft",
+    "color": "#6e5494",
+    "contract": "0x1ecb59aecf1fc5da695242c6e78c2007e775d40f",
+    "deployed": "August 2022",
+    "slug": "metadrop-webaverse"
+  },
+  "gnosis_auction": {
+    "name": "Gnosis Auction",
+    "desc": "Gnosis Auction (EasyAuction) is a batch auction platform launched by Gnosis in 2021 for fair token launches. Bidders submitted WETH orders at their chosen price; orders below the clearing price were refunded. The gnosis-auction.eth.limo frontend is dead, but the contract is immutable with no deadline. Unfilled and partially-filled orders can still be claimed via claimFromParticipantOrder(auctionId, orders[]), which returns the unfilled WETH portion of each order.",
+    "category": "defi",
+    "color": "#3e6957",
+    "contract": "0x0b7ffc1f4ad541a4ed16b40d8c37f0929158d101",
+    "deployed": "July 2021"
+  },
+  "nomad_recovery": {
+    "name": "Nomad Bridge Recovery",
+    "desc": "After the August 2022 Nomad Bridge exploit ($190M drained in a chain of ~300 copycat transactions), whitehats returned roughly $40M to a Nomad-controlled address. The Nomad Foundation deployed an AllowListNFTRecoveryAccountant contract (0xa4B86BcbB18639D8e708d6163a0c734aFcDB770c) that mints one ERC-721 NFT per affected (user, asset) pair \u2014 someone bridged WETH + USDC + WBTC pre-hack would receive three NFTs. Each NFT represents a fixed pro-rata share of whatever the Accountant holds of that specific asset. Users call recover(tokenId) to claim. Two gates apply: the caller must own the NFT, AND the caller must be on the allowList[] (maintained by the Nomad team via off-chain KYC verification). The contract is still active \u2014 the official recovery dashboard was discontinued but the contract itself is immutable and permissionless for allowlisted holders. About 95% of the WETH pool (46 of 48 claimable WETH) is held by allowlisted addresses who have never called recover(). Victim research data: github.com/nomad-xyz/hack-data.",
+    "contract": "0xa4B86BcbB18639D8e708d6163a0c734aFcDB770c",
+    "deployed": "January 2023",
+    "color": "#2d3748",
+    "category": "Hack Recovery",
+    "links": {
+      "Contract": "https://etherscan.io/address/0xa4B86BcbB18639D8e708d6163a0c734aFcDB770c",
+      "Hack post-mortem": "https://medium.com/nomad-xyz-blog/nomad-bridge-hack-root-cause-analysis-875ad2e5aacd",
+      "Victim data": "https://github.com/nomad-xyz/hack-data"
+    },
+    "steps_note": "One recover(tokenId) call per NFT. Each NFT pays out a single asset (WETH, USDC, USDT, DAI, FRAX, WBTC, CQT, or FXS). Users with multiple NFTs must call recover() separately for each. Non-allowlisted NFT holders must contact the Nomad team to be added before they can claim."
+  },
+  "presalepool_2018": {
+    "name": "PresalePool 2018",
+    "desc": "A 2018 ICO presale pooling contract built on the Cintix-style PresalePool template, used to aggregate ETH from many small contributors so the group could meet a presale's high minimum allocation. The underlying presale was cancelled and the project's multisig refunded the raised ETH back to the pool, which was then placed into Refund state. Most contributors withdrew during the original distribution window; the remaining 10 addresses still hold proportional shares totaling 39 ETH.",
+    "category": "ico",
+    "color": "#8b5cf6",
+    "contract": "0xf8f6e626af09b0455acd9162beb5a484724f25b5",
+    "deployed": "January 2018",
+    "slug": "presalepool-2018"
+  },
+  "mcdex_perpetual": {
+    "name": "MCDEX ETH-PERP",
+    "desc": "MCDEX's early ETH-PERP perpetual market entered settled mode after the original trading UI disappeared. Traders with positive settlement margin can still call settle() directly on the market contract to receive their remaining ETH collateral.",
+    "category": "defi",
+    "color": "#2563eb",
+    "contract": "0x220a9f0dd581cbc58fcfb907de0454cbf3777f76",
+    "deployed": "February 2020",
+    "slug": "mcdex-perpetual"
+  },
+  "quantfury_qdt": {
+    "name": "Quantfury QDT",
+    "desc": "Quantfury's QDT contract keeps an ETH payout pool backing outstanding QDT tokens. Holders can still redeem their remaining QDT for ETH through the public sellTokens(uint256) function.",
+    "category": "token",
+    "color": "#0f766e",
+    "contract": "0xd18475521245a127a933a4fcaf99e8c45a416f7e",
+    "deployed": "September 2018",
+    "slug": "quantfury-qdt"
+  },
+  "monolith_tkn_holder": {
+    "name": "Monolith TKN Holder",
+    "desc": "The Monolith TKN token can still burn TKN against the legacy Token Holder contract to claim its proportional ETH backing. The old wallet and project frontend no longer surface this path for dormant holders.",
+    "category": "token",
+    "color": "#334155",
+    "contract": "0x24f0bb6c9b2c3db66603fa0ec07ab0cf55cdd387",
+    "deployed": "May 2017",
+    "slug": "monolith-tkn-holder"
+  },
+  "eks": {
+    "name": "EKS",
+    "desc": "EKS contract, a PoWH-style dividend token. Holders with remaining tokens or dividends can still exit through the contract's public exit() path, which sells their tokens and withdraws accrued ETH.",
+    "category": "token",
+    "color": "#7c3aed",
+    "contract": "0xe01e2a3ceafa8233021fc759e5a69863558326b6",
+    "deployed": "February 2018",
+    "slug": "eks"
+  },
+  "tweetmarket": {
+    "name": "TweetMarket",
+    "desc": "TweetMarket accepted ETH-backed bids on tweet IDs in 2020. The site is gone, but current high bidders can still recover locked bids after the lockup period by calling cancel(tweetID) for each active bid.",
+    "category": "other",
+    "color": "#0284c7",
+    "contract": "0xe14ab3ee81abe340b45bb26b1b166a7d2df22585",
+    "deployed": "November 2020",
+    "slug": "tweetmarket"
+  },
+  "treasure": {
+    "name": "Treasure",
+    "desc": "Treasure is a PoWH-style token with separate dividend and sale-withdraw accounting. Holders can claim dividends, sell tokens, and then withdraw the ETH credited by the sale path through the legacy contract.",
+    "category": "token",
+    "color": "#ca8a04",
+    "contract": "0x25a06d4e1f804ce62cf11b091180a5c84980d93a",
+    "deployed": "January 2019",
+    "slug": "treasure"
+  },
+  "celer_ethpool": {
+    "name": "Celer EthPool",
+    "desc": "Celer's early EthPool wrapper accepted native ETH and tracked balances internally. The old CelerPay interface is retired, but holders can still call withdraw(uint256) to unwrap their remaining ETH balance.",
+    "category": "defi",
+    "color": "#0891b2",
+    "contract": "0x44e081cac2406a4efe165178c2a4d77f7a7854d4",
+    "deployed": "February 2019",
+    "slug": "celer-ethpool"
+  },
+  "staking_eth_rewards": {
+    "name": "ETH Staking Rewards",
+    "desc": "This legacy staking contract accrued native ETH rewards for token stakers. Stakers with remaining accounting balances can call receiveReward(address(0)) to collect their pending ETH reward without unstaking first.",
+    "category": "defi",
+    "color": "#16a34a",
+    "contract": "0xa383c8390adbcd387db93babdf3f30308391bd57",
+    "deployed": "September 2020",
+    "slug": "staking-eth-rewards"
+  },
+  "meme_limited_collections": {
+    "name": "Meme Limited Collections",
+    "desc": "Meme Limited Collections split marketplace and pool fees into per-recipient pending withdrawal balances. Artists and controllers with old accrued fees can still call withdrawFee() to receive their ETH.",
+    "category": "nft",
+    "color": "#db2777",
+    "contract": "0x1d90d50d5dd04fa7c8bef89aa5872f0701be7982",
+    "deployed": "September 2020",
+    "slug": "meme-limited-collections"
+  },
+  "foundation_feth": {
+    "name": "Foundation FETH",
+    "desc": "Foundation was an NFT marketplace launched in 2021. Bidders deposited ETH into FETH (the marketplace's escrow wrapper) before placing offers; outbid funds remained as FETH balance and were lockup-free after each auction's 24-hour window. Foundation officially shut the platform offline on April 27, 2026 with no recovery UI for users with idle FETH balances. The contracts remain live and unpaused: every lockup has now expired, so withdrawAvailableBalance() returns the entire balance in a single call.",
+    "category": "nft",
+    "color": "#fb923c",
+    "contract": "0x49128CF8ABE9071ee24540a296b5DED3F9D50443",
+    "deployed": "March 2022",
+    "slug": "foundation-feth"
+  },
+  "feg_feth": {
+    "name": "FEG Wrapped ETH",
+    "desc": "FEG ecosystem's reflection-style ETH wrapper deployed in 2020. Holders deposit ETH and receive fETH (1:1 minus 1% fee); the reflection accounting redistributes part of every deposit/withdraw fee to remaining holders, while the rest accumulates in feesAccrued \u2014 permanently locked, with no function to redeem. The FEG team migrated focus to BSC and never operated an Ethereum-side UI for fETH redemption (Defillama lists Fegex Ethereum TVL = 0). The contract remains live: any holder can call withdraw(amount) for 99% of their fETH balance as ETH.",
+    "category": "token",
+    "color": "#10b981",
+    "contract": "0xf786c34106762ab4eeb45a51b42a62470e9d5332",
+    "deployed": "September 2020",
+    "slug": "feg-feth"
+  },
+  "futurists": {
+    "name": "Futurists Auction Splitter",
+    "desc": "Foundation's \"Futurists\" 2021 NFT auction proceeds went into an OpenZeppelin PaymentSplitter with 4 hardcoded shareholders (97% / 1% / 1% / 1% shares). Each shareholder can call release(account) at any time to receive their pro-rata cut of the contract's ETH; the function is permissionless so anyone (including a bot) can trigger payment to a registered shareholder.",
+    "category": "nft",
+    "color": "#9333ea",
+    "contract": "0xa46ed7080f0094306d354b9d22e084f1dfb1b074",
+    "deployed": "February 2021",
+    "slug": "futurists"
+  },
+  "weth10": {
+    "name": "WETH10",
+    "desc": "Andre Cronje's 2020 WETH10 wrapper \u2014 proposed successor to canonical WETH9 with simpler interface and gas optimizations. Never reached significant adoption. Holders can call withdraw(uint256) to burn their WETH10 and receive ETH 1:1.",
+    "category": "token",
+    "color": "#0891b2",
+    "contract": "0xbc5cef436eadacadfa8dafb63088f09f21dea7e9",
+    "deployed": "September 2020",
+    "slug": "weth10"
+  },
+  "micro_eth": {
+    "name": "MicroETH",
+    "desc": "MicroETH (\u03bcETH) is a 2018 ETH wrapper with 6 decimals: 1 \u03bcETH = 1e-6 ETH. Holders can call withdraw(uint256) to burn \u03bcETH and receive ETH at the fixed 1:1e-6 ratio. Note: contract holders without payable receive() will revert because withdraw uses transfer (2300 gas).",
+    "category": "token",
+    "color": "#84cc16",
+    "contract": "0xbb7be7cc5abb65d3a29d7982236481ddf4f10b09",
+    "deployed": "February 2018",
+    "slug": "micro-eth"
+  },
+  "confinale_token": {
+    "name": "Confinale Token",
+    "desc": "Confinale 2018-era ETH-pegged wrapper. Holders call withdraw(amount) to burn tokens and receive ETH at 1:1.",
+    "category": "token",
+    "color": "#fb7185",
+    "contract": "0x629178c9a55cc30e3cccf21a94f77920aefce5ce",
+    "deployed": "June 2018",
+    "slug": "confinale-token"
+  },
+  "opyn_crab_v2": {
+    "name": "Opyn Crab Strategy V2",
+    "desc": "Opyn's Squeeth Crab Strategy V2 was a delta-neutral USD-Squeeth-on-ETH yield product. The strategy entered a shutdown state (no recent deposits/withdrawals); each crab token is now redeemable for a proportional share of contract ETH via withdrawShutdown(uint256). Single-step, permissionless.",
+    "category": "defi",
+    "color": "#f59e0b",
+    "contract": "0x3b960e47784150f5a63777201ee2b15253d713e8",
+    "deployed": "June 2022",
+    "slug": "opyn-crab-v2"
+  },
+  "collective_canvas": {
+    "name": "Collective Canvas",
+    "desc": "Collaborative on-chain generative art project from 2021. Each minted layer earns a share of all subsequent mint fees via a tier-based formula. Each NFT owner can call withdraw(tokenId, amount) to claim their accumulated ETH share \u2014 must be the current owner of the tokenId.",
+    "category": "nft",
+    "color": "#06b6d4",
+    "contract": "0x3a56ab63c7ef4f07fe353beb132e0fd5ad270ca0",
+    "deployed": "2021",
+    "slug": "collective-canvas"
+  },
+  "keep_bonding": {
+    "name": "Keep Network Bonding",
+    "desc": "Keep Network's KeepBonding contract held operator-staked ETH as collateral for tBTC v1 signing groups. After tBTC v1 wound down, operators can withdraw their unbonded value via withdraw(amount, operator). The ETH lands at the operator's pre-set beneficiary, not the caller \u2014 so the wallet that signs the transaction must be the operator key (or the operator's token owner / grantee).",
+    "category": "defi",
+    "color": "#48cfb0",
+    "contract": "0x27321f84704a599ab740281e285cc4463d89a3d5",
+    "deployed": "August 2020",
+    "slug": "keep-bonding"
+  },
+  "relayhub_v1": {
+    "name": "OpenGSN RelayHub v1",
+    "desc": "OpenZeppelin's original meta-transaction relay hub (2019). dApps deposited ETH via depositFor() so users could call them without paying gas; relay operators accumulated fees from successful TransactionRelayed events. Both kinds of balance are recoverable via withdraw(amount, dest) \u2014 the caller must be the balance holder. Contract recipients without a withdraw forwarder cannot directly recover; their addresses are marked pending in the table.",
+    "category": "defi",
+    "color": "#7c3aed",
+    "contract": "0xd216153c06e857cd7f72665e0af1d7d82172f494",
+    "deployed": "August 2019",
+    "slug": "relayhub-v1"
+  },
+  "tribe_redeemer": {
+    "name": "Tribe Redeemer",
+    "desc": "Tribe DAO's post-shutdown redemption contract. After Fei/Tribe dissolved in 2022, TRIBE holders can redeem their tokens for a proportional share of a 4-token basket (stETH, LQTY, FOX, DAI) at the rate set by the contract's redeemBase. Single-step approve + redeem. First v2 ERC20 integration on Forgotten ETH \u2014 only the DAI portion contributes to the hero token counter.",
+    "category": "defi",
+    "color": "#c19024",
+    "contract": "0x4d9629e80118082b939e3d59e69c82a2ec08b4d5",
+    "deployed": "August 2022",
+    "slug": "tribe-redeemer"
+  },
+  "gro_ust_comp": {
+    "name": "Gro UST Compensation",
+    "desc": "Gro Protocol compensated addresses hit by the May-2022 UST/Terra depeg with PWRD, its USD stablecoin, vested over two years through a merkle claim contract. The schedule started July 2022 and finished 31 May 2024, so every eligible address can now claim its full remaining allocation in a single transaction \u2014 initialClaim(proof, amount) for first-time claimers, claim() for those who started but stopped. PWRD is redeemable roughly 1:1 to USDC via Gro's withdraw handler, which is what the v2 hero counter tracks. Roughly 956k PWRD across 123 addresses is still unclaimed years after vesting completed.",
+    "category": "defi",
+    "color": "#1a7a6b",
+    "contract": "0x02c133b9fbffb8d2e8cb7b7a94c7c880b331c720",
+    "deployed": "July 2022",
+    "slug": "gro-ust-compensation"
+  },
+  "hong": {
+    "name": "HONG",
+    "desc": "HONG is a 2016 token-creation contract with a built-in ICO refund path. The verified source keeps each contributor's original ETH in an internal weiGiven ledger and exposes refundMyIcoInvestment(), which returns that tracked deposit while the fund remains unlocked. Forgotten ETH uses event reconstruction plus a live token-holder filter because the weiGiven mapping is not public and the contract also requires the caller to still hold HONG units.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0x9fa8fa61a10ff892e4ebceb7f4e0fc684c2ce0a9",
+    "deployed": "August 2016",
+    "slug": "hong"
+  },
+  "epik_staking": {
+    "name": "EpikStaking",
+    "desc": "EpikStaking is a legacy EPIK Prime staking rewards contract. The staking UI is no longer the normal user path, but the contract remains live and unpaused; stakers with accrued native ETH rewards can claim them directly from the contract.",
+    "category": "defi",
+    "color": "#6366f1",
+    "contract": "0x59accd277add23ee736e70a456a3d2c89e9a62a3",
+    "deployed": "June 2021",
+    "slug": "epik-staking"
+  },
+  "p4rty_dao_vault": {
+    "name": "P4RTY DAO Vault",
+    "desc": "P4RTY DAO Vault was a 2018 dividend vault from p4rty.io. Users staked P4RTY tokens, and ETH sent to the vault was distributed pro-rata to stakers. The frontend is gone, but accumulated ETH dividends remain withdrawable via withdraw(); staked P4RTY itself is not unstaked by this vault.",
+    "category": "gambling",
+    "color": "#a855f7",
+    "contract": "0x9465A32618a9172b3c14d82cecdCa788dE1ef878",
+    "deployed": "August 2018",
+    "slug": "p4rty-dao-vault"
+  },
+  "lido_anchor_vault": {
+    "name": "Lido AnchorVault",
+    "desc": "Lido's stETH\u2192Anchor Protocol (Terra) integration, shut down after the May-2022 Terra/LUNA collapse via Lido DAO Proposal 29. bETH (bonded ETH) holders on Ethereum can redeem 1:1 for stETH by calling withdraw() \u2014 no approval needed, as the vault holds the bETH burner role. Balances are stETH-denominated (~1:1 with ETH). bETH locked in the Wormhole bridge and held by exchanges or other contracts is excluded as non-claimable.",
+    "category": "defi",
+    "color": "#00a3ff",
+    "contract": "0xA2F987A546D4CD1c607Ee8141276876C26b72Bdf",
+    "deployed": "July 2021",
+    "slug": "lido-anchor-vault"
+  },
+  "transit_refund_admin_unlock": {
+    "name": "Transit Finance Refund",
+    "desc": "Transit Finance refund entitlements with ETH-denominated user balances recorded in refundAsset. The contract is currently claim-paused; the owner must call setClaim(false, 0) before affected users can call claim(). Forgotten ETH shows these as owner-action-required, not immediately claimable.",
+    "category": "owner-action-required",
+    "color": "#f59e0b",
+    "contract": "0xc213f258f4142f53d086f9edb7a36e67eb347f63",
+    "deployed": "October 2022",
+    "slug": "transit-refund-admin-unlock"
+  },
+  "remove_putin_bounty_admin_unlock": {
+    "name": "RemovePutinBounty",
+    "desc": "A 2022 bounty contract where contributor balances remain blocked while the contract is in its Initial state. If the owner calls cancel(), contributors can call redeem(); until then this is an owner-action-required finding rather than a direct claim.",
+    "category": "owner-action-required",
+    "color": "#f59e0b",
+    "contract": "0xaf5fc45258b5d0af72031ab154bf6dfcfec74b99",
+    "deployed": "March 2022",
+    "slug": "remove-putin-bounty-admin-unlock"
+  },
+  "pembicoin_ico_admin_unlock": {
+    "name": "PembiCoinICO",
+    "desc": "A 2017 crowdsale with remaining contributor balances. The sale is still Idle; the owner must call setFailed() before contributors can call refund(). Forgotten ETH surfaces affected wallets but disables claim actions until that state transition happens.",
+    "category": "owner-action-required",
+    "color": "#f59e0b",
+    "contract": "0x5535a72556727c221c567e0fc4208c5a99dba1cc",
+    "deployed": "August 2017",
+    "slug": "pembicoin-ico-admin-unlock"
+  },
+  "circles_refund_vault_admin_unlock": {
+    "name": "Circles RefundVault",
+    "desc": "CirclesTokenOffering deposits held in an OpenZeppelin RefundVault. Local fork verification showed finalize() can move the paired vault into refunding state, after which depositors can call claimRefund(); until the owner-side action occurs, these balances are owner-action-required.",
+    "category": "owner-action-required",
+    "color": "#f59e0b",
+    "contract": "0x93d812bf90a575d628e246b0966505a9e466f534",
+    "deployed": "August 2017",
+    "slug": "circles-refund-vault-admin-unlock"
+  },
+  "marketing_mining": {
+    "name": "MarketingMining",
+    "desc": "NFTX/Shard-era liquidity mining contract from March 2021. Users deposited NFT and social-token assets into per-token pools; the old UI is gone, but current userInfo entries can still be withdrawn per pool. Token pools use withdraw(pid, amount); the ETH/WETH pool uses withdrawETH(pid, amount).",
+    "category": "defi",
+    "color": "#8b5cf6",
+    "contract": "0x0feccb11c5b61b3922c511d0f002c0b72d770dce",
+    "deployed": "March 2021",
+    "slug": "marketing-mining"
+  },
+  "pledge_deposit": {
+    "name": "PledgeDeposit ETH Pool",
+    "desc": "PledgeDeposit was a 2021 Zild pledge/deposit contract. ETH-pool users with matured deposits can still recover each remaining ETH deposit through withdraw(0, depositId); the old UI no longer surfaces these per-deposit rows.",
+    "category": "defi",
+    "color": "#4f46e5",
+    "contract": "0xf7686cf0d88b3c1b474ec76735b4e94a0c3a28f3",
+    "deployed": "May 2021",
+    "slug": "pledge-deposit"
+  },
+  "hegic_wbtc_pool": {
+    "name": "Hegic WBTC Pool",
+    "category": "defi",
+    "slug": "hegic-wbtc-pool",
+    "description": "Hegic WBTC Pool was a V1 liquidity pool where LPs received writeWBTC tokens representing shares of the Bitcoin options pool. The old pool is deprecated; remaining writeWBTC holders can withdraw their currently available WBTC liquidity through the pool contract.",
+    "contract": "0x20dd9e22d22dd0a6ef74a520cb08303b5fad5de7"
+  },
+  "digipulse_token_sale": {
+    "name": "DigiPulse Token Sale (DGT)",
+    "desc": "DigiPulse ran a 2017 DGT token sale with an 8,000 ETH soft cap. The sale was finalized below the cap, leaving the contract in a failed/refund state; contributors with remaining ethBalanceOf ledger entries can reclaim their own ETH directly from the verified sale contract.",
+    "category": "ico",
+    "color": "#f97316",
+    "contract": "0x9AcA6aBFe63A5ae0Dc6258cefB65207eC990Aa4D",
+    "deployed": "September 2017",
+    "slug": "digipulse-token-sale"
+  },
+  "directcrypt_presale": {
+    "name": "DirectCrypt Token Presale (DRCT)",
+    "desc": "DirectCrypt used a whitelisted 2018 presale that recorded each contribution in deposited[address]. The presale did not clear its soft-cap condition, so the verified contract keeps the remaining ETH available through its self-paying refund path.",
+    "category": "ico",
+    "color": "#06b6d4",
+    "contract": "0x12d5b7c26DD8dc6E2F71f5bF240d5e76452b2FE5",
+    "deployed": "February 2018",
+    "slug": "directcrypt-presale"
+  },
+  "qcotoken_ico": {
+    "name": "QCOToken ICO (QCO)",
+    "desc": "Qravity/QCOToken used a custom 2018 crowdsale with per-address ethPossibleRefunds accounting. The live sale state is aborted, leaving the remaining contributor ledger claimable from the verified sale contract.",
+    "category": "ico",
+    "color": "#8b5cf6",
+    "contract": "0x3A8A97123bcCd826228e5EB4144b48cce169517B",
+    "deployed": "April 2018",
+    "slug": "qcotoken-ico"
+  },
+  "hodl_ethereum": {
+    "name": "hodlEthereum",
+    "desc": "hodlEthereum is a simple time-lock contract that credited ETH sent to its payable fallback into hodlers[address]. The unlock time has passed, but several original hodlers never called the release function, so their ledger balances remain in the immutable contract.",
+    "category": "ico",
+    "color": "#eab308",
+    "contract": "0x1BB28e79f2482df6bf60efc7a33365703bCF1536",
+    "deployed": "July 2017",
+    "slug": "hodl-ethereum"
+  },
+  "blocklancer_ico": {
+    "name": "Blocklancer Token Sale (LNC)",
+    "desc": "Blocklancer held a 2017 LNC crowdsale with direct ETH custody and per-address balancesEther accounting. The soft cap was not met, so remaining contributors can recover their ledgered ETH through the sale contract refund path.",
+    "category": "ico",
+    "color": "#22c55e",
+    "contract": "0x9EA80e204045329Ba752D03C395F82A12799f13d",
+    "deployed": "October 2017",
+    "slug": "blocklancer-ico"
+  },
+  "ztcrowdsale": {
+    "name": "ZeroTraffic Crowdsale (ZTT)",
+    "desc": "ZeroTraffic ran a 2017 ZTT crowdsale with a very large minimum amount. The sale remains below its minimum; after the permissionless close step, contributors with balances in the crowdsale ledger can reclaim their own ETH.",
+    "category": "ico",
+    "color": "#ef4444",
+    "contract": "0xaf7aeA249098F2c2f50cc11d4000cCf798194373",
+    "deployed": "September 2017",
+    "slug": "ztcrowdsale"
+  },
+  "abyss_daico_fund": {
+    "name": "Abyss DAICO Fund (PollManagedFund)",
+    "desc": "Abyss DAICO fund is latched in CrowdsaleRefund state after the failed 2018 sale. contributors(address) tracks each remaining ETH deposit and refundCrowdsaleContributor() returns msg.sender's own contribution.",
+    "category": "ico",
+    "color": "#7c3aed",
+    "contract": "0xe4972421f88c1f47986f54cbfd2d1e2e671680ac",
+    "deployed": "April 2018",
+    "slug": "abyss-daico-fund"
+  },
+  "bayesin_bys_crowsale": {
+    "name": "Bayesin (BYS) CrowSale",
+    "desc": "Bayesin BYS crowdsale missed its goal. fundBalance(address) tracks contributors and safeWithdrawal() lets each contributor reclaim their own ETH after the deadline.",
+    "category": "ico",
+    "color": "#0d9488",
+    "contract": "0xe8b1b40f2d307bce891833f46eef1f69560e6926",
+    "deployed": "March 2018",
+    "slug": "bayesin-bys-crowsale"
+  },
+  "confideal_campaign": {
+    "name": "Confideal Campaign",
+    "desc": "Confideal campaign is in failed stage. contributions(address) tracks remaining contributor deposits and withdrawRefund() returns msg.sender's refundable ETH.",
+    "category": "ico",
+    "color": "#ef4444",
+    "contract": "0x17681500757628c7aa56d7e6546e119f94dd9479",
+    "deployed": "November 2017",
+    "slug": "confideal-campaign"
+  },
+  "crowdsale_4363b5": {
+    "name": "Crowdsale (0x4363b5)",
+    "desc": "Failed soft-cap crowdsale with remaining returnETher(address) refund ledgers. releaseEthers() returns msg.sender's refundable ETH after the sale-failed condition.",
+    "category": "ico",
+    "color": "#f97316",
+    "contract": "0x4363b5d64f228c819dc706889b09a0dc76e22fb0",
+    "deployed": "2018",
+    "slug": "crowdsale-4363b5"
+  },
+  "crowdsale_c699d9": {
+    "name": "Crowdsale (0xc699d9)",
+    "desc": "Failed soft-cap crowdsale with balances(address) refund ledgers. refund() returns msg.sender's refundable ETH after the ICO end/soft-cap failure.",
+    "category": "ico",
+    "color": "#f97316",
+    "contract": "0xc699d90671cb8373f21060592d41a7c92280adc4",
+    "deployed": "2018",
+    "slug": "crowdsale-c699d9"
+  },
+  "crowdsale_e82056": {
+    "name": "Crowdsale (0xe82056)",
+    "desc": "Failed funding-goal crowdsale. balanceOf(address) tracks remaining contributor balances and safeWithdrawal() returns msg.sender's own ETH after the deadline.",
+    "category": "ico",
+    "color": "#06b6d4",
+    "contract": "0xe8205644fef286a2af423b72669e662feec127cd",
+    "deployed": "2018",
+    "slug": "crowdsale-e82056"
+  },
+  "crowdsalewatch": {
+    "name": "CrowdsaleWatch",
+    "desc": "CrowdsaleWatch missed its funding goal. balanceOf(address) tracks the remaining contributor balance and safeWithdrawal() returns the refundable ETH.",
+    "category": "ico",
+    "color": "#06b6d4",
+    "contract": "0x6f303642844f734ad4176d0dfe93ef7e0776ef46",
+    "deployed": "2018",
+    "slug": "crowdsalewatch"
+  },
+  "gateway_ico_3091d3": {
+    "name": "Gateway ICO (0x3091d3)",
+    "desc": "Gateway ICO failed its post-end goal check. balances(address) tracks current refundable principal and refund() returns msg.sender's balance.",
+    "category": "ico",
+    "color": "#8b5cf6",
+    "contract": "0x3091d37ef18cb33af72cf7ca63714733172ce724",
+    "deployed": "2018",
+    "slug": "gateway-ico-3091d3"
+  },
+  "i2presale": {
+    "name": "I2 Presale",
+    "desc": "I2 presale missed its funding goal. balanceOf(address) tracks contributors and safeWithdrawal() returns msg.sender's remaining ETH.",
+    "category": "ico",
+    "color": "#06b6d4",
+    "contract": "0xa8df33a40fe2e3278e4d94a974f70778043fbd20",
+    "deployed": "2018",
+    "slug": "i2presale"
+  },
+  "mahala_coin_ico": {
+    "name": "Mahala Coin (MHC) Crowdsale",
+    "desc": "Mahala Coin crowdsale failed soft cap. balances(address) tracks current refundable principal and refund() returns msg.sender's balance after the sale end.",
+    "category": "ico",
+    "color": "#22c55e",
+    "contract": "0xe117bb9d1e0fc6e859d9bf174c53baa7c673547a",
+    "deployed": "2018",
+    "slug": "mahala-coin-ico"
+  },
+  "reservation2": {
+    "name": "Reservation2",
+    "desc": "Reservation2 holds remaining per-user ETH in balanceOf(address). withdraw() returns msg.sender's balance with no extra refund gate.",
+    "category": "ico",
+    "color": "#eab308",
+    "contract": "0xde0b79f5e66fdc8a4ffb2c470756a1629e8ad569",
+    "deployed": "2017",
+    "slug": "reservation2"
+  },
+  "singulardtv_launch": {
+    "name": "SingularDTV Launch (ConsenSys)",
+    "desc": "SingularDTV launch reached EndedAndGoalNotReached. contributions(address) tracks ETH deposits; users must approve the launch contract for sentTokens(address), then call withdrawContribution().",
+    "category": "ico",
+    "color": "#ec4899",
+    "contract": "0x6feaf4e8f386c08b4518c175874b332329d0d6ba",
+    "deployed": "2018",
+    "slug": "singulardtv-launch"
+  },
+  "startmining_stm_sale": {
+    "name": "Start Mining (STM) Token Sale",
+    "desc": "Start Mining STM token sale is finished with token goal unmet. getInvestorsETH(address) tracks refundable ETH and manualRefund() returns msg.sender's remaining deposit.",
+    "category": "ico",
+    "color": "#84cc16",
+    "contract": "0xe8da050c3140183d4f5f01e048ac136e2da5253f",
+    "deployed": "2018",
+    "slug": "startmining-stm-sale"
+  },
+  "dx_2": {
+    "name": "DutchX dx_2",
+    "blurb": "Gnosis DutchX exchange proxy v2 \u2014 direct WETH/SAI internal balances plus unclaimed auction positions withdrawable through the original DutchX contract.",
+    "slug": "dutchx-dx-2",
+    "category": "defi",
+    "contract": "0xb9812e2fa995ec53b5b6df34d21f9304762c5497"
+  },
+  "dx_3": {
+    "name": "DutchX dx_3",
+    "blurb": "Gnosis DutchX exchange proxy v3 \u2014 direct WETH/SAI internal balances plus unclaimed auction positions withdrawable through the original DutchX contract.",
+    "slug": "dutchx-dx-3",
+    "category": "defi",
+    "contract": "0xaf1745c0f8117384dfa5fff40f824057c70f2ed3"
+  },
+  "delphi_redemption": {
+    "name": "Delphi RedemptionContract",
+    "desc": "Delphi launched the DEL token in 2017 and later deployed a simple redemption contract for holders to burn DEL for native ETH at a fixed 1/2410 ETH per DEL rate. The project is long inactive, but the redemption contract still holds ETH and redeemTokens(uint256) remains callable by ordinary token holders after an ERC-20 approval.",
+    "category": "ico",
+    "color": "#7c3aed",
+    "contract": "0x899f9a0440face1397a1ee1e3f6bf3580a6633d1",
+    "deployed": "August 2017",
+    "slug": "delphi-redemption"
+  }
+}

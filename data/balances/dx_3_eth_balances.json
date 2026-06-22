@@ -1,0 +1,596 @@
+{
+  "contract": "0xaf1745c0f8117384dfa5fff40f824057c70f2ed3",
+  "balance_source": "token",
+  "contract_weth_balance": 70.968,
+  "contract_sai_balance": 18542.248,
+  "total_eth_in_balances": 47.965695,
+  "total_sai_in_balances": 16103.301856,
+  "addresses_with_balance": 21,
+  "addresses_weth": 11,
+  "addresses_sai": 12,
+  "coverage_pct_weth": 67.6,
+  "coverage_pct_sai": 86.8,
+  "scan_date": "2026-06-09 00:00:00 UTC",
+  "description": "DutchX exchange proxy (dx_3). WETH and SAI only. Three claim layers \u2014 L1 direct WETH/SAI balances (withdraw only), L2/L3 unclaimed auction positions (claimBuyerFunds/claimSellerFunds + withdraw). Positions carry received_token/received_symbol \u2014 check the field, do not assume WETH. sai_balance = total claimable SAI (direct + positions); sai_direct = direct L1 SAI only. Unattributable gap: ~23 WETH / ~2,439 SAI.",
+  "distribution": {
+    "<0.01": 14,
+    "0.01-0.1": 3,
+    "0.1-1": 2,
+    "1-10": 1,
+    ">10": 1
+  },
+  "balances": [
+    {
+      "address": "0x27f6a0a4757767a098f070ca8498f3e0025f935c",
+      "balance_eth": 41.19517787,
+      "balance_wei": "41195170000000000000",
+      "weth_direct": 2.52951087,
+      "weth_direct_wei": "2529510868419131516",
+      "sai_balance": 16018.09910459,
+      "sai_balance_wei": "16018099100000000000000",
+      "sai_direct": 4468.14656059,
+      "sai_direct_wei": "4468146560594659393927",
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "bt": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "ai": 487,
+          "received_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "received_symbol": "WETH",
+          "w": 8.412971,
+          "w_wei": "8412970000000000000"
+        },
+        {
+          "t": "seller",
+          "st": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "bt": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "ai": 486,
+          "received_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "received_symbol": "WETH",
+          "w": 8.319456,
+          "w_wei": "8319450000000000000"
+        },
+        {
+          "t": "seller",
+          "st": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "bt": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "ai": 484,
+          "received_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "received_symbol": "WETH",
+          "w": 8.269831,
+          "w_wei": "8269830000000000000"
+        },
+        {
+          "t": "seller",
+          "st": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "bt": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "ai": 485,
+          "received_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "received_symbol": "WETH",
+          "w": 8.147707,
+          "w_wei": "8147700000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 493,
+          "received_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "received_symbol": "WETH",
+          "w": 4.257838,
+          "w_wei": "4257830000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 498,
+          "received_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "received_symbol": "WETH",
+          "w": 0.504422,
+          "w_wei": "504420000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 496,
+          "received_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "received_symbol": "WETH",
+          "w": 0.324334,
+          "w_wei": "324330000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 495,
+          "received_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "received_symbol": "WETH",
+          "w": 0.319814,
+          "w_wei": "319810000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 491,
+          "received_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "received_symbol": "WETH",
+          "w": 0.109294,
+          "w_wei": "109290000000000000"
+        },
+        {
+          "t": "seller",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 488,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 1028.526242,
+          "w_wei": "1028526240000000000000"
+        },
+        {
+          "t": "seller",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 490,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 1026.87681,
+          "w_wei": "1026876810000000000000"
+        },
+        {
+          "t": "seller",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 492,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 1016.498464,
+          "w_wei": "1016498460000000000000"
+        },
+        {
+          "t": "seller",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 489,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 1009.828573,
+          "w_wei": "1009828570000000000000"
+        },
+        {
+          "t": "seller",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 494,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 1004.641786,
+          "w_wei": "1004641780000000000000"
+        },
+        {
+          "t": "seller",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 495,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 1000.217483,
+          "w_wei": "1000217480000000000000"
+        },
+        {
+          "t": "seller",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 493,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 998.644294,
+          "w_wei": "998644290000000000000"
+        },
+        {
+          "t": "seller",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 496,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 998.212884,
+          "w_wei": "998212880000000000000"
+        },
+        {
+          "t": "seller",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 491,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 995.482516,
+          "w_wei": "995482510000000000000"
+        },
+        {
+          "t": "seller",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 497,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 983.3825,
+          "w_wei": "983382500000000000000"
+        },
+        {
+          "t": "seller",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 498,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 968.890978,
+          "w_wei": "968890970000000000000"
+        },
+        {
+          "t": "buyer",
+          "st": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "bt": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "ai": 487,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 518.750014,
+          "w_wei": "518750010000000000000"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "address": "0xad54d739ef647b3b29bb5043a16317bdc1ddc470",
+      "balance_eth": 5.35604,
+      "balance_wei": "5356040000000000000",
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "bt": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "ai": 216,
+          "received_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "received_symbol": "WETH",
+          "w": 5.35604,
+          "w_wei": "5356040000000000000"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "address": "0x64e482233ca8bbfcd7fbcc670808fa0eb09c5cc3",
+      "balance_eth": 0.853531,
+      "balance_wei": "853530000000000000",
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "bt": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "ai": 200,
+          "received_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "received_symbol": "WETH",
+          "w": 0.853531,
+          "w_wei": "853530000000000000"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "address": "0x7c6fc9d2cfa523f517a7958ceac9ff835286ae50",
+      "balance_eth": 0.31897896,
+      "balance_wei": "318970000000000000",
+      "weth_direct": 0.31897896,
+      "weth_direct_wei": "318978962979121248",
+      "rank": 4
+    },
+    {
+      "address": "0x658d9b51639db19b410e61d2d26207509b994993",
+      "balance_eth": 0.090397,
+      "balance_wei": "90390000000000000",
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "bt": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "ai": 307,
+          "received_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "received_symbol": "WETH",
+          "w": 0.090397,
+          "w_wei": "90390000000000000"
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "address": "0xff05266aa54063d06d8dea2402902e746d73e5cb",
+      "balance_eth": 0.07963962,
+      "balance_wei": "79630000000000000",
+      "weth_direct": 0.07963962,
+      "weth_direct_wei": "79639620644602878",
+      "rank": 6
+    },
+    {
+      "address": "0x59be11933fc05f3cc60f1caa2280c2caa6633be4",
+      "balance_eth": 0.06148501,
+      "balance_wei": "61480000000000000",
+      "weth_direct": 0.06148501,
+      "weth_direct_wei": "61485012311552465",
+      "rank": 7
+    },
+    {
+      "address": "0xc1e310155891c4a639f80dc14945d13190a75cc5",
+      "balance_eth": 0.005861,
+      "balance_wei": "5860000000000000",
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "bt": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "ai": 463,
+          "received_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "received_symbol": "WETH",
+          "w": 0.004411,
+          "w_wei": "4410000000000000"
+        },
+        {
+          "t": "seller",
+          "st": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "bt": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "ai": 811,
+          "received_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "received_symbol": "WETH",
+          "w": 0.00145,
+          "w_wei": "1450000000000000"
+        }
+      ],
+      "rank": 8
+    },
+    {
+      "address": "0x5f58a7f53572a66ed0907d2199ff34cb74b60cf1",
+      "balance_eth": 0.00359,
+      "balance_wei": "3590000000000000",
+      "positions": [
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+          "ai": 400,
+          "received_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "received_symbol": "WETH",
+          "w": 0.00359,
+          "w_wei": "3590000000000000"
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "address": "0x6a29b1cdcacca805ae635f7d01db74b5be58d663",
+      "balance_eth": 0.000795,
+      "balance_wei": "790000000000000",
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "bt": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "ai": 414,
+          "received_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "received_symbol": "WETH",
+          "w": 0.000795,
+          "w_wei": "790000000000000"
+        }
+      ],
+      "rank": 10
+    },
+    {
+      "address": "0x8b9cefb87e99d5ff7937d2081449cc05524af5ed",
+      "balance_eth": 0.0002,
+      "balance_wei": "200000000000000",
+      "weth_direct": 0.0001,
+      "weth_direct_wei": "100000000000000",
+      "sai_balance": 0.197,
+      "sai_balance_wei": "197000000000000000",
+      "sai_direct": 0.197,
+      "sai_direct_wei": "197000000000000000",
+      "positions": [
+        {
+          "t": "buyer",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+          "ai": 839,
+          "received_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "received_symbol": "WETH",
+          "w": 0.0001,
+          "w_wei": "100000000000000"
+        }
+      ],
+      "rank": 11
+    },
+    {
+      "address": "0x3b376a725a36147db5d4b91abf1f3fdf97122f0d",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "sai_balance": 0.000823,
+      "sai_balance_wei": "820000000000000",
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 93,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 0.000823,
+          "w_wei": "820000000000000"
+        }
+      ],
+      "rank": 12
+    },
+    {
+      "address": "0x73a9aba19eef8e75e271f5d453612dc1f50ff57f",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "sai_balance": 1.223651,
+      "sai_balance_wei": "1223650000000000000",
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 373,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 1.223651,
+          "w_wei": "1223650000000000000"
+        }
+      ],
+      "rank": 13
+    },
+    {
+      "address": "0x8abbc3884bcff526f556a7e810fe5f299220ccdb",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "sai_balance": 5.611477,
+      "sai_balance_wei": "5611470000000000000",
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 411,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 5.611477,
+          "w_wei": "5611470000000000000"
+        }
+      ],
+      "rank": 14
+    },
+    {
+      "address": "0x478f14f089eda3931bd93021fe983f06df7c4a57",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "sai_balance": 0.254377,
+      "sai_balance_wei": "254370000000000000",
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 261,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 0.254377,
+          "w_wei": "254370000000000000"
+        }
+      ],
+      "rank": 15
+    },
+    {
+      "address": "0x871930f59563f379f00070dfc59876e05e730f89",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "sai_balance": 9.36689659,
+      "sai_balance_wei": "9366890000000000000",
+      "sai_direct": 9.36689659,
+      "sai_direct_wei": "9366896593557185344",
+      "rank": 16
+    },
+    {
+      "address": "0xc39f1316ff2cabc45ccb52f236e56947354845fa",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "sai_balance": 0.854655,
+      "sai_balance_wei": "854650000000000000",
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 253,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 0.854655,
+          "w_wei": "854650000000000000"
+        }
+      ],
+      "rank": 17
+    },
+    {
+      "address": "0x2dbcfd1af175636cd202d6bbd29b5d3901c9c3cf",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "sai_balance": 56.909401,
+      "sai_balance_wei": "56909400000000000000",
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 414,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 56.909401,
+          "w_wei": "56909400000000000000"
+        }
+      ],
+      "rank": 18
+    },
+    {
+      "address": "0x010afb8548a5d1a3a3d62f58ca0a5a1329974206",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "sai_balance": 0.923363,
+      "sai_balance_wei": "923360000000000000",
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 244,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 0.923363,
+          "w_wei": "923360000000000000"
+        }
+      ],
+      "rank": 19
+    },
+    {
+      "address": "0x2b129bd5121dc6623c0f71552f52ea39444e22a5",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "sai_balance": 0.106423,
+      "sai_balance_wei": "106420000000000000",
+      "positions": [
+        {
+          "t": "seller",
+          "st": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "bt": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "ai": 462,
+          "received_token": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+          "received_symbol": "SAI",
+          "w": 0.106423,
+          "w_wei": "106420000000000000"
+        }
+      ],
+      "rank": 20
+    },
+    {
+      "address": "0x7e5b90f42e23b84f755d32648f5b2aa85f5accec",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "sai_balance": 9.75468461,
+      "sai_balance_wei": "9754680000000000000",
+      "sai_direct": 9.75468461,
+      "sai_direct_wei": "9754684612084139463",
+      "rank": 21
+    }
+  ],
+  "contract_eth_balance": 70.968,
+  "coverage_pct": 67.6
+}

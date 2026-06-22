@@ -1,0 +1,171 @@
+{
+  "contract": "0x18777Aec0B231D1a4A9C66B51253088a03affDFc",
+  "balance_source": "eth",
+  "contract_eth_balance": 10.76763783,
+  "total_eth_in_balances": 10.76763783,
+  "addresses_with_balance": 23,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-15 16:25:16 UTC",
+  "description": "Failed-ICO direct refund ledger \u2014 Luckchemy Crowdsale. ETH is held in the sale contract and the claim flow is refund().",
+  "distribution": {
+    "1-10 ETH": {
+      "count": 3,
+      "total_eth": 7.0
+    },
+    "0.1-1 ETH": {
+      "count": 20,
+      "total_eth": 3.76763783
+    }
+  },
+  "name": "Luckchemy Crowdsale",
+  "claim_flow": "refund()",
+  "refund_selector": "0x590e1ae3",
+  "balance_selector": "0xfc7e286d",
+  "state_checks": [
+    "hasEnded() == true",
+    "softCapReached() == false"
+  ],
+  "total_addresses_scanned": 23,
+  "residual_unattributed_eth": 0.0,
+  "residual_note": "Positive live balance minus positive refund ledgers; not counted as self-claimable unless a matching per-user getter returns a positive balance.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0x932dd29fbd1d1bff4c16704f8eae879f4e968ba5",
+      "balance_wei": "4000000000000000000",
+      "balance_eth": 4.0
+    },
+    {
+      "rank": 2,
+      "address": "0x264d1405922873f8bf61f55c884eb6c77c52f469",
+      "balance_wei": "2000000000000000000",
+      "balance_eth": 2.0
+    },
+    {
+      "rank": 3,
+      "address": "0x1b6e9678f05daecc76e35c3351e80dd298bf1852",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0
+    },
+    {
+      "rank": 4,
+      "address": "0x9b6852065ef53d565b9d0fdb10ad2b7238ccfbcf",
+      "balance_wei": "500000000000000000",
+      "balance_eth": 0.5
+    },
+    {
+      "rank": 5,
+      "address": "0x758221db28e5488fc0e74d8210cf4540038e5f50",
+      "balance_wei": "404684340000000000",
+      "balance_eth": 0.40468434
+    },
+    {
+      "rank": 6,
+      "address": "0x570c33de80290e960448bbcbc7ab54e84842ea7b",
+      "balance_wei": "400000000000000000",
+      "balance_eth": 0.4
+    },
+    {
+      "rank": 7,
+      "address": "0x130f4b1cf7679231ce2a9e22fe5b0677dc0b20e2",
+      "balance_wei": "300000000000000000",
+      "balance_eth": 0.3
+    },
+    {
+      "rank": 8,
+      "address": "0x89522015a6d1030a1268a68e7c96cdba66b232be",
+      "balance_wei": "300000000000000000",
+      "balance_eth": 0.3
+    },
+    {
+      "rank": 9,
+      "address": "0x9e315934ead236a14031143a04329315c3246eda",
+      "balance_wei": "200000000000000000",
+      "balance_eth": 0.2
+    },
+    {
+      "rank": 10,
+      "address": "0x497e3c800adb758dff17a1864708e495b7e0339a",
+      "balance_wei": "200000000000000000",
+      "balance_eth": 0.2
+    },
+    {
+      "rank": 11,
+      "address": "0x0fa5ce569135bf99b0a6c1224bd06268f506b43b",
+      "balance_wei": "187953490000000000",
+      "balance_eth": 0.18795349
+    },
+    {
+      "rank": 12,
+      "address": "0x352bc8e2f84db33748c367917e455a44801afe29",
+      "balance_wei": "150000000000000000",
+      "balance_eth": 0.15
+    },
+    {
+      "rank": 13,
+      "address": "0xa3997c4daedf4142bf4a45e360f80b0aca167de1",
+      "balance_wei": "120000000000000000",
+      "balance_eth": 0.12
+    },
+    {
+      "rank": 14,
+      "address": "0xe8d51bf1c9ad9b97d8982ef77106859b00c9d415",
+      "balance_wei": "105000000000000000",
+      "balance_eth": 0.105
+    },
+    {
+      "rank": 15,
+      "address": "0xfac61fe40f41d3bc824a9caa4ac4ecc3be2215b1",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 16,
+      "address": "0xd9cf925d87fa86aac4d175d5ff746e6d271893d3",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 17,
+      "address": "0x6e14085bb5d088e466c68c7aa438c3eae2992afa",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 18,
+      "address": "0x90ba6027fca547e16c14b2d622a5a497af73fb97",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 19,
+      "address": "0xc79cfdb2ba7524a246105bcf0def749e627dfeac",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 20,
+      "address": "0xcc2900166828d3b249aa126727c2f3fd918aae2c",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 21,
+      "address": "0xc08c067587602180a1633b559bdca85299a6ba99",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 22,
+      "address": "0x103938c8a8080bad2a718cd194db52d3d13d3397",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1
+    },
+    {
+      "rank": 23,
+      "address": "0x23e4dc44c4103f33347e8a356740dbdf98084e3b",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1
+    }
+  ]
+}

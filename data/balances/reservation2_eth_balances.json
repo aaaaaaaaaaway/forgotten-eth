@@ -1,0 +1,34 @@
+{
+  "contract": "0xde0b79f5e66fdc8a4ffb2c470756a1629e8ad569",
+  "balance_source": "eth",
+  "contract_eth_balance": 1.9,
+  "total_eth_in_balances": 1.9,
+  "addresses_with_balance": 1,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-15 16:25:16 UTC",
+  "description": "Failed-ICO direct refund ledger \u2014 Reservation2. ETH is held in the sale contract and the claim flow is withdraw().",
+  "distribution": {
+    "1-10 ETH": {
+      "count": 1,
+      "total_eth": 1.9
+    }
+  },
+  "name": "Reservation2",
+  "claim_flow": "withdraw()",
+  "refund_selector": "0x3ccfd60b",
+  "balance_selector": "0x70a08231",
+  "state_checks": [
+    "balanceOf[msg.sender] > 0 (no additional gate)"
+  ],
+  "total_addresses_scanned": 1,
+  "residual_unattributed_eth": 0.0,
+  "residual_note": "Only positive live per-user ledgers are counted. Contract-minus-ledger residual is excluded unless a source-backed ordinary user path maps it to a wallet.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0x43fc2e15836706799d96f4d857088b950624a4c9",
+      "balance_wei": "1900000000000000000",
+      "balance_eth": 1.9
+    }
+  ]
+}

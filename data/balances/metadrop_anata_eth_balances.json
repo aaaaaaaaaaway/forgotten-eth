@@ -1,0 +1,26 @@
+{
+  "contract": "0x0cba81ba02c58a4c2c160fdd2e7411ad9cdf5dbe",
+  "balance_source": "eth",
+  "contract_eth_balance": 0.0,
+  "total_eth_in_balances": 0.0,
+  "addresses_with_balance": 0,
+  "coverage_pct": 0.0,
+  "scan_date": "2026-06-03 04:23:30 UTC",
+  "description": "Anata NFT Metadrop sealed-bid auction. Unclaimed bidder refunds.",
+  "distribution": {},
+  "meta": {
+    "onchain_root": "0x2602c129e42ecf91ec96e695e706e4ec7f14fb69c25535455f4cc5ebae3776a5",
+    "leaf_encoding": "encode",
+    "items_per_auction": 1920,
+    "number_of_auctions": 1,
+    "floor_price_wei": "5250000000000000000",
+    "total_bidders": 3389,
+    "claimed_count": 3272,
+    "unclaimed_count": 117,
+    "drained": true,
+    "rugged_addresses": 117,
+    "rugged_eth": 187.45,
+    "drain_note": "Operator swept the residual refund pool. Remaining merkle-eligible bidders cannot claim onchain \u2014 claimRefund() reverts because the contract is empty. See protocols.json description for details."
+  },
+  "balances": []
+}

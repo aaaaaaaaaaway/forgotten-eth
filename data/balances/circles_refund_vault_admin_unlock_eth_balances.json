@@ -1,0 +1,144 @@
+{
+  "contract": "0x93d812bf90a575d628e246b0966505a9e466f534",
+  "balance_source": "eth",
+  "contract_eth_balance": 24.09894981,
+  "total_eth_in_balances": 24.09894981,
+  "addresses_with_balance": 14,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-04 00:32:00 UTC",
+  "description": "CirclesTokenOffering RefundVault deposits. Crowdsale owner must finalize() and enable refunds before depositors can call claimRefund().",
+  "meta": {
+    "owner_action_required": true,
+    "bucket": "Type D",
+    "required_admin_action": "finalize() / enableRefunds()",
+    "user_call_after_unlock": "claimRefund()"
+  },
+  "balances": [
+    {
+      "address": "0xd93862dc2715dc4376a5104c8709250ecebc2ef1",
+      "balance_wei": "10000000000000000000",
+      "balance_eth": 10.0,
+      "admin_unlock_required": true,
+      "admin_action": "crowdsale owner finalize() -> vault enableRefunds()",
+      "user_call": "claimRefund()",
+      "recovery_type": "refund_state_transition"
+    },
+    {
+      "address": "0x062e5677ce092a2e883f5c7c9efc1f8051c353f5",
+      "balance_wei": "2000000000000000000",
+      "balance_eth": 2.0,
+      "admin_unlock_required": true,
+      "admin_action": "crowdsale owner finalize() -> vault enableRefunds()",
+      "user_call": "claimRefund()",
+      "recovery_type": "refund_state_transition"
+    },
+    {
+      "address": "0x277e4b7f5dab01c8e4389b930d3bd1c9690ce1e8",
+      "balance_wei": "2000000000000000000",
+      "balance_eth": 2.0,
+      "admin_unlock_required": true,
+      "admin_action": "crowdsale owner finalize() -> vault enableRefunds()",
+      "user_call": "claimRefund()",
+      "recovery_type": "refund_state_transition"
+    },
+    {
+      "address": "0xf832cbd13c399f492b2a470790edb82b2548b887",
+      "balance_wei": "1990000000000000000",
+      "balance_eth": 1.99,
+      "admin_unlock_required": true,
+      "admin_action": "crowdsale owner finalize() -> vault enableRefunds()",
+      "user_call": "claimRefund()",
+      "recovery_type": "refund_state_transition"
+    },
+    {
+      "address": "0x92aac7c07fe7af592aa891f0a947477a7d9523bf",
+      "balance_wei": "1001000000000000000",
+      "balance_eth": 1.001,
+      "admin_unlock_required": true,
+      "admin_action": "crowdsale owner finalize() -> vault enableRefunds()",
+      "user_call": "claimRefund()",
+      "recovery_type": "refund_state_transition"
+    },
+    {
+      "address": "0x00c3f4a182a8595d1aeae1405f813fdf8e975b05",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0,
+      "admin_unlock_required": true,
+      "admin_action": "crowdsale owner finalize() -> vault enableRefunds()",
+      "user_call": "claimRefund()",
+      "recovery_type": "refund_state_transition"
+    },
+    {
+      "address": "0x1080510642f9d2a978e5bc72e3d171b4b181391c",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0,
+      "admin_unlock_required": true,
+      "admin_action": "crowdsale owner finalize() -> vault enableRefunds()",
+      "user_call": "claimRefund()",
+      "recovery_type": "refund_state_transition"
+    },
+    {
+      "address": "0x6071d34bfa7bce74980cf5fbe2f8184cea8a3258",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0,
+      "admin_unlock_required": true,
+      "admin_action": "crowdsale owner finalize() -> vault enableRefunds()",
+      "user_call": "claimRefund()",
+      "recovery_type": "refund_state_transition"
+    },
+    {
+      "address": "0x6c2bc769fba0e019044c64ded9ccd3ea07bc578b",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0,
+      "admin_unlock_required": true,
+      "admin_action": "crowdsale owner finalize() -> vault enableRefunds()",
+      "user_call": "claimRefund()",
+      "recovery_type": "refund_state_transition"
+    },
+    {
+      "address": "0xbdaeebdc69e70f4b03c1248843c32f58fb4632b7",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0,
+      "admin_unlock_required": true,
+      "admin_action": "crowdsale owner finalize() -> vault enableRefunds()",
+      "user_call": "claimRefund()",
+      "recovery_type": "refund_state_transition"
+    },
+    {
+      "address": "0xfa5caaf72ae8a3d77f39f2f096002efe7a1e5ab7",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0,
+      "admin_unlock_required": true,
+      "admin_action": "crowdsale owner finalize() -> vault enableRefunds()",
+      "user_call": "claimRefund()",
+      "recovery_type": "refund_state_transition"
+    },
+    {
+      "address": "0x4b43041e418b16bb7dcf94a09f721cc73574fc04",
+      "balance_wei": "510000000000000000",
+      "balance_eth": 0.51,
+      "admin_unlock_required": true,
+      "admin_action": "crowdsale owner finalize() -> vault enableRefunds()",
+      "user_call": "claimRefund()",
+      "recovery_type": "refund_state_transition"
+    },
+    {
+      "address": "0x20374928f7362da653954fa30dd9e937b3f711fd",
+      "balance_wei": "300000000000000000",
+      "balance_eth": 0.3,
+      "admin_unlock_required": true,
+      "admin_action": "crowdsale owner finalize() -> vault enableRefunds()",
+      "user_call": "claimRefund()",
+      "recovery_type": "refund_state_transition"
+    },
+    {
+      "address": "0xebd80e0d78bddf171e4586c2a518de5a2455e10d",
+      "balance_wei": "297949808000000000",
+      "balance_eth": 0.297949808,
+      "admin_unlock_required": true,
+      "admin_action": "crowdsale owner finalize() -> vault enableRefunds()",
+      "user_call": "claimRefund()",
+      "recovery_type": "refund_state_transition"
+    }
+  ]
+}

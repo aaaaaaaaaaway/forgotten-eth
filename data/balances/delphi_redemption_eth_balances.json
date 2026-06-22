@@ -1,0 +1,557 @@
+{
+  "contract": "0x899f9a0440face1397a1ee1e3f6bf3580a6633d1",
+  "balance_source": "token",
+  "contract_eth_balance": 206.25375278,
+  "total_eth_in_balances": 195.61891602,
+  "addresses_with_balance": 75,
+  "coverage_pct": 94.84,
+  "scan_date": "2026-06-18 13:02:01 UTC",
+  "description": "Delphi's 2017 token redemption contract lets DEL holders approve the redemption contract and call redeemTokens(uint256), burning DEL for native ETH at a fixed 1/2410 ETH per DEL rate.",
+  "distribution": {
+    ">=100 ETH": 1,
+    "10-100 ETH": 0,
+    "1-10 ETH": 17,
+    "0.1-1 ETH": 28,
+    "0.01-0.1 ETH": 16,
+    "<0.01 ETH": 13
+  },
+  "meta": {
+    "token": "0x02b9806a64cb05f02aa8dcc1c178b88159a61304",
+    "token_symbol": "DEL",
+    "token_deploy_block": 4120289,
+    "redeem_contract": "0x899f9a0440face1397a1ee1e3f6bf3580a6633d1",
+    "redeem_function": "redeemTokens(uint256)",
+    "redeem_divisor": 2410,
+    "rate_eth_per_del": 0.0004149377593360996,
+    "skipped_self_reference": 1,
+    "skipped_contract_holders": 2,
+    "note": "Each DEL raw unit redeems for raw/2410 wei. Contract self-held DEL is excluded; contract holders are excluded because the ordinary user redemption path must be sent from the token holder address."
+  },
+  "balances": [
+    {
+      "address": "0xa1d8c63ef75b1be29cdb9f2c23a6f3197f800fbe",
+      "balance_wei": "134004979253112033195",
+      "balance_eth": 134.00497925311203,
+      "token_balance_raw": "322952000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xdd96f1d86c63c4975850abc8299f63cbcaaf1887",
+      "balance_wei": "8000829875518672199",
+      "balance_eth": 8.000829875518672,
+      "token_balance_raw": "19282000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x3833f8dbdbd6bdcb6a883ff209b869148965b364",
+      "balance_wei": "6000829875518672199",
+      "balance_eth": 6.000829875518672,
+      "token_balance_raw": "14462000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x1ab2f723c09c64ea4bbb615ac3a7d64cf5ca210f",
+      "balance_wei": "5000829875518672199",
+      "balance_eth": 5.000829875518672,
+      "token_balance_raw": "12052000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x64646d3106116792b1ccb1e515bc75140d7cb0d7",
+      "balance_wei": "5000829875518672199",
+      "balance_eth": 5.000829875518672,
+      "token_balance_raw": "12052000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x63b85118aefaa222080c88adc59b4815b96d6ef8",
+      "balance_wei": "4000414937759336099",
+      "balance_eth": 4.000414937759336,
+      "token_balance_raw": "9641000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x5ad21dc27c6fc36725d643a19c2245c5327ff915",
+      "balance_wei": "3000414937759336099",
+      "balance_eth": 3.000414937759336,
+      "token_balance_raw": "7231000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x006c0f7042f818cbcf277ec08d518f15121178c0",
+      "balance_wei": "3000414937759336099",
+      "balance_eth": 3.000414937759336,
+      "token_balance_raw": "7231000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xc2f289a8813d49ece7a32a5ec3fc77518d0a8343",
+      "balance_wei": "2468879668049792531",
+      "balance_eth": 2.4688796680497926,
+      "token_balance_raw": "5950000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x584d8c994fd9482dec9090bf5c815387022dcdfe",
+      "balance_wei": "2400414937759336099",
+      "balance_eth": 2.400414937759336,
+      "token_balance_raw": "5785000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x75175e047aca205fa2e0a4e0c4973b0aa67daf8f",
+      "balance_wei": "2000414937759336099",
+      "balance_eth": 2.000414937759336,
+      "token_balance_raw": "4821000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x4eb2b7f99d78e8fd277c5fbf6a4aed7ccb9489d4",
+      "balance_wei": "1900829875518672199",
+      "balance_eth": 1.900829875518672,
+      "token_balance_raw": "4581000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x99fe39bb892ff8cfbc19e2a826ccc4b218c3b7e7",
+      "balance_wei": "1735269709543568464",
+      "balance_eth": 1.7352697095435683,
+      "token_balance_raw": "4182000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xd2b17d305d71f994e2c0f560cddaa92793a64571",
+      "balance_wei": "1567219917012448132",
+      "balance_eth": 1.5672199170124483,
+      "token_balance_raw": "3777000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x4f2daf35de0a9c0c8d12694e7815c2d3a0210474",
+      "balance_wei": "1140248962655601659",
+      "balance_eth": 1.1402489626556016,
+      "token_balance_raw": "2748000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x85f68b196768bd116b27e6baef19d5098c5c81fa",
+      "balance_wei": "1000414937759336099",
+      "balance_eth": 1.000414937759336,
+      "token_balance_raw": "2411000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x11e917e9fb892133b1f0d99f49e5dd0396926e47",
+      "balance_wei": "1000414937759336099",
+      "balance_eth": 1.000414937759336,
+      "token_balance_raw": "2411000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x3dc768eb0a77c54215f37206401df32d9028d974",
+      "balance_wei": "1000414937759336099",
+      "balance_eth": 1.000414937759336,
+      "token_balance_raw": "2411000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x5b04836487bc8477e496b6a71f9732430b28d410",
+      "balance_wei": "990456431535269709",
+      "balance_eth": 0.9904564315352697,
+      "token_balance_raw": "2387000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x76f5beb5747a33d15db899db664de26aa7ed0143",
+      "balance_wei": "911493775933609958",
+      "balance_eth": 0.91149377593361,
+      "token_balance_raw": "2196700000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xcdaf08bcd5fc99d5085831081e912a5e150b0579",
+      "balance_wei": "800414937759336099",
+      "balance_eth": 0.800414937759336,
+      "token_balance_raw": "1929000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x37dd4e5111c436147b1ff6821983bcf81fb23352",
+      "balance_wei": "663900414937759336",
+      "balance_eth": 0.6639004149377593,
+      "token_balance_raw": "1600000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x3c95b7657046f2ad2731b525028d8507d2b9e40d",
+      "balance_wei": "624066390041493775",
+      "balance_eth": 0.6240663900414938,
+      "token_balance_raw": "1504000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x00315bff081b5bf2b62b03d697117b984f6a14d4",
+      "balance_wei": "613278008298755186",
+      "balance_eth": 0.6132780082987552,
+      "token_balance_raw": "1478000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x4efb789e4dc67e469799b91dca9ced6abd3c2414",
+      "balance_wei": "510373443983402489",
+      "balance_eth": 0.5103734439834025,
+      "token_balance_raw": "1230000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x64315cbf019c589eeb092d6a78ac7afa7b27a12d",
+      "balance_wei": "500414937759336099",
+      "balance_eth": 0.5004149377593361,
+      "token_balance_raw": "1206000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x81894872c86260fce2fc8992270c5804eab2ead5",
+      "balance_wei": "500414937759336099",
+      "balance_eth": 0.5004149377593361,
+      "token_balance_raw": "1206000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x39c122da4cca59f5a1caf9aafb8ab780656e6b50",
+      "balance_wei": "500414937759336099",
+      "balance_eth": 0.5004149377593361,
+      "token_balance_raw": "1206000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x7c8085e1d869f9e327e3f1559dcd59ffbb500ddc",
+      "balance_wei": "500414937759336099",
+      "balance_eth": 0.5004149377593361,
+      "token_balance_raw": "1206000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x85d7488599834acecd95846d6b0373075389bfcd",
+      "balance_wei": "500414937759336099",
+      "balance_eth": 0.5004149377593361,
+      "token_balance_raw": "1205999999999999998794",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x73d9c51ba294aad959ab050ad5ed847394781a7e",
+      "balance_wei": "480082987551867219",
+      "balance_eth": 0.4800829875518672,
+      "token_balance_raw": "1157000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xadca79f7ffc5a194ad03dbf3cec9a5c76f117d99",
+      "balance_wei": "450207468879668049",
+      "balance_eth": 0.450207468879668,
+      "token_balance_raw": "1085000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xb9d00655cae73b4d0905d199150c82d3b124da7c",
+      "balance_wei": "409128630705394190",
+      "balance_eth": 0.4091286307053942,
+      "token_balance_raw": "986000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x4353909b964f31bd1c9d152ca15d5709c783ac9d",
+      "balance_wei": "209128630705394190",
+      "balance_eth": 0.20912863070539417,
+      "token_balance_raw": "504000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x999f8bd19bfd874f0132f80526952428f6380222",
+      "balance_wei": "190041493775933609",
+      "balance_eth": 0.1900414937759336,
+      "token_balance_raw": "458000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xde666df65de6d630b28c377b51e410a675e2bed5",
+      "balance_wei": "182157676348547717",
+      "balance_eth": 0.1821576763485477,
+      "token_balance_raw": "439000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xfd4e15b4dd20136a9621576743893a17d4dfff2d",
+      "balance_wei": "178838174273858921",
+      "balance_eth": 0.17883817427385892,
+      "token_balance_raw": "431000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x002f3ef45677406d3392e56ba2596fdb045e2ec1",
+      "balance_wei": "120331950207468879",
+      "balance_eth": 0.12033195020746888,
+      "token_balance_raw": "290000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x00e3f02d441b2ad4315874571de3c39bc29918ae",
+      "balance_wei": "110373443983402489",
+      "balance_eth": 0.1103734439834025,
+      "token_balance_raw": "266000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xe6cd11ce349b3f38ef7edf1703b04466f4408888",
+      "balance_wei": "101244813278008298",
+      "balance_eth": 0.1012448132780083,
+      "token_balance_raw": "244000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x8298e3d7a1fc53b402383eb539706ac0de9598fb",
+      "balance_wei": "100414937759336099",
+      "balance_eth": 0.10041493775933609,
+      "token_balance_raw": "242000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x6be00aba60e1381607d7663e105c8ccfc1ec4a92",
+      "balance_wei": "100414937759336099",
+      "balance_eth": 0.10041493775933609,
+      "token_balance_raw": "242000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xc89721ec45deb7ce1f8f001955cda7a068b9a7e8",
+      "balance_wei": "100414937759336099",
+      "balance_eth": 0.10041493775933609,
+      "token_balance_raw": "242000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x7a244594bf307a96e8f103ec00501c2cd430989a",
+      "balance_wei": "100414937759336099",
+      "balance_eth": 0.10041493775933609,
+      "token_balance_raw": "242000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xbdf9b5bda53c709cce44a073067b3e26afe1d816",
+      "balance_wei": "100414937759336099",
+      "balance_eth": 0.10041493775933609,
+      "token_balance_raw": "242000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x0fd07e2ba953b69d039cf101a093a01089765e88",
+      "balance_wei": "100414937759336099",
+      "balance_eth": 0.10041493775933609,
+      "token_balance_raw": "242000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x03602951d0345cfe691ad94454ebaa5efe24dd65",
+      "balance_wei": "98340248962655601",
+      "balance_eth": 0.0983402489626556,
+      "token_balance_raw": "237000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x3322f11ca9922bfcc669f80b45757216a89b7730",
+      "balance_wei": "82987551867219917",
+      "balance_eth": 0.08298755186721991,
+      "token_balance_raw": "200000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x197a7a12e48e427b3e9d1255bc6946d2a5f58156",
+      "balance_wei": "68817707898268203",
+      "balance_eth": 0.0688177078982682,
+      "token_balance_raw": "165850676034826369574",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xa5c787a306d41dc287418cd1b294a35f733032d8",
+      "balance_wei": "54771784232365145",
+      "balance_eth": 0.054771784232365145,
+      "token_balance_raw": "132000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x1d7c515ce83a6896d2464bbffd1b4b1da12bba22",
+      "balance_wei": "51452282157676348",
+      "balance_eth": 0.05145228215767635,
+      "token_balance_raw": "124000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xf726c72e876f42f611b032d03bdbe5f15dee7033",
+      "balance_wei": "50207468879668049",
+      "balance_eth": 0.050207468879668045,
+      "token_balance_raw": "121000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x00d1aa30afe5f207cbfe2ac1895e14b985bbfe16",
+      "balance_wei": "46887966804979253",
+      "balance_eth": 0.04688796680497925,
+      "token_balance_raw": "113000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x6b4e4da43f71f25fc0c477d57e679e1816ba5682",
+      "balance_wei": "45228215767634854",
+      "balance_eth": 0.045228215767634854,
+      "token_balance_raw": "109000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x94e6d005ad1e9aab38ceacdcd839caae9397d707",
+      "balance_wei": "40248962655601659",
+      "balance_eth": 0.040248962655601656,
+      "token_balance_raw": "97000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x02afdbb8b41704baae06dbd0b1bed918f0d91edc",
+      "balance_wei": "39004149377593360",
+      "balance_eth": 0.03900414937759336,
+      "token_balance_raw": "94000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x7369aced6e47a027a9e7b8d093457d75637ca48c",
+      "balance_wei": "30290456431535269",
+      "balance_eth": 0.03029045643153527,
+      "token_balance_raw": "73000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x4c406d550b80fb613c1a874a9757cb3412cc896b",
+      "balance_wei": "30290456431535269",
+      "balance_eth": 0.03029045643153527,
+      "token_balance_raw": "73000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x422779c7a1aac6a4e8a8ac05fb912616dd56f078",
+      "balance_wei": "29875518672199170",
+      "balance_eth": 0.029875518672199168,
+      "token_balance_raw": "72000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x020ed0ebb965e2543bc00449f455d1a92b5d5068",
+      "balance_wei": "27101659751037344",
+      "balance_eth": 0.027101659751037344,
+      "token_balance_raw": "65315000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x752bd6dc14e3dfb6a9e5a4fa7e27c97d6865dd74",
+      "balance_wei": "20331950207468879",
+      "balance_eth": 0.02033195020746888,
+      "token_balance_raw": "49000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x334932508edfe5b15360bffd4cad64897ee746e9",
+      "balance_wei": "10373443983402489",
+      "balance_eth": 0.010373443983402487,
+      "token_balance_raw": "25000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xe1ae08fd0e212be0d7da0e748fce6b313c8f2e7a",
+      "balance_wei": "5394190871369294",
+      "balance_eth": 0.005394190871369294,
+      "token_balance_raw": "13000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x6e5fe1a02072f09753dfe4b5c0638de75843f176",
+      "balance_wei": "4564315352697095",
+      "balance_eth": 0.004564315352697095,
+      "token_balance_raw": "11000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xdb164edeb967ef396fffc11df13ae137df0ac2a3",
+      "balance_wei": "3319502074688796",
+      "balance_eth": 0.003319502074688796,
+      "token_balance_raw": "8000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xff64f34e8511693e3dffa0e1fe037a6a65f3937b",
+      "balance_wei": "3112033195020746",
+      "balance_eth": 0.003112033195020746,
+      "token_balance_raw": "7500000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x868e8396e584b051248520685f952886e96a8a76",
+      "balance_wei": "829875518672199",
+      "balance_eth": 0.000829875518672199,
+      "token_balance_raw": "2000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x9818fe60a00bcbd56e9aee5cef96c94e329e6dac",
+      "balance_wei": "414937759336099",
+      "balance_eth": 0.000414937759336099,
+      "token_balance_raw": "1000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xc38786cb3c2e5ac9a729b84e8c25dc355e42cdc0",
+      "balance_wei": "414937759336099",
+      "balance_eth": 0.000414937759336099,
+      "token_balance_raw": "1000000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xfead0d408ff878d61b9d4f7a2526925ebe436a4c",
+      "balance_wei": "234335799684877",
+      "balance_eth": 0.000234335799684877,
+      "token_balance_raw": "564749277240554283",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x54961b2be71b303c72b370511767facba3637774",
+      "balance_wei": "114320120782458",
+      "balance_eth": 0.000114320120782458,
+      "token_balance_raw": "275511491085724400",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xa6dad41066584f15659e718e49afed891e807fdc",
+      "balance_wei": "90590538624868",
+      "balance_eth": 9.0590538624868e-05,
+      "token_balance_raw": "218323198085933605",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xc6e54bc0e82998811736460deb62218fe768faaf",
+      "balance_wei": "41493775933609",
+      "balance_eth": 4.1493775933609e-05,
+      "token_balance_raw": "100000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0xa44a39baebccc4038792b0975c9bf42b5258cc59",
+      "balance_wei": "26141078838174",
+      "balance_eth": 2.6141078838174e-05,
+      "token_balance_raw": "63000000000000000",
+      "token_symbol": "DEL"
+    },
+    {
+      "address": "0x9b0ff208b9904d7769d36527695e27805180d79f",
+      "balance_wei": "149377593360",
+      "balance_eth": 1.4937759336e-07,
+      "token_balance_raw": "360000000000000",
+      "token_symbol": "DEL"
+    }
+  ]
+}

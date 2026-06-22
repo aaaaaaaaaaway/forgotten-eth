@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://cdn.jsdelivr.net/npm/ethers@6.13.5/dist/ethers.umd.min.js https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; connect-src 'self' https://ethereum.publicnode.com https://1rpc.io https://eth.llamarpc.com https://vitals.vercel-insights.com https://api.coingecko.com https://cdn.jsdelivr.net; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com;">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<title>Forgotten ETH - Recover ETH Stuck in Old Smart Contracts</title>
+<meta name="description" content="165,000+ ETH stuck in defunct smart contracts from the 2015-2022 era. Frontends offline, portfolio trackers blind. Check if you have unclaimed ETH in old DEXes, ICO contracts, ENS deeds, DAO treasuries, and more.">
+<link rel="canonical" href="https://forgotteneth.com/">
+<meta property="og:title" content="Forgotten ETH: 165,000+ ETH Stuck in Old Smart Contracts">
+<meta property="og:description" content="Thousands of ETH sit forgotten in defunct contracts from the 2015-2022 era. The original frontends are offline and portfolio trackers don't detect these balances. Check if you have unclaimed ETH.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://forgotteneth.com">
+<meta property="og:image" content="https://forgotteneth.com/og-image-wide.png?v=2">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Forgotten ETH: 165,000+ ETH Stuck in Old Smart Contracts">
+<meta name="twitter:description" content="Thousands of ETH sit forgotten in defunct contracts from the 2015-2022 era. The original frontends are offline and portfolio trackers don't detect these balances. Check if you have unclaimed ETH.">
+<meta name="twitter:image" content="https://forgotteneth.com/og-image-wide.png?v=2">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" integrity="sha384-vsrfeLOOY6KuIYKDlmVH5UiBmgIdB1oEf7p01YgWHuqmOHfZr374+odEv96n9tNC" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/ethers@6.13.5/dist/ethers.umd.min.js" integrity="sha384-NRAZj94DQk3dgtsOZzVYHbYVV1DFkF5QhL5RRxF0ILZLi6OQ7CsMlun748D42JbO" crossorigin="anonymous"></script>
+<script src="/theme-init.js"></script>
+<style>
+  :root {
+    --bg: #faf9f7;
+    --bg2: #f0eee9;
+    --bg3: #e5e2db;
+    --border: #d4d0c8;
+    --border-strong: #b8b3a8;
+    --text: #1a1a1a;
+    --text2: #6b6560;
+    --accent: #0f766e;
+    --accent2: #0d6560;
+    --accent-text: #0f766e;
+    --accent-glow: rgba(15, 118, 110, 0.15);
+    --green: #16a34a;
+    --green-glow: transparent;
+    --gold: #b45309;
+    --gold-glow: rgba(180, 83, 9, 0.3);
+    --red: #dc2626;
+    --yellow: #ca8a04;
+    --orange: #c2410c;
+    --glass: #f0eee9;
+    --glass-border: #d4d0c8;
+    --radius: 3px;
+    --radius-sm: 2px;
+    --radius-lg: 6px;
+    --connect-bg: rgba(15, 118, 110, 0.06);
+    --connect-border: rgba(15, 118, 110, 0.20);
+    --font-display: 'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
+    --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+  }
+
+  [data-theme="dark"] {
+    --bg: #12111a;
+    --bg2: #1a1924;
+    --bg3: #23212e;
+    --border: #2d2a3a;
+    --border-strong: #3d3950;
+    --text: #d4d0de;
+    --text2: #7d7890;
+    --accent: #7ec8be;
+    --accent2: #a3ddd5;
+    --accent-text: #7ec8be;
+    --accent-glow: rgba(126, 200, 190, 0.12);
+    --green: #6bc9a0;
+    --green-glow: transparent;
+    --gold: #d4a96a;
+    --gold-glow: rgba(212, 169, 106, 0.3);
+    --red: #d47b7b;
+    --yellow: #d4a96a;
+    --orange: #d49a6a;
+    --glass: #1a1924;
+    --glass-border: #2d2a3a;
+    --connect-bg: rgba(126, 200, 190, 0.04);
+    --connect-border: rgba(126, 200, 190, 0.12);
+  }
+  /* ���─ Corrupt Light theme ── */
+  [data-theme="corrupt-light"] {
+    --bg: #faf9f7; --bg2: #f0eee9; --bg3: #e5e2db;
+    --border: #d4d0c8; --border-strong: #b8b3a8;
+    --text: #1a1a1a; --text2: #6b6560;
+    --accent: #ff0066; --accent2: #ff3388; --accent-text: #ff0066;
+    --accent-glow: rgba(255,0,102,0.15);
+    --green: #16a34a; --green-glow: transparent;
+    --gold: #b45309; --gold-glow: rgba(180,83,9,0.3);
+    --red: #dc2626; --yellow: #ca8a04; --orange: #c2410c;
+    --glass: #f0eee9; --glass-border: #d4d0c8;
+    --connect-bg: rgba(255,0,102,0.04); --connect-border: rgba(255,0,102,0.15);
+  }
+  /* ── Corrupt Dark theme ── */
+  [data-theme="corrupt-dark"] {
+    --bg: #030805; --bg2: #071209; --bg3: #0c1c12;
+    --border: #163020; --border-strong: #20442e;
+    --text: #00ff41; --text2: #00aa2a;
+    --accent: #ff0066; --accent2: #ff3388; --accent-text: #ff0066;
+    --accent-glow: rgba(255,0,102,0.2);
+    --green: #00ff41; --green-glow: rgba(0,255,65,0.15);
+    --gold: #ffcc00; --gold-glow: rgba(255,204,0,0.3);
+    --red: #ff3333; --yellow: #ffcc00; --orange: #ff8833;
+    --glass: #071209; --glass-border: #163020;
+    --connect-bg: rgba(0,255,65,0.03); --connect-border: rgba(0,255,65,0.12);
+  }
+  /* Corrupt overrides (shared by both corrupt themes) */
+  [data-theme^="corrupt"] body { font-family: 'JetBrains Mono', 'SF Mono', monospace; }
+  /* corrupt-dark keeps the same Neon World background as normal dark — no override needed */
+  [data-theme^="corrupt"] a:hover { color: #ff0066; text-shadow: 0 0 8px rgba(255,0,102,0.5); }
+  [data-theme^="corrupt"] .header h1 { text-shadow: 3px 0 #ff0066, -3px 0 #00ffff, 0 0 10px rgba(0,255,65,0.4); animation: glitchTitle 3s infinite; }
+  [data-theme^="corrupt"] .subtitle { text-shadow: 1px 0 #ff006640, -1px 0 #00ffff40; animation: glitchSubtle 5s infinite; }
+  [data-theme^="corrupt"] .hero-amount { text-shadow: 4px 0 #ff0066, -4px 0 #00ffff, 0 0 30px rgba(0,255,65,0.4); animation: glitchHero 2.5s infinite; }
+  [data-theme^="corrupt"] .hero-eth-label { color: #00ffff; }
+  [data-theme^="corrupt"] .connect-section { border-left-color: #ff0066; animation: glitchBorder 8s infinite; opacity: 1; }
+  [data-theme^="corrupt"] .wallet-btn.connected { background: var(--bg); }
+  [data-theme^="corrupt"] .claim-banner { background: var(--bg2); border-color: var(--border); }
+  [data-theme^="corrupt"] .claim-card { background: var(--bg2); border-color: var(--border); }
+  [data-theme^="corrupt"] .claim-card:hover { border-color: #ff0066; box-shadow: 3px 3px 0 #ff0066, -2px -2px 0 #00ffff; }
+  [data-theme^="corrupt"] .claim-btn { background: #ff0066; color: #fff; }
+  [data-theme^="corrupt"] .claim-btn:hover { background: #ff3388; box-shadow: 0 0 20px rgba(255,0,102,0.5); }
+  [data-theme^="corrupt"] .btn { border-color: #ff0066; color: #ff0066; background: transparent; }
+  [data-theme^="corrupt"] .btn:hover { background: rgba(255,0,102,0.1); }
+  [data-theme^="corrupt"] .wallet-btn { border-color: var(--accent); color: var(--accent); background: transparent; }
+  [data-theme^="corrupt"] .wallet-btn:hover { background: rgba(255,0,102,0.08); }
+  [data-theme^="corrupt"] .tab.active { border-bottom-color: #ff0066; color: #ff0066; }
+  [data-theme^="corrupt"] .faq-q:hover { color: #ff0066; }
+  [data-theme^="corrupt"] .recent-box-row .rb-eth { color: #00ffff; }
+  [data-theme^="corrupt"] .recent-box-row .rb-plus { color: #00ff41; }
+  [data-theme^="corrupt"] .recent-box-row a { color: #00ff41; }
+  [data-theme^="corrupt"] .recent-box-row a:hover { color: #ff0066; }
+  [data-theme^="corrupt"] .hero-progress-block.filled { background: #ff0066; box-shadow: 0 0 4px rgba(255,0,102,0.4); }
+  [data-theme^="corrupt"] .hero-progress-pct { color: #00ffff; }
+  /* Glitched VRAM tile grid background */
+  [data-theme="corrupt-light"] body {
+    background-image:
+      repeating-linear-gradient(90deg, rgba(255,0,102,0.03) 0px, rgba(255,0,102,0.03) 32px, transparent 32px, transparent 64px),
+      repeating-linear-gradient(0deg, rgba(0,136,170,0.03) 0px, rgba(0,136,170,0.03) 32px, transparent 32px, transparent 64px),
+      repeating-linear-gradient(90deg, rgba(255,0,102,0.05) 0px, transparent 1px, transparent 32px),
+      repeating-linear-gradient(0deg, rgba(0,136,170,0.05) 0px, transparent 1px, transparent 32px);
+    background-size: 64px 64px, 64px 64px, 32px 32px, 32px 32px;
+    background-position: 0 0, 3px 5px, 0 0, -2px 3px;
+    animation: bgGlitch 4s steps(1) infinite;
+  }
+  [data-theme="corrupt-dark"] body {
+    background-image:
+      repeating-linear-gradient(90deg, rgba(255,0,102,0.06) 0px, rgba(255,0,102,0.06) 32px, transparent 32px, transparent 64px),
+      repeating-linear-gradient(0deg, rgba(0,255,65,0.04) 0px, rgba(0,255,65,0.04) 32px, transparent 32px, transparent 64px),
+      repeating-linear-gradient(90deg, rgba(255,0,102,0.08) 0px, transparent 1px, transparent 32px),
+      repeating-linear-gradient(0deg, rgba(0,255,65,0.08) 0px, transparent 1px, transparent 32px);
+    background-size: 64px 64px, 64px 64px, 32px 32px, 32px 32px;
+    background-position: 0 0, 3px 5px, 0 0, -2px 3px;
+    animation: bgGlitch 4s steps(1) infinite;
+  }
+  @keyframes bgGlitch {
+    0%,85%,100% { background-position: 0 0, 3px 5px, 0 0, -2px 3px; }
+    86% { background-position: -4px 2px, 6px -3px, 3px -1px, -5px 4px; }
+    88% { background-position: 2px -3px, -5px 7px, -2px 4px, 3px -6px; }
+    90% { background-position: 0 0, 3px 5px, 0 0, -2px 3px; }
+  }
+  [data-theme^="corrupt"] .neon-world { display: none !important; }
+  .corrupt-btn { background: none; border: none; cursor: pointer; font-family: var(--font-mono); font-size: 14px; color: #ff0066; padding: 0; letter-spacing: 0.5px; text-shadow: 1px 0 #ff006640, -1px 0 #00ffff40; animation: corruptBtnGlitch 4s infinite; }
+  .corrupt-btn:hover { text-shadow: 2px 0 #ff0066, -2px 0 #00ffff; }
+  @keyframes corruptBtnGlitch { 0%,88%,100%{transform:none;text-shadow:1px 0 #ff006640,-1px 0 #00ffff40}89%{transform:translateX(-1px);text-shadow:2px 0 #ff0066,-2px 0 #00ffff}90%{transform:translateX(1px) skewX(-2deg);text-shadow:-1px 0 #ff0066,1px 0 #00ffff}91%{transform:none;text-shadow:1px 0 #ff006640,-1px 0 #00ffff40} }
+  [data-theme^="corrupt"] #corruptToggle { color: #ff0066 !important; text-shadow: 0 0 8px rgba(255,0,102,0.5); }
+  /* Inline text corruption spans */
+  [data-theme^="corrupt"] ._corrupt-text { transition: none; }
+  [data-theme^="corrupt"] ._corrupt-text span { display: inline; vertical-align: baseline; }
+  /* Corrupt-light: darken neon accents that are invisible on white bg */
+  [data-theme="corrupt-light"] .hero-eth-label { color: #cc0055; }
+  [data-theme="corrupt-light"] .recent-box-row .rb-eth { color: #cc0055; }
+  [data-theme="corrupt-light"] .recent-box-row .rb-plus { color: #0a8a3a; }
+  [data-theme="corrupt-light"] .recent-box-row a { color: #0a8a3a; }
+  [data-theme="corrupt-light"] .hero-progress-pct { color: #cc0055; }
+  [data-theme="corrupt-light"] .header h1 { text-shadow: 3px 0 #ff0066, -3px 0 #0088aa, 0 0 10px rgba(255,0,102,0.3); }
+  [data-theme="corrupt-light"] .hero-amount { text-shadow: 4px 0 #ff0066, -4px 0 #0088aa, 0 0 20px rgba(255,0,102,0.2); }
+  /* CRT scanlines */
+  [data-theme="corrupt-light"] body::after { content: ''; position: fixed; inset: 0; z-index: 9998; pointer-events: none; background: repeating-linear-gradient(0deg, rgba(0,0,0,0.06) 0px, rgba(0,0,0,0.06) 1px, transparent 1px, transparent 2px); animation: scanlineFlicker 0.1s infinite; }
+  [data-theme="corrupt-dark"] body::after { content: ''; position: fixed; inset: 0; z-index: 9998; pointer-events: none; background: repeating-linear-gradient(0deg, rgba(0,0,0,0.12) 0px, rgba(0,0,0,0.12) 1px, transparent 1px, transparent 2px); animation: scanlineFlicker 0.15s infinite; }
+  /* Noise grain */
+  [data-theme="corrupt-light"] body::before { content: ''; position: fixed; inset: -10%; width: 120%; height: 120%; z-index: 9997; pointer-events: none; opacity: 0.04; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-size: 256px 256px; animation: grainShift 0.3s steps(6) infinite; }
+  [data-theme="corrupt-dark"] body::before { content: ''; position: fixed; inset: -10%; width: 120%; height: 120%; z-index: 9997; pointer-events: none; opacity: 0.06; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-size: 256px 256px; animation: grainShift 0.3s steps(6) infinite; }
+  /* Tear line */
+  [data-theme^="corrupt"] .container::after { content: ''; position: fixed; left: 0; right: 0; height: 2px; z-index: 9999; pointer-events: none; background: linear-gradient(90deg, transparent 5%, #00ffff 20%, #ff0066 50%, #00ff41 80%, transparent 95%); opacity: 0.8; animation: tearLine 3s linear infinite; }
+  [data-theme^="corrupt"] .container::before { content: ''; position: fixed; left: 0; right: 0; height: 1px; z-index: 9999; pointer-events: none; background: linear-gradient(90deg, transparent 15%, #ff0066 40%, #00ffff 60%, transparent 85%); opacity: 0.4; animation: tearLine 7s linear infinite reverse; }
+  /* Tile jitter */
+  [data-theme^="corrupt"] .header { animation: tileShift 7s infinite; opacity: 1; }
+  [data-theme^="corrupt"] .about-section { animation: tileShift 11s infinite; opacity: 1; }
+  [data-theme^="corrupt"] .site-footer { animation: tileShift 13s infinite reverse; }
+  [data-theme^="corrupt"] .faq-q { animation: paletteBleed 10s infinite; }
+  [data-theme^="corrupt"] .faq-item:hover .faq-q { text-shadow: 1px 0 #ff006630, -1px 0 #00ffff30; }
+  [data-theme^="corrupt"] .explorer-toggle { animation: paletteBleed 9s infinite reverse; }
+  [data-theme^="corrupt"] .recent-box { animation: tileShift 6s infinite reverse; opacity: 1; }
+  [data-theme^="corrupt"] .claim-card { animation: paletteBleed 12s infinite; }
+  /* Keyframes */
+  @keyframes scanlineFlicker { 0%,100%{opacity:1}50%{opacity:0.97} }
+  @keyframes glitchTitle { 0%,82%,100%{text-shadow:3px 0 #ff0066,-3px 0 #00ffff,0 0 10px rgba(0,255,65,0.4);transform:none}83%{text-shadow:-6px 0 #ff0066,6px 0 #00ffff;transform:translateX(-4px) skewX(-3deg)}84%{text-shadow:5px 4px #ff0066,-5px -3px #00ffff;transform:translateX(4px) skewX(2deg)}85%{text-shadow:-4px -3px #ff0066,4px 3px #00ffff,0 0 25px #ff0066;transform:translateX(-3px) skewX(-4deg)}86%{text-shadow:6px 2px #ff0066,-6px -1px #00ffff;transform:translateX(3px)}87%{text-shadow:3px 0 #ff0066,-3px 0 #00ffff,0 0 10px rgba(0,255,65,0.4);transform:none} }
+  @keyframes glitchSubtle { 0%,95%,100%{transform:none;opacity:1}96%{transform:translateX(-1px);opacity:0.8}97%{transform:translateX(2px) skewX(-1deg);opacity:0.9}98%{transform:translateX(-1px);opacity:1} }
+  @keyframes glitchHero { 0%,80%,100%{text-shadow:4px 0 #ff0066,-4px 0 #00ffff,0 0 30px rgba(0,255,65,0.4);transform:none}81%{text-shadow:-8px 3px #ff0066,8px -3px #00ffff,0 0 50px #ff0066;transform:translateX(-6px) skewX(-3deg)}82%{text-shadow:7px -4px #ff0066,-7px 4px #00ffff;transform:translateX(5px) skewX(4deg)}83%{text-shadow:-5px 2px #ff0066,5px -2px #00ffff,0 0 35px #00ffff;transform:translateX(-3px) skewX(-2deg)}85%{text-shadow:4px 0 #ff0066,-4px 0 #00ffff,0 0 30px rgba(0,255,65,0.4);transform:none} }
+  @keyframes glitchBorder { 0%,94%,100%{border-left-color:#ff0066}95%{border-left-color:#00ffff}96%{border-left-color:#00ff41}97%{border-left-color:#ff0066} }
+  @keyframes tileShift { 0%,87%,100%{transform:none}88%{transform:translateX(-4px)}89%{transform:translateX(3px) skewX(-0.5deg)}90%{transform:translateX(-2px) translateY(2px)}91%{transform:translateX(1px) skewX(0.3deg)}92%{transform:none} }
+  /* Full page horizontal glitch — displaces entire container */
+  [data-theme^="corrupt"] .container { animation: pageGlitch 6s infinite; }
+  @keyframes pageGlitch { 0%,96%,100%{transform:none;filter:none}97%{transform:translateX(-5px);filter:hue-rotate(90deg)}98%{transform:translateX(3px) skewX(-0.5deg);filter:hue-rotate(-60deg) saturate(2)}99%{transform:translateX(-2px);filter:hue-rotate(30deg)} }
+  @keyframes tearLine { 0%{top:-2px}100%{top:100vh} }
+  @keyframes paletteBleed { 0%,96%,100%{border-color:var(--border)}97%{border-color:#00ffff}98%{border-color:#ff0066}99%{border-color:#00ff41} }
+  @keyframes grainShift { 0%{transform:translate(0,0)}16%{transform:translate(-3px,2px)}33%{transform:translate(2px,-1px)}50%{transform:translate(-1px,3px)}66%{transform:translate(3px,-2px)}83%{transform:translate(-2px,1px)}100%{transform:translate(1px,-3px)} }
+
+  [data-theme="dark"] a:hover { color: #a3ddd5; }
+  [data-theme="dark"] .wallet-btn.connected { background: var(--bg); }
+  [data-theme="dark"] .wallet-btn.connected:hover { border-color: var(--red); color: var(--red); }
+  [data-theme="dark"] .claim-banner { background: var(--connect-bg); border-color: var(--connect-border); }
+  [data-theme="dark"] .claim-card { background: var(--bg2); border-color: var(--border); }
+  [data-theme="dark"] .claim-card:hover { border-color: var(--accent); box-shadow: 2px 2px 0 var(--accent); }
+  [data-theme="dark"] .claim-card-tag { background: rgba(126, 200, 190, 0.08); color: var(--accent); }
+  [data-theme="dark"] .claim-row { background: var(--bg2); border-color: var(--border); }
+  [data-theme="dark"] .claim-banner.celebrate { border-color: #7ec8be; }
+  [data-theme="dark"] .claim-banner .claim-hero-amount { color: #a3ddd5; text-shadow: 0 0 50px rgba(126, 200, 190, 0.25); }
+  [data-theme="dark"] .claim-banner .claim-hero-usd { color: #a3ddd5; }
+  [data-theme="dark"] .claim-banner .claim-hero-label { color: #a3ddd5; }
+  [data-theme="dark"] .donation-pct-btn.active { background: var(--accent); color: #12111a; }
+  [data-theme="dark"] .donation-confirm-btn:hover { background: #5aab9f; }
+  [data-theme="dark"] .claim-row .claim-expand-toggle { color: var(--text2); }
+  [data-theme="dark"] .claim-row .claim-expand-toggle:hover { color: var(--text); }
+  [data-theme="dark"] .no-balance-state { color: var(--text2); }
+  [data-theme="dark"] .claim-row .claim-tag { background: rgba(126, 200, 190, 0.08); color: var(--accent); }
+  [data-theme="dark"] .claim-btn:hover { background: #5aab9f; }
+  [data-theme="dark"] .network-warn { background: #201418; border-color: #4a2020; }
+  [data-theme="dark"] .btn.ghost:hover { border-color: var(--accent); color: var(--accent); }
+  [data-theme="dark"] .pagination .pages button:hover { border-color: var(--accent); color: var(--accent); }
+  [data-theme="dark"] .pagination .pages button.active { background: var(--accent); border-color: var(--accent); color: #12111a; }
+  [data-theme="dark"] .claim-btn:disabled { background: #2d2a3a; color: #555; }
+  [data-theme="dark"] .hero-amount { text-shadow: 0 0 60px rgba(126, 200, 190, 0.15); }
+  [data-theme="dark"] .btn { box-shadow: 2px 2px 0 rgba(126, 200, 190, 0.2); }
+  [data-theme="dark"] .btn:hover { box-shadow: 3px 3px 0 rgba(126, 200, 190, 0.3); }
+  /* Dreamy dark mode — smooth theme transitions on visible properties only */
+  body, .card, .section, .btn, .tab-btn, .connect-section, .site-footer, .hero-amount, input, table, th, td, .modal-overlay, .modal-box { transition: background-color 0.35s, color 0.35s, border-color 0.35s, box-shadow 0.35s; }
+  [data-theme="dark"] .connect-section { box-shadow: 0 0 40px -10px rgba(126, 200, 190, 0.08), inset 0 0 30px -15px rgba(126, 200, 190, 0.03); }
+  [data-theme="dark"] .hero-amount { letter-spacing: -1px; }
+  [data-theme="dark"] .claim-card:hover { box-shadow: 2px 2px 0 rgba(126, 200, 190, 0.3); }
+  [data-theme="dark"] .header .subtitle { opacity: 0.65; }
+  [data-theme="dark"] .claim-card { background: rgba(22, 21, 32, 0.95); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); box-shadow: 0 1px 4px rgba(0,0,0,0.2); }
+  [data-theme="dark"] .claim-banner { background: var(--connect-bg); }
+  [data-theme="dark"] .connect-section { background: rgba(18, 17, 26, 0.9); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
+
+  /* ── Custom pixel cursor (Yume Nikki style) ── */
+  * { cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAUElEQVR4nGNgoAYQEZH7T7EBFBkC0lx3Yh/5hsAMINsQZAPIMgTdAJINwWYASYbgMoBoQ/C5gGwDyAoDsqMT2alkGYKukOKEhWwIxXmEkAEAaCednTE3BIIAAAAASUVORK5CYII=") 1 1, auto; }
+  a, button, [role="button"], select, input[type="submit"] { cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAUElEQVR4nGNgoAYQEZH7T7EBFBkC0lx3Yh/5hsAMINsQZAPIMgTdAJINwWYASYbgMoBoQ/C5gGwDyAoDsqMT2alkGYKukOKEhWwIxXmEkAEAaCednTE3BIIAAAAASUVORK5CYII=") 1 1, pointer; }
+
+  /* ── Madotsuki umbrella loader ── */
+  .spinner {
+    width: 115px !important; height: 115px !important;
+    border: none !important;
+    background: url('/umbrella-madotsuki.gif') center/contain no-repeat;
+    image-rendering: pixelated;
+    animation: none !important;
+  }
+
+  /* ── Neon Tile Path section divider ── */
+  .tab-nav::after {
+    content: '';
+    display: block;
+    height: 3px;
+    margin-top: 8px;
+    background: repeating-linear-gradient(90deg, var(--accent) 0px, var(--accent) 8px, transparent 8px, transparent 16px, rgba(200, 80, 180, 0.4) 16px, rgba(200, 80, 180, 0.4) 24px, transparent 24px, transparent 32px);
+    opacity: 0.3;
+  }
+  [data-theme="dark"] .tab-nav::after { opacity: 0.5; }
+
+  /* ── Dream fade on tab switch ── */
+  @keyframes dreamFade { 0% { opacity: 0; } 100% { opacity: 1; } }
+  .tab-panel { animation: dreamFade 0.4s ease-out; }
+
+  /* ── Pixel sparkle on card hover ── */
+  @keyframes pixelSparkle {
+    0% { opacity: 0; transform: scale(0); }
+    50% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0.5) translateY(-8px); }
+  }
+  .claim-card:hover::after, .claim-row:hover::after {
+    content: '✦';
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 10px;
+    color: var(--accent);
+    animation: pixelSparkle 0.6s ease-out;
+    pointer-events: none;
+  }
+  .claim-row { position: relative; }
+
+  /* ── Madotsuki — no balance empty state ── */
+  .no-balance-state .no-balance-check {
+    width: 80px;
+    height: 125px;
+    margin: 0 auto 12px;
+    image-rendering: pixelated;
+    font-size: 0 !important;
+    background: url('/no-balance.png') center/contain no-repeat;
+  }
+
+  /* Theme toggle */
+  #themeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--text2);
+    transition: color 150ms ease;
+    padding: 0;
+    line-height: 1;
+    font-family: var(--font-mono);
+    opacity: 1;
+  }
+  #themeToggle:hover { color: var(--accent); }
+
+  /* Navigation bar */
+  .header-nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 2px;
+    font-size: 13px;
+    font-family: var(--font-mono);
+  }
+  .header-nav a {
+    color: var(--text2);
+    text-decoration: none;
+    transition: color 150ms ease;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 3px;
+  }
+  .header-nav a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+  .header-nav .nav-sep { display: none; }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  /* ── Yume Nikki background ── */
+  /* Light mode: dreamy pastel world — soft teal grid + warm glow pools */
+  body {
+    background-color: var(--bg);
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Crect width='16' height='16' fill='%23f0eee9'/%3E%3Crect x='16' y='16' width='16' height='16' fill='%23f0eee9'/%3E%3Crect x='16' width='16' height='16' fill='%23ece9e3'/%3E%3Crect y='16' width='16' height='16' fill='%23ece9e3'/%3E%3C/svg%3E");
+    background-size: 32px 32px;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -2;
+    background:
+      radial-gradient(ellipse 700px 450px at 15% 25%, rgba(15, 118, 110, 0.06), transparent 70%),
+      radial-gradient(ellipse 500px 400px at 80% 20%, rgba(180, 130, 80, 0.05), transparent 70%),
+      radial-gradient(ellipse 600px 350px at 50% 75%, rgba(15, 118, 110, 0.04), transparent 70%);
+  }
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128'%3E%3Cpolygon points='64,52 58,64 70,64' fill='%230f766e' opacity='0.06'/%3E%3C/svg%3E"),
+      linear-gradient(rgba(15, 118, 110, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15, 118, 110, 0.05) 1px, transparent 1px);
+    background-size: 128px 128px, 32px 32px, 32px 32px;
+  }
+  /* Dark mode: Neon World — glowing checkerboard on void */
+  [data-theme="dark"] body {
+    background-color: #0a0a12;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Crect width='16' height='16' fill='%23161425'/%3E%3Crect x='16' y='16' width='16' height='16' fill='%23161425'/%3E%3Crect x='16' width='16' height='16' fill='%230e0d18'/%3E%3Crect y='16' width='16' height='16' fill='%230e0d18'/%3E%3C/svg%3E");
+    background-size: 32px 32px;
+  }
+  /* Neon glow overlay — colored light pools like Neon World's ambient lighting */
+  @keyframes neonPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+  [data-theme="dark"] body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -2;
+    opacity: 1;
+    animation: neonPulse 8s ease-in-out infinite;
+    background:
+      radial-gradient(ellipse 800px 500px at 10% 20%, rgba(160, 50, 180, 0.08), transparent 70%),
+      radial-gradient(ellipse 600px 400px at 85% 15%, rgba(80, 200, 180, 0.07), transparent 70%),
+      radial-gradient(ellipse 700px 450px at 50% 80%, rgba(100, 80, 220, 0.06), transparent 70%),
+      radial-gradient(ellipse 500px 350px at 75% 50%, rgba(200, 60, 120, 0.05), transparent 70%);
+  }
+  /* Neon tile grid + small pyramids — the Neon Tile Path aesthetic */
+  [data-theme="dark"] body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 1;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128'%3E%3Cpolygon points='64,52 58,64 70,64' fill='%236030a0' opacity='0.15'/%3E%3C/svg%3E"),
+      linear-gradient(rgba(200, 80, 180, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(80, 200, 190, 0.08) 1px, transparent 1px);
+    background-size: 128px 128px, 32px 32px, 32px 32px;
+  }
+
+  a { color: var(--accent-text); text-decoration: underline; }
+  a:hover { color: #0d6560; }
+
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  input:focus-visible, select:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12); }
+
+  .container { max-width: 1400px; margin: 0 auto; padding: 0 24px 8px; }
+
+  /* ── Staggered page entrance ── */
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  .fade-in { opacity: 0; animation: fadeUp 0.5s ease forwards; }
+  .fade-in-1 { animation-delay: 0s; }
+  .fade-in-2 { animation-delay: 0.1s; }
+  .fade-in-3 { animation-delay: 0.2s; }
+  .fade-in-4 { animation-delay: 0.35s; }
+  .fade-in-5 { animation-delay: 0.5s; }
+
+  /* ── Terminal cursor on hero number ── */
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+  .hero-cursor { display: inline-block; width: 3px; height: 0.8em; background: var(--accent); margin-left: 4px; vertical-align: baseline; animation: blink 1s step-end infinite; }
+
+  /* ── Header ── */
+  .header { padding: 24px 0 12px; text-align: center; }
+  .header-left { }
+  .header h1 { font-family: var(--font-display); font-size: 38px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 4px; }
+  .header .subtitle { font-family: var(--font-display); font-size: 16px; color: var(--text2); font-weight: 400; margin-bottom: 20px; font-style: italic; letter-spacing: 0.3px; opacity: 0.8; }
+  .header-row { display: flex; align-items: center; justify-content: flex-end; margin-top: 12px; }
+  .wallet-area { display: flex; align-items: center; gap: 10px; }
+  .wallet-btn { padding: 10px 20px; background: transparent; border: 1.5px solid var(--accent); color: var(--accent); border-radius: var(--radius); cursor: pointer; font-size: 13px; font-weight: 600; font-family: var(--font-body); width: 100%; transition: background 0.15s, color 0.15s; }
+  .wallet-btn:hover { background: var(--accent); color: #fff; }
+  .wallet-btn.connected { background: var(--bg); border: 1px solid var(--green); color: var(--green); }
+  .wallet-btn.connected:hover { border-color: var(--red); color: var(--red); }
+  .wallet-addr { font-family: var(--font-mono); font-size: 12px; color: var(--text2); background: var(--bg2); padding: 4px 10px; border-radius: var(--radius); border: 1px solid var(--border); display: none; }
+  .wallet-addr:not(:empty) { display: inline-block; }
+
+  /* ── Hero ── */
+  .hero { text-align: center; padding: 32px 0 16px; margin-top: 0; }
+  .hero-tagline { font-family: var(--font-display); color: var(--text); font-size: 17px; line-height: 1.5; max-width: 700px; margin: 0 auto 18px; font-weight: 400; }
+  .hero-stat { margin: 0 auto 4px; }
+  .hero-amount { font-family: var(--font-mono); font-size: 48px; font-weight: 800; color: var(--accent); letter-spacing: -2px; line-height: 1.1; transition: color 0.3s; }
+  .hero-amount .hero-eth-label { font-size: 28px; font-weight: 600; letter-spacing: -0.5px; opacity: 0.7; }
+  .hero-usd { font-size: 16px; font-weight: 600; color: var(--text2); margin-top: 2px; opacity: 0.7; }
+  .hero-label { font-size: 15px; color: var(--text2); margin-top: 8px; }
+  .hero-cta { font-size: 14px; font-weight: 600; color: var(--text); margin: 8px auto 0; max-width: 600px; }
+
+  /* ── Recovery progress bar (pixel block style) ── */
+  .hero-progress { max-width: 480px; margin: 18px auto 0; text-align: center; }
+  .hero-progress-blocks { display: flex; gap: 2px; justify-content: center; margin-bottom: 10px; }
+  .hero-progress-block {
+    width: 4px; height: 20px;
+    border: 1px solid var(--accent);
+    opacity: 0.25;
+    border-radius: 1px;
+    transition: opacity 0.3s, background 0.3s;
+  }
+  .hero-progress-block.filled {
+    background: var(--gold);
+    border-color: var(--gold);
+    opacity: 1;
+  }
+  [data-theme="dark"] .hero-progress-block { opacity: 0.3; }
+  [data-theme="dark"] .hero-progress-block.filled { opacity: 1; }
+  .hero-progress-counter {
+    font-family: var(--font-display);
+    font-size: 15px;
+    color: var(--text2);
+  }
+  .hero-progress-counter .recovered-val { color: var(--gold); font-weight: 700; font-family: var(--font-mono); }
+  .hero-progress-counter .total-val { color: var(--accent); font-family: var(--font-mono); }
+  .hero-progress-pct {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--text2);
+    opacity: 0.7;
+    pointer-events: none;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 8px var(--bg);
+  }
+  [data-theme="dark"] .hero-progress-pct {
+    color: var(--accent);
+    opacity: 0.5;
+    text-shadow: 0 0 10px rgba(126, 200, 190, 0.3);
+  }
+
+  /* ── v2 ERC20 sub-counters (gated by SHOW_V2_SUBCOUNTERS in app.js) ── */
+  :root {
+    --tok-wbtc: #d57b1a;
+    --tok-dai:  #c19024;
+    --tok-usdc: #2775ca;
+    --tok-usdt: #1d8a66;
+  }
+  [data-theme="dark"] {
+    --tok-wbtc: #f7931a;
+    --tok-dai:  #f5ac37;
+    --tok-usdc: #4592e0;
+    --tok-usdt: #50bb95;
+  }
+  [data-theme^="corrupt"] {
+    --tok-wbtc: #ff9020;
+    --tok-dai:  #ffcc00;
+    --tok-usdc: #00ffff;
+    --tok-usdt: #00ff65;
+  }
+  /* Direction B: per-token mini pixel-progress bars, half-scale of the ETH
+     hero's 77-block bar. Each token gets a 24-block bar in its brand color
+     plus tiny label/percentage/counter text. The whole row is muted
+     (opacity 0.62) so the ETH hero stays dominant and the connect-wallet
+     section below carries more relative visual weight. Single-row layout
+     on desktop; 2x2 on tablet; stacked on mobile. */
+  .subcounters-rows {
+    margin: 22px auto 0;
+    max-width: 720px;
+    display: none;            /* feature-flag default; app.js flips when v2 data is wired */
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    opacity: 1;
+  }
+  .subcounters-rows.show { display: flex; }
+  .subcounters-rows .row {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+  .sub {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1 1 140px;
+    min-width: 130px;
+    max-width: 180px;
+    text-decoration: none;
+    font-family: var(--font-display);
+    transition: transform 0.18s ease;
+  }
+  .sub:hover { transform: translateY(-1px); }
+
+  .sub .token-label {
+    color: inherit;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .sub-progress-blocks {
+    display: flex;
+    gap: 1.5px;
+    margin-bottom: 5px;
+    height: 7px;
+    color: inherit;
+  }
+  .sub-progress-block {
+    flex: 1;
+    border: 1px solid currentColor;
+    border-radius: 1px;
+    opacity: 0.22;
+    transition: opacity 0.3s, background 0.3s;
+  }
+  .sub-progress-block.filled {
+    background: currentColor;
+    opacity: 1;
+  }
+  [data-theme="dark"] .sub-progress-block { opacity: 0.28; }
+  [data-theme="dark"] .sub-progress-block.filled { opacity: 1; }
+
+  .sub-counter {
+    color: inherit;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 11px;
+    opacity: 0.85;
+    line-height: 1.35;
+  }
+  .sub-counter .claimed-val {
+    font-family: var(--font-mono);
+    font-style: normal;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.2px;
+  }
+  .sub-counter .total-val {
+    font-family: var(--font-mono);
+    font-style: normal;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.2px;
+    opacity: 0.65;
+  }
+
+  .sub.wbtc { color: var(--tok-wbtc); }
+  .sub.dai  { color: var(--tok-dai); }
+  .sub.usdc { color: var(--tok-usdc); }
+  .sub.usdt { color: var(--tok-usdt); }
+
+  @media (max-width: 720px) {
+    .subcounters-rows .row { gap: 22px 32px; }
+    .sub { flex: 1 1 38%; max-width: 230px; }
+  }
+  @media (max-width: 480px) {
+    .sub { flex: 1 1 100%; max-width: 100%; }
+  }
+
+  /* ── Project description ── */
+  .project-desc { color: var(--text2); font-size: 13px; line-height: 1.6; margin-bottom: 16px; }
+
+  /* ── Connect Section ── */
+  /* Stronger accent left-border + soft glow so the connect section reads as
+     the primary CTA below the hero, even when the v2 sub-counters are visible
+     above it. The sub-counters are intentionally faded (opacity ~0.62) so
+     this section carries more relative visual weight. */
+  .connect-section { background: var(--connect-bg); border: 1px solid var(--connect-border); border-left: 5px solid var(--accent); border-radius: 4px 14px 14px 4px; padding: 28px 32px; margin: 16px auto; font-size: 13px; display: flex; flex-direction: column; align-items: stretch; gap: 16px; max-width: 680px; box-shadow: 0 1px 3px rgba(0,0,0,0.02), -8px 0 24px -16px var(--accent); }
+  .connect-input-row { display: flex; gap: 10px; align-items: flex-start; }
+  .connect-divider { display: flex; align-items: center; gap: 12px; color: var(--text2); font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 500; opacity: 0.5; }
+  .connect-divider::before, .connect-divider::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+  .connect-input-wrap { position: relative; flex: 1; }
+  .connect-input { width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: var(--radius); font-family: var(--font-mono); font-size: 13px; outline: none; background: var(--bg); color: var(--text); transition: border-color 0.15s, box-shadow 0.15s; }
+  .connect-input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.1); }
+  .connect-feedback { display: none; font-size: 11px; margin-top: 4px; }
+  .connect-feedback.error { color: var(--red); }
+  .connect-feedback.info { color: var(--text2); }
+
+  /* ── Connect CTA (hidden) ── */
+  .connect-cta { display: none; }
+
+  /* ── Claim Banner ── */
+  .claim-banner {
+    display: none;
+    background: var(--connect-bg);
+    border: 1px solid var(--connect-border);
+    border-radius: 12px;
+    padding: 28px 24px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .claim-banner.visible { display: block; }
+  .claim-banner h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 4px;
+    color: var(--accent);
+    font-weight: 700;
+    opacity: 0.8;
+  }
+
+  /* Hero amount display */
+  .claim-hero { margin-bottom: 20px; }
+  .claim-hero-amount {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--accent);
+    letter-spacing: -1.5px;
+    line-height: 1.1;
+    margin: 6px 0 2px;
+  }
+  .claim-hero-usd {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--accent2);
+    opacity: 1;
+  }
+  .claim-hero-label {
+    font-size: 12px;
+    color: var(--text2);
+    margin-top: 6px;
+    opacity: 1;
+  }
+  .claim-hero-contracts {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 8px;
+  }
+
+  /* Claim rows list — always stacked vertically */
+  .claim-rows-list { text-align: left; max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; }
+
+  /* ── Unified Claim Card ── */
+  .claim-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .claim-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--accent);
+    border-radius: 10px 0 0 10px;
+  }
+  .claim-card:hover {
+    border-color: var(--accent);
+    box-shadow: 2px 2px 0 var(--accent);
+  }
+  .claim-card-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 16px;
+  }
+  .claim-card-header:last-child { padding-bottom: 14px; }
+  .claim-card-header:not(:last-child) { padding-bottom: 0; }
+  .claim-card-name {
+    font-weight: 800;
+    font-size: 18px;
+    white-space: nowrap;
+    color: var(--text);
+  }
+  .claim-card-amount {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: -0.3px;
+    animation: amountGlow 2s ease-in-out infinite;
+    white-space: nowrap;
+  }
+  @keyframes amountGlow {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.85; }
+  }
+  .claim-card-tag {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: var(--accent);
+    padding: 3px 8px;
+    background: rgba(15, 118, 110, 0.08);
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .claim-card-tag:empty {
+    display: none;
+    align-self: center;
+  }
+  /* v2 ERC20 claim card — D3: per-token left rail + small uppercase token chip
+     inline next to the protocol name. The amount stays in gold (matching ETH)
+     but the denomination flips to DAI / USDC / USDT / WBTC. */
+  .claim-card.v2-dai::before  { background: var(--tok-dai); }
+  .claim-card.v2-usdc::before { background: var(--tok-usdc); }
+  .claim-card.v2-usdt::before { background: var(--tok-usdt); }
+  .claim-card.v2-wbtc::before { background: var(--tok-wbtc); }
+  .claim-card.v2-dai:hover,
+  .claim-card.v2-usdc:hover,
+  .claim-card.v2-usdt:hover,
+  .claim-card.v2-wbtc:hover { border-color: currentColor; }
+  .claim-card.v2-dai:hover  { color: var(--tok-dai); }
+  .claim-card.v2-usdc:hover { color: var(--tok-usdc); }
+  .claim-card.v2-usdt:hover { color: var(--tok-usdt); }
+  .claim-card.v2-wbtc:hover { color: var(--tok-wbtc); }
+  .v2-token-chip {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 2px 7px 3px;
+    border: 1px solid currentColor;
+    border-radius: 3px;
+    line-height: 1;
+    vertical-align: 2px;
+    margin-left: 10px;
+  }
+  .v2-token-chip.dai  { color: var(--tok-dai); }
+  .v2-token-chip.usdc { color: var(--tok-usdc); }
+  .v2-token-chip.usdt { color: var(--tok-usdt); }
+  .v2-token-chip.wbtc { color: var(--tok-wbtc); }
+  .claim-card-amount .denom {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.65;
+    margin-left: 2px;
+  }
+  /* Multi-asset hero — token symbols get their brand color, ETH stays accent. */
+  .claim-hero .hero-asset-amount { font-variant-numeric: tabular-nums; }
+  .claim-hero .hero-asset-sym {
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    opacity: 0.85;
+    margin-left: 4px;
+  }
+  .claim-hero .hero-asset-sym-eth  { color: inherit; }
+  .claim-hero .hero-asset-sym-dai  { color: var(--tok-dai); opacity: 1; }
+  .claim-hero .hero-asset-sym-usdc { color: var(--tok-usdc); opacity: 1; }
+  .claim-hero .hero-asset-sym-usdt { color: var(--tok-usdt); opacity: 1; }
+  .claim-hero .hero-asset-sym-wbtc { color: var(--tok-wbtc); opacity: 1; }
+  .claim-hero .claim-hero-amount + .claim-hero-amount { margin-top: 4px; }
+  .claim-card-meta {
+    padding: 10px 16px 12px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .claim-card-meta-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-size: 11px;
+    line-height: 1.6;
+    word-break: break-all;
+  }
+  .claim-card-meta-label {
+    color: var(--text2);
+    font-weight: 600;
+    white-space: nowrap;
+    min-width: 62px;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.3px;
+  }
+  .claim-card-meta-value {
+    color: var(--text2);
+    font-family: var(--font-mono);
+    font-size: 11px;
+  }
+  .claim-card-meta-value a { font-size: 11px; }
+  .claim-card-actions {
+    padding: 14px 16px 14px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-top: 1px solid var(--border);
+    margin: 10px 16px 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .claim-card-status {
+    font-size: 12px;
+    color: var(--text2);
+    line-height: 1.5;
+  }
+  .claim-card-status:empty { display: none; }
+  .claim-card-status:not(:empty) { padding: 0 16px 14px; }
+  .claim-card-status a { font-size: 12px; }
+
+  /* Claim button */
+  .claim-btn {
+    padding: 10px 28px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: inherit;
+    letter-spacing: 0.3px;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+  }
+  .claim-btn:hover:not(:disabled) { background: #0d6560; transform: translate(-1px, -1px); box-shadow: 2px 2px 0 rgba(15, 118, 110, 0.4); }
+  .claim-btn:disabled { background: #ccc; color: #888; cursor: not-allowed; transform: none; box-shadow: none; opacity: 0.5; }
+  .claim-btn.claimed-btn { background: var(--green, #16a34a); color: #fff; opacity: 0.85; cursor: default; }
+  .claim-btn.pending { background: var(--yellow); color: #000; animation: pulse-pending 1.5s ease-in-out infinite; }
+  .claim-btn.success { background: var(--green); color: #fff; }
+  .claim-btn.claimed { background: var(--green); color: #fff; opacity: 0.7; cursor: default; transform: none; box-shadow: none; }
+  .claim-btn.waiting { background: var(--bg3); color: var(--text2); border: 1px solid var(--border); }
+  @keyframes pulse-pending { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+
+  /* Legacy claim-row for summary-only rows (no withdraw) */
+  .claim-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    background: var(--bg);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    margin-bottom: 6px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .claim-row:hover { border-color: var(--accent); box-shadow: 2px 2px 0 var(--accent); }
+  .claim-row .dex-name { font-weight: 700; font-size: 13px; min-width: 100px; white-space: nowrap; }
+  .claim-row .claim-amount { font-size: 16px; font-weight: 700; color: var(--gold); flex: 1; text-align: right; letter-spacing: -0.3px; animation: amountGlow 2s ease-in-out infinite; }
+  .claim-row .claim-tag { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700; color: var(--accent); padding: 3px 8px; background: rgba(15, 118, 110, 0.08); border-radius: 4px; white-space: nowrap; }
+  .claim-status { font-size: 12px; color: var(--text2); margin-top: 6px; line-height: 1.5; }
+  .claim-status a { font-size: 12px; }
+
+  /* Legacy details (kept for backward compat) */
+  .claim-details { font-size: 11px; color: var(--text2); font-family: var(--font-mono); background: var(--bg2); border: 1px solid var(--border); border-radius: 6px; padding: 10px 14px; margin-top: 6px; line-height: 1.8; word-break: break-all; }
+  .claim-details.visible { display: block; }
+  .claim-details span { color: var(--text); font-weight: 600; }
+  .claim-expand-toggle { font-size: 11px; color: var(--text2); cursor: pointer; border: none; background: none; padding: 4px 0; font-family: inherit; opacity: 0.6; transition: opacity 0.15s; }
+  .claim-expand-toggle:hover { opacity: 1; }
+
+  /* Celebration animation */
+  @keyframes celebratePulse { 0% { transform: scale(1); } 50% { transform: scale(1.015); } 100% { transform: scale(1); } }
+  @keyframes celebrateGlow { 0% { box-shadow: 0 0 0 0 transparent; } 50% { box-shadow: 0 0 30px -5px var(--gold-glow); } 100% { box-shadow: 0 0 0 0 transparent; } }
+  @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+  .claim-banner.celebrate {
+    animation: celebratePulse 0.6s ease-out;
+    border-color: var(--gold);
+  }
+  .claim-banner.celebrate .claim-hero-amount {
+    background: linear-gradient(90deg, #b45309 0%, #d97706 20%, #fbbf24 50%, #d97706 80%, #b45309 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 2s ease-in-out infinite;
+  }
+
+  /* Recovered success state */
+  .claim-recovered {
+    text-align: center;
+    padding: 16px 20px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, rgba(52,211,153,0.08) 0%, rgba(124,58,237,0.06) 100%);
+    border: 1px solid var(--green);
+    border-radius: var(--radius);
+  }
+  .claim-recovered-amount {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--green);
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+  }
+  .claim-recovered-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--green);
+    opacity: 0.7;
+    margin-bottom: 6px;
+  }
+  .claim-recovered .claim-recovered-tx {
+    font-size: 11px;
+    margin-top: 8px;
+    opacity: 0.7;
+  }
+  .claim-recovered .claim-recovered-tx a {
+    color: var(--text2);
+    font-size: 11px;
+  }
+
+  /* Donation card — lightweight, secondary to the recovery card */
+  .donation-card {
+    margin-top: 16px;
+    padding: 20px 0 0;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(6px);
+    animation: donationFadeIn 0.5s ease 0.1s forwards;
+  }
+  @keyframes donationFadeIn { to { opacity: 1; transform: translateY(0); } }
+  .donation-card.hiding { animation: donationFadeOut 0.25s ease forwards; }
+  @keyframes donationFadeOut { to { opacity: 0; transform: translateY(-4px); } }
+  .donation-copy { font-size: 13px; color: var(--text2); line-height: 1.5; margin-bottom: 14px; }
+  .donation-pct-row { display: inline-flex; gap: 0; margin-bottom: 14px; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+  .donation-pct-btn {
+    padding: 7px 18px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent;
+    color: var(--text2);
+    border: none;
+    border-right: 1px solid var(--border);
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .donation-pct-btn:last-child { border-right: none; }
+  .donation-pct-btn:hover { color: var(--text); background: var(--bg2); }
+  .donation-pct-btn.active { background: var(--accent); color: #fff; }
+  .donation-confirm-btn {
+    display: inline-block;
+    padding: 9px 28px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.15s;
+    margin-bottom: 10px;
+  }
+  .donation-confirm-btn:hover { background: #5b21b6; transform: translateY(-1px); }
+  .donation-confirm-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+  .donation-confirm-btn.pending { background: var(--yellow); color: #000; }
+  .donation-skip { font-size: 11px; color: var(--text2); cursor: pointer; border: none; background: none; padding: 4px 8px; font-family: inherit; opacity: 0.4; transition: opacity 0.15s; }
+  .donation-skip:hover { opacity: 1; }
+  .donation-custom { display: flex; align-items: center; justify-content: center; gap: 6px; margin-bottom: 14px; }
+  .donation-custom-input { width: 90px; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; font-family: var(--font-mono); font-size: 13px; font-weight: 600; color: var(--text); text-align: right; outline: none; -moz-appearance: textfield; }
+  .donation-custom-input::-webkit-inner-spin-button,
+  .donation-custom-input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+  .donation-custom-input:focus { border-color: var(--accent); }
+  .donation-custom-label { font-size: 13px; color: var(--text2); }
+  .donation-custom-usd { font-size: 11px; color: var(--text2); opacity: 0.6; }
+  .donation-error { font-size: 12px; color: var(--red); margin-top: 6px; }
+  .donation-success { padding: 12px 0; text-align: center; }
+  .donation-success-msg { font-size: 13px; font-weight: 600; color: var(--green); margin-bottom: 4px; }
+  .donation-success-tx { font-size: 11px; color: var(--text2); }
+  .donation-success-tx a { font-size: 11px; }
+
+  /* Share buttons */
+  .share-btns { display: flex; gap: 6px; justify-content: center; margin-top: 12px; }
+  .share-btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text2);
+    font-size: 11px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.15s;
+  }
+  .share-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* No balance state */
+  .no-balance-state {
+    text-align: center;
+    padding: 28px 20px;
+    color: var(--text2);
+  }
+  /* no-balance-check styled via Madotsuki section above */
+  .no-balance-state .no-balance-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+  .no-balance-state .no-balance-addr {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text2);
+    word-break: break-all;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    opacity: 0.6;
+  }
+  .no-balance-state p {
+    font-size: 13px;
+    color: var(--text2);
+    margin: 4px 0;
+    line-height: 1.5;
+  }
+  .no-balance-state .no-balance-hint {
+    font-size: 12px;
+    color: var(--text2);
+    margin-top: 10px;
+    opacity: 0.5;
+  }
+
+  .claim-none { color: var(--text2); font-size: 13px; }
+  .no-balance-msg { color: var(--text2); font-size: 13px; padding: 8px 0; }
+
+  /* Already-claimed card + hero */
+  .claimed-card { opacity: 0.7; }
+  .claimed-hero .claim-hero-amount { color: var(--green, #16a34a); }
+  .claimed-hero .claim-hero-contracts { color: var(--text2); }
+
+  /* ── Network warning ── */
+  .network-warn { background: #fff0f0; color: var(--red); padding: 10px 16px; border-radius: var(--radius-sm); font-size: 13px; font-weight: 600; margin-bottom: 12px; display: none; border: 1px solid #fca5a5; }
+  .network-warn.visible { display: block; }
+
+  /* ── Modal overlay & wallet picker ── */
+  .modal-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 10000;
+    display: flex; align-items: center; justify-content: center; -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
+  }
+  .modal-box {
+    background: var(--bg); border: 1px solid var(--border); border-radius: 12px;
+    padding: 28px; max-width: 400px; width: 90%; max-height: 80vh; overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  }
+  .modal-box.wide { max-width: 420px; }
+  .modal-title { font-size: 18px; font-weight: 800; margin-bottom: 4px; text-align: center; }
+  .modal-subtitle { font-size: 12px; color: var(--text2); text-align: center; margin-bottom: 20px; }
+  .modal-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text2); font-weight: 700; margin-bottom: 8px; }
+  .modal-label.mt { margin-top: 16px; }
+  .wallet-option {
+    display: flex; align-items: center; gap: 12px; width: 100%;
+    padding: 12px 16px; background: var(--bg2); border: 1px solid var(--border);
+    border-radius: 8px; cursor: pointer; font-family: inherit; color: var(--text);
+    margin-bottom: 8px; transition: border-color 0.15s, box-shadow 0.15s; text-align: left;
+  }
+  .wallet-option:hover { border-color: var(--accent); box-shadow: 0 2px 8px rgba(124,58,237,0.1); }
+  .wallet-option img { width: 36px; height: 36px; border-radius: 8px; flex-shrink: 0; }
+  .wallet-option .wo-name { font-size: 14px; font-weight: 700; }
+  .wallet-option .wo-sub { font-size: 11px; color: var(--text2); font-weight: 400; }
+  .modal-cancel {
+    display: block; margin: 16px auto 0; padding: 8px 20px; background: none;
+    border: 1px solid var(--border); border-radius: 6px; cursor: pointer;
+    font-size: 12px; color: var(--text2); font-family: inherit; transition: all 0.15s;
+  }
+  .modal-cancel:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ── Tabs ── */
+  .tabs { display: flex; flex-wrap: wrap; gap: 0; border-bottom: 1px solid var(--border); margin: 20px 0 0; overflow: hidden; justify-content: center; max-height: 80px; position: relative; transition: max-height 0.3s ease, margin 0.3s ease; }
+  .tabs.expanded { margin-bottom: 24px; }
+  .tabs-fade { text-align: center; margin: 0 0 24px; }
+  .tabs-fade button { background: none; border: none; color: var(--accent-text); font-size: 13px; font-weight: 600; cursor: pointer; padding: 8px 16px; font-family: inherit; }
+  .tabs-fade button:hover { text-decoration: underline; }
+  .tab { padding: 8px 16px; font-size: 14px; font-weight: 600; color: var(--text2); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; user-select: none; white-space: nowrap; text-decoration: none; }
+  .tab:hover { color: var(--text); }
+  .tab.active { color: var(--accent-text); border-bottom-color: var(--accent); }
+  .tab .badge { display: inline-block; background: var(--bg2); color: var(--text2); font-size: 11px; padding: 1px 8px; border-radius: 3px; margin-left: 6px; }
+  .tab.active .badge { background: var(--accent); color: #fff; }
+
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+  .tab-select { display: none; width: 100%; padding: 10px 14px; font-size: 15px; font-weight: 600; font-family: inherit; background: var(--bg); color: var(--text); border: 1px solid var(--border); border-radius: var(--radius); margin: 20px 0 32px; cursor: pointer; appearance: none; -webkit-appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; }
+  .explorer-toggle-wrap { text-align: center; margin: 36px 0 8px; }
+  .explorer-toggle { display: none; padding: 8px 20px; font-size: 14px; }
+
+  /* ── Protocol Search ── */
+  .protocol-search-wrap { text-align: center; margin: 0 0 12px; }
+  .protocol-search-input { width: 100%; max-width: 320px; padding: 7px 12px; border: 1px solid var(--border); border-radius: var(--radius); font-family: inherit; font-size: 13px; outline: none; background: var(--bg); color: var(--text); transition: border-color 0.15s, box-shadow 0.15s; }
+  .protocol-search-input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.1); }
+
+  /* ── Summary Cards ── */
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 12px; }
+  .card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+  .card .label { font-size: 11px; color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; font-weight: 700; }
+  .card .value { font-size: 20px; font-weight: 700; }
+  .card .value.eth { color: var(--accent-text); }
+  .card .value.green { color: var(--green); }
+
+  /* ── Charts ── */
+  .charts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+  .chart-box { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; }
+  .chart-box h3 { font-size: 12px; color: var(--text2); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .chart-box canvas { max-height: 280px; }
+
+  /* ── Controls ── */
+  .controls { display: flex; gap: 10px; align-items: center; margin-bottom: 12px; flex-wrap: wrap; }
+  .search-box { flex: 1; min-width: 280px; position: relative; }
+  .search-box input { width: 100%; padding: 8px 12px 8px 34px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); color: var(--text); font-size: 13px; outline: none; }
+  .search-box input:focus { border-color: var(--accent); }
+  .search-box svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: var(--text2); }
+  .result-count { font-size: 12px; color: var(--text2); }
+  .min-balance { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text2); }
+  .min-balance input { width: 80px; padding: 7px 10px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); color: var(--text); font-size: 12px; outline: none; }
+  .min-balance input:focus { border-color: var(--accent); }
+  .btn { padding: 7px 14px; background: var(--accent); color: #fff; border: none; border-radius: var(--radius); cursor: pointer; font-size: 12px; font-weight: 600; white-space: nowrap; }
+  .btn:hover { background: #5b21b6; }
+  .btn.sm { padding: 3px 10px; font-size: 11px; }
+  .btn.ghost { background: var(--bg); border: 1px solid var(--border); color: var(--text2); }
+  .btn.ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ── Table ── */
+  .table-wrap { overflow-x: auto; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  thead th { position: sticky; top: 0; background: var(--bg2); padding: 10px 12px; text-align: left; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text); cursor: pointer; user-select: none; border-bottom: 1px solid var(--border); }
+  thead th:hover { color: var(--text); }
+  thead th.sorted { color: var(--text); }
+  thead th.sorted::after { content: ' \25B2'; font-size: 8px; opacity: 0.6; }
+  thead th.sorted.desc::after { content: ' \25BC'; }
+  tbody tr { border-bottom: 1px solid var(--border); }
+  tbody tr:nth-child(even) { background: var(--bg2); }
+  tbody tr:hover { background: var(--bg3); }
+  tbody td { padding: 8px 12px; }
+  .addr { font-family: var(--font-mono); font-size: 12px; }
+  .bal-eth { font-family: var(--font-mono); text-align: right; font-weight: 400; }
+  .last-tx { font-size: 12px; color: var(--text2); white-space: nowrap; }
+
+  /* ── Pagination ── */
+  .pagination { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text2); }
+  .pagination .pages { display: flex; gap: 3px; align-items: center; }
+  .pagination .pages button { min-width: 28px; height: 28px; padding: 0 6px; border: 1px solid var(--border); background: var(--bg); color: var(--text2); border-radius: var(--radius-sm); cursor: pointer; font-size: 12px; }
+  .pagination .pages button:hover { border-color: var(--accent); color: var(--accent); }
+  .pagination .pages button.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .page-size select { padding: 4px 8px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text); font-size: 12px; }
+
+  .contract-info { font-family: var(--font-mono); font-size: 12px; color: var(--text2); margin-bottom: 20px; padding: 4px 0; line-height: 2; }
+
+  .loading { text-align: center; padding: 60px; color: var(--text2); }
+  .loading .spinner { display: inline-block; width: 32px; height: 32px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 12px; }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── About Section ── */
+  .about-section { margin-top: 20px; padding: 16px 0 4px; }
+  .about-section h2 { font-family: var(--font-mono); font-size: 20px; font-weight: 700; margin-bottom: 12px; text-align: center; letter-spacing: -0.3px; }
+  .about-section > p { font-size: 14px; color: var(--text2); line-height: 1.8; margin-bottom: 32px; text-align: center; max-width: 600px; margin-left: auto; margin-right: auto; }
+  .about-section ul { padding-left: 20px; font-size: 13px; color: var(--text2); line-height: 1.7; }
+  .about-section li { margin-bottom: 4px; }
+  .about-section .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .about-section .about-block { }
+  .about-section .about-block h3 { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+  .faq-label { font-family: var(--font-display); font-size: 18px; letter-spacing: 0.3px; color: var(--text2); font-weight: 600; margin-bottom: 16px; text-align: center; font-style: italic; }
+
+  /* ── FAQ Section ── */
+  .faq-list { max-width: 640px; margin: 0 auto; }
+  .faq-item { margin-bottom: 8px; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: border-color 0.2s; box-shadow: 0 1px 2px rgba(0,0,0,0.03); }
+  .faq-item:hover { border-color: var(--border-strong); }
+  .faq-item.open { border-color: var(--border-strong); }
+  .faq-q { padding: 16px 20px; font-size: 14px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; background: var(--bg2); transition: background 0.15s; }
+  .faq-q:hover { background: var(--bg3); }
+  .faq-q .faq-arrow { transition: transform 0.2s ease; font-size: 10px; color: var(--text2); }
+  .faq-item.open .faq-q .faq-arrow { transform: rotate(180deg); color: var(--accent); }
+  .faq-a { max-height: 0; overflow: hidden; padding: 0 20px; font-size: 14px; color: var(--text2); line-height: 1.8; transition: max-height 0.3s ease, padding 0.3s ease; }
+  .faq-item.open .faq-a { max-height: 600px; padding: 16px 20px; }
+
+  /* ── Watchlist ── */
+  .watchlist-bar { display: none; text-align: center; margin: 12px 0 0; font-size: 12px; color: var(--text2); }
+  .watchlist-bar.visible { display: block; }
+  .watchlist-bar a { font-size: 12px; margin-left: 6px; cursor: pointer; }
+
+  /* ── Summary Stats Row ── */
+  .stats-row { display: flex; gap: 24px; margin: 16px 0 4px; font-size: 15px; flex-wrap: wrap; justify-content: center; }
+
+  /* ── Footer ── */
+  .site-footer { text-align: center; padding: 16px 0 20px; margin-top: 12px; }
+  .footer-links { display: flex; justify-content: center; gap: 0; margin-bottom: 12px; font-size: 13px; }
+  .footer-links a { color: var(--text2); text-decoration: none; transition: color 0.15s; }
+  .footer-links a:hover { color: var(--accent); }
+  .site-footer p a[title] { transition: color 200ms ease; }
+  .site-footer p a[title]:hover { color: var(--accent) !important; }
+  .site-footer p a[title]:hover svg { fill: var(--accent); }
+  .footer-sep { color: var(--border-strong); margin: 0 16px; user-select: none; }
+  .footer-credit { font-size: 13px; color: var(--text2); opacity: 0.7; }
+  .footer-sep { color: var(--border-strong); margin: 0 12px; }
+
+  /* ── Reduced motion: disable all decorative animations ── */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+    .fade-in { opacity: 1; }
+    .hero-cursor { animation: none; opacity: 1; }
+    .claim-card-amount { animation: none; }
+    .claim-row .claim-amount { animation: none; }
+    .claim-banner.celebrate .claim-hero-amount { animation: none; background: none; -webkit-text-fill-color: var(--gold); }
+    [data-theme^="corrupt"] .header,
+    [data-theme^="corrupt"] .about-section,
+    [data-theme^="corrupt"] .site-footer,
+    [data-theme^="corrupt"] .container,
+    [data-theme^="corrupt"] .header h1,
+    [data-theme^="corrupt"] .subtitle,
+    [data-theme^="corrupt"] .hero-amount,
+    [data-theme^="corrupt"] .connect-section,
+    [data-theme^="corrupt"] .recent-box,
+    [data-theme^="corrupt"] .claim-card,
+    [data-theme^="corrupt"] .faq-q,
+    [data-theme^="corrupt"] .explorer-toggle { animation: none !important; }
+    [data-theme^="corrupt"] body::after,
+    [data-theme^="corrupt"] body::before,
+    [data-theme^="corrupt"] .container::after,
+    [data-theme^="corrupt"] .container::before { animation: none !important; }
+    [data-theme="dark"] body::before { animation: none; opacity: 0.8; }
+  }
+
+  @media (max-width: 768px) {
+    .charts { grid-template-columns: 1fr; }
+    .cards { grid-template-columns: repeat(2, 1fr); }
+    .header { text-align: center; }
+    .header-row { justify-content: center; }
+    .hero-amount { font-size: 36px; letter-spacing: -1.5px; }
+    .hero-amount .hero-eth-label { font-size: 22px; }
+    .hero-tagline { font-size: 14px; }
+    .hero-cta { font-size: 14px; }
+    .connect-section { padding: 20px 16px; gap: 16px; max-width: 100%; }
+    .connect-input-row { flex-direction: column; }
+    .wallet-btn { padding: 14px 18px; font-size: 15px; }
+    #checkManualBtn { width: 100%; padding: 14px 18px; font-size: 15px; }
+    .claim-hero-amount { font-size: 32px; }
+    .claim-card-header { flex-wrap: wrap; gap: 4px; }
+    .claim-card-name { min-width: auto; }
+    .claim-card-amount { font-size: 16px; min-width: 120px; text-align: right; }
+    .claim-card-meta-label { min-width: 50px; }
+    .claim-row { flex-wrap: wrap; gap: 8px; }
+    .claim-row .dex-name { min-width: auto; }
+    .claim-row .claim-amount { min-width: 120px; }
+    .donation-card { padding: 16px 0 0; }
+    .donation-pct-btn { padding: 7px 14px; font-size: 12px; }
+    [id^="charts-"] { grid-template-columns: 1fr !important; max-width: 100% !important; }
+    [id^="charts-"] > div:first-child > div { height: 250px !important; }
+    .tabs { display: none; }
+    .tabs-fade { display: none; }
+    .tab-select { display: block; }
+    .explorer-toggle { display: inline-block !important; }
+    .explorer-collapsed { display: none; }
+    .about-section .about-grid { grid-template-columns: 1fr; }
+    .stats-row { gap: 12px; }
+  }
+  /* ── Recently indexed box ── */
+  .changelog {
+    max-width: 380px;
+    margin: 24px auto 0;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    text-align: left;
+  }
+  .changelog-title { font-size: 9px; text-transform: uppercase; letter-spacing: 1.8px; color: var(--text2); opacity: 0.4; margin-bottom: 6px; text-align: center; }
+  .changelog-entry { display: grid; grid-template-columns: 36px 1fr auto; align-items: baseline; gap: 10px; padding: 3px 0; }
+  /* Keep the homepage preview compact; full history lives at /changelog. */
+  .changelog > .changelog-entry:nth-of-type(n+6) { display: none; }
+  .changelog-entry:last-child { border-bottom: none; }
+  .changelog-date { color: var(--text2); opacity: 0.5; font-size: 9px; }
+  .changelog-name { font-weight: 400; color: var(--text2); letter-spacing: 0.2px; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .changelog-name a { color: var(--text2); text-decoration: none; transition: color 150ms ease; }
+  .changelog-name a:hover { color: var(--accent); }
+  .changelog-desc { color: var(--text2); font-size: 11px; margin-top: 2px; }
+  .changelog-tag { font-size: 8px; padding: 1px 5px; border-radius: 3px; background: var(--accent-glow); color: var(--accent); font-weight: 600; letter-spacing: 0.3px; justify-self: end; }
+
+  @media (max-width: 480px) {
+    .header h1 { font-size: 28px; }
+    .hero-amount { font-size: 28px; }
+    .hero-amount .hero-eth-label { font-size: 18px; }
+    .hero-label { font-size: 12px; }
+    .claim-hero-amount { font-size: 26px; }
+    .claim-card-header { padding: 12px; }
+    .claim-card-name { font-size: 15px; }
+    .claim-card-amount { font-size: 15px; min-width: auto; }
+    .claim-card-actions { flex-wrap: wrap; }
+    .claim-btn { padding: 10px 20px; font-size: 12px; flex: 1; min-width: 0; }
+    .cards { grid-template-columns: 1fr; }
+    .container { padding: 0 12px 8px; }
+    .faq-q { font-size: 13px; }
+  }
+
+  /* Re-engagement Loop: inline recognition message */
+  .recognition-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 18px;
+    margin: 0 0 16px;
+    background: var(--bg2);
+    border-left: 3px solid var(--gold);
+    border-radius: var(--radius-sm);
+    box-shadow: 0 0 16px var(--gold-glow);
+  }
+  .recognition-icon { font-size: 20px; flex-shrink: 0; line-height: 1; padding-top: 2px; }
+  .recognition-content h4 {
+    margin: 0 0 6px;
+    font-family: var(--font-display);
+    font-size: 16px;
+    color: var(--text);
+    font-weight: 600;
+  }
+  .recognition-content ul {
+    margin: 0 0 6px;
+    padding-left: 18px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--text);
+  }
+  .recognition-content ul li strong { color: var(--gold); }
+  .recognition-meta {
+    margin: 6px 0 0;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text2);
+  }
+
+  /* A11y: focus visibility, reduced motion, skip link, corrupt-light text contrast */
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  :focus:not(:focus-visible) { outline: none; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  .skip-link { position: absolute; top: -40px; left: 0; background: var(--accent); color: #fff; padding: 8px 16px; text-decoration: none; z-index: 10000; border-radius: 0 0 var(--radius) 0; font-size: 13px; font-weight: 700; }
+  .skip-link:focus { top: 0; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  /* Corrupt-light: darken #ff0066 text uses to #cc0052 for WCAG AA */
+  [data-theme="corrupt-light"] .btn { border-color: #cc0052; color: #cc0052; }
+  [data-theme="corrupt-light"] a:hover { color: #cc0052; }
+  [data-theme="corrupt-light"] .faq-q:hover { color: #cc0052; }
+  [data-theme="corrupt-light"] #corruptToggle { color: #cc0052 !important; }
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+<noscript><div style="text-align:center;padding:40px 20px;font-family:sans-serif;color:#1c1917"><h1>Forgotten ETH</h1><p style="margin-top:12px">This site requires JavaScript to check smart contracts and connect your wallet.</p></div></noscript>
+<div class="container">
+  <div class="header fade-in fade-in-1">
+    <div class="header-left">
+      <h1><a href="/" style="color:inherit;text-decoration:none">Forgotten &#926;TH</a></h1>
+      <p class="subtitle">Recover ETH stuck in old smart contracts</p>
+      <nav class="header-nav">
+        <a href="#faq">FAQ</a>
+        <span class="nav-sep">&middot;</span>
+        <a href="/api">API</a>
+        <span class="nav-sep">&middot;</span>
+        <a href="/changelog">Changelog</a>
+        <span class="nav-sep">&middot;</span>
+        <button id="themeToggle" title="Toggle dark/light mode" aria-label="Toggle dark/light mode"></button>
+        <span class="nav-sep">&middot;</span>
+        <button id="corruptToggle" class="corrupt-btn" title="Corrupt mode" aria-label="Toggle corrupt mode">C̸O░R▓RUPT</button>
+        <span class="nav-sep" id="testModeSep" style="display:none">&middot;</span>
+        <button id="testModeBtn" style="display:none"></button>
+      </nav>
+    </div>
+  </div>
+
+  <main id="main">
+  <div class="hero fade-in fade-in-2">
+    <p class="hero-tagline"><span style="font-weight:600">Thousands of ETH sit forgotten in defunct contracts.</span><br><span style="color:var(--text2)">The original frontends are offline. <a href="https://debank.com" target="_blank" rel="noopener noreferrer">DeBank</a>, <a href="https://zapper.xyz" target="_blank" rel="noopener noreferrer">Zapper</a>, and other portfolio trackers don't detect them.</span></p>
+    <div class="hero-stat fade-in fade-in-3">
+      <div class="hero-amount" id="totalAllEth"><span class="hero-eth-value">&mdash;</span> <span class="hero-eth-label">ETH</span><span class="hero-cursor"></span></div>
+      <div class="hero-label">forgotten across <span id="totalContracts">&mdash;</span> contracts</div>
+      <div class="hero-progress" id="heroProgress" style="display:none">
+        <div class="hero-progress-blocks" id="heroBlocks" style="position:relative">
+          <span class="hero-progress-pct" id="heroPct"></span>
+        </div>
+        <div class="hero-progress-counter" id="heroCounter"></div>
+      </div>
+      <!-- v2 ERC20 sub-counters — gated by SHOW_V2_SUBCOUNTERS in app.js. Populated from /api/v2-totals when wired. -->
+      <div class="subcounters-rows" id="v2SubCounters">
+        <div class="row">
+          <a class="sub usdc" href="#" data-token="usdc">
+            <span class="token-label">USDC</span>
+            <div class="sub-progress-blocks" id="v2UsdcBlocks"></div>
+            <div class="sub-counter"><span class="claimed-val" id="v2UsdcClaimed">—</span> of <span class="total-val" id="v2UsdcTotal">—</span> claimed</div>
+          </a>
+          <a class="sub dai" href="#" data-token="dai">
+            <span class="token-label">DAI</span>
+            <div class="sub-progress-blocks" id="v2DaiBlocks"></div>
+            <div class="sub-counter"><span class="claimed-val" id="v2DaiClaimed">—</span> of <span class="total-val" id="v2DaiTotal">—</span> claimed</div>
+          </a>
+          <a class="sub usdt" href="#" data-token="usdt">
+            <span class="token-label">USDT</span>
+            <div class="sub-progress-blocks" id="v2UsdtBlocks"></div>
+            <div class="sub-counter"><span class="claimed-val" id="v2UsdtClaimed">—</span> of <span class="total-val" id="v2UsdtTotal">—</span> claimed</div>
+          </a>
+          <a class="sub wbtc" href="#" data-token="wbtc">
+            <span class="token-label">WBTC</span>
+            <div class="sub-progress-blocks" id="v2WbtcBlocks"></div>
+            <div class="sub-counter"><span class="claimed-val" id="v2WbtcClaimed">—</span> of <span class="total-val" id="v2WbtcTotal">—</span> claimed</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connect-cta" id="connectCta"></div>
+
+  <div class="connect-section fade-in fade-in-4">
+    <div class="connect-input-row">
+      <div class="connect-input-wrap">
+        <label for="manualAddrInput" class="sr-only">Ethereum address or ENS name to check</label>
+        <input type="text" id="manualAddrInput" class="connect-input" placeholder="0x... or ENS name" spellcheck="false" autocomplete="off">
+        <div id="ensResolved" class="connect-feedback info"></div>
+        <div id="addrError" class="connect-feedback error"></div>
+      </div>
+      <button class="btn" id="checkManualBtn" style="padding:10px 24px;font-size:13px;font-weight:700;flex-shrink:0">Check</button>
+    </div>
+    <span class="connect-divider">or</span>
+    <div class="wallet-area">
+      <span class="wallet-addr" id="walletAddr"></span>
+      <button class="wallet-btn" id="walletBtn">Connect Wallet</button>
+      <div id="walletError" class="connect-feedback error"></div>
+    </div>
+  </div>
+
+
+  <div class="watchlist-bar" id="watchlistBar"></div>
+
+  <div class="network-warn" id="networkWarn">Please switch to Ethereum Mainnet to claim your ETH.</div>
+
+  <div class="claim-banner" id="claimBanner" aria-live="polite">
+    <h2 id="claimBannerTitle">Your Claimable ETH</h2>
+    <div id="claimRows"></div>
+  </div>
+
+  <div class="changelog fade-in fade-in-4">
+    <div class="changelog-title">Changelog</div>
+    <div class="changelog-entry">
+      <span class="changelog-date">Jun 12</span>
+      <div class="changelog-name"><a href="/dutchx-dx-2">DutchX</a></div>
+      <span class="changelog-tag">+155 WETH/ETH</span>
+    </div>
+    <div class="changelog-entry">
+      <span class="changelog-date">Jun 11</span>
+      <div class="changelog-name"><a href="/digipulse-token-sale">Failed ICO refunds</a></div>
+      <span class="changelog-tag">+275 ETH</span>
+    </div>
+    <div class="changelog-entry">
+      <span class="changelog-date">Jun 8</span>
+      <div class="changelog-name"><a href="/hegic-wbtc-pool">Hegic WBTC Pool</a></div>
+      <span class="changelog-tag">+3.346 WBTC</span>
+    </div>
+    <div class="changelog-entry">
+      <span class="changelog-date">Jun 8</span>
+      <div class="changelog-name"><a href="/marketing-mining">MarketingMining</a></div>
+      <span class="changelog-tag">+35 tokens</span>
+    </div>
+    <div class="changelog-entry">
+      <span class="changelog-date">Jun 3</span>
+      <div class="changelog-name"><a href="/lido-anchor-vault">Lido AnchorVault</a></div>
+      <span class="changelog-tag">+237 stETH</span>
+    </div>
+    <div class="changelog-entry">
+      <span class="changelog-date">Jun 3</span>
+      <div class="changelog-name"><a href="/p4rty-dao-vault">P4RTY DAO Vault</a></div>
+      <span class="changelog-tag">+0.43 ETH</span>
+    </div>
+    <div class="changelog-entry">
+      <span class="changelog-date">Jun 1</span>
+      <div class="changelog-name"><a href="/hong">HONG</a></div>
+      <span class="changelog-tag">+882 ETH</span>
+    </div>
+    <div class="changelog-entry">
+      <span class="changelog-date">Jun 1</span>
+      <div class="changelog-name"><a href="/epik-staking">EpikStaking</a></div>
+      <span class="changelog-tag">+8 ETH</span>
+    </div>
+    <div class="changelog-entry">
+      <span class="changelog-date">May 9</span>
+      <div class="changelog-name"><a href="/ambassadors-fund">Ambassadors Fund</a>, <a href="/just-hodl-it">JustHodlIt</a> +6 more</div>
+      <span class="changelog-tag">+165 ETH</span>
+    </div>
+    <div style="text-align:center;margin-top:8px"><a href="/changelog" style="color:var(--accent);font-size:9px;font-family:var(--font-mono);text-decoration:none;opacity:0.7">view full changelog &rarr;</a></div>
+  </div>
+
+  <div class="explorer-toggle-wrap">
+    <button class="btn explorer-toggle" id="explorerToggle">Browse all contracts</button>
+  </div>
+
+  <div id="explorerSection">
+  <div class="protocol-search-wrap"><input type="text" id="protocolSearch" class="protocol-search-input" placeholder="Search protocols..."></div>
+  <div class="tabs" id="tabs" role="tablist" aria-label="Protocol contracts"></div>
+  <div class="tabs-fade" id="tabsFade"><button id="tabsToggleBtn">More contracts &#x25BE;</button></div>
+  <select class="tab-select" id="tabSelect" aria-label="Select protocol"></select>
+
+  <div id="panelsContainer"></div>
+
+  </div><!-- /explorerSection -->
+
+  <!-- FAQ Section -->
+  <div class="about-section" id="faq">
+    <div class="faq-label">Frequently Asked Questions</div>
+    <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q" data-faq-toggle role="button" tabindex="0" aria-expanded="false">How does it work? <span class="faq-arrow">&#x25BC;</span></div>
+      <div class="faq-a">Paste an address or connect your wallet. The site scans <span class="contract-count">116</span> old contracts for any ETH that's still sitting there. If something comes up, you can withdraw it right here. The ETH goes straight from the contract to you.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" data-faq-toggle role="button" tabindex="0" aria-expanded="false">Is this safe? <span class="faq-arrow">&#x25BC;</span></div>
+      <div class="faq-a">Everything is <a href="https://github.com/q84c6tsm95-create/forgotten-eth" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">open source</a>. There's no middle contract, no approvals to worry about for most cases. A few protocols need a two-step process (the UI walks you through it). You can always do the same thing manually on <a href="https://etherscan.io" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">Etherscan</a> if you prefer.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" data-faq-toggle role="button" tabindex="0" aria-expanded="false">Why can't my portfolio tracker see these? <span class="faq-arrow">&#x25BC;</span></div>
+      <div class="faq-a">Most portfolio trackers started indexing around 2020. These contracts span the 2015&ndash;2022 era, and the projects behind them are long gone &mdash; their websites are offline or no longer support old positions. The ETH is still onchain. It just doesn't show up in any wallet interface.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" data-faq-toggle role="button" tabindex="0" aria-expanded="false">What contracts are tracked? <span class="faq-arrow">&#x25BC;</span></div>
+      <div class="faq-a">Old DEXes like EtherDelta and IDEX v1, Ponzi-era tokens like PoWH3D and Fomo3D, early NFT contracts like MoonCatRescue, ICO escrows, ENS deed deposits, DAO refunds like DigixDAO. <span class="contract-count">116</span> contracts total and counting.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" data-faq-toggle role="button" tabindex="0" aria-expanded="false">Don't trust, verify <span class="faq-arrow">&#x25BC;</span></div>
+      <div class="faq-a">You don't need this site. Every contract address and function call is shown in the claim details. You can do the same thing on <a href="https://etherscan.io" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">Etherscan</a> directly.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" data-faq-toggle role="button" tabindex="0" aria-expanded="false">I know a protocol or contract that could be added. How do I submit it? <span class="faq-arrow">&#x25BC;</span></div>
+      <div class="faq-a"><a href="https://github.com/q84c6tsm95-create/forgotten-eth/issues/new" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">Open a GitHub issue</a> with the contract address or protocol name. If you don't know the exact contract, just mention the protocol. I'll investigate and verify it.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" data-faq-toggle role="button" tabindex="0" aria-expanded="false">Are new protocols being added? <span class="faq-arrow">&#x25BC;</span></div>
+      <div class="faq-a">New contracts are added regularly. Check back periodically or use the <a href="https://t.me/forgottenETH_bot" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">Telegram bot</a> to watch your address and get notified when a balance appears.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" data-faq-toggle role="button" tabindex="0" aria-expanded="false">What data do you collect? <span class="faq-arrow">&#x25BC;</span></div>
+      <div class="faq-a">No IP addresses, no browser fingerprints, no device identifiers. The site logs aggregate actions (address checked, balance found, claim confirmed) to track usage stats. Ethereum addresses you check are stored for aggregate counts only. Nothing is shared or sold.</div>
+    </div>
+    </div><!-- /faq-list -->
+  </div>
+
+  </main>
+</div>
+
+<footer class="site-footer" id="siteFooter">
+  <p class="footer-credit" style="margin-bottom:8px;display:flex;justify-content:center;gap:24px;align-items:center">
+    <a href="https://github.com/q84c6tsm95-create/forgotten-eth" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository" title="GitHub" style="color:var(--text2)"><svg width="29" height="29" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+    <a href="https://x.com/3pa15" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) profile" title="X/Twitter" style="color:var(--text2)"><svg width="23" height="23" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+    <a href="https://t.me/forgottenETH_bot" target="_blank" rel="noopener noreferrer" aria-label="Telegram bot" title="Telegram" style="color:var(--text2)"><svg width="29" height="29" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+  </p>
+  <p class="footer-credit">made with <span style="color:#e11d48;font-size:16px;vertical-align:middle">&#10084;</span> by <a href="https://t.me/syLKf" target="_blank" rel="noopener noreferrer" style="color:var(--text);text-decoration:none;font-weight:700">aaaaaaaaaaway</a></p>
+  <p class="footer-credit" style="margin-top:4px;font-size:11px"><a href="https://etherscan.io/address/0x95a708aAAB1D336bB60EF2F40212672F4cf65736" target="_blank" rel="noopener noreferrer" style="color:var(--text2);text-decoration:none;font-family:var(--font-mono)">forgotten-eth.eth</a> <span id="copyDonation" style="cursor:pointer;margin-left:4px;vertical-align:middle" title="Copy address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text2)" stroke-width="2" style="opacity:0.6"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg></span></p>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Forgotten ETH",
+  "url": "https://forgotteneth.com",
+  "description": "Free tool to recover ETH stuck in defunct smart contracts. Check any Ethereum address for unclaimed balances in old DEXes, ICO contracts, ENS deeds, and more.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Ethereum",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script src="/testmode.js"></script>
+<script src="/app.js?v=20260613-dutchx-manual"></script>
+<script src="/theme.js"></script>
+<script src="/corrupt.js"></script>
+<script defer src="/_vercel/insights/script.js"></script>
+
+</body>
+</html>

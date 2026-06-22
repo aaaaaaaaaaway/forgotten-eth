@@ -1,0 +1,70 @@
+{
+  "contract": "0xe117bb9d1e0fc6e859d9bf174c53baa7c673547a",
+  "balance_source": "eth",
+  "contract_eth_balance": 2.94837577,
+  "total_eth_in_balances": 2.94837577,
+  "addresses_with_balance": 7,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-15 16:25:16 UTC",
+  "description": "Failed-ICO direct refund ledger \u2014 Mahala Coin (MHC) Crowdsale. ETH is held in the sale contract and the claim flow is refund().",
+  "distribution": {
+    "0.1-1 ETH": {
+      "count": 7,
+      "total_eth": 2.94837577
+    }
+  },
+  "name": "Mahala Coin (MHC) Crowdsale",
+  "claim_flow": "refund()",
+  "refund_selector": "0x590e1ae3",
+  "balance_selector": "0x27e235e3",
+  "state_checks": [
+    "this.balance < softcap && now > endIco"
+  ],
+  "total_addresses_scanned": 7,
+  "residual_unattributed_eth": 0.0,
+  "residual_note": "Only positive live per-user ledgers are counted. Contract-minus-ledger residual is excluded unless a source-backed ordinary user path maps it to a wallet.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0x228720286945e354e22b8a79214c553c2287eb29",
+      "balance_wei": "900000000000000000",
+      "balance_eth": 0.9
+    },
+    {
+      "rank": 2,
+      "address": "0x6e97121a734b90f5814e1b4934430b834eba8d3e",
+      "balance_wei": "620000000000000000",
+      "balance_eth": 0.62
+    },
+    {
+      "rank": 3,
+      "address": "0x9007cd824d9566ee1147edce25185b79672fe711",
+      "balance_wei": "500000000000000000",
+      "balance_eth": 0.5
+    },
+    {
+      "rank": 4,
+      "address": "0x68bb8089fbf5bfc17495721070a2716e582e620b",
+      "balance_wei": "400000000000000000",
+      "balance_eth": 0.4
+    },
+    {
+      "rank": 5,
+      "address": "0x2aa6d50364108023e70385545729005469b9a906",
+      "balance_wei": "233301637000000000",
+      "balance_eth": 0.233301637
+    },
+    {
+      "rank": 6,
+      "address": "0x790b8fba18ffd22310457fb9f3af644a480333f6",
+      "balance_wei": "195074130000000000",
+      "balance_eth": 0.19507413
+    },
+    {
+      "rank": 7,
+      "address": "0xa46e3aac59412b0e1458badeabd1061254ecefa6",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1
+    }
+  ]
+}

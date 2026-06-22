@@ -1,0 +1,68 @@
+{
+  "contract": "0x4363b5d64f228c819dc706889b09a0dc76e22fb0",
+  "balance_source": "eth",
+  "contract_eth_balance": 8.476,
+  "total_eth_in_balances": 8.28,
+  "addresses_with_balance": 6,
+  "coverage_pct": 97.69,
+  "scan_date": "2026-06-15 16:25:16 UTC",
+  "description": "Failed-ICO direct refund ledger \u2014 Crowdsale (0x4363b5). ETH is held in the sale contract and the claim flow is releaseEthers().",
+  "distribution": {
+    "1-10 ETH": {
+      "count": 3,
+      "total_eth": 5.905
+    },
+    "0.1-1 ETH": {
+      "count": 3,
+      "total_eth": 2.375
+    }
+  },
+  "name": "Crowdsale (0x4363b5)",
+  "claim_flow": "releaseEthers()",
+  "refund_selector": "0x98be7df7",
+  "balance_selector": "0x5986a13d",
+  "state_checks": [
+    "now > end() && balance < softCap() (saleFailed)"
+  ],
+  "total_addresses_scanned": 6,
+  "residual_unattributed_eth": 0.196,
+  "residual_note": "Only positive live per-user ledgers are counted. Contract-minus-ledger residual is excluded unless a source-backed ordinary user path maps it to a wallet.",
+  "balances": [
+    {
+      "rank": 1,
+      "address": "0x4397ec886c5db216b82e351911c9e3c2b7f5091e",
+      "balance_wei": "3905000000000000000",
+      "balance_eth": 3.905
+    },
+    {
+      "rank": 2,
+      "address": "0xd33577609f71eeb9e72b8b077590f50f9cbbce0a",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0
+    },
+    {
+      "rank": 3,
+      "address": "0xfdd86ee46f5ce82c974090151c60ca2a3311aa71",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0
+    },
+    {
+      "rank": 4,
+      "address": "0x71e93604728ef427a2b34439c5f3a406e2f8fb50",
+      "balance_wei": "990000000000000000",
+      "balance_eth": 0.99
+    },
+    {
+      "rank": 5,
+      "address": "0x88dbf765188519dba2fe1e3a0396a6c097fd4fab",
+      "balance_wei": "985000000000000000",
+      "balance_eth": 0.985
+    },
+    {
+      "rank": 6,
+      "address": "0x87af7fa024035df14c940c139b3252bb5a5b3944",
+      "balance_wei": "400000000000000000",
+      "balance_eth": 0.4
+    }
+  ]
+}
