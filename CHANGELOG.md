@@ -1,109 +1,100 @@
 # Changelog
 
-All protocol additions and notable changes to [Forgotten ETH](https://forgotteneth.com).
+Protocol additions and notable Forgotten ETH changes live here instead of in the README.
 
----
+Canonical web page: https://forgotteneth.com/changelog
+RSS: https://forgotteneth.com/feed.xml
 
-## 🟢 April 2026
+## June 2026
 
-### Aave v1 — `+941 ETH` · 3,509 addresses
-> **Category:** DeFi Lending · **Contract:** [`0x3a3A65...d37d08c04`](https://etherscan.io/address/0x3a3A65aAb0dd2A17E3F1947bA16138cd37d08c04) · **Added:** April 4
+### Jun 12 — DutchX dx_2 + dx_3 (+155 WETH/ETH)
+Added unclaimed DutchX withdrawal balances and auction settlement positions, with SAI sub-balances kept explicit.
 
-Original Aave lending pool (January 2020). Users redeem aETH tokens for ETH via `redeem()`. Official UI dropped v1 support — deposits only accessible through direct contract interaction.
+### Jun 11 — DigiPulse, DirectCrypt, QCO, and three more failed ICO refunds (+275 ETH)
+Integrated six externally submitted 2017–2018 refund contracts after source and local-fork verification. Five are single-call refunds; ZeroTraffic requires a permissionless `endCrowdsale()` state transition before each contributor calls `refund()`.
 
----
+### Jun 8 — Hegic WBTC Pool (+3.346 WBTC)
+Added the deprecated Hegic `writeWBTC` pool with a partial-liquidity model based on live `availableBalance()`.
 
-### Augur v1 — `+437 ETH` · 973 addresses
-> **Category:** Prediction Market · **Contract:** [`0xd5524...76B96b`](https://etherscan.io/address/0xd5524179cB7AE012f5B642C1D6D700Bbaa76B96b) · **Added:** April 3
+### Jun 8 — MarketingMining (+35 token positions)
+Added the March 2021 NFTX/Shard-era MarketingMining contract. Live per-pool positions span WBTC, WETH, USDT, B20, MEME, MUSE, RARI, WHALE, NFTX, MANA, and SAND.
 
-Ethereum's first decentralized prediction market (July 2018). Three claim paths: mailbox Cash withdrawals, open order cancellations via `cancelOrder()`, and winning share redemptions via `claimTradingProceeds()`.
+### Jun 3 — P4RTY DAO Vault (+0.43 ETH)
+Added dividend ETH claims for remaining P4RTY DAO vault stakers.
 
----
+### Jun 3 — Lido AnchorVault (+237 stETH)
+Added Ethereum-side bETH redemption into stETH for self-claimable holders after Lido's Anchor integration was shut down.
 
-### Old WETH — `+3,258 ETH` · 987 addresses
-> **Category:** Token Wrapper · **Contract:** [`0xECF8F...501d6A7`](https://etherscan.io/address/0xECF8F87f810EcF450940c9f60066b4a7a501d6A7) · **Added:** April 3
+### Jun 1 — HONG (+882 ETH)
+Added duplicate HONG refund claims after source-level review of the 2016 token creation and refund logic.
 
-June 2016 WETH wrapper — one of the first attempts at wrapping native ETH into an ERC-20 token. Predates both Maker W-ETH and the canonical WETH9. Simple `withdraw(uint256)`. 100% coverage. Community submission ([#7](https://github.com/q84c6tsm95-create/forgotten-eth/issues/7)).
+### Jun 1 — EpikStaking (+8 ETH)
+Moved EpikStaking into the normal claim flow after confirming the contract is unpaused and rewards are claimable through `claimReward()`.
 
----
+## May 2026
 
-### The DAO — `+81,914 ETH` · 4,854 addresses
-> **Category:** DAO Refund · **Contract:** [`0xbf4ed...ca754`](https://etherscan.io/address/0xbf4ed7b27f1d666546e30d74d50d173d20bca754) · **Added:** April 1
+### May 27 — Gro UST Compensation (+955K USDC)
+Added fully vested Gro Protocol UST/Terra compensation claims, verified against the on-chain merkle root.
 
-WithdrawDAO wrapper for the 2016 DAO hack recovery. Approve DAO tokens to WithdrawDAO, then `withdraw()` for 1:1 ETH. 67 Parity multisig wallets (3,101 ETH) auto-detected via Multicall3 `isOwner()` — owners see dedicated recovery buttons. Community PR by [doublesharp](https://github.com/doublesharp).
+### May 9 — Trace sweep batches (+468 ETH)
+Added fourteen more recovery paths found by tracing previously rejected or deferred candidates with expanded selectors and wei-exact `debug_traceCall` verification.
 
----
+### May 8 — Presale pools, SpankChain, FoMo3D forks, NFT marketplaces, and staking pools (+1,686 ETH)
+Added a set of unverified or abandoned contracts recovered through trace-based and BigQuery discovery: presale pools, SpankChain Auction, FoMo3D Ultra, Bingo4Beast, LD3D Official, CryptoCats v2, CryptoPhunks, CryptoCats marketplace, seven FoMo3D forks, ArbitrageETHStaking, and four refund-mode ICOs.
 
-## 🟢 March 2026
+### May 7 — Ahoolee Token Sale (+191 ETH)
+Added refund claims for the September 2017 Ahoolee ICO after confirming the sale finalized in refund mode.
 
-### Kyber FeeHandler — `+23 ETH` · 1,605 addresses
-> **Category:** DeFi Staking · **Contract:** [`0xd3d2b...1c257b4`](https://etherscan.io/address/0xd3d2b4906276b80e20a73345c67f0aa8e87ab500) · **Added:** March 28
+### May 5 — Crab V2, MicroETH, WETH10, Collective Canvas, ConfinaleToken, Futurists (+222 ETH)
+Added six contracts from a score-based candidate sweep, including Opyn Crab Strategy V2 shutdown claims and Collective Canvas per-NFT escrow withdrawals.
 
-Epoch-based KNC staking rewards from Kyber Network. `claimStakerReward(staker, epoch)` for epochs 1 through 21. Contracts are immutable — rewards never expire.
+### May 3 — FEG Wrapped ETH (+46 ETH)
+Added the Ethereum-side fETH wrapper with reflection-style accounting and a 1% withdrawal fee.
 
----
+### May 3 — Foundation FETH (+307 ETH)
+Added idle Foundation FETH bid-escrow balances after the marketplace shutdown.
 
-### Tessera Vaults — `+89 ETH` · 505 addresses
-> **Category:** Fractional NFT · **Added:** March 28
+### May 2 — MCDEX, Quantfury, Celer, and six more (+1,510 ETH)
+Added nine verified old-contract recovery paths, including MCDEX Perpetual, Quantfury QDT, Monolith TKN Holder, Celer EthPool, and smaller legacy reward or refund contracts.
 
-Three fractional NFT vaults from Tessera (formerly Fractional Art):
-- 🖼 **Party of Living Dead** — 53 ETH, 225 holders
-- 🐒 **Dingaling BAYC Sweep** — 21 ETH, 94 holders
-- 🐱 **ZombieCats** — 16 ETH, 186 holders
+## April 2026
 
-Burn fraction tokens via `cash()` for proportional ETH from the vault.
+### Apr 30 — PresalePool 2018 (+39 ETH)
+Added an unpaused ICO presale pool with remaining `withdrawAll()` refunds.
 
----
+### Apr 23 — Metadrop Webaverse, Metadrop Anata, X2Y2 Presale (+359 ETH/WETH)
+Added frozen merkle refund roots for two Metadrop auctions and WETH rewards for X2Y2 presale participants.
 
-### NuCypher WorkLock — `+291 ETH` · 54 addresses
-> **Category:** Staking Refund · **Contract:** [`0xe9778...d998c0`](https://etherscan.io/address/0xe9778e69a961e64d3cdbb34cf6778281d34667c2) · **Added:** March 27
+### Apr 21 — Nomad Bridge Recovery (+100 WETH)
+Added NFT-based WETH recovery claims from the Nomad post-exploit recovery contract, with allowlist status tracked by refreshes.
 
-WorkLock participants deposited ETH to receive NU tokens for staking. After the Threshold Network merger, the staking requirement was removed (escrow stub returns `totalSupply`). All 291 ETH is fully refundable via `claim()` + `refund()`.
+### Apr 17 — Gnosis Auction, X2Y2 Fee Sharing, Yearn v1 yWETH, Euler Redemptions, Tokemak v1 tWETH (+1,590 WETH)
+Added abandoned WETH positions across auction refunds, fee-sharing rewards, old vault shares, exploit-redemption merkle claims, and Tokemak withdrawal requests.
 
----
+### Apr 12 — Opyn v1, Unagii, UMA Yield Dollar, Mesa, Opyn v2 Gamma (+823 ETH/WETH)
+Added DeFi Summer-era option, vault, EMP, and batch-auction claims.
 
-### Bounties Network — `+90 ETH` · 192 addresses
-> **Category:** Bounty Platform · **Contract:** [`0x2af47...8e0400`](https://etherscan.io/address/0x2af47a65da8cd66729b4209c22017d6a5c2d2400) · **Added:** March 26
+### Apr 10 — Twelve DeFi Summer protocols (+828 ETH/WETH)
+Added Yam v1, Spaghetti, Doki Doki, CoFiX, Pkl v1, Shrimp, Bee2, Kitten, Hegic V1 Pool, Gnosis DutchX, Hegic V1 Call, and Pop Finance.
 
-ConsenSys bounty platform (December 2017). Bounty issuers who never killed or fulfilled their bounties have ETH locked. Per-bounty withdrawal via `killBounty(bountyId)` — each user has unique bounty IDs.
+### Apr 8 — KeeperDAO / Rook (+426 ETH)
+Added kETH and kwETH recovery paths from the old KeeperDAO/Rook pools.
 
----
+### Apr 7 — Refund vaults and MasterChef WETH farms (+360 ETH/WETH)
+Added five abandoned MasterChef WETH farms, four custom-flow ICO refunds, eleven more refund-vault ICOs, and seventeen OpenZeppelin refund-vault ICOs.
 
-### DigixDAO — `+11,092 ETH` · 7,954 addresses
-> **Category:** DAO Dissolution · **Contract:** [`0x23Ea...10CC`](https://etherscan.io/address/0x23Ea10CC1e6EBdB499D24E45369A35f43627062f) · **Added:** March 19
+### Apr 5 — Switcheo, Unknown DEX, Avastars, Ethfinex Trustless (+1,619 ETH)
+Added cross-chain DEX withdrawals, an EtherDelta-style DEX, NFT mint refunds, and two Ethfinex WrapperLockEth contracts.
 
-DAO dissolution refund. DGD token holders approve tokens to the Acid contract, then call `burn()`. Fixed rate: 0.193 ETH per DGD. The DAO voted to dissolve and return remaining ETH to token holders.
+### Apr 4 — Aave v1 (+941 ETH)
+Added aETH redemption for Aave v1 after official UI support was dropped.
 
----
+### Apr 3 — Augur v1 and Old WETH (+3,695 ETH)
+Added Augur v1 mailbox/order/share claim paths and the June 2016 Old WETH wrapper.
 
-### MoonCatRescue — `+247 ETH` · 629 addresses
-> **Category:** NFT · **Contract:** [`0x60cd8...4ab6`](https://etherscan.io/address/0x60cd862c9c687a9de49aecdc3a99b74a4fc54ab6) · **Added:** March 18
+### Apr 1 — The DAO (+81,914 ETH)
+Added WithdrawDAO claims with support for detected Parity multisigs.
 
-2017 generative NFT contract with adoption escrow deposits and pending withdrawals. Note: 100.8 ETH at `address(0)` is permanently stuck due to a genesis cat assignment bug.
+## March 2026
 
----
-
-### SportCrypt — `+16 ETH` · 231 addresses
-> **Category:** Betting · **Contract:** [`0x37304...19232`](https://etherscan.io/address/0x37304b0ab297f13f5520c523102797121182fb5b) · **Added:** March 17
-
-Peer-to-peer sports betting escrow. Standard `withdraw(amount)` pattern.
-
----
-
-### DADA Collectible — `+11 ETH` · 476 addresses
-> **Category:** NFT Art · **Contract:** [`0x06869...4ab6`](https://etherscan.io/address/0x068696a3cf3c4676b65f1c9975dd094260109d02) · **Added:** March 16
-
-Early NFT art marketplace. Pending auction withdrawals from unsold art.
-
----
-
-### Neufund — `+3,418 ETH` · 500 addresses
-> **Category:** Token Wrapper · **Added:** March 15
-
-EtherToken wrapper + LockedAccount. Two claim paths:
-- **EtherToken** — simple WETH-style `withdraw()`, 3 addresses
-- **LockedAccount** — 2-step: `approveAndCall()` on NEU token (burns NEU + returns ETH-T), then `withdraw()` on EtherToken. ⚠️ 44% of depositors (1,501 ETH) are blocked — they don't hold enough NEU tokens.
-
----
-
-*For the full list of all 120 tracked contracts, see [`data/protocols.json`](data/protocols.json).*
+Initial launch and first recovery batches: IDEX v1, EtherDelta, Token.Store, MoonCatRescue, ENS Old Registrar, FoMo3D, PoWH3D, Maker W-ETH, Neufund, DigixDAO, NuCypher WorkLock, Bounties Network, Kyber FeeHandler, Tessera vaults, and related early DEX, NFT, refund, and dividend-token contracts.
