@@ -52,7 +52,7 @@
     "api/total.js": {
       "memory": 128,
       "maxDuration": 5,
-      "includeFiles": "data/total.json"
+      "includeFiles": "{data/total.json,data/withdrawal_events.json}"
     },
     "api/v2-totals.js": {
       "memory": 128,

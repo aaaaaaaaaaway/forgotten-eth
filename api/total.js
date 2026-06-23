@@ -6,8 +6,22 @@ import { requireCloudflare, getClientIP } from './_security.js';
 
 let fileData = null;
 let fileDataExpiry = 0;
+let multiItemProtocols = null;
 let claimsCache = null;
 let claimsCacheExpiry = 0;
+
+function loadMultiItemProtocols() {
+  if (multiItemProtocols) return multiItemProtocols;
+  try {
+    const raw = readFileSync(join(process.cwd(), 'data', 'withdrawal_events.json'), 'utf8');
+    const parsed = JSON.parse(raw);
+    multiItemProtocols = (parsed.multi_item_protocols || [])
+      .filter((key) => /^[a-z0-9_]+$/.test(key));
+  } catch {
+    multiItemProtocols = [];
+  }
+  return multiItemProtocols;
+}
 
 export default async function handler(req, res) {
   function errResp(code, body) {
@@ -39,25 +53,52 @@ export default async function handler(req, res) {
   }
 
   // Live claims from DB (cached 5 min, falls back to static file data).
-  //
-  // Critical: the displayed value MUST never decrease. Two reasons:
-  //   1. The events table prunes claim_confirmed rows older than 90 days
-  //      (api/health.js DB cleanup), so a raw DB sum drops over time.
-  //   2. build_index.py already ratchets eth_claimed in data/total.json
-  //      (line 305: "eth_claimed is cumulative — never decrease").
-  // Without a matching ratchet here, the live API regresses to the
-  // unratcheted DB value and users see the hero counter fluctuate.
-  // We take max(file, live) per field so the value can only go up.
+  // Keep this query in sync with data/build_index.py: single-item protocols
+  // come from deduped events, while multi-item protocols come from
+  // claimed_addresses so per-item histories are counted without double-counting
+  // webhook/summary events. We still take max(file, live) so transient DB
+  // failures or event retention cannot make the public counter decrease.
   const now = Date.now();
   if (!claimsCache || now > claimsCacheExpiry) {
     const fileEth = parseFloat(fileData.eth_claimed || 0);
     const fileWallets = parseInt(fileData.unique_claimers || 0, 10);
     try {
+      const multi = loadMultiItemProtocols();
       const result = await sql`
+        WITH raw_events AS (
+          SELECT id, LOWER(address) AS address, contract, amount_eth, tx_hash, log_index
+          FROM events
+          WHERE type = 'claim_confirmed'
+            AND contract != 'donation'
+            AND amount_eth > 0
+            AND NOT (contract = ANY(${multi}))
+        ),
+        from_events AS (
+          SELECT address, amount_eth
+          FROM (
+            SELECT DISTINCT ON (contract, address, tx_hash, amount_eth)
+                   address, amount_eth
+            FROM raw_events
+            WHERE tx_hash IS NOT NULL
+            ORDER BY contract, address, tx_hash, amount_eth, (log_index IS NULL), id
+          ) deduped_tx_events
+          UNION ALL
+          SELECT address, amount_eth
+          FROM raw_events
+          WHERE tx_hash IS NULL
+        ),
+        from_ca AS (
+          SELECT LOWER(address) AS address, amount_eth
+          FROM claimed_addresses
+          WHERE protocol = ANY(${multi})
+            AND amount_eth IS NOT NULL
+            AND amount_eth > 0
+        ),
+        combined AS (
+          SELECT * FROM from_events UNION ALL SELECT * FROM from_ca
+        )
         SELECT COALESCE(SUM(amount_eth), 0) AS eth, COUNT(DISTINCT address) AS wallets
-        FROM events
-        WHERE type = 'claim_confirmed' AND contract != 'donation'
-        AND amount_eth > 0
+        FROM combined
       `;
       const siteEth = parseFloat(parseFloat(result.rows[0].eth).toFixed(2));
       const siteWallets = parseInt(result.rows[0].wallets, 10);

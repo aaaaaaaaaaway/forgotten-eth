@@ -1,9 +1,9 @@
 {
   "contract": "0xc8c3cc5be962b6d281e4a53dbcce1359f76a1b85",
   "balance_source": "token",
-  "contract_eth_balance": 320.335227,
-  "total_eth_in_balances": 320.304078,
-  "addresses_with_balance": 6761,
+  "contract_eth_balance": 320.287809,
+  "total_eth_in_balances": 320.256659,
+  "addresses_with_balance": 6758,
   "coverage_pct": 99.99,
   "scan_date": "2026-06-15 16:20:33 UTC",
   "description": "Pending WETH rewards in X2Y2 Fee Sharing staking contract",
@@ -25,12 +25,12 @@
       "total_eth": 161.106677
     },
     "0.01-0.1 ETH": {
-      "count": 2071,
-      "total_eth": 80.922178
+      "count": 2069,
+      "total_eth": 80.875529
     },
     "<0.01 ETH": {
-      "count": 3876,
-      "total_eth": 7.786838
+      "count": 3875,
+      "total_eth": 7.786069
     }
   },
   "meta": {
@@ -10797,9 +10797,10 @@
     },
     {
       "address": "0x5bfdf0cfc4ade055f4aa63c31d3b2558e3a5fd80",
-      "balance_wei": "34441416696598398",
-      "balance_eth": 0.0344414166965984,
-      "rank": 1793
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 1793,
+      "claimed": true
     },
     {
       "address": "0xd6ff220b75ac64bb569b11a553cc2147d1e4e4ff",
@@ -16509,9 +16510,10 @@
     },
     {
       "address": "0xea213ed8d4d10aacc533bb7ab93e88c81275bf57",
-      "balance_wei": "12207999623999711",
-      "balance_eth": 0.01220799962399971,
-      "rank": 2746
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 2746,
+      "claimed": true
     },
     {
       "address": "0x33aac8c749d5d192f01fd4608cab7e8f6b361bfe",
@@ -29226,9 +29228,10 @@
     },
     {
       "address": "0x9297c619fed4c0e71a922e069ce82121779856d3",
-      "balance_wei": "769311008639667",
-      "balance_eth": 0.000769311008639667,
-      "rank": 4868
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 4868,
+      "claimed": true
     },
     {
       "address": "0xdde965f942292c807792d49f39b9b4cfe10cf562",
@@ -40643,5 +40646,5 @@
       "rank": 6770
     }
   ],
-  "last_event_refresh": "2026-06-21 20:23:05 UTC"
+  "last_event_refresh": "2026-06-23 04:49:33 UTC"
 }

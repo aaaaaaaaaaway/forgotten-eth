@@ -1,9 +1,9 @@
 {
   "contract": "0x3b960e47784150f5a63777201ee2b15253d713e8",
   "balance_source": "token",
-  "contract_eth_balance": 105.925792,
-  "total_eth_in_balances": 105.925792,
-  "addresses_with_balance": 2520,
+  "contract_eth_balance": 105.920552,
+  "total_eth_in_balances": 105.920552,
+  "addresses_with_balance": 2518,
   "coverage_pct": 100,
   "scan_date": "2026-05-05 16:03:54 UTC",
   "description": "Opyn's Squeeth Crab Strategy V2 in shutdown state. Each crab token is redeemable for proportional ETH via withdrawShutdown(uint256 _crabAmount).",
@@ -5824,10 +5824,11 @@
     },
     {
       "address": "0x1bf9e46b06cfdfbbdb1e0c76d0a13b20ff08bae9",
-      "balance_wei": "2848006976990123",
-      "balance_eth": 0.002848006976990123,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "3933767468111274",
-      "rank": 830
+      "rank": 830,
+      "claimed": true
     },
     {
       "address": "0xbdc053e99a3eee59ae654d07dd2f8874dcfd5ae9",
@@ -6195,10 +6196,11 @@
     },
     {
       "address": "0xd819c62dde216ef3b508d348542b59477efd606f",
-      "balance_wei": "2391840935471318",
-      "balance_eth": 0.002391840935471318,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "3303694877460456",
-      "rank": 883
+      "rank": 883,
+      "claimed": true
     },
     {
       "address": "0x37ed2b55890cd2320d835b573c0b10147ee455f7",
@@ -17747,5 +17749,5 @@
       "rank": 2532
     }
   ],
-  "last_event_refresh": "2026-06-22 00:23:05 UTC"
+  "last_event_refresh": "2026-06-22 19:23:06 UTC"
 }

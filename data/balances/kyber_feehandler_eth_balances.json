@@ -1,8 +1,8 @@
 {
   "contract": "0xd3d2b5643e506c6d9b7099e9116d7aaa941114fe",
   "balance_source": "token",
-  "contract_eth_balance": 88.39775,
-  "total_eth_in_balances": 61.328829,
+  "contract_eth_balance": 88.392294,
+  "total_eth_in_balances": 61.323373,
   "addresses_with_balance": 1587,
   "coverage_pct": 69.38,
   "scan_date": "2026-06-15 16:19:54 UTC",
@@ -29,10 +29,10 @@
     },
     "<0.01 ETH": {
       "count": 1248,
-      "total_eth": 3.268615
+      "total_eth": 3.263159
     }
   },
-  "last_event_refresh": "2026-06-21 22:46:26 UTC",
+  "last_event_refresh": "2026-06-22 20:23:05 UTC",
   "balances": [
     {
       "address": "0xde63aef60307655405835da74ba02ce4db1a42fb",
@@ -6776,18 +6776,14 @@
     },
     {
       "address": "0xaabd5fbcb8ad62d4fbbb02a2e9769a9f2ee7e883",
-      "balance_eth": 0.008812,
+      "balance_eth": 0.003356,
       "epoch_details": [
-        {
-          "epoch": 1,
-          "eth": 0.005456
-        },
         {
           "epoch": 2,
           "eth": 0.003356
         }
       ],
-      "balance_wei": "8812000000000000",
+      "balance_wei": "3356000000000000",
       "rank": 378
     },
     {

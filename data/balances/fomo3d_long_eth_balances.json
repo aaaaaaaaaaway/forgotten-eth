@@ -1,9 +1,9 @@
 {
   "contract": "0xA62142888ABa8370742bE823c1782D17A0389Da1",
   "balance_source": "eth",
-  "contract_eth_balance": 1108.606276,
-  "total_eth_in_balances": 1107.326162,
-  "addresses_with_balance": 15205,
+  "contract_eth_balance": 1107.738594,
+  "total_eth_in_balances": 1106.458481,
+  "addresses_with_balance": 15204,
   "coverage_pct": 99.88,
   "scan_date": "2026-04-03 13:24:06 UTC",
   "description": "ETH balances in defunct Fomo3D Long contract",
@@ -21,8 +21,8 @@
       "total_eth": 278.716598
     },
     "0.1-1 ETH": {
-      "count": 1787,
-      "total_eth": 481.468296
+      "count": 1786,
+      "total_eth": 480.600614
     },
     "0.01-0.1 ETH": {
       "count": 5144,
@@ -35,7 +35,7 @@
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 25552,
-  "last_event_refresh": "2026-06-22 02:23:05 UTC",
+  "last_event_refresh": "2026-06-22 21:23:05 UTC",
   "balances": [
     {
       "rank": 1,
@@ -1096,8 +1096,9 @@
     {
       "rank": 178,
       "address": "0x7078944645cd2291d1e4dde68ae4a8f19611fb6c",
-      "balance_wei": "867681555919656896",
-      "balance_eth": 0.8676815559196569
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 179,

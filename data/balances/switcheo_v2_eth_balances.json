@@ -1,9 +1,9 @@
 {
   "contract": "0x7ee7ca6e75de79e618e88bdf80d0b1db136b22d0",
   "balance_source": "eth",
-  "contract_eth_balance": 456.765818,
-  "total_eth_in_balances": 456.699723,
-  "addresses_with_balance": 2901,
+  "contract_eth_balance": 456.751139,
+  "total_eth_in_balances": 456.685044,
+  "addresses_with_balance": 2899,
   "coverage_pct": 99.99,
   "scan_date": "2026-04-05 20:24:28 UTC",
   "description": "ETH balances in defunct Switcheo BrokerV2 contract",
@@ -29,13 +29,13 @@
       "total_eth": 19.454384
     },
     "<0.01 ETH": {
-      "count": 2089,
-      "total_eth": 2.778319
+      "count": 2087,
+      "total_eth": 2.763638
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 10106,
-  "last_event_refresh": "2026-06-18 20:23:05 UTC",
+  "last_event_refresh": "2026-06-23 04:49:33 UTC",
   "balances": [
     {
       "rank": 1,
@@ -5065,8 +5065,9 @@
     {
       "rank": 843,
       "address": "0x7594545b0dc5ffe1777b2a55dc813cd29f5eb981",
-      "balance_wei": "9754060000000000",
-      "balance_eth": 0.00975406
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 844,
@@ -6583,8 +6584,9 @@
     {
       "rank": 1096,
       "address": "0xcd0f92a0e959b324effa38ddd43b74462bcaa95f",
-      "balance_wei": "4924732958029744",
-      "balance_eth": 0.004924732958029744
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 1097,
