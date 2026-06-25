@@ -1,15 +1,15 @@
 {
   "contract": "0xe01e2a3ceafa8233021fc759e5a69863558326b6",
   "balance_source": "eth",
-  "contract_eth_balance": 85.729574,
-  "total_eth_in_balances": 75.269746,
-  "addresses_with_balance": 358,
+  "contract_eth_balance": 85.716461,
+  "total_eth_in_balances": 75.256868,
+  "addresses_with_balance": 357,
   "coverage_pct": 87.8,
   "scan_date": "2026-05-02 14:51:01 UTC",
   "description": "EKS holders can call exit() to sell remaining tokens and withdraw accrued dividends.",
   "meta": {
     "excluded_unwithdrawable_rows": 4,
-    "excluded_unwithdrawable_eth": 4.2970924e-05,
+    "excluded_unwithdrawable_eth": 0.000042970924,
     "verification_failure_source": "data/.scan_state/score70_verification_failures.json"
   },
   "balances": [
@@ -1140,12 +1140,13 @@
     },
     {
       "address": "0x3d5ee97ef7305246cd55a8793da67d9183222670",
-      "balance_wei": "12878036093333274",
-      "balance_eth": 0.012878036093333274,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "token_balance_wei": "10917945190109767",
       "dividend_wei": "3051885422234483",
       "sale_wei": "9826150671098791",
-      "rank": 127
+      "rank": 127,
+      "claimed": true
     },
     {
       "address": "0xc2ef1173a4b051bbcc4474c407bbb2ac7e02e363",
@@ -2887,7 +2888,7 @@
     {
       "address": "0x4dd4fb717f26bf5039e35f7b12435fb77ea15cf1",
       "balance_wei": "96973472514304",
-      "balance_eth": 9.6973472514304e-05,
+      "balance_eth": 0.000096973472514304,
       "token_balance_wei": "101775871709862",
       "dividend_wei": "5375187975428",
       "sale_wei": "91598284538876",
@@ -2896,7 +2897,7 @@
     {
       "address": "0x2a08a17a440b2a79c152d069312c94a799d852f3",
       "balance_wei": "68064344319493",
-      "balance_eth": 6.8064344319493e-05,
+      "balance_eth": 0.000068064344319493,
       "token_balance_wei": "60000000000000",
       "dividend_wei": "14064344319493",
       "sale_wei": "54000000000000",
@@ -2905,7 +2906,7 @@
     {
       "address": "0xd00c9494f8a7a604be07b04a1dcca2d2b04fce6c",
       "balance_wei": "64990892145980",
-      "balance_eth": 6.499089214598e-05,
+      "balance_eth": 0.00006499089214598,
       "token_balance_wei": "45862334341603",
       "dividend_wei": "23714791238537",
       "sale_wei": "41276100907443",
@@ -2914,7 +2915,7 @@
     {
       "address": "0xb6ac14ec15ee2c28aeda158f5855457ab410d4b7",
       "balance_wei": "61271537956488",
-      "balance_eth": 6.1271537956488e-05,
+      "balance_eth": 0.000061271537956488,
       "token_balance_wei": "65470479855111",
       "dividend_wei": "2348106086888",
       "sale_wei": "58923431869600",
@@ -2923,7 +2924,7 @@
     {
       "address": "0x22d9460454e54988c5756e3eea084e9625547007",
       "balance_wei": "61115871287528",
-      "balance_eth": 6.1115871287528e-05,
+      "balance_eth": 0.000061115871287528,
       "token_balance_wei": "57423592967380",
       "dividend_wei": "9434637616886",
       "sale_wei": "51681233670642",
@@ -2932,7 +2933,7 @@
     {
       "address": "0x6c88c3aba77e9e4ca63b260e993b136dffe2ad44",
       "balance_wei": "50784955940493",
-      "balance_eth": 5.0784955940493e-05,
+      "balance_eth": 0.000050784955940493,
       "token_balance_wei": "53392087852872",
       "dividend_wei": "2732076872908",
       "sale_wei": "48052879067585",
@@ -2941,7 +2942,7 @@
     {
       "address": "0x8371ef9aca7734710914e7b5c45e2423152a1520",
       "balance_wei": "46413483234358",
-      "balance_eth": 4.6413483234358e-05,
+      "balance_eth": 0.000046413483234358,
       "token_balance_wei": "39597244065848",
       "dividend_wei": "10775963575094",
       "sale_wei": "35637519659264",
@@ -2950,7 +2951,7 @@
     {
       "address": "0xdcffc26fa5c3c12d507ab789aa21e89761e18dd2",
       "balance_wei": "36582297067501",
-      "balance_eth": 3.6582297067501e-05,
+      "balance_eth": 0.000036582297067501,
       "token_balance_wei": "38047549013180",
       "dividend_wei": "2339502955639",
       "sale_wei": "34242794111862",
@@ -2959,7 +2960,7 @@
     {
       "address": "0x212ed0fadf06aa480d09fc1737b2912213ef6ab4",
       "balance_wei": "33935437274473",
-      "balance_eth": 3.3935437274473e-05,
+      "balance_eth": 0.000033935437274473,
       "token_balance_wei": "22198994374723",
       "dividend_wei": "13956342337222",
       "sale_wei": "19979094937251",
@@ -2968,7 +2969,7 @@
     {
       "address": "0x916b489e412ff05f9f9ff587d4304d5376fcf30d",
       "balance_wei": "33507787938847",
-      "balance_eth": 3.3507787938847e-05,
+      "balance_eth": 0.000033507787938847,
       "token_balance_wei": "31489599071538",
       "dividend_wei": "5167148774462",
       "sale_wei": "28340639164385",
@@ -2977,7 +2978,7 @@
     {
       "address": "0x45af11bc741dac67b3e03a3db498e122ad4e0235",
       "balance_wei": "32849517391782",
-      "balance_eth": 3.2849517391782e-05,
+      "balance_eth": 0.000032849517391782,
       "token_balance_wei": "29290987455312",
       "dividend_wei": "6487628682001",
       "sale_wei": "26361888709781",
@@ -2986,7 +2987,7 @@
     {
       "address": "0x7d86e38f51951396045ad3d7b1c726c1f3b8c487",
       "balance_wei": "20017942935319",
-      "balance_eth": 2.0017942935319e-05,
+      "balance_eth": 0.000020017942935319,
       "token_balance_wei": "19879662883663",
       "dividend_wei": "2126246340022",
       "sale_wei": "17891696595297",
@@ -2995,7 +2996,7 @@
     {
       "address": "0xc3484343f1c33100247f398093fdca6c349f79ce",
       "balance_wei": "17998557543652",
-      "balance_eth": 1.7998557543652e-05,
+      "balance_eth": 0.000017998557543652,
       "token_balance_wei": "12624490538667",
       "dividend_wei": "6636516058851",
       "sale_wei": "11362041484801",
@@ -3004,7 +3005,7 @@
     {
       "address": "0x2fe1cf162ea7ff94ee9f23a601e588248390e2de",
       "balance_wei": "17907102663761",
-      "balance_eth": 1.7907102663761e-05,
+      "balance_eth": 0.000017907102663761,
       "token_balance_wei": "16714456902059",
       "dividend_wei": "2864091451907",
       "sale_wei": "15043011211854",
@@ -3013,7 +3014,7 @@
     {
       "address": "0xc43a436c7b713fe62d54df17ff04741e8a2e37da",
       "balance_wei": "16680538831650",
-      "balance_eth": 1.668053883165e-05,
+      "balance_eth": 0.00001668053883165,
       "token_balance_wei": "15513841038486",
       "dividend_wei": "2718081897012",
       "sale_wei": "13962456934638",
@@ -3022,7 +3023,7 @@
     {
       "address": "0xed5456c84812168584e45a83e8571a5a15485829",
       "balance_wei": "13458889887904",
-      "balance_eth": 1.3458889887904e-05,
+      "balance_eth": 0.000013458889887904,
       "token_balance_wei": "13737492855940",
       "dividend_wei": "1095146317558",
       "sale_wei": "12363743570346",
@@ -3031,7 +3032,7 @@
     {
       "address": "0x77bf08d743c0ff1aa8218ac28583b900bf2c557c",
       "balance_wei": "13258681261793",
-      "balance_eth": 1.3258681261793e-05,
+      "balance_eth": 0.000013258681261793,
       "token_balance_wei": "14030030640454",
       "dividend_wei": "631653685384",
       "sale_wei": "12627027576409",
@@ -3040,7 +3041,7 @@
     {
       "address": "0x96402f8dd3cb77bd4c08288c592ea32f8331999f",
       "balance_wei": "6257535081072",
-      "balance_eth": 6.257535081072e-06,
+      "balance_eth": 0.000006257535081072,
       "token_balance_wei": "5962571613608",
       "dividend_wei": "891220628824",
       "sale_wei": "5366314452248",
@@ -3049,7 +3050,7 @@
     {
       "address": "0xe7b7c97bc0ecc69ac135bc7e5e51272625fb4b5d",
       "balance_wei": "1361829998148",
-      "balance_eth": 1.361829998148e-06,
+      "balance_eth": 0.000001361829998148,
       "token_balance_wei": "1265695024806",
       "dividend_wei": "222704475822",
       "sale_wei": "1139125522326",
@@ -3058,7 +3059,7 @@
     {
       "address": "0xdce40dec2b53d658948c5e382b48fbe22d39637b",
       "balance_wei": "1147020695914",
-      "balance_eth": 1.147020695914e-06,
+      "balance_eth": 0.000001147020695914,
       "token_balance_wei": "1022764532272",
       "dividend_wei": "226532616869",
       "sale_wei": "920488079045",
@@ -3236,5 +3237,5 @@
       "rank": 362
     }
   ],
-  "last_event_refresh": "2026-06-15 11:23:05 UTC"
+  "last_event_refresh": "2026-06-25 07:23:05 UTC"
 }

@@ -1,10 +1,10 @@
 {
   "contract": "0x167cB3F2446F829eb327344b66E271D1a7eFeC9A",
   "balance_source": "eth",
-  "contract_eth_balance": 658.895136,
-  "total_eth_in_balances": 764.549115,
+  "contract_eth_balance": 657.065734,
+  "total_eth_in_balances": 762.719713,
   "addresses_with_balance": 11235,
-  "coverage_pct": 116.04,
+  "coverage_pct": 116.08,
   "scan_date": "2026-06-21 01:41:18 UTC",
   "description": "ETH balances in defunct GandhiJi contract",
   "distribution": {
@@ -17,12 +17,12 @@
       "total_eth": 156.763065
     },
     "1-10 ETH": {
-      "count": 133,
-      "total_eth": 326.362021
+      "count": 132,
+      "total_eth": 324.291527
     },
     "0.1-1 ETH": {
-      "count": 695,
-      "total_eth": 205.332663
+      "count": 696,
+      "total_eth": 205.573755
     },
     "0.01-0.1 ETH": {
       "count": 1910,
@@ -459,8 +459,8 @@
     {
       "rank": 71,
       "address": "0x5b3332569a04128201a2fce9414144d6c01b8900",
-      "balance_wei": "2070493699003916536",
-      "balance_eth": 2.0704936990039164
+      "balance_wei": "241092000000000000",
+      "balance_eth": 0.241092
     },
     {
       "rank": 72,
@@ -67496,5 +67496,5 @@
       "balance_eth": 1e-18
     }
   ],
-  "last_event_refresh": "2026-06-21 02:23:05 UTC"
+  "last_event_refresh": "2026-06-24 05:23:05 UTC"
 }

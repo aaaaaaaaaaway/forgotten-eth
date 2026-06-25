@@ -1,9 +1,9 @@
 {
   "contract": "0xc8c3cc5be962b6d281e4a53dbcce1359f76a1b85",
   "balance_source": "token",
-  "contract_eth_balance": 320.287809,
-  "total_eth_in_balances": 320.256659,
-  "addresses_with_balance": 6758,
+  "contract_eth_balance": 320.213014,
+  "total_eth_in_balances": 320.181865,
+  "addresses_with_balance": 6755,
   "coverage_pct": 99.99,
   "scan_date": "2026-06-15 16:20:33 UTC",
   "description": "Pending WETH rewards in X2Y2 Fee Sharing staking contract",
@@ -25,12 +25,12 @@
       "total_eth": 161.106677
     },
     "0.01-0.1 ETH": {
-      "count": 2069,
-      "total_eth": 80.875529
+      "count": 2068,
+      "total_eth": 80.808254
     },
     "<0.01 ETH": {
-      "count": 3875,
-      "total_eth": 7.786069
+      "count": 3873,
+      "total_eth": 7.778549
     }
   },
   "meta": {
@@ -6938,9 +6938,10 @@
     },
     {
       "address": "0xfef1f1e87818593485f18d20bf7af4f8aaf75628",
-      "balance_wei": "67274916908934320",
-      "balance_eth": 0.06727491690893432,
-      "rank": 1150
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 1150,
+      "claimed": true
     },
     {
       "address": "0x048a20df35a2d23d108aeeeddbbe36e5bf933f26",
@@ -18923,9 +18924,10 @@
     },
     {
       "address": "0x208efde0a5ed5cae7adce05e850bb7b1c67573c1",
-      "balance_wei": "7411623003348496",
-      "balance_eth": 0.007411623003348496,
-      "rank": 3149
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 3149,
+      "claimed": true
     },
     {
       "address": "0xb1707b1c3272cbd0b1850aa524e09978eb5ebd51",
@@ -35787,9 +35789,10 @@
     },
     {
       "address": "0xc93c7f71581dfeaab59bed908888dac5689f312a",
-      "balance_wei": "107748232301205",
-      "balance_eth": 0.000107748232301205,
-      "rank": 5961
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 5961,
+      "claimed": true
     },
     {
       "address": "0x2a164471ae4375dbb54826a84bcfd05892e36b4b",
@@ -40646,5 +40649,5 @@
       "rank": 6770
     }
   ],
-  "last_event_refresh": "2026-06-23 04:49:33 UTC"
+  "last_event_refresh": "2026-06-24 16:48:51 UTC"
 }

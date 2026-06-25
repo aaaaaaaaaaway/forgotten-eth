@@ -440,21 +440,130 @@ function showDonationCardDelayed() {
 var _donationModalShown = false;
 var _donationModalSuppressed = false;
 var _lastClaimTxHash = null; // Track last claim tx for donation modal link
+var DONATION_PENDING_CLAIMS_KEY = 'forgotten_eth_pending_donation_claims_v1';
+var DONATION_SHOWN_CLAIMS_KEY = 'forgotten_eth_shown_donation_claims_v1';
 
-function showDonationModal(totalEth, protocolKey) {
+function getDonationClaimList(storageKey) {
+  try {
+    var raw = localStorage.getItem(storageKey);
+    var parsed = raw ? JSON.parse(raw) : [];
+    return Array.isArray(parsed) ? parsed : [];
+  } catch(e) { return []; }
+}
+
+function setDonationClaimList(storageKey, list) {
+  try { localStorage.setItem(storageKey, JSON.stringify(list.slice(-50))); } catch(e) {}
+}
+
+function donationClaimKey(txHash, protocolKey) {
+  return String(protocolKey || '') + ':' + String(txHash || '').toLowerCase();
+}
+
+function hasShownDonationForClaim(txHash, protocolKey) {
+  if (!txHash) return false;
+  var key = donationClaimKey(txHash, protocolKey);
+  return getDonationClaimList(DONATION_SHOWN_CLAIMS_KEY).indexOf(key) !== -1;
+}
+
+function markDonationShownForClaim(txHash, protocolKey) {
+  if (!txHash) return;
+  var key = donationClaimKey(txHash, protocolKey);
+  var shown = getDonationClaimList(DONATION_SHOWN_CLAIMS_KEY);
+  if (shown.indexOf(key) === -1) {
+    shown.push(key);
+    setDonationClaimList(DONATION_SHOWN_CLAIMS_KEY, shown);
+  }
+}
+
+function removePendingDonationClaim(txHash, protocolKey) {
+  if (!txHash) return;
+  var key = donationClaimKey(txHash, protocolKey);
+  var pending = getDonationClaimList(DONATION_PENDING_CLAIMS_KEY).filter(function(c) {
+    return donationClaimKey(c && c.tx_hash, c && c.protocol) !== key;
+  });
+  setDonationClaimList(DONATION_PENDING_CLAIMS_KEY, pending);
+}
+
+function rememberPendingDonationClaim(claim) {
+  if (!claim || !claim.tx_hash) return;
+  var key = donationClaimKey(claim.tx_hash, claim.protocol);
+  var pending = getDonationClaimList(DONATION_PENDING_CLAIMS_KEY).filter(function(c) {
+    return donationClaimKey(c && c.tx_hash, c && c.protocol) !== key;
+  });
+  pending.push({
+    tx_hash: claim.tx_hash,
+    protocol: claim.protocol || '',
+    address: (claim.address || '').toLowerCase(),
+    amount_eth: Number(claim.amount_eth) || 0,
+    created_at: Date.now(),
+  });
+  setDonationClaimList(DONATION_PENDING_CLAIMS_KEY, pending);
+}
+
+async function showPendingDonationModalsForWallet() {
+  if (!walletAddress) return;
+  var lower = walletAddress.toLowerCase();
+  var pending = getDonationClaimList(DONATION_PENDING_CLAIMS_KEY);
+  if (!pending.length) return;
+  var provider = walletProvider || getPublicProvider();
+  var kept = [];
+  for (var i = 0; i < pending.length; i++) {
+    var claim = pending[i] || {};
+    if (!claim.tx_hash || (claim.address || '').toLowerCase() !== lower) {
+      kept.push(claim);
+      continue;
+    }
+    if (hasShownDonationForClaim(claim.tx_hash, claim.protocol)) continue;
+    if ((Number(claim.amount_eth) || 0) < 0.1) continue;
+    try {
+      var receipt = await provider.getTransactionReceipt(claim.tx_hash);
+      if (!receipt || receipt.status !== 1) {
+        kept.push(claim);
+        continue;
+      }
+      showDonationModal(Number(claim.amount_eth), claim.protocol, {
+        txHash: claim.tx_hash,
+        address: claim.address,
+        recoveredFromPending: true,
+      });
+      continue;
+    } catch(e) {
+      console.warn('[Donation] pending claim receipt check failed:', e && e.message ? e.message : e);
+      kept.push(claim);
+    }
+  }
+  setDonationClaimList(DONATION_PENDING_CLAIMS_KEY, kept);
+}
+
+function showDonationModal(totalEth, protocolKey, opts) {
+  opts = opts || {};
   // protocolKey is optional — when present, look up balance_source so a
   // WETH-payout claim opens the modal in WETH-donation mode (transfer the
   // WETH9 ERC-20 the user just received, rather than asking for native ETH
   // they probably don't have).
+  if (opts.txHash && hasShownDonationForClaim(opts.txHash, protocolKey)) {
+    logEvent('found', { address: opts.address || walletAddress, contract: protocolKey, tx_hash: opts.txHash, extra: { donation_modal: 'skipped_claim_already_shown', eth: totalEth } });
+    removePendingDonationClaim(opts.txHash, protocolKey);
+    return;
+  }
   _lastClaimWasWETH = !!(protocolKey && EXCHANGES[protocolKey] && EXCHANGES[protocolKey].balance_source === 'weth');
   var assetLabel = _lastClaimWasWETH ? 'WETH' : 'ETH';
   console.log('[Donation] showDonationModal called:', totalEth, assetLabel, '| shown:', _donationModalShown, '| suppressed:', _donationModalSuppressed);
-  if (_donationModalShown) { logEvent('found', { extra: { donation_modal: 'skipped_already_shown', eth: totalEth } }); return; }
-  if (_donationModalSuppressed) { logEvent('found', { extra: { donation_modal: 'skipped_suppressed', eth: totalEth } }); return; }
-  if (totalEth < 0.1) { console.log('[Donation] Below threshold:', totalEth); return; }
+  if (_donationModalShown) { logEvent('found', { address: opts.address || walletAddress, contract: protocolKey, tx_hash: opts.txHash, extra: { donation_modal: 'skipped_already_shown', eth: totalEth } }); return; }
+  if (_donationModalSuppressed) { logEvent('found', { address: opts.address || walletAddress, contract: protocolKey, tx_hash: opts.txHash, extra: { donation_modal: 'skipped_suppressed', eth: totalEth } }); return; }
+  if (totalEth < 0.1) {
+    console.log('[Donation] Below threshold:', totalEth);
+    if (opts.txHash) removePendingDonationClaim(opts.txHash, protocolKey);
+    return;
+  }
   _donationModalShown = true;
+  if (opts.txHash) {
+    _lastClaimTxHash = opts.txHash;
+    markDonationShownForClaim(opts.txHash, protocolKey);
+    removePendingDonationClaim(opts.txHash, protocolKey);
+  }
   console.log('[Donation] Showing modal for', totalEth, 'ETH');
-  logEvent('found', { extra: { donation_modal: 'shown', eth: totalEth } });
+  logEvent('found', { address: opts.address || walletAddress, contract: protocolKey, tx_hash: opts.txHash, extra: { donation_modal: 'shown', eth: totalEth, recovered_from_pending: !!opts.recoveredFromPending } });
 
   // Try to find the last claim tx hash from the most recently rendered Etherscan link
   if (!_lastClaimTxHash) {
@@ -5180,6 +5289,7 @@ async function connectWallet() {
     }
 
     try { await checkNetwork(); } catch(e) { console.warn('Network check failed:', e); }
+    try { await showPendingDonationModalsForWallet(); } catch(e) { console.warn('Pending donation modal check failed:', e); }
 
     // If user already did a manual check for this same address, just enable withdraw buttons
     // instead of re-scanning (avoids flicker of results disappearing and reappearing)
@@ -7233,10 +7343,16 @@ async function claimETH(key) {
       statusEl.textContent = 'Prerequisite confirmed. Confirm refund in wallet...';
     }
 
+    const claimedEthNum = parseFloat(ethAmount);
     tx = await contract[cfg.withdrawCall](...args);
+    rememberPendingDonationClaim({
+      tx_hash: tx.hash,
+      protocol: key,
+      address: walletAddress,
+      amount_eth: claimedEthNum,
+    });
 
     btn.textContent = 'Pending...';
-    const claimedEthNum = parseFloat(ethAmount);
     const claimUsd = _ethPrice ? ' (' + fmtUsd(claimedEthNum * _ethPrice) + ')' : '';
     statusEl.innerHTML = `<div style="padding:12px 16px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);margin-top:8px">
       <div style="font-size:12px;color:var(--text2);margin-bottom:4px">Transaction submitted — waiting for confirmation...</div>
@@ -7259,7 +7375,7 @@ async function claimETH(key) {
         <div class="claim-recovered-amount">${fmtEth(ethAmount)} ETH${claimUsd}</div>
         <div class="claim-recovered-tx"><a href="${etherscanTx(tx.hash)}" target="_blank" rel="noopener noreferrer">View transaction on Etherscan</a></div>
       </div>`;
-    showDonationModal(claimedEthNum, key);
+    showDonationModal(claimedEthNum, key, { txHash: tx.hash, address: walletAddress });
     userBalances[key] = 0n;
   } catch (e) {
     if (e.code === 'ACTION_REJECTED' || e.code === 4001) {

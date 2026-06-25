@@ -1,29 +1,49 @@
 {
   "contract": "0x587a07ce5c265a38dd6d42def1566ba73eeb06f5",
-  "contract_eth_balance": 136.734884,
-  "total_eth_in_balances": 136.734884,
-  "addresses_with_balance": 70,
-  "coverage_pct": 100.0,
+  "contract_eth_balance": 136.385884,
+  "total_eth_in_balances": 136.385885,
+  "addresses_with_balance": 64,
+  "coverage_pct": 100,
   "scan_date": "2026-04-10 22:45:52 UTC",
   "balance_source": "weth",
   "description": "Yam Finance v1 launched in August 2020 as one of the first DeFi Summer yield farms. Users staked WETH to earn YAM tokens. The v1 contract had a rebase bug and the project migrated to v2/v3, abandoning this pool. All staked WETH remains fully withdrawable via exit().",
   "distribution": {
-    "1_plus": 8,
-    "0.1_to_1": 23,
-    "0.01_to_0.1": 16,
-    "under_0.01": 23
+    ">=100 ETH": {
+      "count": 1,
+      "total_eth": 105
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "1-10 ETH": {
+      "count": 7,
+      "total_eth": 22.848793
+    },
+    "0.1-1 ETH": {
+      "count": 22,
+      "total_eth": 7.563574
+    },
+    "0.01-0.1 ETH": {
+      "count": 16,
+      "total_eth": 0.933057
+    },
+    "<0.01 ETH": {
+      "count": 18,
+      "total_eth": 0.040461
+    }
   },
   "balances": [
     {
       "address": "0xde1a2d5842b923cd4bb25a2125e055c748b9fe5a",
       "balance_wei": "105000000000000000000",
-      "balance_eth": 105.0,
+      "balance_eth": 105,
       "rank": 1
     },
     {
       "address": "0x9544ade6a50f4c945de0fc267aefcedcd9ba702d",
       "balance_wei": "5000000000000000000",
-      "balance_eth": 5.0,
+      "balance_eth": 5,
       "rank": 2
     },
     {
@@ -41,7 +61,7 @@
     {
       "address": "0x7723000de847d13856aa46993e6d1d499d13af1b",
       "balance_wei": "4000000000000000000",
-      "balance_eth": 4.0,
+      "balance_eth": 4,
       "rank": 5
     },
     {
@@ -59,7 +79,7 @@
     {
       "address": "0x8bac049f6d328c2fc1d5db5ce54177e587bc2bd2",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0,
+      "balance_eth": 1,
       "rank": 8
     },
     {
@@ -118,9 +138,10 @@
     },
     {
       "address": "0xbb2a4c99c4b5cff598192c2bdbbc25a7fbe69d47",
-      "balance_wei": "349000000000000000",
-      "balance_eth": 0.349,
-      "rank": 18
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 18,
+      "claimed": true
     },
     {
       "address": "0x068994fdc513f4c61dea5d52602c823bf5301fa3",
@@ -365,74 +386,75 @@
     {
       "address": "0xfbc2280f60f0e94e6878c4235b1d2068b6027343",
       "balance_wei": "37748402175494",
-      "balance_eth": 3.8e-05,
+      "balance_eth": 0.000038,
       "rank": 59
     },
     {
       "address": "0x48273f90d9b8449fe51709b1e8fb0cbccb2b7390",
       "balance_wei": "29693136425695",
-      "balance_eth": 3e-05,
+      "balance_eth": 0.00003,
       "rank": 60
     },
     {
       "address": "0xcbaad9439ca4a7d844364a0e13445b0abab330bd",
       "balance_wei": "20295230275121",
-      "balance_eth": 2e-05,
+      "balance_eth": 0.00002,
       "rank": 61
     },
     {
       "address": "0x44dc4d4b6407153db47758a48a9a233020cfa1e3",
       "balance_wei": "14792875258011",
-      "balance_eth": 1.5e-05,
+      "balance_eth": 0.000015,
       "rank": 62
     },
     {
       "address": "0x915b1ac9c5a3e258f8218708d2c9d34a271bfa40",
       "balance_wei": "5400000000000",
-      "balance_eth": 5e-06,
+      "balance_eth": 0.000005,
       "rank": 63
     },
     {
       "address": "0x04967d2f304dbc23de1d15a18be1baa39825ca75",
       "balance_wei": "1149674338852",
-      "balance_eth": 1e-06,
+      "balance_eth": 0.000001,
       "rank": 64
     },
     {
       "address": "0x26ef94107340b3dd545df05178efbe02ab5a09b1",
       "balance_wei": "517389809046",
-      "balance_eth": 1e-06,
+      "balance_eth": 0.000001,
       "rank": 65
     },
     {
       "address": "0xfed3f1b81b8e88a9081227315a5fb7443124b81f",
       "balance_wei": "82026100920",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "rank": 66
     },
     {
       "address": "0xd3047d1e3d46dd3cd14598386aba2a5448009158",
       "balance_wei": "46189809046",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "rank": 67
     },
     {
       "address": "0xa90b689a97e0d65ebe2bef1f8758f237212dedc6",
       "balance_wei": "40189809046",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "rank": 68
     },
     {
       "address": "0x614865dd676f0dfaa3f5ea4b84a1b3953fd290d1",
       "balance_wei": "37597860723",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "rank": 69
     },
     {
       "address": "0x573f1b9ccbffa8db63ef32f40f3e04b97cdfb850",
       "balance_wei": "12147826707",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "rank": 70
     }
-  ]
+  ],
+  "last_event_refresh": "2026-06-25 02:23:05 UTC"
 }

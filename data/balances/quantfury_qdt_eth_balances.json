@@ -1,10 +1,10 @@
 {
   "contract": "0xd18475521245a127a933a4fcaf99e8c45a416f7e",
   "balance_source": "token",
-  "contract_eth_balance": 454.553792,
-  "total_eth_in_balances": 443.19247,
-  "addresses_with_balance": 965,
-  "coverage_pct": 97.5,
+  "contract_eth_balance": 454.465222,
+  "total_eth_in_balances": 443.15439,
+  "addresses_with_balance": 964,
+  "coverage_pct": 97.51,
   "scan_date": "2026-05-02 14:51:01 UTC",
   "description": "QDT holders can call sellTokens(tokenAmount) to redeem ETH from the payout pool.",
   "meta": {
@@ -2146,10 +2146,11 @@
     },
     {
       "address": "0x34abcfc59493509fb7079978456e32131a2ef3ae",
-      "balance_wei": "38079872976409172",
-      "balance_eth": 0.03807987297640917,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "token_balance_wei": "7481249266",
-      "rank": 329
+      "rank": 329,
+      "claimed": true
     },
     {
       "address": "0xa96f386827ff97c668bea747b15dcfeb7254c0dc",
@@ -6780,5 +6781,5 @@
       "rank": 1028
     }
   ],
-  "last_event_refresh": "2026-06-20 01:54:48 UTC"
+  "last_event_refresh": "2026-06-25 00:23:04 UTC"
 }

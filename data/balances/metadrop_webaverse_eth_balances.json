@@ -1,28 +1,36 @@
 {
   "contract": "0x1ecb59aecf1fc5da695242c6e78c2007e775d40f",
   "balance_source": "eth",
-  "contract_eth_balance": 109.1,
-  "total_eth_in_balances": 109.1,
-  "addresses_with_balance": 84,
-  "coverage_pct": 100.0,
+  "contract_eth_balance": 108.85,
+  "total_eth_in_balances": 108.85,
+  "addresses_with_balance": 83,
+  "coverage_pct": 100,
   "scan_date": "2026-06-15 16:25:16 UTC",
   "description": "Webaverse NFT Metadrop sealed-bid auction. Unclaimed bidder refunds.",
   "distribution": {
-    "10+ ETH": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
       "count": 2,
-      "total_eth": 55.0
+      "total_eth": 55
     },
     "1-10 ETH": {
       "count": 13,
-      "total_eth": 32.699999999999996
+      "total_eth": 32.7
     },
     "0.1-1 ETH": {
-      "count": 59,
-      "total_eth": 20.900000000000016
+      "count": 58,
+      "total_eth": 20.65
     },
     "0.01-0.1 ETH": {
       "count": 10,
-      "total_eth": 0.49999999999999994
+      "total_eth": 0.5
+    },
+    "<0.01 ETH": {
+      "count": 0,
+      "total_eth": 0
     }
   },
   "meta": {
@@ -79,7 +87,7 @@
     {
       "address": "0x4d470e0a241c3d7321b4b6c6f23f214db85bfa47",
       "balance_wei": "5000000000000000000",
-      "balance_eth": 5.0,
+      "balance_eth": 5,
       "merkle_proof": [
         "0x3b8c14048ce03237ab78e9f185ec65ba85a014c1eb2417797d7e8326d173a5db",
         "0xe39b3adaf458d96d99f849c38ff1b696868938a55a3417d566c9357962543aa0",
@@ -99,7 +107,7 @@
     {
       "address": "0xeae448e1537aa3c6b2a37e2ab26bba7ca2de9436",
       "balance_wei": "5000000000000000000",
-      "balance_eth": 5.0,
+      "balance_eth": 5,
       "merkle_proof": [
         "0x782278c6c3e8f8b5a653704c4884b5f644d8b9222418f7fdffa2f182550e1e16",
         "0xd651892369b18c7a2a790fa9c58ac70857a05e1292bb6c6a8214915176a83886",
@@ -119,7 +127,7 @@
     {
       "address": "0x408dbfa9354c1e03ccaad96ff2b4401db7aa9919",
       "balance_wei": "4000000000000000000",
-      "balance_eth": 4.0,
+      "balance_eth": 4,
       "merkle_proof": [
         "0xa5d91e27e4656ab9aa6528de86d03ab6155441c52c6a94791ef6675c392bcd63",
         "0xd5b31d26b7fc8735615cb76117d614f4141ca2a4102fd4da92fac593fbe35897",
@@ -139,7 +147,7 @@
     {
       "address": "0x1ff2875cd548eeae6d22f26bae2d72a50fd143c7",
       "balance_wei": "3000000000000000000",
-      "balance_eth": 3.0,
+      "balance_eth": 3,
       "merkle_proof": [
         "0x3f01765af4b230a9a6a7bf77ad53df2f43459cc3613feade8175d51ede2e531a",
         "0x9d8e0976564930ce988fe1cae283d0ac227e9ea47dd91629920a2aad463764d5",
@@ -159,7 +167,7 @@
     {
       "address": "0xa98391a65a1c1edfe0ca4dc01ac91dfe67aaf744",
       "balance_wei": "3000000000000000000",
-      "balance_eth": 3.0,
+      "balance_eth": 3,
       "merkle_proof": [
         "0xe4beebc4d0ed3a5ce49fc0f266c6bb2c79b155fee4a9590f6f7b6d812b2ba7aa",
         "0x52ce7e7aa92d41c1f18adfab35e0af63d9aca93238ae860e88255585075d332c",
@@ -1107,8 +1115,8 @@
     },
     {
       "address": "0xc93c7f71581dfeaab59bed908888dac5689f312a",
-      "balance_wei": "250000000000000000",
-      "balance_eth": 0.25,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "merkle_proof": [
         "0x8d16aa9621ae4a9967aa976d6597ecafe1d3ae1461dbeb8040831889617f8dfc",
         "0x0a2c899d20480ac4a9b41c77ec59f13906d6935a0bb6c41ead259d40aa59d7e9",
@@ -1123,7 +1131,8 @@
         "0x5fa70437d709c18bfa593fbcaaf7e24e8179fac5ac402a60b0cb958cfe84470c",
         "0x31da3672e2f1101a66967571ddbad8586e2f093ec84438db0de30bb51be45f75"
       ],
-      "rank": 55
+      "rank": 55,
+      "claimed": true
     },
     {
       "address": "0xf68c8baec45b250869576edb5e16bae95e8e9e16",
@@ -1684,5 +1693,6 @@
       ],
       "rank": 84
     }
-  ]
+  ],
+  "last_event_refresh": "2026-06-24 16:48:51 UTC"
 }

@@ -1,18 +1,36 @@
 {
   "contract": "0xa4B86BcbB18639D8e708d6163a0c734aFcDB770c",
   "balance_source": "token",
-  "contract_eth_balance": 100.661738,
-  "total_eth_in_balances": 48.49407756,
-  "addresses_with_balance": 177,
-  "coverage_pct": 48.18,
+  "contract_eth_balance": 100.647194,
+  "total_eth_in_balances": 48.479533,
+  "addresses_with_balance": 176,
+  "coverage_pct": 48.17,
   "scan_date": "2026-06-18 15:27:42 UTC",
   "distribution": {
-    ">=100": 0,
-    "10-100": 2,
-    "1-10": 5,
-    "0.1-1": 31,
-    "0.01-0.1": 54,
-    "<0.01": 487
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 2,
+      "total_eth": 22.639
+    },
+    "1-10 ETH": {
+      "count": 5,
+      "total_eth": 12.478982
+    },
+    "0.1-1 ETH": {
+      "count": 31,
+      "total_eth": 11.233459
+    },
+    "0.01-0.1 ETH": {
+      "count": 53,
+      "total_eth": 1.838716
+    },
+    "<0.01 ETH": {
+      "count": 85,
+      "total_eth": 0.289378
+    }
   },
   "isMultiAssetNft": true,
   "affectedAssets": [
@@ -1792,51 +1810,11 @@
     },
     {
       "address": "0xbd1f7d88c76a86c60d41bddd4819fae404e7151e",
-      "balance_eth": 0.01454421,
-      "balance_wei": "14544207607456021",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "allowlisted": true,
-      "nft_details": [
-        {
-          "nft_id": 1174,
-          "asset_address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-          "asset_symbol": "WETH",
-          "decimals": 18,
-          "amount": 0.014544207607456021,
-          "amount_wei": 14544207607456020
-        },
-        {
-          "nft_id": 1175,
-          "asset_address": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
-          "asset_symbol": "WBTC",
-          "decimals": 8,
-          "amount": 0.00335526,
-          "amount_wei": 335526
-        },
-        {
-          "nft_id": 1176,
-          "asset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "asset_symbol": "USDC",
-          "decimals": 6,
-          "amount": 97.378602,
-          "amount_wei": 97378602
-        },
-        {
-          "nft_id": 1177,
-          "asset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
-          "asset_symbol": "USDT",
-          "decimals": 6,
-          "amount": 160.051426,
-          "amount_wei": 160051426
-        },
-        {
-          "nft_id": 1178,
-          "asset_address": "0x6b175474e89094c44da98b954eedeac495271d0f",
-          "asset_symbol": "DAI",
-          "decimals": 18,
-          "amount": 57.0697970638758,
-          "amount_wei": 57069797063875800000
-        }
-      ]
+      "nft_details": [],
+      "claimed": true
     },
     {
       "address": "0x4e5b3d4c8fd4d35c493b7d64af0f04d1d2ed2122",
@@ -5509,16 +5487,8 @@
       "balance_eth": 0,
       "balance_wei": "0",
       "allowlisted": true,
-      "nft_details": [
-        {
-          "nft_id": 1026,
-          "asset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
-          "asset_symbol": "USDT",
-          "decimals": 6,
-          "amount": 12.41056,
-          "amount_wei": 12410560
-        }
-      ]
+      "nft_details": [],
+      "claimed": true
     },
     {
       "address": "0x400fe5b0afc58f0fda15bf409791e5876c8780cc",
@@ -11171,5 +11141,6 @@
       ],
       "claimed": true
     }
-  ]
+  ],
+  "last_event_refresh": "2026-06-24 04:48:33 UTC"
 }
