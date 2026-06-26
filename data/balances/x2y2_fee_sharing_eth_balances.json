@@ -1,9 +1,9 @@
 {
   "contract": "0xc8c3cc5be962b6d281e4a53dbcce1359f76a1b85",
   "balance_source": "token",
-  "contract_eth_balance": 320.213014,
-  "total_eth_in_balances": 320.181865,
-  "addresses_with_balance": 6755,
+  "contract_eth_balance": 320.20739,
+  "total_eth_in_balances": 320.17624,
+  "addresses_with_balance": 6754,
   "coverage_pct": 99.99,
   "scan_date": "2026-06-15 16:20:33 UTC",
   "description": "Pending WETH rewards in X2Y2 Fee Sharing staking contract",
@@ -29,8 +29,8 @@
       "total_eth": 80.808254
     },
     "<0.01 ETH": {
-      "count": 3873,
-      "total_eth": 7.778549
+      "count": 3872,
+      "total_eth": 7.772925
     }
   },
   "meta": {
@@ -20281,9 +20281,10 @@
     },
     {
       "address": "0xbf5aa87878c968c9d062f51cabd04b66023c8e36",
-      "balance_wei": "5624146818610642",
-      "balance_eth": 0.005624146818610642,
-      "rank": 3375
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 3375,
+      "claimed": true
     },
     {
       "address": "0x2970ba68a74e8dc1df75d924643180a03222cb45",
@@ -40649,5 +40650,5 @@
       "rank": 6770
     }
   ],
-  "last_event_refresh": "2026-06-24 16:48:51 UTC"
+  "last_event_refresh": "2026-06-25 20:23:05 UTC"
 }
