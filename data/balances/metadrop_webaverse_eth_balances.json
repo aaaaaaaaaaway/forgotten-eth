@@ -4,33 +4,25 @@
   "contract_eth_balance": 108.85,
   "total_eth_in_balances": 108.85,
   "addresses_with_balance": 83,
-  "coverage_pct": 100,
-  "scan_date": "2026-06-15 16:25:16 UTC",
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-28 10:53:09 UTC",
   "description": "Webaverse NFT Metadrop sealed-bid auction. Unclaimed bidder refunds.",
   "distribution": {
-    ">=100 ETH": {
-      "count": 0,
-      "total_eth": 0
-    },
-    "10-100 ETH": {
+    "10+ ETH": {
       "count": 2,
-      "total_eth": 55
+      "total_eth": 55.0
     },
     "1-10 ETH": {
       "count": 13,
-      "total_eth": 32.7
+      "total_eth": 32.699999999999996
     },
     "0.1-1 ETH": {
       "count": 58,
-      "total_eth": 20.65
+      "total_eth": 20.650000000000016
     },
     "0.01-0.1 ETH": {
       "count": 10,
-      "total_eth": 0.5
-    },
-    "<0.01 ETH": {
-      "count": 0,
-      "total_eth": 0
+      "total_eth": 0.49999999999999994
     }
   },
   "meta": {
@@ -40,8 +32,8 @@
     "number_of_auctions": 1,
     "floor_price_wei": "450000000000000000",
     "total_bidders": 2964,
-    "claimed_count": 2880,
-    "unclaimed_count": 84
+    "claimed_count": 2881,
+    "unclaimed_count": 83
   },
   "balances": [
     {
@@ -87,7 +79,7 @@
     {
       "address": "0x4d470e0a241c3d7321b4b6c6f23f214db85bfa47",
       "balance_wei": "5000000000000000000",
-      "balance_eth": 5,
+      "balance_eth": 5.0,
       "merkle_proof": [
         "0x3b8c14048ce03237ab78e9f185ec65ba85a014c1eb2417797d7e8326d173a5db",
         "0xe39b3adaf458d96d99f849c38ff1b696868938a55a3417d566c9357962543aa0",
@@ -107,7 +99,7 @@
     {
       "address": "0xeae448e1537aa3c6b2a37e2ab26bba7ca2de9436",
       "balance_wei": "5000000000000000000",
-      "balance_eth": 5,
+      "balance_eth": 5.0,
       "merkle_proof": [
         "0x782278c6c3e8f8b5a653704c4884b5f644d8b9222418f7fdffa2f182550e1e16",
         "0xd651892369b18c7a2a790fa9c58ac70857a05e1292bb6c6a8214915176a83886",
@@ -127,7 +119,7 @@
     {
       "address": "0x408dbfa9354c1e03ccaad96ff2b4401db7aa9919",
       "balance_wei": "4000000000000000000",
-      "balance_eth": 4,
+      "balance_eth": 4.0,
       "merkle_proof": [
         "0xa5d91e27e4656ab9aa6528de86d03ab6155441c52c6a94791ef6675c392bcd63",
         "0xd5b31d26b7fc8735615cb76117d614f4141ca2a4102fd4da92fac593fbe35897",
@@ -147,7 +139,7 @@
     {
       "address": "0x1ff2875cd548eeae6d22f26bae2d72a50fd143c7",
       "balance_wei": "3000000000000000000",
-      "balance_eth": 3,
+      "balance_eth": 3.0,
       "merkle_proof": [
         "0x3f01765af4b230a9a6a7bf77ad53df2f43459cc3613feade8175d51ede2e531a",
         "0x9d8e0976564930ce988fe1cae283d0ac227e9ea47dd91629920a2aad463764d5",
@@ -167,7 +159,7 @@
     {
       "address": "0xa98391a65a1c1edfe0ca4dc01ac91dfe67aaf744",
       "balance_wei": "3000000000000000000",
-      "balance_eth": 3,
+      "balance_eth": 3.0,
       "merkle_proof": [
         "0xe4beebc4d0ed3a5ce49fc0f266c6bb2c79b155fee4a9590f6f7b6d812b2ba7aa",
         "0x52ce7e7aa92d41c1f18adfab35e0af63d9aca93238ae860e88255585075d332c",
@@ -1114,27 +1106,6 @@
       "rank": 54
     },
     {
-      "address": "0xc93c7f71581dfeaab59bed908888dac5689f312a",
-      "balance_wei": "0",
-      "balance_eth": 0,
-      "merkle_proof": [
-        "0x8d16aa9621ae4a9967aa976d6597ecafe1d3ae1461dbeb8040831889617f8dfc",
-        "0x0a2c899d20480ac4a9b41c77ec59f13906d6935a0bb6c41ead259d40aa59d7e9",
-        "0x952f149595678e184637436e123fe23f8855eb982cf343bcfc9f5163e87344fc",
-        "0x0f5bca03ab22c579b81b3a8e4bcbcb91e36e9af719ecfd04dfd63f3f921c0112",
-        "0x138ac5f8a7196c38274cb442540bfbe7eed56d6b135a487d59119b068b656d88",
-        "0xb13c8fd50b0255a56f9afb57310740f72efb14114b99732d2c3264e6752e488a",
-        "0x693b74e5fa533b35379a94c52b12cc4ad0d316b54485c530329975a1119d718e",
-        "0x55e9f565d1d1f396bd3fa11408e12da8768f106f25d845ee30564237afc654f2",
-        "0xb1ad9123abd51ec73bd520c050e60dbf53a69dd6e0c3ea6733cd0c7d464019c1",
-        "0x411e470c17a06433280cd82cdadb4f67e2421d801995c823530bec550f139052",
-        "0x5fa70437d709c18bfa593fbcaaf7e24e8179fac5ac402a60b0cb958cfe84470c",
-        "0x31da3672e2f1101a66967571ddbad8586e2f093ec84438db0de30bb51be45f75"
-      ],
-      "rank": 55,
-      "claimed": true
-    },
-    {
       "address": "0xf68c8baec45b250869576edb5e16bae95e8e9e16",
       "balance_wei": "250000000000000000",
       "balance_eth": 0.25,
@@ -1152,7 +1123,7 @@
         "0x5fa70437d709c18bfa593fbcaaf7e24e8179fac5ac402a60b0cb958cfe84470c",
         "0x31da3672e2f1101a66967571ddbad8586e2f093ec84438db0de30bb51be45f75"
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "address": "0x0aa0c3ac0151c42537fdb3cb6a2f37b9251a6c6c",
@@ -1172,7 +1143,7 @@
         "0x5fa70437d709c18bfa593fbcaaf7e24e8179fac5ac402a60b0cb958cfe84470c",
         "0x31da3672e2f1101a66967571ddbad8586e2f093ec84438db0de30bb51be45f75"
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "address": "0xe1ef94d55e32400804200e9026110d3a7880226f",
@@ -1191,7 +1162,7 @@
         "0x5eaa87b9c5034da3f37f47092e7f3a8d183d73edc6dae815d4de648ff288a444",
         "0x12435943c79f8078e4b4c75dd81c2d736172019c12d58240144dba03fa06ef2d"
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "address": "0xd736a9d02d60ea9e7de1f7532bb22fe0b20f3d34",
@@ -1210,7 +1181,7 @@
         "0x5eaa87b9c5034da3f37f47092e7f3a8d183d73edc6dae815d4de648ff288a444",
         "0x12435943c79f8078e4b4c75dd81c2d736172019c12d58240144dba03fa06ef2d"
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "address": "0x5759dc3c450d55751a5804bfeb9c6a72080c2f8b",
@@ -1229,7 +1200,7 @@
         "0x5eaa87b9c5034da3f37f47092e7f3a8d183d73edc6dae815d4de648ff288a444",
         "0x12435943c79f8078e4b4c75dd81c2d736172019c12d58240144dba03fa06ef2d"
       ],
-      "rank": 60
+      "rank": 59
     },
     {
       "address": "0xc1921b07527832e7453b6fd465ea664723cfee32",
@@ -1248,7 +1219,7 @@
         "0x5eaa87b9c5034da3f37f47092e7f3a8d183d73edc6dae815d4de648ff288a444",
         "0x12435943c79f8078e4b4c75dd81c2d736172019c12d58240144dba03fa06ef2d"
       ],
-      "rank": 61
+      "rank": 60
     },
     {
       "address": "0x5d8d55ebfdf03d8e09e7c0b1b903a7f75614f2ef",
@@ -1265,7 +1236,7 @@
         "0x4b2311fa964b1a0b950deb89438106586c6fe50ad3a1bd86d33567f94fc2ddda",
         "0x12435943c79f8078e4b4c75dd81c2d736172019c12d58240144dba03fa06ef2d"
       ],
-      "rank": 62
+      "rank": 61
     },
     {
       "address": "0xf212ce21a97dbe30999a4c2b309d278bccbb686a",
@@ -1280,7 +1251,7 @@
         "0x4b2311fa964b1a0b950deb89438106586c6fe50ad3a1bd86d33567f94fc2ddda",
         "0x12435943c79f8078e4b4c75dd81c2d736172019c12d58240144dba03fa06ef2d"
       ],
-      "rank": 63
+      "rank": 62
     },
     {
       "address": "0x1d061660376755fb546f54243f8d521dae0b1c0d",
@@ -1300,7 +1271,7 @@
         "0x965c867193b760685a66a153b53264c8b7dbfd74f6f48b688de59a508e85ff47",
         "0x31da3672e2f1101a66967571ddbad8586e2f093ec84438db0de30bb51be45f75"
       ],
-      "rank": 64
+      "rank": 63
     },
     {
       "address": "0xd91ec22114897e5e68997f77a6182de3cb09ba9b",
@@ -1320,7 +1291,7 @@
         "0x965c867193b760685a66a153b53264c8b7dbfd74f6f48b688de59a508e85ff47",
         "0x31da3672e2f1101a66967571ddbad8586e2f093ec84438db0de30bb51be45f75"
       ],
-      "rank": 65
+      "rank": 64
     },
     {
       "address": "0x6a99dadc216a83adb0191c264a1774e82fd31aff",
@@ -1339,7 +1310,7 @@
         "0x5eaa87b9c5034da3f37f47092e7f3a8d183d73edc6dae815d4de648ff288a444",
         "0x12435943c79f8078e4b4c75dd81c2d736172019c12d58240144dba03fa06ef2d"
       ],
-      "rank": 66
+      "rank": 65
     },
     {
       "address": "0x1e01bc52d71f3eaf7591be67f364727e088fc120",
@@ -1359,7 +1330,7 @@
         "0x965c867193b760685a66a153b53264c8b7dbfd74f6f48b688de59a508e85ff47",
         "0x31da3672e2f1101a66967571ddbad8586e2f093ec84438db0de30bb51be45f75"
       ],
-      "rank": 67
+      "rank": 66
     },
     {
       "address": "0x1ff664da51ced0bb8356c6737815e2b970d6b9b8",
@@ -1379,7 +1350,7 @@
         "0x5fa70437d709c18bfa593fbcaaf7e24e8179fac5ac402a60b0cb958cfe84470c",
         "0x31da3672e2f1101a66967571ddbad8586e2f093ec84438db0de30bb51be45f75"
       ],
-      "rank": 68
+      "rank": 67
     },
     {
       "address": "0xfec33a90737254dcf9aa33188a11f32797197f93",
@@ -1399,7 +1370,7 @@
         "0x5fa70437d709c18bfa593fbcaaf7e24e8179fac5ac402a60b0cb958cfe84470c",
         "0x31da3672e2f1101a66967571ddbad8586e2f093ec84438db0de30bb51be45f75"
       ],
-      "rank": 69
+      "rank": 68
     },
     {
       "address": "0xc43e1eac3ca2df9e82c29cd40c8bc4472145762e",
@@ -1419,7 +1390,7 @@
         "0x5fa70437d709c18bfa593fbcaaf7e24e8179fac5ac402a60b0cb958cfe84470c",
         "0x31da3672e2f1101a66967571ddbad8586e2f093ec84438db0de30bb51be45f75"
       ],
-      "rank": 70
+      "rank": 69
     },
     {
       "address": "0x1be920ef263005d1ade89ee090782e80a2ec7a4f",
@@ -1438,7 +1409,7 @@
         "0x5eaa87b9c5034da3f37f47092e7f3a8d183d73edc6dae815d4de648ff288a444",
         "0x12435943c79f8078e4b4c75dd81c2d736172019c12d58240144dba03fa06ef2d"
       ],
-      "rank": 71
+      "rank": 70
     },
     {
       "address": "0x8fb9afdcc074599d86327b731f47ffa5375823a9",
@@ -1457,7 +1428,7 @@
         "0x5eaa87b9c5034da3f37f47092e7f3a8d183d73edc6dae815d4de648ff288a444",
         "0x12435943c79f8078e4b4c75dd81c2d736172019c12d58240144dba03fa06ef2d"
       ],
-      "rank": 72
+      "rank": 71
     },
     {
       "address": "0x317fdbf289a41435df30efcb00015f95b1eaddfe",
@@ -1476,7 +1447,7 @@
         "0x4b2311fa964b1a0b950deb89438106586c6fe50ad3a1bd86d33567f94fc2ddda",
         "0x12435943c79f8078e4b4c75dd81c2d736172019c12d58240144dba03fa06ef2d"
       ],
-      "rank": 73
+      "rank": 72
     },
     {
       "address": "0x1dc3109dea30ef4faf12b37ea0131f09150f2767",
@@ -1495,7 +1466,7 @@
         "0x4b2311fa964b1a0b950deb89438106586c6fe50ad3a1bd86d33567f94fc2ddda",
         "0x12435943c79f8078e4b4c75dd81c2d736172019c12d58240144dba03fa06ef2d"
       ],
-      "rank": 74
+      "rank": 73
     },
     {
       "address": "0xaff20a4f162125fe3dacb2c62c69e4a4ff8e784e",
@@ -1515,7 +1486,7 @@
         "0x965c867193b760685a66a153b53264c8b7dbfd74f6f48b688de59a508e85ff47",
         "0x31da3672e2f1101a66967571ddbad8586e2f093ec84438db0de30bb51be45f75"
       ],
-      "rank": 75
+      "rank": 74
     },
     {
       "address": "0x0e1a42bf438a6b5247f0ce2ed5ef8ddcf8c4a446",
@@ -1535,7 +1506,7 @@
         "0x965c867193b760685a66a153b53264c8b7dbfd74f6f48b688de59a508e85ff47",
         "0x31da3672e2f1101a66967571ddbad8586e2f093ec84438db0de30bb51be45f75"
       ],
-      "rank": 76
+      "rank": 75
     },
     {
       "address": "0x85293c4886b4448263a2ad3aa01740be3d7dd6cc",
@@ -1555,7 +1526,7 @@
         "0x965c867193b760685a66a153b53264c8b7dbfd74f6f48b688de59a508e85ff47",
         "0x31da3672e2f1101a66967571ddbad8586e2f093ec84438db0de30bb51be45f75"
       ],
-      "rank": 77
+      "rank": 76
     },
     {
       "address": "0x385a43f672561762045d0604334c555d6f3e90f0",
@@ -1575,7 +1546,7 @@
         "0x5fa70437d709c18bfa593fbcaaf7e24e8179fac5ac402a60b0cb958cfe84470c",
         "0x31da3672e2f1101a66967571ddbad8586e2f093ec84438db0de30bb51be45f75"
       ],
-      "rank": 78
+      "rank": 77
     },
     {
       "address": "0x8d346d2661ac0c224b8fb742228a9790aa8e6c10",
@@ -1595,7 +1566,7 @@
         "0x5fa70437d709c18bfa593fbcaaf7e24e8179fac5ac402a60b0cb958cfe84470c",
         "0x31da3672e2f1101a66967571ddbad8586e2f093ec84438db0de30bb51be45f75"
       ],
-      "rank": 79
+      "rank": 78
     },
     {
       "address": "0xb27696c8f4815ffca1ea6ab6fbb3a05ef1302367",
@@ -1615,7 +1586,7 @@
         "0x5fa70437d709c18bfa593fbcaaf7e24e8179fac5ac402a60b0cb958cfe84470c",
         "0x31da3672e2f1101a66967571ddbad8586e2f093ec84438db0de30bb51be45f75"
       ],
-      "rank": 80
+      "rank": 79
     },
     {
       "address": "0x7cc022cc1cf8b18bdc14b6863451751f2043c4b7",
@@ -1634,7 +1605,7 @@
         "0x5eaa87b9c5034da3f37f47092e7f3a8d183d73edc6dae815d4de648ff288a444",
         "0x12435943c79f8078e4b4c75dd81c2d736172019c12d58240144dba03fa06ef2d"
       ],
-      "rank": 81
+      "rank": 80
     },
     {
       "address": "0xe0fa7bf6827221a5275505d163a2989f6f0dfcfb",
@@ -1653,7 +1624,7 @@
         "0x5eaa87b9c5034da3f37f47092e7f3a8d183d73edc6dae815d4de648ff288a444",
         "0x12435943c79f8078e4b4c75dd81c2d736172019c12d58240144dba03fa06ef2d"
       ],
-      "rank": 82
+      "rank": 81
     },
     {
       "address": "0xeb4e24b0acc05f65c70b63db514691d54dd9b5ab",
@@ -1672,7 +1643,7 @@
         "0x4b2311fa964b1a0b950deb89438106586c6fe50ad3a1bd86d33567f94fc2ddda",
         "0x12435943c79f8078e4b4c75dd81c2d736172019c12d58240144dba03fa06ef2d"
       ],
-      "rank": 83
+      "rank": 82
     },
     {
       "address": "0x15dbd191b3e0a5d15353ee980038f368a3e4c5ba",
@@ -1691,8 +1662,7 @@
         "0x4b2311fa964b1a0b950deb89438106586c6fe50ad3a1bd86d33567f94fc2ddda",
         "0x12435943c79f8078e4b4c75dd81c2d736172019c12d58240144dba03fa06ef2d"
       ],
-      "rank": 84
+      "rank": 83
     }
-  ],
-  "last_event_refresh": "2026-06-24 16:48:51 UTC"
+  ]
 }
