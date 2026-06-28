@@ -28,8 +28,8 @@ export default async function handler(req, res) {
   xml += `  <url><loc>${base}/</loc><lastmod>${today}</lastmod><priority>1.0</priority></url>\n`;
 
   for (const [key, p] of Object.entries(info)) {
-    if (!p.slug || p.slug === 'undefined') continue;
-    xml += `  <url><loc>${base}/${p.slug}</loc><lastmod>${today}</lastmod><priority>0.7</priority></url>\n`;
+    const slug = (p.slug && p.slug !== 'undefined') ? p.slug : key.replace(/_/g, '-');
+    xml += `  <url><loc>${base}/${slug}</loc><lastmod>${today}</lastmod><priority>0.7</priority></url>\n`;
   }
 
   xml += '</urlset>';

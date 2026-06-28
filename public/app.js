@@ -7163,6 +7163,90 @@ async function checkUserBalances(overrideAddress) {
 
 }
 
+// ─────────────────────────────────────────────────────────────────────
+// EIP-7702 "Smart Account" detection for isHuman-gated contracts.
+//
+// The Fomo3D and PoWH3D/Hourglass families gate every withdraw behind
+//   require(extcodesize(msg.sender) == 0, "sorry humans only")
+// An EOA that has enabled MetaMask's "Smart Account" feature (or any other
+// EIP-7702 delegation) carries a 23-byte code stub (0xef0100 || impl), so
+// extcodesize > 0 and the withdraw reverts even for the rightful owner. The
+// remedy is to switch the account back to a standard EOA in the wallet,
+// which clears the delegation. We detect it and surface that remedy instead
+// of letting the user broadcast a doomed transaction.
+//
+// Source of truth for the gated set is the Hourglass/PlayerBook lineage in
+// data/_constants.py (POWH_FAMILY + FOMO3D_FAMILY); mirrored here, plus any
+// EXCHANGES entry whose description mentions the isHuman modifier.
+const ISHUMAN_KEYS = new Set([
+  // PoWH3D / Hourglass family
+  'powh3d', 'gandhiji', 'powm', 'pooh', 'powtf', 'lockedin', 'stronghold',
+  'p4d', 'unkoin', 'acedapp', 'cryptominertoken', 'bluechip', 'rev1', 'potj',
+  'lynia', 'blackgold', 'proofofcraiggrant', 'dailydivs', 'proofofcommunity',
+  'bitconnect_powh', 'eightherbank', 'nexgen', 'diamonddividend', 'e25',
+  'bitconnect2', 'ethplatinum', 'divsnetwork', 'redchip', 'cxxmain',
+  'familyonly', 'spw', 'ethdiamond', 'ethershares', 'twelvehour', 'neutrino81',
+  'hourglassx', 'fairexchange', 'pomda', 'decentether', 'bitconnect3',
+  'furious', 'etherdiamond', 'cryptosurge', 'upower', 'redchip2', 'omnidex',
+  'spw2', 'ethpyramid', 'powh_clone1', 'powh_clone2', 'powh_clone3',
+  'powh_clone4', 'zethr', 'zethr_main', 'hourglass_clone1', 'hourglass_clone2',
+  'hourglass_clone3', 'hourglass_clone4', 'hourglass_clone5', 'hourglass_clone6',
+  'hourglass_clone7',
+  // Fomo3D / PlayerBook family
+  'fomo3d_long', 'fomo3d_quick', 'fomo3d_short', 'fomo3d_lightning',
+  'lastwinner', 'readyplayerone', 'fomogame', 'fomo3d_short_v2',
+  'fomo3d_long_v2', 'fomojp', 'f3dplus', 'snowstorm_a', 'snowstorm_b', 'fomo',
+  'ld3d_official', 'bingo4beast_1', 'bingo4beast_2', 'fomo3d_ultra',
+]);
+
+function isHumanGated(key) {
+  if (ISHUMAN_KEYS.has(key)) return true;
+  const cfg = EXCHANGES[key];
+  return !!(cfg && cfg.desc && /isHuman/i.test(cfg.desc));
+}
+
+// Returns the delegate implementation address (string) if `addr` currently
+// has an EIP-7702 delegation active, else null. Never throws — a detection
+// failure must not block an otherwise-valid claim.
+async function getWalletDelegation(addr) {
+  try {
+    const provider = walletProvider || (walletSigner && walletSigner.provider);
+    if (!provider || !addr) return null;
+    const code = await provider.getCode(addr);
+    // EIP-7702 delegation indicator: 0xef0100 || 20-byte address (23 bytes
+    // → '0x' + 46 hex chars = 48-char string).
+    if (typeof code === 'string' && code.length === 48 && code.slice(0, 8).toLowerCase() === '0xef0100') {
+      return '0x' + code.slice(8);
+    }
+    return null;
+  } catch (e) {
+    return null;
+  }
+}
+
+function render7702Warning(statusEl, key, retryAction) {
+  if (!statusEl) return;
+  statusEl.innerHTML = '<div style="padding:12px 16px;background:var(--bg2);border:1px solid var(--yellow);border-radius:var(--radius);margin-top:8px">' +
+      '<div style="font-size:13px;font-weight:600;color:var(--yellow);margin-bottom:6px">⚠ Smart Account active — this contract rejects it</div>' +
+      '<div style="font-size:12px;color:var(--text2);line-height:1.55">' +
+        'Your wallet has an <strong>EIP-7702 Smart Account</strong> delegation active (e.g. MetaMask\'s Smart Account feature). This old contract only lets plain EOAs withdraw (an <code>isHuman</code> check), so the transaction would revert.<br><br>' +
+        '<strong>To withdraw:</strong> open your wallet → account menu → <strong>switch back to a standard account</strong> (turn off Smart Account), then retry. The check runs again automatically.' +
+      '</div>' +
+      '<div style="margin-top:10px"><button class="claim-btn" data-action="' + esc(retryAction) + '" data-key="' + esc(key) + '">Retry withdrawal</button></div>' +
+    '</div>';
+}
+
+// Detection + render. Returns true if the claim is blocked by a 7702
+// delegation (and the remedy has been shown); false to proceed normally.
+async function blockedBy7702(key, statusEl, retryAction) {
+  if (!isHumanGated(key)) return false;
+  const impl = await getWalletDelegation(walletAddress);
+  if (!impl) return false;
+  render7702Warning(statusEl, key, retryAction);
+  logEvent('claim_failed', { address: walletAddress, contract: key, extra: { reason: 'eip7702_delegation', impl: impl } });
+  return true;
+}
+
 async function claimETH(key) {
   const cfg = EXCHANGES[key];
   const btn = document.getElementById('claimBtn-' + key);
@@ -7248,6 +7332,17 @@ async function claimETH(key) {
       logEvent('claim_failed', { address: walletAddress, contract: key, extra: { reason: 'preflight_check_threw', err: (e.shortMessage || e.message || '?').slice(0, 100) } });
       return;
     }
+  }
+
+  // ── EIP-7702 / isHuman preflight ───────────────────────────────────
+  // Fomo3D + PoWH/Hourglass contracts gate withdraw behind
+  // require(extcodesize(msg.sender)==0). A wallet with an active EIP-7702
+  // delegation (MetaMask "Smart Account") has code, so the tx would revert.
+  // Detect it and show the remedy instead of broadcasting a doomed tx.
+  const _prevClaimLabel = btn ? btn.textContent : 'Withdraw';
+  if (await blockedBy7702(key, statusEl, 'claim-eth')) {
+    if (btn) { btn.disabled = false; btn.textContent = _prevClaimLabel; btn.classList.remove('pending'); }
+    return;
   }
 
   btn.textContent = 'Confirming...';
@@ -8814,6 +8909,13 @@ async function claimExit(key) {
     btn.disabled = false;
     return;
   }
+  // EIP-7702 / isHuman preflight: exit() is gated the same as withdraw().
+  if (await blockedBy7702(key, statusEl, 'claim-exit')) {
+    btn.disabled = false;
+    btn.textContent = 'Exit (sell + withdraw)';
+    return;
+  }
+
   btn.textContent = 'Confirming...';
   statusEl.textContent = 'This will sell all your tokens (10% fee) and withdraw everything. Confirm in wallet...';
 

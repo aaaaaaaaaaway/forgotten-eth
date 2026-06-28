@@ -1,9 +1,9 @@
 {
   "contract": "0x3b960e47784150f5a63777201ee2b15253d713e8",
   "balance_source": "token",
-  "contract_eth_balance": 105.770287,
-  "total_eth_in_balances": 105.770288,
-  "addresses_with_balance": 2504,
+  "contract_eth_balance": 105.583772,
+  "total_eth_in_balances": 105.583773,
+  "addresses_with_balance": 2500,
   "coverage_pct": 100,
   "scan_date": "2026-05-05 16:03:54 UTC",
   "description": "Opyn's Squeeth Crab Strategy V2 in shutdown state. Each crab token is redeemable for proportional ETH via withdrawShutdown(uint256 _crabAmount).",
@@ -679,10 +679,11 @@
     },
     {
       "address": "0x013cc394844aa993d73ca9a08d89dd6d046f3bcc",
-      "balance_wei": "132400363674913863",
-      "balance_eth": 0.13240036367491387,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "182876041947380366",
-      "rank": 96
+      "rank": 96,
+      "claimed": true
     },
     {
       "address": "0xcfa7dcb3db7897dc1c283e996f12d8c1639660d1",
@@ -2382,10 +2383,11 @@
     },
     {
       "address": "0x4bb12cc382e36b4b6faf7bdca7708969aed258ef",
-      "balance_wei": "31090651749560634",
-      "balance_eth": 0.031090651749560633,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "42943502387080920",
-      "rank": 339
+      "rank": 339,
+      "claimed": true
     },
     {
       "address": "0xe7a4c7636c96cc94ca5f1cc8c6fe0c79798b8c2f",
@@ -2970,10 +2972,11 @@
     },
     {
       "address": "0x42dfa24126138c3acc5dc0b29c6ef6dd161ee225",
-      "balance_wei": "17200389902672768",
-      "balance_eth": 0.017200389902672766,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "23757783876453762",
-      "rank": 423
+      "rank": 423,
+      "claimed": true
     },
     {
       "address": "0x8079c0831def4bb59bc5d997538d2fa937df1ddc",
@@ -4970,10 +4973,11 @@
     },
     {
       "address": "0x0419a7f969aaddacd52a3188d6837d7a75012566",
-      "balance_wei": "5824017914187552",
-      "balance_eth": 0.005824017914187552,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "8044338510975397",
-      "rank": 707
+      "rank": 707,
+      "claimed": true
     },
     {
       "address": "0xb1d2190c3bc2983c37dfd7dce522afe7e5ff8c25",
@@ -17763,5 +17767,5 @@
       "rank": 2532
     }
   ],
-  "last_event_refresh": "2026-06-26 02:23:06 UTC"
+  "last_event_refresh": "2026-06-27 19:23:06 UTC"
 }

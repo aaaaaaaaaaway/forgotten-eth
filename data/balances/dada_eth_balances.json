@@ -4,27 +4,35 @@
   "token_checked": "0x0000000000000000000000000000000000000000",
   "description": "Pending ETH withdrawals from DADA Collectible NFT marketplace",
   "scan_date": "2026-03-16 15:28:12 UTC",
-  "contract_eth_balance": "11.21458771639726",
+  "contract_eth_balance": 11.214588,
   "total_addresses_scanned": 643,
-  "addresses_with_balance": 476,
-  "total_eth_in_balances": 11.21458771639726,
-  "coverage_pct": 100.0,
+  "addresses_with_balance": 475,
+  "total_eth_in_balances": 11.214588,
+  "coverage_pct": 100,
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
     "1-10 ETH": {
       "count": 4,
-      "total_eth": 5.281247696824488
+      "total_eth": 5.281248
     },
     "0.1-1 ETH": {
       "count": 10,
-      "total_eth": 5.765492322748288
+      "total_eth": 5.765492
     },
     "0.01-0.1 ETH": {
       "count": 4,
-      "total_eth": 0.16184769682448613
+      "total_eth": 0.161847
     },
     "<0.01 ETH": {
-      "count": 458,
-      "total_eth": 0.0060000000000023715
+      "count": 457,
+      "total_eth": 0.006
     }
   },
   "balances": [
@@ -631,8 +639,9 @@
     {
       "rank": 101,
       "address": "0x6Bf97f2534be2242dDb3A29bfb24d498212DcdED",
-      "balance_wei": "6",
-      "balance_eth": "0.000000000000000006"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 102,
@@ -2884,5 +2893,6 @@
       "balance_wei": "1",
       "balance_eth": "0.000000000000000001"
     }
-  ]
+  ],
+  "last_event_refresh": "2026-06-27 19:23:06 UTC"
 }
