@@ -101,7 +101,12 @@ Useful evidence for a candidate:
 - event or storage evidence for user balances
 - any reason a claim might be blocked, partial, admin-only, or insolvent
 
-Thanks to [banteg](https://github.com/banteg) for the CLI work and [doublesharp](https://github.com/doublesharp) for The DAO integration.
+## Contributors
+
+- [banteg](https://github.com/banteg)
+- [doublesharp](https://github.com/doublesharp)
+- [webmixgamer](https://github.com/webmixgamer)
+- [ylasgamers](https://github.com/ylasgamers)
 
 ## For agents, crawlers, and data pipelines
 
