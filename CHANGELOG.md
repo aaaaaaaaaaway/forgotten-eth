@@ -7,6 +7,9 @@ RSS: https://forgotteneth.com/feed.xml
 
 ## June 2026
 
+### Jun 29 — PandaDAO Farewell and R1Exchange (+197 ETH)
+Added PandaDAO PANDA-to-ETH farewell refunds and R1Exchange per-channel ETH withdrawals after source review, Sourcify/onchain data reconstruction, and local anvil fork payout proofs.
+
 ### Jun 12 — DutchX dx_2 + dx_3 (+155 WETH/ETH)
 Added unclaimed DutchX withdrawal balances and auction settlement positions, with SAI sub-balances kept explicit.
 
