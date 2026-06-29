@@ -1,36 +1,18 @@
 {
   "contract": "0xbb9bc244d798123fde783fcc1c72d3bb8c189413",
   "balance_source": "token",
-  "contract_eth_balance": 81315.415104,
-  "total_eth_in_balances": 81514.394372,
-  "addresses_with_balance": 4846,
-  "coverage_pct": 100.24,
-  "scan_date": "2026-06-29 08:37:37 UTC",
+  "contract_eth_balance": 81514.41510394,
+  "total_eth_in_balances": 81514.39437238,
+  "addresses_with_balance": 4849,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-06-29 15:13:57 UTC",
   "distribution": {
-    ">=100 ETH": {
-      "count": 133,
-      "total_eth": 58692.170287
-    },
-    "10-100 ETH": {
-      "count": 605,
-      "total_eth": 17654.630845
-    },
-    "1-10 ETH": {
-      "count": 1427,
-      "total_eth": 4712.224993
-    },
-    "0.1-1 ETH": {
-      "count": 927,
-      "total_eth": 425.207874
-    },
-    "0.01-0.1 ETH": {
-      "count": 815,
-      "total_eth": 27.179349
-    },
-    "<0.01 ETH": {
-      "count": 939,
-      "total_eth": 2.981005
-    }
+    ">0 ETH": 942,
+    ">0.01 ETH": 815,
+    ">0.1 ETH": 927,
+    ">1 ETH": 1427,
+    ">10 ETH": 605,
+    ">100 ETH": 133
   },
   "token": "0xbb9bc244d798123fde783fcc1c72d3bb8c189413",
   "last_event_refresh": "2026-06-29 09:23:06 UTC",

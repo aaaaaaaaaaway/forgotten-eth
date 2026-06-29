@@ -82,7 +82,6 @@ No direct user claim path. The project/admin can `withdraw()` (or equivalent), t
 
 | ETH | Contract | Address | Admin call | Likely distribution basis |
 |---:|---|---|---|---|
-| 69.83 | PandaDAOFarewell | `0x229cc0a81a1d6b4a2fc1452b3bd166462216e3f3` | `withdrawEther` | PandaDAO ragequit list (known on-chain) |
 | 43.05 | Token | `0x92373e9ad216762eeb0794086f5ad63883343333` | `withdraw`, `withdrawAll` | Token-sale or NFT buyer events |
 | 39.18 | SAWGamesPass | `0x347e3513ca6d5118cb2df3bc386eade1e8f25ceb` | `withdraw` | NFT mint receipts |
 | 38.94 | LocalCoinSwapEthereumEscrow | `0x0e87bf5286c4091e0eeb7814d802115dfbb4c4cd` | `withdrawFees` | Escrow fee accounting |
@@ -97,7 +96,9 @@ Plus ERC20Peg (drained 2026-05, now ~0 — see Type A reclassified table), Treas
 
 ### Full Type B list
 
-41 contracts. The full list is in `data/.scan_state/owner_blocked_candidates.md`. Most are 5–15 ETH each NFT mint contracts; the largest are PandaDAOFarewell (69.83) and the 7 score-≥75 NFT mints from the prior section.
+PandaDAOFarewell was removed from this bucket after source and fork verification found the direct PANDA-holder redeem path: grant Juicebox OperatorStore permission index 3 for project 409, then call `redeem(amount)` on `0x229cc0a81a1d6b4a2fc1452b3bd166462216e3f3`.
+
+41 contracts. The full list is in `data/.scan_state/owner_blocked_candidates.md`. Most are 5–15 ETH each NFT mint contracts; the largest remaining rows are the score-≥75 NFT mints from the prior section.
 
 ## Type D — BigQuery owner/gate unlock additions (654.75 ETH)
 
@@ -187,7 +188,7 @@ These are older rejected cases from the bricked-contract scratchpad and score sw
 | 286.77 | GuildBank | `0x83d0d842e6db3b020f384a2af11bd14787bec8e7` | ETH movement is owner/burner oriented, not a depositor claim path | Owner/burner role |
 | 245.95 | Miner | `0x64356f9e79957fa6d84564fa75f53028799c52de` | `userWithdraw` and `withdraw` are both admin-gated; ETH is operational pool from token swaps | Manager / `userWithdrawAddr` |
 | 193.59 | XifraICO2 | `0x7488451db91df618759b8af15e36f70c0fdd529e` | `withdrawICOFunds()` is permissionless but sends ETH to immutable `xifraWallet`, not investors | Project wallet |
-| 150.36 | R1Exchange | `0xc7c9b856d33651cc2bcd9e0099efa85f59f78302` | `withdrawEnabled()` is false and current probed balances are zero/dust; disabled withdrawals alone are not enough evidence | Hold / complete current balance scan before any promotion |
+| 150.36 | R1Exchange | `0xc7c9b856d33651cc2bcd9e0099efa85f59f78302` | **Promoted to Forgotten ETH integration**: full local scan found 146.28 ETH directly claimable by EOAs across per-channel balances. `withdrawEnabled()` is false, but the public `applyWithdraw()` + wait + `withdraw()` path works. | Integrated via `r1_exchange` |
 | 101.00 | EtherkingJackpot | `0xab5cffaaec03efc94ab5c0c4c0bc85ae2b2b65ac` | Jackpot payout and pending-balance drain are owner-only | Owner |
 | 68.59 | NativeOFT | `0x4f7a67464b5976d7547c860109e4432d50afb38e` | LayerZero NativeOFT bridge wrapper; ETH backs bridged OFT accounting | Protocol/operator flow |
 | 62.74 | ETHRegistrarController | `0x253553366da8546fc250f225fe3d25d0c782303b` | `withdraw` sends ETH to fixed owner/ENS infrastructure | ENS owner/admin |

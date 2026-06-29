@@ -1311,6 +1311,15 @@
     "color": "#31cb9e",
     "category": "dex"
   },
+  "pandadao": {
+    "name": "PandaDAO Farewell",
+    "desc": "PandaDAO wound down in 2022 and deployed a farewell refund contract for PANDA token holders. The contract remains open. Holders first grant the farewell contract Juicebox redeem permission, then redeem PANDA for their pro-rata ETH refund.",
+    "contract": "0x229cc0a81a1d6b4a2fc1452b3bd166462216e3f3",
+    "deployed": "September 2022",
+    "color": "#f59e0b",
+    "category": "dao",
+    "slug": "pandadao"
+  },
   "thedao": {
     "name": "The DAO",
     "desc": "The DAO launched in April 2016 as the largest crowdfund in history, raising 11.5 million ETH from over 20,000 investors. In June 2016, a reentrancy exploit drained 3.6M ETH, leading to the contentious Ethereum hard fork that split ETH and ETC. After the fork restored the funds, a WithdrawDAO wrapper contract was deployed, allowing any DAO token holder to burn their tokens 1:1 for ETH. Over 81,000 ETH remains unclaimed in the wrapper to this day.",
@@ -1346,6 +1355,15 @@
     "color": "#d97706",
     "category": "dex",
     "slug": "ethfinex-v2"
+  },
+  "r1_exchange": {
+    "name": "R1Exchange",
+    "desc": "R1Exchange was an onchain order-book exchange from the 2018 DEX wave. The public withdrawal path still works, but ETH balances are stored per user and per channel. Users must first apply for a withdrawal, wait one day unless an admin approved it, then withdraw the same channel amount.",
+    "contract": "0xc7c9b856d33651cc2bcd9e0099efa85f59f78302",
+    "deployed": "October 2018",
+    "color": "#0ea5a4",
+    "category": "dex",
+    "slug": "r1-exchange"
   },
   "switcheo_v2": {
     "name": "Switcheo BrokerV2",

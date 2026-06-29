@@ -1,0 +1,3168 @@
+{
+  "contract": "0xc7c9b856d33651cc2bcd9e0099efa85f59f78302",
+  "balance_source": "eth",
+  "contract_eth_balance": 150.36269587,
+  "total_eth_in_balances": 146.28155562,
+  "addresses_with_balance": 241,
+  "coverage_pct": 97.29,
+  "scan_date": "2026-06-29 17:01:20 UTC",
+  "description": "R1Exchange keeps ETH balances per user and channel. Users call applyWithdraw(0x0, amount, channelId), wait applyWait seconds, then call withdraw(0x0, amount, channelId).",
+  "distribution": {
+    ">0.01 ETH": 93,
+    ">0.1 ETH": 52,
+    ">1 ETH": 6,
+    ">10 ETH": 3
+  },
+  "meta": {
+    "apply_wait_seconds": 86400,
+    "excluded_contract_holders": 8,
+    "excluded_contract_eth_wei": "104968894255216456"
+  },
+  "balances": [
+    {
+      "address": "0xa671bd9dfb95aa820f581b2ece63fde790e8726d",
+      "balance_wei": "85702870195207500000",
+      "balance_eth": 85.70287019520751,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "85702870195207500000",
+          "claimable_eth": 85.70287019520751,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xfabedee931654f5a5837131df2321969d49881ed",
+      "balance_wei": "21495242948000000000",
+      "balance_eth": 21.495242947999998,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "21495242948000000000",
+          "claimable_eth": 21.495242947999998,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xb2c8832b545a0c4d3aaabe5bcdd89c6655a32790",
+      "balance_wei": "20877937328905000000",
+      "balance_eth": 20.877937328905,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "20877937328905000000",
+          "claimable_eth": 20.877937328905,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x78c43a8b1b81c944775cfcad8cccb627a1cadb7b",
+      "balance_wei": "1573615000000000000",
+      "balance_eth": 1.573615,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "1573615000000000000",
+          "claimable_eth": 1.573615,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x74ba221f263121952852361a8b9084b0f28959db",
+      "balance_wei": "1500000000000000000",
+      "balance_eth": 1.5,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "1500000000000000000",
+          "claimable_eth": 1.5,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x9d3fc54b3ff041e59a4fe5127f04596e2e169b08",
+      "balance_wei": "1046295205430000000",
+      "balance_eth": 1.04629520543,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "1046295205430000000",
+          "claimable_eth": 1.04629520543,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x0b3ec4813cd621def0d8a40a060c640fb7234fcd",
+      "balance_wei": "988355690990000000",
+      "balance_eth": 0.98835569099,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "988355690990000000",
+          "claimable_eth": 0.98835569099,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xa838a8560de16d58c76cdee5f8495d542dc85553",
+      "balance_wei": "964280000000000000",
+      "balance_eth": 0.96428,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "964280000000000000",
+          "claimable_eth": 0.96428,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x86fa7c0edd5cc746fd72121d45682f195bfa0db6",
+      "balance_wei": "938131268933000000",
+      "balance_eth": 0.9381312689329999,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "938131268933000000",
+          "claimable_eth": 0.9381312689329999,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xdc11b52a7b7dea8b8aadb9153eeb06927e395210",
+      "balance_wei": "842984710000000000",
+      "balance_eth": 0.84298471,
+      "r1_channels": [
+        {
+          "channel_id": 1,
+          "claimable_wei": "842984710000000000",
+          "claimable_eth": 0.84298471,
+          "item_id": "channel:1"
+        }
+      ]
+    },
+    {
+      "address": "0xa688d43501d7df531bedcf2176d008996e478b74",
+      "balance_wei": "736100899800000000",
+      "balance_eth": 0.7361008998,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "736100899800000000",
+          "claimable_eth": 0.7361008998,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xe1881f7eeabbefead8265dc3b0784d0c3ef7bacf",
+      "balance_wei": "733829040000000000",
+      "balance_eth": 0.73382904,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "733829040000000000",
+          "claimable_eth": 0.73382904,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xc96e7ad39849b44b09fa0d7156f5538fb001c9f3",
+      "balance_wei": "467440000000000000",
+      "balance_eth": 0.46744,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "467440000000000000",
+          "claimable_eth": 0.46744,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xec3e2a5143c0934c12938593f29657a1fea81fcb",
+      "balance_wei": "465640000000000000",
+      "balance_eth": 0.46564,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "465640000000000000",
+          "claimable_eth": 0.46564,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xf8cb7911b50c699dcf42ffa7ee05111bb1482d73",
+      "balance_wei": "439180000000000000",
+      "balance_eth": 0.43918,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "439180000000000000",
+          "claimable_eth": 0.43918,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xa512dc07238e92113b649c7c7d9b0e4ee26fb0a5",
+      "balance_wei": "363178600000000000",
+      "balance_eth": 0.3631786,
+      "r1_channels": [
+        {
+          "channel_id": 1,
+          "claimable_wei": "363178600000000000",
+          "claimable_eth": 0.3631786,
+          "item_id": "channel:1"
+        }
+      ]
+    },
+    {
+      "address": "0x1a0d149614ba429080e260a7c024046fa286e23d",
+      "balance_wei": "322347100000000000",
+      "balance_eth": 0.3223471,
+      "r1_channels": [
+        {
+          "channel_id": 1,
+          "claimable_wei": "322347100000000000",
+          "claimable_eth": 0.3223471,
+          "item_id": "channel:1"
+        }
+      ]
+    },
+    {
+      "address": "0x9bf73e037ab50c20ed448b626208603af768f5ad",
+      "balance_wei": "293727360760000000",
+      "balance_eth": 0.29372736076,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "293727360760000000",
+          "claimable_eth": 0.29372736076,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xe7c0ee30f63822c965e2c616ca9e7766baec0906",
+      "balance_wei": "280050000000000000",
+      "balance_eth": 0.28005,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "280050000000000000",
+          "claimable_eth": 0.28005,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x84a0df9c88a467cf3e9dc9325545e3875555a674",
+      "balance_wei": "205550000000000000",
+      "balance_eth": 0.20555,
+      "r1_channels": [
+        {
+          "channel_id": 1,
+          "claimable_wei": "205550000000000000",
+          "claimable_eth": 0.20555,
+          "item_id": "channel:1"
+        }
+      ]
+    },
+    {
+      "address": "0xac5132f46b3d67260dd5b12dce7e51ccd3b362c1",
+      "balance_wei": "197160000000000000",
+      "balance_eth": 0.19716,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "197160000000000000",
+          "claimable_eth": 0.19716,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x4b494fa15830210f6a4eb64a806d7a92490d6ce7",
+      "balance_wei": "154960180000000000",
+      "balance_eth": 0.15496018,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "154960180000000000",
+          "claimable_eth": 0.15496018,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x76c8be4a41274399ac460946c1d20faaf6de938d",
+      "balance_wei": "151484787760000000",
+      "balance_eth": 0.15148478776,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "151484787760000000",
+          "claimable_eth": 0.15148478776,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x760cacb58eb008d75e7d75915fcfac0dd6fd8405",
+      "balance_wei": "147338321840000000",
+      "balance_eth": 0.14733832184,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "147338321840000000",
+          "claimable_eth": 0.14733832184,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x090fa2ac673ab8b40c9b89110a03d937df0ad9fa",
+      "balance_wei": "146995282640000000",
+      "balance_eth": 0.14699528264,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "146995282640000000",
+          "claimable_eth": 0.14699528264,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xfd062663b4e3b9225a1257f88213857409190c0f",
+      "balance_wei": "146788363080000000",
+      "balance_eth": 0.14678836308,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "146788363080000000",
+          "claimable_eth": 0.14678836308,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x7c121cdd51fa42328697d95b587be8951c54c55e",
+      "balance_wei": "146654375560000000",
+      "balance_eth": 0.14665437556,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "146654375560000000",
+          "claimable_eth": 0.14665437556,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x896e492f8266bd844e3241060d84c7e416682a79",
+      "balance_wei": "145513401200000000",
+      "balance_eth": 0.1455134012,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "145513401200000000",
+          "claimable_eth": 0.1455134012,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x5b44ed8f0bfb6ead8960236c0925e145c1eafa70",
+      "balance_wei": "142294807340000000",
+      "balance_eth": 0.14229480734,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "142294807340000000",
+          "claimable_eth": 0.14229480734,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xfab57527e9aeddfe00f203dd1d9b22b9c393fcf2",
+      "balance_wei": "137967179900000000",
+      "balance_eth": 0.1379671799,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "137967179900000000",
+          "claimable_eth": 0.1379671799,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x62d22894d1e406f2691f149f6ff69f03f63c90e7",
+      "balance_wei": "137957258480000000",
+      "balance_eth": 0.13795725848,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "137957258480000000",
+          "claimable_eth": 0.13795725848,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x59ef85adcd209db51232a05373b5b1aeef46be63",
+      "balance_wei": "137957253160000000",
+      "balance_eth": 0.13795725316,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "137957253160000000",
+          "claimable_eth": 0.13795725316,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xe34cebb296d7cb284c539e3f622bddbb8bf83049",
+      "balance_wei": "137867233200000000",
+      "balance_eth": 0.1378672332,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "137867233200000000",
+          "claimable_eth": 0.1378672332,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x38501e257d503f90285cb98152fa09e6574f4e65",
+      "balance_wei": "137867229000000000",
+      "balance_eth": 0.137867229,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "137867229000000000",
+          "claimable_eth": 0.137867229,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xe782379ca9ef1b4f57f1ea1b2c4802174334f366",
+      "balance_wei": "137857304880000000",
+      "balance_eth": 0.13785730488,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "137857304880000000",
+          "claimable_eth": 0.13785730488,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x16bc17b86c5a450882957edd420e1653eb6f8b05",
+      "balance_wei": "137857304032000000",
+      "balance_eth": 0.137857304032,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "137857304032000000",
+          "claimable_eth": 0.137857304032,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x94aa7598842b073470504935cbf3dca0f1948854",
+      "balance_wei": "137727229260000000",
+      "balance_eth": 0.13772722926,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "137727229260000000",
+          "claimable_eth": 0.13772722926,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x57e3d750f5bb1b8ba60e9f4b67f75a6604e67180",
+      "balance_wei": "137717305156000000",
+      "balance_eth": 0.137717305156,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "137717305156000000",
+          "claimable_eth": 0.137717305156,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x2db3b93b7e051ca20f43b0cc638bc63ee3445828",
+      "balance_wei": "137677255976000000",
+      "balance_eth": 0.137677255976,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "137677255976000000",
+          "claimable_eth": 0.137677255976,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x3fd1acc8d39d0b34eae5f1fc8024c4e1c1cbb113",
+      "balance_wei": "137677253740000000",
+      "balance_eth": 0.13767725374,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "137677253740000000",
+          "claimable_eth": 0.13767725374,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x402ee0be62cb15652c44021720467e3bb6527cc1",
+      "balance_wei": "135628282860000000",
+      "balance_eth": 0.13562828286,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "135628282860000000",
+          "claimable_eth": 0.13562828286,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x3cd4a93ff3ae02cab878cbc7fee480077c1d3586",
+      "balance_wei": "134243428300000000",
+      "balance_eth": 0.1342434283,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "134243428300000000",
+          "claimable_eth": 0.1342434283,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xeaabe48827c6ae02735b70605a3ea91efaf0f568",
+      "balance_wei": "132944084550000000",
+      "balance_eth": 0.13294408455,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "132944084550000000",
+          "claimable_eth": 0.13294408455,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xb83bf9522ccd94a560d545684f8e97788c90b7e8",
+      "balance_wei": "128082808350000000",
+      "balance_eth": 0.12808280835,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "128082808350000000",
+          "claimable_eth": 0.12808280835,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x28f80d8ba18f4337fe45f3746d20fa234ec10635",
+      "balance_wei": "121935969810000000",
+      "balance_eth": 0.12193596981,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "121935969810000000",
+          "claimable_eth": 0.12193596981,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xa5b8bb352ec68ea1cb1d04fa907087f7199b135a",
+      "balance_wei": "121655974680000000",
+      "balance_eth": 0.12165597468,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "121655974680000000",
+          "claimable_eth": 0.12165597468,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xffcae5e1f30ea3c602848ddf664e4aad4c38a159",
+      "balance_wei": "121655974405000000",
+      "balance_eth": 0.121655974405,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "121655974405000000",
+          "claimable_eth": 0.121655974405,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x12c9a0a402dade396d1d9f07bc86a7428d5f8bdd",
+      "balance_wei": "121655968215000000",
+      "balance_eth": 0.121655968215,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "121655968215000000",
+          "claimable_eth": 0.121655968215,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x954dc267d92b32568c23dc3404d780f7921df69d",
+      "balance_wei": "120000000000000000",
+      "balance_eth": 0.12,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "120000000000000000",
+          "claimable_eth": 0.12,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x1ea1b1b80b4b6d158ae0866a296e61ff3c9e150c",
+      "balance_wei": "112550447504000000",
+      "balance_eth": 0.112550447504,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "112550447504000000",
+          "claimable_eth": 0.112550447504,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xc3a224376a9496db04c813ef077863e4e8d415ae",
+      "balance_wei": "107095918606000000",
+      "balance_eth": 0.107095918606,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "107095918606000000",
+          "claimable_eth": 0.107095918606,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x9aa7fa5233327f868a9585fabf68bcdef4864131",
+      "balance_wei": "100000003600000000",
+      "balance_eth": 0.1000000036,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "100000003600000000",
+          "claimable_eth": 0.1000000036,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xcfb7ce3020c15e1055f12c8be1931f044820abff",
+      "balance_wei": "98920004595000000",
+      "balance_eth": 0.098920004595,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "98920004595000000",
+          "claimable_eth": 0.098920004595,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x1927e1a848a433bd51abb92dcdf7e4a7e84c3c17",
+      "balance_wei": "88236019000000000",
+      "balance_eth": 0.088236019,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "88236019000000000",
+          "claimable_eth": 0.088236019,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x5178612200976466715386e295b08d217f52e78f",
+      "balance_wei": "80000008726632540",
+      "balance_eth": 0.08000000872663254,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "80000008726632540",
+          "claimable_eth": 0.08000000872663254,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x3d2201d78996c47ce5716d5b240f121cbb2a6fa4",
+      "balance_wei": "68374846100000000",
+      "balance_eth": 0.0683748461,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "68374846100000000",
+          "claimable_eth": 0.0683748461,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x4f4cfce2e56c1f02587c6bf32dddd1fea350f02b",
+      "balance_wei": "66882977790000000",
+      "balance_eth": 0.06688297779,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "66882977790000000",
+          "claimable_eth": 0.06688297779,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x2b3daeb14f069db301cead63338a56d27a982ced",
+      "balance_wei": "64687556600000000",
+      "balance_eth": 0.0646875566,
+      "r1_channels": [
+        {
+          "channel_id": 1,
+          "claimable_wei": "64687556600000000",
+          "claimable_eth": 0.0646875566,
+          "item_id": "channel:1"
+        }
+      ]
+    },
+    {
+      "address": "0xe02a1dd9ac50cd210117511adefddc1b14c333c4",
+      "balance_wei": "55770000000000000",
+      "balance_eth": 0.05577,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "55770000000000000",
+          "claimable_eth": 0.05577,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x94d572c0b767fd959254c9f20ef9e500223840a7",
+      "balance_wei": "54908500000000000",
+      "balance_eth": 0.0549085,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "54908500000000000",
+          "claimable_eth": 0.0549085,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xa3e55280d0c7effe697d454e3d672ad2a53fec86",
+      "balance_wei": "52699254000000000",
+      "balance_eth": 0.052699254,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "52699254000000000",
+          "claimable_eth": 0.052699254,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x7dacba760a6f20cddd1da2bb7854d44ca4c27b36",
+      "balance_wei": "50000000000000000",
+      "balance_eth": 0.05,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "50000000000000000",
+          "claimable_eth": 0.05,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x953880b8e495dbbfcd7c9c9865c0e02d364ce3be",
+      "balance_wei": "46447900000000000",
+      "balance_eth": 0.0464479,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "46447900000000000",
+          "claimable_eth": 0.0464479,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x7375d5411823aa16c83feddc512bf956a99846ad",
+      "balance_wei": "46062610000000000",
+      "balance_eth": 0.04606261,
+      "r1_channels": [
+        {
+          "channel_id": 1,
+          "claimable_wei": "46062610000000000",
+          "claimable_eth": 0.04606261,
+          "item_id": "channel:1"
+        }
+      ]
+    },
+    {
+      "address": "0x08cbc4a0a34036f022ed51d682efafae90336816",
+      "balance_wei": "45066348550000000",
+      "balance_eth": 0.04506634855,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "45066348550000000",
+          "claimable_eth": 0.04506634855,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xb7303f345d399b2e19a4628eed01db5b4c75bdae",
+      "balance_wei": "41477882000000000",
+      "balance_eth": 0.041477882,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "41477882000000000",
+          "claimable_eth": 0.041477882,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xddf883230eb67b8424a27e4646119142093d4733",
+      "balance_wei": "40058341840000000",
+      "balance_eth": 0.04005834184,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "40058341840000000",
+          "claimable_eth": 0.04005834184,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x2a3cc848ba5bf6424fa4124b3eedad9aec4c0314",
+      "balance_wei": "40056762100000000",
+      "balance_eth": 0.0400567621,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "40056762100000000",
+          "claimable_eth": 0.0400567621,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x8b6c65633bc2f9a6f24be917ba117261e85cbdc6",
+      "balance_wei": "36764796320000000",
+      "balance_eth": 0.03676479632,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "36764796320000000",
+          "claimable_eth": 0.03676479632,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x8f0e0adc7f743a64e96e0d490068616c15543cbd",
+      "balance_wei": "36747313440000000",
+      "balance_eth": 0.03674731344,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "36747313440000000",
+          "claimable_eth": 0.03674731344,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xa15eec3b7ec3a0cff16376595937217ac6cfd31b",
+      "balance_wei": "36731189840000000",
+      "balance_eth": 0.03673118984,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "36731189840000000",
+          "claimable_eth": 0.03673118984,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x161aaefca216d92f4cfe4133d2c4a7ac22b924a4",
+      "balance_wei": "36729341160000000",
+      "balance_eth": 0.03672934116,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "36729341160000000",
+          "claimable_eth": 0.03672934116,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xb1941c06ab76e3d4f184981613da09ce1297ae44",
+      "balance_wei": "36717278720000000",
+      "balance_eth": 0.03671727872,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "36717278720000000",
+          "claimable_eth": 0.03671727872,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x26b14f9b589f862cd63fe59fc911437183166ce6",
+      "balance_wei": "36446319910000000",
+      "balance_eth": 0.03644631991,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "36446319910000000",
+          "claimable_eth": 0.03644631991,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x7ea7dc97744c2a13158eee389448525744ae33f4",
+      "balance_wei": "36406864250000000",
+      "balance_eth": 0.03640686425,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "36406864250000000",
+          "claimable_eth": 0.03640686425,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x5fec95ff6d96509db69bbbbc089ca703193185ef",
+      "balance_wei": "36316730954000000",
+      "balance_eth": 0.036316730954,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "36316730954000000",
+          "claimable_eth": 0.036316730954,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xb7bbbc55891eb820c74e21e80f282b444b1f75d6",
+      "balance_wei": "36302410120000000",
+      "balance_eth": 0.03630241012,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "36302410120000000",
+          "claimable_eth": 0.03630241012,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x7e75c59e86718736ee63f91a0309052601a825bf",
+      "balance_wei": "36260883080000000",
+      "balance_eth": 0.03626088308,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "36260883080000000",
+          "claimable_eth": 0.03626088308,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xb92eeab31a6e9d397a26645b0012e99a22cf4df2",
+      "balance_wei": "36215090560000000",
+      "balance_eth": 0.03621509056,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "36215090560000000",
+          "claimable_eth": 0.03621509056,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x65a97cea943ad0d24652c9382f7ad422c8716f6e",
+      "balance_wei": "31175408680000000",
+      "balance_eth": 0.03117540868,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "31175408680000000",
+          "claimable_eth": 0.03117540868,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x695d0f1244aa12b0bdb7da9271e3fb6c6b0ca811",
+      "balance_wei": "30000000000000000",
+      "balance_eth": 0.03,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "30000000000000000",
+          "claimable_eth": 0.03,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x4835c2b2263c01c25e064b288bb189a49d3c404f",
+      "balance_wei": "28926897800000000",
+      "balance_eth": 0.0289268978,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "28926897800000000",
+          "claimable_eth": 0.0289268978,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xe0cf2c198bd8027c15c41f609cbdd4ae7898fa94",
+      "balance_wei": "24000000000000000",
+      "balance_eth": 0.024,
+      "r1_channels": [
+        {
+          "channel_id": 1,
+          "claimable_wei": "24000000000000000",
+          "claimable_eth": 0.024,
+          "item_id": "channel:1"
+        }
+      ]
+    },
+    {
+      "address": "0xcee5021457bf5e60d1c5fa1dc4cd18012f5b94f9",
+      "balance_wei": "23830000000000000",
+      "balance_eth": 0.02383,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "23830000000000000",
+          "claimable_eth": 0.02383,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x82c114e8ed2e67f3a43a8e197bfdd127d541a111",
+      "balance_wei": "20238000000000000",
+      "balance_eth": 0.020238,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "20238000000000000",
+          "claimable_eth": 0.020238,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x9a287e7fce4c6560e926405ad6336cad7380b50c",
+      "balance_wei": "15884050000000000",
+      "balance_eth": 0.01588405,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "15884050000000000",
+          "claimable_eth": 0.01588405,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x4df4d449673a106cb763f168c8973dd4f3bc4a8e",
+      "balance_wei": "13900000000000000",
+      "balance_eth": 0.0139,
+      "r1_channels": [
+        {
+          "channel_id": 1,
+          "claimable_wei": "13900000000000000",
+          "claimable_eth": 0.0139,
+          "item_id": "channel:1"
+        }
+      ]
+    },
+    {
+      "address": "0x12e5de5a9acac024e08c60a1b063c3f17565a523",
+      "balance_wei": "12422410000000000",
+      "balance_eth": 0.01242241,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "12422410000000000",
+          "claimable_eth": 0.01242241,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x1e9bd5f7369fbac4d0dbfeaafa300be1c2939cac",
+      "balance_wei": "12336572999990010",
+      "balance_eth": 0.01233657299999001,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "12336572999990010",
+          "claimable_eth": 0.01233657299999001,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xbbf43e8157cda336ff60732b44ec58b7197f2768",
+      "balance_wei": "11049150000000000",
+      "balance_eth": 0.01104915,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "11049150000000000",
+          "claimable_eth": 0.01104915,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x56ad0d012f1b95b2f77d95f30e951abda58dc2a9",
+      "balance_wei": "10640000000000000",
+      "balance_eth": 0.01064,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "10640000000000000",
+          "claimable_eth": 0.01064,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xeb02fd71baa6d7f9259cca2e474dab9c59368038",
+      "balance_wei": "10154746000000000",
+      "balance_eth": 0.010154746,
+      "r1_channels": [
+        {
+          "channel_id": 1,
+          "claimable_wei": "10154746000000000",
+          "claimable_eth": 0.010154746,
+          "item_id": "channel:1"
+        }
+      ]
+    },
+    {
+      "address": "0x72d0ed985bd3ff775bead61747cc55f6c260c639",
+      "balance_wei": "10000000000000000",
+      "balance_eth": 0.01,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "10000000000000000",
+          "claimable_eth": 0.01,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xca3e887c4fb6c94b824e83e2562d2d23e21560ce",
+      "balance_wei": "9433101962000000",
+      "balance_eth": 0.009433101962,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "9433101962000000",
+          "claimable_eth": 0.009433101962,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x2a486dd67d85d6b049e78ab579c54d95fb822cdc",
+      "balance_wei": "9346260000000000",
+      "balance_eth": 0.00934626,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "9346260000000000",
+          "claimable_eth": 0.00934626,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x22a08bb10ab9b723130b72cec7572a1187e30cfd",
+      "balance_wei": "9313109042000000",
+      "balance_eth": 0.009313109042,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "9313109042000000",
+          "claimable_eth": 0.009313109042,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x46c1b1744094c950aa22e8245fbfec94233eeab0",
+      "balance_wei": "9213107720000000",
+      "balance_eth": 0.00921310772,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "9213107720000000",
+          "claimable_eth": 0.00921310772,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xff0f76e7bc791d5a7f7c2b41c4ba5e2a1d60b871",
+      "balance_wei": "7842531000000000",
+      "balance_eth": 0.007842531,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "6842531000000000",
+          "claimable_eth": 0.006842531,
+          "item_id": "channel:2"
+        },
+        {
+          "channel_id": 1,
+          "claimable_wei": "1000000000000000",
+          "claimable_eth": 0.001,
+          "item_id": "channel:1"
+        }
+      ]
+    },
+    {
+      "address": "0x28e127b60fb4281d5f41ebb9fbb0e854259c8fa4",
+      "balance_wei": "6750602280000000",
+      "balance_eth": 0.00675060228,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "6750602280000000",
+          "claimable_eth": 0.00675060228,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xf145ff26676e1ce5be94a23f041bbb5e73358db8",
+      "balance_wei": "6472447500000000",
+      "balance_eth": 0.0064724475,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "6472447500000000",
+          "claimable_eth": 0.0064724475,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x4519b62fa8eb8ecd8564d593c319d7eeec2d60c5",
+      "balance_wei": "5100000000000000",
+      "balance_eth": 0.0051,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "5100000000000000",
+          "claimable_eth": 0.0051,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xe2cb0a5396f10a3b06ce525ec6e4327c190e0184",
+      "balance_wei": "5100000000000000",
+      "balance_eth": 0.0051,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "5100000000000000",
+          "claimable_eth": 0.0051,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x9f3090f8388e0f7fe6de710e2d945fdf1edfe451",
+      "balance_wei": "3760000000000000",
+      "balance_eth": 0.00376,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "3760000000000000",
+          "claimable_eth": 0.00376,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xee0a3a37fab959b857b15bb4c07efba5347db2d8",
+      "balance_wei": "3192166460000000",
+      "balance_eth": 0.00319216646,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "3192166460000000",
+          "claimable_eth": 0.00319216646,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x2e7b205ece75709ab6822f43ce52bf829b2d99ea",
+      "balance_wei": "2434455800000000",
+      "balance_eth": 0.0024344558,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "2434455800000000",
+          "claimable_eth": 0.0024344558,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xdc9564c0fb7a8144005c29b8e5f7a3c12436fd9f",
+      "balance_wei": "2384168000000000",
+      "balance_eth": 0.002384168,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "2384168000000000",
+          "claimable_eth": 0.002384168,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x2de49cfffd16f83febe5d2a11bc5d09424ef0c8b",
+      "balance_wei": "2000000000000000",
+      "balance_eth": 0.002,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "2000000000000000",
+          "claimable_eth": 0.002,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xf52af085d744131db6dd5a7dae72ac362140c9be",
+      "balance_wei": "1300000240000000",
+      "balance_eth": 0.00130000024,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "1300000240000000",
+          "claimable_eth": 0.00130000024,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x72e351db5cb7e12e7da542c8c5dac66f92b664ca",
+      "balance_wei": "1139880000000000",
+      "balance_eth": 0.00113988,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "1139880000000000",
+          "claimable_eth": 0.00113988,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xdcb6d9a29df686565c96a4c53775c70b79a8b5c9",
+      "balance_wei": "1000000000000000",
+      "balance_eth": 0.001,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "1000000000000000",
+          "claimable_eth": 0.001,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xddb9c2e2059f30364ae87b299f2b171f7aae7008",
+      "balance_wei": "1000000000000000",
+      "balance_eth": 0.001,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "1000000000000000",
+          "claimable_eth": 0.001,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xdb4eb2b77548b5c423c5983c61a4792c1e3cf417",
+      "balance_wei": "923550000000000",
+      "balance_eth": 0.00092355,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "923550000000000",
+          "claimable_eth": 0.00092355,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xe730a5a01ce6edb7d0e0d5ab5dca162911c4b119",
+      "balance_wei": "779790000000000",
+      "balance_eth": 0.00077979,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "779790000000000",
+          "claimable_eth": 0.00077979,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xa967be1d9b277eea3ffe0b81c5dcd03772ad2287",
+      "balance_wei": "773680000000000",
+      "balance_eth": 0.00077368,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "773680000000000",
+          "claimable_eth": 0.00077368,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x408b81c7fa298163b247e448cdd0717bf3015529",
+      "balance_wei": "760000000000000",
+      "balance_eth": 0.00076,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "760000000000000",
+          "claimable_eth": 0.00076,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x5f126b98965373416ca4bfad1f665ed053021e12",
+      "balance_wei": "681050000000000",
+      "balance_eth": 0.00068105,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "681050000000000",
+          "claimable_eth": 0.00068105,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x3cc187ee33c85822928ec0d02c73ae03dcff064d",
+      "balance_wei": "664610000000000",
+      "balance_eth": 0.00066461,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "664610000000000",
+          "claimable_eth": 0.00066461,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xb6b79309a24a592361c3a931d3117d0bb846576d",
+      "balance_wei": "652003800000000",
+      "balance_eth": 0.0006520038,
+      "r1_channels": [
+        {
+          "channel_id": 1,
+          "claimable_wei": "652000000000000",
+          "claimable_eth": 0.000652,
+          "item_id": "channel:1"
+        },
+        {
+          "channel_id": 2,
+          "claimable_wei": "3800000000",
+          "claimable_eth": 3.8e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x1b0988c04f249861cf3b7b47ce56681e2323175b",
+      "balance_wei": "633000000000000",
+      "balance_eth": 0.000633,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "633000000000000",
+          "claimable_eth": 0.000633,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x2c614746119a1631df536f2a0fdab1648e38dcf3",
+      "balance_wei": "626550000000000",
+      "balance_eth": 0.00062655,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "626550000000000",
+          "claimable_eth": 0.00062655,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x48c63b8afcebe69fd098f5d7051178f67fa8bd4f",
+      "balance_wei": "578400000000000",
+      "balance_eth": 0.0005784,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "578400000000000",
+          "claimable_eth": 0.0005784,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xc922e3b19718a8145e0ac0636c684c6550c878e3",
+      "balance_wei": "500000000000000",
+      "balance_eth": 0.0005,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "500000000000000",
+          "claimable_eth": 0.0005,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xa77cefd0ef0924d983bea73279d7906ded9826e5",
+      "balance_wei": "359785000000000",
+      "balance_eth": 0.000359785,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "359785000000000",
+          "claimable_eth": 0.000359785,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xe80cc3f5c426598079a130b7e3e779bd4ff7b7bb",
+      "balance_wei": "248000000000000",
+      "balance_eth": 0.000248,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "248000000000000",
+          "claimable_eth": 0.000248,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xc05d990339873b8e613c1fe167fea45edacc8166",
+      "balance_wei": "215990000000000",
+      "balance_eth": 0.00021599,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "215990000000000",
+          "claimable_eth": 0.00021599,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x0ab993ab9aaa55f7c80d63d8237706c228f89d9e",
+      "balance_wei": "185000000000000",
+      "balance_eth": 0.000185,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "185000000000000",
+          "claimable_eth": 0.000185,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x33093b24c40cfc16cdf35a6d7481719daf0673c5",
+      "balance_wei": "159850000000000",
+      "balance_eth": 0.00015985,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "159850000000000",
+          "claimable_eth": 0.00015985,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xc29174c0334ed90ab31bd5301d764cd285dab445",
+      "balance_wei": "113566000000000",
+      "balance_eth": 0.000113566,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "113566000000000",
+          "claimable_eth": 0.000113566,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x6094691d6b3e7e627c34972565b587563de78a9a",
+      "balance_wei": "106292360000000",
+      "balance_eth": 0.00010629236,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "106292360000000",
+          "claimable_eth": 0.00010629236,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xf96376839f218794bd1c213b722678bac655c25a",
+      "balance_wei": "105241000000000",
+      "balance_eth": 0.000105241,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "105241000000000",
+          "claimable_eth": 0.000105241,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x597dfbee02336b4c5ac0cff50307e3d3725a8f45",
+      "balance_wei": "88060000000000",
+      "balance_eth": 8.806e-05,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "88060000000000",
+          "claimable_eth": 8.806e-05,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x5392e2d17a833bd32beda3d9db6087f0d8408114",
+      "balance_wei": "48670000000000",
+      "balance_eth": 4.867e-05,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "48670000000000",
+          "claimable_eth": 4.867e-05,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x289dad33d47de1743ca2d2e55f7556261e6c1b6c",
+      "balance_wei": "29699000000000",
+      "balance_eth": 2.9699e-05,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "29699000000000",
+          "claimable_eth": 2.9699e-05,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x5f5f3eff4bfa514d12b3a45ab3414a850f752ee2",
+      "balance_wei": "29370080000000",
+      "balance_eth": 2.937008e-05,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "29370080000000",
+          "claimable_eth": 2.937008e-05,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xb0cdd4a964f0f14ebf25b8b3fd4f508dfbc56bd0",
+      "balance_wei": "28530000000000",
+      "balance_eth": 2.853e-05,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "28530000000000",
+          "claimable_eth": 2.853e-05,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x2c44997984941caba797af8dd631636e72e1edef",
+      "balance_wei": "23377120000000",
+      "balance_eth": 2.337712e-05,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "23377120000000",
+          "claimable_eth": 2.337712e-05,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x5efb5c106776dc4d4c6e4e07f0e16a71df6a306a",
+      "balance_wei": "19440000000000",
+      "balance_eth": 1.944e-05,
+      "r1_channels": [
+        {
+          "channel_id": 1,
+          "claimable_wei": "19440000000000",
+          "claimable_eth": 1.944e-05,
+          "item_id": "channel:1"
+        }
+      ]
+    },
+    {
+      "address": "0x3d7c8f150e2d8a456bcfee2bb45f1847a32ca1d5",
+      "balance_wei": "18373445000000",
+      "balance_eth": 1.8373445e-05,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "18373445000000",
+          "claimable_eth": 1.8373445e-05,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x33d7cd79fc8e296f77acf604fa985c1b2958ff5f",
+      "balance_wei": "16589410000000",
+      "balance_eth": 1.658941e-05,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "16589410000000",
+          "claimable_eth": 1.658941e-05,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x983bebbf81d2fdcba484410ceae7a4311cf73462",
+      "balance_wei": "15138200000000",
+      "balance_eth": 1.51382e-05,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "15138200000000",
+          "claimable_eth": 1.51382e-05,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x56403e08a092f125f75e320ed20e00850c0da57d",
+      "balance_wei": "10682005000000",
+      "balance_eth": 1.0682005e-05,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "10682005000000",
+          "claimable_eth": 1.0682005e-05,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xb16fe7c0bced091c8b303a59ac7849fdeae56cdb",
+      "balance_wei": "8490000000000",
+      "balance_eth": 8.49e-06,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "8490000000000",
+          "claimable_eth": 8.49e-06,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x5a407730a3e7420af233d4a5a1095f9dac62a7d5",
+      "balance_wei": "978320000000",
+      "balance_eth": 9.7832e-07,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "978320000000",
+          "claimable_eth": 9.7832e-07,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xec7c792e88b6cc4f640858aa321f3ad1005f42fb",
+      "balance_wei": "649740000000",
+      "balance_eth": 6.4974e-07,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "649740000000",
+          "claimable_eth": 6.4974e-07,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xf242b862725d82ff70119108496794e9f6f5baff",
+      "balance_wei": "556220000000",
+      "balance_eth": 5.5622e-07,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "556220000000",
+          "claimable_eth": 5.5622e-07,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x6d23b6b2608c097af3b75fc8cf3e29c33e07773e",
+      "balance_wei": "392200000000",
+      "balance_eth": 3.922e-07,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "392200000000",
+          "claimable_eth": 3.922e-07,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x46cb4ad76f8d797d6b60adb5e7fdf3d0e6e039fa",
+      "balance_wei": "9875000000",
+      "balance_eth": 9.875e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "9875000000",
+          "claimable_eth": 9.875e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xa68f9622676240e2d1d136c3fe2925ffc7c1a08a",
+      "balance_wei": "9725000000",
+      "balance_eth": 9.725e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "9725000000",
+          "claimable_eth": 9.725e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xb6e1bd70352ac8d37aae15c170daadb288241b5e",
+      "balance_wei": "9680000000",
+      "balance_eth": 9.68e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "9680000000",
+          "claimable_eth": 9.68e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x27ce85c426c39586696dd35769470ea6cdbb0b74",
+      "balance_wei": "9600000000",
+      "balance_eth": 9.6e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "9600000000",
+          "claimable_eth": 9.6e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xc05658125b35e70ac979d48552207890f0372044",
+      "balance_wei": "9600000000",
+      "balance_eth": 9.6e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "9600000000",
+          "claimable_eth": 9.6e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xdebeb8821dc607c3414dafac50a0514d5052b43e",
+      "balance_wei": "9560000000",
+      "balance_eth": 9.56e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "9560000000",
+          "claimable_eth": 9.56e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xa6d577346a113a66021d84146998818dcc1f8152",
+      "balance_wei": "9550000000",
+      "balance_eth": 9.55e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "9550000000",
+          "claimable_eth": 9.55e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xa7ef6281d59de6387121e4cfbad985bad218b031",
+      "balance_wei": "9452000000",
+      "balance_eth": 9.452e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "9452000000",
+          "claimable_eth": 9.452e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xb8fa6605ca1c9940a0b18b3a28026165f61fd953",
+      "balance_wei": "9400000000",
+      "balance_eth": 9.4e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "9400000000",
+          "claimable_eth": 9.4e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x73267721ed173c48beefdebbaac032443d0701cf",
+      "balance_wei": "9204000000",
+      "balance_eth": 9.204e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "9204000000",
+          "claimable_eth": 9.204e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xddd6bda71daa01529e0574bcdd5dcb979b9c539c",
+      "balance_wei": "9000000000",
+      "balance_eth": 9e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "9000000000",
+          "claimable_eth": 9e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xffebdf7dca8fccd6d7c201377af7afc8878a63b7",
+      "balance_wei": "8515000000",
+      "balance_eth": 8.515e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "8515000000",
+          "claimable_eth": 8.515e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xf517a26f51484a4045d4752e14dfe098c5bdf66a",
+      "balance_wei": "8500000000",
+      "balance_eth": 8.5e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "8500000000",
+          "claimable_eth": 8.5e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x9c9b22bb26b4135aab2421dbc91175a9c4912e9b",
+      "balance_wei": "8046000000",
+      "balance_eth": 8.046e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "8046000000",
+          "claimable_eth": 8.046e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x41c84ff338d8d77928f74c65919c6c2b2e289d81",
+      "balance_wei": "8028000000",
+      "balance_eth": 8.028e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "8028000000",
+          "claimable_eth": 8.028e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xe501b1822cdaa9d5d8ce2439a447f37befe50178",
+      "balance_wei": "8000000000",
+      "balance_eth": 8e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "8000000000",
+          "claimable_eth": 8e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xf3443b868b1d6e8bb1dc6a4a0b247115934d4453",
+      "balance_wei": "8000000000",
+      "balance_eth": 8e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "8000000000",
+          "claimable_eth": 8e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xf8e9233cb2d345e0bcc40c44bb9a849d0608ee96",
+      "balance_wei": "8000000000",
+      "balance_eth": 8e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "8000000000",
+          "claimable_eth": 8e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x25ed4cf58db3cbf0a9cab4520cfa2ea99e75d6e9",
+      "balance_wei": "7350000000",
+      "balance_eth": 7.35e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "7350000000",
+          "claimable_eth": 7.35e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x32bae0e913d2f7eb47b94b70ddea4a13d0bf48b9",
+      "balance_wei": "7272000000",
+      "balance_eth": 7.272e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "7272000000",
+          "claimable_eth": 7.272e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x288fb9e8ac70c2b9249c33f27ddda86bf61b6263",
+      "balance_wei": "7000000000",
+      "balance_eth": 7e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "7000000000",
+          "claimable_eth": 7e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x459a83a8e92353cbf296fa0b749be0df335e3537",
+      "balance_wei": "7000000000",
+      "balance_eth": 7e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "7000000000",
+          "claimable_eth": 7e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x8271c5b2714f6ad46126fadc86ce20a759b4c734",
+      "balance_wei": "6825000000",
+      "balance_eth": 6.825e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "6825000000",
+          "claimable_eth": 6.825e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x4d4b08bf5ffc4f2325253e63803c16b5aa17bd1b",
+      "balance_wei": "6650000000",
+      "balance_eth": 6.65e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "6650000000",
+          "claimable_eth": 6.65e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x71e9e68c849e4c7e9548d55f573e64f040f71c81",
+      "balance_wei": "6602000000",
+      "balance_eth": 6.602e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "6602000000",
+          "claimable_eth": 6.602e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x465d34f61ee5328a5dc1b8e1fb0591628de7abb1",
+      "balance_wei": "6550000000",
+      "balance_eth": 6.55e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "6550000000",
+          "claimable_eth": 6.55e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x6d6696ddabaff9ef35f91e1f6127c87b9523e529",
+      "balance_wei": "6382000000",
+      "balance_eth": 6.382e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "6382000000",
+          "claimable_eth": 6.382e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x1ff7cbdfd28d6583c7194f8d9f636e0045dbba30",
+      "balance_wei": "6120000000",
+      "balance_eth": 6.12e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "6120000000",
+          "claimable_eth": 6.12e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x8b58b8b6ffddd5e50167a589e9e1f36a34e069e2",
+      "balance_wei": "6000000000",
+      "balance_eth": 6e-09,
+      "r1_channels": [
+        {
+          "channel_id": 1,
+          "claimable_wei": "6000000000",
+          "claimable_eth": 6e-09,
+          "item_id": "channel:1"
+        }
+      ]
+    },
+    {
+      "address": "0xb19239a4e6fad661ff7da14709a60f1ca8c01c70",
+      "balance_wei": "6000000000",
+      "balance_eth": 6e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "6000000000",
+          "claimable_eth": 6e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xc100a40bc8f27e7e0f0f4d44807a735329154b0c",
+      "balance_wei": "5710000000",
+      "balance_eth": 5.71e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "5710000000",
+          "claimable_eth": 5.71e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xd92542eae2a46aa16aa19ac22cb5bab9d2fa2510",
+      "balance_wei": "5705000000",
+      "balance_eth": 5.705e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "5705000000",
+          "claimable_eth": 5.705e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x30a5b38cc9ae733f69f8d48caa4382a29353f92d",
+      "balance_wei": "5424000000",
+      "balance_eth": 5.424e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "5424000000",
+          "claimable_eth": 5.424e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xb9ea1e997f122f045e0130af21de262fa0ba75fe",
+      "balance_wei": "5200000000",
+      "balance_eth": 5.2e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "5200000000",
+          "claimable_eth": 5.2e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xe30d6fa5b81ff74f264f5172aa913962babcf11d",
+      "balance_wei": "5012000000",
+      "balance_eth": 5.012e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "5012000000",
+          "claimable_eth": 5.012e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x0fe07dbd07ba4c1075c1db97806ba3c5b113cee0",
+      "balance_wei": "5000000000",
+      "balance_eth": 5e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "5000000000",
+          "claimable_eth": 5e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x239d7102f1f12907480e6c3363fe8e5de683c4a1",
+      "balance_wei": "5000000000",
+      "balance_eth": 5e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "5000000000",
+          "claimable_eth": 5e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x255f6457e6516d4c02aebf555554144e7291e9a5",
+      "balance_wei": "5000000000",
+      "balance_eth": 5e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "5000000000",
+          "claimable_eth": 5e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xcfdf5fb0b98fb9e6087854cdf957be44ab54150d",
+      "balance_wei": "5000000000",
+      "balance_eth": 5e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "5000000000",
+          "claimable_eth": 5e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xdb83cb96d80ed52bcafed34a78b9200c66bc3c4a",
+      "balance_wei": "5000000000",
+      "balance_eth": 5e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "5000000000",
+          "claimable_eth": 5e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xa7c5a0724261d0ff0e8a65b4f731a1acb6038b32",
+      "balance_wei": "4900000000",
+      "balance_eth": 4.9e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "4900000000",
+          "claimable_eth": 4.9e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xef1a23e1b3b07701e7f5e83bcba6ee9f986436ec",
+      "balance_wei": "4835000000",
+      "balance_eth": 4.835e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "4835000000",
+          "claimable_eth": 4.835e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x59207f45799abbb59bfab25d7f46f860644bb2e9",
+      "balance_wei": "4800000000",
+      "balance_eth": 4.8e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "4800000000",
+          "claimable_eth": 4.8e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xb6abaaa9a8ef55d20e7d2d2517034db9d64ac238",
+      "balance_wei": "4743178470",
+      "balance_eth": 4.74317847e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "4743178470",
+          "claimable_eth": 4.74317847e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x7a4ec608c268ff9623b110cda13e55499c99a030",
+      "balance_wei": "4599995000",
+      "balance_eth": 4.599995e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "4599995000",
+          "claimable_eth": 4.599995e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x4c08d25bbc6d7bdd8728d96154505fa93e2407c6",
+      "balance_wei": "4538000000",
+      "balance_eth": 4.538e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "4538000000",
+          "claimable_eth": 4.538e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x5c3f7d30801165a9d0cb7ae84616425f430f1c62",
+      "balance_wei": "4455000000",
+      "balance_eth": 4.455e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "4455000000",
+          "claimable_eth": 4.455e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x40a1239fdcdb6b01f373bdf8cfb14ac40ea68361",
+      "balance_wei": "4150000000",
+      "balance_eth": 4.15e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "4150000000",
+          "claimable_eth": 4.15e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x2cc6d5140e324bdba8ffef6cc1a5372bd8b3d814",
+      "balance_wei": "4070000000",
+      "balance_eth": 4.07e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "4070000000",
+          "claimable_eth": 4.07e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x7b92eccfa9fde44b7656a4f762b283b8ef2e1b32",
+      "balance_wei": "4000000000",
+      "balance_eth": 4e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "4000000000",
+          "claimable_eth": 4e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xadbdd8826358f5ecd5968e0deef60c3a7b41417e",
+      "balance_wei": "4000000000",
+      "balance_eth": 4e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "4000000000",
+          "claimable_eth": 4e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x8d80937c1d2c257db359028f1c96158dd5260f2c",
+      "balance_wei": "3940000000",
+      "balance_eth": 3.94e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "3940000000",
+          "claimable_eth": 3.94e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x59b9264d310eafdd6e563fddfdfab4af9335a35c",
+      "balance_wei": "3740000000",
+      "balance_eth": 3.74e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "3740000000",
+          "claimable_eth": 3.74e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x13e4f0e6718b096567e2255fa13848b7c41a5483",
+      "balance_wei": "3730000000",
+      "balance_eth": 3.73e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "3730000000",
+          "claimable_eth": 3.73e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x8b1b0911a5cc9646a22c7621a7feaf9a4f5b01fa",
+      "balance_wei": "3600000000",
+      "balance_eth": 3.6e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "3600000000",
+          "claimable_eth": 3.6e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xdec84c5d37f9c3eae17d1f63fc5e0c8d00994a11",
+      "balance_wei": "3400000000",
+      "balance_eth": 3.4e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "3400000000",
+          "claimable_eth": 3.4e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xf5bc3b6de6cf9a8a19a479bd07dae70d9fab45a1",
+      "balance_wei": "3350000000",
+      "balance_eth": 3.35e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "3350000000",
+          "claimable_eth": 3.35e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x51062b5704c03b09de97126df7b4d2eab27888e5",
+      "balance_wei": "3132000000",
+      "balance_eth": 3.132e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "3132000000",
+          "claimable_eth": 3.132e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xa9acaea9bd5c12010fdd080db2d319f2720f8527",
+      "balance_wei": "3108000000",
+      "balance_eth": 3.108e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "3108000000",
+          "claimable_eth": 3.108e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x49fc5195aad930b4df3ec1e50bb14af3586f0793",
+      "balance_wei": "3106000000",
+      "balance_eth": 3.106e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "3106000000",
+          "claimable_eth": 3.106e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x1f8c9ba629f6beba5f9b4d6871d08f2e8153ce9c",
+      "balance_wei": "3000000000",
+      "balance_eth": 3e-09,
+      "r1_channels": [
+        {
+          "channel_id": 1,
+          "claimable_wei": "3000000000",
+          "claimable_eth": 3e-09,
+          "item_id": "channel:1"
+        }
+      ]
+    },
+    {
+      "address": "0x81a73b5c3717e059f3ff19a55c48a54acf6b0415",
+      "balance_wei": "3000000000",
+      "balance_eth": 3e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "3000000000",
+          "claimable_eth": 3e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xed6a434a0bdde3cc6bb93686ca2b902af64b6ea6",
+      "balance_wei": "3000000000",
+      "balance_eth": 3e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "3000000000",
+          "claimable_eth": 3e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xfc07296b2d6d9e8f1b27393eca66f074c57106e4",
+      "balance_wei": "3000000000",
+      "balance_eth": 3e-09,
+      "r1_channels": [
+        {
+          "channel_id": 1,
+          "claimable_wei": "3000000000",
+          "claimable_eth": 3e-09,
+          "item_id": "channel:1"
+        }
+      ]
+    },
+    {
+      "address": "0xe3628ae3cb6e6a713869bbc3ca421a753d39037d",
+      "balance_wei": "2964362437",
+      "balance_eth": 2.964362437e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "2964362437",
+          "claimable_eth": 2.964362437e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xe5a954635bb4fb3e778847f722e15ab1a4bf4c08",
+      "balance_wei": "2830000000",
+      "balance_eth": 2.83e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "2830000000",
+          "claimable_eth": 2.83e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xce032771a5170335384d55a223326b5cc4056579",
+      "balance_wei": "2505000000",
+      "balance_eth": 2.505e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "2505000000",
+          "claimable_eth": 2.505e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xfc0431a410a65c16c9bb04822ed4c4d4aca7a365",
+      "balance_wei": "2502000000",
+      "balance_eth": 2.502e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "2502000000",
+          "claimable_eth": 2.502e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xdcb7f7a86ffb4b2348f3fa42510cedf56c173ce1",
+      "balance_wei": "2495000000",
+      "balance_eth": 2.495e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "2495000000",
+          "claimable_eth": 2.495e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x1dfa73091b7d65cceff3e78fbb6e30b734d55f15",
+      "balance_wei": "2450000000",
+      "balance_eth": 2.45e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "2450000000",
+          "claimable_eth": 2.45e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x2c3f75d1ead2b645983cd228c6c539d07ed70c8e",
+      "balance_wei": "2320000000",
+      "balance_eth": 2.32e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "2320000000",
+          "claimable_eth": 2.32e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x7115c91d95e66029cc37e4340e0ad58036257255",
+      "balance_wei": "2305000000",
+      "balance_eth": 2.305e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "2305000000",
+          "claimable_eth": 2.305e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x6dfde10721758fb1c2885c58992f67ec55f07652",
+      "balance_wei": "2285000000",
+      "balance_eth": 2.285e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "2285000000",
+          "claimable_eth": 2.285e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x250eccfddc2ebf1b3650f6cf17a3f56e7419ce26",
+      "balance_wei": "2208000000",
+      "balance_eth": 2.208e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "2208000000",
+          "claimable_eth": 2.208e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x0a12b180651058186edb4bf125aae1479ce92d6f",
+      "balance_wei": "2050000000",
+      "balance_eth": 2.05e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "2050000000",
+          "claimable_eth": 2.05e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x19f33b69eee5c300c0cc1b3c4703bedb7503b7e3",
+      "balance_wei": "2000000000",
+      "balance_eth": 2e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "2000000000",
+          "claimable_eth": 2e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x648695fac48e592babd8d0b625933bbafcc8c62a",
+      "balance_wei": "2000000000",
+      "balance_eth": 2e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "2000000000",
+          "claimable_eth": 2e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x74f6cf8846240bbbb9e8bd09ee34a9eb4ec085a1",
+      "balance_wei": "2000000000",
+      "balance_eth": 2e-09,
+      "r1_channels": [
+        {
+          "channel_id": 1,
+          "claimable_wei": "2000000000",
+          "claimable_eth": 2e-09,
+          "item_id": "channel:1"
+        }
+      ]
+    },
+    {
+      "address": "0x04848570c193b9371d7da872ef8d70d46ec8b0e6",
+      "balance_wei": "1986560000",
+      "balance_eth": 1.98656e-09,
+      "r1_channels": [
+        {
+          "channel_id": 1,
+          "claimable_wei": "1986560000",
+          "claimable_eth": 1.98656e-09,
+          "item_id": "channel:1"
+        }
+      ]
+    },
+    {
+      "address": "0xeb8a55bb0a391a6da45184068c817e98907f32b9",
+      "balance_wei": "1740000000",
+      "balance_eth": 1.74e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "1740000000",
+          "claimable_eth": 1.74e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x5fe42f587101b748b6ccdde82d56a117310eb9f1",
+      "balance_wei": "1600000000",
+      "balance_eth": 1.6e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "1600000000",
+          "claimable_eth": 1.6e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x656cfb378289e98a03b1dce970334695cc1bdb5c",
+      "balance_wei": "1600000000",
+      "balance_eth": 1.6e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "1600000000",
+          "claimable_eth": 1.6e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xd4e676e50156626e86520c38a5c74a6c47570f0a",
+      "balance_wei": "1600000000",
+      "balance_eth": 1.6e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "1600000000",
+          "claimable_eth": 1.6e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xfa5ac9de35344a180f751afd202238e5c96e3051",
+      "balance_wei": "1530000000",
+      "balance_eth": 1.53e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "1530000000",
+          "claimable_eth": 1.53e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x2adbb059380f2f9f46b6ce320930023a11523542",
+      "balance_wei": "1323000000",
+      "balance_eth": 1.323e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "1323000000",
+          "claimable_eth": 1.323e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x90c20b04394c63d5770f765f873968ed5da3435b",
+      "balance_wei": "1150000000",
+      "balance_eth": 1.15e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "1150000000",
+          "claimable_eth": 1.15e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x6b3cd0f1270bb840afb372dfa6f35b81d41eb074",
+      "balance_wei": "1140000000",
+      "balance_eth": 1.14e-09,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "1140000000",
+          "claimable_eth": 1.14e-09,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xaecc3792aa499807177e89fbd7297b233ad4009d",
+      "balance_wei": "950000000",
+      "balance_eth": 9.5e-10,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "950000000",
+          "claimable_eth": 9.5e-10,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x8e3e9e583e5ca5172cea458add3223216cfb8303",
+      "balance_wei": "890000000",
+      "balance_eth": 8.9e-10,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "890000000",
+          "claimable_eth": 8.9e-10,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xe5f1c6930357a6e6efa00f6931453b2c485197cb",
+      "balance_wei": "800000000",
+      "balance_eth": 8e-10,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "800000000",
+          "claimable_eth": 8e-10,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xddb56fcfbff29c7632d4715b06fdf91a14a876e6",
+      "balance_wei": "728000000",
+      "balance_eth": 7.28e-10,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "728000000",
+          "claimable_eth": 7.28e-10,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x4d18de0a5958a1b2aa09ea9c9a6783a23f434b02",
+      "balance_wei": "500000000",
+      "balance_eth": 5e-10,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "500000000",
+          "claimable_eth": 5e-10,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0xc3945bec515a7b653c9f237e6816b97839ea0d2e",
+      "balance_wei": "300000000",
+      "balance_eth": 3e-10,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "300000000",
+          "claimable_eth": 3e-10,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x38ea73377fe70c9fcf07da5ddb2ad6618cc20418",
+      "balance_wei": "210000000",
+      "balance_eth": 2.1e-10,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "210000000",
+          "claimable_eth": 2.1e-10,
+          "item_id": "channel:2"
+        }
+      ]
+    },
+    {
+      "address": "0x203ead050b5b97271939b004e89a97e4027e17ed",
+      "balance_wei": "120000000",
+      "balance_eth": 1.2e-10,
+      "r1_channels": [
+        {
+          "channel_id": 2,
+          "claimable_wei": "120000000",
+          "claimable_eth": 1.2e-10,
+          "item_id": "channel:2"
+        }
+      ]
+    }
+  ]
+}

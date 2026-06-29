@@ -23,6 +23,8 @@ true brick.
 | TransitFinanceRefund | [0xc213…7f63](https://etherscan.io/address/0xc213f258f4142f53d086f9edb7a36e67eb347f63) | 161.02 | [0x8576…0c55](https://etherscan.io/address/0x8576910497930b79a97a24de1acb0333399d0c55) | `setClaim(false, 0)` | `claim()` |
 | Tito Surf MasterChef | [0x6db1…f4be](https://etherscan.io/address/0x6db1c1b318275df254bb47c63e7f316380baf4be) | 42.57 | [0xa81e…c3bb](https://etherscan.io/address/0xa81eac3009bd6e6cce36602d6851fda789ddc3bb) | rejected/pending: source exposes `activateSurfPool()`, not `setSurfPoolActive(true)` | not locally proven |
 | EpikStaking | [0x59ac…62a3](https://etherscan.io/address/0x59accd277add23ee736e70a456a3d2c89e9a62a3) | 8.13 claimable | n/a | **moved to Forgotten ETH integration** | `claimReward()` |
+| R1Exchange | [0xc7c9…8302](https://etherscan.io/address/0xc7c9b856d33651cc2bcd9e0099efa85f59f78302) | 146.28 claimable / 150.36 live | n/a | **moved to Forgotten ETH integration** | `applyWithdraw(0x0, amount, channelId)` then `withdraw(0x0, amount, channelId)` |
+| PandaDAOFarewell | [0x229c…e3f3](https://etherscan.io/address/0x229cc0a81a1d6b4a2fc1452b3bd166462216e3f3) | 50.87 EOA claimable / 68.36 live | n/a | **moved to Forgotten ETH integration path**; contract-held PANDA excluded from direct UI because `redeem()` requires `tx.origin` | grant Juicebox permission index 3 for project 409, then `redeem(amount)` |
 
 ## D — Owner/gate unlock (state/oracle/role must change first; public outreach details should stay abbreviated until PoC-complete)
 
@@ -102,7 +104,6 @@ Not single-owner-key unlocks (governance, dead dependency, operator custody). Re
 | Miner | [0x6435…52de](https://etherscan.io/address/0x64356f9e79957fa6d84564fa75f53028799c52de) | 245.95 | owner `0x2aaf…a841` | `withdraw`/`userWithdraw` both admin-gated |
 | Kyber reserve A | [0x9149…c79e](https://etherscan.io/address/0x9149c59f087e891b659481ed665768a57247c79e) | 196.95 | admin `0xef94…c8a7` | `withdraw` operator-gated to approved destinations |
 | XifraICO2 | [0x7488…529e](https://etherscan.io/address/0x7488451db91df618759b8af15e36f70c0fdd529e) | 193.59 | fixed `xifraWallet` recipient | `withdrawICOFunds()` sends to immutable `xifraWallet` |
-| R1Exchange | [0xc7c9…8302](https://etherscan.io/address/0xc7c9b856d33651cc2bcd9e0099efa85f59f78302) | 150.36 | owner `0xfe2d…45e7` | `withdrawEnabled()` false; balances near-zero |
 | Kyber reserve B | [0x773a…44c3](https://etherscan.io/address/0x773a58c0ae122f56d6747bc1264f00174b3144c3) | 117.75 | admin `0x02ce…ba633` | As reserve A |
 | NativeOFT | [0x4f7a…b38e](https://etherscan.io/address/0x4f7a67464b5976d7547c860109e4432d50afb38e) | 68.59 | owner `0x707e…6bca` | LayerZero bridge wrapper; ETH backs OFT accounting |
 | ApeToken | [0x22ad…394b](https://etherscan.io/address/0x22ad3fab750fb53118e4d6aa85343056a736394b) | 59.64 | admin `0x22f6…760f` | `claimPresale()` mints tokens; only dev spends ETH |
@@ -117,5 +118,4 @@ Dead owner address, contract bug, or broken bytecode. No owner action and no use
 |---|---|---:|---|
 | AkuDreams | [0xf42c…961d](https://etherscan.io/address/0xf42c318dbfbaab0eee040279c6a2588fa01a961d) | 11,539.50 | `processRefunds` permanently stuck by a griefing bug; only a team migration/settlement could recover |
 | Rouleth | [0x18a6…9601](https://etherscan.io/address/0x18a672e11d637fffadccc99b152f4895da069601) | 91.00 | Broken old bytecode — every function reverts on an invalid jump |
-| PandaDAOFarewell | [0x229c…e3f3](https://etherscan.io/address/0x229cc0a81a1d6b4a2fc1452b3bd166462216e3f3) | 68.36 | `owner()` is the burn address `0x…dead`; the `onlyOwner withdrawEther` is permanently uncallable |
 | 2017-18 crowdsale leftover | [0x58fc…3e17](https://etherscan.io/address/0x58fcf11196abaeefdf23198ec4ec9c5237963e17) | 6.46 | Not a live RefundVault balance: this crowdsale exceeded its goal, `claimRefund()` reverts before and after owner `finalize()`, the sibling vault is empty, and `finalize()` leaves the 6.46 ETH on the crowdsale contract |

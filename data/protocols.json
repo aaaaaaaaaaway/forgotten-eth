@@ -1182,6 +1182,15 @@
     "multi_step": true
   },
   {
+    "key": "pandadao",
+    "name": "PandaDAO Farewell",
+    "contract": "0x229cc0a81a1d6b4a2fc1452b3bd166462216e3f3",
+    "balance_source": "token",
+    "category": "dao",
+    "balance_file": "pandadao_eth_balances.json",
+    "multi_step": true
+  },
+  {
     "key": "thedao",
     "name": "The DAO",
     "contract": "0xbb9bc244d798123fde783fcc1c72d3bb8c189413",
@@ -1213,6 +1222,15 @@
     "balance_source": "eth",
     "category": "dex",
     "balance_file": "ethfinex_v2_eth_balances.json"
+  },
+  {
+    "key": "r1_exchange",
+    "name": "R1Exchange",
+    "contract": "0xc7c9b856d33651cc2bcd9e0099efa85f59f78302",
+    "balance_source": "eth",
+    "category": "dex",
+    "balance_file": "r1_exchange_eth_balances.json",
+    "multi_step": true
   },
   {
     "key": "switcheo_v2",
