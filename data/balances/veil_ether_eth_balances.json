@@ -1,10 +1,10 @@
 {
   "contract": "0x53b04999c1ff2d77fcdde98935bb936a67209e4c",
   "balance_source": "eth",
-  "contract_eth_balance": 57.296225,
-  "total_eth_in_balances": 57.29596459,
-  "addresses_with_balance": 374,
-  "coverage_pct": 100,
+  "contract_eth_balance": 55.74329718,
+  "total_eth_in_balances": 56.74395046,
+  "addresses_with_balance": 371,
+  "coverage_pct": 101.8,
   "scan_date": "2026-04-13",
   "distribution": {
     ">=100 ETH": {
@@ -20,19 +20,19 @@
       "total_eth": 33.074869
     },
     "0.1-1 ETH": {
-      "count": 92,
-      "total_eth": 19.825847
+      "count": 90,
+      "total_eth": 19.303832
     },
     "0.01-0.1 ETH": {
-      "count": 115,
-      "total_eth": 4.089951
+      "count": 114,
+      "total_eth": 4.059951
     },
     "<0.01 ETH": {
       "count": 153,
       "total_eth": 0.305298
     }
   },
-  "last_event_refresh": "2026-06-29T08:23:54Z",
+  "last_event_refresh": "2026-07-04 22:44:15 UTC",
   "balances": [
     {
       "address": "0x58a800ed9a0243b8b61d7e6ff33cf013cfa1900c",
@@ -193,8 +193,9 @@
     {
       "address": "0x063a94464a1d8431f954b8627276a5ba522ac0b6",
       "rank": 27,
-      "balance_eth": 0.3220141273489203,
-      "balance_wei": "322014127348920301"
+      "balance_eth": 0,
+      "balance_wei": "0",
+      "claimed": true
     },
     {
       "address": "0x82aa3a9c16d8697d902eb1f7c5d0e404396bec8a",
@@ -367,8 +368,9 @@
     {
       "address": "0x8ac5c1cbafc564fbd01ee4b116dea85e6a593ab4",
       "rank": 56,
-      "balance_eth": 0.2,
-      "balance_wei": "200000000000000000"
+      "balance_eth": 0,
+      "balance_wei": "0",
+      "claimed": true
     },
     {
       "address": "0x0e5011001cf9c89b0259bc3b050785067495ebf5",
@@ -1003,8 +1005,9 @@
     {
       "address": "0x35e352e52fc7b7daa82c8e875c45294800bc530b",
       "rank": 163,
-      "balance_eth": 0.03,
-      "balance_wei": "30000000000000000"
+      "balance_eth": 0,
+      "balance_wei": "0",
+      "claimed": true
     },
     {
       "address": "0x46fc0f64f520fa2a2d5eef533b7bd3d198368d03",

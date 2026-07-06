@@ -1,10 +1,10 @@
 {
   "contract": "0xc3c12a9e63e466a3ba99e07f3ef1f38b8b81ae1b",
   "balance_source": "eth",
-  "contract_eth_balance": 102.8694163,
-  "total_eth_in_balances": 102.95432025,
-  "addresses_with_balance": 1609,
-  "coverage_pct": 100.08,
+  "contract_eth_balance": 102.75417921,
+  "total_eth_in_balances": 102.84258333,
+  "addresses_with_balance": 1605,
+  "coverage_pct": 100.09,
   "scan_date": "2026-03-31 21:01:44 UTC",
   "description": "ETH balances in defunct SwitchDex contract",
   "distribution": {
@@ -25,8 +25,8 @@
       "total_eth": 30.312448
     },
     "0.01-0.1 ETH": {
-      "count": 296,
-      "total_eth": 9.291583
+      "count": 293,
+      "total_eth": 9.179846
     },
     "<0.01 ETH": {
       "count": 1198,
@@ -35,7 +35,7 @@
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 2801,
-  "last_event_refresh": "2026-06-28 10:53:43 UTC",
+  "last_event_refresh": "2026-07-05 16:42:58 UTC",
   "balances": [
     {
       "rank": 1,
@@ -1313,14 +1313,16 @@
     {
       "rank": 217,
       "address": "0xa2c324ec1787e19b9933d7cb778642eb90e035d5",
-      "balance_wei": "40000000000000000",
-      "balance_eth": 0.04
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 218,
       "address": "0xcffc9c89c666456819b9cdd4549cc04168986ace",
-      "balance_wei": "40000000000000000",
-      "balance_eth": 0.04
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 219,
@@ -1451,8 +1453,9 @@
     {
       "rank": 240,
       "address": "0xbf5310fae4d7a0c6df0452bcda09aefa2748ad59",
-      "balance_wei": "31736923760000000",
-      "balance_eth": 0.03173692376
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 241,
@@ -3826,7 +3829,8 @@
       "rank": 635,
       "address": "0x444b62fd9561d479c423556b2e67841e5243818e",
       "balance_wei": "3500160401475917",
-      "balance_eth": 0.003500160401475917
+      "balance_eth": 0.003500160401475917,
+      "claimed": true
     },
     {
       "rank": 636,

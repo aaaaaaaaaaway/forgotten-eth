@@ -1,19 +1,21 @@
 {
   "contract": "0x6b1803a257298292517668a5832bc5a27cb012fb",
-  "contract_eth_balance": 49.275724,
-  "total_eth_in_balances": 49.2757238,
-  "addresses_with_balance": 6,
-  "coverage_pct": 100.0,
-  "scan_date": "2026-04-10 09:46:20 UTC",
   "balance_source": "weth",
-  "description": "Pop Finance GenesisWethPool \u2014 WETH staking rewards. Defunct yield farm, withdraw() fully permissionless.",
+  "contract_eth_balance": 10.34136043,
+  "total_eth_in_balances": 49.2757238,
+  "addresses_with_balance": 5,
+  "coverage_pct": 476.49,
+  "scan_date": "2026-04-10 09:46:20 UTC",
+  "description": "Pop Finance GenesisWethPool — WETH staking rewards. Defunct yield farm, withdraw() fully permissionless.",
   "distribution": {},
+  "last_event_refresh": "2026-07-06T08:07:03Z",
   "balances": [
     {
       "address": "0x6d16749cefb3892a101631279a8fe7369a281d0e",
       "balance_wei": "38934363366575823564",
       "balance_eth": 38.93436336657582,
-      "rank": 1
+      "rank": 1,
+      "claimed": true
     },
     {
       "address": "0x4bb53d16fe997bb03a2321e88c9b04364f2f9a62",

@@ -1,14 +1,12 @@
 {
   "contract": "0x0c7060bf06a78aaaab3fac76941318a52a3f4613",
   "balance_source": "token",
-  "token_checked": "0x0000000000000000000000000000000000000000",
-  "description": "ETH balances in Fractional Art / Tessera DEAD vault",
+  "contract_eth_balance": 51.397223,
+  "total_eth_in_balances": 46.515287,
+  "addresses_with_balance": 216,
+  "coverage_pct": 90.5,
   "scan_date": "2026-04-15 14:30:50 UTC",
-  "contract_eth_balance": 51.666672,
-  "total_addresses_scanned": 226,
-  "addresses_with_balance": 218,
-  "total_eth_in_balances": 46.784735,
-  "coverage_pct": 90.55,
+  "description": "ETH balances in Fractional Art / Tessera DEAD vault",
   "distribution": {
     ">=100 ETH": {
       "count": 0,
@@ -23,18 +21,22 @@
       "total_eth": 26.021209
     },
     "0.1-1 ETH": {
-      "count": 60,
-      "total_eth": 16.276904
+      "count": 59,
+      "total_eth": 16.086092
     },
     "0.01-0.1 ETH": {
-      "count": 102,
-      "total_eth": 4.318086
+      "count": 101,
+      "total_eth": 4.239449
     },
     "<0.01 ETH": {
       "count": 47,
       "total_eth": 0.168533
     }
   },
+  "token_checked": "0x0000000000000000000000000000000000000000",
+  "total_addresses_scanned": 226,
+  "total_supply": "33976166648106819234902",
+  "last_event_refresh": "2026-07-05 22:48:32 UTC",
   "balances": [
     {
       "address": "0x2912f57f93dd69fbbf477b616d6f8c34c49bb282",
@@ -268,8 +270,9 @@
     {
       "address": "0xe3d69bcab5daaea39787eeaf4c0369de366d71bd",
       "token_balance": "121324357854567907925",
-      "balance_wei": "190811571986214272",
-      "balance_eth": 0.19081157
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "address": "0x4cf23b08334dc2c26c6a65ab43c3e619c4bfbd61",
@@ -514,8 +517,9 @@
     {
       "address": "0x3ead00d7e1b95c5e99f287f04c72f62f2cb67c80",
       "token_balance": "50000000000000000000",
-      "balance_wei": "78636959370904325",
-      "balance_eth": 0.07863696
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "address": "0x562574af66836b1d30e69815bdf0740a7bd7c437",
@@ -1364,7 +1368,5 @@
       "balance_wei": "187855283",
       "balance_eth": 0
     }
-  ],
-  "total_supply": "33976166648106819234902",
-  "last_event_refresh": "2026-06-29 15:00:10 UTC"
+  ]
 }

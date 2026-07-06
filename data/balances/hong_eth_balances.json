@@ -5,7 +5,7 @@
   "total_eth_in_balances": 828.07581529,
   "addresses_with_balance": 44,
   "coverage_pct": 100.0,
-  "scan_date": "2026-06-29 15:24:31 UTC",
+  "scan_date": "2026-07-05 22:47:55 UTC",
   "description": "HONG duplicate contract. Verified source exposes refundMyIcoInvestment(), which refunds the caller's tracked weiGiven amount while the fund is not locked. Balances are reconstructed from evCreatedToken minus successful evRefund events and filtered to wallets that still hold HONG units required by onlyTokenHolders.",
   "meta": {
     "deploy_block": 2160722,

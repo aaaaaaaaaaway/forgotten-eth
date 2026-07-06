@@ -1,10 +1,10 @@
 {
   "contract": "0xd6c037be7fa60587e174db7a6710f7635d2971e7",
   "balance_source": "eth",
-  "contract_eth_balance": 102.880929,
+  "contract_eth_balance": 96.397929,
   "total_eth_in_balances": 98.606501,
   "addresses_with_balance": 136,
-  "coverage_pct": 95.85,
+  "coverage_pct": 102.29,
   "scan_date": "2026-06-21 01:41:14 UTC",
   "description": "ETH balances in defunct CryptoPhunks Marketplace contract",
   "distribution": {
@@ -35,6 +35,7 @@
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 7553,
+  "last_event_refresh": "2026-06-24 19:23:05 UTC",
   "balances": [
     {
       "rank": 1,
@@ -866,6 +867,5 @@
       "balance_wei": "1000000000000",
       "balance_eth": 0.000001
     }
-  ],
-  "last_event_refresh": "2026-06-24 19:23:05 UTC"
+  ]
 }
