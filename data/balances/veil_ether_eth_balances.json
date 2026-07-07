@@ -3,7 +3,7 @@
   "balance_source": "eth",
   "contract_eth_balance": 55.74329718,
   "total_eth_in_balances": 56.74395046,
-  "addresses_with_balance": 371,
+  "addresses_with_balance": 370,
   "coverage_pct": 101.8,
   "scan_date": "2026-04-13",
   "distribution": {
@@ -32,7 +32,7 @@
       "total_eth": 0.305298
     }
   },
-  "last_event_refresh": "2026-07-04 22:44:15 UTC",
+  "last_event_refresh": "2026-07-06T10:22:42Z",
   "balances": [
     {
       "address": "0x58a800ed9a0243b8b61d7e6ff33cf013cfa1900c",
@@ -122,7 +122,8 @@
       "address": "0xf09c860cac4119c959adb58fa4ad9bddf665875f",
       "rank": 15,
       "balance_eth": 1,
-      "balance_wei": "1000000000000000000"
+      "balance_wei": "1000000000000000000",
+      "claimed": true
     },
     {
       "address": "0x7143a19c74ff007cac92820a243324911407ac5d",
