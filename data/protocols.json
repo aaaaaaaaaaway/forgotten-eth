@@ -2340,5 +2340,13 @@
     "category": "defi",
     "balance_file": "dx_3_eth_balances.json",
     "multi_step": true
+  },
+  {
+    "key": "pownft",
+    "name": "POW NFT",
+    "contract": "0x9abb7bddc43fa67c76a62d8c016513827f59be1b",
+    "balance_source": "token",
+    "category": "nft",
+    "balance_file": "pownft_eth_balances.json"
   }
 ]

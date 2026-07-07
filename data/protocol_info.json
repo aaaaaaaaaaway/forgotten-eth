@@ -2530,5 +2530,14 @@
     "contract": "0x899f9a0440face1397a1ee1e3f6bf3580a6633d1",
     "deployed": "August 2017",
     "slug": "delphi-redemption"
+  },
+  "pownft": {
+    "name": "POW NFT",
+    "desc": "POW NFT (2021) was a proof-of-work mineable ERC-721: minting a token required finding a valid hash and paying a mining cost, and every token banks a share of the mining fees paid by all later tokens. Owners of early tokens still hold un-withdrawn accumulated ETH, claimable per token via withdraw(tokenId, withdrawUntil).",
+    "category": "nft",
+    "color": "#7c3aed",
+    "contract": "0x9abb7bddc43fa67c76a62d8c016513827f59be1b",
+    "deployed": "2021",
+    "slug": "pownft"
   }
 }
