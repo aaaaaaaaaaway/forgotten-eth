@@ -1,17 +1,17 @@
 {
   "contract": "0x9fa8fa61a10ff892e4ebceb7f4e0fc684c2ce0a9",
   "balance_source": "token",
-  "contract_eth_balance": 828.07581529,
-  "total_eth_in_balances": 828.07581529,
-  "addresses_with_balance": 44,
+  "contract_eth_balance": 727.97384324,
+  "total_eth_in_balances": 727.97384324,
+  "addresses_with_balance": 43,
   "coverage_pct": 100.0,
-  "scan_date": "2026-07-07 16:41:52 UTC",
+  "scan_date": "2026-07-09 16:35:37 UTC",
   "description": "HONG duplicate contract. Verified source exposes refundMyIcoInvestment(), which refunds the caller's tracked weiGiven amount while the fund is not locked. Balances are reconstructed from evCreatedToken minus successful evRefund events and filtered to wallets that still hold HONG units required by onlyTokenHolders.",
   "meta": {
     "deploy_block": 2160722,
     "withdraw_function": "refundMyIcoInvestment()",
-    "tokens_created": 351,
-    "live_hong_tokens_in_balance_file": 537,
+    "tokens_created": 350,
+    "live_hong_tokens_in_balance_file": 536,
     "note": "Payout is weiGiven, not proportional to live HONG token balance."
   },
   "balances": [
@@ -21,14 +21,6 @@
       "balance_eth": 201.99597323471198,
       "hong_tokens": 1,
       "wei_given": "201995973234712000000",
-      "refunded_wei": "0"
-    },
-    {
-      "address": "0x700365b641f5bf7c2af8fc046a85e8c96b9658fd",
-      "balance_wei": "100101972052428000000",
-      "balance_eth": 100.101972052428,
-      "hong_tokens": 1,
-      "wei_given": "100101972052428000000",
       "refunded_wei": "0"
     },
     {
