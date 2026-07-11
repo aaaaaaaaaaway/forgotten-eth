@@ -1,39 +1,22 @@
 {
-  "contract": "0x0b7fFc1f4AD541A4ED16b40D8c37f0929158D101",
-  "contract_eth_balance": 270.357249,
-  "total_eth_in_balances": 268.456924,
-  "addresses_with_balance": 100,
-  "coverage_pct": 99.3,
-  "scan_date": "2026-04-17 17:18:56 UTC",
-  "distribution": {
-    ">=100 ETH": {
-      "count": 0,
-      "total_eth": 0.0
-    },
-    "10-100 ETH": {
-      "count": 4,
-      "total_eth": 208.756649
-    },
-    "1-10 ETH": {
-      "count": 16,
-      "total_eth": 45.374369
-    },
-    "0.1-1 ETH": {
-      "count": 49,
-      "total_eth": 13.005437
-    },
-    "0.01-0.1 ETH": {
-      "count": 26,
-      "total_eth": 1.305732
-    },
-    "<0.01 ETH": {
-      "count": 5,
-      "total_eth": 0.014736
-    }
+  "contract": "0x0b7ffc1f4ad541a4ed16b40d8c37f0929158d101",
+  "balance_source": "weth",
+  "contract_eth_balance": 268.06684566,
+  "total_eth_in_balances": 266.16652118,
+  "addresses_with_balance": 99,
+  "coverage_pct": 99.29,
+  "scan_date": "2026-07-11 13:05:39 UTC",
+  "description": "Gnosis EasyAuction unclaimed WETH refunds. Users placed bids (sellAmount WETH) that cleared below the auction price and were not filled; the WETH is refundable via claimFromParticipantOrder. The gnosis-auction UI is dead; the contract is immutable with no deadline. Per-user balance is the exact WETH refund from simulating claimFromParticipantOrder via eth_call.",
+  "meta": {
+    "claim_function": "claimFromParticipantOrder(uint256,bytes32[])",
+    "weth_in_contract": 268.066846,
+    "eth_in_contract": 0.0,
+    "verified_via": "eth_call simulation of claimFromParticipantOrder",
+    "refreshed_from_stored_orders": true
   },
   "balances": [
     {
-      "address": "0x84D34f4f83a87596Cd3FB6887cFf8F17Bf5A7B83",
+      "address": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83",
       "balance_wei": "98460000000000000000",
       "balance_eth": 98.46,
       "user_id": 8968,
@@ -61,11 +44,10 @@
             }
           ]
         }
-      ],
-      "rank": 1
+      ]
     },
     {
-      "address": "0xc3B7Bd82832076221B9FEcc38bbbB5C1b9BA5C0F",
+      "address": "0xc3b7bd82832076221b9fecc38bbbb5c1b9ba5c0f",
       "balance_wei": "46176648778304000000",
       "balance_eth": 46.17664878,
       "user_id": 12516,
@@ -82,11 +64,10 @@
             }
           ]
         }
-      ],
-      "rank": 2
+      ]
     },
     {
-      "address": "0x57bfaa4781E2f5aD8955fe01E2bB2e5c40F6c354",
+      "address": "0x57bfaa4781e2f5ad8955fe01e2bb2e5c40f6c354",
       "balance_wei": "33100000000000000000",
       "balance_eth": 33.1,
       "user_id": 12496,
@@ -125,11 +106,10 @@
             }
           ]
         }
-      ],
-      "rank": 3
+      ]
     },
     {
-      "address": "0x569BB8c30F66b165440C3102de5Ee2d4B1dca854",
+      "address": "0x569bb8c30f66b165440c3102de5ee2d4b1dca854",
       "balance_wei": "31020000000000000000",
       "balance_eth": 31.02,
       "user_id": 12537,
@@ -146,11 +126,10 @@
             }
           ]
         }
-      ],
-      "rank": 5
+      ]
     },
     {
-      "address": "0x724700FBEf76E1A606953896FdAd777032f2987E",
+      "address": "0x724700fbef76e1a606953896fdad777032f2987e",
       "balance_wei": "8000000000000000000",
       "balance_eth": 8.0,
       "user_id": 8864,
@@ -167,11 +146,10 @@
             }
           ]
         }
-      ],
-      "rank": 6
+      ]
     },
     {
-      "address": "0xf632f067bB26B08E95e23225A016ED9E02265137",
+      "address": "0xf632f067bb26b08e95e23225a016ed9e02265137",
       "balance_wei": "5000000000000000000",
       "balance_eth": 5.0,
       "user_id": 8073,
@@ -188,11 +166,10 @@
             }
           ]
         }
-      ],
-      "rank": 7
+      ]
     },
     {
-      "address": "0xfF43229E1A7257CEcD40e112AC35B5219CD2D076",
+      "address": "0xff43229e1a7257cecd40e112ac35b5219cd2d076",
       "balance_wei": "5000000000000000000",
       "balance_eth": 5.0,
       "user_id": 8083,
@@ -209,11 +186,10 @@
             }
           ]
         }
-      ],
-      "rank": 8
+      ]
     },
     {
-      "address": "0x5d76A92b7cB9E1A81B8eb8c16468F1155B2f64f4",
+      "address": "0x5d76a92b7cb9e1a81b8eb8c16468f1155b2f64f4",
       "balance_wei": "5000000000000000000",
       "balance_eth": 5.0,
       "user_id": 8221,
@@ -230,11 +206,10 @@
             }
           ]
         }
-      ],
-      "rank": 9
+      ]
     },
     {
-      "address": "0x370Ceca4fC1287ED99924bbA76259F6C771A6022",
+      "address": "0x370ceca4fc1287ed99924bba76259f6c771a6022",
       "balance_wei": "3500000000000000000",
       "balance_eth": 3.5,
       "user_id": 8187,
@@ -251,11 +226,10 @@
             }
           ]
         }
-      ],
-      "rank": 10
+      ]
     },
     {
-      "address": "0x25125E438b7Ae0f9AE8511D83aBB0F4574217C7a",
+      "address": "0x25125e438b7ae0f9ae8511d83abb0f4574217c7a",
       "balance_wei": "3000000000000000000",
       "balance_eth": 3.0,
       "user_id": 11495,
@@ -272,32 +246,10 @@
             }
           ]
         }
-      ],
-      "rank": 12
+      ]
     },
     {
-      "address": "0xC8C911f0C5c61f20aeB8E93E0c33017563b8bd3c",
-      "balance_wei": "2290403115418000000",
-      "balance_eth": 2.29040312,
-      "user_id": 12383,
-      "unclaimed_auctions": 1,
-      "auction_refunds": [
-        {
-          "auction_id": 156,
-          "weth_refund_wei": "2290403115418000000",
-          "tokens_owed_wei": "30593844987",
-          "orders": [
-            {
-              "buy": "100000000000",
-              "sell": "3300000000000000000"
-            }
-          ]
-        }
-      ],
-      "rank": 13
-    },
-    {
-      "address": "0xE58C7aB48556f9DfEc55b1d0d77A2545805B2bC2",
+      "address": "0xe58c7ab48556f9dfec55b1d0d77a2545805b2bc2",
       "balance_wei": "2185476151779477409",
       "balance_eth": 2.18547615,
       "user_id": 8042,
@@ -314,11 +266,10 @@
             }
           ]
         }
-      ],
-      "rank": 14
+      ]
     },
     {
-      "address": "0xbD9c944DCFB31Cd24c81EBF1C974d950f44E42B8",
+      "address": "0xbd9c944dcfb31cd24c81ebf1c974d950f44e42b8",
       "balance_wei": "2000000000000000000",
       "balance_eth": 2.0,
       "user_id": 12141,
@@ -335,11 +286,10 @@
             }
           ]
         }
-      ],
-      "rank": 15
+      ]
     },
     {
-      "address": "0x8BC9014980aafc72477cf2afae4FA605558F0cDb",
+      "address": "0x8bc9014980aafc72477cf2afae4fa605558f0cdb",
       "balance_wei": "1900000000000000000",
       "balance_eth": 1.9,
       "user_id": 13602,
@@ -356,11 +306,10 @@
             }
           ]
         }
-      ],
-      "rank": 16
+      ]
     },
     {
-      "address": "0x9F0409224987547F2991Ca03Eda3bfDc2395eb5c",
+      "address": "0x9f0409224987547f2991ca03eda3bfdc2395eb5c",
       "balance_wei": "1800000000000000000",
       "balance_eth": 1.8,
       "user_id": 12033,
@@ -377,11 +326,10 @@
             }
           ]
         }
-      ],
-      "rank": 17
+      ]
     },
     {
-      "address": "0x01eF276360ac939c653B128122d0179136089CfE",
+      "address": "0x01ef276360ac939c653b128122d0179136089cfe",
       "balance_wei": "1396790000000000000",
       "balance_eth": 1.39679,
       "user_id": 8279,
@@ -422,11 +370,10 @@
             }
           ]
         }
-      ],
-      "rank": 18
+      ]
     },
     {
-      "address": "0x5c3BCD428758006927830806C19C6fA75A6Ea9e8",
+      "address": "0x5c3bcd428758006927830806c19c6fa75a6ea9e8",
       "balance_wei": "1200000000000000000",
       "balance_eth": 1.2,
       "user_id": 8025,
@@ -443,11 +390,10 @@
             }
           ]
         }
-      ],
-      "rank": 19
+      ]
     },
     {
-      "address": "0x9A5c0F32587de1188f4bC5A4EdF72b0aE1396f16",
+      "address": "0x9a5c0f32587de1188f4bc5a4edf72b0ae1396f16",
       "balance_wei": "1101700000000000000",
       "balance_eth": 1.1017,
       "user_id": 11291,
@@ -464,11 +410,10 @@
             }
           ]
         }
-      ],
-      "rank": 20
+      ]
     },
     {
-      "address": "0xF4B0400eB76fb71e111322360cea2eFdC6BE0Bfb",
+      "address": "0xf4b0400eb76fb71e111322360cea2efdc6be0bfb",
       "balance_wei": "1000000000000000000",
       "balance_eth": 1.0,
       "user_id": 8305,
@@ -485,11 +430,10 @@
             }
           ]
         }
-      ],
-      "rank": 22
+      ]
     },
     {
-      "address": "0x33b467c8cFF395e8dA9e6B47eF52EB472Ce61D09",
+      "address": "0x33b467c8cff395e8da9e6b47ef52eb472ce61d09",
       "balance_wei": "1000000000000000000",
       "balance_eth": 1.0,
       "user_id": 14313,
@@ -506,11 +450,10 @@
             }
           ]
         }
-      ],
-      "rank": 23
+      ]
     },
     {
-      "address": "0xc55f30A77FDaD6AB9606cB655EDc49cd3Db02327",
+      "address": "0xc55f30a77fdad6ab9606cb655edc49cd3db02327",
       "balance_wei": "917291224800345984",
       "balance_eth": 0.91729122,
       "user_id": 12522,
@@ -527,11 +470,10 @@
             }
           ]
         }
-      ],
-      "rank": 24
+      ]
     },
     {
-      "address": "0xA4290C9EAe274c7A8FbC57A1E68AdC3E95E7C67e",
+      "address": "0xa4290c9eae274c7a8fbc57a1e68adc3e95e7c67e",
       "balance_wei": "820000000000000000",
       "balance_eth": 0.82,
       "user_id": 8842,
@@ -548,11 +490,10 @@
             }
           ]
         }
-      ],
-      "rank": 25
+      ]
     },
     {
-      "address": "0x79dD11Ee6b3970dd46a333fF03c9Fa775680Ae7d",
+      "address": "0x79dd11ee6b3970dd46a333ff03c9fa775680ae7d",
       "balance_wei": "580000000000000000",
       "balance_eth": 0.58,
       "user_id": 11476,
@@ -569,11 +510,10 @@
             }
           ]
         }
-      ],
-      "rank": 26
+      ]
     },
     {
-      "address": "0x4337941A2Fe5d22e3f70850b69931D97044Dc176",
+      "address": "0x4337941a2fe5d22e3f70850b69931d97044dc176",
       "balance_wei": "551000000000000000",
       "balance_eth": 0.551,
       "user_id": 12538,
@@ -590,11 +530,10 @@
             }
           ]
         }
-      ],
-      "rank": 27
+      ]
     },
     {
-      "address": "0x471A02528929c9869e86501a6770E8F8ef77Ec63",
+      "address": "0x471a02528929c9869e86501a6770e8f8ef77ec63",
       "balance_wei": "519026887851120535",
       "balance_eth": 0.51902689,
       "user_id": 13533,
@@ -611,11 +550,10 @@
             }
           ]
         }
-      ],
-      "rank": 28
+      ]
     },
     {
-      "address": "0x896b94f4f27f12369698C302e2049cAe86936BbB",
+      "address": "0x896b94f4f27f12369698c302e2049cae86936bbb",
       "balance_wei": "500000000000000000",
       "balance_eth": 0.5,
       "user_id": 11722,
@@ -632,11 +570,10 @@
             }
           ]
         }
-      ],
-      "rank": 30
+      ]
     },
     {
-      "address": "0x7558B9A644CcD3C815F7b717213Dff0B0a9b0f98",
+      "address": "0x7558b9a644ccd3c815f7b717213dff0b0a9b0f98",
       "balance_wei": "500000000000000000",
       "balance_eth": 0.5,
       "user_id": 11728,
@@ -653,11 +590,10 @@
             }
           ]
         }
-      ],
-      "rank": 31
+      ]
     },
     {
-      "address": "0xd54f7AB07175d9eFFC4b72581517800B47ee7094",
+      "address": "0xd54f7ab07175d9effc4b72581517800b47ee7094",
       "balance_wei": "400000000000000000",
       "balance_eth": 0.4,
       "user_id": 8861,
@@ -674,11 +610,10 @@
             }
           ]
         }
-      ],
-      "rank": 34
+      ]
     },
     {
-      "address": "0x63C5c5a49c2C24afbCfBE1df60cCd2c6CF4ebAAC",
+      "address": "0x63c5c5a49c2c24afbcfbe1df60ccd2c6cf4ebaac",
       "balance_wei": "400000000000000000",
       "balance_eth": 0.4,
       "user_id": 11882,
@@ -695,11 +630,10 @@
             }
           ]
         }
-      ],
-      "rank": 35
+      ]
     },
     {
-      "address": "0x0508c3a6CB083b03D760a2cD7bD28A0a32A63E84",
+      "address": "0x0508c3a6cb083b03d760a2cd7bd28a0a32a63e84",
       "balance_wei": "350000000000000000",
       "balance_eth": 0.35,
       "user_id": 11553,
@@ -716,11 +650,10 @@
             }
           ]
         }
-      ],
-      "rank": 37
+      ]
     },
     {
-      "address": "0x846c243F92427A68CCb90c7B3C77f9bf5740ef90",
+      "address": "0x846c243f92427a68ccb90c7b3c77f9bf5740ef90",
       "balance_wei": "321693519713423326",
       "balance_eth": 0.32169352,
       "user_id": 13623,
@@ -737,11 +670,10 @@
             }
           ]
         }
-      ],
-      "rank": 38
+      ]
     },
     {
-      "address": "0x01Ec202abB571E073c144691B848f947b017FD16",
+      "address": "0x01ec202abb571e073c144691b848f947b017fd16",
       "balance_wei": "300000000000000000",
       "balance_eth": 0.3,
       "user_id": 11612,
@@ -758,11 +690,10 @@
             }
           ]
         }
-      ],
-      "rank": 39
+      ]
     },
     {
-      "address": "0x16598793223CA18E5Fcf2ec1b1AAf3f0d46C0171",
+      "address": "0x16598793223ca18e5fcf2ec1b1aaf3f0d46c0171",
       "balance_wei": "300000000000000000",
       "balance_eth": 0.3,
       "user_id": 11617,
@@ -779,11 +710,10 @@
             }
           ]
         }
-      ],
-      "rank": 40
+      ]
     },
     {
-      "address": "0xbc3b76686c627B229BE6DB20f4C47AB0E6bfFE09",
+      "address": "0xbc3b76686c627b229be6db20f4c47ab0e6bffe09",
       "balance_wei": "300000000000000000",
       "balance_eth": 0.3,
       "user_id": 13613,
@@ -800,11 +730,10 @@
             }
           ]
         }
-      ],
-      "rank": 41
+      ]
     },
     {
-      "address": "0x732876f7fB9CBB32B4C97cB3C3a767fF5a8b8b58",
+      "address": "0x732876f7fb9cbb32b4c97cb3c3a767ff5a8b8b58",
       "balance_wei": "263900000000000000",
       "balance_eth": 0.2639,
       "user_id": 13607,
@@ -821,11 +750,10 @@
             }
           ]
         }
-      ],
-      "rank": 42
+      ]
     },
     {
-      "address": "0x34E040AE65E8CBfde0B8e2F8bBDa396f8f05e46C",
+      "address": "0x34e040ae65e8cbfde0b8e2f8bbda396f8f05e46c",
       "balance_wei": "260000000000000000",
       "balance_eth": 0.26,
       "user_id": 13369,
@@ -842,11 +770,10 @@
             }
           ]
         }
-      ],
-      "rank": 43
+      ]
     },
     {
-      "address": "0x260eb0ffCb01d9A117b57531997cD32f8B445aeB",
+      "address": "0x260eb0ffcb01d9a117b57531997cd32f8b445aeb",
       "balance_wei": "250078618798280511",
       "balance_eth": 0.25007862,
       "user_id": 13841,
@@ -863,11 +790,10 @@
             }
           ]
         }
-      ],
-      "rank": 44
+      ]
     },
     {
-      "address": "0x3028200Db75f3162893182478Ea4391Df8E601Ed",
+      "address": "0x3028200db75f3162893182478ea4391df8e601ed",
       "balance_wei": "250000000000000000",
       "balance_eth": 0.25,
       "user_id": 8119,
@@ -884,11 +810,10 @@
             }
           ]
         }
-      ],
-      "rank": 45
+      ]
     },
     {
-      "address": "0x696F11E949D291743D544eb4447Fc3Eb4cEc4393",
+      "address": "0x696f11e949d291743d544eb4447fc3eb4cec4393",
       "balance_wei": "250000000000000000",
       "balance_eth": 0.25,
       "user_id": 11380,
@@ -905,11 +830,10 @@
             }
           ]
         }
-      ],
-      "rank": 47
+      ]
     },
     {
-      "address": "0xd9eA1D79C21722Ed93e5f2fE6C1Ae5F013D03D00",
+      "address": "0xd9ea1d79c21722ed93e5f2fe6c1ae5f013d03d00",
       "balance_wei": "250000000000000000",
       "balance_eth": 0.25,
       "user_id": 11389,
@@ -926,11 +850,10 @@
             }
           ]
         }
-      ],
-      "rank": 48
+      ]
     },
     {
-      "address": "0x71f525469A028E0908EEf58319f98Bb111B7F05f",
+      "address": "0x71f525469a028e0908eef58319f98bb111b7f05f",
       "balance_wei": "250000000000000000",
       "balance_eth": 0.25,
       "user_id": 13989,
@@ -947,11 +870,10 @@
             }
           ]
         }
-      ],
-      "rank": 49
+      ]
     },
     {
-      "address": "0x58C5B41C9FA99bd39a17D47Fe31b6B67ADF08637",
+      "address": "0x58c5b41c9fa99bd39a17d47fe31b6b67adf08637",
       "balance_wei": "250000000000000000",
       "balance_eth": 0.25,
       "user_id": 13991,
@@ -968,11 +890,10 @@
             }
           ]
         }
-      ],
-      "rank": 50
+      ]
     },
     {
-      "address": "0x7431878e089FC91FA52a5A27F4AD511f95F7B047",
+      "address": "0x7431878e089fc91fa52a5a27f4ad511f95f7b047",
       "balance_wei": "229500000000000000",
       "balance_eth": 0.2295,
       "user_id": 13544,
@@ -993,11 +914,10 @@
             }
           ]
         }
-      ],
-      "rank": 51
+      ]
     },
     {
-      "address": "0x00dBE6dFc86866B80C930E70111DE8cF4382b824",
+      "address": "0x00dbe6dfc86866b80c930e70111de8cf4382b824",
       "balance_wei": "220743062803714011",
       "balance_eth": 0.22074306,
       "user_id": 2654,
@@ -1014,11 +934,10 @@
             }
           ]
         }
-      ],
-      "rank": 52
+      ]
     },
     {
-      "address": "0xe205C202F41D87A6c0ACD672C3E9E01DbC9E517D",
+      "address": "0xe205c202f41d87a6c0acd672c3e9e01dbc9e517d",
       "balance_wei": "220000000000000000",
       "balance_eth": 0.22,
       "user_id": 12129,
@@ -1035,11 +954,10 @@
             }
           ]
         }
-      ],
-      "rank": 53
+      ]
     },
     {
-      "address": "0xb193d67F33f356556203DD8528775A142BfACdb8",
+      "address": "0xb193d67f33f356556203dd8528775a142bfacdb8",
       "balance_wei": "212677963085566653",
       "balance_eth": 0.21267796,
       "user_id": 13618,
@@ -1056,11 +974,10 @@
             }
           ]
         }
-      ],
-      "rank": 54
+      ]
     },
     {
-      "address": "0x80bc944A117Bd8cAD0938964888726b6caD5d378",
+      "address": "0x80bc944a117bd8cad0938964888726b6cad5d378",
       "balance_wei": "200166466821123185",
       "balance_eth": 0.20016647,
       "user_id": 8473,
@@ -1077,11 +994,10 @@
             }
           ]
         }
-      ],
-      "rank": 55
+      ]
     },
     {
-      "address": "0x2d53B848079979B6B10202e38290d6F4C2Ff7c5F",
+      "address": "0x2d53b848079979b6b10202e38290d6f4c2ff7c5f",
       "balance_wei": "200000000000000000",
       "balance_eth": 0.2,
       "user_id": 8136,
@@ -1098,11 +1014,10 @@
             }
           ]
         }
-      ],
-      "rank": 56
+      ]
     },
     {
-      "address": "0x4A400d3b54c1497580F24c4941F4a2E8BcCb2A95",
+      "address": "0x4a400d3b54c1497580f24c4941f4a2e8bccb2a95",
       "balance_wei": "200000000000000000",
       "balance_eth": 0.2,
       "user_id": 11450,
@@ -1119,11 +1034,10 @@
             }
           ]
         }
-      ],
-      "rank": 57
+      ]
     },
     {
-      "address": "0x11a9D0163ad6D0bfa531cc80073c34b435DAf915",
+      "address": "0x11a9d0163ad6d0bfa531cc80073c34b435daf915",
       "balance_wei": "200000000000000000",
       "balance_eth": 0.2,
       "user_id": 13345,
@@ -1140,11 +1054,10 @@
             }
           ]
         }
-      ],
-      "rank": 58
+      ]
     },
     {
-      "address": "0x4b7f39401247D6fE208e54D53d14cA0117c844aD",
+      "address": "0x4b7f39401247d6fe208e54d53d14ca0117c844ad",
       "balance_wei": "200000000000000000",
       "balance_eth": 0.2,
       "user_id": 13600,
@@ -1165,11 +1078,10 @@
             }
           ]
         }
-      ],
-      "rank": 59
+      ]
     },
     {
-      "address": "0xEF0A8A08220a961D9D099C97642c5a41fc9Cb889",
+      "address": "0xef0a8a08220a961d9d099c97642c5a41fc9cb889",
       "balance_wei": "195000000000000000",
       "balance_eth": 0.195,
       "user_id": 12701,
@@ -1186,11 +1098,10 @@
             }
           ]
         }
-      ],
-      "rank": 60
+      ]
     },
     {
-      "address": "0xBbCA66808712CcE5fd8D376Cf5d6bd4D064Cd0b8",
+      "address": "0xbbca66808712cce5fd8d376cf5d6bd4d064cd0b8",
       "balance_wei": "189387013677342973",
       "balance_eth": 0.18938701,
       "user_id": 8246,
@@ -1211,11 +1122,10 @@
             }
           ]
         }
-      ],
-      "rank": 61
+      ]
     },
     {
-      "address": "0x4e209Fc427BA76f073a91e837a1E3377EcFb9B6a",
+      "address": "0x4e209fc427ba76f073a91e837a1e3377ecfb9b6a",
       "balance_wei": "160000000000000000",
       "balance_eth": 0.16,
       "user_id": 8138,
@@ -1232,11 +1142,10 @@
             }
           ]
         }
-      ],
-      "rank": 62
+      ]
     },
     {
-      "address": "0xa967266d4Ef3bc4c9E9D941CE0377e664831A5E8",
+      "address": "0xa967266d4ef3bc4c9e9d941ce0377e664831a5e8",
       "balance_wei": "158069745491495455",
       "balance_eth": 0.15806975,
       "user_id": 13589,
@@ -1253,11 +1162,10 @@
             }
           ]
         }
-      ],
-      "rank": 63
+      ]
     },
     {
-      "address": "0xe44b70FDE82b7AC74cD53C19252d597a694A8649",
+      "address": "0xe44b70fde82b7ac74cd53c19252d597a694a8649",
       "balance_wei": "152993763920547833",
       "balance_eth": 0.15299376,
       "user_id": 14438,
@@ -1274,11 +1182,10 @@
             }
           ]
         }
-      ],
-      "rank": 64
+      ]
     },
     {
-      "address": "0xdaAc81cD83CEBd005D82A608F58197a5b6614Ef6",
+      "address": "0xdaac81cd83cebd005d82a608f58197a5b6614ef6",
       "balance_wei": "152808353231940417",
       "balance_eth": 0.15280835,
       "user_id": 11686,
@@ -1295,11 +1202,10 @@
             }
           ]
         }
-      ],
-      "rank": 65
+      ]
     },
     {
-      "address": "0x4ADd4D2c14E0d25ED469b866E05FC5Fc2A45413e",
+      "address": "0x4add4d2c14e0d25ed469b866e05fc5fc2a45413e",
       "balance_wei": "150000000000000000",
       "balance_eth": 0.15,
       "user_id": 13723,
@@ -1316,11 +1222,10 @@
             }
           ]
         }
-      ],
-      "rank": 66
+      ]
     },
     {
-      "address": "0xA99fFd15cE50b882e5B4bD2dd53B530A45A985f4",
+      "address": "0xa99ffd15ce50b882e5b4bd2dd53b530a45a985f4",
       "balance_wei": "125000000000000000",
       "balance_eth": 0.125,
       "user_id": 8082,
@@ -1337,11 +1242,10 @@
             }
           ]
         }
-      ],
-      "rank": 67
+      ]
     },
     {
-      "address": "0x9031537E04e25f02dccFD0988214AC320611Ed6F",
+      "address": "0x9031537e04e25f02dccfd0988214ac320611ed6f",
       "balance_wei": "125000000000000000",
       "balance_eth": 0.125,
       "user_id": 8220,
@@ -1358,11 +1262,10 @@
             }
           ]
         }
-      ],
-      "rank": 68
+      ]
     },
     {
-      "address": "0x22BB11A4262Bd20B27E82c8F6BE45559d7139025",
+      "address": "0x22bb11a4262bd20b27e82c8f6be45559d7139025",
       "balance_wei": "120000000000000000",
       "balance_eth": 0.12,
       "user_id": 12310,
@@ -1379,11 +1282,10 @@
             }
           ]
         }
-      ],
-      "rank": 69
+      ]
     },
     {
-      "address": "0x2213431dF63F04A7250ad16BE1BA6DE0695e3Da8",
+      "address": "0x2213431df63f04a7250ad16be1ba6de0695e3da8",
       "balance_wei": "111100000000000000",
       "balance_eth": 0.1111,
       "user_id": 8251,
@@ -1400,11 +1302,10 @@
             }
           ]
         }
-      ],
-      "rank": 70
+      ]
     },
     {
-      "address": "0x3E86eAC93A2dbB4faEB8709d77d451aeDA710eF9",
+      "address": "0x3e86eac93a2dbb4faeb8709d77d451aeda710ef9",
       "balance_wei": "100000000000000000",
       "balance_eth": 0.1,
       "user_id": 8107,
@@ -1421,11 +1322,10 @@
             }
           ]
         }
-      ],
-      "rank": 71
+      ]
     },
     {
-      "address": "0x4152C19c67Ae3AA0b04f3926826719E1293560Ea",
+      "address": "0x4152c19c67ae3aa0b04f3926826719e1293560ea",
       "balance_wei": "100000000000000000",
       "balance_eth": 0.1,
       "user_id": 8170,
@@ -1442,11 +1342,10 @@
             }
           ]
         }
-      ],
-      "rank": 72
+      ]
     },
     {
-      "address": "0x6Ceb397b68059Ca73049874D0a30c62500aE9877",
+      "address": "0x6ceb397b68059ca73049874d0a30c62500ae9877",
       "balance_wei": "100000000000000000",
       "balance_eth": 0.1,
       "user_id": 8341,
@@ -1463,11 +1362,10 @@
             }
           ]
         }
-      ],
-      "rank": 73
+      ]
     },
     {
-      "address": "0xA66277439e3A01612F5E37cD5926574beE238FF9",
+      "address": "0xa66277439e3a01612f5e37cd5926574bee238ff9",
       "balance_wei": "100000000000000000",
       "balance_eth": 0.1,
       "user_id": 13528,
@@ -1484,11 +1382,10 @@
             }
           ]
         }
-      ],
-      "rank": 74
+      ]
     },
     {
-      "address": "0xB7455bA9561b083e6185cd8582F897eB28e74d56",
+      "address": "0xb7455ba9561b083e6185cd8582f897eb28e74d56",
       "balance_wei": "100000000000000000",
       "balance_eth": 0.1,
       "user_id": 13566,
@@ -1505,11 +1402,10 @@
             }
           ]
         }
-      ],
-      "rank": 75
+      ]
     },
     {
-      "address": "0x5d47e5D242a8F66a6286b0a2353868875F5d6068",
+      "address": "0x5d47e5d242a8f66a6286b0a2353868875f5d6068",
       "balance_wei": "100000000000000000",
       "balance_eth": 0.1,
       "user_id": 7411,
@@ -1526,11 +1422,10 @@
             }
           ]
         }
-      ],
-      "rank": 76
+      ]
     },
     {
-      "address": "0xAA424F46cDFC89cd27c8A55D82c42d6c88a931C0",
+      "address": "0xaa424f46cdfc89cd27c8a55d82c42d6c88a931c0",
       "balance_wei": "100000000000000000",
       "balance_eth": 0.1,
       "user_id": 13669,
@@ -1547,11 +1442,10 @@
             }
           ]
         }
-      ],
-      "rank": 78
+      ]
     },
     {
-      "address": "0xb684d372352C897aa9502db98cdB90fc1C7D290e",
+      "address": "0xb684d372352c897aa9502db98cdb90fc1c7d290e",
       "balance_wei": "95000000000000000",
       "balance_eth": 0.095,
       "user_id": 8113,
@@ -1568,11 +1462,10 @@
             }
           ]
         }
-      ],
-      "rank": 79
+      ]
     },
     {
-      "address": "0x99fC5d8Dd4AeFA2FB65c8A961124ba7F914cd804",
+      "address": "0x99fc5d8dd4aefa2fb65c8a961124ba7f914cd804",
       "balance_wei": "80000000000000000",
       "balance_eth": 0.08,
       "user_id": 8184,
@@ -1589,11 +1482,10 @@
             }
           ]
         }
-      ],
-      "rank": 80
+      ]
     },
     {
-      "address": "0x49b78045d9B8CF4d83C49A942309A8Fc53B61DA1",
+      "address": "0x49b78045d9b8cf4d83c49a942309a8fc53b61da1",
       "balance_wei": "80000000000000000",
       "balance_eth": 0.08,
       "user_id": 8407,
@@ -1610,11 +1502,10 @@
             }
           ]
         }
-      ],
-      "rank": 81
+      ]
     },
     {
-      "address": "0x081F1436bad87776Ae4E13bd7bf240b2df26AfD0",
+      "address": "0x081f1436bad87776ae4e13bd7bf240b2df26afd0",
       "balance_wei": "80000000000000000",
       "balance_eth": 0.08,
       "user_id": 13551,
@@ -1631,11 +1522,10 @@
             }
           ]
         }
-      ],
-      "rank": 82
+      ]
     },
     {
-      "address": "0xCC322b22a65583Bb8EdB5Ea1355F2f497c055152",
+      "address": "0xcc322b22a65583bb8edb5ea1355f2f497c055152",
       "balance_wei": "78700000000000000",
       "balance_eth": 0.0787,
       "user_id": 12571,
@@ -1656,11 +1546,10 @@
             }
           ]
         }
-      ],
-      "rank": 83
+      ]
     },
     {
-      "address": "0x0C791435Dae68D3cBaf746960c237cd3d65D4121",
+      "address": "0x0c791435dae68d3cbaf746960c237cd3d65d4121",
       "balance_wei": "72000000000000000",
       "balance_eth": 0.072,
       "user_id": 11363,
@@ -1677,11 +1566,10 @@
             }
           ]
         }
-      ],
-      "rank": 84
+      ]
     },
     {
-      "address": "0x363b90Bc22843D884e531823D793A1544feB5d38",
+      "address": "0x363b90bc22843d884e531823d793a1544feb5d38",
       "balance_wei": "70000000000000000",
       "balance_eth": 0.07,
       "user_id": 13516,
@@ -1702,11 +1590,10 @@
             }
           ]
         }
-      ],
-      "rank": 85
+      ]
     },
     {
-      "address": "0x051F86354fB19b89dDfB97762aF05327D164ABBB",
+      "address": "0x051f86354fb19b89ddfb97762af05327d164abbb",
       "balance_wei": "67700000000000000",
       "balance_eth": 0.0677,
       "user_id": 11577,
@@ -1723,11 +1610,10 @@
             }
           ]
         }
-      ],
-      "rank": 86
+      ]
     },
     {
-      "address": "0x444dAFedC3b86C9C72d65Ba4781CC4d4C5d9D1EE",
+      "address": "0x444dafedc3b86c9c72d65ba4781cc4d4c5d9d1ee",
       "balance_wei": "62393376118427300",
       "balance_eth": 0.06239338,
       "user_id": 13503,
@@ -1744,11 +1630,10 @@
             }
           ]
         }
-      ],
-      "rank": 87
+      ]
     },
     {
-      "address": "0xAcC89b21449b6CBB5101D5267F730C25E02E2409",
+      "address": "0xacc89b21449b6cbb5101d5267f730c25e02e2409",
       "balance_wei": "60000000000000000",
       "balance_eth": 0.06,
       "user_id": 8397,
@@ -1765,11 +1650,10 @@
             }
           ]
         }
-      ],
-      "rank": 88
+      ]
     },
     {
-      "address": "0x83a291a6f59fE4AaB9D7693587379Ebb4E3D7E9A",
+      "address": "0x83a291a6f59fe4aab9d7693587379ebb4e3d7e9a",
       "balance_wei": "55000000000000000",
       "balance_eth": 0.055,
       "user_id": 11715,
@@ -1786,11 +1670,10 @@
             }
           ]
         }
-      ],
-      "rank": 89
+      ]
     },
     {
-      "address": "0xDb9918673D782a8116f583937f2f4A32352F11A2",
+      "address": "0xdb9918673d782a8116f583937f2f4a32352f11a2",
       "balance_wei": "55000000000000000",
       "balance_eth": 0.055,
       "user_id": 11883,
@@ -1807,11 +1690,10 @@
             }
           ]
         }
-      ],
-      "rank": 90
+      ]
     },
     {
-      "address": "0x702163D75780970b88b534032c35f8874D8Aa93B",
+      "address": "0x702163d75780970b88b534032c35f8874d8aa93b",
       "balance_wei": "52000000000000000",
       "balance_eth": 0.052,
       "user_id": 13381,
@@ -1828,11 +1710,10 @@
             }
           ]
         }
-      ],
-      "rank": 91
+      ]
     },
     {
-      "address": "0x8FC513de68fA5C94b6C15d99cB7c2e85058a5E62",
+      "address": "0x8fc513de68fa5c94b6c15d99cb7c2e85058a5e62",
       "balance_wei": "51002491286046731",
       "balance_eth": 0.05100249,
       "user_id": 12045,
@@ -1849,11 +1730,10 @@
             }
           ]
         }
-      ],
-      "rank": 92
+      ]
     },
     {
-      "address": "0xa6Bb66053eEeE083fDf3195Ab680A7A6E24BD8f2",
+      "address": "0xa6bb66053eeee083fdf3195ab680a7a6e24bd8f2",
       "balance_wei": "51000000000000000",
       "balance_eth": 0.051,
       "user_id": 8121,
@@ -1870,11 +1750,10 @@
             }
           ]
         }
-      ],
-      "rank": 93
+      ]
     },
     {
-      "address": "0x6e7321BC4C7C314fCF633aCfF200F9c5f29BC4e0",
+      "address": "0x6e7321bc4c7c314fcf633acff200f9c5f29bc4e0",
       "balance_wei": "51000000000000000",
       "balance_eth": 0.051,
       "user_id": 8466,
@@ -1891,11 +1770,10 @@
             }
           ]
         }
-      ],
-      "rank": 94
+      ]
     },
     {
-      "address": "0x88004d06Cb9Eb4a83e94e349D7B5f7e003E4E1Df",
+      "address": "0x88004d06cb9eb4a83e94e349d7b5f7e003e4e1df",
       "balance_wei": "50000000000000000",
       "balance_eth": 0.05,
       "user_id": 11444,
@@ -1912,11 +1790,10 @@
             }
           ]
         }
-      ],
-      "rank": 95
+      ]
     },
     {
-      "address": "0x424978Cb7F42Bc8EC47904133b68B8ff15f6E0Bc",
+      "address": "0x424978cb7f42bc8ec47904133b68b8ff15f6e0bc",
       "balance_wei": "50000000000000000",
       "balance_eth": 0.05,
       "user_id": 13511,
@@ -1933,11 +1810,10 @@
             }
           ]
         }
-      ],
-      "rank": 96
+      ]
     },
     {
-      "address": "0xa8e8aFfC55E6AB42Ba4A3e19Cb5a3c7aDCf0407b",
+      "address": "0xa8e8affc55e6ab42ba4a3e19cb5a3c7adcf0407b",
       "balance_wei": "43000000000000000",
       "balance_eth": 0.043,
       "user_id": 12743,
@@ -1954,11 +1830,10 @@
             }
           ]
         }
-      ],
-      "rank": 97
+      ]
     },
     {
-      "address": "0x8d6f555FF6c723af052D1dDDC95Ca766B1027DBc",
+      "address": "0x8d6f555ff6c723af052d1dddc95ca766b1027dbc",
       "balance_wei": "20000000000000000",
       "balance_eth": 0.02,
       "user_id": 13639,
@@ -1975,11 +1850,10 @@
             }
           ]
         }
-      ],
-      "rank": 98
+      ]
     },
     {
-      "address": "0x06c4C0A523D3b030f9219a976c0C7dC07B412D8e",
+      "address": "0x06c4c0a523d3b030f9219a976c0c7dc07b412d8e",
       "balance_wei": "20000000000000000",
       "balance_eth": 0.02,
       "user_id": 13702,
@@ -1996,11 +1870,10 @@
             }
           ]
         }
-      ],
-      "rank": 99
+      ]
     },
     {
-      "address": "0xa844BB44EdBe2E46E2a56138fFCC8Cd1f68cCb59",
+      "address": "0xa844bb44edbe2e46e2a56138ffcc8cd1f68ccb59",
       "balance_wei": "15084461959058713",
       "balance_eth": 0.01508446,
       "user_id": 13559,
@@ -2017,11 +1890,10 @@
             }
           ]
         }
-      ],
-      "rank": 100
+      ]
     },
     {
-      "address": "0x30d18DCDfcC98e2dd8d5FBEc9A5f651dd5dD395C",
+      "address": "0x30d18dcdfcc98e2dd8d5fbec9a5f651dd5dd395c",
       "balance_wei": "12852910497668389",
       "balance_eth": 0.01285291,
       "user_id": 13606,
@@ -2038,11 +1910,10 @@
             }
           ]
         }
-      ],
-      "rank": 101
+      ]
     },
     {
-      "address": "0xE890814C04Db3344Aa6b93eD66f5f6fc735C26B1",
+      "address": "0xe890814c04db3344aa6b93ed66f5f6fc735c26b1",
       "balance_wei": "12000000000000000",
       "balance_eth": 0.012,
       "user_id": 13276,
@@ -2059,11 +1930,10 @@
             }
           ]
         }
-      ],
-      "rank": 102
+      ]
     },
     {
-      "address": "0x930FA525933Aa205Cc4E833dfE10F421263b9A9f",
+      "address": "0x930fa525933aa205cc4e833dfe10f421263b9a9f",
       "balance_wei": "12000000000000000",
       "balance_eth": 0.012,
       "user_id": 13557,
@@ -2080,11 +1950,10 @@
             }
           ]
         }
-      ],
-      "rank": 103
+      ]
     },
     {
-      "address": "0x56708d05E652D8998A3F9491ACe269e98D6BC530",
+      "address": "0x56708d05e652d8998a3f9491ace269e98d6bc530",
       "balance_wei": "10000000000000000",
       "balance_eth": 0.01,
       "user_id": 13574,
@@ -2101,11 +1970,10 @@
             }
           ]
         }
-      ],
-      "rank": 104
+      ]
     },
     {
-      "address": "0x901826a5A6619a02F238a9A9B9e75422470710e5",
+      "address": "0x901826a5a6619a02f238a9a9b9e75422470710e5",
       "balance_wei": "6252300000000000",
       "balance_eth": 0.0062523,
       "user_id": 12703,
@@ -2126,11 +1994,10 @@
             }
           ]
         }
-      ],
-      "rank": 105
+      ]
     },
     {
-      "address": "0xc56fCdF6EA115E5B86512c999163C5E3298c883c",
+      "address": "0xc56fcdf6ea115e5b86512c999163c5e3298c883c",
       "balance_wei": "5000000000000000",
       "balance_eth": 0.005,
       "user_id": 12744,
@@ -2147,11 +2014,10 @@
             }
           ]
         }
-      ],
-      "rank": 106
+      ]
     },
     {
-      "address": "0x2fe18163b50e699DbB601D86CB40a73A11176a62",
+      "address": "0x2fe18163b50e699dbb601d86cb40a73a11176a62",
       "balance_wei": "2000000000000000",
       "balance_eth": 0.002,
       "user_id": 13706,
@@ -2168,11 +2034,10 @@
             }
           ]
         }
-      ],
-      "rank": 107
+      ]
     },
     {
-      "address": "0x1BC82b850E0BC1a71ef2A8A450a0F150Cd154E1C",
+      "address": "0x1bc82b850e0bc1a71ef2a8a450a0f150cd154e1c",
       "balance_wei": "1000000000000000",
       "balance_eth": 0.001,
       "user_id": 11284,
@@ -2189,11 +2054,10 @@
             }
           ]
         }
-      ],
-      "rank": 108
+      ]
     },
     {
-      "address": "0x422f7Bb366608723c8fe61Ac6D923023dCCBC3d7",
+      "address": "0x422f7bb366608723c8fe61ac6d923023dccbc3d7",
       "balance_wei": "484097000000000",
       "balance_eth": 0.0004841,
       "user_id": 12502,
@@ -2277,29 +2141,7 @@
             }
           ]
         }
-      ],
-      "rank": 109
+      ]
     }
-  ],
-  "meta": {
-    "weth_in_contract": 307.810539,
-    "eth_in_contract": 0.0,
-    "total_auctions": 565,
-    "weth_bidding_auctions": 136,
-    "weth_auctioning_auctions": 9,
-    "total_sell_orders": 22024,
-    "total_claimed": 19299,
-    "total_cancelled": 2073,
-    "total_user_registrations": 14591,
-    "verified_unclaimed_orders": 283,
-    "unresolved_user_ids": 0,
-    "claim_method": "claimFromParticipantOrder(uint256 auctionId, bytes32[] orders) where each order = pack(userId, buyAmount, sellAmount)",
-    "unclaimed_orders": 290,
-    "verified_via": "eth_call simulation of claimFromParticipantOrder",
-    "simulation_fail_count": 2,
-    "coverage_type": "exact_weth_refund"
-  },
-  "description": "Gnosis EasyAuction unclaimed WETH refunds. Users placed bids (sellAmount WETH for auctioningToken) across 565 auctions. For each bid below the clearing price (not filled), the WETH is refundable via claimFromParticipantOrder. Bids at/above clearing price are fully or partially filled and return auctioning tokens instead. The gnosis-auction.eth.limo UI is dead; the contract remains immutable and has no deadline. Per-user balance is the exact WETH refund computed by simulating claimFromParticipantOrder via eth_call.",
-  "balance_source": "weth",
-  "last_event_refresh": "2026-05-21 19:23:05 UTC"
+  ]
 }

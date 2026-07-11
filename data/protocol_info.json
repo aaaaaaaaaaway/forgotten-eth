@@ -1206,6 +1206,15 @@
     "deployed": "December 2017",
     "slug": "bounties"
   },
+  "conditional_tokens": {
+    "name": "Omen / Conditional Tokens",
+    "desc": "is the Gnosis Conditional Tokens Framework (September 2019), the ERC-1155 settlement layer behind the Omen prediction market platform. Outcome positions split from ETH collateral that were never redeemed after their market resolved still sit in the framework's token accounting.",
+    "category": "other",
+    "color": "#7c3aed",
+    "contract": "0xc59b0e4de5f1248c1140964e0ff287b192407e0c",
+    "deployed": "September 2019",
+    "slug": "conditional-tokens"
+  },
   "ageofdinos": {
     "name": "Age of Dinos",
     "desc": "was an NFT Dutch auction (2024). Bidders who overpaid above the clearing price have unclaimed ETH refunds available via claimAndRefund().",

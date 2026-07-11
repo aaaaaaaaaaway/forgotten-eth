@@ -1,49 +1,25 @@
 {
   "contract": "0x0c7060bf06a78aaaab3fac76941318a52a3f4613",
   "balance_source": "token",
-  "contract_eth_balance": 51.397223,
-  "total_eth_in_balances": 46.515287,
-  "addresses_with_balance": 216,
-  "coverage_pct": 90.5,
-  "scan_date": "2026-04-15 14:30:50 UTC",
+  "contract_eth_balance": 46.10362236,
+  "total_eth_in_balances": 41.45106667,
+  "addresses_with_balance": 217,
+  "coverage_pct": 89.91,
+  "scan_date": "2026-07-11 12:45:18 UTC",
   "description": "ETH balances in Fractional Art / Tessera DEAD vault",
   "distribution": {
-    ">=100 ETH": {
-      "count": 0,
-      "total_eth": 0
-    },
-    "10-100 ETH": {
-      "count": 0,
-      "total_eth": 0
-    },
-    "1-10 ETH": {
-      "count": 9,
-      "total_eth": 26.021209
-    },
-    "0.1-1 ETH": {
-      "count": 59,
-      "total_eth": 16.086092
-    },
-    "0.01-0.1 ETH": {
-      "count": 101,
-      "total_eth": 4.239449
-    },
-    "<0.01 ETH": {
-      "count": 47,
-      "total_eth": 0.168533
-    }
+    ">0 ETH": 48,
+    ">0.01 ETH": 101,
+    ">0.1 ETH": 59,
+    ">1 ETH": 9,
+    ">10 ETH": 0,
+    ">100 ETH": 0
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 226,
-  "total_supply": "33976166648106819234902",
   "last_event_refresh": "2026-07-05 22:48:32 UTC",
+  "total_supply": "29314219886896952475638",
   "balances": [
-    {
-      "address": "0x2912f57f93dd69fbbf477b616d6f8c34c49bb282",
-      "token_balance": "5222494000000000000000",
-      "balance_wei": "8213620969855832251",
-      "balance_eth": 8.21362097
-    },
     {
       "address": "0x2a6bdb4f48edeb6f581d76cd373bb7215b0bdabc",
       "token_balance": "2375425489545243227242",
@@ -55,6 +31,12 @@
       "token_balance": "2016108906464055314782",
       "balance_wei": "3170813483298645322",
       "balance_eth": 3.17081348
+    },
+    {
+      "address": "0x2912f57f93dd69fbbf477b616d6f8c34c49bb282",
+      "token_balance": "2002494000000000000000",
+      "balance_wei": "3149400786369593713",
+      "balance_eth": 3.14940079
     },
     {
       "address": "0xdcdb2dc86fd67c3793cbcf51c89088bf9e161a57",
@@ -113,7 +95,7 @@
     {
       "address": "0x43adee091c3663d8766fcc12d82c9d0091e67ba0",
       "token_balance": "415724955334726817834",
-      "balance_wei": "653826928442558560",
+      "balance_wei": "653826928442558561",
       "balance_eth": 0.65382693
     },
     {
@@ -121,13 +103,6 @@
       "token_balance": "400000000000000000000",
       "balance_wei": "629095674967234601",
       "balance_eth": 0.62909567
-    },
-    {
-      "address": "0x31e99699bccde902afc7c4b6b23bb322b8459d22",
-      "token_balance": "324677391987239047109",
-      "balance_wei": "0",
-      "balance_eth": 0,
-      "claimed": true
     },
     {
       "address": "0x74a874233ffa910e615a936dd3a426c3a7a6d9f8",
@@ -228,7 +203,7 @@
     {
       "address": "0xaf067fc31e6e0e4ab9f771dac8e1981bb2883412",
       "token_balance": "187377388376839950258",
-      "balance_wei": "294695761536314469",
+      "balance_wei": "294695761536314470",
       "balance_eth": 0.29469576
     },
     {
@@ -266,13 +241,6 @@
       "token_balance": "121577910231649727487",
       "balance_wei": "191210343745713857",
       "balance_eth": 0.19121034
-    },
-    {
-      "address": "0xe3d69bcab5daaea39787eeaf4c0369de366d71bd",
-      "token_balance": "121324357854567907925",
-      "balance_wei": "0",
-      "balance_eth": 0,
-      "claimed": true
     },
     {
       "address": "0x4cf23b08334dc2c26c6a65ab43c3e619c4bfbd61",
@@ -515,13 +483,6 @@
       "balance_eth": 0.07863696
     },
     {
-      "address": "0x3ead00d7e1b95c5e99f287f04c72f62f2cb67c80",
-      "token_balance": "50000000000000000000",
-      "balance_wei": "0",
-      "balance_eth": 0,
-      "claimed": true
-    },
-    {
       "address": "0x562574af66836b1d30e69815bdf0740a7bd7c437",
       "token_balance": "50000000000000000000",
       "balance_wei": "78636959370904325",
@@ -648,13 +609,6 @@
       "balance_eth": 0.06246872
     },
     {
-      "address": "0x0a771437ee59dcd30429dda71a1a011db8957bd1",
-      "token_balance": "39114853311493831521",
-      "balance_wei": "0",
-      "balance_eth": 0,
-      "claimed": true
-    },
-    {
       "address": "0x2909a6853cd7d5aa7d3ab1167519f9bb843b9618",
       "token_balance": "36409216164116395340",
       "balance_wei": "57262201044481880",
@@ -675,7 +629,7 @@
     {
       "address": "0xa2cd872e17b2795eeb123c9f3a4f935fe9bb784f",
       "token_balance": "31706478621028044136",
-      "balance_wei": "49866021422324577",
+      "balance_wei": "49866021422324578",
       "balance_eth": 0.04986602
     },
     {
@@ -1324,49 +1278,49 @@
       "address": "0xe6dfef74b27c6632f2fb34ab9a96d012e4488cec",
       "token_balance": "11301190163972488",
       "balance_wei": "17773824635343",
-      "balance_eth": 0.00001777
+      "balance_eth": 1.777e-05
     },
     {
       "address": "0x8bdbe8f549aabd8ee310e7b2e9e3ab39efd7af07",
       "token_balance": "10969808501471910",
       "balance_wei": "17252647708736",
-      "balance_eth": 0.00001725
+      "balance_eth": 1.725e-05
     },
     {
       "address": "0x6dae7a0e5d0f7d75db2b29c0281daa3d0fd18e38",
       "token_balance": "10969796977496107",
       "balance_wei": "17252629584528",
-      "balance_eth": 0.00001725
+      "balance_eth": 1.725e-05
     },
     {
       "address": "0x01a1a79e83e26a9de566f65a1acdf02dec449d26",
       "token_balance": "10000000000000000",
       "balance_wei": "15727391874180",
-      "balance_eth": 0.00001573
+      "balance_eth": 1.573e-05
     },
     {
       "address": "0x8d842a732a846a1d9bd3c9f3675b54066c8baa0b",
       "token_balance": "661487275129085",
       "balance_wei": "1040346959573",
-      "balance_eth": 0.00000104
+      "balance_eth": 1.04e-06
     },
     {
       "address": "0xcbcf35a4a7978133e1c0d52d23b2058af7c0e6d8",
       "token_balance": "24038916536219",
       "balance_wei": "37806946059",
-      "balance_eth": 4e-8
+      "balance_eth": 4e-08
     },
     {
       "address": "0x76bb60a39e1ef7e470b7ae6b0587ddab010ce60c",
       "token_balance": "11301201666890",
       "balance_wei": "17773842726",
-      "balance_eth": 2e-8
+      "balance_eth": 2e-08
     },
     {
       "address": "0xffe505c05fc2bfffa7fab048e66764ea26e3fefb",
       "token_balance": "119444651408",
       "balance_wei": "187855283",
-      "balance_eth": 0
+      "balance_eth": 0.0
     }
   ]
 }
