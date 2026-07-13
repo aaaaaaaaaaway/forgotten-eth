@@ -1208,7 +1208,7 @@
   },
   "conditional_tokens": {
     "name": "Omen / Conditional Tokens",
-    "desc": "is the Gnosis Conditional Tokens Framework (September 2019), the ERC-1155 settlement layer behind the Omen prediction market platform. Outcome positions split from ETH collateral that were never redeemed after their market resolved still sit in the framework's token accounting.",
+    "desc": "is the Gnosis Conditional Tokens Framework (September 2019), the ERC-1155 settlement layer behind the Omen prediction market platform. Outcome positions split from collateral such as USDC, DAI, WETH, GNO, and sDAI that were never redeemed after their market resolved still sit in the framework's token accounting.",
     "category": "other",
     "color": "#7c3aed",
     "contract": "0xc59b0e4de5f1248c1140964e0ff287b192407e0c",
