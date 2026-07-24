@@ -44,6 +44,15 @@
     "deployed": "March 2018",
     "slug": "singularx"
   },
+  "singularx_fund": {
+    "name": "SingularX Fund",
+    "desc": "The SingularDTVFund reward pool for the SingularX exchange (November 2017), built on ConsenSys's Tokit platform. It collected ETH trading fees and distributes them pro-rata to SNGX token holders, who claim their accrued share by calling withdrawReward(). The exchange front-end is long gone, but the reward pool still holds ETH and the claim path stays permissionless.",
+    "category": "dex",
+    "color": "#0284c7",
+    "contract": "0x0286f920F893513C7ec9FE35ba0A4760229a243e",
+    "deployed": "November 2017",
+    "slug": "singularx-fund"
+  },
   "enclaves": {
     "name": "Unknown DEX",
     "desc": "An unverified EtherDelta-style DEX contract from September 2017. The protocol behind this contract has not been identified \u2014 the source code is not published on Etherscan but follows the standard deposit/withdraw pattern.",
