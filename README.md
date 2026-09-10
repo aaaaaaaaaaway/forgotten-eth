@@ -39,6 +39,19 @@ For a single-address lookup, lowercase the address, take the two hex characters 
 
 Example: `0xab58…` lives in `data/index_shards/ab.json`.
 
+### Merkle proof tables
+
+A balance file may carry a top-level `merkle_proof_hashes` array. When it
+does, each entry's `merkle_proof` holds **integer indices into that array**
+rather than hash strings — resolve them with
+`merkle_proof.map(i => merkle_proof_hashes[i])` before using the proof.
+
+Merkle proofs share every hash above the point where two leaves' paths meet,
+so storing them per claimant duplicates most hashes many times over. In
+`uniswap_airdrop`, 552,716 hash references resolve to 135,174 distinct
+hashes, and the table halves the file. The shards in `data/index_shards/`
+are unaffected: their `mp` field always holds full hash strings.
+
 The live `/api/check` endpoint is rate-limited and intended for interactive site use. Bulk users should read the repository data or the documented public endpoints instead.
 
 ## Public API

@@ -1,10 +1,10 @@
 {
   "contract": "0xbeeb655808e3bdb83b6998f09dfe1e0f2c66a9be",
   "balance_source": "eth",
-  "contract_eth_balance": 7.252297,
-  "total_eth_in_balances": 7.246495,
+  "contract_eth_balance": 7.83003263,
+  "total_eth_in_balances": 7.24649518,
   "addresses_with_balance": 8,
-  "coverage_pct": 99.92,
+  "coverage_pct": 92.55,
   "scan_date": "2026-08-30 01:43:11 UTC",
   "description": "ETH balances in defunct SwissCryptoExchange contract",
   "distribution": {
@@ -35,6 +35,7 @@
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 15,
+  "last_event_refresh": "2026-09-09 15:43:45 UTC",
   "balances": [
     {
       "rank": 1,
@@ -84,6 +85,5 @@
       "balance_wei": "1064200000000000",
       "balance_eth": 0.0010642
     }
-  ],
-  "last_event_refresh": "2026-09-09 15:43:45 UTC"
+  ]
 }
