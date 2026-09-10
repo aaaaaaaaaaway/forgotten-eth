@@ -2,9 +2,9 @@
   "contract": "0x5b67871c3a857de81a1ca0f9f7945e5670d986dc",
   "balance_source": "token",
   "contract_eth_balance": 530.540515,
-  "total_eth_in_balances": 524.088893,
-  "addresses_with_balance": 1378,
-  "coverage_pct": 98.78,
+  "total_eth_in_balances": 523.835083,
+  "addresses_with_balance": 1375,
+  "coverage_pct": 98.74,
   "scan_date": "2026-08-06 12:40:47 UTC",
   "description": "Set Protocol powered TokenSets, an automated portfolio product from 2019-2021 where each strategy was an ERC-20 token backed by real collateral held in a shared vault. The TokenSets front end is gone, but the vault still holds the collateral and redemption is still open: burning a Set token returns its underlying share, unwrapped straight back to ETH.",
   "meta": {
@@ -5306,15 +5306,16 @@
     },
     {
       "address": "0x44444d93b77c26ae1ef6df2419e42852c9e32ab5",
-      "balance_eth": 0.18232178344103964,
-      "balance_wei": "182321783441039648",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "set_positions": [
         {
           "rebalancing_set": "0x136fae4333ea36a24bb751e2d505d6ca4fd9f00b",
           "balance_raw": "400000000000000000",
           "weth_share": 0.18232178344103964
         }
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0x293d9eab4a6b6dcd263d71e74c1bd7d83fef5063",
@@ -9184,8 +9185,8 @@
     },
     {
       "address": "0xd3b9d217c62523800cfe613aa8b3e21d2c0dc4e5",
-      "balance_eth": 0.057836227361289586,
-      "balance_wei": "57836227361289584",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "set_positions": [
         {
           "rebalancing_set": "0x73104e9d3da91e410a6c211068f7bffabbbd3e26",
@@ -9202,7 +9203,8 @@
           "balance_raw": "95495091000000",
           "weth_share": 0.00008299238060417569
         }
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0xb7b4697202aebd314c841dfb3d1c149215ce4624",
@@ -13449,15 +13451,16 @@
     },
     {
       "address": "0x4ae901fbdb69ea08d63224964fc5e9696f0fe6d0",
-      "balance_eth": 0.013651951388575754,
-      "balance_wei": "13651951388575754",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "set_positions": [
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
           "balance_raw": "15708602774000000",
           "weth_share": 0.013651951388575754
         }
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0x123ca3b534ed9a7b0584212b64242e4bb9d1e274",
@@ -19086,5 +19089,5 @@
       ]
     }
   ],
-  "last_event_refresh": "2026-08-20 15:23:05 UTC"
+  "last_event_refresh": "2026-09-09 15:43:42 UTC"
 }

@@ -1,11 +1,11 @@
 {
   "contract": "0xf5644345a5a9dc14076b58802dc908b83e62b0e1",
   "balance_source": "weth",
-  "contract_eth_balance": 227.57800731,
-  "total_eth_in_balances": 226.09134628,
-  "addresses_with_balance": 7014,
-  "coverage_pct": 99.35,
-  "scan_date": "2026-08-14 16:26:51 UTC",
+  "contract_eth_balance": 224.80572773,
+  "total_eth_in_balances": 225.42526223,
+  "addresses_with_balance": 7011,
+  "coverage_pct": 100.28,
+  "scan_date": "2026-09-09 17:06:47 UTC",
   "distribution": {
     ">=100 ETH": {
       "count": 0,
@@ -20,16 +20,16 @@
       "total_eth": 111.642648
     },
     "0.1-1 ETH": {
-      "count": 248,
-      "total_eth": 69.328405
+      "count": 247,
+      "total_eth": 68.668811
     },
     "0.01-0.1 ETH": {
       "count": 1093,
       "total_eth": 34.285619
     },
     "<0.01 ETH": {
-      "count": 5638,
-      "total_eth": 10.834685
+      "count": 5636,
+      "total_eth": 10.828191
     }
   },
   "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
@@ -1235,8 +1235,8 @@
     },
     {
       "address": "0x04b936745c02e8cb75cc68b93b4fb99b38939d5d",
-      "balance_eth": 0.65959488,
-      "balance_wei": "659594880077967244",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "merkle_proof": [
         "0x5b7443048e3835b1e25aab2e3331169ce0f36c41ad3e7716cdb42c80b9fc1ca2",
         "0xd45c9a2ebad6b06c195685be5a26b3b20eae52faffc7f688df93564d431d6deb",
@@ -1251,7 +1251,8 @@
         "0x061cd9630fc806b94da3df105cd3617db22addf632443eda718ba6938ddf42dc",
         "0x1a12a16c3207ba4d1f5ce97df99e4cab0937678c8b0b9b8a8573263bff30e7e2",
         "0x83f9f7b5f4cd54d48c39acf53dc5f25add6163f19f3dfec1c6beefc5e1640503"
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0xdfb5ae49061a8723a97548017bda7dce5e3b5b67",
@@ -40788,8 +40789,8 @@
     },
     {
       "address": "0xd34f627f94799c0224fecc5264e696d02cf24a4a",
-      "balance_eth": 0.00482525,
-      "balance_wei": "4825254703169172",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "merkle_proof": [
         "0x12c45c52377f0044958d4bdcb36ac5f17d7483ef1fb1b426c6153b6a70c41a08",
         "0xc5088f6f4b47bea59987dc0e78e06fca6a678112c473f944120869d41adacefa",
@@ -40804,7 +40805,8 @@
         "0xa14cd4ab21fedada0e0fb145a43387486cde743af9de97c905db1a334a5672f8",
         "0x8a9312858b8e9f98caa5a18ce35210142b6140ea6fb537d912deb52adbcbad02",
         "0x7c88558f8d37ef6f014de0021d54070b793018685ffa805cee26035d9579c041"
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0xb0f807f03913bbe915b1db88a3c1453bfceb41ea",
@@ -68399,8 +68401,8 @@
     },
     {
       "address": "0xa362a6d78d07f3ff28446d1fba483f78d74c0e3b",
-      "balance_eth": 0.00166392,
-      "balance_wei": "1663920680639621",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "merkle_proof": [
         "0x04fac9b7ec2e26e38e73d1beaeffb437bf3c86e53edf970b019f13a1f5e02d9b",
         "0x4ee4262a4b57c1b9c4f20af814b1cdd4f693bf582ee2481c3fed9e73046bdcd4",
@@ -68415,7 +68417,8 @@
         "0x5f8d7cf67680e48420552a7c84d09acf754ba9f40f245f2c972da12b0c47c1f3",
         "0x5a2c44f3bf65f94306a634666c3dcaa5c75c81e1df6eb613c80e066d96376195",
         "0x83f9f7b5f4cd54d48c39acf53dc5f25add6163f19f3dfec1c6beefc5e1640503"
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0xf8adebc4cba2176df3ec479831460c4a31204b70",

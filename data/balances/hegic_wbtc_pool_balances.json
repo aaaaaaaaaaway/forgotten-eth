@@ -1,11 +1,11 @@
 {
   "contract": "0x20dd9e22d22dd0a6ef74a520cb08303b5fad5de7",
   "balance_source": "token",
-  "contract_eth_balance": 125.92471469,
-  "total_eth_in_balances": 125.92471469,
-  "addresses_with_balance": 110,
+  "contract_eth_balance": 125.92407764,
+  "total_eth_in_balances": 125.92407764,
+  "addresses_with_balance": 109,
   "coverage_pct": 100.0,
-  "scan_date": "2026-08-14 16:27:47 UTC",
+  "scan_date": "2026-09-09 17:07:51 UTC",
   "description": "Hegic WBTC Pool writeWBTC holders with currently available WBTC withdrawable via withdraw(amount,maxBurn). Amounts use availableBalance(), not totalBalance(), because full pro-rata total pool withdrawals can revert while part of the pool remains unavailable.",
   "meta": {
     "candidate_source": "Dune query 7676670 / execution 01KTKJ2AC4CPYGZCEQ5EB6P33Z",
@@ -13,15 +13,15 @@
     "pool_symbol": "writeWBTC",
     "pool_decimals": 18,
     "holder_seed_count": 408,
-    "total_supply_raw": "12354491642956321628467",
-    "live_seed_supply_sum_raw": "12354444172100435857867",
-    "available_wbtc_raw": "334651920",
-    "available_wbtc": "3.3465192",
-    "claimable_wbtc_raw_sum_floor": "334650531",
-    "claimable_wbtc": "3.34650531",
+    "total_supply_raw": "12354469641050143891980",
+    "live_seed_supply_sum_raw": "12354422170194258121380",
+    "available_wbtc_raw": "334650227",
+    "available_wbtc": "3.34650227",
+    "claimable_wbtc_raw_sum_floor": "334648838",
+    "claimable_wbtc": "3.34648838",
     "rounding_dust_wbtc_raw": "1389",
-    "total_wbtc_raw": "950651920",
-    "total_wbtc": "9.5065192",
+    "total_wbtc_raw": "950650227",
+    "total_wbtc": "9.50650227",
     "btc_usd": "62887",
     "eth_usd": "1671.25",
     "wbtc_to_eth": "37.628721017202692595362752430815258040388930441286462228870605833956619296933433"
@@ -29,118 +29,118 @@
   "token_symbol": "WBTC",
   "token_decimals": 8,
   "contract_token_balances": {
-    "WBTC": "334651920"
+    "WBTC": "334650227"
   },
   "balances": [
     {
       "address": "0xa67ec8737021a7e91e883a3277384e6018bb5776",
-      "balance_eth": 123.11134090204936,
-      "balance_wei": "123111340902049364248",
+      "balance_eth": 123.11093752216006,
+      "balance_wei": "123110937522160059835",
       "token_balances": {
-        "WBTC": "327173865"
+        "WBTC": "327172793"
       },
       "write_wbtc_balance_raw": "12078421037845939594234",
       "dune_write_wbtc_balance_raw": "12078421037845939594234",
-      "available_wbtc_raw": "327173865",
-      "available_wbtc": "3.27173865",
+      "available_wbtc_raw": "327172793",
+      "available_wbtc": "3.27172793",
       "nominal_total_wbtc_raw": "929408872",
       "nominal_total_wbtc": "9.29408872"
     },
     {
       "address": "0x5957e7a43b48cf33d19169ea36bab26b00fa07f9",
-      "balance_eth": 1.3556269785669408,
-      "balance_wei": "1355626978566940912",
+      "balance_eth": 1.3556224631204188,
+      "balance_wei": "1355622463120418848",
       "token_balances": {
-        "WBTC": "3602639"
+        "WBTC": "3602627"
       },
       "write_wbtc_balance_raw": "133000230000047866491",
       "dune_write_wbtc_balance_raw": "133000230000047866491",
-      "available_wbtc_raw": "3602639",
-      "available_wbtc": "0.03602639",
+      "available_wbtc_raw": "3602627",
+      "available_wbtc": "0.03602627",
       "nominal_total_wbtc_raw": "10234085",
       "nominal_total_wbtc": "0.10234085"
     },
     {
       "address": "0x202ec7190f75046348de5ab3a97cc45d7b440680",
-      "balance_eth": 0.7604113540703067,
-      "balance_wei": "760411354070306656",
+      "balance_eth": 0.7604087200598355,
+      "balance_wei": "760408720059835452",
       "token_balances": {
-        "WBTC": "2020827"
+        "WBTC": "2020820"
       },
       "write_wbtc_balance_raw": "74603768010228239262",
       "dune_write_wbtc_balance_raw": "74603768010228239262",
-      "available_wbtc_raw": "2020827",
-      "available_wbtc": "0.02020827",
+      "available_wbtc_raw": "2020820",
+      "available_wbtc": "0.0202082",
       "nominal_total_wbtc_raw": "5740601",
       "nominal_total_wbtc": "0.05740601"
     },
     {
       "address": "0x588d91abf5192a0f0dc026bf05f510253bd1cf51",
-      "balance_eth": 0.19366035187434555,
-      "balance_wei": "193660351874345549",
+      "balance_eth": 0.19365997558713538,
+      "balance_wei": "193659975587135377",
       "token_balances": {
-        "WBTC": "514661"
+        "WBTC": "514660"
       },
       "write_wbtc_balance_raw": "19000000000000000000",
       "dune_write_wbtc_balance_raw": "19000000000000000000",
-      "available_wbtc_raw": "514661",
-      "available_wbtc": "0.00514661",
+      "available_wbtc_raw": "514660",
+      "available_wbtc": "0.0051466",
       "nominal_total_wbtc_raw": "1462009",
       "nominal_total_wbtc": "0.01462009"
     },
     {
       "address": "0x493134a9eabc8d2b5e08c5ab08e9d413fb4d1a55",
-      "balance_eth": 0.1807160718444278,
-      "balance_wei": "180716071844427823",
+      "balance_eth": 0.18071531927000747,
+      "balance_wei": "180715319270007479",
       "token_balances": {
-        "WBTC": "480261"
+        "WBTC": "480259"
       },
       "write_wbtc_balance_raw": "17730023805896710545",
       "dune_write_wbtc_balance_raw": "17730023805896710545",
-      "available_wbtc_raw": "480261",
-      "available_wbtc": "0.00480261",
+      "available_wbtc_raw": "480259",
+      "available_wbtc": "0.00480259",
       "nominal_total_wbtc_raw": "1364287",
       "nominal_total_wbtc": "0.01364287"
     },
     {
       "address": "0xf97791aeb8837208a5c38d50c22459707e011261",
-      "balance_eth": 0.12915230657292445,
-      "balance_wei": "129152306572924457",
+      "balance_eth": 0.12915193028571428,
+      "balance_wei": "129151930285714285",
       "token_balances": {
-        "WBTC": "343228"
+        "WBTC": "343227"
       },
       "write_wbtc_balance_raw": "12671111101667756480",
       "dune_write_wbtc_balance_raw": "12671111101667756480",
-      "available_wbtc_raw": "343228",
-      "available_wbtc": "0.00343228",
+      "available_wbtc_raw": "343227",
+      "available_wbtc": "0.00343227",
       "nominal_total_wbtc_raw": "975015",
       "nominal_total_wbtc": "0.00975015"
     },
     {
       "address": "0xe05a29e9dadf816e3cdc6b3edb0f55132b780f5d",
-      "balance_eth": 0.07432613118922962,
-      "balance_wei": "74326131189229618",
+      "balance_eth": 0.07432575490201945,
+      "balance_wei": "74325754902019446",
       "token_balances": {
-        "WBTC": "197525"
+        "WBTC": "197524"
       },
       "write_wbtc_balance_raw": "7292117467080907237",
       "dune_write_wbtc_balance_raw": "7292117467080907237",
-      "available_wbtc_raw": "197525",
-      "available_wbtc": "0.00197525",
+      "available_wbtc_raw": "197524",
+      "available_wbtc": "0.00197524",
       "nominal_total_wbtc_raw": "561112",
       "nominal_total_wbtc": "0.00561112"
     },
     {
       "address": "0x9c1e062720f5ef26bd7814b6f67c9dca61321fc9",
-      "balance_eth": 0.07422829651458489,
-      "balance_wei": "74228296514584891",
+      "balance_eth": 0.07422792022737472,
+      "balance_wei": "74227920227374719",
       "token_balances": {
-        "WBTC": "197265"
+        "WBTC": "197264"
       },
       "write_wbtc_balance_raw": "7282523447044317732",
       "dune_write_wbtc_balance_raw": "7282523447044317732",
-      "available_wbtc_raw": "197265",
-      "available_wbtc": "0.00197265",
+      "available_wbtc_raw": "197264",
+      "available_wbtc": "0.00197264",
       "nominal_total_wbtc_raw": "560374",
       "nominal_total_wbtc": "0.00560374"
     },
@@ -689,20 +689,6 @@
       "available_wbtc": "0.00000637",
       "nominal_total_wbtc_raw": "1812",
       "nominal_total_wbtc": "0.00001812"
-    },
-    {
-      "address": "0x0d4ddea3849c54e16c85cb4354943dc876e05552",
-      "balance_eth": 0.00022426717726252806,
-      "balance_wei": "224267177262528",
-      "token_balances": {
-        "WBTC": "596"
-      },
-      "write_wbtc_balance_raw": "22006470395999509",
-      "dune_write_wbtc_balance_raw": "22006470395999509",
-      "available_wbtc_raw": "596",
-      "available_wbtc": "0.00000596",
-      "nominal_total_wbtc_raw": "1693",
-      "nominal_total_wbtc": "0.00001693"
     },
     {
       "address": "0xffd4dae0d7d8ddb6f408dca0a47763ae3a57f4ce",

@@ -2593,5 +2593,23 @@
     "contract": "0x0c48250eb1f29491f1efbeec0261eb556f0973c7",
     "deployed": "August 2023",
     "slug": "aimbot"
+  },
+  "protorai": {
+    "name": "ProtoRAI (Reflexer)",
+    "desc": "ProtoRAI was the prototype deployment of Reflexer's RAI, run live on mainnet in early 2021 as a trial of the non-pegged reflex-index design before production RAI launched. Reflexer triggered global settlement in January 2021 and moved on. The settled system is fully collateralised with no shortfall: PRAI holders redeem at the frozen settlement rate, and SAFE owners can free the ETH-A collateral left after their debt is valued at that same rate.",
+    "category": "defi",
+    "color": "#4c9f70",
+    "contract": "0x4d37ef04724fec8b80aab3f6b7e7f4ef4181d9a9",
+    "deployed": "October 2020",
+    "slug": "protorai"
+  },
+  "oxo_rewards": {
+    "name": "0x0 Rewards",
+    "desc": "Unclaimed ETH rewards allocated to 0x0 token holders remain in a cumulative Merkle distributor. This integration includes only recipients whose exact ETH payouts passed full local-fork verification. The distributor is owner-controlled; allocations, eligibility and available funding can change.",
+    "category": "defi",
+    "color": "#7467ef",
+    "contract": "0x02b15c47b4b516a22fd2d8b1fc662afb808a2169",
+    "deployed": "August 2023",
+    "slug": "oxo-rewards"
   }
 }

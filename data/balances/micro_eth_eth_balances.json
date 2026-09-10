@@ -1,11 +1,11 @@
 {
   "contract": "0xbb7be7cc5abb65d3a29d7982236481ddf4f10b09",
   "balance_source": "token",
-  "contract_eth_balance": 20.65377554,
+  "contract_eth_balance": 20.60377554,
   "total_eth_in_balances": 5.53476273,
   "addresses_with_balance": 17,
-  "coverage_pct": 26.8,
-  "scan_date": "2026-05-05 16:03:46 UTC",
+  "coverage_pct": 26.86,
+  "scan_date": "2026-09-09 16:12:39 UTC",
   "description": "MicroETH (\u03bcETH) wrapper at 1:1e-6 ratio. Holders call withdraw(uint256 ueth) to burn \u03bcETH for ETH. Note: contract holders without payable receive() will revert because withdraw uses transfer (2300 gas).",
   "meta": {
     "candidate_source": "Transfer event participants",

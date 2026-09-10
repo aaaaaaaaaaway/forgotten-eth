@@ -5,6 +5,12 @@ Protocol additions and notable Forgotten ETH changes live here instead of in the
 Canonical web page: https://forgotteneth.com/changelog
 RSS: https://forgotteneth.com/feed.xml
 
+## September 2026
+
+### Sep 7 — 0x0 Rewards (+736 ETH)
+
+Added 736.140446025808501780 ETH across 70,697 payout-verified addresses. The complete 72,512-leaf Merkle tree is preserved and matches the onchain root. Every included recipient passed independent and cumulative Anvil withdrawals with exact balance reconciliation. Excluded 38 rejected payouts and 94 forwarding or sweeping recipients. Claims use fresh state and payout verification; receipts and claim events alone are not treated as recovery. The included cohort was fully funded at verification, but the full outstanding allocation set was not; competing claims and owner controls remain risks.
+
 ## August 2026
 
 ### Aug 27 — AimBot (+66 ETH)

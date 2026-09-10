@@ -1,11 +1,11 @@
 {
   "contract": "0xc699d90671cb8373f21060592d41a7c92280adc4",
   "balance_source": "eth",
-  "contract_eth_balance": 2.4175959,
+  "contract_eth_balance": 2.3175959,
   "total_eth_in_balances": 2.3175959,
   "addresses_with_balance": 6,
-  "coverage_pct": 95.86,
-  "scan_date": "2026-08-14 16:34:03 UTC",
+  "coverage_pct": 100.0,
+  "scan_date": "2026-09-09 17:15:26 UTC",
   "description": "Failed-ICO direct refund ledger \u2014 Crowdsale (0xc699d9). ETH is held in the sale contract and the claim flow is refund().",
   "distribution": {
     "0.1-1 ETH": {
@@ -21,7 +21,7 @@
     "this.balance < softcap && now > endIco"
   ],
   "total_addresses_scanned": 6,
-  "residual_unattributed_eth": 0.1,
+  "residual_unattributed_eth": 0.0,
   "residual_note": "Only positive live per-user ledgers are counted. Contract-minus-ledger residual is excluded unless a source-backed ordinary user path maps it to a wallet.",
   "balances": [
     {

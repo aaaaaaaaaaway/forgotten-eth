@@ -2413,5 +2413,23 @@
     "category": "token",
     "balance_file": "aimbot_eth_balances.json",
     "multi_step": true
+  },
+  {
+    "key": "oxo_rewards",
+    "name": "0x0 Rewards",
+    "contract": "0x02b15c47b4b516a22fd2d8b1fc662afb808a2169",
+    "balance_source": "eth",
+    "category": "defi",
+    "balance_file": "oxo_rewards_eth_balances.json",
+    "multi_step": true
+  },
+  {
+    "key": "protorai",
+    "name": "ProtoRAI (Reflexer)",
+    "contract": "0x4d37ef04724fec8b80aab3f6b7e7f4ef4181d9a9",
+    "balance_source": "token",
+    "category": "defi",
+    "balance_file": "protorai_eth_balances.json",
+    "multi_step": true
   }
 ]

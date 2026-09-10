@@ -1,11 +1,11 @@
 {
   "contract": "0x9508008227b6b3391959334604677d60169ef540",
   "balance_source": "eth",
-  "contract_eth_balance": 43.935,
-  "total_eth_in_balances": 9.055,
-  "addresses_with_balance": 11,
-  "coverage_pct": 20.61,
-  "scan_date": "2026-05-08 12:37:38 UTC",
+  "contract_eth_balance": 43.685,
+  "total_eth_in_balances": 8.805,
+  "addresses_with_balance": 10,
+  "coverage_pct": 20.16,
+  "scan_date": "2026-09-06 01:43:13 UTC",
   "description": "ETH balances in defunct CryptoCats v0/v1 contract",
   "distribution": {
     "1-10 ETH": {
@@ -13,8 +13,8 @@
       "total_eth": 4.25
     },
     "0.1-1 ETH": {
-      "count": 9,
-      "total_eth": 4.805
+      "count": 8,
+      "total_eth": 4.555
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
@@ -76,12 +76,6 @@
     },
     {
       "rank": 10,
-      "address": "0x839d62d4d5f7996a596a7ee6d468da3a5ef6d365",
-      "balance_wei": "250000000000000000",
-      "balance_eth": 0.25
-    },
-    {
-      "rank": 11,
       "address": "0xb43623daedf0d03a23646b3fd145f1eb842f1a2b",
       "balance_wei": "200000000000000000",
       "balance_eth": 0.2

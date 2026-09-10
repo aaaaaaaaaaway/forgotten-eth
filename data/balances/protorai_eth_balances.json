@@ -1,0 +1,1482 @@
+{
+  "contract": "0x4d37ef04724fec8b80aab3f6b7e7f4ef4181d9a9",
+  "balance_source": "token",
+  "contract_eth_balance": 33.98310595,
+  "total_eth_in_balances": 33.98310595,
+  "addresses_with_balance": 75,
+  "coverage_pct": 100.0,
+  "scan_date": "2026-09-09 17:20:31 UTC",
+  "distribution": {
+    ">=10 ETH": 1,
+    "1-10 ETH": 8,
+    "0.1-1 ETH": 12,
+    "0.01-0.1 ETH": 14,
+    "<0.01 ETH": 40
+  },
+  "meta": {
+    "prai": "0x715c3830fb0c4bab9a8e31c922626e1757716f3a",
+    "global_settlement": "0x4d37ef04724fec8b80aab3f6b7e7f4ef4181d9a9",
+    "collateral_join": "0xe843783144acdf485ff86d726bcb67dd316e0bbe",
+    "safe_engine": "0xf0b7808b940b78be81ad6f9e075ce8be4a837e2c",
+    "safe_manager": "0xdf88b73462abd08f145b4b31edf4966c7129b255",
+    "coin_join": "0x138c3d13b633b5a5cb5db5faf27429eeed78b338",
+    "gs_actions": "0x17b5d9914194a08c7ef14451ba15e8ae4f92cb93",
+    "proxy_registries": [
+      "0xf89a0e02af0fd840b0fcf5d103e1b1c74c8b7638",
+      "0xa26e15c895efc0616177b7c1e7270a4c7d51c997"
+    ],
+    "collateral_cash_price": "1419143855740565935961372",
+    "final_coin_per_collateral_price": "1408803003974588705515881",
+    "accumulated_rate": "1003780882956070313962213806",
+    "collateral_shortfall": "0",
+    "weth_in_collateral_join": 48.14282080996451,
+    "contract_held": [
+      {
+        "address": "0xebde9f61e34b7ac5aae5a4170e964ea85988008c",
+        "prai_wei": "2785485323476845687411",
+        "eth_equivalent": 3.9530043820676886,
+        "note": "contract-held PRAI; no depositor can sign a claim"
+      },
+      {
+        "address": "0x90cbe4bdd538d6e9b379bff5fe72c3d67a521de5",
+        "prai_wei": "4995529840819696",
+        "eth_equivalent": 7.089375479767e-06,
+        "note": "contract-held PRAI; no depositor can sign a claim"
+      },
+      {
+        "address": "0x0000000071e801062eb0544403f66176bba42dc0",
+        "prai_wei": "1",
+        "eth_equivalent": 0.0,
+        "note": "contract-held PRAI; no depositor can sign a claim"
+      },
+      {
+        "address": "0x000000ed5113006b6f24002dd7577bb547e2005a",
+        "prai_wei": "1",
+        "eth_equivalent": 0.0,
+        "note": "contract-held PRAI; no depositor can sign a claim"
+      },
+      {
+        "address": "0x37a5de7fa4cad75e042aae578d6fa08a39b1dae1",
+        "prai_wei": "1",
+        "eth_equivalent": 0.0,
+        "note": "contract-held PRAI; no depositor can sign a claim"
+      },
+      {
+        "address": "0xa084ad53abd303a90482aede702ba23f1596acdd",
+        "prai_wei": "1",
+        "eth_equivalent": 0.0,
+        "note": "contract-held PRAI; no depositor can sign a claim"
+      }
+    ],
+    "note": "Settled GEB system. Per-user ETH = PRAI * collateralCashPrice/RAY plus freeable SAFE collateral (locked - debt valued at the settlement price). WETH.balanceOf(collateral_join) over-reports because it also covers processed debt and LP-held PRAI, so the denominator is the computed claimable total."
+  },
+  "balances": [
+    {
+      "address": "0x896b94f4f27f12369698c302e2049cae86936bbb",
+      "balance_wei": "10000000000000000000",
+      "balance_eth": 10.0,
+      "protorai_items": [
+        {
+          "type": "safe",
+          "safe_id": 100,
+          "handle": "0xcbe288d09bb3cd362876ecd8a3e195f91aaf84ac",
+          "safe_owner": "0xdaadc55ce157f137d5b2f2ad08a06079df277edd",
+          "proxy": "0xdaadc55ce157f137d5b2f2ad08a06079df277edd",
+          "locked_wei": "10000000000000000000",
+          "debt_wei": "0",
+          "eth_wei": "10000000000000000000",
+          "eth": 10.0
+        }
+      ],
+      "proxy": "0xdaadc55ce157f137d5b2f2ad08a06079df277edd",
+      "rank": 1
+    },
+    {
+      "address": "0xd45baaa5624cb20df2e56a5994b2666dff550f4f",
+      "balance_wei": "8006141225895098015",
+      "balance_eth": 8.006141225895098,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "750000000000000000000",
+          "prai": 750.0,
+          "eth_wei": "1064357891805424451",
+          "eth": 1.0643578918054246,
+          "proxy": null
+        },
+        {
+          "type": "safe",
+          "safe_id": 64,
+          "handle": "0xc01e51ea749cbd7ab1e92ade71caa3e4ffee2911",
+          "safe_owner": "0x03ae3631585fd6f95a7c0cf686d1e58f6be9044d",
+          "proxy": "0x03ae3631585fd6f95a7c0cf686d1e58f6be9044d",
+          "locked_wei": "8000000000000000000",
+          "debt_wei": "748316648877536434199",
+          "eth_wei": "6941783334089673564",
+          "eth": 6.941783334089673
+        }
+      ],
+      "proxy": "0x03ae3631585fd6f95a7c0cf686d1e58f6be9044d",
+      "rank": 2
+    },
+    {
+      "address": "0xb27f5cb35f436c09ca4310ba2711d7a18c96be21",
+      "balance_wei": "3989220025789422456",
+      "balance_eth": 3.9892200257894226,
+      "protorai_items": [
+        {
+          "type": "safe",
+          "safe_id": 1,
+          "handle": "0xebbc34810eddbe6a564a790047301cb77e8bdc46",
+          "safe_owner": "0xb27f5cb35f436c09ca4310ba2711d7a18c96be21",
+          "proxy": null,
+          "locked_wei": "3989220025789422456",
+          "debt_wei": "0",
+          "eth_wei": "3989220025789422456",
+          "eth": 3.9892200257894226
+        }
+      ],
+      "proxy": "0x9b4b52c0ffad701b5dcb071c5a2f521033898a40",
+      "rank": 3
+    },
+    {
+      "address": "0x69f836c5c8c33fb3fb19406fe463dc6af71c6ac4",
+      "balance_wei": "3773468866501518838",
+      "balance_eth": 3.773468866501519,
+      "protorai_items": [
+        {
+          "type": "safe",
+          "safe_id": 98,
+          "handle": "0x07070212a97b3834122614b0b33bd2dd16581921",
+          "safe_owner": "0xf7bd083382f1d8a0a16824675597f55fd4a4cb33",
+          "proxy": "0xf7bd083382f1d8a0a16824675597f55fd4a4cb33",
+          "locked_wei": "5000000000000000000",
+          "debt_wei": "867340023202136153751",
+          "eth_wei": "3773468866501518838",
+          "eth": 3.773468866501519
+        }
+      ],
+      "proxy": "0xf7bd083382f1d8a0a16824675597f55fd4a4cb33",
+      "rank": 4
+    },
+    {
+      "address": "0xeed7e1c7c9c68611584e8f6230178ce0a48eef7f",
+      "balance_wei": "1122102273807946403",
+      "balance_eth": 1.1221022738079465,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "284703364467229345939",
+          "prai": 284.70336446722933,
+          "eth_wei": "404035030392335488",
+          "eth": 0.4040350303923355,
+          "proxy": null
+        },
+        {
+          "type": "safe",
+          "safe_id": 102,
+          "handle": "0xb57910b33788ae778839118e046f1aef62e63f41",
+          "safe_owner": "0xaaffabe21774b07c5e64747d8507c19ca51e9e4a",
+          "proxy": "0xaaffabe21774b07c5e64747d8507c19ca51e9e4a",
+          "locked_wei": "1000000000000000000",
+          "debt_wei": "199368411415582743602",
+          "eth_wei": "718067243415610915",
+          "eth": 0.7180672434156109
+        }
+      ],
+      "proxy": "0xaaffabe21774b07c5e64747d8507c19ca51e9e4a",
+      "rank": 5
+    },
+    {
+      "address": "0xdceb4db5d5fd9d3efe6d7e4c7a865318411df414",
+      "balance_wei": "1004889263322263354",
+      "balance_eth": 1.0048892633222632,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "360000000000000000000",
+          "prai": 360.0,
+          "eth_wei": "510891788066603736",
+          "eth": 0.5108917880666037,
+          "proxy": null
+        },
+        {
+          "type": "safe",
+          "safe_id": 112,
+          "handle": "0x2ca8a9d2e5c157e77fcc6fc100d63e421fa2859b",
+          "safe_owner": "0xda07766bac2d5c6f5e820f664298a5b06e6b51d9",
+          "proxy": "0xda07766bac2d5c6f5e820f664298a5b06e6b51d9",
+          "locked_wei": "1000000000000000000",
+          "debt_wei": "357819079814364231066",
+          "eth_wei": "493997475255659618",
+          "eth": 0.4939974752556596
+        }
+      ],
+      "proxy": "0xda07766bac2d5c6f5e820f664298a5b06e6b51d9",
+      "rank": 6
+    },
+    {
+      "address": "0x4ab9168e48446701eb7cd85e7031fe6c3f2b2452",
+      "balance_wei": "1000945963310937671",
+      "balance_eth": 1.0009459633109377,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "125000000000000000000",
+          "prai": 125.0,
+          "eth_wei": "177392981967570741",
+          "eth": 0.17739298196757075,
+          "proxy": null
+        },
+        {
+          "type": "safe",
+          "safe_id": 41,
+          "handle": "0xefdd738c5cb4333fb8b8a62c68adb5dddaf08522",
+          "safe_owner": "0x6efb657db1ee83280fd39739e3eab79bbc83a7cb",
+          "proxy": "0x6efb657db1ee83280fd39739e3eab79bbc83a7cb",
+          "locked_wei": "1000000000000000000",
+          "debt_wei": "124774298080042490903",
+          "eth_wei": "823552981343366930",
+          "eth": 0.823552981343367
+        }
+      ],
+      "proxy": "0x6efb657db1ee83280fd39739e3eab79bbc83a7cb",
+      "rank": 7
+    },
+    {
+      "address": "0x9654dda28c96fe9e28b93542c3c9a68f59f7f766",
+      "balance_wei": "1000830127815711071",
+      "balance_eth": 1.000830127815711,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "100000000000000000000",
+          "prai": 100.0,
+          "eth_wei": "141914385574056593",
+          "eth": 0.14191438557405658,
+          "proxy": null
+        },
+        {
+          "type": "safe",
+          "safe_id": 71,
+          "handle": "0xe2c77d04aeef1eaaf292d01235fb0f87f1aedbc7",
+          "safe_owner": "0x68cf9575d2e336ea8a89bc43ead45c9f8f8ae87e",
+          "proxy": "0x68cf9575d2e336ea8a89bc43ead45c9f8f8ae87e",
+          "locked_wei": "1000000000000000000",
+          "debt_wei": "99767564031207768901",
+          "eth_wei": "858915742241654478",
+          "eth": 0.8589157422416546
+        }
+      ],
+      "proxy": "0x68cf9575d2e336ea8a89bc43ead45c9f8f8ae87e",
+      "rank": 8
+    },
+    {
+      "address": "0xa9f078b3b6dd6c04308f19def394b6d5a1b8b732",
+      "balance_wei": "1000000000000000000",
+      "balance_eth": 1.0,
+      "protorai_items": [
+        {
+          "type": "safe",
+          "safe_id": 104,
+          "handle": "0xa86b8dc7b72779d44595e7522e2aa10a253721e0",
+          "safe_owner": "0x7e62cd45a0443cabe07438d2d6ff9f655190111c",
+          "proxy": "0x7e62cd45a0443cabe07438d2d6ff9f655190111c",
+          "locked_wei": "1000000000000000000",
+          "debt_wei": "0",
+          "eth_wei": "1000000000000000000",
+          "eth": 1.0
+        }
+      ],
+      "proxy": "0x7e62cd45a0443cabe07438d2d6ff9f655190111c",
+      "rank": 9
+    },
+    {
+      "address": "0xccd72bea12f3927063be3d8798a4b74082713cb5",
+      "balance_wei": "550617628345409155",
+      "balance_eth": 0.5506176283454092,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "85000000000000000000",
+          "prai": 85.0,
+          "eth_wei": "120627227737948104",
+          "eth": 0.1206272277379481,
+          "proxy": null
+        },
+        {
+          "type": "safe",
+          "safe_id": 36,
+          "handle": "0x6bb05f7d4f8d4f91f92723dcab4676ee3f75f467",
+          "safe_owner": "0x0568fe9631a2a9a64c5d4ea71ab98a9b7c27e99c",
+          "proxy": "0x0568fe9631a2a9a64c5d4ea71ab98a9b7c27e99c",
+          "locked_wei": "550000000000000000",
+          "debt_wei": "84864644588928156209",
+          "eth_wei": "429990400607461051",
+          "eth": 0.4299904006074611
+        }
+      ],
+      "proxy": "0x0568fe9631a2a9a64c5d4ea71ab98a9b7c27e99c",
+      "rank": 10
+    },
+    {
+      "address": "0xbaaeb7aae88c94d682dd779318c4fe0fc450eb3f",
+      "balance_wei": "502275505352939336",
+      "balance_eth": 0.5022755053529393,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "86000000000000000000",
+          "prai": 86.0,
+          "eth_wei": "122046371593688670",
+          "eth": 0.12204637159368867,
+          "proxy": null
+        },
+        {
+          "type": "safe",
+          "safe_id": 121,
+          "handle": "0x7783a14e4aa2dd96f30ecbda2a9b16deb18a8582",
+          "safe_owner": "0xf12f409e74a8b88c20ef3a4f51cd7c3b6b551de3",
+          "proxy": "0xf12f409e74a8b88c20ef3a4f51cd7c3b6b551de3",
+          "locked_wei": "380229133759250666",
+          "debt_wei": "0",
+          "eth_wei": "380229133759250666",
+          "eth": 0.3802291337592507
+        }
+      ],
+      "proxy": "0xf12f409e74a8b88c20ef3a4f51cd7c3b6b551de3",
+      "rank": 11
+    },
+    {
+      "address": "0x9747c2385d751c90eb793d2d746c8bc217d244d1",
+      "balance_wei": "323830809055921387",
+      "balance_eth": 0.32383080905592143,
+      "protorai_items": [
+        {
+          "type": "safe",
+          "safe_id": 116,
+          "handle": "0xe8261c566f8007b6d37b104e8b67bb686dabf9bb",
+          "safe_owner": "0x549b4d3de1ea31e8d894acb9a38015702f140dbe",
+          "proxy": "0x549b4d3de1ea31e8d894acb9a38015702f140dbe",
+          "locked_wei": "500000000000000000",
+          "debt_wei": "124577832545599962264",
+          "eth_wei": "323830809055921387",
+          "eth": 0.32383080905592143
+        }
+      ],
+      "proxy": "0x549b4d3de1ea31e8d894acb9a38015702f140dbe",
+      "rank": 12
+    },
+    {
+      "address": "0x828355119398b77d364f41ef6533dad936d5b5c1",
+      "balance_wei": "180208003179992737",
+      "balance_eth": 0.18020800317999275,
+      "protorai_items": [
+        {
+          "type": "safe",
+          "safe_id": 117,
+          "handle": "0xfc0acf3383a6c7895d6096bbd343ae0360188110",
+          "safe_owner": "0xf45b82ff50b0728f75e05dc6fbbc622755eca8b4",
+          "proxy": "0xf45b82ff50b0728f75e05dc6fbbc622755eca8b4",
+          "locked_wei": "300000000000000000",
+          "debt_wei": "84710767190178285129",
+          "eth_wei": "180208003179992737",
+          "eth": 0.18020800317999275
+        }
+      ],
+      "proxy": "0xf45b82ff50b0728f75e05dc6fbbc622755eca8b4",
+      "rank": 13
+    },
+    {
+      "address": "0xb5e45dc91dba9caa61001fd923ba6aa7b69df1e2",
+      "balance_wei": "177392981967570741",
+      "balance_eth": 0.17739298196757075,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "125000000000000000000",
+          "prai": 125.0,
+          "eth_wei": "177392981967570741",
+          "eth": 0.17739298196757075,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 14
+    },
+    {
+      "address": "0x674832e67e3086330b043fd8300ea8409db55511",
+      "balance_wei": "141914385574056593",
+      "balance_eth": 0.14191438557405658,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "100000000000000000000",
+          "prai": 100.0,
+          "eth_wei": "141914385574056593",
+          "eth": 0.14191438557405658,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x5f73addb537ad292630571c7af79cd6a12261606",
+      "rank": 15
+    },
+    {
+      "address": "0xc8d46eb7881975f9ae15216feeba2ff58e55803c",
+      "balance_wei": "120957192787028296",
+      "balance_eth": 0.1209571927870283,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "50000000000000000000",
+          "prai": 50.0,
+          "eth_wei": "70957192787028296",
+          "eth": 0.07095719278702829,
+          "proxy": null
+        },
+        {
+          "type": "safe",
+          "safe_id": 39,
+          "handle": "0xc38fef999c1386ac1f43976b04621686e767d188",
+          "safe_owner": "0x5d783d3c3880a8176335489f0992dd4324d7ae56",
+          "proxy": "0x5d783d3c3880a8176335489f0992dd4324d7ae56",
+          "locked_wei": "50000000000000000",
+          "debt_wei": "0",
+          "eth_wei": "50000000000000000",
+          "eth": 0.05
+        }
+      ],
+      "proxy": "0x5d783d3c3880a8176335489f0992dd4324d7ae56",
+      "rank": 16
+    },
+    {
+      "address": "0x4f9b8d081205320f1c3dc3693c6fe98c4a8cc735",
+      "balance_wei": "120627227737948104",
+      "balance_eth": 0.1206272277379481,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "85000000000000000000",
+          "prai": 85.0,
+          "eth_wei": "120627227737948104",
+          "eth": 0.1206272277379481,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x814af466706dc5325213726d4a489dac51153d49",
+      "rank": 17
+    },
+    {
+      "address": "0x2688dae847be5cd32baca44ef60e4ade7b296d45",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1,
+      "protorai_items": [
+        {
+          "type": "safe",
+          "safe_id": 45,
+          "handle": "0xd003b7e7c3d77a2add9e7a043101218ccf9d1bf8",
+          "safe_owner": "0xfa8fb4c83f6e353ac2a7a8a3d41f45dd39e16f49",
+          "proxy": "0xfa8fb4c83f6e353ac2a7a8a3d41f45dd39e16f49",
+          "locked_wei": "100000000000000000",
+          "debt_wei": "0",
+          "eth_wei": "100000000000000000",
+          "eth": 0.1
+        }
+      ],
+      "proxy": "0xfa8fb4c83f6e353ac2a7a8a3d41f45dd39e16f49",
+      "rank": 18
+    },
+    {
+      "address": "0x097b29ba2a9182644e456410d2466e4f988de832",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1,
+      "protorai_items": [
+        {
+          "type": "safe",
+          "safe_id": 66,
+          "handle": "0x112757ebdd849d0569cb70b50a81385892ad3401",
+          "safe_owner": "0x6bc317da9906d9fb5ff522abf982a3bad486bdc1",
+          "proxy": "0x6bc317da9906d9fb5ff522abf982a3bad486bdc1",
+          "locked_wei": "100000000000000000",
+          "debt_wei": "0",
+          "eth_wei": "100000000000000000",
+          "eth": 0.1
+        }
+      ],
+      "proxy": "0x6bc317da9906d9fb5ff522abf982a3bad486bdc1",
+      "rank": 19
+    },
+    {
+      "address": "0x7bfee91193d9df2ac0bfe90191d40f23c773c060",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1,
+      "protorai_items": [
+        {
+          "type": "safe",
+          "safe_id": 95,
+          "handle": "0x2086a314c1f7704608080990a6f1794ccdf54ab1",
+          "safe_owner": "0xd0618efaf7c15395a8d9d050bfb55ebc94a3005c",
+          "proxy": "0xd0618efaf7c15395a8d9d050bfb55ebc94a3005c",
+          "locked_wei": "100000000000000000",
+          "debt_wei": "0",
+          "eth_wei": "100000000000000000",
+          "eth": 0.1
+        }
+      ],
+      "proxy": "0xd0618efaf7c15395a8d9d050bfb55ebc94a3005c",
+      "rank": 20
+    },
+    {
+      "address": "0xe582794320fa7424a1f9db360a46446244065cb5",
+      "balance_wei": "100000000000000000",
+      "balance_eth": 0.1,
+      "protorai_items": [
+        {
+          "type": "safe",
+          "safe_id": 101,
+          "handle": "0xea21ceab1018b76d808a37020484108850b058cd",
+          "safe_owner": "0x28e0be01b56a86f3fa5942946d36e1497f4b6bd5",
+          "proxy": "0x28e0be01b56a86f3fa5942946d36e1497f4b6bd5",
+          "locked_wei": "100000000000000000",
+          "debt_wei": "0",
+          "eth_wei": "100000000000000000",
+          "eth": 0.1
+        }
+      ],
+      "proxy": "0x28e0be01b56a86f3fa5942946d36e1497f4b6bd5",
+      "rank": 21
+    },
+    {
+      "address": "0x875542e4b00754baae02ebb6dbfbacaa394fe4f9",
+      "balance_wei": "71564174026732194",
+      "balance_eth": 0.0715641740267322,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "50427709451193832877",
+          "prai": 50.427709451193834,
+          "eth_wei": "71564174026732194",
+          "eth": 0.0715641740267322,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 22
+    },
+    {
+      "address": "0x460ac13ea5c98d7cf0f133257764bc2da2ad61b4",
+      "balance_wei": "69144176802371368",
+      "balance_eth": 0.06914417680237137,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "48722457926077674639",
+          "prai": 48.72245792607768,
+          "eth_wei": "69144176802371368",
+          "eth": 0.06914417680237137,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 23
+    },
+    {
+      "address": "0xcbe6edc5b6ebbf3246e6ebecb8d354b9fd9a36d0",
+      "balance_wei": "56765754229622637",
+      "balance_eth": 0.05676575422962264,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "40000000000000000000",
+          "prai": 40.0,
+          "eth_wei": "56765754229622637",
+          "eth": 0.05676575422962264,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x44732d40ccac09afee24aa090c1e352549d50723",
+      "rank": 24
+    },
+    {
+      "address": "0x2b19fde5d7377b48be50a5d0a78398a496e8b15c",
+      "balance_wei": "50001419143855740",
+      "balance_eth": 0.050001419143855745,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "1000000000000000",
+          "prai": 0.001,
+          "eth_wei": "1419143855740",
+          "eth": 1.41914385574e-06,
+          "proxy": null
+        },
+        {
+          "type": "safe",
+          "safe_id": 49,
+          "handle": "0xccf2b263a00fc621780c9157a0a5398bff6ba6b3",
+          "safe_owner": "0x449409392e39adcb091e7c1901e53a9ec74869fa",
+          "proxy": "0x449409392e39adcb091e7c1901e53a9ec74869fa",
+          "locked_wei": "50000000000000000",
+          "debt_wei": "0",
+          "eth_wei": "50000000000000000",
+          "eth": 0.05
+        }
+      ],
+      "proxy": "0x449409392e39adcb091e7c1901e53a9ec74869fa",
+      "rank": 25
+    },
+    {
+      "address": "0x3dd48ad861f0b77d1312f9c95a13e52871ca95e0",
+      "balance_wei": "35478596393514148",
+      "balance_eth": 0.035478596393514146,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "25000000000000000000",
+          "prai": 25.0,
+          "eth_wei": "35478596393514148",
+          "eth": 0.035478596393514146,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 26
+    },
+    {
+      "address": "0x0154d25120ed20a516fe43991702e7463c5a6f6e",
+      "balance_wei": "33127283718706713",
+      "balance_eth": 0.03312728371870671,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "23343147056377574775",
+          "prai": 23.343147056377575,
+          "eth_wei": "33127283718706713",
+          "eth": 0.03312728371870671,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 27
+    },
+    {
+      "address": "0x03d1ba09c6b93692cc5a2f17c3b1c5cba43b9500",
+      "balance_wei": "31586050173767116",
+      "balance_eth": 0.031586050173767116,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "22257116532618361101",
+          "prai": 22.25711653261836,
+          "eth_wei": "31586050173767116",
+          "eth": 0.031586050173767116,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x680adf080bd94dcc621540aca3e5d472c50e987b",
+      "rank": 28
+    },
+    {
+      "address": "0xa075e3aa3b6616fb60bdd90f4e8929eb3c73b472",
+      "balance_wei": "28382877114811318",
+      "balance_eth": 0.02838287711481132,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "20000000000000000000",
+          "prai": 20.0,
+          "eth_wei": "28382877114811318",
+          "eth": 0.02838287711481132,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 29
+    },
+    {
+      "address": "0xfb7238a230de49e96d2a880ba984dfa1e2523f85",
+      "balance_wei": "28382877114811318",
+      "balance_eth": 0.02838287711481132,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "20000000000000000000",
+          "prai": 20.0,
+          "eth_wei": "28382877114811318",
+          "eth": 0.02838287711481132,
+          "proxy": null
+        }
+      ],
+      "proxy": "0xdfec2e554b5f916189b6423e8e8c13266317a5c2",
+      "rank": 30
+    },
+    {
+      "address": "0x4add3b2277e1a79e4cf6b52ccb26b2c80b37f142",
+      "balance_wei": "21287157836108489",
+      "balance_eth": 0.02128715783610849,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "15000000000000000000",
+          "prai": 15.0,
+          "eth_wei": "21287157836108489",
+          "eth": 0.02128715783610849,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 31
+    },
+    {
+      "address": "0xfeb620b14a9c3683cecb9097802af9c32e51c701",
+      "balance_wei": "20505814763517307",
+      "balance_eth": 0.02050581476351731,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "14449426448608027055",
+          "prai": 14.449426448608026,
+          "eth_wei": "20505814763517307",
+          "eth": 0.02050581476351731,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 32
+    },
+    {
+      "address": "0xd23199f1222c418ffc74c385171330b21b16e452",
+      "balance_wei": "20025123841522311",
+      "balance_eth": 0.020025123841522312,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "14110707494887755600",
+          "prai": 14.110707494887755,
+          "eth_wei": "20025123841522311",
+          "eth": 0.020025123841522312,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 33
+    },
+    {
+      "address": "0x2c2f838f0dac3f4915f4a57f3cb63abcd806ee40",
+      "balance_wei": "15298246532735640",
+      "balance_eth": 0.01529824653273564,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "10779912459792460042",
+          "prai": 10.77991245979246,
+          "eth_wei": "15298246532735640",
+          "eth": 0.01529824653273564,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 34
+    },
+    {
+      "address": "0x68575571e75d2cfa4222e0f8e7053f056eb91d6c",
+      "balance_wei": "10000000000000000",
+      "balance_eth": 0.01,
+      "protorai_items": [
+        {
+          "type": "safe",
+          "safe_id": 42,
+          "handle": "0xb95b30823cd5dc2713ff14b3d97cdb8b0ee1b447",
+          "safe_owner": "0x383c4eba970cb7fd87e1705f764e731998ad63c8",
+          "proxy": "0x383c4eba970cb7fd87e1705f764e731998ad63c8",
+          "locked_wei": "10000000000000000",
+          "debt_wei": "0",
+          "eth_wei": "10000000000000000",
+          "eth": 0.01
+        }
+      ],
+      "proxy": "0x383c4eba970cb7fd87e1705f764e731998ad63c8",
+      "rank": 35
+    },
+    {
+      "address": "0x61572ca1c6d53011e9b5318aa26dd285c7df6997",
+      "balance_wei": "8204151390829800",
+      "balance_eth": 0.0082041513908298,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "5781056908109253677",
+          "prai": 5.781056908109254,
+          "eth_wei": "8204151390829800",
+          "eth": 0.0082041513908298,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 36
+    },
+    {
+      "address": "0xa6dffbc492e1dccae78bf4f6f6c13b1f96469e11",
+      "balance_wei": "7095719278702829",
+      "balance_eth": 0.007095719278702829,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "5000000000000000000",
+          "prai": 5.0,
+          "eth_wei": "7095719278702829",
+          "eth": 0.007095719278702829,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 37
+    },
+    {
+      "address": "0xdfad0c01a28d9d95486bb3f0821e4f5644704fa7",
+      "balance_wei": "7085286790057130",
+      "balance_eth": 0.00708528679005713,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "4992648744802368780",
+          "prai": 4.992648744802368,
+          "eth_wei": "7085286790057130",
+          "eth": 0.00708528679005713,
+          "proxy": null
+        }
+      ],
+      "proxy": "0xd75baa2853ede2daf08bdd73cee8a39595510023",
+      "rank": 38
+    },
+    {
+      "address": "0xd4e6fd78c21085d01dbd596d287360d746acf4d8",
+      "balance_wei": "6701497525060989",
+      "balance_eth": 0.006701497525060989,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "4722211562945379038",
+          "prai": 4.722211562945379,
+          "eth_wei": "6701497525060989",
+          "eth": 0.006701497525060989,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x5546e511b0e3d647751a3a661f525e7dc0ff06eb",
+      "rank": 39
+    },
+    {
+      "address": "0x4f50d47d20380172746527bbeaa274940c38efac",
+      "balance_wei": "6106449655107873",
+      "balance_eth": 0.006106449655107873,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "4302910963118171132",
+          "prai": 4.302910963118171,
+          "eth_wei": "6106449655107873",
+          "eth": 0.006106449655107873,
+          "proxy": null
+        }
+      ],
+      "proxy": "0xba667f54d7f5a9a99b289deefd24f8db872ed33c",
+      "rank": 40
+    },
+    {
+      "address": "0x3e0139ce3533a42a7d342841aee69ab2bfee1d51",
+      "balance_wei": "4805135662871742",
+      "balance_eth": 0.004805135662871742,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "3385939799855054615",
+          "prai": 3.3859397998550547,
+          "eth_wei": "4805135662871742",
+          "eth": 0.004805135662871742,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x08a068d698f73cd180bedee553c8163ec5c9ca75",
+      "rank": 41
+    },
+    {
+      "address": "0x9a568bfeb8cb19e4bafcb57ee69498d57d9591ca",
+      "balance_wei": "3908462440239262",
+      "balance_eth": 0.003908462440239262,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "2754098835314810825",
+          "prai": 2.754098835314811,
+          "eth_wei": "3908462440239262",
+          "eth": 0.003908462440239262,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x471731eeb1a8ff488c42927c1ca2a8b8c5adffae",
+      "rank": 42
+    },
+    {
+      "address": "0x1404c00e08739bd020fdcc20de541edd1869c244",
+      "balance_wei": "2859574869317240",
+      "balance_eth": 0.00285957486931724,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "2015000000000000000",
+          "prai": 2.015,
+          "eth_wei": "2859574869317240",
+          "eth": 0.00285957486931724,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 43
+    },
+    {
+      "address": "0x6a72c9de45b0697d2cbb8f724423fc3ff2df2074",
+      "balance_wei": "2620348831340080",
+      "balance_eth": 0.00262034883134008,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "1846429324793629355",
+          "prai": 1.8464293247936294,
+          "eth_wei": "2620348831340080",
+          "eth": 0.00262034883134008,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x534c0dda1213593bb8274494cac4ad31290f2f69",
+      "rank": 44
+    },
+    {
+      "address": "0x737e5f0fbbafa9b98eb0251e9293c51221bb97c7",
+      "balance_wei": "1561058241314622",
+      "balance_eth": 0.001561058241314622,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "1100000000000000000",
+          "prai": 1.1,
+          "eth_wei": "1561058241314622",
+          "eth": 0.001561058241314622,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 45
+    },
+    {
+      "address": "0x77c1d273862b6aa39265debcaae35cd7f9ea1c87",
+      "balance_wei": "1561058241314622",
+      "balance_eth": 0.001561058241314622,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "1100000000000000000",
+          "prai": 1.1,
+          "eth_wei": "1561058241314622",
+          "eth": 0.001561058241314622,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 46
+    },
+    {
+      "address": "0xadeeb9d09b8bcee10943198fb6f6a4229bab3675",
+      "balance_wei": "1433335294297971",
+      "balance_eth": 0.001433335294297971,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "1010000000000000000",
+          "prai": 1.01,
+          "eth_wei": "1433335294297971",
+          "eth": 0.001433335294297971,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x30e4d4c10a2d317612b283e6dda3b5810eaf96e5",
+      "rank": 47
+    },
+    {
+      "address": "0xfa5e4955a11902f849ecaddef355db69c2036de6",
+      "balance_wei": "1419170744798824",
+      "balance_eth": 0.001419170744798824,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "1000018947380245806",
+          "prai": 1.0000189473802457,
+          "eth_wei": "1419170744798824",
+          "eth": 0.001419170744798824,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x657b95d5bbd9e8cbcf02f75e8454b267a4d4aa06",
+      "rank": 48
+    },
+    {
+      "address": "0x08717dc665247452454b6976a0fc6aab3a97d31f",
+      "balance_wei": "1419143855740565",
+      "balance_eth": 0.001419143855740565,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "1000000000000000000",
+          "prai": 1.0,
+          "eth_wei": "1419143855740565",
+          "eth": 0.001419143855740565,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 49
+    },
+    {
+      "address": "0x0ce1ff652be78322e312e5073cd96b5e1cf5306e",
+      "balance_wei": "1419143855740565",
+      "balance_eth": 0.001419143855740565,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "1000000000000000000",
+          "prai": 1.0,
+          "eth_wei": "1419143855740565",
+          "eth": 0.001419143855740565,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 50
+    },
+    {
+      "address": "0x45c9a201e2937608905fef17de9a67f25f9f98e0",
+      "balance_wei": "1419143855740565",
+      "balance_eth": 0.001419143855740565,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "1000000000000000000",
+          "prai": 1.0,
+          "eth_wei": "1419143855740565",
+          "eth": 0.001419143855740565,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 51
+    },
+    {
+      "address": "0x8f9cfa5e735dca900ee392b657dfefbf3af7fecf",
+      "balance_wei": "1419143855740565",
+      "balance_eth": 0.001419143855740565,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "999999999999999999",
+          "prai": 1.0,
+          "eth_wei": "1419143855740565",
+          "eth": 0.001419143855740565,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x63c512fd3550b9579816c082accfe337aba9cb81",
+      "rank": 52
+    },
+    {
+      "address": "0x7e3a64e015dd08130a17afc9aea8b85e7aeff178",
+      "balance_wei": "1400853706972074",
+      "balance_eth": 0.001400853706972074,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "987111843035146521",
+          "prai": 0.9871118430351465,
+          "eth_wei": "1400853706972074",
+          "eth": 0.001400853706972074,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x5ddf424fe0947254a0dcbdae692a34374aba67b1",
+      "rank": 53
+    },
+    {
+      "address": "0x389011d722e6aada5ee003d4f023943b9fdf54a0",
+      "balance_wei": "1383378430398234",
+      "balance_eth": 0.001383378430398234,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "974797885924209010",
+          "prai": 0.974797885924209,
+          "eth_wei": "1383378430398234",
+          "eth": 0.001383378430398234,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x1498021ee6f241e810a1d8b63792b2d6d062912b",
+      "rank": 54
+    },
+    {
+      "address": "0xfeec05a103f3ee7c4c42ee1d799b39a5b4c62dbf",
+      "balance_wei": "1318329351846045",
+      "balance_eth": 0.001318329351846045,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "928961039794016537",
+          "prai": 0.9289610397940166,
+          "eth_wei": "1318329351846045",
+          "eth": 0.001318329351846045,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x50dc2034f90d99d919f2df01cf9d991a8a447fe9",
+      "rank": 55
+    },
+    {
+      "address": "0x7db5d398d3e9b1d0b1d119e53af3e03164637ed5",
+      "balance_wei": "1307652229474027",
+      "balance_eth": 0.001307652229474027,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "921437403392514062",
+          "prai": 0.921437403392514,
+          "eth_wei": "1307652229474027",
+          "eth": 0.001307652229474027,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x80207121110b750131894064b8bb682c215c41bc",
+      "rank": 56
+    },
+    {
+      "address": "0xd8fd1ad0da93d380c96b9de5f0b6624b03b7963a",
+      "balance_wei": "1221233980870313",
+      "balance_eth": 0.001221233980870313,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "860542767338428183",
+          "prai": 0.8605427673384282,
+          "eth_wei": "1221233980870313",
+          "eth": 0.001221233980870313,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x9c85c55118f3f47762f2e208e930a921edaf33f3",
+      "rank": 57
+    },
+    {
+      "address": "0x24ee78f038525eccae186bc3bcf5d2badd850bd9",
+      "balance_wei": "1175981601156973",
+      "balance_eth": 0.001175981601156973,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "828655668979590139",
+          "prai": 0.8286556689795902,
+          "eth_wei": "1175981601156973",
+          "eth": 0.001175981601156973,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x59ed899ed4d4f29a151dcd6c36af344e52a620fa",
+      "rank": 58
+    },
+    {
+      "address": "0x28d804bf2212e220bc2b7b6252993db8286df07f",
+      "balance_wei": "1008475243645153",
+      "balance_eth": 0.001008475243645153,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "710622280867284299",
+          "prai": 0.7106222808672844,
+          "eth_wei": "1008475243645153",
+          "eth": 0.001008475243645153,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x01de2b4c80c1092c6858cb97d249f5e5ff17c182",
+      "rank": 59
+    },
+    {
+      "address": "0x5e3785472f87cdab0402336d54a5917e97ec40b1",
+      "balance_wei": "851486313444339",
+      "balance_eth": 0.000851486313444339,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "600000000000000000",
+          "prai": 0.6,
+          "eth_wei": "851486313444339",
+          "eth": 0.000851486313444339,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 60
+    },
+    {
+      "address": "0x43faf3f8bef053d901c572edc32f055c20efb764",
+      "balance_wei": "808684638885385",
+      "balance_eth": 0.000808684638885385,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "569839791515273817",
+          "prai": 0.5698397915152738,
+          "eth_wei": "808684638885385",
+          "eth": 0.000808684638885385,
+          "proxy": null
+        }
+      ],
+      "proxy": "0xd2b1adc6f505f20b3d6d1919c0aa95401899188c",
+      "rank": 61
+    },
+    {
+      "address": "0x004537fcd9095489ebe38180a382341b962b501d",
+      "balance_wei": "800118014536131",
+      "balance_eth": 0.000800118014536131,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "563803317964969927",
+          "prai": 0.56380331796497,
+          "eth_wei": "800118014536131",
+          "eth": 0.000800118014536131,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x9c7a7273d3b0ea88a24d71fcca157aa49e568689",
+      "rank": 62
+    },
+    {
+      "address": "0xd164ff4c786d851a0e2d2fc1bf78370dc9cc1d80",
+      "balance_wei": "700732382846861",
+      "balance_eth": 0.000700732382846861,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "493771212842401454",
+          "prai": 0.4937712128424015,
+          "eth_wei": "700732382846861",
+          "eth": 0.000700732382846861,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x0cf9a7d9cfeecb339c44c3dbe657b79aaf7e0254",
+      "rank": 63
+    },
+    {
+      "address": "0xaa73128e32eda345d26245e6e0ecb14ad83cc8b3",
+      "balance_wei": "686488659989879",
+      "balance_eth": 0.000686488659989879,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "483734370700313738",
+          "prai": 0.4837343707003137,
+          "eth_wei": "686488659989879",
+          "eth": 0.000686488659989879,
+          "proxy": null
+        }
+      ],
+      "proxy": "0xa375818f80bf2db0b0e045cbf6c3d777320d4420",
+      "rank": 64
+    },
+    {
+      "address": "0xc5c7d40b0d752781b375c4ea67d488539f63f8df",
+      "balance_wei": "503399885775081",
+      "balance_eth": 0.000503399885775081,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "354720829561275855",
+          "prai": 0.3547208295612758,
+          "eth_wei": "503399885775081",
+          "eth": 0.000503399885775081,
+          "proxy": null
+        }
+      ],
+      "proxy": "0xbb91524494abca3afc3083b11f4d29446aefa047",
+      "rank": 65
+    },
+    {
+      "address": "0xe73dbaafaf64b349f1d7a722e43df2c95916da37",
+      "balance_wei": "503399885775081",
+      "balance_eth": 0.000503399885775081,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "354720829561275855",
+          "prai": 0.3547208295612758,
+          "eth_wei": "503399885775081",
+          "eth": 0.000503399885775081,
+          "proxy": null
+        }
+      ],
+      "proxy": "0xca36757761e2b2f2148891890970b7eee6e4cea2",
+      "rank": 66
+    },
+    {
+      "address": "0xe8b20e3b4a49b1b814abfecda1aab68e4f4874ee",
+      "balance_wei": "503399885775081",
+      "balance_eth": 0.000503399885775081,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "354720829561275855",
+          "prai": 0.3547208295612758,
+          "eth_wei": "503399885775081",
+          "eth": 0.000503399885775081,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x03dcf6079ce4526f8383dddabaa05a2b13387f39",
+      "rank": 67
+    },
+    {
+      "address": "0x774a98009709311e75434f6edc1c067abd92537f",
+      "balance_wei": "503050033527175",
+      "balance_eth": 0.000503050033527175,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "354474306105256371",
+          "prai": 0.3544743061052564,
+          "eth_wei": "503050033527175",
+          "eth": 0.000503050033527175,
+          "proxy": null
+        }
+      ],
+      "proxy": "0xf49fd994aac66bc1c9175a5752e9db7408b87ba5",
+      "rank": 68
+    },
+    {
+      "address": "0xc79c88386c95130bf7c20a184cb8281ed639fab4",
+      "balance_wei": "150399587135929",
+      "balance_eth": 0.000150399587135929,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "105979098966992988",
+          "prai": 0.105979098966993,
+          "eth_wei": "150399587135929",
+          "eth": 0.000150399587135929,
+          "proxy": null
+        }
+      ],
+      "proxy": "0xf68ed588e7aa8d1b3cbbf63bb5413b002b559f5f",
+      "rank": 69
+    },
+    {
+      "address": "0xf7b10d603907658f690da534e9b7dbc4dab3e2d6",
+      "balance_wei": "127922025899135",
+      "balance_eth": 0.000127922025899135,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "90140280974109625",
+          "prai": 0.09014028097410963,
+          "eth_wei": "127922025899135",
+          "eth": 0.000127922025899135,
+          "proxy": null
+        }
+      ],
+      "proxy": "0xc168ea9034f0e9f839f3da9809b4efb4e56f9c75",
+      "rank": 70
+    },
+    {
+      "address": "0x8f9be4310f9abb0e5843cc6363908c9b01dfeb3f",
+      "balance_wei": "112166599167675",
+      "balance_eth": 0.000112166599167675,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "79038216396421761",
+          "prai": 0.07903821639642176,
+          "eth_wei": "112166599167675",
+          "eth": 0.000112166599167675,
+          "proxy": null
+        }
+      ],
+      "proxy": "0xb0d21e99d159fd8146bb7ecce2165548ce8571af",
+      "rank": 71
+    },
+    {
+      "address": "0x0cb27e883e207905ad2a94f9b6ef0c7a99223c37",
+      "balance_wei": "15609950628812",
+      "balance_eth": 1.5609950628812e-05,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "10999554813043946",
+          "prai": 0.010999554813043946,
+          "eth_wei": "15609950628812",
+          "eth": 1.5609950628812e-05,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x315a78112450000198da2ce456dbccc10bcc39ec",
+      "rank": 72
+    },
+    {
+      "address": "0x9d361be34937f8a123f78bb2ebc8b15bf2100cd3",
+      "balance_wei": "5173711271069",
+      "balance_eth": 5.173711271069e-06,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "3645656675425398",
+          "prai": 0.003645656675425398,
+          "eth_wei": "5173711271069",
+          "eth": 5.173711271069e-06,
+          "proxy": null
+        }
+      ],
+      "proxy": "0xadbef323fe4a81629fab25971b99b0920a416f9d",
+      "rank": 73
+    },
+    {
+      "address": "0xa53a13a80d72a855481de5211e7654fabdfe3526",
+      "balance_wei": "4975996505638",
+      "balance_eth": 4.975996505638e-06,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "3506336926668654",
+          "prai": 0.003506336926668654,
+          "eth_wei": "4975996505638",
+          "eth": 4.975996505638e-06,
+          "proxy": null
+        }
+      ],
+      "proxy": "0x9fd6a192bf208299267ca947b841f4409d7847bf",
+      "rank": 74
+    },
+    {
+      "address": "0x36d960741d2ea0bfccfa23838828af528e38cd9a",
+      "balance_wei": "4180546462952",
+      "balance_eth": 4.180546462952e-06,
+      "protorai_items": [
+        {
+          "type": "prai",
+          "prai_wei": "2945822895996084",
+          "prai": 0.002945822895996084,
+          "eth_wei": "4180546462952",
+          "eth": 4.180546462952e-06,
+          "proxy": null
+        }
+      ],
+      "proxy": null,
+      "rank": 75
+    }
+  ]
+}

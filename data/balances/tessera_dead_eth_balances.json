@@ -1,10 +1,10 @@
 {
   "contract": "0x0c7060bf06a78aaaab3fac76941318a52a3f4613",
   "balance_source": "token",
-  "contract_eth_balance": 45.045119,
-  "total_eth_in_balances": 40.349886,
-  "addresses_with_balance": 209,
-  "coverage_pct": 89.58,
+  "contract_eth_balance": 44.970434,
+  "total_eth_in_balances": 40.275201,
+  "addresses_with_balance": 207,
+  "coverage_pct": 89.56,
   "scan_date": "2026-08-14 16:38:17 UTC",
   "description": "ETH balances in Fractional Art / Tessera DEAD vault",
   "distribution": {
@@ -25,17 +25,17 @@
       "total_eth": 15.016366
     },
     "0.01-0.1 ETH": {
-      "count": 99,
-      "total_eth": 4.207995
+      "count": 98,
+      "total_eth": 4.141174
     },
     "<0.01 ETH": {
-      "count": 47,
-      "total_eth": 0.168533
+      "count": 46,
+      "total_eth": 0.160668
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 226,
-  "last_event_refresh": "2026-08-20 04:42:35 UTC",
+  "last_event_refresh": "2026-09-10 08:41:13 UTC",
   "total_supply": "28836428913412015984579",
   "balances": [
     {
@@ -583,8 +583,9 @@
     {
       "address": "0x21e97b6ac50d3196a7d23283dd49a16e70263447",
       "token_balance": "42487245481608333972",
-      "balance_wei": "66821355934377458",
-      "balance_eth": 0.06682136
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "address": "0xcfa73faeb0aa5521a88665550933dcc76dff353a",
@@ -1063,8 +1064,9 @@
     {
       "address": "0x845e442a6908ccbb7c0a1b6cc4859cf2e27d6b9a",
       "token_balance": "5000000000000000000",
-      "balance_wei": "7863695937090432",
-      "balance_eth": 0.0078637
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "address": "0xf1e89ad75d2b2d9455280324f532d62916b5ee2d",

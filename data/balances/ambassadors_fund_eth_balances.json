@@ -1,10 +1,10 @@
 {
   "contract": "0xe9426198aec621203ba1fe07cf292b3796ba6248",
   "balance_source": "eth",
-  "contract_eth_balance": 17.53815,
-  "total_eth_in_balances": 17.53815,
-  "addresses_with_balance": 12,
-  "coverage_pct": 100.0,
+  "contract_eth_balance": 17.5056,
+  "total_eth_in_balances": 17.5056,
+  "addresses_with_balance": 11,
+  "coverage_pct": 100,
   "scan_date": "2026-05-09 19:33:17 UTC",
   "description": "Ambassadors Fund",
   "balances": [
@@ -70,9 +70,10 @@
     },
     {
       "address": "0x1288e0802aa5f51457afd0fa5a16f4efdb7bf88e",
-      "balance_wei": "32550000000000000",
-      "balance_eth": 0.03255,
-      "rank": 11
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 11,
+      "claimed": true
     },
     {
       "address": "0x9d8364be2f6cf0ac7715ddffb2161df6030346c8",
@@ -80,5 +81,6 @@
       "balance_eth": 0.03255,
       "rank": 12
     }
-  ]
+  ],
+  "last_event_refresh": "2026-09-09 15:43:45 UTC"
 }

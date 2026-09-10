@@ -124,7 +124,7 @@ These were REJECTED by prior sweeps because the parent project still had a live 
 | 372.97 ETH | SplitMain V1 | `0x2ed6c4b5da6378c7897ac67ba9e43102feb694ee` | REJECT | **PASS-mechanical** | ~344 ETH | 1,720 user `Withdrawal` events in last 1M blocks — confirmed active user-callable mechanism |
 | 85.24 ETH | EulerBeats v2 | `0xa98771a46dcb34b34cdad5355718f8a97c8e603e` | NEEDS-MORE | PASS-likely | ~85 ETH | `burnPrintEnabled=1` (re-checked 2026-08-11); `burnPrint` clears the gate and fails only on seed validation. No wrapper — users call this contract directly. Still needs seed↔tokenId reverse map |
 | 5,130.08 ETH | TerminalV1 (Juicebox V1) | `0xd569d3cce55b71a8a3f3c418c329a66e5f714431` | REJECT | DEFER | n/a | Mechanically open but project-controversy risk; outreach-only |
-| 744.84 ETH | OxODashboardClaim | `0x02b15c47b4b516a22fd2d8b1fc662afb808a2169` | REJECT | NEEDS-OFFCHAIN | n/a | Merkle-gated; leaves not enumerable on-chain |
+| 736.14 ETH verified cohort | OxODashboardClaim / 0x0 Rewards | `0x02b15c47b4b516a22fd2d8b1fc662afb808a2169` | INTEGRATED LOCALLY | VERIFIED-SUBSET | 70,697 | Merkle tree recovered and root verified; 132 rejected/forwarding recipients excluded. See [integration evidence](oxo_rewards_integration.md). Deployment requires trace-capable RPC. |
 | 551.10 ETH | BlackFortGenesisNFT | `0x6c3197c9f3954b682b0e64b520e6da5fe74fcf8b` | REJECT | REJECT (admin-only) | n/a | Reject stands — was wrongly classified as ponzi but is actually Type B (admin sweep) |
 
 ### LooksRare FeeSharingSystem (deep-dive)

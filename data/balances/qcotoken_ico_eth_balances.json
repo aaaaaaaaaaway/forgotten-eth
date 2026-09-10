@@ -1,11 +1,11 @@
 {
   "contract": "0x3A8A97123bcCd826228e5EB4144b48cce169517B",
   "balance_source": "eth",
-  "contract_eth_balance": 31.49741615,
-  "total_eth_in_balances": 31.49741615,
-  "addresses_with_balance": 57,
+  "contract_eth_balance": 31.44741615,
+  "total_eth_in_balances": 31.44741615,
+  "addresses_with_balance": 56,
   "coverage_pct": 100.0,
-  "scan_date": "2026-08-14 16:34:03 UTC",
+  "scan_date": "2026-09-09 17:15:26 UTC",
   "description": "Failed-ICO direct refund ledger \u2014 QCOToken ICO (QCO). ETH is held in the sale contract and the claim flow is requestRefund().",
   "distribution": {
     "10-100 ETH": {
@@ -21,8 +21,8 @@
       "total_eth": 9.1528919
     },
     "0.01-0.1 ETH": {
-      "count": 12,
-      "total_eth": 0.48276518
+      "count": 11,
+      "total_eth": 0.43276518
     },
     "<0.01 ETH": {
       "count": 2,
@@ -318,66 +318,60 @@
     },
     {
       "rank": 47,
-      "address": "0x07ba7365f83ca3565780267a2e2c090f6a8525c0",
-      "balance_wei": "50000000000000000",
-      "balance_eth": 0.05
-    },
-    {
-      "rank": 48,
       "address": "0xa73af3c91a2ed1570a35f9a3edd5ae4fe71e1db9",
       "balance_wei": "50000000000000000",
       "balance_eth": 0.05
     },
     {
-      "rank": 49,
+      "rank": 48,
       "address": "0xcd79e561d8e535a99c2ec39b2cf816c4328a6bac",
       "balance_wei": "40000000000000000",
       "balance_eth": 0.04
     },
     {
-      "rank": 50,
+      "rank": 49,
       "address": "0x47b01ddd6ab3bf7b85bbe6d4b8bdf10d9e23580c",
       "balance_wei": "34765184000000000",
       "balance_eth": 0.034765184
     },
     {
-      "rank": 51,
+      "rank": 50,
       "address": "0x3b484bd4acf58f0fc97ce911713ffb2aeedcb1d9",
       "balance_wei": "20000000000000000",
       "balance_eth": 0.02
     },
     {
-      "rank": 52,
+      "rank": 51,
       "address": "0x66982c1abeb45461cb2aeff853f954dbb0d59b57",
       "balance_wei": "20000000000000000",
       "balance_eth": 0.02
     },
     {
-      "rank": 53,
+      "rank": 52,
       "address": "0xcc93e4678c2d729aafc019d4cb5b33132db3a7d3",
       "balance_wei": "20000000000000000",
       "balance_eth": 0.02
     },
     {
-      "rank": 54,
+      "rank": 53,
       "address": "0xf91e312983f4faa64db741bc356a2ced9feef60d",
       "balance_wei": "18000000000000000",
       "balance_eth": 0.018
     },
     {
-      "rank": 55,
+      "rank": 54,
       "address": "0x35677c65e136c6f389b2792b21efb38c2144cd3a",
       "balance_wei": "10000000000000000",
       "balance_eth": 0.01
     },
     {
-      "rank": 56,
+      "rank": 55,
       "address": "0xb55978845b220a3f98695847be992f27d3606bfd",
       "balance_wei": "6000000000000000",
       "balance_eth": 0.006
     },
     {
-      "rank": 57,
+      "rank": 56,
       "address": "0x4e31680118f9267689a6cabb49bef79ef8d6032a",
       "balance_wei": "2000000000000000",
       "balance_eth": 0.002
