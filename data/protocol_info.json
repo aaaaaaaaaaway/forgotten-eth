@@ -1808,7 +1808,7 @@
   },
   "keeperdao": {
     "name": "KeeperDAO / Rook",
-    "desc": "launched October 2020 as an on-chain liquidity underwriter backed by 3AC, Polychain and Pantera. Depositors earned yield from flash-loan fees and MEV arbitrage, receiving kTokens as LP shares. The project rebranded to Rook in late 2021, pivoted to MEV coordination, and wound down in 2022. The treasury was liquidated in April 2023 after a governance 'rage quit'. The LiquidityPoolV2 contract is still live and un-paused \u2014 depositors who still hold kETH or kwETH can redeem their proportional share of the pool (~1.08 ETH per kETH, ~1.05 WETH per kwETH, reflecting the final yield accrued before wind-down).",
+    "desc": "launched October 2020 as an on-chain liquidity underwriter backed by 3AC, Polychain and Pantera. Depositors earned yield from flash-loan fees and MEV arbitrage, receiving kTokens as LP shares. The project rebranded to Rook in late 2021, pivoted to MEV coordination, and wound down in 2022. The treasury was liquidated in April 2023 after a governance 'rage quit'. The LiquidityPoolV2 contract is still live and un-paused \u2014 depositors who still hold kETH, kwETH, kDAI or kUSDC can redeem their proportional share of the pool (~1.08 ETH per kETH, ~1.05 WETH per kwETH, ~1.10 DAI per kDAI, ~1.33 USDC per kUSDC, reflecting the final yield accrued before wind-down).",
     "category": "defi",
     "color": "#6366f1",
     "contract": "0x35fFd6E268610E764fF6944d07760D0EFe5E40E5",
@@ -2611,5 +2611,22 @@
     "contract": "0x02b15c47b4b516a22fd2d8b1fc662afb808a2169",
     "deployed": "August 2023",
     "slug": "oxo-rewards"
+  },
+  "nsure": {
+    "name": "Nsure Network",
+    "desc": "Nsure Network launched in 2020 as a decentralized insurance marketplace where backers deposited ETH into a shared capital pool and received nETH share tokens, staking them to underwrite cover and earn NSURE rewards. The project wound down and its backend went dark. The nETH pool contract is live and unpaused, so nETH held in a depositor's wallet \u2014 or already un-staked into a withdrawable balance \u2014 redeems 1:1 for ETH via exit(). Staked balances still locked in the staking contract require an offline backend signature and are not recoverable here.",
+    "category": "defi",
+    "color": "#2f6df6",
+    "contract": "0xa6b658ce4b1cdb4e7d8f97dffb549b8688cafb84",
+    "deployed": "March 2021"
+  },
+  "zksync_lite": {
+    "name": "zkSync Lite",
+    "desc": "zkSync Lite was Ethereum's first production zk-rollup, run by Matter Labs from 2020 until block production stopped on 4 May 2026. Every account's final balance was frozen into a Merkle tree and an L1 exit contract was funded to honour it, so the assets were never lost, only moved out of reach of the rollup's own interface. Holders reclaim ETH, WETH, USDC, USDT, DAI and WBTC by proving membership of that tree. The root was fixed when the contract was deployed and cannot be changed, and the contract has no function that lets anyone else move the funds.",
+    "category": "other",
+    "color": "#4e529a",
+    "contract": "0x0a14b696350546110a0d8acdb86226983af9d2a0",
+    "deployed": "April 2026",
+    "slug": "zksync-lite"
   }
 }

@@ -1,18 +1,18 @@
 {
   "contract": "0xd216153c06e857cd7f72665e0af1d7d82172f494",
   "balance_source": "eth",
-  "contract_eth_balance": 513.54725794,
-  "total_eth_in_balances": 513.54725794,
+  "contract_eth_balance": 512.34878588,
+  "total_eth_in_balances": 512.34878588,
   "addresses_with_balance": 111,
   "coverage_pct": 100.0,
-  "scan_date": "2026-09-10 09:25:46 UTC",
+  "scan_date": "2026-09-23 16:30:33 UTC",
   "description": "OpenZeppelin's original meta-transaction relay hub (2019). Holds dApp deposits made via depositFor() and accumulated relay-operator fees. Withdraw via withdraw(amount, dest); msg.sender must equal the balance holder.",
   "meta": {
     "withdraw_signature": "withdraw(uint256,address)",
     "withdraw_recipient": "dest arg (caller can self-withdraw with dest=msg.sender)",
-    "contract_total_eth": 516.647257938935,
-    "mapped_total_eth": 513.547257938935,
-    "stake_unmapped_eth": 3.1
+    "contract_total_eth": 516.4487858830768,
+    "mapped_total_eth": 512.3487858830769,
+    "stake_unmapped_eth": 4.1
   },
   "balances": [
     {
@@ -97,42 +97,6 @@
       "is_contract": true
     },
     {
-      "address": "0x9fa160f92a10b431f255bf1a70a1c1e5808e5128",
-      "balance_wei": "411314673797658134",
-      "balance_eth": 0.4113146737976581,
-      "roles": [
-        "recipient"
-      ],
-      "is_contract": true
-    },
-    {
-      "address": "0xf6c55695ecef64716719dba2ac0835f87b77e158",
-      "balance_wei": "260478462720000000",
-      "balance_eth": 0.26047846272,
-      "roles": [
-        "recipient"
-      ],
-      "is_contract": true
-    },
-    {
-      "address": "0xd7a236fb3a079f360315cc6be14f45efe654c65a",
-      "balance_wei": "251672888400000000",
-      "balance_eth": 0.2516728884,
-      "roles": [
-        "recipient"
-      ],
-      "is_contract": true
-    },
-    {
-      "address": "0x16154f7e9de01e6b39dac3159805e9b1531ee3cf",
-      "balance_wei": "181364411357767343",
-      "balance_eth": 0.18136441135776732,
-      "roles": [
-        "recipient"
-      ],
-      "is_contract": true
-    },
-    {
       "address": "0xf3f7e999fd26566fa02040d9cd6506ca83d7f9b3",
       "balance_wei": "130000000000000000",
       "balance_eth": 0.13,
@@ -173,15 +137,6 @@
       "address": "0xfca9e7387159d46516f59842fb6c6806e2a18d0a",
       "balance_wei": "100000000000000000",
       "balance_eth": 0.1,
-      "roles": [
-        "recipient"
-      ],
-      "is_contract": true
-    },
-    {
-      "address": "0xbe9375c6a420d2eeb258962efb95551a5b722803",
-      "balance_wei": "85955305000000000",
-      "balance_eth": 0.085955305,
       "roles": [
         "recipient"
       ],
@@ -260,15 +215,6 @@
       "is_contract": true
     },
     {
-      "address": "0x4bbcca869e9931280cb46ae0dff18881be581a4d",
-      "balance_wei": "39393877387252744",
-      "balance_eth": 0.039393877387252745,
-      "roles": [
-        "recipient"
-      ],
-      "is_contract": true
-    },
-    {
       "address": "0x771ce62ff0090e16eccf44fdc94fa9115113590d",
       "balance_wei": "38071578846040609",
       "balance_eth": 0.03807157884604061,
@@ -341,6 +287,15 @@
       "is_contract": true
     },
     {
+      "address": "0xbe9375c6a420d2eeb258962efb95551a5b722803",
+      "balance_wei": "11192337574073267",
+      "balance_eth": 0.011192337574073268,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
       "address": "0x2bf1ce7d6f81c2cc9885da5b501614c1107ca39e",
       "balance_wei": "10000000000000000",
       "balance_eth": 0.01,
@@ -378,9 +333,54 @@
       "is_contract": true
     },
     {
+      "address": "0x9fa160f92a10b431f255bf1a70a1c1e5808e5128",
+      "balance_wei": "8441188255858955",
+      "balance_eth": 0.008441188255858954,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x4bbcca869e9931280cb46ae0dff18881be581a4d",
+      "balance_wei": "5194745976369477",
+      "balance_eth": 0.005194745976369477,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xf6c55695ecef64716719dba2ac0835f87b77e158",
+      "balance_wei": "3706584507865099",
+      "balance_eth": 0.003706584507865099,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0xd7a236fb3a079f360315cc6be14f45efe654c65a",
+      "balance_wei": "3033499310612914",
+      "balance_eth": 0.003033499310612914,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
       "address": "0xbc7c9caea3848d75eb6c2db5efdc212b8101797e",
       "balance_wei": "288964030883399",
       "balance_eth": 0.000288964030883399,
+      "roles": [
+        "recipient"
+      ],
+      "is_contract": true
+    },
+    {
+      "address": "0x16154f7e9de01e6b39dac3159805e9b1531ee3cf",
+      "balance_wei": "139207179662927",
+      "balance_eth": 0.000139207179662927,
       "roles": [
         "recipient"
       ],

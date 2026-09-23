@@ -3,16 +3,16 @@
   "balance_source": "token",
   "contract_eth_balance": 97.093702,
   "total_eth_in_balances": 44.92604132,
-  "addresses_with_balance": 574,
+  "addresses_with_balance": 573,
   "coverage_pct": 46.27,
-  "scan_date": "2026-09-10 09:11:50 UTC",
+  "scan_date": "2026-09-23 16:18:51 UTC",
   "distribution": {
     ">=100": 0,
     "10-100": 2,
     "1-10": 4,
     "0.1-1": 29,
     "0.01-0.1": 51,
-    "<0.01": 488
+    "<0.01": 487
   },
   "isMultiAssetNft": true,
   "affectedAssets": [
@@ -4812,22 +4812,6 @@
       ]
     },
     {
-      "address": "0x2850c13d0e24793f5b6ef4766f30a3f745c0a8b9",
-      "balance_eth": 0.0,
-      "balance_wei": "0",
-      "allowlisted": true,
-      "nft_details": [
-        {
-          "nft_id": 628,
-          "asset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "asset_symbol": "USDC",
-          "decimals": 6,
-          "amount": 13.072656,
-          "amount_wei": 13072656
-        }
-      ]
-    },
-    {
       "address": "0x2941de336786e81a2e527d7745757cde4be82d18",
       "balance_eth": 0.0,
       "balance_wei": "0",
@@ -4907,36 +4891,12 @@
       "allowlisted": true,
       "nft_details": [
         {
-          "nft_id": 1443,
-          "asset_address": "0x853d955acef822db058eb8505911ed77f175b99e",
-          "asset_symbol": "FRAX",
-          "decimals": 18,
-          "amount": 0.44420150978498263,
-          "amount_wei": 444201509784982644
-        },
-        {
-          "nft_id": 1448,
-          "asset_address": "0x853d955acef822db058eb8505911ed77f175b99e",
-          "asset_symbol": "FRAX",
-          "decimals": 18,
-          "amount": 0.16577985742110035,
-          "amount_wei": 165779857421100339
-        },
-        {
           "nft_id": 1450,
           "asset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           "asset_symbol": "USDC",
           "decimals": 6,
           "amount": 0.001525,
           "amount_wei": 1525
-        },
-        {
-          "nft_id": 1463,
-          "asset_address": "0x853d955acef822db058eb8505911ed77f175b99e",
-          "asset_symbol": "FRAX",
-          "decimals": 18,
-          "amount": 0.09090229835490336,
-          "amount_wei": 90902298354903361
         },
         {
           "nft_id": 1464,

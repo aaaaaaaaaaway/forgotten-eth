@@ -4,27 +4,35 @@
   "token_checked": "0x0000000000000000000000000000000000000000",
   "description": "ETH balances in defunct FamilyOnlyToken contract",
   "scan_date": "2026-03-19 21:23:40 UTC",
-  "contract_eth_balance": "7.568606743835647761",
+  "contract_eth_balance": 7.55319,
   "total_addresses_scanned": 261,
-  "addresses_with_balance": 237,
-  "total_eth_in_balances": 5.8471321688253,
+  "addresses_with_balance": 235,
+  "total_eth_in_balances": 5.835953,
   "coverage_pct": 77.26,
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
     "1-10 ETH": {
       "count": 2,
-      "total_eth": 2.233790920641706
+      "total_eth": 2.233791
     },
     "0.1-1 ETH": {
       "count": 14,
-      "total_eth": 2.637214172192216
+      "total_eth": 2.637217
     },
     "0.01-0.1 ETH": {
       "count": 25,
-      "total_eth": 0.833291666904481
+      "total_eth": 0.833292
     },
     "<0.01 ETH": {
-      "count": 196,
-      "total_eth": 0.14283540908690098
+      "count": 194,
+      "total_eth": 0.131647
     }
   },
   "balances": [
@@ -295,8 +303,9 @@
     {
       "rank": 45,
       "address": "0x34b4c701e2d5167d09b58f509b0d1ab9944b6aaa",
-      "balance_wei": "7679813415623064",
-      "balance_eth": "0.007679813415623064"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 46,
@@ -361,8 +370,9 @@
     {
       "rank": 56,
       "address": "0x7c32ef82a91f8e3ef7587af08ccf61bf6b4d50d2",
-      "balance_wei": "3499027546495329",
-      "balance_eth": "0.003499027546495329"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 57,
@@ -1450,5 +1460,6 @@
       "balance_wei": "3",
       "balance_eth": "0.000000000000000003"
     }
-  ]
+  ],
+  "last_event_refresh": "2026-09-21 08:23:06 UTC"
 }

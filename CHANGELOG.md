@@ -7,6 +7,10 @@ RSS: https://forgotteneth.com/feed.xml
 
 ## September 2026
 
+### Sep 23 — KeeperDAO / Rook kDAI and kUSDC (+77.6k DAI, +64.1k USDC)
+
+KeeperDAO's LiquidityPoolV2 also holds DAI and USDC for kDAI and kUSDC holders, redeemable through the same approve-then-withdraw as kETH. Added 77,606 DAI across 101 holders and 64,084 USDC across 72, alongside the existing kETH and kwETH listings. Each holder's amount comes from the pool's own `underlyingBalance` view, and together they match the pool's entire DAI and USDC balance. The largest holder of each was redeemed on a mainnet fork and received exactly the listed amount. The pool's 0.83 renBTC is not listed because renBTC is no longer redeemable; kTokens from an earlier, now empty KeeperDAO pool are not listed either.
+
 ### Sep 7 — 0x0 Rewards (+736 ETH)
 
 Added 736.140446025808501780 ETH across 70,697 payout-verified addresses. The complete 72,512-leaf Merkle tree is preserved and matches the onchain root. Every included recipient passed independent and cumulative Anvil withdrawals with exact balance reconciliation. Excluded 38 rejected payouts and 94 forwarding or sweeping recipients. Claims use fresh state and payout verification; receipts and claim events alone are not treated as recovery. The included cohort was fully funded at verification, but the full outstanding allocation set was not; competing claims and owner controls remain risks.

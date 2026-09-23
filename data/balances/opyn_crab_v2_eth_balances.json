@@ -1,9 +1,9 @@
 {
   "contract": "0x3b960e47784150f5a63777201ee2b15253d713e8",
   "balance_source": "token",
-  "contract_eth_balance": 89.372256,
-  "total_eth_in_balances": 89.35496,
-  "addresses_with_balance": 2226,
+  "contract_eth_balance": 87.925808,
+  "total_eth_in_balances": 87.908512,
+  "addresses_with_balance": 2212,
   "coverage_pct": 99.98,
   "scan_date": "2026-09-09 16:12:48 UTC",
   "description": "Opyn's Squeeth Crab Strategy V2 in shutdown state. Each crab token is redeemable for proportional ETH via withdrawShutdown(uint256 _crabAmount).",
@@ -42,10 +42,11 @@
     },
     {
       "address": "0x597a54204656358317985a80e0bf4952d16e1ccc",
-      "balance_wei": "1114762643252223108",
-      "balance_eth": 1.114762643252223,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "1539749395321279870",
-      "rank": 5
+      "rank": 5,
+      "claimed": true
     },
     {
       "address": "0x3675598ca2d031e3876fc76277d428bcd852a7ed",
@@ -518,10 +519,11 @@
     },
     {
       "address": "0x1c2c40d1c01ed806619b111477a569001b0a4bfc",
-      "balance_wei": "110242779989358160",
-      "balance_eth": 0.11024277998935816,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "152271207556732597",
-      "rank": 73
+      "rank": 73,
+      "claimed": true
     },
     {
       "address": "0xf9c3e43158f512625919441a1e65d3329037c2e6",
@@ -679,10 +681,11 @@
     },
     {
       "address": "0xe73052aa21b655c70f4aaa1f947f793c4bf7a95d",
-      "balance_wei": "97776597175384288",
-      "balance_eth": 0.09777659717538428,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "135052477124771182",
-      "rank": 96
+      "rank": 96,
+      "claimed": true
     },
     {
       "address": "0x978e82eb5917a6b3535d1748375c7389281f0e10",
@@ -1337,10 +1340,11 @@
     },
     {
       "address": "0x19d50766c78a75f80bf2bd33b51e9baa26882a6f",
-      "balance_wei": "50742886516365950",
-      "balance_eth": 0.05074288651636595,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "70087860679013640",
-      "rank": 190
+      "rank": 190,
+      "claimed": true
     },
     {
       "address": "0x5243babb6aa86be0ce964d06be483a595294f82d",
@@ -2359,10 +2363,11 @@
     },
     {
       "address": "0xff1876a221c8c2be4d0a9289180db49b2fe26b98",
-      "balance_wei": "14951142867407480",
-      "balance_eth": 0.01495114286740748,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "20651044712344261",
-      "rank": 336
+      "rank": 336,
+      "claimed": true
     },
     {
       "address": "0x44f6498d1403321890f3f2917e00f22dbde3577a",
@@ -2765,10 +2770,11 @@
     },
     {
       "address": "0x22e8dd1c8596462906a9eba2f4fa30a0742ab4a7",
-      "balance_wei": "10863872849809053",
-      "balance_eth": 0.010863872849809053,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "15005563518471806",
-      "rank": 394
+      "rank": 394,
+      "claimed": true
     },
     {
       "address": "0x2b28c08c79b86f1bb874476f5ac5e4e131d05be2",
@@ -2877,10 +2883,11 @@
     },
     {
       "address": "0x2412794551ddc8611f9d514806e63e7e84cf7a26",
-      "balance_wei": "10435976399033854",
-      "balance_eth": 0.010435976399033854,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "14414537881463476",
-      "rank": 410
+      "rank": 410,
+      "claimed": true
     },
     {
       "address": "0x84d6e497b23dddd6ab52efdc5e7c730599f2fce3",
@@ -3115,10 +3122,11 @@
     },
     {
       "address": "0x4f5b29475b7945b43c5f98d17894e797c6903398",
-      "balance_wei": "9877990921902729",
-      "balance_eth": 0.00987799092190273,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "13643828702956932",
-      "rank": 444
+      "rank": 444,
+      "claimed": true
     },
     {
       "address": "0x5853b151a3a4b6e3769a0516db4ef76dcb8ae401",
@@ -3410,10 +3418,11 @@
     },
     {
       "address": "0x341d2d099d0ad1986ce5e549a1a15631163877d6",
-      "balance_wei": "7472476797739085",
-      "balance_eth": 0.007472476797739085,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "10321247936066506",
-      "rank": 486
+      "rank": 486,
+      "claimed": true
     },
     {
       "address": "0xf6f550a68ad536d42c64ec1d20d5b6d06bc14831",
@@ -3494,10 +3503,11 @@
     },
     {
       "address": "0x9d6ded73d2a1f2488884463facbe6391d56dfd15",
-      "balance_wei": "6523368681320635",
-      "balance_eth": 0.006523368681320635,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "9010306403179871",
-      "rank": 498
+      "rank": 498,
+      "claimed": true
     },
     {
       "address": "0xf8d1d951ce815ad3c2ba80b14e86fc4e44acb403",
@@ -3998,10 +4008,11 @@
     },
     {
       "address": "0x1d46fcd1800cb35660137211b5db12d2696e4cd0",
-      "balance_wei": "4751350817480945",
-      "balance_eth": 0.004751350817480945,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "6562732966034889",
-      "rank": 570
+      "rank": 570,
+      "claimed": true
     },
     {
       "address": "0xc3212e1e363e8492438ce7b791396e15ab2b9c09",
@@ -4159,10 +4170,11 @@
     },
     {
       "address": "0x7ed146305a97e37f21d112d32eaabe9aab8f9636",
-      "balance_wei": "3797093082678845",
-      "balance_eth": 0.003797093082678845,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "5244678599003374",
-      "rank": 593
+      "rank": 593,
+      "claimed": true
     },
     {
       "address": "0x97caf2f7c585ebb9b14bdfa4aeefa6dfac697ad8",
@@ -4243,10 +4255,11 @@
     },
     {
       "address": "0xf64a494f214f67262c7ef51b066b01413fc20f66",
-      "balance_wei": "3384939747321208",
-      "balance_eth": 0.003384939747321208,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "4675397907065991",
-      "rank": 605
+      "rank": 605,
+      "claimed": true
     },
     {
       "address": "0x34295ae9c5c81583de8221f70df885e294883c1f",
@@ -8157,10 +8170,11 @@
     },
     {
       "address": "0x60c0cbad90f66b9332c755e48acc9291cdd5d87f",
-      "balance_wei": "864825627822292",
-      "balance_eth": 0.000864825627822292,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "crab_balance_wei": "1194527593437156",
-      "rank": 1164
+      "rank": 1164,
+      "claimed": true
     },
     {
       "address": "0x6340b71b0b257889e771aea94fbfae412f5253cd",
@@ -15625,5 +15639,5 @@
       "rank": 2230
     }
   ],
-  "last_event_refresh": "2026-09-09 17:36:46 UTC"
+  "last_event_refresh": "2026-09-23 08:23:07 UTC"
 }

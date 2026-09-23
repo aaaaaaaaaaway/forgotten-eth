@@ -1631,7 +1631,9 @@
     "contract": "0x35fFd6E268610E764fF6944d07760D0EFe5E40E5",
     "balance_source": "token",
     "category": "defi",
-    "balance_file": "keeperdao_balances.json"
+    "balance_file": "keeperdao_balances.json",
+    "payout_tokens": ["DAI", "USDC"],
+    "peak_token_amounts": {"DAI": 77606.688052, "USDC": 64084.80509}
   },
   {
     "key": "genesis_weth_pool",
@@ -2412,7 +2414,8 @@
     "balance_source": "token",
     "category": "token",
     "balance_file": "aimbot_eth_balances.json",
-    "multi_step": true
+    "multi_step": true,
+    "hide_addresses": true
   },
   {
     "key": "oxo_rewards",
@@ -2431,5 +2434,30 @@
     "category": "defi",
     "balance_file": "protorai_eth_balances.json",
     "multi_step": true
+  },
+  {
+    "key": "nsure",
+    "name": "Nsure Network",
+    "contract": "0xa6b658ce4b1cdb4e7d8f97dffb549b8688cafb84",
+    "balance_source": "token",
+    "category": "defi",
+    "balance_file": "nsure_eth_balances.json",
+    "multi_step": true,
+    "hide_addresses": true
+  },
+  {
+    "key": "zksync_lite",
+    "name": "zkSync Lite",
+    "contract": "0x0a14b696350546110a0d8acdb86226983af9d2a0",
+    "balance_source": "eth",
+    "category": "other",
+    "balance_file": "zksync_lite_balances.json",
+    "payout_tokens": [
+      "USDC",
+      "USDT",
+      "DAI",
+      "WBTC"
+    ],
+    "hide_addresses": true
   }
 ]

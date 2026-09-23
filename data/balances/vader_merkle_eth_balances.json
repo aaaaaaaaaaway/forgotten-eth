@@ -1,11 +1,11 @@
 {
   "contract": "0xf5644345a5a9dc14076b58802dc908b83e62b0e1",
   "balance_source": "weth",
-  "contract_eth_balance": 224.80572773,
-  "total_eth_in_balances": 225.42526223,
-  "addresses_with_balance": 7011,
+  "contract_eth_balance": 224.75905932,
+  "total_eth_in_balances": 225.37859382,
+  "addresses_with_balance": 7009,
   "coverage_pct": 100.28,
-  "scan_date": "2026-09-10 09:10:49 UTC",
+  "scan_date": "2026-09-23 16:17:58 UTC",
   "distribution": {
     ">=100 ETH": {
       "count": 0,
@@ -24,8 +24,8 @@
       "total_eth": 68.668811
     },
     "0.01-0.1 ETH": {
-      "count": 1093,
-      "total_eth": 34.285619
+      "count": 1091,
+      "total_eth": 34.238951
     },
     "<0.01 ETH": {
       "count": 5636,
@@ -12678,8 +12678,8 @@
     },
     {
       "address": "0x08f9d1059538c8460dce4013234d5014cd93f938",
-      "balance_eth": 0.03420132,
-      "balance_wei": "34201319492146006",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "merkle_proof": [
         "0x63af18954b52f34de7dce0132c274cab0ed35ea1f8da845655b5861da02bd8dc",
         "0xc64dbb4b5ecd1d14db82e45116016806de394b661a8c876efc12ce22d3ea23aa",
@@ -12694,7 +12694,8 @@
         "0x061cd9630fc806b94da3df105cd3617db22addf632443eda718ba6938ddf42dc",
         "0x1a12a16c3207ba4d1f5ce97df99e4cab0937678c8b0b9b8a8573263bff30e7e2",
         "0x83f9f7b5f4cd54d48c39acf53dc5f25add6163f19f3dfec1c6beefc5e1640503"
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0x0029145775965602d3e01e25182ffc01ee88f690",
@@ -24316,8 +24317,8 @@
     },
     {
       "address": "0x2a0059610c92842dc2ef84af76b244c28687e647",
-      "balance_eth": 0.01246709,
-      "balance_wei": "12467093344578260",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "merkle_proof": [
         "0x79a48597083e8587e7a31281a031e8f13d70979a543e98da973987d1c4df00b8",
         "0xcea96817fdee070452e45d9af8a0442cbc387d355be4f93d90908cd19ad4cd90",
@@ -24332,7 +24333,8 @@
         "0xa14cd4ab21fedada0e0fb145a43387486cde743af9de97c905db1a334a5672f8",
         "0x8a9312858b8e9f98caa5a18ce35210142b6140ea6fb537d912deb52adbcbad02",
         "0x7c88558f8d37ef6f014de0021d54070b793018685ffa805cee26035d9579c041"
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0xdab91a0e0cc1473c408d761ae953c50dd2c1d958",

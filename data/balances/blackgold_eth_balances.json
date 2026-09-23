@@ -1,28 +1,36 @@
 {
   "contract": "0xf72b0b36723f60402cccad7f4358acf2ad474c17",
   "balance_source": "eth",
-  "contract_eth_balance": 6.02236909,
-  "total_eth_in_balances": 8.24730218,
-  "addresses_with_balance": 507,
-  "coverage_pct": 136.94,
+  "contract_eth_balance": 6.021465,
+  "total_eth_in_balances": 8.239375,
+  "addresses_with_balance": 506,
+  "coverage_pct": 136.83,
   "scan_date": "2026-08-30 01:43:42 UTC",
   "description": "ETH balances in defunct BlackGoldEthereum contract",
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
     "1-10 ETH": {
       "count": 1,
-      "total_eth": 1.8608206332178894
+      "total_eth": 1.860821
     },
     "0.1-1 ETH": {
       "count": 17,
-      "total_eth": 3.9409917833491073
+      "total_eth": 3.940993
     },
     "0.01-0.1 ETH": {
       "count": 58,
-      "total_eth": 2.150511143380117
+      "total_eth": 2.150507
     },
     "<0.01 ETH": {
-      "count": 432,
-      "total_eth": 0.29497862220596893
+      "count": 430,
+      "total_eth": 0.287036
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
@@ -854,8 +862,9 @@
     {
       "rank": 138,
       "address": "0x6bf1005a7d99f3d5e1ab2689d7035de24bf4539f",
-      "balance_wei": "904550054467874",
-      "balance_eth": 0.000904550054467874
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 139,
@@ -3077,5 +3086,6 @@
       "balance_wei": "23551089",
       "balance_eth": 2.3551089e-11
     }
-  ]
+  ],
+  "last_event_refresh": "2026-09-22 16:31:27 UTC"
 }

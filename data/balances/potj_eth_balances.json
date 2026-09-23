@@ -1,9 +1,9 @@
 {
   "contract": "0xc28e860c9132d55a184f9af53fc85e90aa3a0153",
   "balance_source": "eth",
-  "contract_eth_balance": 9.59612021,
-  "total_eth_in_balances": 10.564164,
-  "addresses_with_balance": 649,
+  "contract_eth_balance": 9.596009,
+  "total_eth_in_balances": 10.563901,
+  "addresses_with_balance": 648,
   "coverage_pct": 110.09,
   "scan_date": "2026-08-23 01:43:42 UTC",
   "description": "ETH balances in defunct POTJ contract",
@@ -29,8 +29,8 @@
       "total_eth": 2.464151
     },
     "<0.01 ETH": {
-      "count": 552,
-      "total_eth": 0.292058
+      "count": 551,
+      "total_eth": 0.291796
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
@@ -1408,8 +1408,9 @@
     {
       "rank": 229,
       "address": "0x4ffe17a2a72bc7422cb176bc71c04ee6d87ce329",
-      "balance_wei": "262339533322658",
-      "balance_eth": 0.000262339533322658
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 230,
@@ -3938,5 +3939,5 @@
       "balance_eth": 1.2e-17
     }
   ],
-  "last_event_refresh": "2026-09-09 15:43:44 UTC"
+  "last_event_refresh": "2026-09-19 20:23:07 UTC"
 }

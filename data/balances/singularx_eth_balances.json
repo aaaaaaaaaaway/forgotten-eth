@@ -1,9 +1,9 @@
 {
   "contract": "0x9a2d163ab40f88c625fd475e807bbc3556566f80",
   "balance_source": "eth",
-  "contract_eth_balance": 855.01233,
-  "total_eth_in_balances": 854.97933,
-  "addresses_with_balance": 4819,
+  "contract_eth_balance": 854.996085,
+  "total_eth_in_balances": 854.963085,
+  "addresses_with_balance": 4815,
   "coverage_pct": 100,
   "scan_date": "2026-09-06 01:43:06 UTC",
   "description": "ETH balances in defunct SingularX contract",
@@ -25,12 +25,12 @@
       "total_eth": 155.43035
     },
     "0.01-0.1 ETH": {
-      "count": 792,
-      "total_eth": 30.00841
+      "count": 791,
+      "total_eth": 29.994209
     },
     "<0.01 ETH": {
-      "count": 3431,
-      "total_eth": 3.5804
+      "count": 3428,
+      "total_eth": 3.578353
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
@@ -7443,8 +7443,9 @@
     {
       "rank": 1235,
       "address": "0xa40c45d93f9640999f6de1a92893db319d8d3cd4",
-      "balance_wei": "14200000000000000",
-      "balance_eth": 0.0142
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 1236,
@@ -14037,8 +14038,9 @@
     {
       "rank": 2334,
       "address": "0xc6bb6a39df9c3acb64863a688c0a5300b3923f96",
-      "balance_wei": "825000000000000",
-      "balance_eth": 0.000825
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 2335,
@@ -15772,8 +15774,9 @@
     {
       "rank": 2623,
       "address": "0x1894077dccc5223f255aa4f54f8b72a1e1e14ceb",
-      "balance_wei": "619878377031203",
-      "balance_eth": 0.000619878377031203
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 2624,
@@ -15952,8 +15955,9 @@
     {
       "rank": 2653,
       "address": "0xbb64f92e65c6051af35e1d87120c3db864a955ae",
-      "balance_wei": "600000000000000",
-      "balance_eth": 0.0006
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 2654,
@@ -28958,5 +28962,5 @@
       "balance_eth": 1e-18
     }
   ],
-  "last_event_refresh": "2026-09-09 15:43:45 UTC"
+  "last_event_refresh": "2026-09-19 20:23:06 UTC"
 }

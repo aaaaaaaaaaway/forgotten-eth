@@ -2,9 +2,9 @@
   "contract": "0x1E0447b19BB6EcFdAe1e4AE1694b0C3659614e4e",
   "balance_source": "token",
   "contract_eth_balance": 1692.68707138,
-  "total_eth_in_balances": 1672.246102,
-  "addresses_with_balance": 16271,
-  "coverage_pct": 98.79,
+  "total_eth_in_balances": 1648.572748,
+  "addresses_with_balance": 16260,
+  "coverage_pct": 97.39,
   "scan_date": "2026-08-06 11:26:53 UTC",
   "description": "dYdX's original Solo Margin lending and margin-trading contract. The v1/v2 web app was retired when dYdX moved to StarkEx and then to its own chain, but Solo itself was never wound down: it still holds the WETH, USDC and DAI its suppliers deposited, and every balance remains withdrawable by its owner. Positions are held in numbered sub-accounts rather than against a plain address, so a single wallet may have several separate balances to claim.",
   "meta": {
@@ -364,8 +364,8 @@
     },
     {
       "address": "0xbb88013dda8095576230ae446e4e5047cf56dade",
-      "balance_eth": 20.004077495174776,
-      "balance_wei": "20004077495174776567",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "dydx_accounts": [
         {
           "account_number": "0",
@@ -381,7 +381,8 @@
           "amount": 5959.017554531745,
           "amount_raw": "5959017554531745376781"
         }
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0x10031a8001d7ac0bf507cad46ff5e835c339d89a",
@@ -3166,8 +3167,8 @@
     },
     {
       "address": "0xed02f16a57c32a08b55d923bf4690d200722f462",
-      "balance_eth": 1.9234713723275092,
-      "balance_wei": "1923471372327509299",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "dydx_accounts": [
         {
           "account_number": "0",
@@ -3176,7 +3177,8 @@
           "amount": 1.9234713723275092,
           "amount_raw": "1923471372327509299"
         }
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0xd63047ef9d03323f75314e0a4d7548b4d33f7e77",
@@ -6101,8 +6103,8 @@
     },
     {
       "address": "0xe4989e7b39a21089b128908e1603fdc9939dbb78",
-      "balance_eth": 1.000222239252108,
-      "balance_wei": "1000222239252108017",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "dydx_accounts": [
         {
           "account_number": "78249916358380492593314239409032173911741268194868200833150293576330928686520",
@@ -6118,7 +6120,8 @@
           "amount": 606.267874,
           "amount_raw": "606267874"
         }
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0x16ad7446ac23ebbe593698cb8dda0996b6e64012",
@@ -10457,8 +10460,8 @@
     },
     {
       "address": "0x1ff60c59246a7b6b4a5090218881af7f844458b0",
-      "balance_eth": 0.4765538348594118,
-      "balance_wei": "476553834859411761",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "dydx_accounts": [
         {
           "account_number": "0",
@@ -10474,7 +10477,8 @@
           "amount": 0.007738354885396989,
           "amount_raw": "7738354885396989"
         }
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0x570a995e230e6c4a48e3f9793762800be10aefbe",
@@ -33449,8 +33453,8 @@
     },
     {
       "address": "0xdfe1301f93d2071659cca1a3b8b688ebb04c3305",
-      "balance_eth": 0.09002004059666342,
-      "balance_wei": "90020040596663426",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "dydx_accounts": [
         {
           "account_number": "0",
@@ -33459,7 +33463,8 @@
           "amount": 0.09002004059666342,
           "amount_raw": "90020040596663426"
         }
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0xf57cc9bc88e46ca4ef990a5a670f51af98574848",
@@ -38335,8 +38340,8 @@
     },
     {
       "address": "0xb9b6f26adc9d65f4a7c9843e22bf441aaaa9f196",
-      "balance_eth": 0.0655274112128617,
-      "balance_wei": "65527411212861698",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "dydx_accounts": [
         {
           "account_number": "0",
@@ -38345,7 +38350,8 @@
           "amount": 0.0655274112128617,
           "amount_raw": "65527411212861698"
         }
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0xb6a98f0e84a94fb351c0b24f36e3930de75aefba",
@@ -40386,8 +40392,8 @@
     },
     {
       "address": "0x8ffd11026f8c74848b0c3c61c8bd3eff4df1fe5c",
-      "balance_eth": 0.058468287288396995,
-      "balance_wei": "58468287288396991",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "dydx_accounts": [
         {
           "account_number": "0",
@@ -40396,7 +40402,8 @@
           "amount": 0.05846828728839699,
           "amount_raw": "58468287288396991"
         }
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0xd8ebace8ec97786bb35f5f5ea1822779520e1649",
@@ -57538,8 +57545,8 @@
     },
     {
       "address": "0x622fb5828786872e8534fbf04fea47eb2f638dca",
-      "balance_eth": 0.03000704652125356,
-      "balance_wei": "30007046521253561",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "dydx_accounts": [
         {
           "account_number": "78249916358380492593314239409032173911741268194868200833150293576330928686520",
@@ -57548,7 +57555,8 @@
           "amount": 0.03000704652125356,
           "amount_raw": "30007046521253561"
         }
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0x058b9283e8a015f59ac0c3ba4daf8f22ed0bd176",
@@ -91854,8 +91862,8 @@
     },
     {
       "address": "0xf026941540e63e3d5d614d1aaae5119da96cc95f",
-      "balance_eth": 0.01000240575221336,
-      "balance_wei": "10002405752213361",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "dydx_accounts": [
         {
           "account_number": "78249916358380492593314239409032173911741268194868200833150293576330928686520",
@@ -91864,7 +91872,8 @@
           "amount": 0.010002405752213362,
           "amount_raw": "10002405752213361"
         }
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0x5dac623edc9c8c1a769be13be4496cfdd63189e7",
@@ -100373,8 +100382,8 @@
     },
     {
       "address": "0x13dbad5d734da7be69e6d91aa6650df7d41dbbd1",
-      "balance_eth": 0.01000222585766047,
-      "balance_wei": "10002225857660470",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "dydx_accounts": [
         {
           "account_number": "0",
@@ -100383,7 +100392,8 @@
           "amount": 0.01000222585766047,
           "amount_raw": "10002225857660470"
         }
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0x6581886428612e091544f074e3ac30ddc6d54e2c",
@@ -115431,8 +115441,8 @@
     },
     {
       "address": "0x82c73d8356bb22a43ab5ef4d76a7e7f5eeae8075",
-      "balance_eth": 0.005001295372538357,
-      "balance_wei": "5001295372538357",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "dydx_accounts": [
         {
           "account_number": "0",
@@ -115441,7 +115451,8 @@
           "amount": 0.005001295372538357,
           "amount_raw": "5001295372538357"
         }
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0xf9fa1e987d2aa501aa9675f979363070cba14140",
@@ -448398,5 +448409,5 @@
       ]
     }
   ],
-  "last_event_refresh": "2026-09-09 15:43:42 UTC"
+  "last_event_refresh": "2026-09-23 11:23:06 UTC"
 }
