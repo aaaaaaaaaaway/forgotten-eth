@@ -2,8 +2,8 @@
   "contract": "0x1E0447b19BB6EcFdAe1e4AE1694b0C3659614e4e",
   "balance_source": "token",
   "contract_eth_balance": 1692.68707138,
-  "total_eth_in_balances": 1648.572748,
-  "addresses_with_balance": 16260,
+  "total_eth_in_balances": 1648.570541,
+  "addresses_with_balance": 16259,
   "coverage_pct": 97.39,
   "scan_date": "2026-08-06 11:26:53 UTC",
   "description": "dYdX's original Solo Margin lending and margin-trading contract. The v1/v2 web app was retired when dYdX moved to StarkEx and then to its own chain, but Solo itself was never wound down: it still holds the WETH, USDC and DAI its suppliers deposited, and every balance remains withdrawable by its owner. Positions are held in numbered sub-accounts rather than against a plain address, so a single wallet may have several separate balances to claim.",
@@ -127895,8 +127895,8 @@
     },
     {
       "address": "0xe1fbcfa62066f8980c6ec4e7a977468b245f46ac",
-      "balance_eth": 0.002206467838489776,
-      "balance_wei": "2206467838489776",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "dydx_accounts": [
         {
           "account_number": "0",
@@ -127905,7 +127905,8 @@
           "amount": 0.002206467838489776,
           "amount_raw": "2206467838489776"
         }
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0xb0ee7d54beb486524253d5403d850c1fba260005",
@@ -448409,5 +448410,5 @@
       ]
     }
   ],
-  "last_event_refresh": "2026-09-23 11:23:06 UTC"
+  "last_event_refresh": "2026-09-23 18:23:06 UTC"
 }

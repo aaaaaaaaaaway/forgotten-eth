@@ -88,9 +88,9 @@ block; that does not reserve its backing against other claims or owner actions.
   exhaustive working-cohort test correctly.
 - The [homepage changelog preview](../public/index.html),
   [web changelog](../public/changelog.html) and
-  [Markdown changelog](../CHANGELOG.md) updated. Preview locally at
-  [localhost changelog](http://localhost:8180/changelog) and
-  [0x0 protocol page](http://localhost:8180/oxo-rewards).
+  [Markdown changelog](../CHANGELOG.md) updated. Live at
+  [changelog](https://forgotteneth.com/changelog) and
+  [0x0 protocol page](https://forgotteneth.com/oxo-rewards).
 
 Browser screenshots from this run are under `/tmp/oxo-rewards-preview/`:
 `protocol-desktop.png`, `protocol-mobile.png`, `claim-card.png`,
