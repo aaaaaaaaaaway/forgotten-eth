@@ -5,7 +5,7 @@
   "total_eth_in_balances": 50.25056732,
   "addresses_with_balance": 725,
   "coverage_pct": 73.91,
-  "scan_date": "2026-10-04 04:31:20 UTC",
+  "scan_date": "2026-10-04 10:22:40 UTC",
   "description": "PandaDAO Farewell refunds PANDA holders pro-rata from the farewell contract. Direct claim requires a Juicebox OperatorStore permission grant, then redeem(amount). Contract holders are excluded because redeem() requires msg.sender == tx.origin.",
   "distribution": {
     ">0.01 ETH": 182,
