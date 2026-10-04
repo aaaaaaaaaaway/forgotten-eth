@@ -1,20 +1,36 @@
 {
   "contract": "0x9465A32618a9172b3c14d82cecdCa788dE1ef878",
   "balance_source": "eth",
-  "contract_eth_balance": 0.43079905,
-  "total_eth_in_balances": 0.43342334,
-  "addresses_with_balance": 56,
+  "contract_eth_balance": 0.430478,
+  "total_eth_in_balances": 0.433102,
+  "addresses_with_balance": 55,
   "coverage_pct": 100.61,
   "scan_date": "2026-04-28 19:46:03 UTC",
   "description": "ETH dividends in defunct P4RTY DAO Vault contract",
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "1-10 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "0.1-1 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
     "0.01-0.1 ETH": {
       "count": 11,
-      "total_eth": 0.33872875767789234
+      "total_eth": 0.338729
     },
     "<0.01 ETH": {
-      "count": 45,
-      "total_eth": 0.09469457867117731
+      "count": 44,
+      "total_eth": 0.094377
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
@@ -338,9 +354,10 @@
     {
       "rank": 46,
       "address": "0x02e34f367a1dbdc91c7063d375e0a18e6f52a564",
-      "balance_wei": "320884528652000",
-      "balance_eth": 0.000320884528652,
-      "staked_p4rty_wei": "25000000000000000000"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "staked_p4rty_wei": "25000000000000000000",
+      "claimed": true
     },
     {
       "rank": 47,
@@ -388,29 +405,30 @@
       "rank": 53,
       "address": "0x1243dff2c50c48038f1a913867cfe16d17e9f398",
       "balance_wei": "98906774623329",
-      "balance_eth": 9.8906774623329e-05,
+      "balance_eth": 0.000098906774623329,
       "staked_p4rty_wei": "30000000000000000000"
     },
     {
       "rank": 54,
       "address": "0x9d7a76fd386edeb3a871c3a096ca875adc1a55b7",
       "balance_wei": "85719204673552",
-      "balance_eth": 8.5719204673552e-05,
+      "balance_eth": 0.000085719204673552,
       "staked_p4rty_wei": "26000000000000000000"
     },
     {
       "rank": 55,
       "address": "0xa63c72f57eaec7bef6cf6ce5c61cfde05dae9fcf",
       "balance_wei": "66161130469955",
-      "balance_eth": 6.6161130469955e-05,
+      "balance_eth": 0.000066161130469955,
       "staked_p4rty_wei": "20000000000000000000"
     },
     {
       "rank": 56,
       "address": "0xbbdc1d406c4aaee056dbbd0394d80eedba67de93",
       "balance_wei": "35225632852202",
-      "balance_eth": 3.5225632852202e-05,
+      "balance_eth": 0.000035225632852202,
       "staked_p4rty_wei": "10000000000000000000"
     }
-  ]
+  ],
+  "last_event_refresh": "2026-09-24 09:23:05 UTC"
 }

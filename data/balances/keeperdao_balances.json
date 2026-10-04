@@ -2,10 +2,10 @@
   "contract": "0x35fFd6E268610E764fF6944d07760D0EFe5E40E5",
   "balance_source": "token",
   "contract_eth_balance": 372.39508382,
-  "total_eth_in_balances": 372.39508356,
-  "addresses_with_balance": 425,
-  "coverage_pct": 100.0,
-  "scan_date": "2026-09-23 18:35:21 UTC",
+  "total_eth_in_balances": 372.24108575,
+  "addresses_with_balance": 291,
+  "coverage_pct": 99.96,
+  "scan_date": "2026-10-04 04:19:21 UTC",
   "distribution": {
     ">=100 ETH": {
       "count": 1,
@@ -20,16 +20,16 @@
       "total_eth": 66.964329
     },
     "0.1-1 ETH": {
-      "count": 90,
-      "total_eth": 29.370354
+      "count": 89,
+      "total_eth": 29.217021
     },
     "0.01-0.1 ETH": {
       "count": 88,
       "total_eth": 3.740325
     },
     "<0.01 ETH": {
-      "count": 78,
-      "total_eth": 0.216964
+      "count": 77,
+      "total_eth": 0.216299
     }
   },
   "meta": {
@@ -53,12 +53,12 @@
     "note": "ETH+WETH bundled as the ETH bucket; DAI and USDC ride in token_balances. Per-item amounts come from LP.underlyingBalance() - authoritative. Each kToken redeems separately (2-step approve + withdraw per item)."
   },
   "contract_token_balances": {
-    "DAI": "77606688052104069963063",
+    "DAI": "77117206491199988219195",
     "USDC": "64084805090"
   },
   "token_totals": {
-    "USDC": "64084777413",
-    "DAI": "77606685560589354775357"
+    "DAI": "13047881302278520358602",
+    "USDC": "33826152628"
   },
   "balances": [
     {
@@ -2273,28 +2273,6 @@
       "rank": 93
     },
     {
-      "address": "0x000000000004444c5dc75cb358380d2e3de08a90",
-      "balance_wei": "153333279405432390",
-      "balance_eth": 0.15333328,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-          "k_token": "keth",
-          "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
-          "k_amount_wei": "141811506490602703",
-          "k_amount": 0.1418115064906027,
-          "eth_eq_wei": "153333279405432390",
-          "eth_eq": 0.15333327940543237,
-          "amount_raw": "153333279405432390",
-          "amount": 0.1533332794054324,
-          "decimals": 18,
-          "underlying": "ETH",
-          "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
-        }
-      ],
-      "rank": 94
-    },
-    {
       "address": "0x474e8c560026495522c77b2bc137c296fff281c1",
       "balance_wei": "152668276322792299",
       "balance_eth": 0.15266828,
@@ -2314,7 +2292,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 95
+      "rank": 94
     },
     {
       "address": "0x5439abacd98c1241c99e103fe6668dee81386d7f",
@@ -2336,7 +2314,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 96
+      "rank": 95
     },
     {
       "address": "0x7cffa3d22d97e34c51a4bf331171b07da23d036b",
@@ -2358,7 +2336,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 97
+      "rank": 96
     },
     {
       "address": "0x854776a3c11091d42f9e6c4c51abab65e4164b2b",
@@ -2380,7 +2358,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 98
+      "rank": 97
     },
     {
       "address": "0x7eb282f1701fd71c3d387ec96815c401bd851b8b",
@@ -2402,7 +2380,7 @@
           "underlying_address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
         }
       ],
-      "rank": 99
+      "rank": 98
     },
     {
       "address": "0x79add7d7efbc20a14d03a1082faa172938fa15b3",
@@ -2424,7 +2402,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 100
+      "rank": 99
     },
     {
       "address": "0x31edc1d9d73b35f379b97831198f59ba05ea6d33",
@@ -2446,7 +2424,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 101
+      "rank": 100
     },
     {
       "address": "0x29687b1886f42cc43ce86881be9748840be3727e",
@@ -2468,7 +2446,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 102
+      "rank": 101
     },
     {
       "address": "0x06231e5926d13ea0851ece3b69cb2f3ca1d72e5b",
@@ -2504,7 +2482,7 @@
           "underlying_address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
         }
       ],
-      "rank": 103
+      "rank": 102
     },
     {
       "address": "0x1a52ba41f4223e4167b09ca2ead2c350a06831e7",
@@ -2526,7 +2504,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 104
+      "rank": 103
     },
     {
       "address": "0x0ac9240875a2c67f3a7b00deb67b7034be5d5627",
@@ -2548,7 +2526,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 105
+      "rank": 104
     },
     {
       "address": "0xdd1a9bd209a435226f32636e9852b69dd12432e2",
@@ -2570,7 +2548,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 106
+      "rank": 105
     },
     {
       "address": "0x74b24e45b16eefff1fd06b00d8942b80d13b46d9",
@@ -2592,7 +2570,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 107
+      "rank": 106
     },
     {
       "address": "0x51fee03897bebc7877e76fdc4843e0584799466a",
@@ -2614,7 +2592,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 108
+      "rank": 107
     },
     {
       "address": "0x8ccf017d0ac8dc9933a9dec1e8540f763ce3aea8",
@@ -2636,7 +2614,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 109
+      "rank": 108
     },
     {
       "address": "0x640e8c6c58986c7c1070f4c4031ad15394405f66",
@@ -2658,7 +2636,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 110
+      "rank": 109
     },
     {
       "address": "0x09aeea1d6ed3e95a5e420aa815c26fe41ab79741",
@@ -2680,7 +2658,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 111
+      "rank": 110
     },
     {
       "address": "0xaed74a2a67cd05d54e74a0f86a2a3e0a8a8c6bf7",
@@ -2702,7 +2680,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 112
+      "rank": 111
     },
     {
       "address": "0xf5a8e355621e487c1e2f2d55f0070a084427661f",
@@ -2724,7 +2702,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 113
+      "rank": 112
     },
     {
       "address": "0x5ca0f55233543b659c8f2c1fc801b567b94a8b1a",
@@ -2746,7 +2724,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 114
+      "rank": 113
     },
     {
       "address": "0x76ce053ae76d4eda6fd3f24a001260e9232ad977",
@@ -2768,7 +2746,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 115
+      "rank": 114
     },
     {
       "address": "0x356da1ec172f07e0bb3150253d1225567868b5ca",
@@ -2790,7 +2768,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 116
+      "rank": 115
     },
     {
       "address": "0x94304bf6267ca3763a283b63b18afd5defde0e17",
@@ -2812,7 +2790,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 117
+      "rank": 116
     },
     {
       "address": "0x2bc79880f05ba1460ef2cc6b04b4ddf11bf43a94",
@@ -2834,7 +2812,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 118
+      "rank": 117
     },
     {
       "address": "0x9f87ac184c12746a67b878a41d3a2acf26adbe2b",
@@ -2856,7 +2834,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 119
+      "rank": 118
     },
     {
       "address": "0xdf93282a22f1eedad5ed0e89bae22ea09fab7fa0",
@@ -2878,7 +2856,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 120
+      "rank": 119
     },
     {
       "address": "0xcb981399ea3b8cfd4f27ff4c78b1efeb87e72b26",
@@ -2900,7 +2878,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 121
+      "rank": 120
     },
     {
       "address": "0xd3432463cf264f4def759ca6f8843d47dd00b2fd",
@@ -2922,7 +2900,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 122
+      "rank": 121
     },
     {
       "address": "0x5fabf9d1f3dbc7577fce20d0a7dac2905f806a47",
@@ -2944,7 +2922,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 123
+      "rank": 122
     },
     {
       "address": "0xb4b7822307cc4fff4a2172d5315dbfd39e50a356",
@@ -2966,7 +2944,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 124
+      "rank": 123
     },
     {
       "address": "0xafd6537db3ac19b37ec6c6c744bb6b91eb476953",
@@ -2988,7 +2966,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 125
+      "rank": 124
     },
     {
       "address": "0xc7ab139f047b442838160489e1c889d7e0166f54",
@@ -3010,7 +2988,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 126
+      "rank": 125
     },
     {
       "address": "0xe1066fea9370c2b51591b3e3a153a044425c56ec",
@@ -3032,7 +3010,7 @@
           "underlying_address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
         }
       ],
-      "rank": 127
+      "rank": 126
     },
     {
       "address": "0xe7ac5a3241069fd5a28f85fe6b75ff5a935a315d",
@@ -3054,7 +3032,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 128
+      "rank": 127
     },
     {
       "address": "0x1dd8ae3102eec14c3c98611caf70e8c9453ea98f",
@@ -3076,7 +3054,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 129
+      "rank": 128
     },
     {
       "address": "0xa96a65e325c9652202c432d4e87e66c21fb60d3b",
@@ -3098,7 +3076,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 130
+      "rank": 129
     },
     {
       "address": "0xaf0586cbe35d482b8e70893c71b7bc4ba319d9b5",
@@ -3120,7 +3098,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 131
+      "rank": 130
     },
     {
       "address": "0xd609abd5201f51d99ea14a841cd37232083ea3a2",
@@ -3142,7 +3120,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 132
+      "rank": 131
     },
     {
       "address": "0x59f8f98ef020647521def4f14a8db46ea0da1133",
@@ -3164,7 +3142,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 133
+      "rank": 132
     },
     {
       "address": "0x606add02c64d10428aabf1d195ca51d6e6537845",
@@ -3186,7 +3164,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 134
+      "rank": 133
     },
     {
       "address": "0xe5b485fb0ec167e8a6874aca9daa81ed16c66921",
@@ -3225,7 +3203,7 @@
       "token_balances": {
         "DAI": "29459250581103574422"
       },
-      "rank": 135
+      "rank": 134
     },
     {
       "address": "0x9e5dd96f9afd985fb917e16b4cb089dc78ba9d56",
@@ -3247,7 +3225,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 136
+      "rank": 135
     },
     {
       "address": "0x98470a4959ff07ae7d336bf905cfc9c71b70e4af",
@@ -3269,7 +3247,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 137
+      "rank": 136
     },
     {
       "address": "0x335d6db771f57ef47af3d291a85e0b43f7ca0092",
@@ -3291,7 +3269,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 138
+      "rank": 137
     },
     {
       "address": "0x248f8308ff7ea917a52756430bd28c1eb028f447",
@@ -3313,7 +3291,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 139
+      "rank": 138
     },
     {
       "address": "0xc50761cef3e28a6113875265966c8a19cb7956cf",
@@ -3352,7 +3330,7 @@
       "token_balances": {
         "DAI": "102219930199991380728"
       },
-      "rank": 140
+      "rank": 139
     },
     {
       "address": "0xdc106fdaa416a8cc8816081c5864b478d45fa063",
@@ -3374,7 +3352,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 141
+      "rank": 140
     },
     {
       "address": "0x98032b2b3469aa7a6a9575617cbc891d91b058fc",
@@ -3396,7 +3374,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 142
+      "rank": 141
     },
     {
       "address": "0xb404cd0840c8ec1af0fe1759d9a48a5e55ca151c",
@@ -3418,7 +3396,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 143
+      "rank": 142
     },
     {
       "address": "0xfb8e54c2f500efdf4fb06362bf92789655813cdc",
@@ -3440,7 +3418,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 144
+      "rank": 143
     },
     {
       "address": "0x4fa256f66080805cc392d3e50fc9c207a886c22a",
@@ -3462,7 +3440,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 145
+      "rank": 144
     },
     {
       "address": "0x74d15ea52f9747d00a4400eee33caeb7d23974c4",
@@ -3484,7 +3462,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 146
+      "rank": 145
     },
     {
       "address": "0xf27c504c6094ff413cce631390e2ad1160ed58c9",
@@ -3506,7 +3484,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 147
+      "rank": 146
     },
     {
       "address": "0x9e9e733aa715d9adf25e0be37630dc2936daba76",
@@ -3528,7 +3506,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 148
+      "rank": 147
     },
     {
       "address": "0x2a8600bbdaab254a2f8a8e00912799295c3dd601",
@@ -3550,7 +3528,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 149
+      "rank": 148
     },
     {
       "address": "0x505e20c0fb8252ca7ac21d54d5432eccd4f2d076",
@@ -3572,7 +3550,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 150
+      "rank": 149
     },
     {
       "address": "0x32b60985c5490397d200f91e624332d82597d649",
@@ -3594,7 +3572,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 151
+      "rank": 150
     },
     {
       "address": "0x0db4b723bed9e380fffe5ba94ede9ebd31503075",
@@ -3616,7 +3594,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 152
+      "rank": 151
     },
     {
       "address": "0x5999865518c9de250b820762130ff7a7119a4558",
@@ -3638,7 +3616,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 153
+      "rank": 152
     },
     {
       "address": "0x0b9ce057a387386f3ea3a549c85a5efe4fc76f5d",
@@ -3660,7 +3638,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 154
+      "rank": 153
     },
     {
       "address": "0xdd37bde1d74a63cb773b7ca8a15c4793f95ec43c",
@@ -3682,7 +3660,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 155
+      "rank": 154
     },
     {
       "address": "0x5009633ea9462d2a4d933956500c78f5f9405e8c",
@@ -3704,7 +3682,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 156
+      "rank": 155
     },
     {
       "address": "0xc350b306d4f21670317b1ca22416d9104320dcc6",
@@ -3726,7 +3704,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 157
+      "rank": 156
     },
     {
       "address": "0xf753a473bd93e59f865451a9a5238abee3bd37a6",
@@ -3748,7 +3726,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 158
+      "rank": 157
     },
     {
       "address": "0x86e18538ce2ebc086d76d8722945da30255b0477",
@@ -3770,7 +3748,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 159
+      "rank": 158
     },
     {
       "address": "0x8baecaac30c26fc00fad8ee9a0b54b8897d2462b",
@@ -3792,7 +3770,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 160
+      "rank": 159
     },
     {
       "address": "0x6362d241e89084391697424e40147ff7396fa760",
@@ -3831,7 +3809,7 @@
       "token_balances": {
         "USDC": "95369603"
       },
-      "rank": 161
+      "rank": 160
     },
     {
       "address": "0xce296b4779335f44555d05d4a231b60349c2e97a",
@@ -3870,7 +3848,7 @@
       "token_balances": {
         "USDC": "144941120"
       },
-      "rank": 162
+      "rank": 161
     },
     {
       "address": "0x820c46000a51aa4182a321bf318702ba19c2b7d7",
@@ -3892,7 +3870,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 163
+      "rank": 162
     },
     {
       "address": "0xc7a9ff55c1831822e7ee8fdeb572e14754a6ea68",
@@ -3914,7 +3892,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 164
+      "rank": 163
     },
     {
       "address": "0x8967986ca73d565eb5b9d4bdca7e263ed61e33e7",
@@ -3936,7 +3914,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 165
+      "rank": 164
     },
     {
       "address": "0xdf48e1769eecc8367df7dc3db98138fa10d1f396",
@@ -3958,7 +3936,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 166
+      "rank": 165
     },
     {
       "address": "0xef76b1510064eb56e3bcb05edb84b7e7ed108de4",
@@ -3980,7 +3958,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 167
+      "rank": 166
     },
     {
       "address": "0xced34d170df2790cbeb0743a67636228d5c45e62",
@@ -4002,7 +3980,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 168
+      "rank": 167
     },
     {
       "address": "0xa01486c07b3ab747722f69383dde42c924d043d3",
@@ -4024,7 +4002,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 169
+      "rank": 168
     },
     {
       "address": "0xeeede4cd48e6ec2160b8336e88db3e62a7eefe1f",
@@ -4046,7 +4024,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 170
+      "rank": 169
     },
     {
       "address": "0xa3ceca57e4bee224a7fe7aa46ae7f4418d54cf8d",
@@ -4068,7 +4046,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 171
+      "rank": 170
     },
     {
       "address": "0x714120f3dcaff119e82b923fb28f203249293907",
@@ -4090,7 +4068,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 172
+      "rank": 171
     },
     {
       "address": "0x5b20783f4baabd33bb53dd77c9b0459f5701e36a",
@@ -4112,7 +4090,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 173
+      "rank": 172
     },
     {
       "address": "0x7f285841c23b78d902650e897b94e927f789e28b",
@@ -4134,7 +4112,7 @@
           "underlying_address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
         }
       ],
-      "rank": 174
+      "rank": 173
     },
     {
       "address": "0x6c3553e90aff3bda7e379c9875d67f9858c7bb5d",
@@ -4156,7 +4134,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 175
+      "rank": 174
     },
     {
       "address": "0x3ac46092ac3dadedc15cb79c4677c2fac14cc447",
@@ -4178,7 +4156,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 176
+      "rank": 175
     },
     {
       "address": "0x293e659d2d50baee7234d4f58d8dbf4ee7422852",
@@ -4200,7 +4178,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 177
+      "rank": 176
     },
     {
       "address": "0x8593b4a8179175e20a486acb36a1eeb1dd1b94ad",
@@ -4222,7 +4200,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 178
+      "rank": 177
     },
     {
       "address": "0x2a7ed01649b2b0c862dbd0f54e7396f17509e11d",
@@ -4261,7 +4239,7 @@
       "token_balances": {
         "DAI": "50835002143563562253"
       },
-      "rank": 179
+      "rank": 178
     },
     {
       "address": "0x8c052bd87c155fc577e0e2be6f97f471c11ab7c7",
@@ -4283,7 +4261,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 180
+      "rank": 179
     },
     {
       "address": "0x0178da1e23ce68bcf5af6671512c3438d6dfd223",
@@ -4305,7 +4283,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 181
+      "rank": 180
     },
     {
       "address": "0x2676afe6b00230bd764619c9fef61db36777fb06",
@@ -4327,7 +4305,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 182
+      "rank": 181
     },
     {
       "address": "0xe1df63759b4a2bda8f064ba2273ed8f01ba63268",
@@ -4349,7 +4327,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 183
+      "rank": 182
     },
     {
       "address": "0xd8aa8d33bec3d5e40e154bf4bf31c4e10dc19a6e",
@@ -4371,7 +4349,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 184
+      "rank": 183
     },
     {
       "address": "0x12363161666d532cecb688f764fb19a9cd3167a7",
@@ -4393,7 +4371,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 185
+      "rank": 184
     },
     {
       "address": "0x335e806c4610be1128650cac31263ae1959bddb5",
@@ -4415,7 +4393,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 186
+      "rank": 185
     },
     {
       "address": "0xad36ae0c0605d441d95e25e8a74e9a238bf47828",
@@ -4437,7 +4415,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 187
+      "rank": 186
     },
     {
       "address": "0x49e043522f92f1618606a8df73d79388704d8c2d",
@@ -4459,7 +4437,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 188
+      "rank": 187
     },
     {
       "address": "0x54393b75b90ec06ce33f741e4867905e2ac5e73c",
@@ -4481,7 +4459,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 189
+      "rank": 188
     },
     {
       "address": "0x53e26955f12b8bafdb6474a09975fdc3aaf59ea3",
@@ -4503,7 +4481,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 190
+      "rank": 189
     },
     {
       "address": "0xdb5802f5579b97be83bd48acad271187f7813148",
@@ -4525,7 +4503,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 191
+      "rank": 190
     },
     {
       "address": "0x5bd5ee83d72cdecbc4ba8ea9dd84bb1223c42893",
@@ -4547,7 +4525,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 192
+      "rank": 191
     },
     {
       "address": "0xbaf8c648aafbc33d8d2fae5dad9ee264151a1dff",
@@ -4569,7 +4547,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 193
+      "rank": 192
     },
     {
       "address": "0xfd4ae6a022a86b3c8d60a764bc3d35d80869b538",
@@ -4591,7 +4569,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 194
+      "rank": 193
     },
     {
       "address": "0xdb5bc817fd928218a4397b2dc89b293970787f6b",
@@ -4613,7 +4591,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 195
+      "rank": 194
     },
     {
       "address": "0x19ccf3e10f844f41ccf7542b0c4da16253766392",
@@ -4635,7 +4613,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 196
+      "rank": 195
     },
     {
       "address": "0xcb4bdc593f4176ab98265e22ab0cbe2673f5ad4c",
@@ -4657,7 +4635,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 197
+      "rank": 196
     },
     {
       "address": "0x0ba6d89c5ea7cb11861baf2608ec7a02bfa1a1ee",
@@ -4679,7 +4657,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 198
+      "rank": 197
     },
     {
       "address": "0x1b569b73d27ff6afa1bed4bf9096fc02fde717f5",
@@ -4701,7 +4679,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 199
+      "rank": 198
     },
     {
       "address": "0x945294c67752bd0a453975c04e3078c487a858df",
@@ -4723,7 +4701,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 200
+      "rank": 199
     },
     {
       "address": "0xddf48f62e07c2e9f689ae903255d090e9bb9d725",
@@ -4745,7 +4723,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 201
+      "rank": 200
     },
     {
       "address": "0x277a1b6f7066af5f378b26450d8f681ef9d1dc29",
@@ -4767,7 +4745,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 202
+      "rank": 201
     },
     {
       "address": "0xfba22623a465d0cf942e86a17b871d153af6461c",
@@ -4789,7 +4767,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 203
+      "rank": 202
     },
     {
       "address": "0xd21d49edcb5e314ecdac8bbeed3adf8e747cc317",
@@ -4811,7 +4789,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 204
+      "rank": 203
     },
     {
       "address": "0x92c794b7fcfd304aee4a7c18e7e1b66d882a9c6f",
@@ -4833,7 +4811,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 205
+      "rank": 204
     },
     {
       "address": "0x9bfbfeafc2775cc53acef3f78882a805d5eb7e62",
@@ -4855,7 +4833,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 206
+      "rank": 205
     },
     {
       "address": "0xebc491da49b6faa6f6df71db8b78078aef1dfad8",
@@ -4877,7 +4855,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 207
+      "rank": 206
     },
     {
       "address": "0x448e871a9911ab6d67350c85747e8d50df2c5318",
@@ -4899,7 +4877,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 208
+      "rank": 207
     },
     {
       "address": "0xa6856f038eb44ef63174b8b4ba90a49f02df5c87",
@@ -4921,7 +4899,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 209
+      "rank": 208
     },
     {
       "address": "0xbcd296fb0486976b8b8d6f1c45afb407633b5023",
@@ -4943,7 +4921,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 210
+      "rank": 209
     },
     {
       "address": "0x94cfa59314cf834ef6cabd7945300ef7d04ea885",
@@ -4965,7 +4943,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 211
+      "rank": 210
     },
     {
       "address": "0x0c42fa4328d33338e5b646ec2da7854c26206330",
@@ -4987,7 +4965,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 212
+      "rank": 211
     },
     {
       "address": "0xd7795b6b4a6952ca9811a7dac3f11c46c3b6bcde",
@@ -5009,7 +4987,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 213
+      "rank": 212
     },
     {
       "address": "0xed3a1a8bdb46fc47444d63c85d4ae29234b04bd1",
@@ -5031,7 +5009,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 214
+      "rank": 213
     },
     {
       "address": "0x5db3975d0a0215ef70a6723a9a8fb68fb1f8e223",
@@ -5053,7 +5031,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 215
+      "rank": 214
     },
     {
       "address": "0x0db6e6d82a25bc1289acd2054095c1a796d9c59d",
@@ -5075,7 +5053,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 216
+      "rank": 215
     },
     {
       "address": "0xe84b1b9593865cb14846908910bb4b9a85746770",
@@ -5097,7 +5075,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 217
+      "rank": 216
     },
     {
       "address": "0x66056a0ca413ac2d896ffbacf493c849311b7d32",
@@ -5119,7 +5097,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 218
+      "rank": 217
     },
     {
       "address": "0x21b70ef84e18b03d5e289cc0db416aae1ddfb22b",
@@ -5141,7 +5119,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 219
+      "rank": 218
     },
     {
       "address": "0x9e5488452bd4f5a28a43b39b9b7e0ba59aedbdfe",
@@ -5163,7 +5141,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 220
+      "rank": 219
     },
     {
       "address": "0x13e6e8d3c1ce51e08a522691062f5fa886962c69",
@@ -5202,7 +5180,7 @@
       "token_balances": {
         "DAI": "425806197239710729"
       },
-      "rank": 221
+      "rank": 220
     },
     {
       "address": "0x1dc9ee19bc6ece2df030eb1f4f5d775e817d798d",
@@ -5224,7 +5202,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 222
+      "rank": 221
     },
     {
       "address": "0x7538eb6b4846f7a694ebe53429dd305ac10c2b4a",
@@ -5246,7 +5224,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 223
+      "rank": 222
     },
     {
       "address": "0x88418bff31b070d280a193f61aedd2867f70792a",
@@ -5268,7 +5246,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 224
+      "rank": 223
     },
     {
       "address": "0x743305cd8f7194f1fe86bdc956107b27148d8fde",
@@ -5290,7 +5268,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 225
+      "rank": 224
     },
     {
       "address": "0x97b59f79700d0dd59251123c05d32fb75487a841",
@@ -5312,7 +5290,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 226
+      "rank": 225
     },
     {
       "address": "0xe9dfa0901ac8c4f778fd2deae7ec98c605f68e64",
@@ -5334,7 +5312,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 227
+      "rank": 226
     },
     {
       "address": "0x355a0674dd5048e07a2223f58f67d74fa2c6b252",
@@ -5356,7 +5334,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 228
+      "rank": 227
     },
     {
       "address": "0x55ff197993a6d33eaac9a53305b2d0edd490b034",
@@ -5409,7 +5387,7 @@
       "token_balances": {
         "USDC": "174193978"
       },
-      "rank": 229
+      "rank": 228
     },
     {
       "address": "0x23f1045ca09e9c3206851336a2a05d35bbc812d3",
@@ -5431,7 +5409,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 230
+      "rank": 229
     },
     {
       "address": "0x2e1493555dbdb58bb61589fbee718286d7e690ba",
@@ -5453,7 +5431,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 231
+      "rank": 230
     },
     {
       "address": "0xfb421d25590d5b06924756ba9efdd4b0c454c0f9",
@@ -5475,7 +5453,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 232
+      "rank": 231
     },
     {
       "address": "0xa8d7b03f69ed4b26de7f81e4be16c79a20df6606",
@@ -5514,7 +5492,7 @@
       "token_balances": {
         "DAI": "746195212383161249"
       },
-      "rank": 233
+      "rank": 232
     },
     {
       "address": "0x878bce522c077c62cb1ad1e488c65c0a2e58fe9b",
@@ -5536,7 +5514,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 234
+      "rank": 233
     },
     {
       "address": "0x8a2dfb8b3d7a05679305d86a46fae4fcbf657f74",
@@ -5558,7 +5536,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 235
+      "rank": 234
     },
     {
       "address": "0x777e36cc8269d346cf30d79852fb9384d5ebd73f",
@@ -5580,7 +5558,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 236
+      "rank": 235
     },
     {
       "address": "0x08e5c5ba165f89a46ef6f139a69fa07e217c917c",
@@ -5602,7 +5580,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 237
+      "rank": 236
     },
     {
       "address": "0x8ffb6f5821552ed950146d132e1e96cacba253d0",
@@ -5624,7 +5602,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 238
+      "rank": 237
     },
     {
       "address": "0xc6fe1dd2a94379af454b6f966dce066b49bc5a3a",
@@ -5646,7 +5624,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 239
+      "rank": 238
     },
     {
       "address": "0x20398cd70e7fbfdee2501929bf775cecefd927d4",
@@ -5668,7 +5646,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 240
+      "rank": 239
     },
     {
       "address": "0x8d54824bc340bd715ede3559cfda7aa25ffafb78",
@@ -5690,7 +5668,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 241
+      "rank": 240
     },
     {
       "address": "0x61c8ec356be297d2f6fc87745e47a224c6abab5a",
@@ -5712,7 +5690,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 242
+      "rank": 241
     },
     {
       "address": "0x6d1105ba1b4effb4073e99df2c8ff17ebffff0a8",
@@ -5734,7 +5712,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 243
+      "rank": 242
     },
     {
       "address": "0x678fb21b9736e6c7da9f7d37a77ab766bb2519c7",
@@ -5756,7 +5734,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 244
+      "rank": 243
     },
     {
       "address": "0x0bfd9fc73c82be0558f3a651f10a8bd8c784f45e",
@@ -5778,7 +5756,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 245
+      "rank": 244
     },
     {
       "address": "0x0acf1b98ae3a2084b729797116b0f5ad8d86a3ee",
@@ -5800,7 +5778,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 246
+      "rank": 245
     },
     {
       "address": "0xc7d3dcd422ee14a5a69e8232d5c59eefa7333898",
@@ -5822,7 +5800,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 247
+      "rank": 246
     },
     {
       "address": "0x1b4274e01a59618b25b6aa88c9636307b507ca89",
@@ -5844,7 +5822,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 248
+      "rank": 247
     },
     {
       "address": "0xeabc5cc2be1169849fa7470768b05cefaf6346cd",
@@ -5866,7 +5844,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 249
+      "rank": 248
     },
     {
       "address": "0x694eb1136add5150c350d10c0cd7dc18d9d3eb30",
@@ -5888,7 +5866,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 250
+      "rank": 249
     },
     {
       "address": "0xf00d0a7d9b36aef74fddfa60a608e4770993aff4",
@@ -5910,7 +5888,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 251
+      "rank": 250
     },
     {
       "address": "0x0779ad44e918c2e771cf91cc05b5f4d6cf2edb03",
@@ -5932,7 +5910,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 252
+      "rank": 251
     },
     {
       "address": "0x480c896bd09d0ba7d4522f9349d8e10ef36686f8",
@@ -5954,7 +5932,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 253
+      "rank": 252
     },
     {
       "address": "0xf24f63889b16fb1a8edf0f0b4e84a661ba13e1cf",
@@ -5976,7 +5954,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 254
+      "rank": 253
     },
     {
       "address": "0xa928b7626d2e32f1f1c2d346848f21694aa4e02d",
@@ -5998,7 +5976,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 255
+      "rank": 254
     },
     {
       "address": "0x883ab2ae1bdda0531078b27dd45600193aba1f34",
@@ -6020,7 +5998,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 256
+      "rank": 255
     },
     {
       "address": "0x923d99e83e0a492fda01095885bb75a14479b68f",
@@ -6042,7 +6020,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 257
+      "rank": 256
     },
     {
       "address": "0x6fac5ca3a8a7f53385e87a1e7e683dd7486afc3b",
@@ -6064,7 +6042,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 258
+      "rank": 257
     },
     {
       "address": "0x2d9f9f7862a8e435d890f487a01ea15eceb6c6ef",
@@ -6086,7 +6064,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 259
+      "rank": 258
     },
     {
       "address": "0xd4e76294e4c02a4cc65f6ba92a7fb47a6e90f4dc",
@@ -6108,7 +6086,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 260
+      "rank": 259
     },
     {
       "address": "0x1dcc2c07df920d1d1964fe020eb27b93819fb8e0",
@@ -6130,29 +6108,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 261
-    },
-    {
-      "address": "0x730515ec27ab0750502abb63753621fbec564103",
-      "balance_wei": "664531600557853",
-      "balance_eth": 0.00066453,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-          "k_token": "keth",
-          "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
-          "k_amount_wei": "614597351280429",
-          "k_amount": 0.000614597351280429,
-          "eth_eq_wei": "664531600557853",
-          "eth_eq": 0.000664531600557853,
-          "amount_raw": "664531600557853",
-          "amount": 0.000664531600557853,
-          "decimals": 18,
-          "underlying": "ETH",
-          "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
-        }
-      ],
-      "rank": 262
+      "rank": 260
     },
     {
       "address": "0x915d26fa87d887e165d6573a77461f79a3de37ed",
@@ -6174,7 +6130,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 263
+      "rank": 261
     },
     {
       "address": "0x3b3053b42ff03d0d7c43e7d2f1bd3a78b009160a",
@@ -6196,7 +6152,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 264
+      "rank": 262
     },
     {
       "address": "0xad970b7c19fc4b05728109136655015de7feeb7e",
@@ -6218,7 +6174,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 265
+      "rank": 263
     },
     {
       "address": "0x34e2f73d877a299bb0abbf71f6bb9eb47da1fe50",
@@ -6240,7 +6196,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 266
+      "rank": 264
     },
     {
       "address": "0xcd1e8ae6d43ca88662ed69afe205fa2efc6a415f",
@@ -6262,7 +6218,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 267
+      "rank": 265
     },
     {
       "address": "0x3a0cca1a832644b60730e5d4c27947c5de609d62",
@@ -6284,7 +6240,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 268
+      "rank": 266
     },
     {
       "address": "0x9749fc1cc2c0a1a192a0bae614d9d4881c0e0bc8",
@@ -6306,7 +6262,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 269
+      "rank": 267
     },
     {
       "address": "0x9aa51865ade30ff5a6b366e73d6b2077454e646a",
@@ -6328,7 +6284,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 270
+      "rank": 268
     },
     {
       "address": "0x42b9df65b219b3dd36ff330a4dd8f327a6ada990",
@@ -6350,7 +6306,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 271
+      "rank": 269
     },
     {
       "address": "0xedf7b675a2fe3c27efb263fb4c204a3f0fb17d46",
@@ -6372,7 +6328,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 272
+      "rank": 270
     },
     {
       "address": "0xa46208360297bb909ee0f36bb6b83239ebf4c21d",
@@ -6394,7 +6350,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 273
+      "rank": 271
     },
     {
       "address": "0x4c09d894399e3f8d6276c63fccf4d8e7e9a86268",
@@ -6448,7 +6404,7 @@
         "DAI": "509266014730229917",
         "USDC": "510498"
       },
-      "rank": 274
+      "rank": 272
     },
     {
       "address": "0x5290d046f674c2fc9c6cf9905a0d19b39eba0a76",
@@ -6502,7 +6458,7 @@
         "DAI": "10311253692252856",
         "USDC": "10278"
       },
-      "rank": 275
+      "rank": 273
     },
     {
       "address": "0xc19355f5a4aaaf31aa865ce1264e1cffeb68c171",
@@ -6524,7 +6480,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 276
+      "rank": 274
     },
     {
       "address": "0x099173acced65d93c5bb4506e0e3f81264047674",
@@ -6546,7 +6502,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 277
+      "rank": 275
     },
     {
       "address": "0xf7801b408c5e3d352e9d67ee2774ae82800bc2d7",
@@ -6568,7 +6524,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 278
+      "rank": 276
     },
     {
       "address": "0xa512e549d68f15a9f23c1df98970e684301ac1e7",
@@ -6590,7 +6546,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 279
+      "rank": 277
     },
     {
       "address": "0x17080b589cdcbd10ebeaa24cb0096f4bb29eb52b",
@@ -6612,7 +6568,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 280
+      "rank": 278
     },
     {
       "address": "0xe8c85e71cfd86556997a498095dca847029defd0",
@@ -6634,7 +6590,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 281
+      "rank": 279
     },
     {
       "address": "0x8275a90029f67ea2f64ea9ba81b1c6903f0776b2",
@@ -6656,7 +6612,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 282
+      "rank": 280
     },
     {
       "address": "0xc706c813aa7a67817983d0f5562057ef5bf38d54",
@@ -6678,7 +6634,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 283
+      "rank": 281
     },
     {
       "address": "0x18960c91688c5ca0767c7bf2c80df5e679648256",
@@ -6700,7 +6656,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 284
+      "rank": 282
     },
     {
       "address": "0x82e4d78c6c62d461251fa5a1d4deb9f0fe378e30",
@@ -6722,7 +6678,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 285
+      "rank": 283
     },
     {
       "address": "0xd97edc1d2fbb60a996461f9ce3c3777d35815e4e",
@@ -6744,7 +6700,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 286
+      "rank": 284
     },
     {
       "address": "0x0383143d0d61112615c124b64994bfc7e94d8e4d",
@@ -6766,7 +6722,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 287
+      "rank": 285
     },
     {
       "address": "0xc85c1a16b06a8db1880ba0f54a265752df429692",
@@ -6788,7 +6744,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 288
+      "rank": 286
     },
     {
       "address": "0x7eca0c387b3d07d97f95e9ac3551f1760b8b6c54",
@@ -6810,7 +6766,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 289
+      "rank": 287
     },
     {
       "address": "0xdd10664a1f77c915048908587e6961fbf9d0813e",
@@ -6832,7 +6788,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 290
+      "rank": 288
     },
     {
       "address": "0x15b8a4acd82326c4a4cd98fbb6f7ad2fc3101b1f",
@@ -6854,7 +6810,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 291
+      "rank": 289
     },
     {
       "address": "0x544d2d796e165f0d4c626d1d15667a469a7bffe0",
@@ -6876,2687 +6832,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 292
-    },
-    {
-      "address": "0xe5df267e2525c4fba22f103238d2ff2ec02d9665",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "22387215291098564817511",
-          "k_amount": 22387.215291098564,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "24685876320502761036761",
-          "amount": 24685.87632050276,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "24685876320502761036761"
-      },
-      "rank": 293
-    },
-    {
-      "address": "0x0fa092aeac994af3b06e2fbe2e7ac0a17d6940b7",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "10557336793",
-          "k_amount": 10557.336793,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "14078439689",
-          "amount": 14078.439689,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "14078439689"
-      },
-      "rank": 294
-    },
-    {
-      "address": "0xe41b78ae5c2b19caf9949f38f3d49aa3f50a8afd",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "8004954603353526775051",
-          "k_amount": 8004.954603353527,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "8826882518443297460121",
-          "amount": 8826.882518443297,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "8826882518443297460121"
-      },
-      "rank": 295
-    },
-    {
-      "address": "0x4d25033be62e2b72198eec2710234d18c175170d",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "5619491964557780673418",
-          "k_amount": 5619.491964557781,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "6196486781287625542540",
-          "amount": 6196.4867812876255,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "6196486781287625542540"
-      },
-      "rank": 296
-    },
-    {
-      "address": "0x6445563a4581ea750b374d7ca30ced59fc0d7872",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "2787017322274888261896",
-          "k_amount": 2787.017322274888,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "3073181010955498246647",
-          "amount": 3073.181010955498,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "3073181010955498246647"
-      },
-      "rank": 297
-    },
-    {
-      "address": "0x314b401dbc98b5aa2e597825578847fe0c2c4b21",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "2692500000000000000000",
-          "k_amount": 2692.5,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "2968958895900808139492",
-          "amount": 2968.9588959008083,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "2968958895900808139492"
-      },
-      "rank": 298
-    },
-    {
-      "address": "0x8c0e7049bd05d1521d5a568295f530057c516e75",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "2297412600000000000000",
-          "k_amount": 2297.4126,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "2533304949424180118794",
-          "amount": 2533.30494942418,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "2533304949424180118794"
-      },
-      "rank": 299
-    },
-    {
-      "address": "0x49db9fbef8c543fa2de4c8b2cbbb21d0b6a05a83",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "1500260840",
-          "k_amount": 1500.26084,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "2000630667",
-          "amount": 2000.630667,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "2000630667"
-      },
-      "rank": 300
-    },
-    {
-      "address": "0x2f5f5c84ff5805e78974c6bfcbadaca47e663c9d",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "1491917695",
-          "k_amount": 1491.917695,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "1989504901",
-          "amount": 1989.504901,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "1989504901"
-      },
-      "rank": 301
-    },
-    {
-      "address": "0x34cb05ee246246391de4582e775f2a11d8079870",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "1033552337958377361245",
-          "k_amount": 1033.5523379583774,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "1139674803402266653689",
-          "amount": 1139.6748034022667,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "1139674803402266653689"
-      },
-      "rank": 302
-    },
-    {
-      "address": "0x93e4ced6f7f593e0d017c2fd276450a1bb145135",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "966936407113273369129",
-          "k_amount": 966.9364071132734,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "1066218922068456240572",
-          "amount": 1066.2189220684563,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "1066218922068456240572"
-      },
-      "rank": 303
-    },
-    {
-      "address": "0xa8a8ef5426f9e14554efb3a983d4afe7eb622d44",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "956656586998692141401",
-          "k_amount": 956.6565869986921,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "1054883596765783631140",
-          "amount": 1054.8835967657835,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "1054883596765783631140"
-      },
-      "rank": 304
-    },
-    {
-      "address": "0x1406a3103fcf8d7854533ee691e29935bdb49288",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "948197716587918605415",
-          "k_amount": 948.1977165879186,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "1045556191545602307904",
-          "amount": 1045.5561915456024,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "1045556191545602307904"
-      },
-      "rank": 305
-    },
-    {
-      "address": "0x18151700a42c66c9d93f08319c6637d0da01a11c",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "780207586",
-          "k_amount": 780.207586,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "1040423892",
-          "amount": 1040.423892,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "1040423892"
-      },
-      "rank": 306
-    },
-    {
-      "address": "0x8bd5531922b7a95e1b862d044cfb4b9c6beb8195",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "916836269974089665300",
-          "k_amount": 916.8362699740896,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "1010974633175148934408",
-          "amount": 1010.9746331751489,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "1010974633175148934408"
-      },
-      "rank": 307
-    },
-    {
-      "address": "0x383dbcdce4f4cb11bc083d34945d702aec2d8fc6",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "745528692",
-          "k_amount": 745.528692,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "994178828",
-          "amount": 994.178828,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "994178828"
-      },
-      "rank": 308
-    },
-    {
-      "address": "0x817fecba20073b56299e9487600545524d19de7e",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "896931879577504857000",
-          "k_amount": 896.9318795775049,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "989026511750664967424",
-          "amount": 989.026511750665,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "989026511750664967424"
-      },
-      "rank": 309
-    },
-    {
-      "address": "0x7490718661ced3aaa1321c8907f1de6dbc6f9cf4",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "740026236",
-          "k_amount": 740.026236,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "986841183",
-          "amount": 986.841183,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "986841183"
-      },
-      "rank": 310
-    },
-    {
-      "address": "0xeacaf5b2717060bda76a5883a01cb5f693f40801",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "891664180175793797920",
-          "k_amount": 891.6641801757938,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "983217938677446243720",
-          "amount": 983.2179386774462,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "983217938677446243720"
-      },
-      "rank": 311
-    },
-    {
-      "address": "0xdc4b8b3bbf30260dc1605772b62c21c3bed0fa40",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "662897583",
-          "k_amount": 662.897583,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "883988436",
-          "amount": 883.988436,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "883988436"
-      },
-      "rank": 312
-    },
-    {
-      "address": "0x2322921e64e265250bbf4d51052e0f5db38a31b9",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "757879164217929952880",
-          "k_amount": 757.87916421793,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "835696225300907176218",
-          "amount": 835.6962253009071,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "835696225300907176218"
-      },
-      "rank": 313
-    },
-    {
-      "address": "0xe3968a2412cf4a04201754b4e13290f7b1a6e8ba",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "533240892",
-          "k_amount": 533.240892,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "711088400",
-          "amount": 711.0884,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "711088400"
-      },
-      "rank": 314
-    },
-    {
-      "address": "0xe5d0affbcd5328bc9f90c6ee83ed7030760ca1a8",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "615822336614629706203",
-          "k_amount": 615.8223366146298,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "679053372176945896626",
-          "amount": 679.0533721769459,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "679053372176945896626"
-      },
-      "rank": 315
-    },
-    {
-      "address": "0x6e26619fdfab161b4c1af279eeebff705b7bd040",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "454430044",
-          "k_amount": 454.430044,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "605992410",
-          "amount": 605.99241,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "605992410"
-      },
-      "rank": 316
-    },
-    {
-      "address": "0xa65ab3aca9a72aadb2f18aa5f634f1abd5c8c6bb",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "452089441",
-          "k_amount": 452.089441,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "602871164",
-          "amount": 602.871164,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "602871164"
-      },
-      "rank": 317
-    },
-    {
-      "address": "0xd6681d7a5ee9e56d5225b26b994ab817975610ba",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "544893259784458586838",
-          "k_amount": 544.8932597844586,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "600841482248266810666",
-          "amount": 600.8414822482669,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "600841482248266810666"
-      },
-      "rank": 318
-    },
-    {
-      "address": "0xdef0ed0724d9a1d3aac2dafb767fbf8d09a3f2b6",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "500000000000000000000",
-          "k_amount": 500.0,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "551338699331626395448",
-          "amount": 551.3386993316263,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "551338699331626395448"
-      },
-      "rank": 319
-    },
-    {
-      "address": "0x296b39cf35a9eb6550f3ef76b87573e0349047f1",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "398281692",
-          "k_amount": 398.281692,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "531117353",
-          "amount": 531.117353,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "531117353"
-      },
-      "rank": 320
-    },
-    {
-      "address": "0x0a7e465c1a354de9a6a51ccce84a50fe1a210eb3",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "380391301",
-          "k_amount": 380.391301,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "507260125",
-          "amount": 507.260125,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "507260125"
-      },
-      "rank": 321
-    },
-    {
-      "address": "0xa6df57ca95f282f363b97875cd2f104218f1880e",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "459789009539158896127",
-          "k_amount": 459.7890095391589,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "506998948972593254490",
-          "amount": 506.99894897259327,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "506998948972593254490"
-      },
-      "rank": 322
-    },
-    {
-      "address": "0x644c298de50810d08d6ec4ff430a89d7f7d186e2",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "376652992",
-          "k_amount": 376.652992,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "502275008",
-          "amount": 502.275008,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "502275008"
-      },
-      "rank": 323
-    },
-    {
-      "address": "0x0aeeeae3491820ceae297232ec9ebc483494ad0e",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "374346749",
-          "k_amount": 374.346749,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "499199583",
-          "amount": 499.199583,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "499199583"
-      },
-      "rank": 324
-    },
-    {
-      "address": "0xbe06f318d8bec0a366820df5097a9007c37547a9",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "372980874",
-          "k_amount": 372.980874,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "497378159",
-          "amount": 497.378159,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "497378159"
-      },
-      "rank": 325
-    },
-    {
-      "address": "0x7fd684482a95fed442d974490abe7bcec2d3edfc",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "443902778362436324493",
-          "k_amount": 443.9027783624363,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "489481560904081743868",
-          "amount": 489.48156090408173,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "489481560904081743868"
-      },
-      "rank": 326
-    },
-    {
-      "address": "0xd23df138e3c7a74b2832f5ecc1ed9eea6c04c80f",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "216135847960577106501",
-          "k_amount": 216.1358479605771,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "238328114587045474747",
-          "amount": 238.32811458704546,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        },
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "182731999",
-          "k_amount": 182.731999,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "243677120",
-          "amount": 243.67712,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "DAI": "238328114587045474747",
-        "USDC": "243677120"
-      },
-      "rank": 327
-    },
-    {
-      "address": "0x426e47d2b73b68664a8702d4658a9c97ee00c590",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "436980316469097111073",
-          "k_amount": 436.9803164690971,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "481848318631188964312",
-          "amount": 481.848318631189,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "481848318631188964312"
-      },
-      "rank": 328
-    },
-    {
-      "address": "0x1084c4ee87d1488d1ed45d11408b09ae1ff90576",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "353799034",
-          "k_amount": 353.799034,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "471798755",
-          "amount": 471.798755,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "471798755"
-      },
-      "rank": 329
-    },
-    {
-      "address": "0x152b8c153e4f18bfe1cb3f2eaa563813c758e279",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "351754244",
-          "k_amount": 351.754244,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "469071983",
-          "amount": 469.071983,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "469071983"
-      },
-      "rank": 330
-    },
-    {
-      "address": "0x7131c6f207b2c020a25a6fb0e7fc575f819cc02a",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "304342417",
-          "k_amount": 304.342417,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "405847274",
-          "amount": 405.847274,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "405847274"
-      },
-      "rank": 331
-    },
-    {
-      "address": "0x9e49a6ee617b04300204e78f4b931145088810e7",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "362273918550282039731",
-          "k_amount": 362.273918550282,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "399471262110568119284",
-          "amount": 399.4712621105681,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "399471262110568119284"
-      },
-      "rank": 332
-    },
-    {
-      "address": "0x710d02e8ae5d66104757e32f8b3f20389274ebc1",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "346950830273276764431",
-          "k_amount": 346.9508302732768,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "382574838989792558019",
-          "amount": 382.57483898979257,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "382574838989792558019"
-      },
-      "rank": 333
-    },
-    {
-      "address": "0xbafd29b1dc3e66400204126e1ec81d54bf58d613",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "346120913498455757651",
-          "k_amount": 346.12091349845576,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "381659708519425933730",
-          "amount": 381.6597085194259,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "381659708519425933730"
-      },
-      "rank": 334
-    },
-    {
-      "address": "0x2ee572633049ecdce2e6e57d854cba491b3c6a67",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "276384440756277569869",
-          "k_amount": 276.38444075627757,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "304762876164130054601",
-          "amount": 304.76287616413003,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "304762876164130054601"
-      },
-      "rank": 335
-    },
-    {
-      "address": "0xaba97cf46c93d4ef66189f84b6047ffd05f86526",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "199058045",
-          "k_amount": 199.058045,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "265448259",
-          "amount": 265.448259,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "265448259"
-      },
-      "rank": 336
-    },
-    {
-      "address": "0xbbf68ff787fa681eee4024c63cbb3ac75a6efc0c",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "102696947861985006212",
-          "k_amount": 102.69694786198501,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "113241603319109327051",
-          "amount": 113.24160331910933,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        },
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "84459244",
-          "k_amount": 84.459244,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "112628250",
-          "amount": 112.62825,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "DAI": "113241603319109327051",
-        "USDC": "112628250"
-      },
-      "rank": 337
-    },
-    {
-      "address": "0xc761198054e770ef8ea548adf273bcffcbe98f60",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "201814067050992290177",
-          "k_amount": 201.8140670509923,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "222535810469439455064",
-          "amount": 222.53581046943947,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "222535810469439455064"
-      },
-      "rank": 338
-    },
-    {
-      "address": "0xc0020d88852f4eca40eed7d0b1bdd9493b589131",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "182877841440557618910",
-          "k_amount": 182.87784144055763,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "201655262472824885617",
-          "amount": 201.6552624728249,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "201655262472824885617"
-      },
-      "rank": 339
-    },
-    {
-      "address": "0xb4fea5fccfe492e0199e81be75cea97fdba77463",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "149745925",
-          "k_amount": 149.745925,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "199689468",
-          "amount": 199.689468,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "199689468"
-      },
-      "rank": 340
-    },
-    {
-      "address": "0xc78e04d823cc8c247c7b88a3007951447db1fead",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "175972224760258539776",
-          "k_amount": 175.97222476025854,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "194040595035627129640",
-          "amount": 194.04059503562712,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "194040595035627129640"
-      },
-      "rank": 341
-    },
-    {
-      "address": "0x7e52ab67587f63245005d845c3e30e9b9d7159e2",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "175853172875780885064",
-          "k_amount": 175.8531728757809,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "193909319213345351258",
-          "amount": 193.90931921334536,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "193909319213345351258"
-      },
-      "rank": 342
-    },
-    {
-      "address": "0xa31dbf0435af02f3b68ec7f985c9388e8ab1e47b",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "170077924874205992436",
-          "k_amount": 170.077924874206,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "187541083770333599398",
-          "amount": 187.5410837703336,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "187541083770333599398"
-      },
-      "rank": 343
-    },
-    {
-      "address": "0x40d3b71616bb9555d69f87465b7a6502a579ef60",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "123714743",
-          "k_amount": 123.714743,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "164976317",
-          "amount": 164.976317,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "164976317"
-      },
-      "rank": 344
-    },
-    {
-      "address": "0x58a3505ee61f90bd5fbcf2abd889afad46b69d3a",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "123473669",
-          "k_amount": 123.473669,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "164654840",
-          "amount": 164.65484,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "164654840"
-      },
-      "rank": 345
-    },
-    {
-      "address": "0xd99a71e68b961cbbbb4050bfac148dee9ecdf619",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "143552133911663996825",
-          "k_amount": 143.552133911664,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "158291693594272571325",
-          "amount": 158.29169359427257,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "158291693594272571325"
-      },
-      "rank": 346
-    },
-    {
-      "address": "0x5d5f630ba4e689c3100f52874176f66d92500727",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "116343171",
-          "k_amount": 116.343171,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "155146165",
-          "amount": 155.146165,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "155146165"
-      },
-      "rank": 347
-    },
-    {
-      "address": "0x3c5e235d1031d88d10cad08aef957715e71ad77f",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "135624892745094992000",
-          "k_amount": 135.624892745095,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "149550503926144011669",
-          "amount": 149.55050392614402,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "149550503926144011669"
-      },
-      "rank": 348
-    },
-    {
-      "address": "0x962b26a2d007de555e560c2f6da3cd2719da9aa7",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "130000933210942439855",
-          "k_amount": 130.00093321094243,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "143349090856837276478",
-          "amount": 143.34909085683728,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "143349090856837276478"
-      },
-      "rank": 349
-    },
-    {
-      "address": "0x133fd7b616ad0f7f8885407da0b4e298448c9b3d",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "108479259984924565633",
-          "k_amount": 108.47925998492457,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "119617628209091311198",
-          "amount": 119.61762820909131,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "119617628209091311198"
-      },
-      "rank": 350
-    },
-    {
-      "address": "0x1fc58e176bc835d1ad7f97cff3e05287e00f6c77",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "97773663858505135456",
-          "k_amount": 97.77366385850513,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "107812809321271738364",
-          "amount": 107.81280932127174,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "107812809321271738364"
-      },
-      "rank": 351
-    },
-    {
-      "address": "0xa7bba3d285e9f045038af84f9e2064dd1a785ebd",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "77052056",
-          "k_amount": 77.052056,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "102750603",
-          "amount": 102.750603,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "102750603"
-      },
-      "rank": 352
-    },
-    {
-      "address": "0x807ac157e1ec0e964fbd2d89a06a3d2035c1eff7",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "76549811",
-          "k_amount": 76.549811,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "102080848",
-          "amount": 102.080848,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "102080848"
-      },
-      "rank": 353
-    },
-    {
-      "address": "0x8c6ad7dd2e2ecdd633bc1141024536cd93aee4fb",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "76275251",
-          "k_amount": 76.275251,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "101714716",
-          "amount": 101.714716,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "101714716"
-      },
-      "rank": 354
-    },
-    {
-      "address": "0xfe75f92172d2b6f5c25bd5f843c32f839a6653fb",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "91002981165315177231",
-          "k_amount": 91.00298116531518,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "100346930541970728716",
-          "amount": 100.34693054197074,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "100346930541970728716"
-      },
-      "rank": 355
-    },
-    {
-      "address": "0xe41ab63fe5483b206ea22e2803e0d383a786043a",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "86712343374122680201",
-          "k_amount": 86.71234337412268,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "95615741223772341285",
-          "amount": 95.61574122377235,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "95615741223772341285"
-      },
-      "rank": 356
-    },
-    {
-      "address": "0x5acf39076c95e63b0965b5e6ef4c85087608c601",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "71415994",
-          "k_amount": 71.415994,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "95234791",
-          "amount": 95.234791,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "95234791"
-      },
-      "rank": 357
-    },
-    {
-      "address": "0xc0d2b7f7b86e6da8bd9367948f1dca08a0e833e4",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "84446124971153608779",
-          "k_amount": 84.44612497115361,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "93116833410383614454",
-          "amount": 93.11683341038362,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "93116833410383614454"
-      },
-      "rank": 358
-    },
-    {
-      "address": "0xbde61412ca9f899239671118fd1ec99e70195de7",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "68874516",
-          "k_amount": 68.874516,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "91845674",
-          "amount": 91.845674,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "91845674"
-      },
-      "rank": 359
-    },
-    {
-      "address": "0x29c7ec478b00bf8f9e4954592f82a5e40fad5a0e",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "67138103",
-          "k_amount": 67.138103,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "89530129",
-          "amount": 89.530129,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "89530129"
-      },
-      "rank": 360
-    },
-    {
-      "address": "0x63595188d9a2a0e47b27a380d6506ffd2d69d1f9",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "77574848564832042703",
-          "k_amount": 77.57484856483204,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "85540032217164765968",
-          "amount": 85.54003221716476,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "85540032217164765968"
-      },
-      "rank": 361
-    },
-    {
-      "address": "0x4c19e33651b7bb4823ac412bc29c0a8e666eccbd",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "58357330",
-          "k_amount": 58.35733,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "77820776",
-          "amount": 77.820776,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "77820776"
-      },
-      "rank": 362
-    },
-    {
-      "address": "0x9b43b558d65871e4af214dd26b17702b121dfeb2",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "69399488038050049926",
-          "k_amount": 69.39948803805005,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "76525246938358558174",
-          "amount": 76.52524693835856,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "76525246938358558174"
-      },
-      "rank": 363
-    },
-    {
-      "address": "0x192ddbe212d251ab0aeaab0a544c54437d2ffe54",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "69374244849634768700",
-          "k_amount": 69.37424484963476,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "76497411845022829513",
-          "amount": 76.49741184502282,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "76497411845022829513"
-      },
-      "rank": 364
-    },
-    {
-      "address": "0xebcb3c3d96e806b4a70639153336c8eb71aae910",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "56172339",
-          "k_amount": 56.172339,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "74907043",
-          "amount": 74.907043,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "74907043"
-      },
-      "rank": 365
-    },
-    {
-      "address": "0x4322d56325ce754081a63129e3a3250f38eaf3c4",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "66725435838655012985",
-          "k_amount": 66.72543583865502,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "73576630015239889081",
-          "amount": 73.57663001523989,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "73576630015239889081"
-      },
-      "rank": 366
-    },
-    {
-      "address": "0x9ec5d1d6d86f706a53f7868c247c6a0330a4b850",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "46430247",
-          "k_amount": 46.430247,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "61915750",
-          "amount": 61.91575,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "61915750"
-      },
-      "rank": 367
-    },
-    {
-      "address": "0x7e16b04b6685de8348916126b0a09c9a2266eeb3",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "45295748",
-          "k_amount": 45.295748,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "60402871",
-          "amount": 60.402871,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "60402871"
-      },
-      "rank": 368
-    },
-    {
-      "address": "0xf4a5df4fed739353814383bcbd03afbab4d55830",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "39726800",
-          "k_amount": 39.7268,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "52976557",
-          "amount": 52.976557,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "52976557"
-      },
-      "rank": 369
-    },
-    {
-      "address": "0x0897b4e707acff63e9a993aea6a11cee23c9b492",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "46520286621645357448",
-          "k_amount": 46.520286621645354,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "51296868637024823164",
-          "amount": 51.29686863702482,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "51296868637024823164"
-      },
-      "rank": 370
-    },
-    {
-      "address": "0x2f33c529431951a6dc7469f506dd9f8e5c14eed4",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "38334642",
-          "k_amount": 38.334642,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "51120084",
-          "amount": 51.120084,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "51120084"
-      },
-      "rank": 371
-    },
-    {
-      "address": "0xbcc34be4cce3c236ccc2e4b9940c874c13d05ed3",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "45999757540857084630",
-          "k_amount": 45.99975754085708,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "50722892984292636339",
-          "amount": 50.722892984292635,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "50722892984292636339"
-      },
-      "rank": 372
-    },
-    {
-      "address": "0xcabbfb122e2c047a0f2243d4baa8b4de854cb95f",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "45494143962588700910",
-          "k_amount": 45.4941439625887,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "50165364319078836016",
-          "amount": 50.16536431907883,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "50165364319078836016"
-      },
-      "rank": 373
-    },
-    {
-      "address": "0xbc12a11ed5d9f4ed450390cfdffd69dd01e113e1",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "36317259",
-          "k_amount": 36.317259,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "48429859",
-          "amount": 48.429859,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "48429859"
-      },
-      "rank": 374
-    },
-    {
-      "address": "0x20910ecb203eb636b291a5f1dff70c74cdccc365",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "42820779787487648035",
-          "k_amount": 42.820779787487645,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "47217506064798874394",
-          "amount": 47.217506064798876,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "47217506064798874394"
-      },
-      "rank": 375
-    },
-    {
-      "address": "0x23e9731e62555c09d296ae0f99c1ac962158620e",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "41566037772248261427",
-          "k_amount": 41.56603777224826,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "45833930403441220079",
-          "amount": 45.83393040344122,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "45833930403441220079"
-      },
-      "rank": 376
-    },
-    {
-      "address": "0x5540b6626006c9a2e3b5e1eccb5391c298130596",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "41301629075437769918",
-          "k_amount": 41.301629075437766,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "45542372909458286597",
-          "amount": 45.54237290945829,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "45542372909458286597"
-      },
-      "rank": 377
-    },
-    {
-      "address": "0x63be84b1d75751e52716ae153dbc5abb5b2a98f5",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "40684704053772787535",
-          "k_amount": 40.68470405377279,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "44862103631398472952",
-          "amount": 44.862103631398476,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "44862103631398472952"
-      },
-      "rank": 378
-    },
-    {
-      "address": "0x237e15061293ed81b1ff85eb42ee912b6a19c8e4",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "39768531345418790991",
-          "k_amount": 39.76853134541879,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "43851860692624421075",
-          "amount": 43.85186069262442,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "43851860692624421075"
-      },
-      "rank": 379
-    },
-    {
-      "address": "0x59100385262480ec2d7b5807528d84b361881cb5",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "38925081193562714344",
-          "k_amount": 38.92508119356271,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "42921807273273636940",
-          "amount": 42.921807273273636,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "42921807273273636940"
-      },
-      "rank": 380
-    },
-    {
-      "address": "0x9dcda7fcc169c5d6e51aed0c3176c3f12ff8ce8b",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "38884154526417208906",
-          "k_amount": 38.884154526417205,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "42876678362409674190",
-          "amount": 42.87667836240968,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "42876678362409674190"
-      },
-      "rank": 381
-    },
-    {
-      "address": "0x50348e7c42056737f280895dc81a135ee3898a1c",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "31786960",
-          "k_amount": 31.78696,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "42388606",
-          "amount": 42.388606,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "42388606"
-      },
-      "rank": 382
-    },
-    {
-      "address": "0x432d126da5035175354ec628e23966c679cdfadf",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "28453688351478490108",
-          "k_amount": 28.45368835147849,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "31375239053783199135",
-          "amount": 31.3752390537832,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "31375239053783199135"
-      },
-      "rank": 383
-    },
-    {
-      "address": "0x83084d760e0b2a156f5db3fa20f9fc965b3c0046",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "27856172970913713266",
-          "k_amount": 27.856172970913715,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "30716372348280747493",
-          "amount": 30.716372348280746,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "30716372348280747493"
-      },
-      "rank": 384
-    },
-    {
-      "address": "0x843da1d606d2a6d751c9ba2e8816dd6d725092f4",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "24291617275011519591",
-          "k_amount": 24.291617275011518,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "26785817346133035795",
-          "amount": 26.785817346133037,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "26785817346133035795"
-      },
-      "rank": 385
-    },
-    {
-      "address": "0x1eea392d763c97d3cdb183728b757d2f47f07227",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "20000000",
-          "k_amount": 20.0,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "26670437",
-          "amount": 26.670437,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "26670437"
-      },
-      "rank": 386
-    },
-    {
-      "address": "0xf2795bdae0db5cb7363d934b066ba67e1ca8c049",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "19209765",
-          "k_amount": 19.209765,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "25616642",
-          "amount": 25.616642,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "25616642"
-      },
-      "rank": 387
-    },
-    {
-      "address": "0x74be9eb35b07f6fc8d767b9f980c1d7854bf0364",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "20592905566277880908",
-          "k_amount": 20.59290556627788,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "22707331540741312354",
-          "amount": 22.70733154074131,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "22707331540741312354"
-      },
-      "rank": 388
-    },
-    {
-      "address": "0xb61fd6f023e4cb04882433b812b195245deb57e5",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "20569814864084342946",
-          "k_amount": 20.569814864084343,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "22681869945313234049",
-          "amount": 22.681869945313235,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "22681869945313234049"
-      },
-      "rank": 389
-    },
-    {
-      "address": "0xef93b3fe19749650f933e75e3dc07ef3c657cd16",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "15497754",
-          "k_amount": 15.497754,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "20666594",
-          "amount": 20.666594,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "20666594"
-      },
-      "rank": 390
-    },
-    {
-      "address": "0xc1b5bcbc94e6127ac3ee4054d0664e4f6afe45d3",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "18597484524456050033",
-          "k_amount": 18.59748452445605,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "20507025857107298130",
-          "amount": 20.507025857107298,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "20507025857107298130"
-      },
-      "rank": 391
-    },
-    {
-      "address": "0xc9712b324e971eb34a0222c76cfe1ed10789a5bd",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "17423452017891794503",
-          "k_amount": 17.423452017891794,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "19212446746822926586",
-          "amount": 19.212446746822927,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "19212446746822926586"
-      },
-      "rank": 392
-    },
-    {
-      "address": "0x25ba562c31aaca514319f615ed56fa587a9c7ea4",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "14435798941347328592",
-          "k_amount": 14.435798941347329,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "15918029224270610842",
-          "amount": 15.918029224270612,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "15918029224270610842"
-      },
-      "rank": 393
-    },
-    {
-      "address": "0x0c27fffbd8e5f8cef5bf419494251abd423bf7ea",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "13752881267683926806",
-          "k_amount": 13.752881267683927,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "15164991340374290780",
-          "amount": 15.164991340374291,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "15164991340374290780"
-      },
-      "rank": 394
-    },
-    {
-      "address": "0x1487bc8feabe99b2e2ff68a44c8e27acb96ec035",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "13752881219109993009",
-          "k_amount": 13.752881219109993,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "15164991286812911818",
-          "amount": 15.164991286812912,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "15164991286812911818"
-      },
-      "rank": 395
-    },
-    {
-      "address": "0x36a87d1e3200225f881488e4aeedf25303febcae",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "11338097",
-          "k_amount": 11.338097,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "15119600",
-          "amount": 15.1196,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "15119600"
-      },
-      "rank": 396
-    },
-    {
-      "address": "0x3ed843f917af9c3cccbab7b6a1dea661524fa7ed",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "13541410294907464149",
-          "k_amount": 13.541410294907465,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "14931807078220353389",
-          "amount": 14.931807078220354,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "14931807078220353389"
-      },
-      "rank": 397
-    },
-    {
-      "address": "0xc8d46eb7881975f9ae15216feeba2ff58e55803c",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "10965801",
-          "k_amount": 10.965801,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "14623135",
-          "amount": 14.623135,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "14623135"
-      },
-      "rank": 398
+      "rank": 290
     },
     {
       "address": "0x5853ed4f26a3fcea565b3fbc698bb19cdf6deb85",
@@ -9581,672 +6857,7 @@
       "token_balances": {
         "DAI": "10422580209385616085"
       },
-      "rank": 399
-    },
-    {
-      "address": "0xf627e5f4bad95a956468d8bb6ee20b119f992e96",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "9452024519527133120",
-          "k_amount": 9.452024519527134,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "10422533809293460981",
-          "amount": 10.42253380929346,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "10422533809293460981"
-      },
-      "rank": 400
-    },
-    {
-      "address": "0x03c2bfd2509de9b13d0124015077e100a292336d",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "7606365",
-          "k_amount": 7.606365,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "10143254",
-          "amount": 10.143254,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "10143254"
-      },
-      "rank": 401
-    },
-    {
-      "address": "0x4e76df25208db51ffcad92015489a9f80826c954",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "7911150679619380502",
-          "k_amount": 7.9111506796193805,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "8723447051835722889",
-          "amount": 8.723447051835723,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "8723447051835722889"
-      },
-      "rank": 402
-    },
-    {
-      "address": "0xe826f1c06d5ae90e4c098459d1b7464a8dc604ca",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "5114381724756343392",
-          "k_amount": 5.114381724756344,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "5639513136025204868",
-          "amount": 5.639513136025204,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "5639513136025204868"
-      },
-      "rank": 403
-    },
-    {
-      "address": "0xbe3b173c6ee409e37e2d479c935bb0babefe7e97",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "4323066229321012780",
-          "k_amount": 4.323066229321013,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "4766947423996651420",
-          "amount": 4.766947423996651,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "4766947423996651420"
-      },
-      "rank": 404
-    },
-    {
-      "address": "0x7ba605bc00ea26512a639d5e0335eaeb3e81ad94",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "4098801030379414257",
-          "k_amount": 4.0988010303794145,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "4519655257817032688",
-          "amount": 4.519655257817033,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "4519655257817032688"
-      },
-      "rank": 405
-    },
-    {
-      "address": "0x0a2dc66bde44a7a3401efc88f385387370716a3c",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "2225114",
-          "k_amount": 2.225114,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "2967238",
-          "amount": 2.967238,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "2967238"
-      },
-      "rank": 406
-    },
-    {
-      "address": "0x47db9dccc3e0ff823a2e7ef546fdf8a9b833084a",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "1349475182934457888",
-          "k_amount": 1.3494751829344578,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "1488035784278785209",
-          "amount": 1.4880357842787852,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "1488035784278785209"
-      },
-      "rank": 407
-    },
-    {
-      "address": "0x7bfee91193d9df2ac0bfe90191d40f23c773c060",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "397327605264030704",
-          "k_amount": 0.3973276052640307,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "438124170189641122",
-          "amount": 0.4381241701896411,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        },
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "683628",
-          "k_amount": 0.683628,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "911632",
-          "amount": 0.911632,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "DAI": "438124170189641122",
-        "USDC": "911632"
-      },
-      "rank": 408
-    },
-    {
-      "address": "0x137d2ff1b6df76d019319efffd39f2b9b8531859",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "922433900285567322",
-          "k_amount": 0.9224339002855674,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "1017147013605687690",
-          "amount": 1.0171470136056877,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "1017147013605687690"
-      },
-      "rank": 409
-    },
-    {
-      "address": "0xb512f6eda8d66092c5ab1d6c5ec718970e064683",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "749894",
-          "k_amount": 0.749894,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "1000000",
-          "amount": 1.0,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "1000000"
-      },
-      "rank": 410
-    },
-    {
-      "address": "0x781d8a73f053b6c6d9472648912737b02bad9438",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "745605",
-          "k_amount": 0.745605,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "994280",
-          "amount": 0.99428,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "994280"
-      },
-      "rank": 411
-    },
-    {
-      "address": "0x57fd2605aa93a46d6363f1e2f0501e1ccfcda8a7",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "645328",
-          "k_amount": 0.645328,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "860559",
-          "amount": 0.860559,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "860559"
-      },
-      "rank": 412
-    },
-    {
-      "address": "0x0370049eba9c196d14ca2886dd329a700d545c72",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "606537",
-          "k_amount": 0.606537,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "808830",
-          "amount": 0.80883,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "808830"
-      },
-      "rank": 413
-    },
-    {
-      "address": "0x439d8cd77ffb644c7cb4beaed13f2318febdf2df",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "524828213718192897",
-          "k_amount": 0.5248282137181929,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "578716209447858626",
-          "amount": 0.5787162094478586,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "578716209447858626"
-      },
-      "rank": 414
-    },
-    {
-      "address": "0x430ada0b220d0588d416594c94ee131c798f3972",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "485769496055721539",
-          "k_amount": 0.48576949605572156,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "535647044260682263",
-          "amount": 0.5356470442606822,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "535647044260682263"
-      },
-      "rank": 415
-    },
-    {
-      "address": "0x1e4bda16734c1f9e86a66e310fcf8bd3c4f9c0f0",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "469959271307484684",
-          "k_amount": 0.46995927130748466,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "518213466763015067",
-          "amount": 0.518213466763015,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "518213466763015067"
-      },
-      "rank": 416
-    },
-    {
-      "address": "0xdd713a96cb3d6f1454ec644e8b017b419a0aa1c6",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "337179168290901892",
-          "k_amount": 0.3371791682909019,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "371799848174450829",
-          "amount": 0.37179984817445083,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "371799848174450829"
-      },
-      "rank": 417
-    },
-    {
-      "address": "0xb5d1c94469c78a52d5b8250773484d71f6849bf8",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "260224",
-          "k_amount": 0.260224,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "347014",
-          "amount": 0.347014,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "347014"
-      },
-      "rank": 418
-    },
-    {
-      "address": "0xaa5f7d4df2a987d9cc32866b05765f4d94fc2421",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "213656",
-          "k_amount": 0.213656,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "284914",
-          "amount": 0.284914,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "284914"
-      },
-      "rank": 419
-    },
-    {
-      "address": "0xfc143f933badbefe4e769047745cc23e02de0e90",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "202278",
-          "k_amount": 0.202278,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "269742",
-          "amount": 0.269742,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "269742"
-      },
-      "rank": 420
-    },
-    {
-      "address": "0x53673e863f303c48af05104d96dac655ca7ef720",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "155164715870165997",
-          "k_amount": 0.155164715870166,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "171096625260037378",
-          "amount": 0.17109662526003738,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "171096625260037378"
-      },
-      "rank": 421
-    },
-    {
-      "address": "0x47dad379d23093a9b6d711249e1d25864c3f3128",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "k_token": "kusdc",
-          "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
-          "k_amount_wei": "70774",
-          "k_amount": 0.070774,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "94378",
-          "amount": 0.094378,
-          "decimals": 6,
-          "underlying": "USDC",
-          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-        }
-      ],
-      "token_balances": {
-        "USDC": "94378"
-      },
-      "rank": 422
-    },
-    {
-      "address": "0xbd72d16a2c0ac11365a7223224f5096b5d9084a8",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "39526386145803171",
-          "k_amount": 0.03952638614580317,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "43584852653813475",
-          "amount": 0.043584852653813476,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "43584852653813475"
-      },
-      "rank": 423
-    },
-    {
-      "address": "0xfd8702d67398eaf1402a20457adcd422792e5a7b",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "33909497635903522",
-          "k_amount": 0.03390949763590352,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "37391236643135815",
-          "amount": 0.03739123664313582,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "37391236643135815"
-      },
-      "rank": 424
-    },
-    {
-      "address": "0x8473b904ba551e3ff5ec8aceacfdddb2a665a303",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "11236394816983702",
-          "k_amount": 0.011236394816983701,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "12390118607144844",
-          "amount": 0.012390118607144843,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "12390118607144844"
-      },
-      "rank": 425
+      "rank": 291
     }
   ]
 }

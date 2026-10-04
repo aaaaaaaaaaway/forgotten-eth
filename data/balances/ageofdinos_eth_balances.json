@@ -1,10 +1,10 @@
 {
   "contract": "0x19c10FFf96B80208f454034C046CCc4445Cd20ba",
   "balance_source": "eth",
-  "contract_eth_balance": 25.775242,
-  "total_eth_in_balances": 25.0929,
-  "addresses_with_balance": 78,
-  "coverage_pct": 97.35,
+  "contract_eth_balance": 24.98524223,
+  "total_eth_in_balances": 24.3029,
+  "addresses_with_balance": 76,
+  "coverage_pct": 97.27,
   "scan_date": "2026-09-06 01:43:47 UTC",
   "description": "ETH balances in defunct Age of Dinos contract",
   "distribution": {
@@ -21,8 +21,8 @@
       "total_eth": 0
     },
     "0.1-1 ETH": {
-      "count": 78,
-      "total_eth": 25.0929
+      "count": 76,
+      "total_eth": 24.3029
     },
     "0.01-0.1 ETH": {
       "count": 0,
@@ -35,6 +35,7 @@
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 25118,
+  "last_event_refresh": "2026-10-02 16:32:14 UTC",
   "balances": [
     {
       "rank": 1,
@@ -95,10 +96,11 @@
     {
       "rank": 8,
       "address": "0x539edd96b903c6bfda5a54a28a74a85432309a88",
-      "balance_wei": "590000000000000000",
-      "balance_eth": 0.59,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "last_tx_date": "2024-01",
-      "last_tx_hash": "0x872d38f98a10c8ed2da442682e1be927e5ff08c3226ff0c33e58317ad83c4373"
+      "last_tx_hash": "0x872d38f98a10c8ed2da442682e1be927e5ff08c3226ff0c33e58317ad83c4373",
+      "claimed": true
     },
     {
       "rank": 9,
@@ -448,10 +450,11 @@
     {
       "rank": 52,
       "address": "0x535acca66db0d8da25609ded9b39008ab0d7d737",
-      "balance_wei": "200000000000000000",
-      "balance_eth": 0.2,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "last_tx_date": "2024-01",
-      "last_tx_hash": "0x4884d33070ee1a7f690c86de19df0355158d69afd03b099175dff73c612c8088"
+      "last_tx_hash": "0x4884d33070ee1a7f690c86de19df0355158d69afd03b099175dff73c612c8088",
+      "claimed": true
     },
     {
       "rank": 53,
@@ -669,6 +672,5 @@
       "last_tx_date": "2024-01",
       "last_tx_hash": "0x8aa16cc9639adb23d04ca3607e95946cc4e6ad1f94b83666c3bb72d89e37c64c"
     }
-  ],
-  "last_event_refresh": "2026-09-10 08:41:14 UTC"
+  ]
 }

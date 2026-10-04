@@ -1,29 +1,20 @@
 {
   "contract": "0xd216153c06e857cd7f72665e0af1d7d82172f494",
   "balance_source": "eth",
-  "contract_eth_balance": 512.34878588,
-  "total_eth_in_balances": 512.34878588,
-  "addresses_with_balance": 111,
+  "contract_eth_balance": 8.79178396,
+  "total_eth_in_balances": 8.79178396,
+  "addresses_with_balance": 110,
   "coverage_pct": 100.0,
-  "scan_date": "2026-09-23 16:30:33 UTC",
+  "scan_date": "2026-10-04 04:31:21 UTC",
   "description": "OpenZeppelin's original meta-transaction relay hub (2019). Holds dApp deposits made via depositFor() and accumulated relay-operator fees. Withdraw via withdraw(amount, dest); msg.sender must equal the balance holder.",
   "meta": {
     "withdraw_signature": "withdraw(uint256,address)",
     "withdraw_recipient": "dest arg (caller can self-withdraw with dest=msg.sender)",
-    "contract_total_eth": 516.4487858830768,
-    "mapped_total_eth": 512.3487858830769,
-    "stake_unmapped_eth": 4.1
+    "contract_total_eth": 11.891783960922353,
+    "mapped_total_eth": 8.791783960922354,
+    "stake_unmapped_eth": 3.1
   },
   "balances": [
-    {
-      "address": "0xb342a81d57bb9ba8b81111523cd10ea550df67f8",
-      "balance_wei": "503557001922154441967",
-      "balance_eth": 503.5570019221545,
-      "roles": [
-        "owner"
-      ],
-      "is_contract": false
-    },
     {
       "address": "0x0be1241468df7e9d3b74a84869ddf05c36fd7e50",
       "balance_wei": "1722398146743751154",

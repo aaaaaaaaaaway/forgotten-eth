@@ -3,9 +3,9 @@
   "balance_source": "token",
   "contract_eth_balance": 67.99189174,
   "total_eth_in_balances": 50.25056732,
-  "addresses_with_balance": 726,
+  "addresses_with_balance": 725,
   "coverage_pct": 73.91,
-  "scan_date": "2026-09-23 16:30:32 UTC",
+  "scan_date": "2026-10-04 04:31:20 UTC",
   "description": "PandaDAO Farewell refunds PANDA holders pro-rata from the farewell contract. Direct claim requires a Juicebox OperatorStore permission grant, then redeem(amount). Contract holders are excluded because redeem() requires msg.sender == tx.origin.",
   "distribution": {
     ">0.01 ETH": 182,
@@ -17,9 +17,9 @@
     "panda_token": "0x3cBb7f5d7499Af626026E96a2f05df806F2200DC",
     "project_id": 409,
     "operator_permission_index": 3,
-    "excluded_contract_holders": 64,
-    "excluded_contract_token_wei": "7171916151976664522451048",
-    "excluded_contract_eth_wei": "17495272926623219129",
+    "excluded_contract_holders": 65,
+    "excluded_contract_token_wei": "7171916151977139481033872",
+    "excluded_contract_eth_wei": "17495272926624377749",
     "source_total_supply_wei": "27872222893630610008860795"
   },
   "token": "0x3cbb7f5d7499af626026e96a2f05df806f2200dc",
@@ -4938,13 +4938,6 @@
       "balance_wei": "1215679",
       "balance_eth": 1.215679e-12,
       "token_balance_wei": "498348948871",
-      "token_symbol": "PANDA"
-    },
-    {
-      "address": "0x23f8e67318ebce8fdad04cdbf66b7a17c10d174d",
-      "balance_wei": "1158620",
-      "balance_eth": 1.15862e-12,
-      "token_balance_wei": "474958582824",
       "token_symbol": "PANDA"
     },
     {

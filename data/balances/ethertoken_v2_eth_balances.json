@@ -1,11 +1,11 @@
 {
   "contract": "0x0b7dc5a43ce121b4eaaa41b0f4f43bba47bb8951",
   "balance_source": "token",
-  "contract_eth_balance": 475.67913018,
+  "contract_eth_balance": 375.67913018,
   "total_eth_in_balances": 90.05044997,
   "addresses_with_balance": 613,
-  "coverage_pct": 18.93,
-  "scan_date": "2026-09-23 16:18:29 UTC",
+  "coverage_pct": 23.97,
+  "scan_date": "2026-10-04 04:19:08 UTC",
   "description": "Directly withdrawable Neufund EtherToken v2 ETH-T balances",
   "distribution": {
     ">=100 ETH": {
@@ -26,9 +26,9 @@
     }
   },
   "meta": {
-    "total_supply_eth": 475.67913018,
+    "total_supply_eth": 375.67913018,
     "holder_candidates_checked": 617,
-    "excluded_count": 3,
+    "excluded_count": 2,
     "excluded": [
       {
         "address": "0x0b7dc5a43ce121b4eaaa41b0f4f43bba47bb8951",
@@ -37,15 +37,9 @@
         "reason": "self_reference"
       },
       {
-        "address": "0x26b7dedab33c58bc9edc26d9cd81b8eee43c24dd",
-        "balance_wei": "54182755636303147479",
-        "balance_eth": 54.18275563630315,
-        "reason": "withdraw_call_reverts"
-      },
-      {
         "address": "0xea4df6f41e90dd7b6c482bda228925de159c03f5",
-        "balance_wei": "329834005173000000000",
-        "balance_eth": 329.83400517300004,
+        "balance_wei": "229834005173000000000",
+        "balance_eth": 229.834005173,
         "reason": "tracked_under_neufund_locked"
       }
     ],

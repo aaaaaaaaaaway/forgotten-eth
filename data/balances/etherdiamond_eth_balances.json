@@ -4,23 +4,35 @@
   "token_checked": "0x0000000000000000000000000000000000000000",
   "description": "ETH balances in defunct EtherDiamond contract",
   "scan_date": "2026-04-01 07:13:31 UTC",
-  "contract_eth_balance": "2.998449074855040936",
+  "contract_eth_balance": 2.998391,
   "total_addresses_scanned": 86,
-  "addresses_with_balance": 70,
-  "total_eth_in_balances": 2.632308,
+  "addresses_with_balance": 69,
+  "total_eth_in_balances": 2.63228,
   "coverage_pct": 87.79,
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "1-10 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
     "0.1-1 ETH": {
       "count": 8,
-      "total_eth": 2.08065605043434
+      "total_eth": 2.080656
     },
     "0.01-0.1 ETH": {
       "count": 9,
-      "total_eth": 0.5205339785547983
+      "total_eth": 0.520535
     },
     "<0.01 ETH": {
-      "count": 54,
-      "total_eth": 0.031220536700658177
+      "count": 52,
+      "total_eth": 0.03109
     }
   },
   "balances": [
@@ -375,8 +387,9 @@
     {
       "rank": 60,
       "address": "0x7a5c4caf90e9211d7d474918f764ebdc2f9ec1a3",
-      "balance_wei": "27608272876021",
-      "balance_eth": "0.000027608272876021"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 61,
@@ -453,5 +466,5 @@
       "original_balance_wei": "100328405583106475"
     }
   ],
-  "last_event_refresh": "2026-04-29 10:58:17 UTC"
+  "last_event_refresh": "2026-09-30 23:23:05 UTC"
 }

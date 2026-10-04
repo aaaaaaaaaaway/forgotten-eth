@@ -1,10 +1,10 @@
 {
   "contract": "0xecfae6f958f7ab15bdf171eeefa568e41eabf641",
   "balance_source": "eth",
-  "contract_eth_balance": 8.406251,
-  "total_eth_in_balances": 8.591992,
-  "addresses_with_balance": 421,
-  "coverage_pct": 102.21,
+  "contract_eth_balance": 8.31362,
+  "total_eth_in_balances": 8.49936,
+  "addresses_with_balance": 420,
+  "coverage_pct": 102.23,
   "scan_date": "2026-09-06 01:43:44 UTC",
   "description": "ETH balances in defunct LYNIA contract",
   "distribution": {
@@ -25,8 +25,8 @@
       "total_eth": 1.87442
     },
     "0.01-0.1 ETH": {
-      "count": 38,
-      "total_eth": 1.245497
+      "count": 37,
+      "total_eth": 1.152865
     },
     "<0.01 ETH": {
       "count": 373,
@@ -99,8 +99,9 @@
     {
       "rank": 11,
       "address": "0x050cbbcce5bc7d4e7831e9136dd54151609bb7ce",
-      "balance_wei": "92631733193746028",
-      "balance_eth": 0.09263173319374603
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 12,
@@ -2584,5 +2585,5 @@
       "balance_eth": 1.0353393354e-8
     }
   ],
-  "last_event_refresh": "2026-09-20 20:23:07 UTC"
+  "last_event_refresh": "2026-10-02 17:23:14 UTC"
 }

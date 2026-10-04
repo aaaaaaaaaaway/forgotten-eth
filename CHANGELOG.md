@@ -5,6 +5,16 @@ Protocol additions and notable Forgotten ETH changes live here instead of in the
 Canonical web page: https://forgotteneth.com/changelog
 RSS: https://forgotteneth.com/feed.xml
 
+## October 2026
+
+### Oct 4 — Bridge withdrawals
+
+Added support for unfinished withdrawals across 58 bridge integrations, including Arbitrum, Optimism, Polygon and NEAR Rainbow. Claims use the original bridge contracts. Per-address bridge data stays out of the public repository.
+
+### Oct 3 — The Idols refunds and KnownOrigin WETH royalties
+
+Added three Idols ETH refund/proceeds distributions (14.88 ETH) and KnownOrigin WETH royalties (15.10 WETH), covering 416 verified claims. Recipient addresses stay out of the public mirror.
+
 ## September 2026
 
 ### Sep 23 — KeeperDAO / Rook kDAI and kUSDC (+77.6k DAI, +64.1k USDC)

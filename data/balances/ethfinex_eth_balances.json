@@ -1,9 +1,9 @@
 {
   "contract": "0xaA7427D8f17D87a28F5e1ba3aDBB270bAdbe1011",
   "balance_source": "eth",
-  "contract_eth_balance": 930.617323,
-  "total_eth_in_balances": 930.617323,
-  "addresses_with_balance": 341,
+  "contract_eth_balance": 929.508916,
+  "total_eth_in_balances": 929.508917,
+  "addresses_with_balance": 337,
   "coverage_pct": 100,
   "scan_date": "2026-09-06 01:44:07 UTC",
   "description": "ETH balances in defunct Ethfinex Trustless contract",
@@ -21,16 +21,16 @@
       "total_eth": 68.900201
     },
     "0.1-1 ETH": {
-      "count": 75,
-      "total_eth": 24.755045
+      "count": 73,
+      "total_eth": 23.657245
     },
     "0.01-0.1 ETH": {
-      "count": 83,
-      "total_eth": 3.224634
+      "count": 82,
+      "total_eth": 3.214634
     },
     "<0.01 ETH": {
-      "count": 150,
-      "total_eth": 0.183618
+      "count": 149,
+      "total_eth": 0.183011
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
@@ -301,10 +301,11 @@
     {
       "rank": 34,
       "address": "0x1705f70af6cde3cd3eb7724c0d0ed31814bdfbd3",
-      "balance_wei": "995500000000000000",
-      "balance_eth": 0.9955,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "last_tx_date": "2019-02",
-      "last_tx_hash": "0x4ac281c568e6a7ecb510cad19cde7bd55039ff5102c868fb7e4e457d4ce82113"
+      "last_tx_hash": "0x4ac281c568e6a7ecb510cad19cde7bd55039ff5102c868fb7e4e457d4ce82113",
+      "claimed": true
     },
     {
       "rank": 35,
@@ -856,10 +857,11 @@
     {
       "rank": 104,
       "address": "0xaedc687fa5376d2fe9d4b81ebfc8c2ba30ba54ae",
-      "balance_wei": "102300000000000000",
-      "balance_eth": 0.1023,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "last_tx_date": "2019-03",
-      "last_tx_hash": "0xa77ffb0774ca6a0eac71f6cf90184dd01e00e2f0fb014c7fd63e408be30644dc"
+      "last_tx_hash": "0xa77ffb0774ca6a0eac71f6cf90184dd01e00e2f0fb014c7fd63e408be30644dc",
+      "claimed": true
     },
     {
       "rank": 105,
@@ -1552,10 +1554,11 @@
     {
       "rank": 191,
       "address": "0x98cf637b0546f0b096c500e772f00794b2dc0717",
-      "balance_wei": "10000000000000000",
-      "balance_eth": 0.01,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "last_tx_date": "2018-12",
-      "last_tx_hash": "0xfaa1370d95a7d94153bfc8f1f90c68ad001b93fc4f2eab67886bf9387e205bf6"
+      "last_tx_hash": "0xfaa1370d95a7d94153bfc8f1f90c68ad001b93fc4f2eab67886bf9387e205bf6",
+      "claimed": true
     },
     {
       "rank": 192,
@@ -1958,10 +1961,11 @@
     {
       "rank": 242,
       "address": "0x3838433f63f4d4a24260f2485aacf5894ba7bc93",
-      "balance_wei": "606530951781545",
-      "balance_eth": 0.000606530951781545,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "last_tx_date": "2019-02",
-      "last_tx_hash": "0x53ff70e3a56026eb02d20dfc13321bd52258c4749a63e12ca10b7b5b7b89fe58"
+      "last_tx_hash": "0x53ff70e3a56026eb02d20dfc13321bd52258c4749a63e12ca10b7b5b7b89fe58",
+      "claimed": true
     },
     {
       "rank": 243,
@@ -2764,5 +2768,5 @@
       "last_tx_hash": "0x3ece93e2af75ba490126e973143567166effe7efca6eecb1b243cf7a6a0ef4e6"
     }
   ],
-  "last_event_refresh": "2026-09-09 15:43:45 UTC"
+  "last_event_refresh": "2026-10-03 23:23:05 UTC"
 }

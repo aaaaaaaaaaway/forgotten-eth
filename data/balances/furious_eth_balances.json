@@ -4,23 +4,35 @@
   "token_checked": "0x0000000000000000000000000000000000000000",
   "description": "ETH balances in defunct Furious contract",
   "scan_date": "2026-03-19 21:24:00 UTC",
-  "contract_eth_balance": "3.116042964702941795",
+  "contract_eth_balance": 3.115804,
   "total_addresses_scanned": 181,
-  "addresses_with_balance": 157,
-  "total_eth_in_balances": 1.6256681996521756,
+  "addresses_with_balance": 155,
+  "total_eth_in_balances": 1.625544,
   "coverage_pct": 52.17,
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "1-10 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
     "0.1-1 ETH": {
       "count": 3,
-      "total_eth": 1.0758191584282188
+      "total_eth": 1.075819
     },
     "0.01-0.1 ETH": {
       "count": 12,
-      "total_eth": 0.43744735184732497
+      "total_eth": 0.437447
     },
     "<0.01 ETH": {
-      "count": 142,
-      "total_eth": 0.11240168937663116
+      "count": 140,
+      "total_eth": 0.112275
     }
   },
   "balances": [
@@ -363,8 +375,9 @@
     {
       "rank": 57,
       "address": "0x77b889c703fd8f8824fe67d92793cf6a28d0c2e5",
-      "balance_wei": "82477163767480",
-      "balance_eth": "0.000082477163767480"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 58,
@@ -417,8 +430,9 @@
     {
       "rank": 66,
       "address": "0x2f522846d107899b9736f83287983928157326b4",
-      "balance_wei": "41742763378864",
-      "balance_eth": "0.000041742763378864"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 67,
@@ -966,5 +980,6 @@
       "balance_wei": "538992",
       "balance_eth": "0.000000000000538992"
     }
-  ]
+  ],
+  "last_event_refresh": "2026-09-30 23:23:05 UTC"
 }

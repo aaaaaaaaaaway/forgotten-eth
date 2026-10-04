@@ -1,14 +1,14 @@
 {
   "contract": "0x4d37ef04724fec8b80aab3f6b7e7f4ef4181d9a9",
   "balance_source": "token",
-  "contract_eth_balance": 30.20963708,
-  "total_eth_in_balances": 30.20963708,
-  "addresses_with_balance": 74,
+  "contract_eth_balance": 29.20963708,
+  "total_eth_in_balances": 29.20963708,
+  "addresses_with_balance": 73,
   "coverage_pct": 100.0,
-  "scan_date": "2026-09-23 16:30:30 UTC",
+  "scan_date": "2026-10-04 04:31:18 UTC",
   "distribution": {
     ">=10 ETH": 1,
-    "1-10 ETH": 7,
+    "1-10 ETH": 6,
     "0.1-1 ETH": 12,
     "0.01-0.1 ETH": 14,
     "<0.01 ETH": 40
@@ -29,7 +29,7 @@
     "final_coin_per_collateral_price": "1408803003974588705515881",
     "accumulated_rate": "1003780882956070313962213806",
     "collateral_shortfall": "0",
-    "weth_in_collateral_join": 44.369351943462995,
+    "weth_in_collateral_join": 43.369351943462995,
     "contract_held": [
       {
         "address": "0xebde9f61e34b7ac5aae5a4170e964ea85988008c",
@@ -252,26 +252,6 @@
       "rank": 7
     },
     {
-      "address": "0xa9f078b3b6dd6c04308f19def394b6d5a1b8b732",
-      "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0,
-      "protorai_items": [
-        {
-          "type": "safe",
-          "safe_id": 104,
-          "handle": "0xa86b8dc7b72779d44595e7522e2aa10a253721e0",
-          "safe_owner": "0x7e62cd45a0443cabe07438d2d6ff9f655190111c",
-          "proxy": "0x7e62cd45a0443cabe07438d2d6ff9f655190111c",
-          "locked_wei": "1000000000000000000",
-          "debt_wei": "0",
-          "eth_wei": "1000000000000000000",
-          "eth": 1.0
-        }
-      ],
-      "proxy": "0x7e62cd45a0443cabe07438d2d6ff9f655190111c",
-      "rank": 8
-    },
-    {
       "address": "0xccd72bea12f3927063be3d8798a4b74082713cb5",
       "balance_wei": "550617628345409155",
       "balance_eth": 0.5506176283454092,
@@ -297,7 +277,7 @@
         }
       ],
       "proxy": "0x0568fe9631a2a9a64c5d4ea71ab98a9b7c27e99c",
-      "rank": 9
+      "rank": 8
     },
     {
       "address": "0xbaaeb7aae88c94d682dd779318c4fe0fc450eb3f",
@@ -325,7 +305,7 @@
         }
       ],
       "proxy": "0xf12f409e74a8b88c20ef3a4f51cd7c3b6b551de3",
-      "rank": 10
+      "rank": 9
     },
     {
       "address": "0x9747c2385d751c90eb793d2d746c8bc217d244d1",
@@ -345,7 +325,7 @@
         }
       ],
       "proxy": "0x549b4d3de1ea31e8d894acb9a38015702f140dbe",
-      "rank": 11
+      "rank": 10
     },
     {
       "address": "0x828355119398b77d364f41ef6533dad936d5b5c1",
@@ -365,7 +345,7 @@
         }
       ],
       "proxy": "0xf45b82ff50b0728f75e05dc6fbbc622755eca8b4",
-      "rank": 12
+      "rank": 11
     },
     {
       "address": "0xb5e45dc91dba9caa61001fd923ba6aa7b69df1e2",
@@ -382,7 +362,7 @@
         }
       ],
       "proxy": null,
-      "rank": 13
+      "rank": 12
     },
     {
       "address": "0x674832e67e3086330b043fd8300ea8409db55511",
@@ -399,7 +379,7 @@
         }
       ],
       "proxy": "0x5f73addb537ad292630571c7af79cd6a12261606",
-      "rank": 14
+      "rank": 13
     },
     {
       "address": "0xc8d46eb7881975f9ae15216feeba2ff58e55803c",
@@ -427,7 +407,7 @@
         }
       ],
       "proxy": "0x5d783d3c3880a8176335489f0992dd4324d7ae56",
-      "rank": 15
+      "rank": 14
     },
     {
       "address": "0x4f9b8d081205320f1c3dc3693c6fe98c4a8cc735",
@@ -444,7 +424,7 @@
         }
       ],
       "proxy": "0x814af466706dc5325213726d4a489dac51153d49",
-      "rank": 16
+      "rank": 15
     },
     {
       "address": "0x2688dae847be5cd32baca44ef60e4ade7b296d45",
@@ -464,7 +444,7 @@
         }
       ],
       "proxy": "0xfa8fb4c83f6e353ac2a7a8a3d41f45dd39e16f49",
-      "rank": 17
+      "rank": 16
     },
     {
       "address": "0x097b29ba2a9182644e456410d2466e4f988de832",
@@ -484,7 +464,7 @@
         }
       ],
       "proxy": "0x6bc317da9906d9fb5ff522abf982a3bad486bdc1",
-      "rank": 18
+      "rank": 17
     },
     {
       "address": "0x7bfee91193d9df2ac0bfe90191d40f23c773c060",
@@ -504,7 +484,7 @@
         }
       ],
       "proxy": "0xd0618efaf7c15395a8d9d050bfb55ebc94a3005c",
-      "rank": 19
+      "rank": 18
     },
     {
       "address": "0xe582794320fa7424a1f9db360a46446244065cb5",
@@ -524,7 +504,7 @@
         }
       ],
       "proxy": "0x28e0be01b56a86f3fa5942946d36e1497f4b6bd5",
-      "rank": 20
+      "rank": 19
     },
     {
       "address": "0x875542e4b00754baae02ebb6dbfbacaa394fe4f9",
@@ -541,7 +521,7 @@
         }
       ],
       "proxy": null,
-      "rank": 21
+      "rank": 20
     },
     {
       "address": "0x460ac13ea5c98d7cf0f133257764bc2da2ad61b4",
@@ -558,7 +538,7 @@
         }
       ],
       "proxy": null,
-      "rank": 22
+      "rank": 21
     },
     {
       "address": "0xcbe6edc5b6ebbf3246e6ebecb8d354b9fd9a36d0",
@@ -575,7 +555,7 @@
         }
       ],
       "proxy": "0x44732d40ccac09afee24aa090c1e352549d50723",
-      "rank": 23
+      "rank": 22
     },
     {
       "address": "0x2b19fde5d7377b48be50a5d0a78398a496e8b15c",
@@ -603,7 +583,7 @@
         }
       ],
       "proxy": "0x449409392e39adcb091e7c1901e53a9ec74869fa",
-      "rank": 24
+      "rank": 23
     },
     {
       "address": "0x3dd48ad861f0b77d1312f9c95a13e52871ca95e0",
@@ -620,7 +600,7 @@
         }
       ],
       "proxy": null,
-      "rank": 25
+      "rank": 24
     },
     {
       "address": "0x0154d25120ed20a516fe43991702e7463c5a6f6e",
@@ -637,7 +617,7 @@
         }
       ],
       "proxy": null,
-      "rank": 26
+      "rank": 25
     },
     {
       "address": "0x03d1ba09c6b93692cc5a2f17c3b1c5cba43b9500",
@@ -654,7 +634,7 @@
         }
       ],
       "proxy": "0x680adf080bd94dcc621540aca3e5d472c50e987b",
-      "rank": 27
+      "rank": 26
     },
     {
       "address": "0xa075e3aa3b6616fb60bdd90f4e8929eb3c73b472",
@@ -671,7 +651,7 @@
         }
       ],
       "proxy": null,
-      "rank": 28
+      "rank": 27
     },
     {
       "address": "0xfb7238a230de49e96d2a880ba984dfa1e2523f85",
@@ -688,7 +668,7 @@
         }
       ],
       "proxy": "0xdfec2e554b5f916189b6423e8e8c13266317a5c2",
-      "rank": 29
+      "rank": 28
     },
     {
       "address": "0x4add3b2277e1a79e4cf6b52ccb26b2c80b37f142",
@@ -705,7 +685,7 @@
         }
       ],
       "proxy": null,
-      "rank": 30
+      "rank": 29
     },
     {
       "address": "0xfeb620b14a9c3683cecb9097802af9c32e51c701",
@@ -722,7 +702,7 @@
         }
       ],
       "proxy": null,
-      "rank": 31
+      "rank": 30
     },
     {
       "address": "0xd23199f1222c418ffc74c385171330b21b16e452",
@@ -739,7 +719,7 @@
         }
       ],
       "proxy": null,
-      "rank": 32
+      "rank": 31
     },
     {
       "address": "0x2c2f838f0dac3f4915f4a57f3cb63abcd806ee40",
@@ -756,7 +736,7 @@
         }
       ],
       "proxy": null,
-      "rank": 33
+      "rank": 32
     },
     {
       "address": "0x68575571e75d2cfa4222e0f8e7053f056eb91d6c",
@@ -776,7 +756,7 @@
         }
       ],
       "proxy": "0x383c4eba970cb7fd87e1705f764e731998ad63c8",
-      "rank": 34
+      "rank": 33
     },
     {
       "address": "0x61572ca1c6d53011e9b5318aa26dd285c7df6997",
@@ -793,7 +773,7 @@
         }
       ],
       "proxy": null,
-      "rank": 35
+      "rank": 34
     },
     {
       "address": "0xa6dffbc492e1dccae78bf4f6f6c13b1f96469e11",
@@ -810,7 +790,7 @@
         }
       ],
       "proxy": null,
-      "rank": 36
+      "rank": 35
     },
     {
       "address": "0xdfad0c01a28d9d95486bb3f0821e4f5644704fa7",
@@ -827,7 +807,7 @@
         }
       ],
       "proxy": "0xd75baa2853ede2daf08bdd73cee8a39595510023",
-      "rank": 37
+      "rank": 36
     },
     {
       "address": "0xd4e6fd78c21085d01dbd596d287360d746acf4d8",
@@ -844,7 +824,7 @@
         }
       ],
       "proxy": "0x5546e511b0e3d647751a3a661f525e7dc0ff06eb",
-      "rank": 38
+      "rank": 37
     },
     {
       "address": "0x4f50d47d20380172746527bbeaa274940c38efac",
@@ -861,7 +841,7 @@
         }
       ],
       "proxy": "0xba667f54d7f5a9a99b289deefd24f8db872ed33c",
-      "rank": 39
+      "rank": 38
     },
     {
       "address": "0x3e0139ce3533a42a7d342841aee69ab2bfee1d51",
@@ -878,7 +858,7 @@
         }
       ],
       "proxy": "0x08a068d698f73cd180bedee553c8163ec5c9ca75",
-      "rank": 40
+      "rank": 39
     },
     {
       "address": "0x9a568bfeb8cb19e4bafcb57ee69498d57d9591ca",
@@ -895,7 +875,7 @@
         }
       ],
       "proxy": "0x471731eeb1a8ff488c42927c1ca2a8b8c5adffae",
-      "rank": 41
+      "rank": 40
     },
     {
       "address": "0x1404c00e08739bd020fdcc20de541edd1869c244",
@@ -912,7 +892,7 @@
         }
       ],
       "proxy": null,
-      "rank": 42
+      "rank": 41
     },
     {
       "address": "0x6a72c9de45b0697d2cbb8f724423fc3ff2df2074",
@@ -929,7 +909,7 @@
         }
       ],
       "proxy": "0x534c0dda1213593bb8274494cac4ad31290f2f69",
-      "rank": 43
+      "rank": 42
     },
     {
       "address": "0x737e5f0fbbafa9b98eb0251e9293c51221bb97c7",
@@ -946,7 +926,7 @@
         }
       ],
       "proxy": null,
-      "rank": 44
+      "rank": 43
     },
     {
       "address": "0x77c1d273862b6aa39265debcaae35cd7f9ea1c87",
@@ -963,7 +943,7 @@
         }
       ],
       "proxy": null,
-      "rank": 45
+      "rank": 44
     },
     {
       "address": "0xadeeb9d09b8bcee10943198fb6f6a4229bab3675",
@@ -980,7 +960,7 @@
         }
       ],
       "proxy": "0x30e4d4c10a2d317612b283e6dda3b5810eaf96e5",
-      "rank": 46
+      "rank": 45
     },
     {
       "address": "0xfa5e4955a11902f849ecaddef355db69c2036de6",
@@ -997,7 +977,7 @@
         }
       ],
       "proxy": "0x657b95d5bbd9e8cbcf02f75e8454b267a4d4aa06",
-      "rank": 47
+      "rank": 46
     },
     {
       "address": "0x08717dc665247452454b6976a0fc6aab3a97d31f",
@@ -1014,7 +994,7 @@
         }
       ],
       "proxy": null,
-      "rank": 48
+      "rank": 47
     },
     {
       "address": "0x0ce1ff652be78322e312e5073cd96b5e1cf5306e",
@@ -1031,7 +1011,7 @@
         }
       ],
       "proxy": null,
-      "rank": 49
+      "rank": 48
     },
     {
       "address": "0x45c9a201e2937608905fef17de9a67f25f9f98e0",
@@ -1048,7 +1028,7 @@
         }
       ],
       "proxy": null,
-      "rank": 50
+      "rank": 49
     },
     {
       "address": "0x8f9cfa5e735dca900ee392b657dfefbf3af7fecf",
@@ -1065,7 +1045,7 @@
         }
       ],
       "proxy": "0x63c512fd3550b9579816c082accfe337aba9cb81",
-      "rank": 51
+      "rank": 50
     },
     {
       "address": "0x7e3a64e015dd08130a17afc9aea8b85e7aeff178",
@@ -1082,7 +1062,7 @@
         }
       ],
       "proxy": "0x5ddf424fe0947254a0dcbdae692a34374aba67b1",
-      "rank": 52
+      "rank": 51
     },
     {
       "address": "0x389011d722e6aada5ee003d4f023943b9fdf54a0",
@@ -1099,7 +1079,7 @@
         }
       ],
       "proxy": "0x1498021ee6f241e810a1d8b63792b2d6d062912b",
-      "rank": 53
+      "rank": 52
     },
     {
       "address": "0xfeec05a103f3ee7c4c42ee1d799b39a5b4c62dbf",
@@ -1116,7 +1096,7 @@
         }
       ],
       "proxy": "0x50dc2034f90d99d919f2df01cf9d991a8a447fe9",
-      "rank": 54
+      "rank": 53
     },
     {
       "address": "0x7db5d398d3e9b1d0b1d119e53af3e03164637ed5",
@@ -1133,7 +1113,7 @@
         }
       ],
       "proxy": "0x80207121110b750131894064b8bb682c215c41bc",
-      "rank": 55
+      "rank": 54
     },
     {
       "address": "0xd8fd1ad0da93d380c96b9de5f0b6624b03b7963a",
@@ -1150,7 +1130,7 @@
         }
       ],
       "proxy": "0x9c85c55118f3f47762f2e208e930a921edaf33f3",
-      "rank": 56
+      "rank": 55
     },
     {
       "address": "0x24ee78f038525eccae186bc3bcf5d2badd850bd9",
@@ -1167,7 +1147,7 @@
         }
       ],
       "proxy": "0x59ed899ed4d4f29a151dcd6c36af344e52a620fa",
-      "rank": 57
+      "rank": 56
     },
     {
       "address": "0x28d804bf2212e220bc2b7b6252993db8286df07f",
@@ -1184,7 +1164,7 @@
         }
       ],
       "proxy": "0x01de2b4c80c1092c6858cb97d249f5e5ff17c182",
-      "rank": 58
+      "rank": 57
     },
     {
       "address": "0x5e3785472f87cdab0402336d54a5917e97ec40b1",
@@ -1201,7 +1181,7 @@
         }
       ],
       "proxy": null,
-      "rank": 59
+      "rank": 58
     },
     {
       "address": "0x43faf3f8bef053d901c572edc32f055c20efb764",
@@ -1218,7 +1198,7 @@
         }
       ],
       "proxy": "0xd2b1adc6f505f20b3d6d1919c0aa95401899188c",
-      "rank": 60
+      "rank": 59
     },
     {
       "address": "0x004537fcd9095489ebe38180a382341b962b501d",
@@ -1235,7 +1215,7 @@
         }
       ],
       "proxy": "0x9c7a7273d3b0ea88a24d71fcca157aa49e568689",
-      "rank": 61
+      "rank": 60
     },
     {
       "address": "0xd164ff4c786d851a0e2d2fc1bf78370dc9cc1d80",
@@ -1252,7 +1232,7 @@
         }
       ],
       "proxy": "0x0cf9a7d9cfeecb339c44c3dbe657b79aaf7e0254",
-      "rank": 62
+      "rank": 61
     },
     {
       "address": "0xaa73128e32eda345d26245e6e0ecb14ad83cc8b3",
@@ -1269,7 +1249,7 @@
         }
       ],
       "proxy": "0xa375818f80bf2db0b0e045cbf6c3d777320d4420",
-      "rank": 63
+      "rank": 62
     },
     {
       "address": "0xc5c7d40b0d752781b375c4ea67d488539f63f8df",
@@ -1286,7 +1266,7 @@
         }
       ],
       "proxy": "0xbb91524494abca3afc3083b11f4d29446aefa047",
-      "rank": 64
+      "rank": 63
     },
     {
       "address": "0xe73dbaafaf64b349f1d7a722e43df2c95916da37",
@@ -1303,7 +1283,7 @@
         }
       ],
       "proxy": "0xca36757761e2b2f2148891890970b7eee6e4cea2",
-      "rank": 65
+      "rank": 64
     },
     {
       "address": "0xe8b20e3b4a49b1b814abfecda1aab68e4f4874ee",
@@ -1320,7 +1300,7 @@
         }
       ],
       "proxy": "0x03dcf6079ce4526f8383dddabaa05a2b13387f39",
-      "rank": 66
+      "rank": 65
     },
     {
       "address": "0x774a98009709311e75434f6edc1c067abd92537f",
@@ -1337,7 +1317,7 @@
         }
       ],
       "proxy": "0xf49fd994aac66bc1c9175a5752e9db7408b87ba5",
-      "rank": 67
+      "rank": 66
     },
     {
       "address": "0xc79c88386c95130bf7c20a184cb8281ed639fab4",
@@ -1354,7 +1334,7 @@
         }
       ],
       "proxy": "0xf68ed588e7aa8d1b3cbbf63bb5413b002b559f5f",
-      "rank": 68
+      "rank": 67
     },
     {
       "address": "0xf7b10d603907658f690da534e9b7dbc4dab3e2d6",
@@ -1371,7 +1351,7 @@
         }
       ],
       "proxy": "0xc168ea9034f0e9f839f3da9809b4efb4e56f9c75",
-      "rank": 69
+      "rank": 68
     },
     {
       "address": "0x8f9be4310f9abb0e5843cc6363908c9b01dfeb3f",
@@ -1388,7 +1368,7 @@
         }
       ],
       "proxy": "0xb0d21e99d159fd8146bb7ecce2165548ce8571af",
-      "rank": 70
+      "rank": 69
     },
     {
       "address": "0x0cb27e883e207905ad2a94f9b6ef0c7a99223c37",
@@ -1405,7 +1385,7 @@
         }
       ],
       "proxy": "0x315a78112450000198da2ce456dbccc10bcc39ec",
-      "rank": 71
+      "rank": 70
     },
     {
       "address": "0x9d361be34937f8a123f78bb2ebc8b15bf2100cd3",
@@ -1422,7 +1402,7 @@
         }
       ],
       "proxy": "0xadbef323fe4a81629fab25971b99b0920a416f9d",
-      "rank": 72
+      "rank": 71
     },
     {
       "address": "0xa53a13a80d72a855481de5211e7654fabdfe3526",
@@ -1439,7 +1419,7 @@
         }
       ],
       "proxy": "0x9fd6a192bf208299267ca947b841f4409d7847bf",
-      "rank": 73
+      "rank": 72
     },
     {
       "address": "0x36d960741d2ea0bfccfa23838828af528e38cd9a",
@@ -1456,7 +1436,7 @@
         }
       ],
       "proxy": null,
-      "rank": 74
+      "rank": 73
     }
   ]
 }

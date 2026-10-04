@@ -4,12 +4,12 @@ Forgotten ETH indexes old Ethereum contracts that still owe users withdrawable E
 
 **[forgotteneth.com](https://forgotteneth.com)** · **[API](https://forgotteneth.com/api)** · **[Changelog](https://forgotteneth.com/changelog)** · **[RSS](https://forgotteneth.com/feed.xml)** · **[forgotten-eth.eth](https://etherscan.io/address/0x95a708aAAB1D336bB60EF2F40212672F4cf65736)**
 
-Current public index:
+Current repository index (publication follows deployment):
 
-- 295 tracked recovery contracts
-- 173,498.03 ETH mapped to claimable balances
-- 727,784 addresses with at least one mapped balance
-- 19,630.41 ETH already claimed by 27,756 wallets since launch
+- 357 tracked recovery integrations, including 58 bridges
+- 195,193.31 ETH mapped to claimable balances
+- 786,623 addresses with at least one mapped balance
+- 21,216.03 ETH already claimed by 28,337 wallets since launch
 
 Totals are generated from [`data/total.json`](data/total.json).
 

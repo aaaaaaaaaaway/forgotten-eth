@@ -2628,5 +2628,541 @@
     "contract": "0x0a14b696350546110a0d8acdb86226983af9d2a0",
     "deployed": "April 2026",
     "slug": "zksync-lite"
+  },
+  "dydx_v3": {
+    "name": "dYdX v3",
+    "desc": "dYdX v3 was a perpetuals exchange built on StarkEx, with trading on a validity rollup and settlement on Ethereum. The exchange was frozen on 30 October 2024. Withdrawals that the rollup had already processed were credited to each account's pending balance on the Ethereum contract, and a freeze does not block collecting them, but many were never collected. Funds still inside positions at the freeze can be moved to that pending balance through the contract's escape hatch, which checks each position against the frozen exchange state on chain.",
+    "category": "defi",
+    "color": "#6966ff",
+    "contract": "0xd54f502e184b6b739d7d27a6410a67dc462d69c8",
+    "deployed": "April 2021",
+    "slug": "dydx-v3"
+  },
+  "apex_starkex": {
+    "name": "ApeX Pro (StarkEx)",
+    "desc": "ApeX Pro ran its first perpetuals exchange on StarkEx, with separate Ethereum contracts for USDC and USDT. Both contracts are frozen. Withdrawals the rollup had already processed sit as pending balances on those contracts and remain collectable.",
+    "category": "defi",
+    "color": "#2b73e8",
+    "contract": "0xa1d5443f2fb80a5a55ac804c948b45ce4c52dcbb",
+    "deployed": "2022",
+    "slug": "apex"
+  },
+  "starknet_starkgate": {
+    "name": "Starknet Bridge (StarkGate)",
+    "desc": "StarkGate is the canonical bridge between Starknet and Ethereum. A withdrawal starts on Starknet and is recorded on Ethereum as a message once the state update that contains it is proven. The funds only move when that message is consumed on Ethereum, and tens of thousands of withdrawals were recorded but never consumed.",
+    "category": "other",
+    "color": "#ec796b",
+    "contract": "0xc662c410c0ecf747543f5ba90660f6abebd9c8c4",
+    "deployed": "November 2021",
+    "slug": "starknet-bridge"
+  },
+  "lighter": {
+    "name": "Lighter",
+    "desc": "Lighter is a zk-rollup exchange that settles on Ethereum. When a withdrawal cannot be delivered directly it is kept as a pending balance on the Ethereum contract, including balances left in the contract's pre-upgrade legacy USDC ledger.",
+    "category": "dex",
+    "color": "#1c1c1c",
+    "contract": "0x3b4d794a66304f130a4db8f2551b0070dfcf5ca7",
+    "deployed": "2025",
+    "slug": "lighter"
+  },
+  "tanx": {
+    "name": "tanX (Brine)",
+    "desc": "tanX, launched as Brine, is an order-book exchange built on StarkEx that settles on Ethereum. In January 2026 a large batch of account balances was credited to pending withdrawals on its Ethereum contract. A pending withdrawal is paid to the Ethereum address registered to the account's Stark key, and many accounts never registered one on chain.",
+    "category": "dex",
+    "color": "#4a3aff",
+    "contract": "0x1390f521a79babe99b69b37154d63d431da27a07",
+    "deployed": "July 2022",
+    "slug": "tanx"
+  },
+  "arbitrum_one": {
+    "name": "Arbitrum One Bridge",
+    "desc": "Arbitrum One is an optimistic rollup that settles on Ethereum. A withdrawal starts on Arbitrum and becomes executable on the Ethereum outbox once the rollup state containing it is confirmed. The funds only move when someone executes it there, and thousands of confirmed withdrawals never were.",
+    "category": "other",
+    "color": "#28a0f0",
+    "contract": "0x0b9857ae2d4a3dbe74ffe1d7df045bb7f96e4840",
+    "deployed": "August 2022",
+    "slug": "arbitrum"
+  },
+  "arbitrum_nova": {
+    "name": "Arbitrum Nova Bridge",
+    "desc": "Arbitrum Nova is an AnyTrust chain in the Arbitrum family that settles on Ethereum. Its withdrawals work as on Arbitrum One: once the chain state containing one is confirmed, it can be executed on the Ethereum outbox at any time, and many never were.",
+    "category": "other",
+    "color": "#ef8220",
+    "contract": "0xd4b80c3d7240325d18e645b49e6535a3bf95cc58",
+    "deployed": "August 2022",
+    "slug": "arbitrum-nova"
+  },
+  "arbitrum_classic": {
+    "name": "Arbitrum One Bridge (Classic)",
+    "desc": "Before the Nitro upgrade in August 2022, Arbitrum One ran its original software, with a separate outbox on Ethereum. Withdrawals made in that period were confirmed long ago and can still be executed on that outbox, but thousands never were, including some of the largest ever made from Arbitrum.",
+    "category": "other",
+    "color": "#213147",
+    "contract": "0x760723cd2e632826c38fef8cd438a4cc7e7e1a40",
+    "deployed": "May 2021",
+    "slug": "arbitrum-classic"
+  },
+  "cctp": {
+    "name": "Circle CCTP (USDC)",
+    "desc": "Circle's Cross-Chain Transfer Protocol moves USDC between chains by burning it on the source chain and minting it on the destination once Circle has signed an attestation. A transfer to Ethereum only completes when the signed message is submitted there, and some attested burns never were.",
+    "category": "other",
+    "color": "#2775ca",
+    "contract": "0x0a992d191deec32afe36203ad87d7d289a738f81",
+    "deployed": "April 2023",
+    "slug": "cctp"
+  },
+  "polygon_pos": {
+    "name": "Polygon PoS Bridge",
+    "desc": "Polygon PoS is a proof-of-stake chain whose bridge to Ethereum works in two halves. A withdrawal burns the tokens on Polygon; once a checkpoint covering that burn is posted to Ethereum, the burn can be exited on the Ethereum bridge at any time, and only then are the tokens released. Tens of thousands of burns, some from 2020, were never exited.",
+    "category": "other",
+    "color": "#8247e5",
+    "contract": "0xa0c68c638235ee32657e8f720a23cec1bfc77c77",
+    "deployed": "August 2020",
+    "slug": "polygon-pos"
+  },
+  "zksync_era": {
+    "name": "ZKsync Era Bridge",
+    "desc": "ZKsync Era is a zero-knowledge rollup that settles on Ethereum. A withdrawal starts on ZKsync and can be finalized on Ethereum once the batch containing it has been executed there. The funds only move when someone finalizes it, and thousands of withdrawals never were.",
+    "category": "other",
+    "color": "#1e69ff",
+    "contract": "0x32400084c286cf3e17e7b677ea9583e60a000324",
+    "deployed": "March 2023",
+    "slug": "zksync-era"
+  },
+  "sophon": {
+    "name": "Sophon Bridge",
+    "desc": "Sophon is a chain built on the ZK stack that settles on Ethereum through the shared ZKsync bridge. A withdrawal from Sophon can be finalized on Ethereum once the batch containing it has been executed there, and it pays out only when someone finalizes it.",
+    "category": "other",
+    "color": "#8c55ff",
+    "contract": "0x05ede6ad1f39b7a16c949d5c33a0658c9c7241e3",
+    "deployed": "December 2024",
+    "slug": "sophon"
+  },
+  "abstract": {
+    "name": "Abstract Bridge",
+    "desc": "Abstract is a chain built on the ZK stack that settles on Ethereum through the shared ZKsync bridge. An ETH withdrawal from Abstract can be finalized on Ethereum once the batch containing it has been executed there, and it pays out only when someone finalizes it.",
+    "category": "other",
+    "color": "#00a85a",
+    "contract": "0x2edc71e9991a962c7fe172212d1aa9e50480fbb9",
+    "deployed": "January 2025",
+    "slug": "abstract"
+  },
+  "cronos_zkevm": {
+    "name": "Cronos zkEVM Bridge",
+    "desc": "Cronos zkEVM is a chain built on the ZK stack that settles on Ethereum through the shared ZKsync bridge. A withdrawal from it can be finalized on Ethereum once the batch containing it has been executed there, and it pays out only when someone finalizes it.",
+    "category": "other",
+    "color": "#002d74",
+    "contract": "0x7b2da4e77bae0e0d23c53c3be6650497d0576cfc",
+    "deployed": "August 2024",
+    "slug": "cronos-zkevm"
+  },
+  "linea": {
+    "name": "Linea Bridge",
+    "desc": "Linea is a zero-knowledge rollup that settles on Ethereum. A withdrawal is a message from Linea to Ethereum that can be claimed once the Linea blocks containing it are finalized on Ethereum. A message sent without a relayer fee is not delivered automatically, and thousands were never claimed.",
+    "category": "other",
+    "color": "#121212",
+    "contract": "0xd19d4b5d358258f05d7b411e21a1460d11b0876f",
+    "deployed": "July 2023",
+    "slug": "linea"
+  },
+  "scroll": {
+    "name": "Scroll Bridge",
+    "desc": "Scroll is a zero-knowledge rollup that settles on Ethereum. A withdrawal becomes executable on Ethereum once the batch containing it is finalized there, but Scroll does not execute withdrawals automatically, and thousands never were.",
+    "category": "other",
+    "color": "#c68a4c",
+    "contract": "0x6774bcbd5cecef1336b5300fb5186a12ddd8b367",
+    "deployed": "October 2023",
+    "slug": "scroll"
+  },
+  "polygon_zkevm": {
+    "name": "Polygon zkEVM Bridge",
+    "desc": "Polygon zkEVM was a zero-knowledge rollup that stopped producing blocks in July 2026. Withdrawals made before then can still be claimed from its bridge on Ethereum, and so can the balances left on the chain at shutdown, which Polygon published on Ethereum as an exit certificate and supports claiming until the end of 2027.",
+    "category": "other",
+    "color": "#8247e5",
+    "contract": "0x2a3dd3eb832af982ec71669e178424b10dca2ede",
+    "deployed": "March 2023",
+    "slug": "polygon-zkevm"
+  },
+  "ronin": {
+    "name": "Ronin Bridge",
+    "desc": "Ronin is an Ethereum sidechain. A withdrawal to Ethereum through its original bridge is signed by the bridge operators on Ronin and pays out when the signed receipt is submitted to the bridge gateway on Ethereum. Tens of thousands of signed withdrawals were never submitted.",
+    "category": "other",
+    "color": "#1273ea",
+    "contract": "0x64192819ac13ef72bf6b5ae239ac672b43a9af08",
+    "deployed": "February 2021",
+    "slug": "ronin"
+  },
+  "op_mainnet": {
+    "name": "OP Mainnet Bridge",
+    "desc": "OP Mainnet is an optimistic rollup that settles on Ethereum. A withdrawal from it takes two transactions on Ethereum: one proves it against a state root posted by the rollup, and after a waiting period a second one finalizes it and releases the funds. The withdrawals listed here were started but never completed on Ethereum, so the funds are still waiting in the bridge.",
+    "category": "other",
+    "color": "#ff0420",
+    "contract": "0xbeb5fc579115071764c7423a4f12edde41f106ed",
+    "deployed": "May 2023",
+    "slug": "optimism"
+  },
+  "base": {
+    "name": "Base Bridge",
+    "desc": "Base is an optimistic rollup built on the OP Stack that settles on Ethereum. Its withdrawals are proven on Ethereum and then, after a waiting period, finalized to release the funds. The withdrawals listed here were started but never completed on Ethereum, so the funds are still waiting in the bridge.",
+    "category": "other",
+    "color": "#0052ff",
+    "contract": "0x49048044d57e1c92a77f79988d21fa8faf74e97e",
+    "deployed": "June 2023",
+    "slug": "base"
+  },
+  "unichain": {
+    "name": "Unichain Bridge",
+    "desc": "Unichain is a rollup built on the OP Stack that settles on Ethereum. Its withdrawals are proven on Ethereum and then, after a waiting period, finalized to release the funds. The withdrawals listed here were proven on Ethereum but never finalized, so the funds are still waiting in the bridge.",
+    "category": "other",
+    "color": "#f50db4",
+    "contract": "0x0bd48f6b86a26d3a217d0fa6ffe2b491b956a7a2",
+    "deployed": "November 2024",
+    "slug": "unichain"
+  },
+  "ink": {
+    "name": "Ink Bridge",
+    "desc": "Ink is a rollup built on the OP Stack that settles on Ethereum. Its withdrawals are proven on Ethereum and then, after a waiting period, finalized to release the funds. The withdrawals listed here were started but never completed on Ethereum, so the funds are still waiting in the bridge.",
+    "category": "other",
+    "color": "#7132f5",
+    "contract": "0x5d66c1782664115999c47c9fa5cd031f495d3e4f",
+    "deployed": "December 2024",
+    "slug": "ink"
+  },
+  "manta_pacific": {
+    "name": "Manta Pacific Bridge",
+    "desc": "Manta Pacific is a rollup built on the OP Stack that settles on Ethereum, where a single proposer posts its state roots. A withdrawal is proven against one of those roots and finalized after a waiting period. The withdrawals listed here were started but never completed on Ethereum, so the funds are still waiting in the bridge.",
+    "category": "other",
+    "color": "#1b8bd6",
+    "contract": "0x9168765ee952de7c6f8fc6fad5ec209b960b7622",
+    "deployed": "September 2023",
+    "slug": "manta-pacific"
+  },
+  "dbk_chain": {
+    "name": "DBK Chain Bridge",
+    "desc": "DBK Chain is a rollup built on the OP Stack that settles on Ethereum, where a single proposer posts its state roots. A withdrawal is proven against one of those roots and finalized after a waiting period. The withdrawals listed here were started but never completed on Ethereum, so the funds are still waiting in the bridge.",
+    "category": "other",
+    "color": "#2b2b2b",
+    "contract": "0x63ca00232f471be2a3bf3c4e95bc1d2b3ea5db92",
+    "deployed": "June 2024",
+    "slug": "dbk-chain"
+  },
+  "blast": {
+    "name": "Blast Bridge",
+    "desc": "Blast announced its shutdown on 2 October 2026. Its withdrawals are proven on Ethereum and finalized after a waiting period. ETH is paid out of a withdrawal queue, and bridged stablecoins come back as DAI through a second claim from Blast's queue. The withdrawals listed here were started but never completed on Ethereum, so the funds are still waiting in the bridge.",
+    "category": "other",
+    "color": "#fcfc03",
+    "contract": "0x0ec68c5b10f21effb74f2a5c61dfe6b08c0db6cb",
+    "deployed": "February 2024",
+    "slug": "blast"
+  },
+  "mantle": {
+    "name": "Mantle Bridge",
+    "desc": "Mantle is an optimistic rollup that settles on Ethereum and uses MNT as its gas token. Its withdrawals are proven against a posted state root and finalized after a waiting period. The withdrawals listed here were started but never completed on Ethereum, so the funds are still waiting in the bridge.",
+    "category": "other",
+    "color": "#65b3ae",
+    "contract": "0xc54cb22944f2be476e02decfcd7e3e7d3e15a8fb",
+    "deployed": "March 2024",
+    "slug": "mantle"
+  },
+  "zora": {
+    "name": "Zora Bridge",
+    "desc": "Zora is a rollup built on the OP Stack that settles on Ethereum. Its withdrawals are proven on Ethereum and then, after a waiting period, finalized to release the funds. The withdrawals listed here were started but never completed on Ethereum, so the funds are still waiting in the bridge.",
+    "category": "other",
+    "color": "#2b5df0",
+    "contract": "0x1a0ad011913a150f69f6a19df447a0cfd9551054",
+    "deployed": "June 2023",
+    "slug": "zora"
+  },
+  "mode": {
+    "name": "Mode Bridge",
+    "desc": "Mode is a rollup built on the OP Stack that settles on Ethereum. Its withdrawals are proven on Ethereum and then, after a waiting period, finalized to release the funds. The withdrawals listed here were started but never completed on Ethereum, so the funds are still waiting in the bridge.",
+    "category": "other",
+    "color": "#dffe00",
+    "contract": "0x8b34b14c7c7123459cf3076b8cb929be097d0c07",
+    "deployed": "November 2023",
+    "slug": "mode"
+  },
+  "bob": {
+    "name": "BOB Bridge",
+    "desc": "BOB is a rollup built on the OP Stack that settles on Ethereum. Its withdrawals are proven on Ethereum and then, after a waiting period, finalized to release the funds. The withdrawals listed here were started but never completed on Ethereum, so the funds are still waiting in the bridge.",
+    "category": "other",
+    "color": "#f25d00",
+    "contract": "0x8adee124447435fe03e3cd24df3f4cae32e65a3e",
+    "deployed": "April 2024",
+    "slug": "bob"
+  },
+  "boba": {
+    "name": "Boba Network Bridge",
+    "desc": "Boba Network is a rollup built on the OP Stack that settles on Ethereum. Its withdrawals are proven on Ethereum and then, after a waiting period, finalized to release the funds. The withdrawals listed here were started but never completed on Ethereum, so the funds are still waiting in the bridge.",
+    "category": "other",
+    "color": "#cbff00",
+    "contract": "0x7b02d13904d8e6e0f0efaf756ab14cb0ff21ee7e",
+    "deployed": "March 2024",
+    "slug": "boba"
+  },
+  "celo": {
+    "name": "Celo Bridge",
+    "desc": "Celo is a rollup built on the OP Stack that settles on Ethereum and uses CELO as its gas token. Its token withdrawals are proven on Ethereum and then, after a waiting period, finalized to release the funds. The withdrawals listed here were started but never completed on Ethereum, so the funds are still waiting in the bridge.",
+    "category": "other",
+    "color": "#fcff52",
+    "contract": "0xc5c5d157928bdbd2acf6d0777626b6c75a9eaedc",
+    "deployed": "March 2025",
+    "slug": "celo"
+  },
+  "hemi": {
+    "name": "Hemi Bridge",
+    "desc": "Hemi is a rollup built on the OP Stack that settles on Ethereum, where a single proposer posts its state roots. A withdrawal is proven against one of those roots and finalized after a waiting period. The withdrawals listed here were started but never completed on Ethereum, so the funds are still waiting in the bridge.",
+    "category": "other",
+    "color": "#ff6c15",
+    "contract": "0x39a0005415256b9863afe2d55edcf75ecc3a4d7e",
+    "deployed": "September 2024",
+    "slug": "hemi"
+  },
+  "cyber": {
+    "name": "Cyber Bridge",
+    "desc": "Cyber is a rollup built on the OP Stack that settles on Ethereum. Its withdrawals are proven on Ethereum and then, after a waiting period, finalized to release the funds. The withdrawals listed here were started but never completed on Ethereum, so the funds are still waiting in the bridge.",
+    "category": "other",
+    "color": "#39ff14",
+    "contract": "0x1d59bc9fce6b8e2b1bf86d4777289ffd83d24c99",
+    "deployed": "April 2024",
+    "slug": "cyber"
+  },
+  "sonic": {
+    "name": "Sonic Gateway",
+    "desc": "The Sonic Gateway moves tokens between Ethereum and the Sonic chain. A withdrawal from Sonic is claimed on Ethereum with a proof of the Sonic state that the gateway state oracle holds. The withdrawals listed here were started on Sonic but never claimed on Ethereum, so the tokens are still waiting in the gateway.",
+    "category": "other",
+    "color": "#1969ff",
+    "contract": "0xa1e2481a9cd0cb0447eeb1cbc26f1b3fff3bec20",
+    "deployed": "December 2024",
+    "slug": "sonic"
+  },
+  "rainbow_erc20": {
+    "name": "NEAR Rainbow Bridge (tokens)",
+    "desc": "The Rainbow Bridge connected Ethereum to NEAR and Aurora. A token withdrawal to Ethereum is finalized on the bridge ERC20Locker contract with a proof of the NEAR transaction, checked against the bridge light client on Ethereum. That light client has not been updated since April 2025, and withdrawals made before then can still be finalized with it. The withdrawals listed here were started on NEAR or Aurora but never finalized on Ethereum, so the tokens are still held by the locker.",
+    "category": "other",
+    "color": "#00c08b",
+    "contract": "0x23ddd3e3692d1861ed57ede224608875809e127f",
+    "deployed": "March 2021",
+    "slug": "rainbow-erc20"
+  },
+  "rainbow_eth": {
+    "name": "NEAR Rainbow Bridge (ETH)",
+    "desc": "The Rainbow Bridge connected Ethereum to NEAR and Aurora. An ETH withdrawal to Ethereum is finalized on the bridge EthCustodian contract with a proof of the NEAR transaction, checked against the bridge light client on Ethereum. That light client has not been updated since April 2025, and withdrawals made before then can still be finalized with it. The withdrawals listed here were started on NEAR or Aurora but never finalized on Ethereum, so the ETH is still held by the custodian.",
+    "category": "other",
+    "color": "#6cd98f",
+    "contract": "0x6bfad42cfc4efc96f529d786d643ff4a8b89fa52",
+    "deployed": "June 2021",
+    "slug": "rainbow-eth"
+  },
+  "robinhood_chain": {
+    "name": "Robinhood Chain",
+    "desc": "Withdrawals from Robinhood Chain that were confirmed on Ethereum but never executed.",
+    "category": "other",
+    "color": "#00c805",
+    "contract": "0xf0ce991ea4a0d2400a4ab49b20ae333f6dce3de9",
+    "slug": "robinhood-chain"
+  },
+  "fraxtal": {
+    "name": "Fraxtal",
+    "desc": "Token withdrawals from Fraxtal that were proven on Ethereum but never finalized.",
+    "category": "other",
+    "color": "#000000",
+    "contract": "0x36cb65c1967a0fb0eee11569c51c2f2aa1ca6f6d",
+    "slug": "fraxtal"
+  },
+  "zircuit": {
+    "name": "Zircuit",
+    "desc": "Withdrawals from Zircuit that were proven on Ethereum but never finalized.",
+    "category": "other",
+    "color": "#0bdfc0",
+    "contract": "0x17bfafa932d2e23bd9b909fd5b4d2e2a27043fb1",
+    "slug": "zircuit"
+  },
+  "lisk": {
+    "name": "Lisk",
+    "desc": "Withdrawals from Lisk that were proven on Ethereum but never finalized.",
+    "category": "other",
+    "color": "#0d4477",
+    "contract": "0x26db93f8b8b4f7016240af62f7730979d353f9a7",
+    "slug": "lisk"
+  },
+  "katana": {
+    "name": "Katana",
+    "desc": "Archived withdrawals from Katana that reached Ethereum but were never claimed.",
+    "category": "other",
+    "color": "#efb64b",
+    "contract": "0x2a3dd3eb832af982ec71669e178424b10dca2ede",
+    "slug": "katana"
+  },
+  "taiko": {
+    "name": "Taiko Bridge",
+    "desc": "Unclaimed Ethereum withdrawals from Taiko, including messages awaiting a proof or a retry.",
+    "category": "other",
+    "color": "#e81899",
+    "contract": "0xd60247c6848b7ca29eddf63aa924e53db6ddd8ec",
+    "slug": "taiko"
+  },
+  "morph": {
+    "name": "Morph Bridge",
+    "desc": "Archived withdrawals from Morph with finalized Ethereum proofs that were never claimed.",
+    "category": "other",
+    "color": "#00a76f",
+    "contract": "0xdc71366effa760804dcfc3edf87fa2a6f1623304",
+    "slug": "morph"
+  },
+  "hashkeychain": {
+    "name": "HashKey Chain",
+    "desc": "Token withdrawals from HashKey Chain that were proven on Ethereum but never finalized.",
+    "category": "other",
+    "color": "#536a83",
+    "contract": "0xe7aa79b59cac06f9706d896a047feb9d3bda8bd3",
+    "slug": "hashkeychain"
+  },
+  "swellchain": {
+    "name": "Swellchain",
+    "desc": "Withdrawals from Swellchain that were proven on Ethereum but never finalized.",
+    "category": "other",
+    "color": "#536a83",
+    "contract": "0x758e0ee66102816f5c3ec9ecc1188860fbb87812",
+    "slug": "swellchain"
+  },
+  "redstone": {
+    "name": "Redstone",
+    "desc": "Withdrawals from Redstone that were proven on Ethereum but never finalized.",
+    "category": "other",
+    "color": "#536a83",
+    "contract": "0xc7bcb0e8839a28a1cfadd1cf716de9016cda51ae",
+    "slug": "redstone"
+  },
+  "swan": {
+    "name": "Swan Chain",
+    "desc": "Withdrawals from Swan Chain that were proven on Ethereum but never finalized.",
+    "category": "other",
+    "color": "#536a83",
+    "contract": "0xba50434bc5fcc07406b1bad9ac72a4cdf776db15",
+    "slug": "swan"
+  },
+  "arena_z": {
+    "name": "Arena-Z",
+    "desc": "Withdrawals from Arena-Z that were proven on Ethereum but never finalized.",
+    "category": "other",
+    "color": "#536a83",
+    "contract": "0xb20f99b598e8d888d1887715439851bc68806b22",
+    "slug": "arena_z"
+  },
+  "ancient8": {
+    "name": "Ancient8",
+    "desc": "Withdrawals from Ancient8 that were proven on Ethereum but never finalized.",
+    "category": "other",
+    "color": "#536a83",
+    "contract": "0x639f2aece398aa76b07e59ef6abe2cfe32bacb68",
+    "slug": "ancient8"
+  },
+  "metal": {
+    "name": "Metal L2",
+    "desc": "Withdrawals from Metal L2 that were started but never completed on Ethereum.",
+    "category": "other",
+    "color": "#536a83",
+    "contract": "0x3f37abde2c6b5b2ed6f8045787df1ed1e3753956",
+    "slug": "metal"
+  },
+  "world_chain": {
+    "name": "World Chain",
+    "desc": "Withdrawals from World Chain that were started but never completed on Ethereum.",
+    "category": "other",
+    "color": "#536a83",
+    "contract": "0xd5ec14a83b7d95be1e2ac12523e2dee12cbeea6c",
+    "slug": "world_chain"
+  },
+  "soneium": {
+    "name": "Soneium",
+    "desc": "Withdrawals from Soneium that were started but never completed on Ethereum.",
+    "category": "other",
+    "color": "#536a83",
+    "contract": "0x88e529a6ccd302c948689cd5156c83d4614fae92",
+    "slug": "soneium"
+  },
+  "shape": {
+    "name": "Shape",
+    "desc": "Withdrawals from Shape that were started but never completed on Ethereum.",
+    "category": "other",
+    "color": "#536a83",
+    "contract": "0xeb06ffa16011b5628bab98e29776361c83741dd3",
+    "slug": "shape"
+  },
+  "layerzero": {
+    "name": "LayerZero V2",
+    "desc": "Archived USDC and WBTC transfers verified on Ethereum but never delivered. Refreshes recheck the recorded transfers.",
+    "category": "other",
+    "color": "#536a83",
+    "contract": "0x1a44076050125825900e736c501f859c50fe728c",
+    "slug": "layerzero"
+  },
+  "idols_offering_refund": {
+    "name": "The Idols Offering Refunds",
+    "desc": "Unclaimed ETH refunds from The Idols NFT offering.",
+    "category": "nft",
+    "color": "#7467ef",
+    "contract": "0x2e94c074d7360dccf0d7b2891d867b734978e8ad",
+    "slug": "idols-offering-refund"
+  },
+  "idols_marketplace_refund": {
+    "name": "The Idols Marketplace Refunds",
+    "desc": "Unclaimed ETH refunds from The Idols marketplace.",
+    "category": "nft",
+    "color": "#7467ef",
+    "contract": "0x87d2edba911c7e2e13580af897ba77e47e8b8c8b",
+    "slug": "idols-marketplace-refund"
+  },
+  "idols_marketplace_proceeds": {
+    "name": "The Idols Marketplace Proceeds",
+    "desc": "Unclaimed ETH proceeds distributed by The Idols marketplace.",
+    "category": "nft",
+    "color": "#7467ef",
+    "contract": "0x6e88861a1ff98f713753b9506638c7c49269f19a",
+    "slug": "idols-marketplace-proceeds"
+  },
+  "knownorigin_royalties_weth": {
+    "name": "KnownOrigin WETH Royalties",
+    "desc": "Unclaimed WETH royalties from KnownOrigin\u2019s published distribution.",
+    "category": "nft",
+    "color": "#7467ef",
+    "contract": "0x11b0d9afd49dc36d86dea579d0d11771a4f2f54b",
+    "slug": "knownorigin-royalties-weth"
+  },
+  "myria": {
+    "name": "Myria (StarkEx)",
+    "desc": "Myria uses StarkEx to settle its gaming network on Ethereum. Archived ETH and MYRIA withdrawals already credited to registered wallets remain as pending balances in its Ethereum contract. Refreshes recheck those recorded balances.",
+    "category": "other",
+    "color": "#7c5cff",
+    "contract": "0x3071be11f9e92a9eb28f305e1fa033cd102714e7",
+    "deployed": "2022",
+    "slug": "myria"
+  },
+  "immutable_x": {
+    "name": "Immutable X (StarkEx)",
+    "desc": "Immutable X used StarkEx before its shutdown. Archived pending ETH, GOG, GODS, ILV and OMI withdrawals for registered wallets remain in its Ethereum bridge. These balances are separate from the automatic migration to Immutable zkEVM.",
+    "category": "other",
+    "color": "#3bc89c",
+    "contract": "0x5fdcca53617f4d2b9134b29090c87d01058e27e9",
+    "deployed": "2021",
+    "slug": "immutable-x"
+  },
+  "lens": {
+    "name": "Lens Bridge",
+    "desc": "Lens is a ZK stack chain that settles on Ethereum. Pending withdrawals through its shared bridge include Lens Wrapped GHO (LGHO), backed one-for-one by GHO on Ethereum. The separate custom USDC bridge is not included.",
+    "category": "other",
+    "color": "#00501e",
+    "contract": "0xc29d04a93f893700015138e3e334eb828dac3cef",
+    "deployed": "2025",
+    "slug": "lens"
+  },
+  "gravity": {
+    "name": "Gravity Alpha Bridge",
+    "desc": "Gravity Alpha is the legacy Arbitrum Orbit chain, scheduled to stop settling on Ethereum in December 2026. Its confirmed G and standard-token withdrawals remain in the Ethereum bridge until finalized. Native G withdrawals pay G tokens on Ethereum.",
+    "category": "other",
+    "color": "#eb592f",
+    "contract": "0x1153a1e4b1523dff36f77d696bd6ebf2b0e7dabf",
+    "slug": "gravity",
+    "deployed": "2024"
   }
 }

@@ -4,23 +4,35 @@
   "token_checked": "0x0000000000000000000000000000000000000000",
   "description": "ETH balances in defunct StrongHold contract",
   "scan_date": "2026-03-19 09:29:53 UTC",
-  "contract_eth_balance": "2.339154700921567823",
+  "contract_eth_balance": 2.339117,
   "total_addresses_scanned": 423,
-  "addresses_with_balance": 383,
-  "total_eth_in_balances": 1.1017576796880746,
-  "coverage_pct": 47.1,
+  "addresses_with_balance": 382,
+  "total_eth_in_balances": 1.101483,
+  "coverage_pct": 47.09,
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "1-10 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
     "0.1-1 ETH": {
       "count": 1,
-      "total_eth": 0.256020720181587
+      "total_eth": 0.256021
     },
     "0.01-0.1 ETH": {
       "count": 18,
-      "total_eth": 0.724106902183134
+      "total_eth": 0.724106
     },
     "<0.01 ETH": {
-      "count": 364,
-      "total_eth": 0.12163005732335512
+      "count": 363,
+      "total_eth": 0.121354
     }
   },
   "balances": [
@@ -459,8 +471,9 @@
     {
       "rank": 73,
       "address": "0x9ca9f4a2c2b476b3279dc976dd3c15bb5b0cbfbf",
-      "balance_wei": "274426885193755",
-      "balance_eth": "0.000274426885193755"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 74,
@@ -2322,5 +2335,6 @@
       "balance_wei": "5",
       "balance_eth": "0.000000000000000005"
     }
-  ]
+  ],
+  "last_event_refresh": "2026-09-30 23:23:05 UTC"
 }

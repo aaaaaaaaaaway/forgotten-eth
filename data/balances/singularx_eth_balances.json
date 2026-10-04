@@ -1,9 +1,9 @@
 {
   "contract": "0x9a2d163ab40f88c625fd475e807bbc3556566f80",
   "balance_source": "eth",
-  "contract_eth_balance": 854.996085,
-  "total_eth_in_balances": 854.963085,
-  "addresses_with_balance": 4815,
+  "contract_eth_balance": 854.99608,
+  "total_eth_in_balances": 854.963081,
+  "addresses_with_balance": 4814,
   "coverage_pct": 100,
   "scan_date": "2026-09-06 01:43:06 UTC",
   "description": "ETH balances in defunct SingularX contract",
@@ -29,8 +29,8 @@
       "total_eth": 29.994209
     },
     "<0.01 ETH": {
-      "count": 3428,
-      "total_eth": 3.578353
+      "count": 3427,
+      "total_eth": 3.578348
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
@@ -27242,8 +27242,9 @@
     {
       "rank": 4534,
       "address": "0xee65bb3b7076989d28e7b1a9bbd67b6683f9ab31",
-      "balance_wei": "4587185458154",
-      "balance_eth": 0.000004587185458154
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 4535,
@@ -28962,5 +28963,5 @@
       "balance_eth": 1e-18
     }
   ],
-  "last_event_refresh": "2026-09-19 20:23:06 UTC"
+  "last_event_refresh": "2026-10-02 21:23:05 UTC"
 }

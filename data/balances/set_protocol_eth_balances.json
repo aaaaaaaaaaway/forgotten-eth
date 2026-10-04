@@ -2,9 +2,9 @@
   "contract": "0x5b67871c3a857de81a1ca0f9f7945e5670d986dc",
   "balance_source": "token",
   "contract_eth_balance": 530.540515,
-  "total_eth_in_balances": 523.835083,
-  "addresses_with_balance": 1375,
-  "coverage_pct": 98.74,
+  "total_eth_in_balances": 523.818834,
+  "addresses_with_balance": 1374,
+  "coverage_pct": 98.73,
   "scan_date": "2026-08-06 12:40:47 UTC",
   "description": "Set Protocol powered TokenSets, an automated portfolio product from 2019-2021 where each strategy was an ERC-20 token backed by real collateral held in a shared vault. The TokenSets front end is gone, but the vault still holds the collateral and redemption is still open: burning a Set token returns its underlying share, unwrapped straight back to ETH.",
   "meta": {
@@ -12915,15 +12915,16 @@
     },
     {
       "address": "0x0971690cfec98ba78c804d0ef836b984b939982f",
-      "balance_eth": 0.016248645721545812,
-      "balance_wei": "16248645721545812",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "set_positions": [
         {
           "rebalancing_set": "0x8ddc86dba7ad728012efc460b8a168aba60b403b",
           "balance_raw": "53241012971000000",
           "weth_share": 0.016248645721545812
         }
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0x156637f779403cc77c809f37e15304cdd7f679e0",
@@ -19089,5 +19090,5 @@
       ]
     }
   ],
-  "last_event_refresh": "2026-09-09 15:43:42 UTC"
+  "last_event_refresh": "2026-09-30 20:23:05 UTC"
 }
