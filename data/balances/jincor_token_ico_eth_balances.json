@@ -1,12 +1,12 @@
 {
   "contract": "0xb3b33f59174f2ef62167770e4c9cabaa3879eb5d",
   "balance_source": "token",
-  "contract_eth_balance": 19.0616449,
-  "total_eth_in_balances": 19.0616449,
-  "addresses_with_balance": 48,
-  "coverage_pct": 100.0,
+  "contract_eth_balance": 18.961645,
+  "total_eth_in_balances": 18.961645,
+  "addresses_with_balance": 47,
+  "coverage_pct": 100,
   "scan_date": "2026-05-08 09:34:38 UTC",
-  "description": "JincorTokenICO (Nov 2017). Soft cap missed \u2014 refund mode. Public refund() returns the user's deposited ETH.",
+  "description": "JincorTokenICO (Nov 2017). Soft cap missed — refund mode. Public refund() returns the user's deposited ETH.",
   "balances": [
     {
       "address": "0x916ddd79b8c8202f22451da16d32b7f96d4b0825",
@@ -240,13 +240,15 @@
     },
     {
       "address": "0x06953644550ba5b43e7c64cac054aa8f09a06f14",
-      "balance_wei": "100000000000000000",
-      "balance_eth": 0.1
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "address": "0x4abd2fbcf96fe989f3c8f60d766588b1a0ae427b",
       "balance_wei": "100000000000000000",
       "balance_eth": 0.1
     }
-  ]
+  ],
+  "last_event_refresh": "2026-10-04 12:23:05 UTC"
 }

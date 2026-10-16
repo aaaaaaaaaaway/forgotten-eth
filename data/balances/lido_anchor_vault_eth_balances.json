@@ -1,17 +1,17 @@
 {
   "contract": "0xA2F987A546D4CD1c607Ee8141276876C26b72Bdf",
   "balance_source": "eth",
-  "contract_eth_balance": 745.51297302,
-  "total_eth_in_balances": 161.13647989,
-  "addresses_with_balance": 292,
-  "coverage_pct": 21.61,
-  "scan_date": "2026-10-04 10:22:54 UTC",
+  "contract_eth_balance": 740.2509452,
+  "total_eth_in_balances": 155.08447989,
+  "addresses_with_balance": 291,
+  "coverage_pct": 20.95,
+  "scan_date": "2026-10-16 16:51:11 UTC",
   "description": "bETH (bonded ETH) holders on Ethereum for the Lido AnchorVault, redeemable 1:1 for stETH via withdraw(beth, version, recipient) \u2014 no approval needed (vault holds the bETH burner role). Amounts are stETH-denominated (~1:1 with ETH). Non-claimable holders (Wormhole bridge, exchanges, other contracts) are excluded.",
   "meta": {
     "token_checked": "0x707F9118e33A9B8998beA41dd0d46f38bb963FC8",
     "payout_token": "0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84",
-    "vault_steth_balance": 745.512973,
-    "beth_total_supply": 1013.4256830396952,
+    "vault_steth_balance": 740.250945,
+    "beth_total_supply": 1007.5732830396951,
     "claim_function": "withdraw(uint256,uint256,address)"
   },
   "balances": [
@@ -39,11 +39,6 @@
       "address": "0x4c8fb77e494ed542e9a4a4024c7aa9a7afda1f3f",
       "balance_wei": "7005123930000000000",
       "balance_eth": 7.00512393
-    },
-    {
-      "address": "0x2019f9fe70142c9cbe5f38e4759e2580e774b07e",
-      "balance_wei": "5852478000000000000",
-      "balance_eth": 5.852478
     },
     {
       "address": "0xc459742d208ee4ddba82ac03dbcbfa3fc7edba22",
@@ -399,11 +394,6 @@
       "address": "0x3d385531b906f1fee5ac33f657609b9457d36fea",
       "balance_wei": "199753000000000000",
       "balance_eth": 0.199753
-    },
-    {
-      "address": "0x9a00361eaf07e9349d1fae6b3f4822e0b6c15a37",
-      "balance_wei": "199600000000000000",
-      "balance_eth": 0.1996
     },
     {
       "address": "0x4523799324f5eb4692023a7d0da9211ae065dae3",
@@ -1404,6 +1394,11 @@
       "address": "0x0a4d5590f3619b119e93c4e5fac9e983d6b63d75",
       "balance_wei": "83000000000000",
       "balance_eth": 8.3e-05
+    },
+    {
+      "address": "0x2019f9fe70142c9cbe5f38e4759e2580e774b07e",
+      "balance_wei": "78000000000000",
+      "balance_eth": 7.8e-05
     },
     {
       "address": "0x9a7b7a6ffee647a6b137bd2d9532bb1d92aab8cb",

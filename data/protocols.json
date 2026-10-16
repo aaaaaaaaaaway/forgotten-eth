@@ -3767,6 +3767,18 @@
     "hide_addresses": true
   },
   {
+    "key": "x_layer",
+    "name": "X Layer (legacy bridge)",
+    "contract": "0x2a3dd3eb832af982ec71669e178424b10dca2ede",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "x_layer_balances.json",
+    "payout_tokens": [
+      "USDT"
+    ],
+    "hide_addresses": true
+  },
+  {
     "key": "taiko",
     "name": "Taiko Bridge",
     "contract": "0xd60247c6848b7ca29eddf63aa924e53db6ddd8ec",
@@ -4391,5 +4403,460 @@
       "DAI"
     ],
     "hide_addresses": true
+  },
+  {
+    "key": "plume",
+    "name": "Plume Bridge",
+    "contract": "0x7e4627bc114fcd12ba912103279fd2858e644e71",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "plume_balances.json",
+    "payout_tokens": [
+      "PLUME",
+      "WETH",
+      "USDC",
+      "USDT",
+      "DAI",
+      "WBTC"
+    ],
+    "hide_addresses": true
+  },
+  {
+    "key": "gnosis",
+    "name": "Gnosis Omnibridge",
+    "contract": "0x4c36d2919e407f0cc2ee3c993ccf8ac26d9ce64e",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "gnosis_balances.json",
+    "payout_tokens": [
+      "wstETH"
+    ],
+    "hide_addresses": true
+  },
+  {
+    "key": "immutable_zkevm",
+    "name": "Immutable zkEVM",
+    "contract": "0xba5e35e26ae59c7aea6f029b68c6460de2d13eb6",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "immutable_zkevm_balances.json",
+    "payout_tokens": [
+      "AAVE",
+      "ARB",
+      "AVAIL",
+      "BUSD",
+      "COMP",
+      "CRV",
+      "DAI",
+      "ENS",
+      "ETH",
+      "G",
+      "GODS",
+      "GOG",
+      "GRT",
+      "HOP",
+      "ILV",
+      "LBTC",
+      "LDO",
+      "LGHO",
+      "LINK",
+      "LOOPIN",
+      "LPT",
+      "LUSD",
+      "MAGIC",
+      "MATIC",
+      "METIS",
+      "MKR",
+      "MNT",
+      "MYRIA",
+      "OMI",
+      "PAXG",
+      "PENDLE",
+      "PLUME",
+      "POL",
+      "SIPHER",
+      "SNX",
+      "SPACE",
+      "STRK",
+      "UNI",
+      "USDC",
+      "USDS",
+      "USDT",
+      "WBTC",
+      "WETH",
+      "XBG",
+      "YFI",
+      "cbETH",
+      "crvUSD",
+      "mETH",
+      "pufETH",
+      "rETH",
+      "sDAI",
+      "stETH",
+      "weETH",
+      "wstETH"
+    ],
+    "hide_addresses": true
+  },
+  {
+    "key": "metis",
+    "name": "Metis Andromeda",
+    "contract": "0x081d1101855bd523ba69a9794e0217f0db6323ff",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "metis_balances.json",
+    "payout_tokens": [
+      "AAVE",
+      "ARB",
+      "AVAIL",
+      "BUSD",
+      "COMP",
+      "CRV",
+      "DAI",
+      "ENS",
+      "ETH",
+      "G",
+      "GODS",
+      "GOG",
+      "GRT",
+      "HOP",
+      "ILV",
+      "LBTC",
+      "LDO",
+      "LGHO",
+      "LINK",
+      "LOOPIN",
+      "LPT",
+      "LUSD",
+      "MAGIC",
+      "MATIC",
+      "METIS",
+      "MKR",
+      "MNT",
+      "MYRIA",
+      "OMI",
+      "PAXG",
+      "PENDLE",
+      "PLUME",
+      "POL",
+      "SIPHER",
+      "SNX",
+      "SPACE",
+      "STRK",
+      "UNI",
+      "USDC",
+      "USDS",
+      "USDT",
+      "WBTC",
+      "WETH",
+      "XBG",
+      "YFI",
+      "cbETH",
+      "crvUSD",
+      "mETH",
+      "pufETH",
+      "rETH",
+      "sDAI",
+      "stETH",
+      "weETH",
+      "wstETH"
+    ],
+    "hide_addresses": true
+  },
+  {
+    "key": "hop",
+    "name": "Hop Bridge",
+    "contract": "0xb8901acb165ed027e32754e0ffe830802919727f",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "hop_balances.json",
+    "payout_tokens": [
+      "ETH",
+      "USDC",
+      "DAI",
+      "rETH",
+      "USDT",
+      "MATIC",
+      "HOP",
+      "MAGIC"
+    ],
+    "hide_addresses": true
+  },
+  {
+    "key": "sorare",
+    "name": "Sorare",
+    "contract": "0xf5c9f957705bea56a7e806943f98f7777b995826",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "sorare_balances.json",
+    "payout_tokens": [
+      "ETH"
+    ],
+    "hide_addresses": true
+  },
+  {
+    "key": "rhinofi",
+    "name": "Rhino.fi legacy migration",
+    "contract": "0x78890d7471eb527df7c982d899e03795e1f6eac0",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "rhinofi_balances.json",
+    "payout_tokens": [
+      "WETH",
+      "USDC",
+      "USDT",
+      "DAI",
+      "WBTC"
+    ],
+    "hide_addresses": true
+  },
+  {
+    "key": "rhinofi_arbitrum",
+    "name": "Rhino.fi Arbitrum",
+    "contract": "0xca8e436347a46502e353cc36b58fe3bb9214d7fd",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "rhinofi_arbitrum_balances.json",
+    "payout_tokens": [
+      "WETH",
+      "ARB",
+      "USDT",
+      "USDC"
+    ],
+    "hide_addresses": true,
+    "payout_chain_id": 42161
+  },
+  {
+    "key": "sui",
+    "name": "Sui Bridge",
+    "contract": "0xda3bd1fe1973470312db04551b65f401bc8a92fd",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "sui_balances.json",
+    "payout_tokens": [
+      "ETH",
+      "WBTC",
+      "USDT",
+      "LBTC"
+    ],
+    "hide_addresses": true
+  },
+  {
+    "key": "wormhole_ntt",
+    "name": "Wormhole NTT",
+    "contract": "0xa4489105efa4b029485d6bd3a4f52131baae4b1b",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "wormhole_ntt_eth_balances.json",
+    "payout_tokens": [
+      "XBG",
+      "AVAIL",
+      "LOOPIN",
+      "VCX",
+      "SPACE",
+      "WCTC",
+      "MUSD",
+      "POWR",
+      "WBTC",
+      "CTA",
+      "USST",
+      "W",
+      "DETH",
+      "EV",
+      "BDXN",
+      "M",
+      "wM",
+      "ETH"
+    ],
+    "hide_addresses": true
+  },
+  {
+    "key": "polygon_plasma",
+    "name": "Polygon Plasma",
+    "contract": "0x2a88696e0ffa76baa1338f2c74497cc013495922",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "polygon_plasma_balances.json",
+    "payout_tokens": [
+      "DAI"
+    ],
+    "hide_addresses": true
+  },
+  {
+    "key": "funki",
+    "name": "Funki Bridge",
+    "contract": "0x5c9c7f98ed153a2deaa981eb5c97b31744accf22",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "funki_balances.json",
+    "payout_tokens": [
+      "SIPHER",
+      "USDC",
+      "USDT"
+    ],
+    "hide_addresses": true
+  },
+  {
+    "key": "superseed",
+    "name": "Superseed Bridge",
+    "contract": "0x2c2150aa5c75a24fb93d4fd2f2a895d618054f07",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "superseed_balances.json",
+    "hide_addresses": true
+  },
+  {
+    "key": "lyra",
+    "name": "Lyra Bridge",
+    "contract": "0x85ea9c11cf3d4786027f7fd08f4406b15777e5f8",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "lyra_balances.json",
+    "hide_addresses": true
+  },
+  {
+    "key": "orderly",
+    "name": "Orderly Bridge",
+    "contract": "0x91493a61ab83b62943e6dcaa5475dd330704cc84",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "orderly_balances.json",
+    "hide_addresses": true
+  },
+  {
+    "key": "wormhole",
+    "name": "Wormhole",
+    "contract": "0x3ee18b2214aff97000d974cf647e7c347e8fa585",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "wormhole_balances.json",
+    "payout_tokens": [
+      "USDT",
+      "USDC",
+      "WETH",
+      "WBTC",
+      "SDEX"
+    ],
+    "hide_addresses": true
+  },
+  {
+    "key": "race",
+    "name": "RACE Bridge",
+    "contract": "0x0485ca8a73682b3d3f5ae98cdca1e5b512e728e9",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "race_balances.json",
+    "hide_addresses": true
+  },
+  {
+    "key": "ethernity",
+    "name": "Ethernity Bridge",
+    "contract": "0xda29f0b4da6c23f6c1af273945c290c0268c4ea9",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "ethernity_balances.json",
+    "payout_tokens": [
+      "USDC",
+      "ERN"
+    ],
+    "hide_addresses": true
+  },
+  {
+    "key": "tbn",
+    "name": "TBN Bridge",
+    "contract": "0x5ff88fcf8e9947f45f4caf8ffd5231b5ddf05e0a",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "tbn_balances.json",
+    "payout_tokens": [
+      "BNRY"
+    ],
+    "hide_addresses": true
+  },
+  {
+    "key": "pepe_unchained",
+    "name": "Pepe Unchained (legacy)",
+    "contract": "0x384e3ae4d5efc9471201039b555eae496b2a7240",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "pepe_unchained_balances.json",
+    "payout_tokens": [
+      "PEPU"
+    ],
+    "hide_addresses": true
+  },
+  {
+    "key": "karak",
+    "contract": "0xeece9cd7abd1cc84d9dfc7493e7e68079e47ea73",
+    "balance_file": "karak_eth_balances.json",
+    "balance_source": "token",
+    "payout_chain_id": 1,
+    "name": "Karak",
+    "category": "other",
+    "hide_addresses": true,
+    "payout_tokens": [
+      "rswETH"
+    ]
+  },
+  {
+    "key": "elasticdao",
+    "name": "ElasticDAO",
+    "contract": "0xaaa1f5fc9617195b5aa7fd1bd989d47f9e8d3f82",
+    "balance_source": "token",
+    "category": "dao",
+    "balance_file": "elasticdao_eth_balances.json"
+  },
+  {
+    "key": "boba_l1_lp",
+    "name": "Boba L1 Liquidity Pool",
+    "contract": "0x1a26ef6575b7bbb864d984d9255c069f6c361a14",
+    "balance_source": "token",
+    "category": "defi",
+    "balance_file": "boba_l1_lp_eth_balances.json",
+    "multi_step": true
+  },
+  {
+    "key": "cryptex_eth_vault",
+    "name": "Cryptex TCAP ETH Vault",
+    "contract": "0x717170b66654292dfbd89c39f5ae6753d2ac1381",
+    "balance_source": "weth",
+    "category": "defi",
+    "balance_file": "cryptex_eth_vault_eth_balances.json"
+  },
+  {
+    "key": "vesper_veth",
+    "name": "Vesper vETH Pool",
+    "contract": "0x103cc17c2b1586e5cd9bad308690bcd0bbe54d5e",
+    "balance_source": "token",
+    "category": "defi",
+    "balance_file": "vesper_veth_eth_balances.json"
+  },
+  {
+    "key": "celer_cbridge",
+    "contract": "0x5427fefa711eff984124bfbb1ab6fbf5e3da1820",
+    "balance_file": "celer_cbridge_eth_balances.json",
+    "balance_source": "token",
+    "payout_chain_id": 1,
+    "name": "Celer cBridge",
+    "category": "other",
+    "hide_addresses": true,
+    "payout_tokens": [
+      "USDC",
+      "iZi",
+      "WOAS"
+    ]
+  },
+  {
+    "key": "debridge",
+    "name": "deBridge",
+    "contract": "0xef4fb24ad0916217251f553c0596f8edc630eb66",
+    "balance_source": "token",
+    "hide_addresses": true,
+    "payout_chain_id": 1,
+    "balance_file": "debridge_eth_balances.json",
+    "category": "other",
+    "payout_tokens": [
+      "ETH"
+    ]
   }
 ]

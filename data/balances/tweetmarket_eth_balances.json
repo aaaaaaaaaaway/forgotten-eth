@@ -1,9 +1,9 @@
 {
   "contract": "0xe14ab3ee81abe340b45bb26b1b166a7d2df22585",
   "balance_source": "eth",
-  "contract_eth_balance": 85.810424,
-  "total_eth_in_balances": 85.809509,
-  "addresses_with_balance": 1764,
+  "contract_eth_balance": 85.745569,
+  "total_eth_in_balances": 85.744654,
+  "addresses_with_balance": 1762,
   "coverage_pct": 100,
   "scan_date": "2026-09-09 16:11:49 UTC",
   "description": "Current TweetMarket high bidders can cancel each bid by tweet ID after the lockup.",
@@ -8442,95 +8442,11 @@
     },
     {
       "address": "0x980151e04b8cce34227f2e056b8aba841a1477ac",
-      "balance_wei": "37347040000000000",
-      "balance_eth": 0.03734704,
-      "tweetmarket_bids": [
-        {
-          "tweet_id": "712708069369782272",
-          "wei": "6522330000000000",
-          "eth": "0.006522330000000000",
-          "last_tx_hash": "0x616f4515c797e4ea8aa5e51489ec341df9947c1c725055d0202b041959bac6e2",
-          "last_tx_date": "2021-03-06 03:23:10.000 UTC"
-        },
-        {
-          "tweet_id": "1315778050697523200",
-          "wei": "6522330000000000",
-          "eth": "0.006522330000000000",
-          "last_tx_hash": "0x6686e3e846cbcd628d9a906b841f1419eeb37c6c5220dd83e21cc3590fe680f0",
-          "last_tx_date": "2021-03-06 03:59:46.000 UTC"
-        },
-        {
-          "tweet_id": "1284201376516435968",
-          "wei": "3261170000000000",
-          "eth": "0.003261170000000000",
-          "last_tx_hash": "0x0845fbda45b104f60b01fb9387bb77dd7567c556be5063e017e6cb814d29dc0a",
-          "last_tx_date": "2021-03-06 04:43:07.000 UTC"
-        },
-        {
-          "tweet_id": "1337163113817284610",
-          "wei": "3261170000000000",
-          "eth": "0.003261170000000000",
-          "last_tx_hash": "0x47359d7cae9a3d42397fd47e3c810bd1053bb421a7f00a88e56074d5677e4a6b",
-          "last_tx_date": "2021-03-06 05:11:14.000 UTC"
-        },
-        {
-          "tweet_id": "1363973671329521665",
-          "wei": "3261170000000000",
-          "eth": "0.003261170000000000",
-          "last_tx_hash": "0x0ab6d64255c84fc8f83b4b53b814e8c622a37391125f913cb86fdca0d379c021",
-          "last_tx_date": "2021-03-06 19:56:10.000 UTC"
-        },
-        {
-          "tweet_id": "1366077182406230019",
-          "wei": "3261170000000000",
-          "eth": "0.003261170000000000",
-          "last_tx_hash": "0xc8ca1e7a7fce1f6f4ce5575a4f698fff17d9aa5828befb52bd716ff09c65ee33",
-          "last_tx_date": "2021-03-06 19:15:30.000 UTC"
-        },
-        {
-          "tweet_id": "1367930116156833793",
-          "wei": "3261170000000000",
-          "eth": "0.003261170000000000",
-          "last_tx_hash": "0xffee5baf38d3f7b32d02a2f907e656bb37b002e2f1c479fbc5d958f7e35b47ca",
-          "last_tx_date": "2021-03-06 04:17:48.000 UTC"
-        },
-        {
-          "tweet_id": "1363719261890375682",
-          "wei": "2739380000000000",
-          "eth": "0.002739380000000000",
-          "last_tx_hash": "0x234f0df5436ef26b686660bdfcebe52d92da2b6abf10f848f15af7c49fe8cc67",
-          "last_tx_date": "2021-03-06 04:39:15.000 UTC"
-        },
-        {
-          "tweet_id": "1368049741582524418",
-          "wei": "2739380000000000",
-          "eth": "0.002739380000000000",
-          "last_tx_hash": "0x28d757532f0a52e6aa63c4aab447a7a1c0768ca37ca586656447d7277ff87252",
-          "last_tx_date": "2021-03-06 04:06:07.000 UTC"
-        },
-        {
-          "tweet_id": "1368433591336665092",
-          "wei": "1213310000000000",
-          "eth": "0.001213310000000000",
-          "last_tx_hash": "0xc1a137a108c5fedb612b56ecd6d4185f7041874101f64901b819561c1cea5ad4",
-          "last_tx_date": "2021-03-07 21:46:00.000 UTC"
-        },
-        {
-          "tweet_id": "1352298868046643201",
-          "wei": "652230000000000",
-          "eth": "0.000652230000000000",
-          "last_tx_hash": "0x459bba64556ad8f47c7736da9096611e1ead630fdb47cb1d3440c837817c819a",
-          "last_tx_date": "2021-03-06 04:58:14.000 UTC"
-        },
-        {
-          "tweet_id": "1368048658026008581",
-          "wei": "652230000000000",
-          "eth": "0.000652230000000000",
-          "last_tx_hash": "0x4e078fb2b13e0bb71d431d2dd890ea4190beff35b71c0fb7986b94c50aa025b5",
-          "last_tx_date": "2021-03-06 04:03:28.000 UTC"
-        }
-      ],
-      "rank": 274
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "tweetmarket_bids": [],
+      "rank": 274,
+      "claimed": true
     },
     {
       "address": "0xa2ca536b9facdf345344601e13b6178387ce9043",
@@ -9813,18 +9729,11 @@
     },
     {
       "address": "0xc74ffbd6c8769d710766e6acc5798a3470652965",
-      "balance_wei": "27508440000000000",
-      "balance_eth": 0.02750844,
-      "tweetmarket_bids": [
-        {
-          "tweet_id": "1372747618284040194",
-          "wei": "27508440000000000",
-          "eth": "0.027508439999999999",
-          "last_tx_hash": "0x53fc5f30ee032c23776101667a4ac35996d7491f30f5956c4b488726b9e49ef7",
-          "last_tx_date": "2021-03-20 00:15:31.000 UTC"
-        }
-      ],
-      "rank": 336
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "tweetmarket_bids": [],
+      "rank": 336,
+      "claimed": true
     },
     {
       "address": "0x52231a377c730d4b95477eeb501bafa175c87c6e",
@@ -35379,5 +35288,5 @@
       "rank": 1780
     }
   ],
-  "last_event_refresh": "2026-10-03 07:23:06 UTC"
+  "last_event_refresh": "2026-10-11 23:23:05 UTC"
 }

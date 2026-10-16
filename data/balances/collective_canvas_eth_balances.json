@@ -1,9 +1,9 @@
 {
   "contract": "0x3a56ab63c7ef4f07fe353beb132e0fd5ad270ca0",
   "balance_source": "token",
-  "contract_eth_balance": 57.778262,
-  "total_eth_in_balances": 57.778263,
-  "addresses_with_balance": 265,
+  "contract_eth_balance": 57.657312,
+  "total_eth_in_balances": 57.657313,
+  "addresses_with_balance": 263,
   "coverage_pct": 100,
   "scan_date": "2026-09-09 16:12:49 UTC",
   "description": "Collective Canvas per-NFT mint-fee escrow. NFT owner calls withdraw(tokenId, amount) to claim accumulated ETH share for each owned tokenId.",
@@ -1791,15 +1791,11 @@
     },
     {
       "address": "0xbbdb2127a2faf424ec6f05553b6832e59f7f4f99",
-      "balance_wei": "82241938609823896",
-      "balance_eth": 0.0822419386098239,
-      "collective_canvas_items": [
-        {
-          "token_id": 549,
-          "wei": 82241938609823900
-        }
-      ],
-      "rank": 101
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "collective_canvas_items": [],
+      "rank": 101,
+      "claimed": true
     },
     {
       "address": "0x3fc20ab0b295bf84aac393ada0d9aa41019b9336",
@@ -2363,19 +2359,11 @@
     },
     {
       "address": "0xbfa43bf6e9fb6d5cc253ff23c31f2b86a739bb98",
-      "balance_wei": "38708283219739184",
-      "balance_eth": 0.03870828321973918,
-      "collective_canvas_items": [
-        {
-          "token_id": 110,
-          "wei": 12113864343713440
-        },
-        {
-          "token_id": 272,
-          "wei": 26594418876025744
-        }
-      ],
-      "rank": 146
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "collective_canvas_items": [],
+      "rank": 146,
+      "claimed": true
     },
     {
       "address": "0x01b6b6ca6cee322bcbc33e95dcb677b429fa33a4",
@@ -3906,5 +3894,5 @@
       "rank": 268
     }
   ],
-  "last_event_refresh": "2026-09-28 10:31:27 UTC"
+  "last_event_refresh": "2026-10-13 09:23:05 UTC"
 }

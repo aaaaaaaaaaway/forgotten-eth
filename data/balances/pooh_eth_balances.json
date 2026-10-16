@@ -1,10 +1,10 @@
 {
   "contract": "0x4c29d75cc423e8adaa3839892feb66977e295829",
   "balance_source": "eth",
-  "contract_eth_balance": 15.766866,
-  "total_eth_in_balances": 20.135627,
-  "addresses_with_balance": 1174,
-  "coverage_pct": 127.71,
+  "contract_eth_balance": 15.61244129,
+  "total_eth_in_balances": 19.98141068,
+  "addresses_with_balance": 1173,
+  "coverage_pct": 127.98,
   "scan_date": "2026-03-30 13:15:25 UTC",
   "description": "ETH balances in defunct POOH contract",
   "distribution": {
@@ -21,8 +21,8 @@
       "total_eth": 6.216022
     },
     "0.1-1 ETH": {
-      "count": 34,
-      "total_eth": 9.216892
+      "count": 33,
+      "total_eth": 9.062504
     },
     "0.01-0.1 ETH": {
       "count": 129,
@@ -35,7 +35,7 @@
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 1235,
-  "last_event_refresh": "2026-09-22 02:23:05 UTC",
+  "last_event_refresh": "2026-10-14 16:36:38 UTC",
   "balances": [
     {
       "rank": 1,
@@ -196,8 +196,9 @@
     {
       "rank": 27,
       "address": "0xbb66754cdd06adb6c1594f835960983002c31aba",
-      "balance_wei": "154387554828031485",
-      "balance_eth": 0.1543875548280315
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 28,

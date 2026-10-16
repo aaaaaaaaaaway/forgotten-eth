@@ -1,9 +1,9 @@
 {
   "contract": "0xda8d7ff0d043848a689125e2c7ab87b16a0cbe81",
   "balance_source": "eth",
-  "contract_eth_balance": 34.756658,
-  "total_eth_in_balances": 33.345851,
-  "addresses_with_balance": 201,
+  "contract_eth_balance": 34.748503,
+  "total_eth_in_balances": 33.337696,
+  "addresses_with_balance": 200,
   "coverage_pct": 95.94,
   "scan_date": "2026-05-08 10:54:12 UTC",
   "description": "ETH balances in defunct SnowStorm contract",
@@ -29,8 +29,8 @@
       "total_eth": 1.612335
     },
     "<0.01 ETH": {
-      "count": 149,
-      "total_eth": 0.246041
+      "count": 148,
+      "total_eth": 0.237886
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
@@ -393,8 +393,9 @@
     {
       "rank": 60,
       "address": "0x13fb97da9d2407da6dbc2d6c175b51d0f5d9d903",
-      "balance_wei": "8155464334600211",
-      "balance_eth": 0.008155464334600212
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 61,
@@ -1250,5 +1251,5 @@
       "balance_eth": 0.00001750397369314
     }
   ],
-  "last_event_refresh": "2026-08-03 11:34:31 UTC"
+  "last_event_refresh": "2026-10-06 10:45:13 UTC"
 }

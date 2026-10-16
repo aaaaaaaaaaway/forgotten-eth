@@ -1,9 +1,9 @@
 {
   "contract": "0xd8d48e52f39ab2d169c8b562c53589e6c71ac4d3",
   "balance_source": "eth",
-  "contract_eth_balance": 4.783013,
-  "total_eth_in_balances": 4.783013,
-  "addresses_with_balance": 844,
+  "contract_eth_balance": 4.782453,
+  "total_eth_in_balances": 4.782453,
+  "addresses_with_balance": 843,
   "coverage_pct": 100,
   "scan_date": "2026-09-20 01:43:06 UTC",
   "description": "ETH balances in defunct EtherC contract",
@@ -29,8 +29,8 @@
       "total_eth": 1.726547
     },
     "<0.01 ETH": {
-      "count": 768,
-      "total_eth": 0.85716
+      "count": 767,
+      "total_eth": 0.856601
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
@@ -2587,8 +2587,9 @@
     {
       "rank": 425,
       "address": "0xd050ae2e18be548b84ded49d131a7793a7c09f2f",
-      "balance_wei": "559847798420000",
-      "balance_eth": 0.00055984779842
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 426,
@@ -5150,5 +5151,5 @@
       "balance_eth": 1e-18
     }
   ],
-  "last_event_refresh": "2026-10-03 14:23:06 UTC"
+  "last_event_refresh": "2026-10-05 02:23:06 UTC"
 }

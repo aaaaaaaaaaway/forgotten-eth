@@ -3164,5 +3164,237 @@
     "contract": "0x1153a1e4b1523dff36f77d696bd6ebf2b0e7dabf",
     "slug": "gravity",
     "deployed": "2024"
+  },
+  "plume": {
+    "name": "Plume Bridge",
+    "desc": "Plume is an Ethereum-settled network using PLUME as its native asset. Confirmed native PLUME and standard-token withdrawals can remain unclaimed in its Ethereum bridge. Native withdrawals pay PLUME tokens on Ethereum.",
+    "category": "other",
+    "color": "#eb592f",
+    "contract": "0x7e4627bc114fcd12ba912103279fd2858e644e71",
+    "slug": "plume",
+    "deployed": "February 2025"
+  },
+  "x_layer": {
+    "name": "X Layer (legacy bridge)",
+    "desc": "Archived ETH and USDT withdrawals from the legacy X Layer bridge, with proofs recovered from Ethereum. Newer withdrawals and the OP portal are not covered.",
+    "category": "other",
+    "color": "#eeeeee",
+    "contract": "0x2a3dd3eb832af982ec71669e178424b10dca2ede",
+    "slug": "x-layer-legacy-bridge",
+    "deployed": "April 2024"
+  },
+  "gnosis": {
+    "name": "Gnosis Omnibridge",
+    "desc": "Archived direct token withdrawals from Gnosis Chain to Ethereum through the canonical Omnibridge. Coverage excludes xDAI, callbacks and new withdrawals.",
+    "contract": "0x4c36d2919e407f0cc2ee3c993ccf8ac26d9ce64e",
+    "slug": "gnosis-omnibridge",
+    "category": "other"
+  },
+  "immutable_zkevm": {
+    "name": "Immutable zkEVM",
+    "desc": "ETH and supported token withdrawals queued on the Ethereum bridge. Coverage begins once a withdrawal reaches the root-chain queue.",
+    "contract": "0xba5e35e26ae59c7aea6f029b68c6460de2d13eb6",
+    "slug": "immutable-zkevm",
+    "category": "other",
+    "color": "#16c784",
+    "deployed": "December 2023"
+  },
+  "metis": {
+    "name": "Metis Andromeda",
+    "desc": "Canonical ETH and supported token withdrawals from Metis Andromeda to Ethereum, backed by mature state commitments.",
+    "contract": "0x081d1101855bd523ba69a9794e0217f0db6323ff",
+    "slug": "metis",
+    "category": "other"
+  },
+  "hop": {
+    "name": "Hop Bridge",
+    "desc": "Legacy Hop transfers to Ethereum with committed withdrawal proofs. Coverage includes ETH and seven verified tokens; unresolved source histories remain excluded.",
+    "contract": "0xb8901acb165ed027e32754e0ffe830802919727f",
+    "slug": "hop",
+    "category": "other"
+  },
+  "sorare": {
+    "name": "Sorare",
+    "desc": "Unsettled ETH deposits and withdrawals from Sorare\u2019s frozen exchange, including vault balances with verified escape proofs.",
+    "contract": "0xf5c9f957705bea56a7e806943f98f7777b995826",
+    "slug": "sorare",
+    "category": "other"
+  },
+  "rhinofi": {
+    "name": "Rhino.fi legacy migration",
+    "desc": "Signed migration allocations for users of Rhino.fi\u2019s former exchange, paid from its Ethereum distribution contract.",
+    "contract": "0x78890d7471eb527df7c982d899e03795e1f6eac0",
+    "slug": "rhinofi",
+    "category": "other"
+  },
+  "rhinofi_arbitrum": {
+    "name": "Rhino.fi Arbitrum",
+    "desc": "WETH and ARB balances in Rhino.fi\u2019s legacy Arbitrum bridge, with verified emergency settlement paths.",
+    "contract": "0xca8e436347a46502e353cc36b58fe3bb9214d7fd",
+    "slug": "rhinofi-arbitrum",
+    "category": "other"
+  },
+  "sui": {
+    "name": "Sui Bridge",
+    "desc": "Signed transfers from Sui to Ethereum, covering ETH, WBTC, USDT and LBTC with verified recipient payouts.",
+    "contract": "0xda3bd1fe1973470312db04551b65f401bc8a92fd",
+    "slug": "sui",
+    "category": "other"
+  },
+  "wormhole_ntt": {
+    "name": "Wormhole NTT",
+    "desc": "Pending ETH and token transfers to Ethereum, including WCTC and M/wM.",
+    "contract": "0xa4489105efa4b029485d6bd3a4f52131baae4b1b",
+    "slug": "wormhole-ntt",
+    "category": "other"
+  },
+  "polygon_plasma": {
+    "name": "Polygon Plasma",
+    "desc": "DAI exits already queued in Polygon\u2019s legacy Plasma bridge, with verified payouts to current exit NFT owners.",
+    "contract": "0x2a88696e0ffa76baa1338f2c74497cc013495922",
+    "slug": "polygon-plasma",
+    "category": "other"
+  },
+  "funki": {
+    "name": "Funki Bridge",
+    "desc": "Funki is an OP Stack rollup that settles on Ethereum. These withdrawals were started but never completed on Ethereum.",
+    "category": "other",
+    "color": "#ff684d",
+    "contract": "0x5c9c7f98ed153a2deaa981eb5c97b31744accf22",
+    "deployed": "July 2024",
+    "slug": "funki"
+  },
+  "superseed": {
+    "name": "Superseed Bridge",
+    "desc": "Superseed is an OP Stack rollup that settles on Ethereum. These ETH withdrawals were started but never completed on Ethereum.",
+    "category": "other",
+    "color": "#acd55b",
+    "contract": "0x2c2150aa5c75a24fb93d4fd2f2a895d618054f07",
+    "deployed": "September 2024",
+    "slug": "superseed"
+  },
+  "lyra": {
+    "name": "Lyra Bridge",
+    "desc": "Lyra is an OP Stack rollup that settles on Ethereum. These ETH withdrawals were started but never completed on Ethereum.",
+    "category": "other",
+    "color": "#a78bfa",
+    "contract": "0x85ea9c11cf3d4786027f7fd08f4406b15777e5f8",
+    "deployed": "November 2023",
+    "slug": "lyra"
+  },
+  "orderly": {
+    "name": "Orderly Bridge",
+    "desc": "Orderly operates an OP Stack settlement chain on Ethereum. This integration covers unfinished native ETH withdrawals through its canonical bridge.",
+    "category": "other",
+    "color": "#896cf5",
+    "contract": "0x91493a61ab83b62943e6dcaa5475dd330704cc84",
+    "deployed": "October 2023",
+    "slug": "orderly"
+  },
+  "wormhole": {
+    "name": "Wormhole",
+    "desc": "Signed Wormhole transfers of WETH, USDT, USDC, WBTC and SDEX to Ethereum, with verified recipient payouts.",
+    "contract": "0x3ee18b2214aff97000d974cf647e7c347e8fa585",
+    "slug": "wormhole",
+    "category": "other"
+  },
+  "race": {
+    "name": "RACE Bridge",
+    "desc": "RACE is an OP Stack rollup that settles on Ethereum. Coverage includes ETH and USDC withdrawals already proven on Ethereum; new proofs and other tokens are not supported.",
+    "category": "other",
+    "color": "#e34b4b",
+    "contract": "0x0485ca8a73682b3d3f5ae98cdca1e5b512e728e9",
+    "deployed": "July 2024",
+    "slug": "race"
+  },
+  "ethernity": {
+    "name": "Ethernity Bridge",
+    "desc": "Ethernity is an OP Stack rollup that settles on Ethereum. Coverage is limited to withdrawals already proven on Ethereum. New proofs are unavailable; legacy ERN remains unpriced and unlisted.",
+    "category": "other",
+    "color": "#9674ff",
+    "contract": "0xda29f0b4da6c23f6c1af273945c290c0268c4ea9",
+    "deployed": "August 2024",
+    "slug": "ethernity"
+  },
+  "tbn": {
+    "name": "TBN Bridge",
+    "desc": "TBN is a legacy OP Stack rollup using BNRY as its gas token. Coverage is limited to direct BNRY withdrawals already proven on Ethereum. New proofs are unavailable; BNRY remains unpriced and unlisted.",
+    "category": "other",
+    "color": "#74a0ff",
+    "contract": "0x5ff88fcf8e9947f45f4caf8ffd5231b5ddf05e0a",
+    "deployed": "June 2024",
+    "slug": "tbn"
+  },
+  "pepe_unchained": {
+    "name": "Pepe Unchained (legacy)",
+    "desc": "Pepe Unchained is a legacy OP Stack rollup using the original PEPU token. Coverage is limited to direct withdrawals already proven on Ethereum. New proofs are unavailable; original PEPU remains unpriced and unlisted.",
+    "category": "other",
+    "color": "#82bf53",
+    "contract": "0x384e3ae4d5efc9471201039b555eae496b2a7240",
+    "deployed": "December 2024",
+    "slug": "pepe_unchained"
+  },
+  "karak": {
+    "name": "Karak",
+    "desc": "Karak replaced its original bridge exits with owner-bound allocations on Ethereum. Coverage includes verified ETH and rswETH allocations for ordinary wallets; other assets and contract wallets remain unsupported.",
+    "category": "other",
+    "color": "#f0bd65",
+    "contract": "0xeece9cd7abd1cc84d9dfc7493e7e68079e47ea73",
+    "deployed": "December 2023",
+    "slug": "karak"
+  },
+  "elasticdao": {
+    "name": "ElasticDAO",
+    "desc": "ElasticDAO launched in March 2021 as a DAO built around EGT, a rebasing governance token. Members joined by paying ETH into the DAO contract, which doubles as the treasury vault. Every EGT holder owns a proportional share of that ETH and can leave the DAO with it.",
+    "contract": "0xaaa1f5fc9617195b5aa7fd1bd989d47f9e8d3f82",
+    "deployed": "March 2021",
+    "color": "#6d5dfc",
+    "category": "dao",
+    "slug": "elasticdao"
+  },
+  "boba_l1_lp": {
+    "name": "Boba L1 Liquidity Pool",
+    "desc": "The Boba Network L1 liquidity pool was the Ethereum side of its fast bridge. Liquidity providers deposited ETH, bridge users were paid out of the pool at once, and their fees accrued to the providers. The fast bridge has carried no traffic since spring 2024, but provider deposits and unclaimed fee rewards remain in the pool.",
+    "contract": "0x1a26ef6575b7bbb864d984d9255c069f6c361a14",
+    "deployed": "September 2021",
+    "color": "#7a9a01",
+    "category": "defi",
+    "slug": "boba-l1-lp"
+  },
+  "cryptex_eth_vault": {
+    "name": "Cryptex TCAP ETH Vault",
+    "desc": "Cryptex Finance launched TCAP in April 2021, a token tracking the total cryptocurrency market capitalization that users minted against collateral locked in their own vaults. This contract is the ETH vault: it holds, as WETH, the ETH collateral of every vault opened with it. No collateral has been added since May 2024, and most of the vaults listed here were last used by their owners in 2021.",
+    "contract": "0x717170b66654292dfbd89c39f5ae6753d2ac1381",
+    "deployed": "April 2021",
+    "color": "#a440f2",
+    "category": "defi",
+    "slug": "cryptex-eth-vault"
+  },
+  "vesper_veth": {
+    "name": "Vesper vETH Pool",
+    "desc": "Vesper Finance opened its vETH pool in December 2020: depositors put in ETH, received vETH shares, and the pool lent the ETH out through yield strategies. In July 2022 the pool's holdings were moved into a newer Vesper pool that it still draws on, and since May 2026 that ETH has been sitting idle rather than being lent. Every vETH share still represents a proportional part of it.",
+    "contract": "0x103cc17c2b1586e5cd9bad308690bcd0bbe54d5e",
+    "deployed": "December 2020",
+    "color": "#4138ac",
+    "category": "defi",
+    "slug": "vesper-veth"
+  },
+  "celer_cbridge": {
+    "name": "Celer cBridge",
+    "desc": "cBridge connects assets across chains. Ethereum coverage includes verified refunds and delayed payouts at its canonical vault and pegged-token contracts. Automatic signed-refund discovery, liquidity-pool routes, relays, wrappers and other chains remain outside this coverage.",
+    "category": "other",
+    "color": "#45c9af",
+    "contract": "0x5427fefa711eff984124bfbb1ab6fbf5e3da1820",
+    "deployed": "December 2021",
+    "slug": "celer-cbridge"
+  },
+  "debridge": {
+    "name": "deBridge",
+    "desc": "deBridge connects assets across chains. Ethereum coverage includes native affiliate fee credits held by supported Safe accounts. DLN order refunds remain under verification.",
+    "category": "other",
+    "color": "#8465ff",
+    "contract": "0xef4fb24ad0916217251f553c0596f8edc630eb66",
+    "deployed": "December 2022",
+    "slug": "debridge"
   }
 }

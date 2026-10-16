@@ -1,11 +1,11 @@
 {
   "contract": "0xf5644345a5a9dc14076b58802dc908b83e62b0e1",
   "balance_source": "weth",
-  "contract_eth_balance": 224.75584226,
-  "total_eth_in_balances": 225.37537677,
-  "addresses_with_balance": 7008,
+  "contract_eth_balance": 224.66103216,
+  "total_eth_in_balances": 225.28056667,
+  "addresses_with_balance": 7000,
   "coverage_pct": 100.28,
-  "scan_date": "2026-10-04 04:18:37 UTC",
+  "scan_date": "2026-10-16 16:22:21 UTC",
   "distribution": {
     ">=100 ETH": {
       "count": 0,
@@ -24,12 +24,12 @@
       "total_eth": 68.668811
     },
     "0.01-0.1 ETH": {
-      "count": 1091,
-      "total_eth": 34.238951
+      "count": 1090,
+      "total_eth": 34.14729
     },
     "<0.01 ETH": {
-      "count": 5635,
-      "total_eth": 10.824975
+      "count": 5628,
+      "total_eth": 10.821824
     }
   },
   "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
@@ -6053,8 +6053,8 @@
     },
     {
       "address": "0x6466ca677a6089acf1292a7847e9bf48d21b1ec8",
-      "balance_eth": 0.09165955,
-      "balance_wei": "91659545983458524",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "merkle_proof": [
         "0xc23e54ab4cccc6d3aa8f2012a17a6044fb409fcb9d02f44da24b3c393152510b",
         "0xa4af34b1597f2547ff97997d8a6a2ee8863cdf210a9f358992ae3981664a0798",
@@ -6069,7 +6069,8 @@
         "0x768f0d47fad44ceca9928a5de3e5c7ea26e4834aeb3775ed494089b5371bbeee",
         "0x7936cfb1b3a293961d35d2f5988f925003b3826e09b93b1dcf81f6fe551773e3",
         "0x7c88558f8d37ef6f014de0021d54070b793018685ffa805cee26035d9579c041"
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0x953df4fc77851b3dde2f994f879649ca6ffbb7ae",
@@ -61169,8 +61170,8 @@
     },
     {
       "address": "0x55176705a1c8ec845e888b5828d8b73842f2851d",
-      "balance_eth": 0.00217732,
-      "balance_wei": "2177315626392740",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "merkle_proof": [
         "0x96d524d44bf3af792a30cd9535117aff5ae545e3647cd6ed038f8d9fda43ed6e",
         "0x166a0cdc72bf45de5f97431517a38ddec68ce7f987aa36fe77731f9a2497b1fc",
@@ -61185,7 +61186,8 @@
         "0x87b8e7242750890d42ec02b00a6268600acd39843ca9d431c338a864d24c691f",
         "0x5a2c44f3bf65f94306a634666c3dcaa5c75c81e1df6eb613c80e066d96376195",
         "0x83f9f7b5f4cd54d48c39acf53dc5f25add6163f19f3dfec1c6beefc5e1640503"
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0x07738bcbeb8fa2eafefc420e69a0e9e592e1f791",
@@ -117774,8 +117776,8 @@
     },
     {
       "address": "0x5ead2c8affccf4486d2845fdb5a548d3c7a8497c",
-      "balance_eth": 0.00028315,
-      "balance_wei": "283153072162208",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "merkle_proof": [
         "0x982d67c6c54abac8a461bbb3ebc55dd6cf7ca36d45851ab851bf2d1a0bd08ace",
         "0x121fc452ce8aa59061c988bb464d0aaf53c0121197531b63dc417d8065e3f811",
@@ -117790,7 +117792,8 @@
         "0x87b8e7242750890d42ec02b00a6268600acd39843ca9d431c338a864d24c691f",
         "0x5a2c44f3bf65f94306a634666c3dcaa5c75c81e1df6eb613c80e066d96376195",
         "0x83f9f7b5f4cd54d48c39acf53dc5f25add6163f19f3dfec1c6beefc5e1640503"
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0xfb9ed35e821645c279aa5ed3e4d22d38d545ca2c",
@@ -120229,8 +120232,8 @@
     },
     {
       "address": "0xfb15339d187a76af62698f73d700e1f8536f03bd",
-      "balance_eth": 0.00024489,
-      "balance_wei": "244888181100846",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "merkle_proof": [
         "0xd050bc437a36cd4db4c748ed103746ad3c7ec84d47367da76d26a77ad1726993",
         "0xa1db2d9d217da8e45c2086be5b10fdb9f61bbc173ce5ab0eff63905dc06c54b2",
@@ -120245,7 +120248,8 @@
         "0x768f0d47fad44ceca9928a5de3e5c7ea26e4834aeb3775ed494089b5371bbeee",
         "0x7936cfb1b3a293961d35d2f5988f925003b3826e09b93b1dcf81f6fe551773e3",
         "0x7c88558f8d37ef6f014de0021d54070b793018685ffa805cee26035d9579c041"
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0x9e4de8b73ad1d4adb9f112d885370b9cea62e8e3",
@@ -126689,8 +126693,8 @@
     },
     {
       "address": "0x1d3d68c122c11cecc516915434a69ce2bba8e798",
-      "balance_eth": 0.00016121,
-      "balance_wei": "161213807952948",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "merkle_proof": [
         "0x30d1869bd517c821a0881419a7ddb08447a2756e6ee7d11f1d2cce74b9162375",
         "0x8564f5dc9cd80d6680f865cddad5c5b49fdd6a3a49230e41a92eca031504c292",
@@ -126705,7 +126709,8 @@
         "0x0a1946728574baafc324d505415f1fe2746979863951ce66c1007720b1caa5c5",
         "0x7936cfb1b3a293961d35d2f5988f925003b3826e09b93b1dcf81f6fe551773e3",
         "0x7c88558f8d37ef6f014de0021d54070b793018685ffa805cee26035d9579c041"
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0xbbc8b9f1c3cbff13525bbc72af4ecfd00f2b6da3",
@@ -127389,8 +127394,8 @@
     },
     {
       "address": "0xc22d9ee5e3f12fb649192ace9fb684072c44e7cf",
-      "balance_eth": 0.00015216,
-      "balance_wei": "152163948757812",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "merkle_proof": [
         "0x7096e0eceafac30062f8883da7ecc96f0cb9de3b094861c0bc166d957128d7ff",
         "0xb6f4bef368fcb99bffca8e6ae82442710dc130da9c1aa9b4dc3882e2e47f0d87",
@@ -127405,7 +127410,8 @@
         "0x0a29eb781acc10698cf7e2d70b757db349649d090214f93c5f0bdaf9b0409e7c",
         "0x1a12a16c3207ba4d1f5ce97df99e4cab0937678c8b0b9b8a8573263bff30e7e2",
         "0x83f9f7b5f4cd54d48c39acf53dc5f25add6163f19f3dfec1c6beefc5e1640503"
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0x9895fccaec761ed329cce0c9c4a6d879b67b8f1d",
@@ -133487,8 +133493,8 @@
     },
     {
       "address": "0x5a1004801fecb1e77d6f3b3cb20176e7ec419619",
-      "balance_eth": 0.00007671,
-      "balance_wei": "76713351961571",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "merkle_proof": [
         "0x2ba45dcee7485001558ee1c2234fa180e28079119ead378a513a3227cc47dc07",
         "0xbf61b8cc6f8b9a0e46e43d53942e74c3a46869486dbfb3d804e6ba736f4c1657",
@@ -133503,7 +133509,8 @@
         "0x768f0d47fad44ceca9928a5de3e5c7ea26e4834aeb3775ed494089b5371bbeee",
         "0x7936cfb1b3a293961d35d2f5988f925003b3826e09b93b1dcf81f6fe551773e3",
         "0x7c88558f8d37ef6f014de0021d54070b793018685ffa805cee26035d9579c041"
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0x870856d10bff4308fb549b3fef00163112c0bf3b",
@@ -135447,8 +135454,8 @@
     },
     {
       "address": "0x525396b7fc921d3c7e6b4b175bc05cc42b360cdf",
-      "balance_eth": 0.00005511,
-      "balance_wei": "55109738075721",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "merkle_proof": [
         "0x411f9b8754a31b60af4df5a65fe87a3556a8418a9016c30ea626d87e1f5ef851",
         "0xf3f2c9ccde0df6967a17a21e5346b978932095943d833fdc7d21af915974fb83",
@@ -135463,7 +135470,8 @@
         "0x0a1946728574baafc324d505415f1fe2746979863951ce66c1007720b1caa5c5",
         "0x7936cfb1b3a293961d35d2f5988f925003b3826e09b93b1dcf81f6fe551773e3",
         "0x7c88558f8d37ef6f014de0021d54070b793018685ffa805cee26035d9579c041"
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0x7c7a835ddedfb2fdaf64b7e364e928d5cdb160d8",

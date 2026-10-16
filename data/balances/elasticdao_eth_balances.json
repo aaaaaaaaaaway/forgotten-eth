@@ -1,0 +1,1653 @@
+{
+  "contract": "0xaaa1f5fc9617195b5aa7fd1bd989d47f9e8d3f82",
+  "balance_source": "token",
+  "contract_eth_balance": 69.33527614,
+  "total_eth_in_balances": 68.1073673,
+  "addresses_with_balance": 257,
+  "coverage_pct": 98.23,
+  "scan_date": "2026-10-16 16:23:20 UTC",
+  "description": "ElasticDAO treasury. EGT holders exit pro-rata: exit(shares) burns the caller's shares and pays shares / total shares of the DAO's ETH. Amounts are per holder at the scan block. Liquidity pools, other contract holders and dust are not listed.",
+  "distribution": {
+    ">0.01 ETH": 199,
+    ">0.1 ETH": 85,
+    ">1 ETH": 18,
+    ">10 ETH": 1
+  },
+  "meta": {
+    "egt_token": "0x2aA5cE395b00CC486159aDbDD97c55b535CF2cf9",
+    "scan_block": 26206268,
+    "total_shares_wei": "6132103111772398922",
+    "holders": 307,
+    "number_of_token_holders": 515,
+    "excluded_liquidity_pools": [
+      "0xc7ff546c6cbc87ad9f6f557db5a0df5c742ca440"
+    ],
+    "excluded_pool_shares_wei": "43025519127722305",
+    "excluded_pool_eth_wei": "486486641778480184",
+    "excluded_contract_holders": [
+      {
+        "address": "0x06cff7088619c7178f5e14f0b119458d08d2f5ef",
+        "egt_shares_wei": "47420630692422120",
+        "eth_wei": "536181871695529776"
+      },
+      {
+        "address": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+        "egt_shares_wei": "11800844903556423",
+        "eth_wei": "133431357103157719"
+      },
+      {
+        "address": "0xd1742b3c4fbb096990c8950fa635aec75b30781a",
+        "egt_shares_wei": "5721280245409053",
+        "eth_wei": "64690129711165989"
+      },
+      {
+        "address": "0xca226bd9c754f1283123d32b2a7cf62a722f8ada",
+        "egt_shares_wei": "293073098016728",
+        "eth_wei": "3313757745177500"
+      },
+      {
+        "address": "0xdd9f24efc84d93deef3c8745c837ab63e80abd27",
+        "egt_shares_wei": "119066175535309",
+        "eth_wei": "1346273213197757"
+      },
+      {
+        "address": "0x5ad6211cd3fde39a9cecb5df6f380b8263d1e277",
+        "egt_shares_wei": "86579030075671",
+        "eth_wei": "978943251443842"
+      },
+      {
+        "address": "0x00000000009726632680fb29d3f7a9734e3010e2",
+        "egt_shares_wei": "71325377246821",
+        "eth_wei": "806471228095706"
+      },
+      {
+        "address": "0xcfd59c0f530db36eea8ccbfe744f01fe3556925e",
+        "egt_shares_wei": "38283876473886",
+        "eth_wei": "432873208217550"
+      },
+      {
+        "address": "0x0000000000007f150bd6f54c40a34d7c3d5e9f56",
+        "egt_shares_wei": "59430540",
+        "eth_wei": "671977112"
+      },
+      {
+        "address": "0x1f2f10d1c40777ae1da742455c65828ff36df387",
+        "egt_shares_wei": "23285476",
+        "eth_wei": "263287329"
+      },
+      {
+        "address": "0xbf3f6477dbd514ef85b7d3ec6ac2205fd0962039",
+        "egt_shares_wei": "331",
+        "eth_wei": "3744"
+      },
+      {
+        "address": "0xb3005e626cd7000c48386200c98400005d00f6d4",
+        "egt_shares_wei": "4",
+        "eth_wei": "69"
+      },
+      {
+        "address": "0xc409381817595e7713b56b12796b2b5921671c19",
+        "egt_shares_wei": "6",
+        "eth_wei": "69"
+      },
+      {
+        "address": "0x60d40fb66e5e5fb0d41ed289f3ddbfd2fb95c8cb",
+        "egt_shares_wei": "2",
+        "eth_wei": "0"
+      },
+      {
+        "address": "0xb20000a600000300daba5ea62d64c9cfea00fbfb",
+        "egt_shares_wei": "2",
+        "eth_wei": "0"
+      }
+    ],
+    "min_listed_wei": "100000000000000",
+    "below_floor_holders": 34,
+    "below_floor_eth_wei": "240519930686758"
+  },
+  "token": "0x2aa5ce395b00cc486159adbdd97c55b535cf2cf9",
+  "balances": [
+    {
+      "address": "0xa39f923e175ffa142ec2ac0e2e04cdeac0f8c73c",
+      "balance_wei": "11057829372568786344",
+      "balance_eth": 11.057829372568786,
+      "egt_shares_wei": "977968988914576154"
+    },
+    {
+      "address": "0x08df5352d86d88617c7f13c2d1e1fff326d91e68",
+      "balance_wei": "4624874697405543919",
+      "balance_eth": 4.624874697405543,
+      "egt_shares_wei": "409030007543659124"
+    },
+    {
+      "address": "0xeccd602ae66ccc8c55cb74729606d8aed9b33861",
+      "balance_wei": "3098379352389578559",
+      "balance_eth": 3.098379352389579,
+      "egt_shares_wei": "274024749382285356"
+    },
+    {
+      "address": "0x8b1ea47e37a70e7feefc6a6945a4a7272a7934db",
+      "balance_wei": "2663770565309490417",
+      "balance_eth": 2.6637705653094903,
+      "egt_shares_wei": "235587376028660645"
+    },
+    {
+      "address": "0x82bb555b26b94872e2a5de76b00c8281d98948ac",
+      "balance_wei": "2261386522423338247",
+      "balance_eth": 2.2613865224233383,
+      "egt_shares_wei": "200000001480005143"
+    },
+    {
+      "address": "0xdd435e39e8c139b6a398ed37b1f9470633534c9e",
+      "balance_wei": "2261386505689019951",
+      "balance_eth": 2.26138650568902,
+      "egt_shares_wei": "200000000000000000"
+    },
+    {
+      "address": "0xeb88fa342fb0507673edb0be23f9f32da5713453",
+      "balance_wei": "2261386505689019951",
+      "balance_eth": 2.26138650568902,
+      "egt_shares_wei": "200000000000000000"
+    },
+    {
+      "address": "0x771684b206c159f637e9ef77e1989cd43c4d413f",
+      "balance_wei": "2124563556821729258",
+      "balance_eth": 2.1245635568217294,
+      "egt_shares_wei": "187899198255310875"
+    },
+    {
+      "address": "0x8e101059bd832496fc443d47ca2b6d0767b288df",
+      "balance_wei": "1645065085218792681",
+      "balance_eth": 1.6450650852187927,
+      "egt_shares_wei": "145491722098833274"
+    },
+    {
+      "address": "0xab0f3ecf3702118275856029d9d180377e6bf7fd",
+      "balance_wei": "1642520210161459074",
+      "balance_eth": 1.642520210161459,
+      "egt_shares_wei": "145266649998072840"
+    },
+    {
+      "address": "0xb67bbb1908fad3e75e6bc169e5847d3627b3caa0",
+      "balance_wei": "1630549701897313243",
+      "balance_eth": 1.6305497018973132,
+      "egt_shares_wei": "144207962486315661"
+    },
+    {
+      "address": "0x4f2d5be37a35acfd95d64cc941f9504b634221c7",
+      "balance_wei": "1532533837386693627",
+      "balance_eth": 1.5325338373866937,
+      "egt_shares_wei": "135539310377174747"
+    },
+    {
+      "address": "0x69b468c3f5c92907c7ef6cbbc6b84fd2e735d0cb",
+      "balance_wei": "1530101981558682990",
+      "balance_eth": 1.530101981558683,
+      "egt_shares_wei": "135324233845861524"
+    },
+    {
+      "address": "0x4322aa46ffed67809862da613725728e2fb8eae3",
+      "balance_wei": "1460817981829378308",
+      "balance_eth": 1.4608179818293783,
+      "egt_shares_wei": "129196665687565238"
+    },
+    {
+      "address": "0xb7c3b6c72b2a7d014ca1311f93aa3bc6b34f93f9",
+      "balance_wei": "1314496892473193729",
+      "balance_eth": 1.3144968924731937,
+      "egt_shares_wei": "116255835892385922"
+    },
+    {
+      "address": "0x8c0679ca6fcb95a95cd4ee46d78b0890e611043c",
+      "balance_wei": "1300036935058158094",
+      "balance_eth": 1.300036935058158,
+      "egt_shares_wei": "114976978220010285"
+    },
+    {
+      "address": "0x05e41229efca125057f4d96007dc477312db8feb",
+      "balance_wei": "1268119412328950712",
+      "balance_eth": 1.2681194123289508,
+      "egt_shares_wei": "112154150485882418"
+    },
+    {
+      "address": "0x000000000000000000000000000000000000dead",
+      "balance_wei": "1130693252844509975",
+      "balance_eth": 1.13069325284451,
+      "egt_shares_wei": "100000000000000000"
+    },
+    {
+      "address": "0x52f6f62b124195a78f9304c83473f932c502195e",
+      "balance_wei": "828427208723165949",
+      "balance_eth": 0.828427208723166,
+      "egt_shares_wei": "73267193081684473"
+    },
+    {
+      "address": "0x14a03ca8740a0044e63d3bb0432540d9509473d1",
+      "balance_wei": "698434427858283847",
+      "balance_eth": 0.6984344278582839,
+      "egt_shares_wei": "61770460388015663"
+    },
+    {
+      "address": "0x662b7c11e20547026f2c10403958b81dd64e9a38",
+      "balance_wei": "646582093571605413",
+      "balance_eth": 0.6465820935716053,
+      "egt_shares_wei": "57184571672731272"
+    },
+    {
+      "address": "0xd9931777cb51f435c643fd00e003b2e640afbad4",
+      "balance_wei": "639842022180590955",
+      "balance_eth": 0.6398420221805909,
+      "egt_shares_wei": "56588470884647651"
+    },
+    {
+      "address": "0x69e0e2b3d523d3b247d798a49c3fa022a46dd6bd",
+      "balance_wei": "584870213474693186",
+      "balance_eth": 0.5848702134746933,
+      "egt_shares_wei": "51726691744495888"
+    },
+    {
+      "address": "0x60e8b62c7da32ff62fcd4ab934b75d2d28fe7501",
+      "balance_wei": "565346626422254988",
+      "balance_eth": 0.565346626422255,
+      "egt_shares_wei": "50000000000000000"
+    },
+    {
+      "address": "0xf502337deafd7c2ebbcee9e8183d7ac871cbabfd",
+      "balance_wei": "565346626422254988",
+      "balance_eth": 0.565346626422255,
+      "egt_shares_wei": "50000000000000000"
+    },
+    {
+      "address": "0x29c5630533ca639820ef9daa132d34a1c82635e0",
+      "balance_wei": "538016303195700649",
+      "balance_eth": 0.5380163031957007,
+      "egt_shares_wei": "47582870229587127"
+    },
+    {
+      "address": "0xf27078bf9bdc462fe72bc06e3273dde7c5a41bb5",
+      "balance_wei": "530104016541565052",
+      "balance_eth": 0.530104016541565,
+      "egt_shares_wei": "46883097180245009"
+    },
+    {
+      "address": "0xbd2c152256f33805c8581c7dd6f68dbde150994a",
+      "balance_wei": "490109959377871735",
+      "balance_eth": 0.4901099593778717,
+      "egt_shares_wei": "43345970106825285"
+    },
+    {
+      "address": "0x667f8deb194128ef7e7a6625f64659a6e49e4d02",
+      "balance_wei": "481040862570628334",
+      "balance_eth": 0.48104086257062834,
+      "egt_shares_wei": "42543887244437268"
+    },
+    {
+      "address": "0x4478e4cdac18a9a5fbafe3b587b20612467909eb",
+      "balance_wei": "426649219194438303",
+      "balance_eth": 0.42664921919443827,
+      "egt_shares_wei": "37733418689915012"
+    },
+    {
+      "address": "0x4bab38aac015ac40bd6d50fd7b6e90557403d61d",
+      "balance_wei": "412398401166889807",
+      "balance_eth": 0.4123984011668898,
+      "egt_shares_wei": "36473057580330481"
+    },
+    {
+      "address": "0x8da17bbb1456d3839ac6a6fe64607769e0c85140",
+      "balance_wei": "405681994186484242",
+      "balance_eth": 0.4056819941864842,
+      "egt_shares_wei": "35879049703878667"
+    },
+    {
+      "address": "0x4a16e348d0f29bc66cc34ae617503ced960714c6",
+      "balance_wei": "381253638138138125",
+      "balance_eth": 0.3812536381381381,
+      "egt_shares_wei": "33718573731558931"
+    },
+    {
+      "address": "0x6477241a2aa2742e2bd19a4374d9cbd6d78a3d31",
+      "balance_wei": "377009984241096967",
+      "balance_eth": 0.37700998424109694,
+      "egt_shares_wei": "33343259393530885"
+    },
+    {
+      "address": "0x19b667bd0f76269fb365eb72e6347fb0b6e2bf3f",
+      "balance_wei": "373158785955658569",
+      "balance_eth": 0.37315878595565855,
+      "egt_shares_wei": "33002654346516595"
+    },
+    {
+      "address": "0xc34344c6fb2b8da179402da1c544a7f95a253635",
+      "balance_wei": "370170291436260474",
+      "balance_eth": 0.37017029143626046,
+      "egt_shares_wei": "32738347956443085"
+    },
+    {
+      "address": "0x5819ddbde7338cf1dabbe1336ca9534da465d180",
+      "balance_wei": "369320308944084133",
+      "balance_eth": 0.3693203089440842,
+      "egt_shares_wei": "32663174385712207"
+    },
+    {
+      "address": "0x088873f2bf4490e7676536c261d96f47c78df56b",
+      "balance_wei": "345476726652481709",
+      "balance_eth": 0.34547672665248175,
+      "egt_shares_wei": "30554416574376671"
+    },
+    {
+      "address": "0x2a013a6ed4cc4ef3b0eecca42b4b4f804e858546",
+      "balance_wei": "337052677940484303",
+      "balance_eth": 0.33705267794048427,
+      "egt_shares_wei": "29809382614829749"
+    },
+    {
+      "address": "0xb3bf0e6a90f865514b8250000bc6f7b4df401c28",
+      "balance_wei": "333622962014186285",
+      "balance_eth": 0.3336229620141863,
+      "egt_shares_wei": "29506054022599291"
+    },
+    {
+      "address": "0x64c5ab7c8c572ccaadb91570c1e4594e8340d0dd",
+      "balance_wei": "330393824204512960",
+      "balance_eth": 0.33039382420451296,
+      "egt_shares_wei": "29220464823092730"
+    },
+    {
+      "address": "0x7cff918c6d506557d06fb307667fca863f07f262",
+      "balance_wei": "330264902220836952",
+      "balance_eth": 0.33026490222083693,
+      "egt_shares_wei": "29209062793112302"
+    },
+    {
+      "address": "0xb11e239910eaafa78fa925e566c20bc611fd4995",
+      "balance_wei": "319896389102453089",
+      "balance_eth": 0.3198963891024531,
+      "egt_shares_wei": "28292057841300697"
+    },
+    {
+      "address": "0x0f2818503bfc93e30e3c77edee069d2695bb73ac",
+      "balance_wei": "306506767477338739",
+      "balance_eth": 0.30650676747733874,
+      "egt_shares_wei": "27107862075434950"
+    },
+    {
+      "address": "0xb28a91c42f11fa2f4ff4db2f3ff740325d8aa4bb",
+      "balance_wei": "297674275135057719",
+      "balance_eth": 0.29767427513505773,
+      "egt_shares_wei": "26326704823451628"
+    },
+    {
+      "address": "0x6f9824ad4c6c7088c4280d9d7066f11fe7693bdb",
+      "balance_wei": "291804607909967288",
+      "balance_eth": 0.2918046079099673,
+      "egt_shares_wei": "25807583725813166"
+    },
+    {
+      "address": "0xf86bf6a6f30803404a6581916ba5e47b4e0b59ff",
+      "balance_wei": "291030400881927890",
+      "balance_eth": 0.2910304008819279,
+      "egt_shares_wei": "25739111836899735"
+    },
+    {
+      "address": "0x3813d76b2e9b3748afa4b7fc3a19f7b0318ba47b",
+      "balance_wei": "264391867864654877",
+      "balance_eth": 0.2643918678646549,
+      "egt_shares_wei": "23383164903435870"
+    },
+    {
+      "address": "0x3783119553a0461a2eccf6097da901e064bab2b8",
+      "balance_wei": "238424109944336136",
+      "balance_eth": 0.23842410994433613,
+      "egt_shares_wei": "21086542202717431"
+    },
+    {
+      "address": "0x6deedff79427efe1729e58dda04f332e8e835ab6",
+      "balance_wei": "226564200821396507",
+      "balance_eth": 0.2265642008213965,
+      "egt_shares_wei": "20037636224628029"
+    },
+    {
+      "address": "0x820f92c1b3ad8e962e6c6d9d7caf2a550aec46fb",
+      "balance_wei": "219457118621226185",
+      "balance_eth": 0.2194571186212262,
+      "egt_shares_wei": "19409076517360746"
+    },
+    {
+      "address": "0x4161f35e66c83054e278bf4dff5bcd96fd7b82db",
+      "balance_wei": "214554737234137118",
+      "balance_eth": 0.21455473723413712,
+      "egt_shares_wei": "18975503452804465"
+    },
+    {
+      "address": "0x4616d82b7f92692600dcef35e24926905b265ed6",
+      "balance_wei": "194132948644903019",
+      "balance_eth": 0.19413294864490302,
+      "egt_shares_wei": "17169373581784313"
+    },
+    {
+      "address": "0x0000000e8cf6f0d9df0f0199215a03296f374f9b",
+      "balance_wei": "183904060486403244",
+      "balance_eth": 0.18390406048640323,
+      "egt_shares_wei": "16264717245260970"
+    },
+    {
+      "address": "0x6fa218374b6e071ab5edd0a45d0d21c19cc5f159",
+      "balance_wei": "182069695655366975",
+      "balance_eth": 0.182069695655367,
+      "egt_shares_wei": "16102483604402011"
+    },
+    {
+      "address": "0x09b632271cadffad42fd8056914d113bfd007f80",
+      "balance_wei": "180770702115172957",
+      "balance_eth": 0.18077070211517296,
+      "egt_shares_wei": "15987598905397561"
+    },
+    {
+      "address": "0x5b823348d2fcbf7839394071fd895ebdf6738435",
+      "balance_wei": "177941336671298809",
+      "balance_eth": 0.17794133667129883,
+      "egt_shares_wei": "15737366100279438"
+    },
+    {
+      "address": "0x7e0f360fd696f3aac8dbdbb4ebf23d3718aef4ca",
+      "balance_wei": "169015414972024631",
+      "balance_eth": 0.16901541497202463,
+      "egt_shares_wei": "14947945832950611"
+    },
+    {
+      "address": "0x5570d04f3a095c61a59673a6659ace7bc5a99805",
+      "balance_wei": "164862803077782636",
+      "balance_eth": 0.16486280307778262,
+      "egt_shares_wei": "14580683369519865"
+    },
+    {
+      "address": "0x721d417d5165bb5d1c74a1c499b3f1a0eca2c4e4",
+      "balance_wei": "163284624815551629",
+      "balance_eth": 0.16328462481555162,
+      "egt_shares_wei": "14441107206112084"
+    },
+    {
+      "address": "0x01076e09dcb258c16537670307f9bdced007bf37",
+      "balance_wei": "157735561063692503",
+      "balance_eth": 0.15773556106369252,
+      "egt_shares_wei": "13950340701766257"
+    },
+    {
+      "address": "0x57c57b4f2f2ebfe22be9291169ef9eb693ac96ec",
+      "balance_wei": "150207189264931746",
+      "balance_eth": 0.15020718926493173,
+      "egt_shares_wei": "13284521587711981"
+    },
+    {
+      "address": "0x668ede7535cc1b42251149c7931642b69f04e9d5",
+      "balance_wei": "147740581925629774",
+      "balance_eth": 0.14774058192562975,
+      "egt_shares_wei": "13066371586984844"
+    },
+    {
+      "address": "0x8046bc2af3556c8657995d5c268195286925c67c",
+      "balance_wei": "145460848878918123",
+      "balance_eth": 0.1454608488789181,
+      "egt_shares_wei": "12864748994740974"
+    },
+    {
+      "address": "0x68c7dfd627f01d1fef512c3f1b1cef46ed78b377",
+      "balance_wei": "140767603050937860",
+      "balance_eth": 0.14076760305093786,
+      "egt_shares_wei": "12449672154388972"
+    },
+    {
+      "address": "0xcb29a4ec65ee9ffc7a80c2bd2c1b66cab3670feb",
+      "balance_wei": "140107785316509630",
+      "balance_eth": 0.14010778531650964,
+      "egt_shares_wei": "12391317005212280"
+    },
+    {
+      "address": "0x07a90e1b2788a108aac075a8c987c9aa521497e6",
+      "balance_wei": "139364236745082090",
+      "balance_eth": 0.1393642367450821,
+      "egt_shares_wei": "12325556590567815"
+    },
+    {
+      "address": "0x68a7ac13477aad590982293feeeb786a00276cf2",
+      "balance_wei": "139348983218051892",
+      "balance_eth": 0.1393489832180519,
+      "egt_shares_wei": "12324207548553825"
+    },
+    {
+      "address": "0x9fe50eab01a6fdeebe05a7d982a61eecfe9af417",
+      "balance_wei": "139189301631362723",
+      "balance_eth": 0.13918930163136273,
+      "egt_shares_wei": "12310085098783523"
+    },
+    {
+      "address": "0xb70ad7586134bfc9d70938ba44ca46039713990b",
+      "balance_wei": "137928045364802433",
+      "balance_eth": 0.13792804536480244,
+      "egt_shares_wei": "12198537933945727"
+    },
+    {
+      "address": "0x0fc84e15aeb7907a76a221169d80d3eb06cdb44b",
+      "balance_wei": "135113700225825525",
+      "balance_eth": 0.13511370022582553,
+      "egt_shares_wei": "11949633544369085"
+    },
+    {
+      "address": "0xa7dcc417c63f24f9073b667a5d7149bd38463d0f",
+      "balance_wei": "130565575559396899",
+      "balance_eth": 0.1305655755593969,
+      "egt_shares_wei": "11547391410617354"
+    },
+    {
+      "address": "0x7cd0ae2eba68ba9d57b518e064af28730f156c9e",
+      "balance_wei": "128666466141834906",
+      "balance_eth": 0.1286664661418349,
+      "egt_shares_wei": "11379431673280602"
+    },
+    {
+      "address": "0x84ae057efb7fcf5b1e8721b1e32fe2a00e69242b",
+      "balance_wei": "123337498841946283",
+      "balance_eth": 0.1233374988419463,
+      "egt_shares_wei": "10908130788935319"
+    },
+    {
+      "address": "0xc02bfc8c96477d82ae78d3212b802c4bfc820f90",
+      "balance_wei": "122633357667683198",
+      "balance_eth": 0.1226333576676832,
+      "egt_shares_wei": "10845855616381523"
+    },
+    {
+      "address": "0x218fbeda2c017f5c935c47ae453810ab15f11478",
+      "balance_wei": "116930221640725677",
+      "balance_eth": 0.11693022164072568,
+      "egt_shares_wei": "10341462757167936"
+    },
+    {
+      "address": "0x8c0603f827a68476250fd27f964934a4e8d88e2d",
+      "balance_wei": "111341665967375746",
+      "balance_eth": 0.11134166596737574,
+      "egt_shares_wei": "9847203535288733"
+    },
+    {
+      "address": "0x188c30e9a6527f5f0c3f7fe59b72ac7253c62f28",
+      "balance_wei": "109998899754997326",
+      "balance_eth": 0.10999889975499733,
+      "egt_shares_wei": "9728447523523350"
+    },
+    {
+      "address": "0xc0d64ae6e18826f14e7b9058eb68fa6acfd454ff",
+      "balance_wei": "109372485683207495",
+      "balance_eth": 0.10937248568320748,
+      "egt_shares_wei": "9673046638251065"
+    },
+    {
+      "address": "0x69e64e9a2631c8330aad35148ae9124b16cbefd0",
+      "balance_wei": "107718639620222785",
+      "balance_eth": 0.10771863962022278,
+      "egt_shares_wei": "9526778314917211"
+    },
+    {
+      "address": "0x53bff0e8b8f0926ac5e81c52dbf5e517c03336f4",
+      "balance_wei": "107671917154884564",
+      "balance_eth": 0.10767191715488456,
+      "egt_shares_wei": "9522646118565929"
+    },
+    {
+      "address": "0x5207d1d258ce0db91f462f5134838ba542e476a4",
+      "balance_wei": "106723373243373538",
+      "balance_eth": 0.10672337324337354,
+      "egt_shares_wei": "9438755646138969"
+    },
+    {
+      "address": "0x84b01e9bb938129019ef838ec3c111b832747b23",
+      "balance_wei": "106371208569622263",
+      "balance_eth": 0.10637120856962226,
+      "egt_shares_wei": "9407609738717543"
+    },
+    {
+      "address": "0xfe99cb7011e55f1dd8c376f9134e24ef8a10b14d",
+      "balance_wei": "105046844364770731",
+      "balance_eth": 0.10504684436477074,
+      "egt_shares_wei": "9290481224726694"
+    },
+    {
+      "address": "0x34a3fcd89fb10fe8b3a9ea91da8c3741bfb32e71",
+      "balance_wei": "102886217535558814",
+      "balance_eth": 0.10288621753555882,
+      "egt_shares_wei": "9099392543178768"
+    },
+    {
+      "address": "0x090476500ca188fd2ada370bb1b4e020f86e8eaf",
+      "balance_wei": "96266047024973616",
+      "balance_eth": 0.09626604702497361,
+      "egt_shares_wei": "8513895946826869"
+    },
+    {
+      "address": "0xc6bd07bb5c4f0d24056f1bf7312115496e965219",
+      "balance_wei": "92892510367923147",
+      "balance_eth": 0.09289251036792315,
+      "egt_shares_wei": "8215535923136661"
+    },
+    {
+      "address": "0xd6bc98332afbf7e0d23c0dc16a190e0c3334ee67",
+      "balance_wei": "86164903607191732",
+      "balance_eth": 0.08616490360719173,
+      "egt_shares_wei": "7620537523366728"
+    },
+    {
+      "address": "0xbf9aec048bc9f3b85bede674625fc42939555cb5",
+      "balance_wei": "82217355621163069",
+      "balance_eth": 0.08221735562116307,
+      "egt_shares_wei": "7271411181974162"
+    },
+    {
+      "address": "0x4f8a8093727ea33f5adbb7cb21494a018d3010d3",
+      "balance_wei": "77507206573003993",
+      "balance_eth": 0.077507206573004,
+      "egt_shares_wei": "6854839398574049"
+    },
+    {
+      "address": "0xd18848abfa3747fb05038a287b763bc2bae9f99a",
+      "balance_wei": "76450122236735739",
+      "balance_eth": 0.07645012223673574,
+      "egt_shares_wei": "6761349468072658"
+    },
+    {
+      "address": "0x1b91f78c256ce3a35c790a55a776409e3520552c",
+      "balance_wei": "74360159598204526",
+      "balance_eth": 0.07436015959820452,
+      "egt_shares_wei": "6576510420587992"
+    },
+    {
+      "address": "0x962ad4a1276d2f985f8afabd3da59bd32e5c36f2",
+      "balance_wei": "72299757487102062",
+      "balance_eth": 0.07229975748710206,
+      "egt_shares_wei": "6394285745069759"
+    },
+    {
+      "address": "0xd1cc7cdf8726a4d2bbeb6094af03ed6da042442d",
+      "balance_wei": "71395749553889910",
+      "balance_eth": 0.07139574955388991,
+      "egt_shares_wei": "6314334093201495"
+    },
+    {
+      "address": "0xa30f30f100d9e4dd294c8475316d3e982e87880d",
+      "balance_wei": "71363710707070570",
+      "balance_eth": 0.07136371070707057,
+      "egt_shares_wei": "6311500535405097"
+    },
+    {
+      "address": "0xbdb4e4c0cf74bf57d549e7558a2526fb05c123c7",
+      "balance_wei": "69928408647947644",
+      "balance_eth": 0.06992840864794765,
+      "egt_shares_wei": "6184560531517032"
+    },
+    {
+      "address": "0x2d8c707f9cc5692419e4f850434bb6d75f9b6af7",
+      "balance_wei": "66054124058663256",
+      "balance_eth": 0.06605412405866326,
+      "egt_shares_wei": "5841913701394203"
+    },
+    {
+      "address": "0x26e48f76f187809a883ffb7d7fae88041671a55d",
+      "balance_wei": "64634827242181663",
+      "balance_eth": 0.06463482724218167,
+      "egt_shares_wei": "5716389222238518"
+    },
+    {
+      "address": "0x9a8562bf8f9f769d7efc7bbfd7880dcef05e62c3",
+      "balance_wei": "64634827242181663",
+      "balance_eth": 0.06463482724218167,
+      "egt_shares_wei": "5716389222238518"
+    },
+    {
+      "address": "0x78b3367b0f547cd16bac453f788956afce92447b",
+      "balance_wei": "64366599154889662",
+      "balance_eth": 0.06436659915488967,
+      "egt_shares_wei": "5692666777037997"
+    },
+    {
+      "address": "0x89e5c205d283bfd8533ada96ed4fbede363f29a9",
+      "balance_wei": "63252719209099778",
+      "balance_eth": 0.06325271920909978,
+      "egt_shares_wei": "5594153768051017"
+    },
+    {
+      "address": "0x3598827daf8cd64983bb25e180f7dc7684f617d5",
+      "balance_wei": "61798007756558921",
+      "balance_eth": 0.06179800775655892,
+      "egt_shares_wei": "5465497171853846"
+    },
+    {
+      "address": "0xf4583ac5c12df365a850fe2f9ff63dc7acbaffcb",
+      "balance_wei": "60508613063855617",
+      "balance_eth": 0.06050861306385562,
+      "egt_shares_wei": "5351461407559720"
+    },
+    {
+      "address": "0xbe6a806b6e5db09343a06967fbbcd3a7c1434bd6",
+      "balance_wei": "58574424067235186",
+      "balance_eth": 0.05857442406723518,
+      "egt_shares_wei": "5180399186063790"
+    },
+    {
+      "address": "0xd983072e9b02ec3fb1a54144fd7754d7e5712a15",
+      "balance_wei": "58535700466875565",
+      "balance_eth": 0.05853570046687557,
+      "egt_shares_wei": "5176974419862858"
+    },
+    {
+      "address": "0xf137025a363da4fdbd5a80c727c8db7fd216efb2",
+      "balance_wei": "58372886778167717",
+      "balance_eth": 0.05837288677816772,
+      "egt_shares_wei": "5162574962866165"
+    },
+    {
+      "address": "0xf53cab0c6f25f48f985d1e2c40e03fc7c1963364",
+      "balance_wei": "54671345019229046",
+      "balance_eth": 0.054671345019229045,
+      "egt_shares_wei": "4835205736099611"
+    },
+    {
+      "address": "0x7285502ed0a0ed25f65941e480bda7114492acf9",
+      "balance_wei": "52806091327202799",
+      "balance_eth": 0.0528060913272028,
+      "egt_shares_wei": "4670240243705123"
+    },
+    {
+      "address": "0x933a1d8b346b06d40ad6e96ed50485f4f743629e",
+      "balance_wei": "52524977986115734",
+      "balance_eth": 0.05252497798611574,
+      "egt_shares_wei": "4645378209693695"
+    },
+    {
+      "address": "0xcff7303b8e08403438c751bf21c04771252fa413",
+      "balance_wei": "52117077437408175",
+      "balance_eth": 0.05211707743740818,
+      "egt_shares_wei": "4609302948106931"
+    },
+    {
+      "address": "0x956bc3317fb4a5f143d5fe0b0e2eec1450e3d6b1",
+      "balance_wei": "51730112752824210",
+      "balance_eth": 0.05173011275282421,
+      "egt_shares_wei": "4575079281908298"
+    },
+    {
+      "address": "0x812dbb12a51a5173cbae829dd451cd4a79f6a756",
+      "balance_wei": "51181026845187304",
+      "balance_eth": 0.05118102684518731,
+      "egt_shares_wei": "4526517401287222"
+    },
+    {
+      "address": "0xc9582d09acdec05aa8fee7fdebb5f10b7e9d039f",
+      "balance_wei": "49681027849376199",
+      "balance_eth": 0.0496810278493762,
+      "egt_shares_wei": "4393855515135738"
+    },
+    {
+      "address": "0x9d09a6e4ccd412f8f33336d74b420f355bfebbda",
+      "balance_wei": "49677651465293271",
+      "balance_eth": 0.04967765146529327,
+      "egt_shares_wei": "4393556903281954"
+    },
+    {
+      "address": "0x1cccb306a2bfade9860a33689551b38ccc6eb66e",
+      "balance_wei": "49501648532319002",
+      "balance_eth": 0.049501648532319,
+      "egt_shares_wei": "4377990972156826"
+    },
+    {
+      "address": "0xa0c242d40f0eb145bcd37764905bd9284c21fd65",
+      "balance_wei": "49453395292311356",
+      "balance_eth": 0.04945339529231136,
+      "egt_shares_wei": "4373723392078299"
+    },
+    {
+      "address": "0x153879908f6837a4c4f51e368cdd1c6c0c6fc12b",
+      "balance_wei": "49367570525387131",
+      "balance_eth": 0.04936757052538713,
+      "egt_shares_wei": "4366132936691010"
+    },
+    {
+      "address": "0x749e1d15d3d461469bec674575c2b07dd0dbeded",
+      "balance_wei": "47858354134369742",
+      "balance_eth": 0.04785835413436974,
+      "egt_shares_wei": "4232655851971474"
+    },
+    {
+      "address": "0xcf4f683e7d442ea81ff36df03f0458635d86861a",
+      "balance_wei": "47726979287970820",
+      "balance_eth": 0.04772697928797082,
+      "egt_shares_wei": "4221036887582284"
+    },
+    {
+      "address": "0xf9bbb08373ef7367987985bdd8dfb8b4a6569029",
+      "balance_wei": "47684718204723962",
+      "balance_eth": 0.04768471820472396,
+      "egt_shares_wei": "4217299261737209"
+    },
+    {
+      "address": "0xd7927d0d47327449890f39a620dc651b66502df3",
+      "balance_wei": "47288300291938083",
+      "balance_eth": 0.04728830029193808,
+      "egt_shares_wei": "4182239539589879"
+    },
+    {
+      "address": "0x9b78703a75983c5f19171b9983fb8bbcaff32a3a",
+      "balance_wei": "46753061958682271",
+      "balance_eth": 0.04675306195868227,
+      "egt_shares_wei": "4134902356679368"
+    },
+    {
+      "address": "0x385b0f514eb52f37b25c01eeb1f777513c839d46",
+      "balance_wei": "46387727753597214",
+      "balance_eth": 0.046387727753597216,
+      "egt_shares_wei": "4102591718567220"
+    },
+    {
+      "address": "0x3c4af3c28fafea421796f160151b010332b55e3f",
+      "balance_wei": "46252110311423644",
+      "balance_eth": 0.04625211031142365,
+      "egt_shares_wei": "4090597533421745"
+    },
+    {
+      "address": "0x8ce6e1a223b329a76e8b5e696edc562aabb349e1",
+      "balance_wei": "45937138423530489",
+      "balance_eth": 0.04593713842353049,
+      "egt_shares_wei": "4062741004951204"
+    },
+    {
+      "address": "0x0b9715c99e38d1a52a3cfb8a60627d249ba0dff2",
+      "balance_wei": "45932902053035743",
+      "balance_eth": 0.04593290205303575,
+      "egt_shares_wei": "4062366334766864"
+    },
+    {
+      "address": "0x9c13bae9c0c6df970ea2740739fb163271f73397",
+      "balance_wei": "45710955190981012",
+      "balance_eth": 0.045710955190981006,
+      "egt_shares_wei": "4042737062062143"
+    },
+    {
+      "address": "0x4d928359e8556197f161f4927a928dfde9c3d1a8",
+      "balance_wei": "44766896317284124",
+      "balance_eth": 0.04476689631728413,
+      "egt_shares_wei": "3959243252284656"
+    },
+    {
+      "address": "0x46910af2ead8ae10ad2787cf197909126c3864f6",
+      "balance_wei": "44012819212966754",
+      "balance_eth": 0.04401281921296675,
+      "egt_shares_wei": "3892551680329100"
+    },
+    {
+      "address": "0x71dfd2bab718f5bb30f1099494a68752b5d2f2e2",
+      "balance_wei": "43742322934690039",
+      "balance_eth": 0.04374232293469004,
+      "egt_shares_wei": "3868628633331498"
+    },
+    {
+      "address": "0xadc4a4a47b2c12c7fb4e94656ac4dc4b7fd0bded",
+      "balance_wei": "41873728319713953",
+      "balance_eth": 0.04187372831971395,
+      "egt_shares_wei": "3703367665312521"
+    },
+    {
+      "address": "0x0b5e15faf9c183b03cff4c2fd2f49d3e4377b6e3",
+      "balance_wei": "41172642656908300",
+      "balance_eth": 0.0411726426569083,
+      "egt_shares_wei": "3641362726215032"
+    },
+    {
+      "address": "0x319488ab07ddbe228126e318a9e1ccefa3ea15e1",
+      "balance_wei": "39845879772054064",
+      "balance_eth": 0.03984587977205407,
+      "egt_shares_wei": "3524022069806543"
+    },
+    {
+      "address": "0x9e858f48f1a15d221962bbea7758ea8a3c476797",
+      "balance_wei": "39642638049170561",
+      "balance_eth": 0.03964263804917056,
+      "egt_shares_wei": "3506047104238105"
+    },
+    {
+      "address": "0xc90b057e947ba4ea5a2c73755851bd7088982fb3",
+      "balance_wei": "39560290486161208",
+      "balance_eth": 0.039560290486161206,
+      "egt_shares_wei": "3498764177343279"
+    },
+    {
+      "address": "0x17b128b6771f5d26de3348db0cd222328cc1eb47",
+      "balance_wei": "39128483776552569",
+      "balance_eth": 0.03912848377655257,
+      "egt_shares_wei": "3460574623410568"
+    },
+    {
+      "address": "0xa230a52119efc46cab8317f87c74c3998c0d4177",
+      "balance_wei": "38655697367743514",
+      "balance_eth": 0.03865569736774351,
+      "egt_shares_wei": "3418760770924963"
+    },
+    {
+      "address": "0x93aaa57b7d245c3b9a0a9c0a16b381e5baaef07d",
+      "balance_wei": "38594816457744814",
+      "balance_eth": 0.03859481645774482,
+      "egt_shares_wei": "3413376383086303"
+    },
+    {
+      "address": "0xd674d9dbea02b7457408ed2cd21051498ec8d13c",
+      "balance_wei": "38424836316486497",
+      "balance_eth": 0.038424836316486494,
+      "egt_shares_wei": "3398343115590397"
+    },
+    {
+      "address": "0x578c7d8b9f1a2cf082cccc96cd1d9d2434e03cc1",
+      "balance_wei": "38323053398126244",
+      "balance_eth": 0.03832305339812624,
+      "egt_shares_wei": "3389341300278931"
+    },
+    {
+      "address": "0xa1311e410d7252488301df77339c855aff354006",
+      "balance_wei": "37978564601705949",
+      "balance_eth": 0.037978564601705955,
+      "egt_shares_wei": "3358874257555037"
+    },
+    {
+      "address": "0x76fc549a7bd2cdd9b6fdf1e3de6763534364e487",
+      "balance_wei": "37951587204503197",
+      "balance_eth": 0.0379515872045032,
+      "egt_shares_wei": "3356488341026849"
+    },
+    {
+      "address": "0x7957447b7360a78564526cc6cce373d29812dee5",
+      "balance_wei": "37346967152122508",
+      "balance_eth": 0.03734696715212251,
+      "egt_shares_wei": "3303014947526036"
+    },
+    {
+      "address": "0x415680ef2e97cd38cb9a42abd2a1b2812086401a",
+      "balance_wei": "36617626275606686",
+      "balance_eth": 0.03661762627560669,
+      "egt_shares_wei": "3238511080126015"
+    },
+    {
+      "address": "0xb722ca0b4dafa8bf236a0058f48dd9ae2c5fd5ce",
+      "balance_wei": "35593120972291864",
+      "balance_eth": 0.035593120972291864,
+      "egt_shares_wei": "3147902482193950"
+    },
+    {
+      "address": "0x2ef869f0350b57d53478d701e3fee529bc911c75",
+      "balance_wei": "33715744422507247",
+      "balance_eth": 0.03371574442250725,
+      "egt_shares_wei": "2981864828297844"
+    },
+    {
+      "address": "0xed517b1aaa0d05525b84a14aa1aa0f9d6b537270",
+      "balance_wei": "33072944375156236",
+      "balance_eth": 0.03307294437515624,
+      "egt_shares_wei": "2925014745772462"
+    },
+    {
+      "address": "0x5ae884656301d68d9c694f6a2c7e401d73dc3e1a",
+      "balance_wei": "32929728403777579",
+      "balance_eth": 0.03292972840377758,
+      "egt_shares_wei": "2912348536699547"
+    },
+    {
+      "address": "0xdf127dac90f88c455b6e3ba8b571de5015b17d51",
+      "balance_wei": "32924845562302842",
+      "balance_eth": 0.03292484556230284,
+      "egt_shares_wei": "2911916691770565"
+    },
+    {
+      "address": "0x72605e6bd92f7e84dfa28d1396c1160f6c4b0933",
+      "balance_wei": "32837956287951331",
+      "balance_eth": 0.03283795628795133,
+      "egt_shares_wei": "2904232089944832"
+    },
+    {
+      "address": "0xb90b4e4d16b9ff61fe3c6c7330cfda8d3dde96bc",
+      "balance_wei": "32711939278816128",
+      "balance_eth": 0.032711939278816125,
+      "egt_shares_wei": "2893086979737608"
+    },
+    {
+      "address": "0x4e4d2780f534241d442b60622cc75cfd24a665a1",
+      "balance_wei": "31221873540778500",
+      "balance_eth": 0.0312218735407785,
+      "egt_shares_wei": "2761303603982155"
+    },
+    {
+      "address": "0x9b8afb5f6cbd0cb9f61a2d3765acbd5a8f1b911a",
+      "balance_wei": "30780121258843894",
+      "balance_eth": 0.030780121258843895,
+      "egt_shares_wei": "2722234450538171"
+    },
+    {
+      "address": "0x9d81446ee70dd47177d37e8c9aa967d0fba1f36f",
+      "balance_wei": "30298371485868194",
+      "balance_eth": 0.03029837148586819,
+      "egt_shares_wei": "2679627866324126"
+    },
+    {
+      "address": "0xf7b18e107eb36797f4ce36de756630b9c30969ad",
+      "balance_wei": "30147892297530961",
+      "balance_eth": 0.03014789229753096,
+      "egt_shares_wei": "2666319288780334"
+    },
+    {
+      "address": "0x5fd944c3e84871a90c654fd2091ed62f3f1a14d1",
+      "balance_wei": "29145920086149816",
+      "balance_eth": 0.029145920086149815,
+      "egt_shares_wei": "2577703547166906"
+    },
+    {
+      "address": "0x3d89d2653636eecdd286b7399c194d885ac1a159",
+      "balance_wei": "28795785971894352",
+      "balance_eth": 0.02879578597189435,
+      "egt_shares_wei": "2546737225100812"
+    },
+    {
+      "address": "0x5edfc0e407ba8f48061aeabd2898742139270aa0",
+      "balance_wei": "27575400631366438",
+      "balance_eth": 0.02757540063136644,
+      "egt_shares_wei": "2438804738773705"
+    },
+    {
+      "address": "0x989ba00664a4d50d9238b5a802e643bafeabceb4",
+      "balance_wei": "27378754484489378",
+      "balance_eth": 0.027378754484489377,
+      "egt_shares_wei": "2421413094631286"
+    },
+    {
+      "address": "0x08d12fa4072e0a10a86e27318bef9058fbe89881",
+      "balance_wei": "26986583673761343",
+      "balance_eth": 0.026986583673761343,
+      "egt_shares_wei": "2386728991781866"
+    },
+    {
+      "address": "0xe491a402bd17c481711e0a3d3cda61d9462e43b6",
+      "balance_wei": "26711678931488238",
+      "balance_eth": 0.02671167893148824,
+      "egt_shares_wei": "2362416054424049"
+    },
+    {
+      "address": "0xd6cf09558337100fa241b5c3957fe82978fb098d",
+      "balance_wei": "26577087456984697",
+      "balance_eth": 0.026577087456984696,
+      "egt_shares_wei": "2350512607210145"
+    },
+    {
+      "address": "0x35c3ccbbfcd78f2b3581260c5464a74e58d27049",
+      "balance_wei": "26528231891440811",
+      "balance_eth": 0.026528231891440813,
+      "egt_shares_wei": "2346191756668146"
+    },
+    {
+      "address": "0xbf75d94aa06f15dfea0e7462882378271b4daf03",
+      "balance_wei": "24749899543310883",
+      "balance_eth": 0.024749899543310885,
+      "egt_shares_wei": "2188913702372151"
+    },
+    {
+      "address": "0x58432314d6b937c2d19f11fdfef27f4bafb6910b",
+      "balance_wei": "24520541398187127",
+      "balance_eth": 0.02452054139818713,
+      "egt_shares_wei": "2168628966034796"
+    },
+    {
+      "address": "0x057f8d0f6fb2703197363f75c002f766f1c4287a",
+      "balance_wei": "24204152665104118",
+      "balance_eth": 0.02420415266510412,
+      "egt_shares_wei": "2140647129910183"
+    },
+    {
+      "address": "0xb03285a1cf1a51fd03892d56b6235a18e2f7e363",
+      "balance_wei": "23477223290384491",
+      "balance_eth": 0.023477223290384493,
+      "egt_shares_wei": "2076356538904104"
+    },
+    {
+      "address": "0xa24009a666a0ca097353c392256220a1f5f68c13",
+      "balance_wei": "22939940792843037",
+      "balance_eth": 0.022939940792843037,
+      "egt_shares_wei": "2028838567412739"
+    },
+    {
+      "address": "0x629abba9fd259bbf7c2fc65395be96b35a009ea9",
+      "balance_wei": "22849078100802373",
+      "balance_eth": 0.022849078100802372,
+      "egt_shares_wei": "2020802551295010"
+    },
+    {
+      "address": "0x4f4ebf556cfdc21c3424f85ff6572c77c514fcae",
+      "balance_wei": "21912931252689473",
+      "balance_eth": 0.021912931252689474,
+      "egt_shares_wei": "1938008491477474"
+    },
+    {
+      "address": "0x123ec366733b26f1cd5d8a3dc898219c038ac15d",
+      "balance_wei": "21885698767581602",
+      "balance_eth": 0.0218856987675816,
+      "egt_shares_wei": "1935600014639094"
+    },
+    {
+      "address": "0xb74e5e06f50fa9e4ef645efdad9d996d33cc2d9d",
+      "balance_wei": "21785429882349406",
+      "balance_eth": 0.021785429882349407,
+      "egt_shares_wei": "1926732102410915"
+    },
+    {
+      "address": "0x22a93244de3e0400ef67a9583a17a7744c2ce5ec",
+      "balance_wei": "21647419587686124",
+      "balance_eth": 0.021647419587686123,
+      "egt_shares_wei": "1914526290240719"
+    },
+    {
+      "address": "0x722e895a12d2a11be99ed69dbc1fedbb9f3cd8fe",
+      "balance_wei": "21625209489180200",
+      "balance_eth": 0.0216252094891802,
+      "egt_shares_wei": "1912561999886102"
+    },
+    {
+      "address": "0x6b9bdeedd8f71e347d52c717844fad861b1748b6",
+      "balance_wei": "20873372837011543",
+      "balance_eth": 0.020873372837011545,
+      "egt_shares_wei": "1846068576468456"
+    },
+    {
+      "address": "0x9be393aa265922b1ddfdbd7305e1ff83cc0aa260",
+      "balance_wei": "20490849034480114",
+      "balance_eth": 0.02049084903448011,
+      "egt_shares_wei": "1812237667725603"
+    },
+    {
+      "address": "0x469d41f19e4350e466c572a665a4e8ef4cf1d466",
+      "balance_wei": "19759059605883721",
+      "balance_eth": 0.01975905960588372,
+      "egt_shares_wei": "1747517247155712"
+    },
+    {
+      "address": "0x01c13e3750e137e35dd0ea68fef94b017731c8fa",
+      "balance_wei": "18524887342698861",
+      "balance_eth": 0.01852488734269886,
+      "egt_shares_wei": "1638365427236381"
+    },
+    {
+      "address": "0x4cc04e7fdd5316a6873dfb945f0208f4e7d5823f",
+      "balance_wei": "18084205787930445",
+      "balance_eth": 0.018084205787930446,
+      "egt_shares_wei": "1599390970312737"
+    },
+    {
+      "address": "0x8a44703c45362a4a68f43e49bc406facdc3fbcfc",
+      "balance_wei": "18042137734094170",
+      "balance_eth": 0.018042137734094167,
+      "egt_shares_wei": "1595670416242884"
+    },
+    {
+      "address": "0x296b708d38bdd1f4113bdd5a1b0e5955d2fe31cf",
+      "balance_wei": "17883135822777982",
+      "balance_eth": 0.017883135822777983,
+      "egt_shares_wei": "1581608077857453"
+    },
+    {
+      "address": "0x29683db5189644d8c4679b801af5c67e6769ecef",
+      "balance_wei": "17873187178015258",
+      "balance_eth": 0.017873187178015257,
+      "egt_shares_wei": "1580728206615834"
+    },
+    {
+      "address": "0x8303834a3f84fbfafee76b2649f9e173269a80a9",
+      "balance_wei": "17460476726120890",
+      "balance_eth": 0.01746047672612089,
+      "egt_shares_wei": "1544227550858304"
+    },
+    {
+      "address": "0x58f103ebfdf06eb2a2e45782f66c2d7ff3c0fbb3",
+      "balance_wei": "16765798202063397",
+      "balance_eth": 0.016765798202063396,
+      "egt_shares_wei": "1482789267547614"
+    },
+    {
+      "address": "0xe7666257b4a33cc0238795d3fffe15b12441e50b",
+      "balance_wei": "16541658448647153",
+      "balance_eth": 0.01654165844864715,
+      "egt_shares_wei": "1462966052643624"
+    },
+    {
+      "address": "0xa252bc234d2ebd1ba545dd46002b15915ae835d2",
+      "balance_wei": "16113710349539004",
+      "balance_eth": 0.016113710349539005,
+      "egt_shares_wei": "1425117759303986"
+    },
+    {
+      "address": "0x742656e138c5162290259a5da0182fdf054ee4f6",
+      "balance_wei": "16070404293650698",
+      "balance_eth": 0.016070404293650697,
+      "egt_shares_wei": "1421287714702643"
+    },
+    {
+      "address": "0x5099a45d472bf410db817b090559394117fde080",
+      "balance_wei": "15861291425634451",
+      "balance_eth": 0.01586129142563445,
+      "egt_shares_wei": "1402793497328463"
+    },
+    {
+      "address": "0x069e85d4f1010dd961897dc8c095fbb5ff297434",
+      "balance_wei": "15815210159123746",
+      "balance_eth": 0.015815210159123745,
+      "egt_shares_wei": "1398718009445718"
+    },
+    {
+      "address": "0x388e07d4fc7f3e2c825e6cb1ff46447764798b24",
+      "balance_wei": "15325338373866937",
+      "balance_eth": 0.015325338373866937,
+      "egt_shares_wei": "1355393103771747"
+    },
+    {
+      "address": "0x39c1378e6cdfe1a9ef50831844f52702e544b9dc",
+      "balance_wei": "13107641964320495",
+      "balance_eth": 0.013107641964320496,
+      "egt_shares_wei": "1159257113398823"
+    },
+    {
+      "address": "0x40be653a6fc223349a75cd3171c8a5af143bfc02",
+      "balance_wei": "12256510358074153",
+      "balance_eth": 0.012256510358074152,
+      "egt_shares_wei": "1083981913506622"
+    },
+    {
+      "address": "0x32a59b87352e980dd6ab1baf462696d28e63525d",
+      "balance_wei": "12125444571884846",
+      "balance_eth": 0.012125444571884846,
+      "egt_shares_wei": "1072390282809293"
+    },
+    {
+      "address": "0xdb4142458f6fe64409c364ef26d80b5f55a79629",
+      "balance_wei": "10921318202989036",
+      "balance_eth": 0.010921318202989036,
+      "egt_shares_wei": "965895761340581"
+    },
+    {
+      "address": "0x9d8a70310c5c40e5df21f9f84a89045fbff56706",
+      "balance_wei": "10586896278765441",
+      "balance_eth": 0.01058689627876544,
+      "egt_shares_wei": "936319046048231"
+    },
+    {
+      "address": "0x382ffce2287252f930e1c8dc9328dac5bf282ba1",
+      "balance_wei": "10448526995547228",
+      "balance_eth": 0.010448526995547228,
+      "egt_shares_wei": "924081484457581"
+    },
+    {
+      "address": "0x3e5a90f582d45cf83e0446d53b3069e86162003b",
+      "balance_wei": "10448056216079582",
+      "balance_eth": 0.010448056216079582,
+      "egt_shares_wei": "924039848101609"
+    },
+    {
+      "address": "0xb11b73348425d3f01fbf9f57a65e1dbcfd9ff7c1",
+      "balance_wei": "10284230522564973",
+      "balance_eth": 0.010284230522564972,
+      "egt_shares_wei": "909550888067363"
+    },
+    {
+      "address": "0x45a9c4346251e2d603109932ad6610c29c60bc98",
+      "balance_wei": "10170798424805112",
+      "balance_eth": 0.010170798424805111,
+      "egt_shares_wei": "899518803991994"
+    },
+    {
+      "address": "0x08d816526bdc9d077dd685bd9fa49f58a5ab8e48",
+      "balance_wei": "9911814726135380",
+      "balance_eth": 0.00991181472613538,
+      "egt_shares_wei": "876613944692782"
+    },
+    {
+      "address": "0xf643df4c45909815b82a0c587010a8d8edde7a98",
+      "balance_wei": "9802323113774783",
+      "balance_eth": 0.009802323113774785,
+      "egt_shares_wei": "866930362334335"
+    },
+    {
+      "address": "0xc0eb311c2f846bd359ed8eaa9a766d5e4736846a",
+      "balance_wei": "9723503588126649",
+      "balance_eth": 0.009723503588126648,
+      "egt_shares_wei": "859959459708902"
+    },
+    {
+      "address": "0x94e64d925ea0d2ea9b143bce58a74946cf76da92",
+      "balance_wei": "9300692225393199",
+      "balance_eth": 0.0093006922253932,
+      "egt_shares_wei": "822565466097479"
+    },
+    {
+      "address": "0x569cbe1a3a38d6ca62a65584d939bd0f496f7380",
+      "balance_wei": "9263387231423549",
+      "balance_eth": 0.009263387231423548,
+      "egt_shares_wei": "819266163313476"
+    },
+    {
+      "address": "0x62a08f0535f01623890613f6acbedf19591a9ec3",
+      "balance_wei": "8760903738348544",
+      "balance_eth": 0.008760903738348544,
+      "egt_shares_wei": "774825861594960"
+    },
+    {
+      "address": "0xe7d7f52306897cd0fd800899afecde4d03e89fad",
+      "balance_wei": "8710607028632062",
+      "balance_eth": 0.008710607028632062,
+      "egt_shares_wei": "770377554364866"
+    },
+    {
+      "address": "0xc1f3ebe56fe3a32adac585e7379882cf0e5a6d87",
+      "balance_wei": "8684294126514260",
+      "balance_eth": 0.00868429412651426,
+      "egt_shares_wei": "768050406656888"
+    },
+    {
+      "address": "0x9be19b5a89a2009fb130807f436f02e99fc8e692",
+      "balance_wei": "8555481639047862",
+      "balance_eth": 0.008555481639047862,
+      "egt_shares_wei": "756658060665408"
+    },
+    {
+      "address": "0xc47f761931cc51afdb8f447c1c30388c951367b1",
+      "balance_wei": "8435680297719694",
+      "balance_eth": 0.008435680297719694,
+      "egt_shares_wei": "746062672302841"
+    },
+    {
+      "address": "0x8920ebbd8ee70712c794048fc92fff4f7af4aa8c",
+      "balance_wei": "8428936105626795",
+      "balance_eth": 0.008428936105626795,
+      "egt_shares_wei": "745466207074461"
+    },
+    {
+      "address": "0xef291527c74d6c10b6b533d0ee45ab9c92669c5c",
+      "balance_wei": "8259845605112852",
+      "balance_eth": 0.008259845605112852,
+      "egt_shares_wei": "730511620577318"
+    },
+    {
+      "address": "0x748d1cd3c38b765ded4c5b815264ae0bbc480872",
+      "balance_wei": "8184331012815619",
+      "balance_eth": 0.00818433101281562,
+      "egt_shares_wei": "723833010608854"
+    },
+    {
+      "address": "0xf8e95aa8434b7f16113f3d5119a4464ddd2e8d81",
+      "balance_wei": "8002665514594360",
+      "balance_eth": 0.00800266551459436,
+      "egt_shares_wei": "707766274757711"
+    },
+    {
+      "address": "0xbd6af66d5a120ca744fc619f916cef743f967c3c",
+      "balance_wei": "7826685730193526",
+      "balance_eth": 0.007826685730193525,
+      "egt_shares_wei": "692202390922891"
+    },
+    {
+      "address": "0xa889cb5878b5b52810257d4059ac026e15a95c96",
+      "balance_wei": "7596350158932204",
+      "balance_eth": 0.007596350158932204,
+      "egt_shares_wei": "671831209731012"
+    },
+    {
+      "address": "0x90b7f7ed78ffb49726d03b8bd5b71a390d56fc7f",
+      "balance_wei": "7202909035717445",
+      "balance_eth": 0.007202909035717445,
+      "egt_shares_wei": "637034758772721"
+    },
+    {
+      "address": "0xc4d533f1ed30b5f3733f70164328cb7e060d4560",
+      "balance_wei": "6657296576367809",
+      "balance_eth": 0.006657296576367809,
+      "egt_shares_wei": "588780074491461"
+    },
+    {
+      "address": "0x21dd6ce0e7008bc9f75ee37fec5b4be0c302b122",
+      "balance_wei": "6553161533645556",
+      "balance_eth": 0.006553161533645556,
+      "egt_shares_wei": "579570234204512"
+    },
+    {
+      "address": "0x92d0ab04a2d7d117adeddc7d7777ce8ff4baaf10",
+      "balance_wei": "6525695862510864",
+      "balance_eth": 0.006525695862510864,
+      "egt_shares_wei": "577141134086901"
+    },
+    {
+      "address": "0xe18979f2576856d4199c6abaf4ffdf5672d930bd",
+      "balance_wei": "6516533528861827",
+      "balance_eth": 0.006516533528861827,
+      "egt_shares_wei": "576330805235463"
+    },
+    {
+      "address": "0xb0151d256ee16d847f080691c3529f316b2d54b3",
+      "balance_wei": "6410707966880991",
+      "balance_eth": 0.006410707966880991,
+      "egt_shares_wei": "566971453199481"
+    },
+    {
+      "address": "0x34fca7ba58551dfa89e486c8934a7b35f4d02dd0",
+      "balance_wei": "6410108505164976",
+      "balance_eth": 0.006410108505164976,
+      "egt_shares_wei": "566918436016038"
+    },
+    {
+      "address": "0x7f434cd5fa5b6e145b3ef25703ae7dcf775e119c",
+      "balance_wei": "6394752774976088",
+      "balance_eth": 0.006394752774976088,
+      "egt_shares_wei": "565560355020130"
+    },
+    {
+      "address": "0xd8c892ccaf598b26133d14fbd232981dbc1f842a",
+      "balance_wei": "5689655077276245",
+      "balance_eth": 0.005689655077276245,
+      "egt_shares_wei": "503200586274184"
+    },
+    {
+      "address": "0xab31ea5ab64539516d4a690c05075c191f2626ce",
+      "balance_wei": "5132708143299884",
+      "balance_eth": 0.005132708143299884,
+      "egt_shares_wei": "453943466133491"
+    },
+    {
+      "address": "0xed0399d294fe1a46048ec6074050fb6505d361b3",
+      "balance_wei": "4973385077907247",
+      "balance_eth": 0.004973385077907247,
+      "egt_shares_wei": "439852724458699"
+    },
+    {
+      "address": "0x7fe4567344c0d8379b46843d9c48bf0d0440c7b8",
+      "balance_wei": "4921206051558842",
+      "balance_eth": 0.004921206051558842,
+      "egt_shares_wei": "435237942667339"
+    },
+    {
+      "address": "0x8efced1954dfc283ef3c811865a79bad1168241e",
+      "balance_wei": "4750854895898746",
+      "balance_eth": 0.004750854895898746,
+      "egt_shares_wei": "420171862169242"
+    },
+    {
+      "address": "0x23e9fd8572e5ad4651c0a0a5436d872810dfaf02",
+      "balance_wei": "4246795203288139",
+      "balance_eth": 0.004246795203288139,
+      "egt_shares_wei": "375592159288504"
+    },
+    {
+      "address": "0x70a61db3f8161043929a92b9782c69e161e12e8a",
+      "balance_wei": "3792955319990057",
+      "balance_eth": 0.003792955319990057,
+      "egt_shares_wei": "335453962464890"
+    },
+    {
+      "address": "0xe45fb61d76251df174fc536ae18e8d2391528652",
+      "balance_wei": "3664853637083845",
+      "balance_eth": 0.003664853637083845,
+      "egt_shares_wei": "324124480964586"
+    },
+    {
+      "address": "0x13ff6c84ce051a8450f6de2f34b4cc5666f17fd4",
+      "balance_wei": "3547708514287841",
+      "balance_eth": 0.003547708514287841,
+      "egt_shares_wei": "313764012066294"
+    },
+    {
+      "address": "0x11ededebf63bef0ea2d2d071bdf88f71543ec6fb",
+      "balance_wei": "3513066357806319",
+      "balance_eth": 0.003513066357806319,
+      "egt_shares_wei": "310700214135743"
+    },
+    {
+      "address": "0x2c0e948e304e25edfab058d2ccf1e67109301c28",
+      "balance_wei": "3315895655243726",
+      "balance_eth": 0.003315895655243726,
+      "egt_shares_wei": "293262177597846"
+    },
+    {
+      "address": "0x8fc87c199203332c1cc43430b9fad2b1868e44d0",
+      "balance_wei": "3196813356024414",
+      "balance_eth": 0.003196813356024414,
+      "egt_shares_wei": "282730382266114"
+    },
+    {
+      "address": "0x5a0f2c1d8e563db79ee40f979f6bcd0d27f86f80",
+      "balance_wei": "3153772323923929",
+      "balance_eth": 0.003153772323923929,
+      "egt_shares_wei": "278923776717507"
+    },
+    {
+      "address": "0xc960e6682d3346ae03b7caade83c6c58dd94b66f",
+      "balance_wei": "3146626449154189",
+      "balance_eth": 0.003146626449154189,
+      "egt_shares_wei": "278291786144312"
+    },
+    {
+      "address": "0xedabdc26e7e56111e1b5af3556ceda589ddad592",
+      "balance_wei": "3141694366642734",
+      "balance_eth": 0.003141694366642734,
+      "egt_shares_wei": "277855586273207"
+    },
+    {
+      "address": "0xf7dbc54d3fbba3f1ed9881ae539f1c65d8bce166",
+      "balance_wei": "3096417012264116",
+      "balance_eth": 0.003096417012264116,
+      "egt_shares_wei": "273851197437889"
+    },
+    {
+      "address": "0xc242d78af6f6520f4ada09f9b52c2409e9f1659d",
+      "balance_wei": "2908186031679569",
+      "balance_eth": 0.002908186031679569,
+      "egt_shares_wei": "257203801682142"
+    },
+    {
+      "address": "0x0e277a62b93758eb5dbd70cc9588c10813aa3799",
+      "balance_wei": "2706016553599684",
+      "balance_eth": 0.002706016553599684,
+      "egt_shares_wei": "239323666855896"
+    },
+    {
+      "address": "0xd595221c6fff13697a785c609f3a448c44b8e93c",
+      "balance_wei": "2260384418952783",
+      "balance_eth": 0.002260384418952783,
+      "egt_shares_wei": "199911374129659"
+    },
+    {
+      "address": "0x6283511fc53c60c0a0a1848ac88ff46b5d2496ea",
+      "balance_wei": "2220706190682316",
+      "balance_eth": 0.002220706190682316,
+      "egt_shares_wei": "196402179379389"
+    },
+    {
+      "address": "0x169d585e62b53898788d7be94d351233b4f71954",
+      "balance_wei": "2071667587172465",
+      "balance_eth": 0.002071667587172465,
+      "egt_shares_wei": "183221009054467"
+    },
+    {
+      "address": "0xd1bea81dd97d4fcebc5b25686bdca04deff3991f",
+      "balance_wei": "1982893903484892",
+      "balance_eth": 0.001982893903484892,
+      "egt_shares_wei": "175369747585961"
+    },
+    {
+      "address": "0x6cb8151af9a73a5c6644f91c6d24d658a40dce2c",
+      "balance_wei": "1898928230085329",
+      "balance_eth": 0.001898928230085329,
+      "egt_shares_wei": "167943712877752"
+    },
+    {
+      "address": "0x80bb0d87dce1a94329586ce9c7d39692bbf44af6",
+      "balance_wei": "1854168948377451",
+      "balance_eth": 0.001854168948377451,
+      "egt_shares_wei": "163985143071551"
+    },
+    {
+      "address": "0xcf61ebd3613684a53e48ee85d8fbc80c5156c479",
+      "balance_wei": "1703977118728989",
+      "balance_eth": 0.001703977118728989,
+      "egt_shares_wei": "150701979908541"
+    },
+    {
+      "address": "0x818f4c3598306d67348f6e8f7a975cb6c8133360",
+      "balance_wei": "1581316133520975",
+      "balance_eth": 0.001581316133520975,
+      "egt_shares_wei": "139853680876119"
+    },
+    {
+      "address": "0x6d2c2d57d49b015847a4a48ebb143138a5d7a455",
+      "balance_wei": "1431907767211823",
+      "balance_eth": 0.001431907767211823,
+      "egt_shares_wei": "126639808242383"
+    },
+    {
+      "address": "0x7f171ab35052b4a718319c7a4441674b66fefdbf",
+      "balance_wei": "954936453538926",
+      "balance_eth": 0.000954936453538926,
+      "egt_shares_wei": "84455837260596"
+    },
+    {
+      "address": "0x09641015fb8b08388a7367b946e634d37dddffaa",
+      "balance_wei": "552309259216534",
+      "balance_eth": 0.000552309259216534,
+      "egt_shares_wei": "48846958078780"
+    },
+    {
+      "address": "0x56446712b219fcc34a5604f5e7af5d50d65b6647",
+      "balance_wei": "531235271515139",
+      "balance_eth": 0.000531235271515139,
+      "egt_shares_wei": "46983146859563"
+    },
+    {
+      "address": "0x86eb9ac6882584f9ca36b679a04facf7a36782aa",
+      "balance_wei": "370406273470810",
+      "balance_eth": 0.00037040627347081,
+      "egt_shares_wei": "32759218518283"
+    },
+    {
+      "address": "0xbf8fe120f4bb49de7daaac892fb7a532673a9b12",
+      "balance_wei": "220620389953192",
+      "balance_eth": 0.000220620389953192,
+      "egt_shares_wei": "19511957765571"
+    },
+    {
+      "address": "0xc309342fa70f965f9f55323a0d5b921d4033165f",
+      "balance_wei": "145139034874904",
+      "balance_eth": 0.000145139034874904,
+      "egt_shares_wei": "12836287340515"
+    },
+    {
+      "address": "0xcd6b980029e6e6e0733ac8ec3e02be9410d09799",
+      "balance_wei": "141376246498923",
+      "balance_eth": 0.000141376246498923,
+      "egt_shares_wei": "12503501382294"
+    }
+  ]
+}

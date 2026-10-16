@@ -1,10 +1,10 @@
 {
   "contract": "0x26e6c899b5a5dc1d4874d828fda515a7eb7baf00",
   "balance_source": "eth",
-  "contract_eth_balance": 4.641146,
-  "total_eth_in_balances": 4.68596467,
-  "addresses_with_balance": 107,
-  "coverage_pct": 100.97,
+  "contract_eth_balance": 4.4895678,
+  "total_eth_in_balances": 4.54250567,
+  "addresses_with_balance": 106,
+  "coverage_pct": 101.18,
   "scan_date": "2026-04-02 17:00:39 UTC",
   "description": "ETH balances in defunct DivsNetwork contract",
   "distribution": {
@@ -21,21 +21,21 @@
       "total_eth": 1.093373
     },
     "0.1-1 ETH": {
-      "count": 9,
-      "total_eth": 3.129179
+      "count": 8,
+      "total_eth": 2.98572
     },
     "0.01-0.1 ETH": {
       "count": 10,
       "total_eth": 0.437165
     },
     "<0.01 ETH": {
-      "count": 88,
-      "total_eth": 0.026029
+      "count": 87,
+      "total_eth": 0.025891
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 166,
-  "last_event_refresh": "2026-08-09T04:19:08Z",
+  "last_event_refresh": "2026-10-15 06:23:05 UTC",
   "balances": [
     {
       "rank": 1,
@@ -89,8 +89,9 @@
     {
       "rank": 9,
       "address": "0xc802355044cb487f08eb802c35587c1034b6554a",
-      "balance_wei": "143458995686471589",
-      "balance_eth": 0.14345899568647158
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 10,

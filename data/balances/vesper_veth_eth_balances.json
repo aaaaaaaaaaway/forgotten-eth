@@ -1,0 +1,1684 @@
+{
+  "contract": "0x103cc17c2b1586e5cd9bad308690bcd0bbe54d5e",
+  "balance_source": "token",
+  "contract_eth_balance": 455.3289725,
+  "total_eth_in_balances": 450.8200004,
+  "addresses_with_balance": 253,
+  "coverage_pct": 99.01,
+  "scan_date": "2026-10-16 16:23:23 UTC",
+  "description": "Vesper vETH pool (2020). Holders exit pro-rata with withdrawETH(shares) on the 2020 pool, which pulls WETH back from the 2022 pool behind it and pays native ETH. Amounts are per holder at the scan block. Contract holders, holders whose claim reverts and dust are not listed.",
+  "distribution": {
+    ">0.01 ETH": 175,
+    ">0.1 ETH": 105,
+    ">1 ETH": 38,
+    ">10 ETH": 9
+  },
+  "meta": {
+    "scan_block": 26206268,
+    "claim_contract": "0x103cc17c2b1586e5cd9bad308690bcd0bbe54d5e",
+    "v5_pool": "0x951397286e4b78ae5827502ed494d7902d3cca8c",
+    "bridge_strategy": "0x99bfef73a7935492a19b63526d983e21eb37b12e",
+    "total_supply_wei": "437086513007828679745",
+    "total_value_wei": "455328972496268707168",
+    "withdraw_fee_wad": "0",
+    "v2_weth_wei": "0",
+    "v5_price_per_share": "1035101232801619717",
+    "v5_weth_wei": "465472071162363760715",
+    "v5_total_debt_wei": "0",
+    "v5_total_supply_wei": "449687486027342884357",
+    "v5_shares_backing_v2_wei": "439888349146168858211",
+    "v5_direct_holders": [
+      {
+        "address": "0xb5abdabe50b5193d4db92a16011792b22ba3ef51",
+        "v5_shares_wei": "6772701383707559092",
+        "eth_wei": "7010431551672930110",
+        "is_contract": false
+      },
+      {
+        "address": "0x45ff0e3bd649a1d4b78982c8eeae0839aaa7f84f",
+        "v5_shares_wei": "2409666390065284564",
+        "eth_wei": "2494248650997204702",
+        "is_contract": true
+      },
+      {
+        "address": "0x9520b477aa81180e6ddc006fc09fb6d3eb4e807a",
+        "v5_shares_wei": "445063268450058683",
+        "eth_wei": "460685537847373964",
+        "is_contract": true
+      },
+      {
+        "address": "0xf4087b7ab24bde9c445ddd0bc4df257f81277214",
+        "v5_shares_wei": "171705838951123806",
+        "eth_wei": "177732925577544625",
+        "is_contract": false
+      },
+      {
+        "address": "0x80d426d65d926df121dc58c18d043b73e998ce2b",
+        "v5_shares_wei": "1",
+        "eth_wei": "1",
+        "is_contract": true
+      }
+    ],
+    "v5_direct_holders_eth_wei": "10143098666095053403",
+    "v5_unattributed_shares_wei": "0",
+    "holders": 1555,
+    "protocol_held_shares_wei": "2445442808085952866",
+    "protocol_held_eth_wei": "2547507021989084642",
+    "excluded_contract_holders": [
+      {
+        "address": "0x0b276d9b1cbdf7bc9556635059c6ce672e6f4052",
+        "veth_shares_wei": "1114281324551886519",
+        "eth_wei": "1160787522562848714"
+      },
+      {
+        "address": "0x5b8a47228ba1b1f529c048d90a883888293b72ee",
+        "veth_shares_wei": "192531886768165995",
+        "eth_wei": "200567493084250798"
+      },
+      {
+        "address": "0xd83876465ce58cc1530f140eb55902a5cac9e9d0",
+        "veth_shares_wei": "54778296668300821",
+        "eth_wei": "57064550826409169"
+      },
+      {
+        "address": "0xe2e3c6f8163a077cba241adc06dce5828ef9cd8a",
+        "veth_shares_wei": "10000004349325523",
+        "eth_wei": "10417369490545351"
+      },
+      {
+        "address": "0x000000000004444c5dc75cb358380d2e3de08a90",
+        "veth_shares_wei": "9639337978151106",
+        "eth_wei": "10041650168824107"
+      },
+      {
+        "address": "0xa50c71c05dba66e9a289d0baf933bbd1f8849169",
+        "veth_shares_wei": "783112893005142",
+        "eth_wei": "815797281107653"
+      },
+      {
+        "address": "0x7ebc565b4e9379efb2f41fab19dafc7b9226b80c",
+        "veth_shares_wei": "131849354917493",
+        "eth_wei": "137352284987577"
+      },
+      {
+        "address": "0xbdb5bf7ce88a2b1b9cf8c969fac509aca7a4736f",
+        "veth_shares_wei": "97392832257506",
+        "eth_wei": "101457667808472"
+      },
+      {
+        "address": "0x74e2b8eee3ea8f4639b81e1e9b230cc9c06e5f6a",
+        "veth_shares_wei": "13256137845045",
+        "eth_wei": "13809402588784"
+      },
+      {
+        "address": "0xa70d78396683b417ba8bbe2e982de23c410bf2c7",
+        "veth_shares_wei": "82",
+        "eth_wei": "85"
+      },
+      {
+        "address": "0x11fd5e1ce2e39f04cc69b328868e61bfd215db22",
+        "veth_shares_wei": "1",
+        "eth_wei": "1"
+      },
+      {
+        "address": "0x223809e09ec28c28219769c3ff05c790c213152c",
+        "veth_shares_wei": "1",
+        "eth_wei": "1"
+      },
+      {
+        "address": "0x2291f52bddc937b5b840d15e551e1da8c80c2b3c",
+        "veth_shares_wei": "1",
+        "eth_wei": "1"
+      },
+      {
+        "address": "0x5ff26fb7c7d150bb9dca0c254bb2c24b44f3794a",
+        "veth_shares_wei": "1",
+        "eth_wei": "1"
+      },
+      {
+        "address": "0xc9b2caf589214bddb235ff3adc098d4f19ff82f7",
+        "veth_shares_wei": "1",
+        "eth_wei": "1"
+      },
+      {
+        "address": "0xf77284032cffb8a5e3908e7f386c82e781360fbc",
+        "veth_shares_wei": "1",
+        "eth_wei": "1"
+      }
+    ],
+    "excluded_contract_eth_wei": "1439947002769370716",
+    "reverting_holders": [
+      {
+        "address": "0x960e1e5bcdbd8d801750fb7d0be3ac94b2d8e7cd",
+        "veth_shares_wei": "497601911500449885",
+        "eth_wei": "518370071674165173",
+        "eip7702": true
+      }
+    ],
+    "reverting_eth_wei": "518370071674165173",
+    "min_listed_wei": "100000000000000",
+    "below_floor_holders": 1284,
+    "below_floor_eth_wei": "3148003859058298"
+  },
+  "token": "0x103cc17c2b1586e5cd9bad308690bcd0bbe54d5e",
+  "balances": [
+    {
+      "address": "0x374ee47e1bd5fb06181d2aaba24df4c5adc92d7b",
+      "balance_wei": "186890213072929916954",
+      "balance_eth": 186.89021307292992,
+      "veth_shares_wei": "179402578095349421839"
+    },
+    {
+      "address": "0x04efd5b8f6a498ed0b0df0490f1761f1e5fcfffd",
+      "balance_wei": "41526274151984464845",
+      "balance_eth": 41.52627415198447,
+      "veth_shares_wei": "39862550954731431068"
+    },
+    {
+      "address": "0x5620d31742440359f4d950574a66a6363da5e8fd",
+      "balance_wei": "39383483091244430313",
+      "balance_eth": 39.383483091244436,
+      "veth_shares_wei": "37805609425822059571"
+    },
+    {
+      "address": "0x4d6c598340893de68e929250a045d0e07418406a",
+      "balance_wei": "22813315512217872993",
+      "balance_eth": 22.813315512217873,
+      "veth_shares_wei": "21899314846398072990"
+    },
+    {
+      "address": "0xfba5df95d53df30b72bded56115cdcbef4a6df22",
+      "balance_wei": "15487961034948451902",
+      "balance_eth": 15.487961034948452,
+      "veth_shares_wei": "14867445937502285906"
+    },
+    {
+      "address": "0x992e922f98f6619059ad94cd6bbaa74ceb22a075",
+      "balance_wei": "11588375437128379113",
+      "balance_eth": 11.588375437128379,
+      "veth_shares_wei": "11124094703377397965"
+    },
+    {
+      "address": "0x9dcd1c00be6d54d51707bd0c1ebd19ca1285f4d8",
+      "balance_wei": "11420842832582917577",
+      "balance_eth": 11.420842832582919,
+      "veth_shares_wei": "10963274183799115780"
+    },
+    {
+      "address": "0xf49950ee8598587c09ab8add87075929efc769cf",
+      "balance_wei": "10382100287571583805",
+      "balance_eth": 10.382100287571584,
+      "veth_shares_wei": "9966148184057023867"
+    },
+    {
+      "address": "0xc2c101eb6b67dfb044944abe25be01012c2f8936",
+      "balance_wei": "10279159419860581740",
+      "balance_eth": 10.279159419860582,
+      "veth_shares_wei": "9867331575337553926"
+    },
+    {
+      "address": "0x44b13585f20b44a420b5d4588494b19488441d51",
+      "balance_wei": "9417112606643291081",
+      "balance_eth": 9.41711260664329,
+      "veth_shares_wei": "9039822107681738868"
+    },
+    {
+      "address": "0xd6b4a9d889c10d9451b03d07da3bbfcb1306376a",
+      "balance_wei": "8346610774127389801",
+      "balance_eth": 8.34661077412739,
+      "veth_shares_wei": "8012209235657215438"
+    },
+    {
+      "address": "0xcfab0803ab5fadcdce7a71990bacc8fa73f4bef2",
+      "balance_wei": "6227358934358035448",
+      "balance_eth": 6.227358934358035,
+      "veth_shares_wei": "5977863844122079816"
+    },
+    {
+      "address": "0x57c458c1354fee3aba912794709c91180869f953",
+      "balance_wei": "5207480167118924882",
+      "balance_eth": 5.207480167118924,
+      "veth_shares_wei": "4998845857150212389"
+    },
+    {
+      "address": "0x7421190d17c351e3a8bc303d49dc10173386729f",
+      "balance_wei": "5190784268998058105",
+      "balance_eth": 5.190784268998058,
+      "veth_shares_wei": "4982818869341428883"
+    },
+    {
+      "address": "0xc3e620be0bf8ab44fa979b57481773b769b9edea",
+      "balance_wei": "4463641060729052233",
+      "balance_eth": 4.463641060729052,
+      "veth_shares_wei": "4284808181338855983"
+    },
+    {
+      "address": "0x70dc1e66a2e52ccd7569725860bba22139706e22",
+      "balance_wei": "3633904537640019228",
+      "balance_eth": 3.6339045376400194,
+      "veth_shares_wei": "3488314513026991384"
+    },
+    {
+      "address": "0x30b7cb61c82ae3e2e514167ee3cb50eb9cea25c8",
+      "balance_wei": "3633843585831210700",
+      "balance_eth": 3.6338435858312104,
+      "veth_shares_wei": "3488256003212806745"
+    },
+    {
+      "address": "0x291a5effa15e877c71014e8ad470903e76abd8c8",
+      "balance_wei": "3114470561398834863",
+      "balance_eth": 3.114470561398835,
+      "veth_shares_wei": "2989691321604857330"
+    },
+    {
+      "address": "0xce62c3f30bcea043e38dd2ac8deaf4b57f6136ea",
+      "balance_wei": "2906433194568676653",
+      "balance_eth": 2.906433194568677,
+      "veth_shares_wei": "2789988836729771720"
+    },
+    {
+      "address": "0x030e9653fa3e7315483b96c36ea1720a8e5b8b9a",
+      "balance_wei": "2359656086273805566",
+      "balance_eth": 2.359656086273805,
+      "veth_shares_wei": "2265117998076807310"
+    },
+    {
+      "address": "0xaeb6c1a9d402a19d9763ccef964c461de18f1f34",
+      "balance_wei": "2097076844675215473",
+      "balance_eth": 2.0970768446752155,
+      "veth_shares_wei": "2013058823213937268"
+    },
+    {
+      "address": "0xe398b5aeade4457e1d926af280e02aa3639ac9a6",
+      "balance_wei": "1903543099965502444",
+      "balance_eth": 1.9035430999655025,
+      "veth_shares_wei": "1827278882261005752"
+    },
+    {
+      "address": "0xd0de7ea528d036f54173a92c944ace4b64f1fabd",
+      "balance_wei": "1577970004728697629",
+      "balance_eth": 1.5779700047286975,
+      "veth_shares_wei": "1514749661583340942"
+    },
+    {
+      "address": "0xf83364aafdda8aea8b7404bfd3ebe34d02184511",
+      "balance_wei": "1556796345220852466",
+      "balance_eth": 1.5567963452208524,
+      "veth_shares_wei": "1494424310988667461"
+    },
+    {
+      "address": "0x0875325aae87ec35e6576ad1cb58c5a6f22e83e7",
+      "balance_wei": "1348646518160612519",
+      "balance_eth": 1.3486465181606127,
+      "veth_shares_wei": "1294613871529560982"
+    },
+    {
+      "address": "0x4506c7b99867391fd90bddb93f8759cb5a80a056",
+      "balance_wei": "1302263713195774296",
+      "balance_eth": 1.3022637131957742,
+      "veth_shares_wei": "1250089363514052532"
+    },
+    {
+      "address": "0x3e71d081fd0214d876c838322f8609505c9a88c1",
+      "balance_wei": "1134471620148385790",
+      "balance_eth": 1.1344716201483858,
+      "veth_shares_wei": "1089019751672101986"
+    },
+    {
+      "address": "0xf195d8e553c5573c8ff2e03f10938fcc5cac8b2a",
+      "balance_wei": "1048272894405853028",
+      "balance_eth": 1.048272894405853,
+      "veth_shares_wei": "1006274521879305198"
+    },
+    {
+      "address": "0x826ac47e4234cd7e940aa7d46f1e59276a2748e6",
+      "balance_wei": "1041736495969422158",
+      "balance_eth": 1.0417364959694222,
+      "veth_shares_wei": "1000000000000000000"
+    },
+    {
+      "address": "0xe93227c49941ae8dc7fcee157c45f925a33c9be8",
+      "balance_wei": "1040089970524771009",
+      "balance_eth": 1.040089970524771,
+      "veth_shares_wei": "998419441527659142"
+    },
+    {
+      "address": "0xfcfb5e3ad381437b192a2594e68c78cd0bb27e61",
+      "balance_wei": "1039012357489182860",
+      "balance_eth": 1.0390123574891827,
+      "veth_shares_wei": "997385002358293821"
+    },
+    {
+      "address": "0x20796fdf285e98bdec744958e9b4728cafc59284",
+      "balance_wei": "1038722942037304066",
+      "balance_eth": 1.038722942037304,
+      "veth_shares_wei": "997107182148482059"
+    },
+    {
+      "address": "0x54bb51a767c2cd5d622566f988c8b2dbf2da806f",
+      "balance_wei": "1038465612980930158",
+      "balance_eth": 1.0384656129809302,
+      "veth_shares_wei": "996860162813583514"
+    },
+    {
+      "address": "0xeda4707280abf3abb881161ee3b4d910a99aeed9",
+      "balance_wei": "1038156853799611620",
+      "balance_eth": 1.0381568537996118,
+      "veth_shares_wei": "996563773868285776"
+    },
+    {
+      "address": "0x867042b229203000b015fda9c4e172da6022f268",
+      "balance_wei": "1037672554018932929",
+      "balance_eth": 1.037672554018933,
+      "veth_shares_wei": "996098877243705095"
+    },
+    {
+      "address": "0x67688ef08cb07dfac0914b4cfdfbdab476624b8c",
+      "balance_wei": "1036507317039850520",
+      "balance_eth": 1.0365073170398504,
+      "veth_shares_wei": "994980324727218611"
+    },
+    {
+      "address": "0xcb6fbf9b4e822bed1a8365c0c32e66bd7a779bae",
+      "balance_wei": "1035532747170265936",
+      "balance_eth": 1.035532747170266,
+      "veth_shares_wei": "994044800366350687"
+    },
+    {
+      "address": "0xa14a37fc27f513d402ead3ed4a2fbf0b6a622744",
+      "balance_wei": "1008837888927437300",
+      "balance_eth": 1.0088378889274374,
+      "veth_shares_wei": "968419454277283454"
+    },
+    {
+      "address": "0x47ce996ba2aa7e0fe7bccf40903dbd2dea481e65",
+      "balance_wei": "934378954794440171",
+      "balance_eth": 0.9343789547944402,
+      "veth_shares_wei": "896943668969688063"
+    },
+    {
+      "address": "0xf7ddad0af912aec943f9a9e27241fb7af04cebb9",
+      "balance_wei": "934183917686942995",
+      "balance_eth": 0.934183917686943,
+      "veth_shares_wei": "896756445897201121"
+    },
+    {
+      "address": "0x7565418203eb0fe12cc3e262c13edac4eaed3856",
+      "balance_wei": "840607327291192042",
+      "balance_eth": 0.840607327291192,
+      "veth_shares_wei": "806928940805647063"
+    },
+    {
+      "address": "0x228bd981369e9eabb81ddb439a297fc165611053",
+      "balance_wei": "830634772417131629",
+      "balance_eth": 0.8306347724171317,
+      "veth_shares_wei": "797355929864161208"
+    },
+    {
+      "address": "0xc6a5bd469f19f4b81a41b2374573df02c96624fe",
+      "balance_wei": "811152674133089978",
+      "balance_eth": 0.8111526741330899,
+      "veth_shares_wei": "778654369191745730"
+    },
+    {
+      "address": "0xcf780dd5ed152d7d924d60b64e8762ec74e374e7",
+      "balance_wei": "780102258645471349",
+      "balance_eth": 0.7801022586454713,
+      "veth_shares_wei": "748847968429407415"
+    },
+    {
+      "address": "0xf4680600aa39f147e9a9de89d03d0d679f2220bc",
+      "balance_wei": "772084454301212443",
+      "balance_eth": 0.7720844543012124,
+      "veth_shares_wei": "741151392207607991"
+    },
+    {
+      "address": "0x72cfe1ab4d509a24aa56bca7a669d68d5140842e",
+      "balance_wei": "675531621796836311",
+      "balance_eth": 0.6755316217968363,
+      "veth_shares_wei": "648466886214059481"
+    },
+    {
+      "address": "0x8170eae62f5d2c22a1eb7b38cdeba83bd5794a1c",
+      "balance_wei": "669611170700749494",
+      "balance_eth": 0.6696111707007495,
+      "veth_shares_wei": "642783634145044325"
+    },
+    {
+      "address": "0x5dbe6d80699af4e5e3b5184aea997c4c469203b3",
+      "balance_wei": "645892820844500634",
+      "balance_eth": 0.6458928208445006,
+      "veth_shares_wei": "620015544567672871"
+    },
+    {
+      "address": "0xac06a4d2b15566c2e827fc827e214098a8bd7411",
+      "balance_wei": "623398077319230433",
+      "balance_eth": 0.6233980773192305,
+      "veth_shares_wei": "598422038328518816"
+    },
+    {
+      "address": "0x3e3eee1d5a95b81d1a344b8608c7c47c5ef01aa7",
+      "balance_wei": "612621678004636994",
+      "balance_eth": 0.6126216780046371,
+      "veth_shares_wei": "588077388451809729"
+    },
+    {
+      "address": "0x7f5de314f2ae73610490bc18a38e551fc40682b8",
+      "balance_wei": "555227761230355060",
+      "balance_eth": 0.5552277612303551,
+      "veth_shares_wei": "532982921668372198"
+    },
+    {
+      "address": "0x38e0fbd29d6e2a92fe692dfdd56b17ce123e12d3",
+      "balance_wei": "519099419330244539",
+      "balance_eth": 0.5190994193302445,
+      "veth_shares_wei": "498302038316493368"
+    },
+    {
+      "address": "0x52d907e5f52aa37183bba3f57b99fe89fd1c02ee",
+      "balance_wei": "518848109764237082",
+      "balance_eth": 0.518848109764237,
+      "veth_shares_wei": "498060797304990174"
+    },
+    {
+      "address": "0xa4d31a4c0206053344d370c5d0228f6c7894e26c",
+      "balance_wei": "518804173217038302",
+      "balance_eth": 0.5188041732170383,
+      "veth_shares_wei": "498018621047012485"
+    },
+    {
+      "address": "0x9243f3cba20989ece48706d3f851b57bf2768a45",
+      "balance_wei": "498303848713833554",
+      "balance_eth": 0.49830384871383354,
+      "veth_shares_wei": "478339628727436029"
+    },
+    {
+      "address": "0x65191dde4e911a9bd3cdae8ed35a2707a1102057",
+      "balance_wei": "497819241114568120",
+      "balance_eth": 0.4978192411145681,
+      "veth_shares_wei": "477874436616820315"
+    },
+    {
+      "address": "0x7a0f3d8b7477630d5823cbdda6dedf3433784785",
+      "balance_wei": "416309025892411911",
+      "balance_eth": 0.4163090258924119,
+      "veth_shares_wei": "399629875216190689"
+    },
+    {
+      "address": "0x68a318d88100e849a2a03291c45a698c5c00683d",
+      "balance_wei": "381138280102467841",
+      "balance_eth": 0.38113828010246786,
+      "veth_shares_wei": "365868222508406101"
+    },
+    {
+      "address": "0xad7862d9b154074c37f440bf0f1e59f96d1f4e79",
+      "balance_wei": "352916290823985731",
+      "balance_eth": 0.35291629082398573,
+      "veth_shares_wei": "338776928896561188"
+    },
+    {
+      "address": "0x3c0086e2ad9c89cee17522fcf3f599faacb094c5",
+      "balance_wei": "339258197192971999",
+      "balance_eth": 0.33925819719297196,
+      "veth_shares_wei": "325666037914188776"
+    },
+    {
+      "address": "0xd7286a4767e7accafa4b288babf142f5dd636a63",
+      "balance_wei": "321828624677879601",
+      "balance_eth": 0.3218286246778796,
+      "veth_shares_wei": "308934769899168590"
+    },
+    {
+      "address": "0x4a81f86f09092dbaeb6ec486552d8da6be5920dd",
+      "balance_wei": "309587233944170122",
+      "balance_eth": 0.3095872339441701,
+      "veth_shares_wei": "297183822532850344"
+    },
+    {
+      "address": "0x47f02c5876ccfa5f37de3409078240451fdb230e",
+      "balance_wei": "300997214510498603",
+      "balance_eth": 0.3009972145104986,
+      "veth_shares_wei": "288937956647468462"
+    },
+    {
+      "address": "0xb2da4ead9e7ee86b8ccf1474bbb226e2d2240696",
+      "balance_wei": "275934420019621761",
+      "balance_eth": 0.27593442001962176,
+      "veth_shares_wei": "264879286736366006"
+    },
+    {
+      "address": "0xf0abe183a7b9e8772529cece39f8d040ac9bb0c2",
+      "balance_wei": "263516554979729339",
+      "balance_eth": 0.26351655497972937,
+      "veth_shares_wei": "252958935392299319"
+    },
+    {
+      "address": "0xb8207927dacd9b45d65f719229034e7290abc62d",
+      "balance_wei": "259366793610953713",
+      "balance_eth": 0.2593667936109537,
+      "veth_shares_wei": "248975431516960931"
+    },
+    {
+      "address": "0x99bed578339569141f0a408d0dedfede6b35d485",
+      "balance_wei": "257912822934411222",
+      "balance_eth": 0.25791282293441126,
+      "veth_shares_wei": "247579713231033499"
+    },
+    {
+      "address": "0xd4ca6ff3dd02bab5036d217ff7f87e7dad6d9066",
+      "balance_wei": "249936895421253574",
+      "balance_eth": 0.24993689542125358,
+      "veth_shares_wei": "239923336072301639"
+    },
+    {
+      "address": "0xd27a66280be064724b80b678fb5697f35f4d22f3",
+      "balance_wei": "237905392128834666",
+      "balance_eth": 0.23790539212883466,
+      "veth_shares_wei": "228373867143287496"
+    },
+    {
+      "address": "0x8ca7578fa23c5b32937b75578164898c46b5623b",
+      "balance_wei": "234463906238715048",
+      "balance_eth": 0.23446390623871505,
+      "veth_shares_wei": "225070262149668616"
+    },
+    {
+      "address": "0x3ba599d75b60cfc19d0105690b0c0efc2454ef45",
+      "balance_wei": "209173315440124940",
+      "balance_eth": 0.20917331544012494,
+      "veth_shares_wei": "200792922441938479"
+    },
+    {
+      "address": "0x04bea0bc46ba40be2e19fae16b3bad67aa36079e",
+      "balance_wei": "207740490150156406",
+      "balance_eth": 0.20774049015015641,
+      "veth_shares_wei": "199417502366408562"
+    },
+    {
+      "address": "0x8eabd37f16ffd68cf1c0b777e5266a355c108f91",
+      "balance_wei": "207710947932923041",
+      "balance_eth": 0.20771094793292305,
+      "veth_shares_wei": "199389143738917189"
+    },
+    {
+      "address": "0xb09791d5fe357e1af9367096f5b6651eedfeed8f",
+      "balance_wei": "207631370759922323",
+      "balance_eth": 0.20763137075992233,
+      "veth_shares_wei": "199312754773657155"
+    },
+    {
+      "address": "0xc6d43310f15d866b84b5413b389a89a30405c97a",
+      "balance_wei": "207584585380201021",
+      "balance_eth": 0.20758458538020103,
+      "veth_shares_wei": "199267843819781276"
+    },
+    {
+      "address": "0x97c37f3576d2ac387690d3361aacf44c862abd0c",
+      "balance_wei": "204904956584549636",
+      "balance_eth": 0.20490495658454963,
+      "veth_shares_wei": "196695572611064749"
+    },
+    {
+      "address": "0x5c3b89dba81d86cefc079cd74f86e27921f9e4c5",
+      "balance_wei": "182664463197334942",
+      "balance_eth": 0.18266446319733495,
+      "veth_shares_wei": "175346130143353112"
+    },
+    {
+      "address": "0xabd8a94ba0f9dfad17893d120b8d19fe4e878760",
+      "balance_wei": "182402147586079909",
+      "balance_eth": 0.1824021475860799,
+      "veth_shares_wei": "175094324036655346"
+    },
+    {
+      "address": "0x15b3fadff6f0178949a41be1fc278e63b6d287d1",
+      "balance_wei": "172365468300596321",
+      "balance_eth": 0.17236546830059632,
+      "veth_shares_wei": "165459757786632949"
+    },
+    {
+      "address": "0x8cca7a52117f848fb1ed872b6427bc8ee6027f6a",
+      "balance_wei": "164527385035108785",
+      "balance_eth": 0.1645273850351088,
+      "veth_shares_wei": "157935702235335833"
+    },
+    {
+      "address": "0x11b0f867516ece858f97aa0687d206e302602782",
+      "balance_wei": "131162960390328817",
+      "balance_eth": 0.13116296039032882,
+      "veth_shares_wei": "125908001589471828"
+    },
+    {
+      "address": "0xa7e94b8cfdee7080f76a73b15c6976ad7d404823",
+      "balance_wei": "127476489059761616",
+      "balance_eth": 0.1274764890597616,
+      "veth_shares_wei": "122369226337927402"
+    },
+    {
+      "address": "0x21107a1074be3d196f0973c9a0d80fc06d3047ae",
+      "balance_wei": "125118613621034349",
+      "balance_eth": 0.12511861362103435,
+      "veth_shares_wei": "120105817646909940"
+    },
+    {
+      "address": "0x3e92aead51277195357ca7cd570b7772f46a3f19",
+      "balance_wei": "120421488085302759",
+      "balance_eth": 0.12042148808530276,
+      "veth_shares_wei": "115596879394381382"
+    },
+    {
+      "address": "0x0f7d32e3883022e0974a46576f336e8c3414312b",
+      "balance_wei": "119607615962228414",
+      "balance_eth": 0.11960761596222842,
+      "veth_shares_wei": "114815614529203581"
+    },
+    {
+      "address": "0x4e5cade43c7ba1ea5a5979182636d2da803b94a0",
+      "balance_wei": "117302146572495133",
+      "balance_eth": 0.11730214657249513,
+      "veth_shares_wei": "112602512272871618"
+    },
+    {
+      "address": "0x67bd3fa309ef0915c288bcebc4c4fb03fea17e81",
+      "balance_wei": "116939490034081934",
+      "balance_eth": 0.11693949003408194,
+      "veth_shares_wei": "112254385333077964"
+    },
+    {
+      "address": "0xa61d91a00b09ffb957655eb69a1e463492a17085",
+      "balance_wei": "116939490034081934",
+      "balance_eth": 0.11693949003408194,
+      "veth_shares_wei": "112254385333077964"
+    },
+    {
+      "address": "0xb46046794ba74056059b178a83f9d899266a7bc2",
+      "balance_wei": "116939490034081934",
+      "balance_eth": 0.11693949003408194,
+      "veth_shares_wei": "112254385333077964"
+    },
+    {
+      "address": "0xf17b6bec7fcb48c5587d9ecdcf37abe7c823a052",
+      "balance_wei": "116939490034081934",
+      "balance_eth": 0.11693949003408194,
+      "veth_shares_wei": "112254385333077964"
+    },
+    {
+      "address": "0x7ac5147d51fe688a3912d467c5fe6622fb2d09a5",
+      "balance_wei": "116409062893741050",
+      "balance_eth": 0.11640906289374106,
+      "veth_shares_wei": "111745209411534314"
+    },
+    {
+      "address": "0xa14f723e2597888aecb87edaf3b5e959c3979786",
+      "balance_wei": "114496145867543022",
+      "balance_eth": 0.11449614586754302,
+      "veth_shares_wei": "109908932163305720"
+    },
+    {
+      "address": "0xfc048d97bb2d76f506f19a0d1913a909eaf1d512",
+      "balance_wei": "109123431561180732",
+      "balance_eth": 0.10912343156118073,
+      "veth_shares_wei": "104751472165360142"
+    },
+    {
+      "address": "0x00702230169e365dcf04e9fe8bb14ca468bbfa1f",
+      "balance_wei": "107186108668312311",
+      "balance_eth": 0.10718610866831231,
+      "veth_shares_wei": "102891766855654561"
+    },
+    {
+      "address": "0x8e0de84eb840886f369b27d74a8bc41d8c13e287",
+      "balance_wei": "106278333588349103",
+      "balance_eth": 0.10627833358834911,
+      "veth_shares_wei": "102020361194553623"
+    },
+    {
+      "address": "0x1ef6c805644aa17d2b9a79280151c303051bbdaf",
+      "balance_wei": "104173649596942215",
+      "balance_eth": 0.10417364959694221,
+      "veth_shares_wei": "100000000000000000"
+    },
+    {
+      "address": "0x82f41d55a6ec460319f03ee31bd4a5650c766f84",
+      "balance_wei": "104008997052477100",
+      "balance_eth": 0.1040089970524771,
+      "veth_shares_wei": "99841944152765914"
+    },
+    {
+      "address": "0xec560f729787cd919a49c18cf7d0742c90eb707a",
+      "balance_wei": "103870245075078203",
+      "balance_eth": 0.10387024507507821,
+      "veth_shares_wei": "99708751183204281"
+    },
+    {
+      "address": "0x48d1031e190eabe1a156ac562d87064dc513e70d",
+      "balance_wei": "103866854173891822",
+      "balance_eth": 0.10386685417389183,
+      "veth_shares_wei": "99705496136271107"
+    },
+    {
+      "address": "0x288825a2c5959014fec1a78e7e1deffbc69319fa",
+      "balance_wei": "103860015260960330",
+      "balance_eth": 0.10386001526096034,
+      "veth_shares_wei": "99698931219943463"
+    },
+    {
+      "address": "0x472486499491dbbca34887abe1da864d984ec4d0",
+      "balance_wei": "103815685379961161",
+      "balance_eth": 0.10381568537996116,
+      "veth_shares_wei": "99656377386828577"
+    },
+    {
+      "address": "0x7ee7f0ad3a744452efd3b236a23d3a4be1c78eb5",
+      "balance_wei": "103815685379961161",
+      "balance_eth": 0.10381568537996116,
+      "veth_shares_wei": "99656377386828577"
+    },
+    {
+      "address": "0x6c33c2b957ee484151791e0502641ee5cdd994bf",
+      "balance_wei": "103811982559251230",
+      "balance_eth": 0.10381198255925123,
+      "veth_shares_wei": "99652822917224932"
+    },
+    {
+      "address": "0x5d6f6e24cad35350687558b6463e4055a86b8070",
+      "balance_wei": "103798157904166370",
+      "balance_eth": 0.10379815790416637,
+      "veth_shares_wei": "99639552137965159"
+    },
+    {
+      "address": "0xd2874db8c33d99e967a695ee80e7888a429f464c",
+      "balance_wei": "103777212299527879",
+      "balance_eth": 0.10377721229952787,
+      "veth_shares_wei": "99619445705369650"
+    },
+    {
+      "address": "0xbeba9898d6e3a701094b91f6c4ab5b9b71fd82e5",
+      "balance_wei": "97428017341315508",
+      "balance_eth": 0.09742801734131551,
+      "veth_shares_wei": "93524627118540819"
+    },
+    {
+      "address": "0x34e20e9701d4ed4a2d9335f238ff6a54d7283a5a",
+      "balance_wei": "93482063363454854",
+      "balance_eth": 0.09348206336345485,
+      "veth_shares_wei": "89736765223399460"
+    },
+    {
+      "address": "0x0a861d2c7d51856658382d3084157c0fd70baae5",
+      "balance_wei": "91175152044280815",
+      "balance_eth": 0.09117515204428081,
+      "veth_shares_wei": "87522278807593065"
+    },
+    {
+      "address": "0x6ec854ea11b33c186794db26bcd63ca0752f663e",
+      "balance_wei": "87986307952899100",
+      "balance_eth": 0.0879863079528991,
+      "veth_shares_wei": "84461193683168936"
+    },
+    {
+      "address": "0xca167f29337425f321d9cee84ddea9c58d0888e0",
+      "balance_wei": "86768951429518884",
+      "balance_eth": 0.08676895142951888,
+      "veth_shares_wei": "83292609758068602"
+    },
+    {
+      "address": "0xb780a0633bb5d8de15cdd9c6726bbfe9fae8ca2d",
+      "balance_wei": "86326990628428680",
+      "balance_eth": 0.08632699062842868,
+      "veth_shares_wei": "82868355829363797"
+    },
+    {
+      "address": "0xd30a9c6d33b29f5d192889cc8e4f83559ce74941",
+      "balance_wei": "82760307948446496",
+      "balance_eth": 0.0827603079484465,
+      "veth_shares_wei": "79444569973936806"
+    },
+    {
+      "address": "0x2b81152922213bca141e9706b9964b989c9c8228",
+      "balance_wei": "80554243063190757",
+      "balance_eth": 0.08055424306319076,
+      "veth_shares_wei": "77326889645186480"
+    },
+    {
+      "address": "0xe6359515825058ef7f33c4d0fc1acb8e9b9e0a00",
+      "balance_wei": "78237699404329022",
+      "balance_eth": 0.07823769940432902,
+      "veth_shares_wei": "75103156803124535"
+    },
+    {
+      "address": "0x8bf0ff8bb32d72e9b6386c4f1d4e6b2c76a1aa24",
+      "balance_wei": "72662011294149882",
+      "balance_eth": 0.07266201129414988,
+      "veth_shares_wei": "69750855014954485"
+    },
+    {
+      "address": "0x8405b4412f82d4acbd730078754402d6dfc60ae6",
+      "balance_wei": "72618084419782450",
+      "balance_eth": 0.07261808441978244,
+      "veth_shares_wei": "69708688042272440"
+    },
+    {
+      "address": "0x764237e48d0662bcbb4b7261c4cc011518513789",
+      "balance_wei": "69419751810059197",
+      "balance_eth": 0.0694197518100592,
+      "veth_shares_wei": "66638494550830116"
+    },
+    {
+      "address": "0x1a7d35e8c79db4195f560ec875dc4d3c7e0c3e08",
+      "balance_wei": "67145313257281673",
+      "balance_eth": 0.06714531325728167,
+      "veth_shares_wei": "64455179901129790"
+    },
+    {
+      "address": "0x8b1e2ecfb6ce2e992cd009604df4091e2645815e",
+      "balance_wei": "66996308073425440",
+      "balance_eth": 0.06699630807342544,
+      "veth_shares_wei": "64312144513166761"
+    },
+    {
+      "address": "0x2e88435f98b73b02621d2411c81b5cdc1fb97364",
+      "balance_wei": "63658787109103318",
+      "balance_eth": 0.06365878710910332,
+      "veth_shares_wei": "61108339158131866"
+    },
+    {
+      "address": "0x2fefed3f9fd41179e1bbb432600d29bb7a6f1edd",
+      "balance_wei": "63439896202112722",
+      "balance_eth": 0.06343989620211272,
+      "veth_shares_wei": "60898217973132102"
+    },
+    {
+      "address": "0xa510f8464846805659327df9733f422bdf72ec44",
+      "balance_wei": "62350164258960621",
+      "balance_eth": 0.06235016425896062,
+      "veth_shares_wei": "59852145432361593"
+    },
+    {
+      "address": "0xe513a4b56f5be2568733fa2a2f5569e032d5a80f",
+      "balance_wei": "62269705042640122",
+      "balance_eth": 0.06226970504264012,
+      "veth_shares_wei": "59774909762274384"
+    },
+    {
+      "address": "0x989729426d918b4e310e5270c416826d28459890",
+      "balance_wei": "62170781655299349",
+      "balance_eth": 0.06217078165529935,
+      "veth_shares_wei": "59679949676183980"
+    },
+    {
+      "address": "0x458f6fbf4ebf5cc97d0ae6e2854f7ff750c85a51",
+      "balance_wei": "58560412855450142",
+      "balance_eth": 0.05856041285545015,
+      "veth_shares_wei": "56214227956902695"
+    },
+    {
+      "address": "0xb875974aaae3dcd3bd85dcd969524436b728e53e",
+      "balance_wei": "57438250611095827",
+      "balance_eth": 0.05743825061109582,
+      "veth_shares_wei": "55137024413879994"
+    },
+    {
+      "address": "0x3c4d838c0f994e02f9075b3344ac47fbde6e74a3",
+      "balance_wei": "56262540097115426",
+      "balance_eth": 0.05626254009711543,
+      "veth_shares_wei": "54008417977867301"
+    },
+    {
+      "address": "0xdf8e4b2a40301f3599f112f7630b2bc1321e955b",
+      "balance_wei": "55178083496507778",
+      "balance_eth": 0.055178083496507775,
+      "veth_shares_wei": "52967409426469213"
+    },
+    {
+      "address": "0x7cda6d373e25433912ec3bf4dcf3e80a9e437ea3",
+      "balance_wei": "54572751434378702",
+      "balance_eth": 0.0545727514343787,
+      "veth_shares_wei": "52386329600168451"
+    },
+    {
+      "address": "0xc0f089bf54a843922b76f289152a3593ab1cf363",
+      "balance_wei": "53908527485158084",
+      "balance_eth": 0.05390852748515808,
+      "veth_shares_wei": "51748717351974629"
+    },
+    {
+      "address": "0x930706675a72e198c2570d330e0f52097f3fc2f7",
+      "balance_wei": "52192086619506122",
+      "balance_eth": 0.05219208661950612,
+      "veth_shares_wei": "50101044574556313"
+    },
+    {
+      "address": "0x7cd6d8b9006d49739cb03710848be1ed850432c9",
+      "balance_wei": "51936147101865202",
+      "balance_eth": 0.0519361471018652,
+      "veth_shares_wei": "49855359107424102"
+    },
+    {
+      "address": "0xb56a950e70985647d3644f7845590b7cbe5394b6",
+      "balance_wei": "51899521910947874",
+      "balance_eth": 0.05189952191094787,
+      "veth_shares_wei": "49820201280988113"
+    },
+    {
+      "address": "0x4e04dcb185e9b5b0f6d9e5e43331cb6675354c62",
+      "balance_wei": "47859251790451284",
+      "balance_eth": 0.04785925179045128,
+      "veth_shares_wei": "45941801958195084"
+    },
+    {
+      "address": "0xc52ad04d85c034ae1fe293f9ad6e62cd7c554dad",
+      "balance_wei": "46686846724674838",
+      "balance_eth": 0.04668684672467484,
+      "veth_shares_wei": "44816368539751368"
+    },
+    {
+      "address": "0x63afb55e9590ff8756c52bdfded82ca0cfe73be9",
+      "balance_wei": "44451628136007752",
+      "balance_eth": 0.044451628136007754,
+      "veth_shares_wei": "42670702531777797"
+    },
+    {
+      "address": "0x53a117ce60c5265db816b9e44770922ef0783616",
+      "balance_wei": "43783938120258838",
+      "balance_eth": 0.04378393812025884,
+      "veth_shares_wei": "42029763082759479"
+    },
+    {
+      "address": "0xdead40123c47ba567b32632f478640ff7bd62925",
+      "balance_wei": "41476120395425171",
+      "balance_eth": 0.04147612039542517,
+      "veth_shares_wei": "39814406575847382"
+    },
+    {
+      "address": "0x5911410c62ea39e14429dc988b569d12da0c0125",
+      "balance_wei": "35391944844809841",
+      "balance_eth": 0.03539194484480984,
+      "veth_shares_wei": "33973989566214346"
+    },
+    {
+      "address": "0xbfface7a3f1535ccfe5370808580a2a38f94847c",
+      "balance_wei": "34990773077858142",
+      "balance_eth": 0.034990773077858146,
+      "veth_shares_wei": "33588890485493002"
+    },
+    {
+      "address": "0x09cc473b67696f31a8536d43c7cf4b32ade588c8",
+      "balance_wei": "34635516245852625",
+      "balance_eth": 0.03463551624585262,
+      "veth_shares_wei": "33247866787676865"
+    },
+    {
+      "address": "0xc5aa303ee7a62f07ad7102995926e4eb1c97b596",
+      "balance_wei": "34420693906192234",
+      "balance_eth": 0.034420693906192235,
+      "veth_shares_wei": "33041651165500279"
+    },
+    {
+      "address": "0x79aca1c005b23d53a8e09152063ea29b2d65f2af",
+      "balance_wei": "33371275340071970",
+      "balance_eth": 0.03337127534007197,
+      "veth_shares_wei": "32034276872499540"
+    },
+    {
+      "address": "0x33383961303b04ff1e85856a691218fd7ad6bb15",
+      "balance_wei": "31144705613988348",
+      "balance_eth": 0.031144705613988348,
+      "veth_shares_wei": "29896913216048573"
+    },
+    {
+      "address": "0xe1ce0a3d6f3e677e7096eb3d3d0096f6fafbda58",
+      "balance_wei": "31133211432370248",
+      "balance_eth": 0.031133211432370248,
+      "veth_shares_wei": "29885879541350056"
+    },
+    {
+      "address": "0xcf070ab1cc1db37dfe4f09167909df1b52acd0f4",
+      "balance_wei": "28671256777160662",
+      "balance_eth": 0.028671256777160665,
+      "veth_shares_wei": "27522561500045826"
+    },
+    {
+      "address": "0x785fe773b61ae39a9cadb66df21b6e3986773c24",
+      "balance_wei": "26468285019114022",
+      "balance_eth": 0.026468285019114024,
+      "veth_shares_wei": "25407850374372350"
+    },
+    {
+      "address": "0x484b61ddecba649dfda5b98882a5a9fe8ada044c",
+      "balance_wei": "25951407681905100",
+      "balance_eth": 0.0259514076819051,
+      "veth_shares_wei": "24911681391900516"
+    },
+    {
+      "address": "0x536a06814d3680176aa9a36411c24c217cc039d4",
+      "balance_wei": "25123395861950600",
+      "balance_eth": 0.0251233958619506,
+      "veth_shares_wei": "24116843327612515"
+    },
+    {
+      "address": "0xf6b18a499d2171a1fdb69aa8ab1333a5e7c9f3c9",
+      "balance_wei": "24455625761447020",
+      "balance_eth": 0.02445562576144702,
+      "veth_shares_wei": "23475827002383202"
+    },
+    {
+      "address": "0x239121b79edc1c900242df0ec6d0aadb04dc44f6",
+      "balance_wei": "24376984732604530",
+      "balance_eth": 0.024376984732604527,
+      "veth_shares_wei": "23400336675273842"
+    },
+    {
+      "address": "0xfd58728c80cf42e3613e0f70c3ec0d8ca2e2e3e0",
+      "balance_wei": "23308482994847548",
+      "balance_eth": 0.023308482994847547,
+      "veth_shares_wei": "22374643765511040"
+    },
+    {
+      "address": "0xd4579f3f055b2a60a146c30041785200785814b9",
+      "balance_wei": "20831080555133401",
+      "balance_eth": 0.0208310805551334,
+      "veth_shares_wei": "19996496845153106"
+    },
+    {
+      "address": "0xef9be1ace449eb63622b5c2bd4ee7af3b09dcc60",
+      "balance_wei": "20761683988493591",
+      "balance_eth": 0.020761683988493592,
+      "veth_shares_wei": "19929880606873741"
+    },
+    {
+      "address": "0x8e1f65356ec75fd5f09ef5fd13c2de5637d054dc",
+      "balance_wei": "20751974402788189",
+      "balance_eth": 0.020751974402788188,
+      "veth_shares_wei": "19920560029412003"
+    },
+    {
+      "address": "0xedc777b705ae7ba5b1b6a5464c10e068bf0d9f1c",
+      "balance_wei": "20015169863913670",
+      "balance_eth": 0.020015169863913673,
+      "veth_shares_wei": "19213275085738353"
+    },
+    {
+      "address": "0x6321a5ef9b5dfa19fb12d554ac5307a0b5eaa77b",
+      "balance_wei": "19058320477910614",
+      "balance_eth": 0.019058320477910617,
+      "veth_shares_wei": "18294761248788992"
+    },
+    {
+      "address": "0x46a6a27046f8a04b588d71989fc7a71e8f8ced4c",
+      "balance_wei": "18922868522723878",
+      "balance_eth": 0.01892286852272388,
+      "veth_shares_wei": "18164736088193378"
+    },
+    {
+      "address": "0xdf31466fd44fd1d725ecddbb94a357391067391a",
+      "balance_wei": "17989029277053521",
+      "balance_eth": 0.01798902927705352,
+      "veth_shares_wei": "17268310505252327"
+    },
+    {
+      "address": "0x0702e6b144e4fa736fcb4f2a94516217e30eb94d",
+      "balance_wei": "15553364169468543",
+      "balance_eth": 0.015553364169468543,
+      "veth_shares_wei": "14930228737925562"
+    },
+    {
+      "address": "0x87c56b962c400315a676b4f8518828dca58d2452",
+      "balance_wei": "13289328193851553",
+      "balance_eth": 0.013289328193851552,
+      "veth_shares_wei": "12756899892889643"
+    },
+    {
+      "address": "0x8af045a165ebf01c53d104643a4396ef063814f5",
+      "balance_wei": "12453608888854262",
+      "balance_eth": 0.012453608888854262,
+      "veth_shares_wei": "11954663138940090"
+    },
+    {
+      "address": "0x9beb9a8b40847fab6ffc1aeff5c1d7434fb173e4",
+      "balance_wei": "12450656229057726",
+      "balance_eth": 0.012450656229057727,
+      "veth_shares_wei": "11951828775540170"
+    },
+    {
+      "address": "0x19edc2ea800ceadf627c738b29a1fe3ec1f15f03",
+      "balance_wei": "12052271211962245",
+      "balance_eth": 0.012052271211962244,
+      "veth_shares_wei": "11569404795352406"
+    },
+    {
+      "address": "0xa2a08008db248b5a564794d4833faf43f8dfddbb",
+      "balance_wei": "11763413415435844",
+      "balance_eth": 0.011763413415435844,
+      "veth_shares_wei": "11292119898793613"
+    },
+    {
+      "address": "0x041a7223547f07c1e9784e53d43a3dec479f358d",
+      "balance_wei": "11527454465824505",
+      "balance_eth": 0.011527454465824503,
+      "veth_shares_wei": "11065614491212822"
+    },
+    {
+      "address": "0xe453b17dbaaabbe152062f5c931dab59b650b7a1",
+      "balance_wei": "11065880054524225",
+      "balance_eth": 0.011065880054524224,
+      "veth_shares_wei": "10622532758849451"
+    },
+    {
+      "address": "0xf484b6b2c20f88dbed83cd352fe6efc8f15f8c8d",
+      "balance_wei": "10550076980244414",
+      "balance_eth": 0.010550076980244414,
+      "veth_shares_wei": "10127394999660344"
+    },
+    {
+      "address": "0xf027433bc8d0ec87f1d970b2b6fd5f8a9d237464",
+      "balance_wei": "10381568537996115",
+      "balance_eth": 0.010381568537996115,
+      "veth_shares_wei": "9965637738682857"
+    },
+    {
+      "address": "0x9d71e1cbb2f6125f768cfeb7fb0e5489d6e28de1",
+      "balance_wei": "10380116502953486",
+      "balance_eth": 0.010380116502953486,
+      "veth_shares_wei": "9964243878480928"
+    },
+    {
+      "address": "0x44ab739ec53574f9c36d6f1b9880e43ba3043b9c",
+      "balance_wei": "10378281530087072",
+      "balance_eth": 0.010378281530087073,
+      "veth_shares_wei": "9962482422610356"
+    },
+    {
+      "address": "0xf485ec2a15d763a916a25320a9335244e228d2eb",
+      "balance_wei": "10376059633615389",
+      "balance_eth": 0.010376059633615388,
+      "veth_shares_wei": "9960349544977404"
+    },
+    {
+      "address": "0x31f22fb2c1d01a807a48b941da429f8459b9e167",
+      "balance_wei": "10354394695356699",
+      "balance_eth": 0.0103543946953567,
+      "veth_shares_wei": "9939552598395890"
+    },
+    {
+      "address": "0x0daea0fa2134c9bf9237c4aec63b9acf62b66363",
+      "balance_wei": "10352488574766791",
+      "balance_eth": 0.010352488574766791,
+      "veth_shares_wei": "9937722845289147"
+    },
+    {
+      "address": "0x9505d130796f587a25bab9cfcedf91b2641e172c",
+      "balance_wei": "10343524337143580",
+      "balance_eth": 0.01034352433714358,
+      "veth_shares_wei": "9929117754022886"
+    },
+    {
+      "address": "0xdf419f2b53b165c60d3249fb85db7abe059cc5e3",
+      "balance_wei": "8895950712765441",
+      "balance_eth": 0.008895950712765442,
+      "veth_shares_wei": "8539540226520548"
+    },
+    {
+      "address": "0xd47e2465eaa10ec27ec3c8fbf46c81672a90bf3a",
+      "balance_wei": "8592198019594467",
+      "balance_eth": 0.008592198019594467,
+      "veth_shares_wei": "8247957187675099"
+    },
+    {
+      "address": "0x94e9f401bbe036268137aa7269276127c8d4874e",
+      "balance_wei": "8305928196185623",
+      "balance_eth": 0.008305928196185622,
+      "veth_shares_wei": "7973156578772129"
+    },
+    {
+      "address": "0x449e56bd89bd12fae88515501a6e0cd50d8a0cbf",
+      "balance_wei": "8268560352732029",
+      "balance_eth": 0.008268560352732029,
+      "veth_shares_wei": "7937285853691291"
+    },
+    {
+      "address": "0xdcc2361445a157fdb26ecef8adaf63b0847fdb7f",
+      "balance_wei": "7804535409664907",
+      "balance_eth": 0.007804535409664907,
+      "veth_shares_wei": "7491851768524381"
+    },
+    {
+      "address": "0x2df6deff41e24f6f292e90247b3cd029baad985b",
+      "balance_wei": "7276234935453985",
+      "balance_eth": 0.007276234935453985,
+      "veth_shares_wei": "6984717309613739"
+    },
+    {
+      "address": "0xe6885003a78afba70e6da485d8f7762471ff8b94",
+      "balance_wei": "6763161594738665",
+      "balance_eth": 0.006763161594738665,
+      "veth_shares_wei": "6492199918987174"
+    },
+    {
+      "address": "0xd419d53817e1daa7b2f72e51707774f3ff0a54a3",
+      "balance_wei": "6440217007825366",
+      "balance_eth": 0.006440217007825366,
+      "veth_shares_wei": "6182193897154588"
+    },
+    {
+      "address": "0xee33c2557980aff1560eaad40564d95d7fe153ea",
+      "balance_wei": "5195847021580051",
+      "balance_eth": 0.005195847021580051,
+      "veth_shares_wei": "4987678786030132"
+    },
+    {
+      "address": "0x1dc9ee19bc6ece2df030eb1f4f5d775e817d798d",
+      "balance_wei": "5189930815713086",
+      "balance_eth": 0.005189930815713086,
+      "veth_shares_wei": "4981999609107892"
+    },
+    {
+      "address": "0x6cf9aa65ebad7028536e353393630e2340ca6049",
+      "balance_wei": "4807289756000735",
+      "balance_eth": 0.004807289756000735,
+      "veth_shares_wei": "4614688814878425"
+    },
+    {
+      "address": "0x68c7dfd627f01d1fef512c3f1b1cef46ed78b377",
+      "balance_wei": "4264192145669654",
+      "balance_eth": 0.004264192145669654,
+      "veth_shares_wei": "4093350057493637"
+    },
+    {
+      "address": "0x666994dc53b7b287250482edbfcb444ce29e4e48",
+      "balance_wei": "4158752470517904",
+      "balance_eth": 0.004158752470517904,
+      "veth_shares_wei": "3992134754430237"
+    },
+    {
+      "address": "0xd2f64813db4db53f8c05e8aad3eac401fc069bb7",
+      "balance_wei": "4017660634191747",
+      "balance_eth": 0.004017660634191747,
+      "veth_shares_wei": "3856695670869226"
+    },
+    {
+      "address": "0xe942077897ae16a0af2c8e03b791d087a3886b1b",
+      "balance_wei": "3984101663697440",
+      "balance_eth": 0.00398410166369744,
+      "veth_shares_wei": "3824481218726914"
+    },
+    {
+      "address": "0xcaa3c21be87013f122aea557d3d5f71d38c3860c",
+      "balance_wei": "3956076502859361",
+      "balance_eth": 0.003956076502859361,
+      "veth_shares_wei": "3797578867751873"
+    },
+    {
+      "address": "0xe802c2ee3184a65af2cfcc6434a5698d9cfe64cc",
+      "balance_wei": "3932336372717867",
+      "balance_eth": 0.003932336372717867,
+      "veth_shares_wei": "3774789870502235"
+    },
+    {
+      "address": "0xebaec01b7c58bb10b4b903ee073a4fcb9ba354f3",
+      "balance_wei": "3583483662559742",
+      "balance_eth": 0.003583483662559742,
+      "veth_shares_wei": "3439913717551975"
+    },
+    {
+      "address": "0x4e6f69d18cf03d51468550ad7355c9b172307db4",
+      "balance_wei": "3116168826111912",
+      "balance_eth": 0.003116168826111912,
+      "veth_shares_wei": "2991321546445446"
+    },
+    {
+      "address": "0x146b9b481c2f75930f32c1672c0e383886dcd9ef",
+      "balance_wei": "2577249979464191",
+      "balance_eth": 0.002577249979464191,
+      "veth_shares_wei": "2473994133291689"
+    },
+    {
+      "address": "0x7adacb3615864ec6c7b2748e42ed66f9b73366bc",
+      "balance_wei": "2572457360608762",
+      "balance_eth": 0.002572457360608762,
+      "veth_shares_wei": "2469393527597281"
+    },
+    {
+      "address": "0x990cc19a2c0434dc122fa253c6aace06f06781d5",
+      "balance_wei": "2442140389116485",
+      "balance_eth": 0.002442140389116485,
+      "veth_shares_wei": "2344297620910239"
+    },
+    {
+      "address": "0x8a79395be6b98bb08acd1a2a92cf541c0cf2649d",
+      "balance_wei": "2073676506595860",
+      "balance_eth": 0.00207367650659586,
+      "veth_shares_wei": "1990596004478208"
+    },
+    {
+      "address": "0xc3b34e09e0fef4e9afe752679c43f74e45496512",
+      "balance_wei": "2070393842572070",
+      "balance_eth": 0.00207039384257207,
+      "veth_shares_wei": "1987444858256019"
+    },
+    {
+      "address": "0x3be394bf4a6320a049354ad55b889d815bc3e156",
+      "balance_wei": "1770478224674146",
+      "balance_eth": 0.001770478224674146,
+      "veth_shares_wei": "1699545164755479"
+    },
+    {
+      "address": "0x7f7514c1aae77a7617094c47f83d5c3b1c2ccaba",
+      "balance_wei": "1703376638678967",
+      "balance_eth": 0.001703376638678967,
+      "veth_shares_wei": "1635131960212102"
+    },
+    {
+      "address": "0x03ae239531ac741da9f49313ffd881883674330a",
+      "balance_wei": "1203980027835989",
+      "balance_eth": 0.001203980027835989,
+      "veth_shares_wei": "1155743350160336"
+    },
+    {
+      "address": "0xcc72737c6119caea3e9956624cd16ed55281711d",
+      "balance_wei": "1091896966353845",
+      "balance_eth": 0.001091896966353845,
+      "veth_shares_wei": "1048150823724137"
+    },
+    {
+      "address": "0xa9702237c06498a538aa60b1892f3e8500f97451",
+      "balance_wei": "1041153452647309",
+      "balance_eth": 0.001041153452647309,
+      "veth_shares_wei": "999440315929826"
+    },
+    {
+      "address": "0x1a5a61a3f5b458e58b30fd6f0441ff71b3b66fc3",
+      "balance_wei": "1040089970524770",
+      "balance_eth": 0.00104008997052477,
+      "veth_shares_wei": "998419441527659"
+    },
+    {
+      "address": "0x366e58737164430af4aed2856840be9bb148bdc7",
+      "balance_wei": "1039012357489182",
+      "balance_eth": 0.001039012357489182,
+      "veth_shares_wei": "997385002358293"
+    },
+    {
+      "address": "0xa00e8e2c5c791b8182ef7c562c3a839f16994c78",
+      "balance_wei": "1038754765383053",
+      "balance_eth": 0.001038754765383053,
+      "veth_shares_wei": "997137730512557"
+    },
+    {
+      "address": "0xcc0fac1f6299886e9406b1532bc82e63c555bf30",
+      "balance_wei": "1038754765383053",
+      "balance_eth": 0.001038754765383053,
+      "veth_shares_wei": "997137730512557"
+    },
+    {
+      "address": "0xdf5c8f9459ef9965fa55dc2cb2c2c136b01b3986",
+      "balance_wei": "949744252179995",
+      "balance_eth": 0.000949744252179995,
+      "veth_shares_wei": "911693365697224"
+    },
+    {
+      "address": "0x8080f749091365c41cc869ae707b2f37daecd308",
+      "balance_wei": "519377382691526",
+      "balance_eth": 0.000519377382691526,
+      "veth_shares_wei": "498568865256278"
+    },
+    {
+      "address": "0x9beda2d5861beed8deeaa41883f95f88569f46c9",
+      "balance_wei": "154953369200412",
+      "balance_eth": 0.000154953369200412,
+      "veth_shares_wei": "148745263125504"
+    },
+    {
+      "address": "0xcf90d846f8d40a57406358b5093709961c091093",
+      "balance_wei": "141131115114913",
+      "balance_eth": 0.000141131115114913,
+      "veth_shares_wei": "135476788670612"
+    },
+    {
+      "address": "0x84f918ba377cbd0385b4ef28f6b2b6d7e9b54a4b",
+      "balance_wei": "107253832866992",
+      "balance_eth": 0.000107253832866992,
+      "veth_shares_wei": "102956777728310"
+    },
+    {
+      "address": "0x16562e41112bf3f574a82cf17ad04ef3afdcd1de",
+      "balance_wei": "103916940431600",
+      "balance_eth": 0.0001039169404316,
+      "veth_shares_wei": "99753575720602"
+    },
+    {
+      "address": "0x03d291aac50ba79940e5672344a25665bcbba6d5",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0x0d0212bdcf8b00714cf80e4b44404c65a8d2bfd2",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0x1703326f748c107e2272a816cb322199d94d6ce1",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0x25a68e5322a7591a8ecec6e46173e5c885f9664d",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0x2647e6497d8ef373ff5af886ce7d1befe48ab217",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0x2b216a740b36c2c35a2e6dbcb030058fad6f28b1",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0x2ca922dcfeaceb7848b32291a7dc8ba47fec0669",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0x334170a095712a01485dc7952d728b57085c0811",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0x3cb13b70b82bea68ae746e1e1fd7ba0221f76954",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0x4deb650c6d44587499d1cf34110506d0a6e713ba",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0x55bd420bd0f284faad52c8f4ca12ccff67d2a1b9",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0x5dcdfb7639e4b10b459c61937f2042d69e738d5e",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0x68528968cf1b5ccaf945be5999511aa6bfd319b4",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0x6a31eb2569e9dc72f172aef7f57216b24231ba88",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0x6f409c390b009887341a637984ec460df8667a93",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0x8b10451fce966bcfeaddc0c7fb0700dacc24542e",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0x8ea6f18613be530bd99584e10717a1fdded44975",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0xa00f86ee70d316fc22adfa534b889903b2fca4ad",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0xa0486a95496d075a39f44d9e5b1465797c9a7c70",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0xaa7d15600dea70dd6ce14676948fe7d2c03f3188",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0xaaaa7b52705e7cb27349d01f9f019c4e504c437c",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0xaeed445b70cc0f87750af6d1a8d9c54b61dbdb49",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0xb4858e05da3584410ab485b9b36d35ffa7ad3499",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0xb8e2df4d00b7f5333d596b8a62e6a8f782a3c6fd",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0xb9a5263374282d12efb887e3ac1cbb9bd8bef00d",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0xc2b84621a8a014429c2275ccd7a41b19dbdf654f",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0xc8b868727340c70c69352580b97e8ee9e95c9296",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0xcaecad0b3d1bb14c1ab4ffdda75d7b8c12dac098",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0xcced5fad452103f9cf13f710954be6286712dc34",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0xcecc8751884e8c500873cc9ffa5e3e50fba24116",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0xd2b367b1c42c5ddcfa9d6d0a526174dccf758f8f",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0xe0e047ea58baa38977ac4a2233823231981377db",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0xe969f55e30ed133988aeb76b621bae126fa887e6",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0xf8031d02536ec12a1f5cc554caf9edfcf210a1ca",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0xf8323f3493693a1a091ffb06bc3578da626404ab",
+      "balance_wei": "103875476538304",
+      "balance_eth": 0.000103875476538304,
+      "veth_shares_wei": "99713773051255"
+    },
+    {
+      "address": "0x7f324340fa0af5b11f6fa494555cfe20d629a523",
+      "balance_wei": "103872294203730",
+      "balance_eth": 0.00010387229420373,
+      "veth_shares_wei": "99710718214848"
+    },
+    {
+      "address": "0xddbbf84382db98573bcc656fa7c6ac8b52466c8b",
+      "balance_wei": "103866854173891",
+      "balance_eth": 0.000103866854173891,
+      "veth_shares_wei": "99705496136271"
+    },
+    {
+      "address": "0xb722ca0b4dafa8bf236a0058f48dd9ae2c5fd5ce",
+      "balance_wei": "103815685379960",
+      "balance_eth": 0.00010381568537996,
+      "veth_shares_wei": "99656377386828"
+    },
+    {
+      "address": "0x57edc5e093f18ac8bd3ee7acacf6ee34b52229ac",
+      "balance_wei": "103660493246549",
+      "balance_eth": 0.000103660493246549,
+      "veth_shares_wei": "99507402925425"
+    }
+  ]
+}

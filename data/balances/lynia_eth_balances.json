@@ -1,10 +1,10 @@
 {
   "contract": "0xecfae6f958f7ab15bdf171eeefa568e41eabf641",
   "balance_source": "eth",
-  "contract_eth_balance": 8.31362,
-  "total_eth_in_balances": 8.49936,
-  "addresses_with_balance": 420,
-  "coverage_pct": 102.23,
+  "contract_eth_balance": 2.973329,
+  "total_eth_in_balances": 3.158982,
+  "addresses_with_balance": 417,
+  "coverage_pct": 106.24,
   "scan_date": "2026-09-06 01:43:44 UTC",
   "description": "ETH balances in defunct LYNIA contract",
   "distribution": {
@@ -17,30 +17,32 @@
       "total_eth": 0
     },
     "1-10 ETH": {
-      "count": 1,
-      "total_eth": 5.321587
+      "count": 0,
+      "total_eth": 0
     },
     "0.1-1 ETH": {
       "count": 9,
       "total_eth": 1.87442
     },
     "0.01-0.1 ETH": {
-      "count": 37,
-      "total_eth": 1.152865
+      "count": 36,
+      "total_eth": 1.139387
     },
     "<0.01 ETH": {
-      "count": 373,
-      "total_eth": 0.150489
+      "count": 372,
+      "total_eth": 0.145177
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 444,
+  "last_event_refresh": "2026-10-10 00:23:06 UTC",
   "balances": [
     {
       "rank": 1,
       "address": "0x0698cda624b916e46895dec3a02e95bcca67d464",
-      "balance_wei": "5321586833392971021",
-      "balance_eth": 5.3215868333929714
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 2,
@@ -299,8 +301,9 @@
     {
       "rank": 44,
       "address": "0x134f16d5c72506f13cec6fbfe6e8d2383ea5ecc8",
-      "balance_wei": "13478315758905917",
-      "balance_eth": 0.013478315758905917
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 45,
@@ -383,8 +386,9 @@
     {
       "rank": 58,
       "address": "0x1023cd69e74eba186399980609172b461f0cd36e",
-      "balance_wei": "5312236651010461",
-      "balance_eth": 0.005312236651010461
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 59,
@@ -2584,6 +2588,5 @@
       "balance_wei": "10353393354",
       "balance_eth": 1.0353393354e-8
     }
-  ],
-  "last_event_refresh": "2026-10-02 17:23:14 UTC"
+  ]
 }

@@ -1,9 +1,9 @@
 {
   "contract": "0xa17a8883da1abd57c690df9ebf58fc194edab66f",
   "balance_source": "weth",
-  "contract_eth_balance": 52.903254,
-  "total_eth_in_balances": 52.903258,
-  "addresses_with_balance": 351,
+  "contract_eth_balance": 52.893209,
+  "total_eth_in_balances": 52.893213,
+  "addresses_with_balance": 350,
   "coverage_pct": 100,
   "scan_date": "2026-09-06 01:48:02 UTC",
   "description": "WETH reward pool — Pickle Staking v1. Claim via getReward().",
@@ -25,8 +25,8 @@
       "total_eth": 3.864212
     },
     "0.01-0.1 ETH": {
-      "count": 106,
-      "total_eth": 3.722502
+      "count": 105,
+      "total_eth": 3.712457
     },
     "<0.01 ETH": {
       "count": 229,
@@ -34,7 +34,7 @@
     }
   },
   "name": "Pickle Staking v1",
-  "last_event_refresh": "2026-09-27 09:23:07 UTC",
+  "last_event_refresh": "2026-10-15 16:50:34 UTC",
   "balances": [
     {
       "rank": 1,
@@ -793,8 +793,9 @@
     {
       "rank": 126,
       "address": "0x069e85d4f1010dd961897dc8c095fbb5ff297434",
-      "balance_wei": "10045467074625206",
-      "balance_eth": 0.010045
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 127,

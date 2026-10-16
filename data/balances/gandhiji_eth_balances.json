@@ -1,9 +1,9 @@
 {
   "contract": "0x167cB3F2446F829eb327344b66E271D1a7eFeC9A",
   "balance_source": "eth",
-  "contract_eth_balance": 658.78690848,
-  "total_eth_in_balances": 765.88419788,
-  "addresses_with_balance": 11173,
+  "contract_eth_balance": 658.697277,
+  "total_eth_in_balances": 765.79442103,
+  "addresses_with_balance": 11169,
   "coverage_pct": 116.26,
   "scan_date": "2026-09-20 01:43:17 UTC",
   "description": "ETH balances in defunct GandhiJi contract",
@@ -25,17 +25,17 @@
       "total_eth": 204.880351
     },
     "0.01-0.1 ETH": {
-      "count": 1893,
-      "total_eth": 63.579971
+      "count": 1891,
+      "total_eth": 63.490575
     },
     "<0.01 ETH": {
-      "count": 8449,
-      "total_eth": 12.058533
+      "count": 8448,
+      "total_eth": 12.058152
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 11761,
-  "last_event_refresh": "2026-09-27 09:23:07 UTC",
+  "last_event_refresh": "2026-10-11T16:18:08Z",
   "balances": [
     {
       "rank": 1,
@@ -6333,8 +6333,9 @@
     {
       "rank": 1048,
       "address": "0x7c9717d3f09b28afe632c1c6a2c8be866c9171e9",
-      "balance_wei": "67077440598535738",
-      "balance_eth": 0.06707744059853574
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 1049,
@@ -11636,8 +11637,9 @@
     {
       "rank": 1930,
       "address": "0xdb0c980a0a9edd23511c330faf6be21d9b478550",
-      "balance_wei": "22318521702253039",
-      "balance_eth": 0.022318521702253038
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 1931,
@@ -37818,7 +37820,8 @@
       "rank": 6292,
       "address": "0xbb5a0e34f7a8290be4ef67a87ef49c6830751eae",
       "balance_wei": "445644304047207",
-      "balance_eth": 0.000445644304047207
+      "balance_eth": 0.000445644304047207,
+      "claimed": true
     },
     {
       "rank": 6293,
@@ -38435,8 +38438,9 @@
     {
       "rank": 6395,
       "address": "0xbc252840c7b3bf73a8277f2d5c27f73e415a3ffb",
-      "balance_wei": "380883835013522",
-      "balance_eth": 0.000380883835013522
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 6396,

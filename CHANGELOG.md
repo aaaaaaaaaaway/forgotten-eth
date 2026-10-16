@@ -7,9 +7,25 @@ RSS: https://forgotteneth.com/feed.xml
 
 ## October 2026
 
-### Oct 4 — Bridge withdrawals
+### Oct 14 — Bridge withdrawals
 
-Added support for unfinished withdrawals across 58 bridge integrations, including Arbitrum, Optimism, Polygon and NEAR Rainbow. Claims use the original bridge contracts. Per-address bridge data stays out of the public repository.
+Expanded verified bridge withdrawals, including native fee credits held by Safe accounts. Coverage varies; per-address data stays private.
+
+### Oct 11 — Vesper vETH Pool (+450.8 ETH)
+
+Added the Vesper vETH pool opened in December 2020. 253 holders have 450.82 ETH in it, each exiting in one step for a proportional share. The ETH behind the pool has sat idle in a newer Vesper pool since May 2026, so every listed exit is covered today; Vesper's operators can still redeploy or pause it.
+
+### Oct 11 — ElasticDAO (+68.6 ETH)
+
+Added ElasticDAO, the 2021 DAO built around the rebasing EGT token. Its treasury still holds 69.73 ETH and every EGT holder owns a proportional share of it: 68.60 ETH across 259 addresses is listed. Each listed exit was replayed against an archive node and matched to the wei. EGT held by the liquidity pool and by other contracts (1.13 ETH) is not listed.
+
+### Oct 11 — Boba L1 Liquidity Pool (+16.4 ETH)
+
+Added the Ethereum-side liquidity pool of Boba Network's fast bridge, which has carried no traffic since spring 2024. 145 liquidity providers still have 16.40 ETH in it, as principal and unclaimed fee rewards, withdrawn in up to two steps. The pool is 4.2 ETH short of everything it owes, so it pays in full only while ETH is left; the listed providers can all be paid together today.
+
+### Oct 11 — Cryptex TCAP ETH Vault (+28.3 ETH)
+
+Added the ETH vault behind Cryptex's TCAP token. 67 vault owners can take out 28.26 ETH of collateral without repaying any TCAP: all of a debt-free vault, and for a vault with debt the part above its minimum ratio. Amounts for vaults with debt follow two price oracles and are refreshed daily. Collateral that stays locked behind TCAP debt (32.49 ETH) is not listed.
 
 ### Oct 3 — The Idols refunds and KnownOrigin WETH royalties
 

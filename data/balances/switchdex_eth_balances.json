@@ -1,9 +1,9 @@
 {
   "contract": "0xc3c12a9e63e466a3ba99e07f3ef1f38b8b81ae1b",
   "balance_source": "eth",
-  "contract_eth_balance": 101.112963,
-  "total_eth_in_balances": 101.112863,
-  "addresses_with_balance": 1583,
+  "contract_eth_balance": 101.000964,
+  "total_eth_in_balances": 101.000864,
+  "addresses_with_balance": 1580,
   "coverage_pct": 100,
   "scan_date": "2026-09-06 01:43:14 UTC",
   "description": "ETH balances in defunct SwitchDex contract",
@@ -25,12 +25,12 @@
       "total_eth": 30.205785
     },
     "0.01-0.1 ETH": {
-      "count": 285,
-      "total_eth": 8.938192
+      "count": 283,
+      "total_eth": 8.828193
     },
     "<0.01 ETH": {
-      "count": 1176,
-      "total_eth": 1.81642
+      "count": 1175,
+      "total_eth": 1.81442
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
@@ -892,8 +892,9 @@
     {
       "rank": 143,
       "address": "0xd9137a39cc66357caf5266879a5cb27f54f85de0",
-      "balance_wei": "70000000000000000",
-      "balance_eth": 0.07
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 144,
@@ -1294,8 +1295,9 @@
     {
       "rank": 210,
       "address": "0x713e4436be4557c874a676b8e99a89ba65e8fbf5",
-      "balance_wei": "39999040000000000",
-      "balance_eth": 0.03999904
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 211,
@@ -4255,8 +4257,9 @@
     {
       "rank": 703,
       "address": "0x83fbd8dee540ef99e5766aabd0c917a1992df37c",
-      "balance_wei": "2000000000000000",
-      "balance_eth": 0.002
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 704,
@@ -9591,5 +9594,5 @@
       "balance_eth": 1e-18
     }
   ],
-  "last_event_refresh": "2026-09-29 23:23:06 UTC"
+  "last_event_refresh": "2026-10-08 21:23:06 UTC"
 }

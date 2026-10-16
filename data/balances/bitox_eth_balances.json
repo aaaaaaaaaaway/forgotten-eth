@@ -1,29 +1,41 @@
 {
   "contract": "0xb5adb233f28c86cef693451b67e1f2d41da97d21",
   "balance_source": "eth",
-  "contract_eth_balance": 2.24720309,
-  "total_eth_in_balances": 2.24848141,
-  "addresses_with_balance": 147,
-  "coverage_pct": 100.06,
+  "contract_eth_balance": 2.226878,
+  "total_eth_in_balances": 2.226578,
+  "addresses_with_balance": 145,
+  "coverage_pct": 99.99,
   "scan_date": "2026-03-17 22:00:16 UTC",
   "description": "ETH balances in defunct Bitox contract",
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "1-10 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
     "0.1-1 ETH": {
       "count": 6,
-      "total_eth": 1.0061679543585529
+      "total_eth": 1.006168
     },
     "0.01-0.1 ETH": {
-      "count": 25,
-      "total_eth": 1.072423122521345
+      "count": 24,
+      "total_eth": 1.052423
     },
     "<0.01 ETH": {
-      "count": 120,
-      "total_eth": 0.16989033206655185
+      "count": 115,
+      "total_eth": 0.167984
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 590,
-  "last_event_refresh": "2026-08-12T22:18:18Z",
+  "last_event_refresh": "2026-10-10 19:23:06 UTC",
   "balances": [
     {
       "rank": 1,
@@ -160,8 +172,9 @@
     {
       "rank": 23,
       "address": "0xf529dd967a6ecfcf8274bcc9e113581da85bd018",
-      "balance_wei": "20000000000000000",
-      "balance_eth": 0.02
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 24,
@@ -581,8 +594,9 @@
     {
       "rank": 93,
       "address": "0xaa6d4798cd060f7cf518ed88a37ab2dba692db74",
-      "balance_wei": "325012406061212",
-      "balance_eth": 0.000325012406061212
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 94,

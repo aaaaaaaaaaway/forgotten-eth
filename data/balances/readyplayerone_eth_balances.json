@@ -4,27 +4,35 @@
   "token_checked": "0x0000000000000000000000000000000000000000",
   "description": "ETH balances in defunct ReadyPlayerONE contract",
   "scan_date": "2026-03-29 19:44:58 UTC",
-  "contract_eth_balance": 24.539087,
+  "contract_eth_balance": 24.486026,
   "total_addresses_scanned": 309,
-  "addresses_with_balance": 142,
-  "total_eth_in_balances": 6.815738156404944,
-  "coverage_pct": 27.78,
+  "addresses_with_balance": 140,
+  "total_eth_in_balances": 6.762677,
+  "coverage_pct": 27.62,
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
     "1-10 ETH": {
       "count": 1,
-      "total_eth": 1.5130439700912968
+      "total_eth": 1.513044
     },
     "0.1-1 ETH": {
       "count": 7,
-      "total_eth": 2.277055375921816
+      "total_eth": 2.277054
     },
     "0.01-0.1 ETH": {
-      "count": 72,
-      "total_eth": 2.9101418603214104
+      "count": 71,
+      "total_eth": 2.857423
     },
     "<0.01 ETH": {
-      "count": 62,
-      "total_eth": 0.11549695007042383
+      "count": 61,
+      "total_eth": 0.115154
     }
   },
   "balances": [
@@ -187,8 +195,9 @@
     {
       "rank": 27,
       "address": "0xfcda11971c6cc873497a088c5235149082d7ac1c",
-      "balance_wei": "52720193254681603",
-      "balance_eth": "0.052720193254681601"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 28,
@@ -661,8 +670,9 @@
     {
       "rank": 106,
       "address": "0xa1b0ff5def280355e161fffc0ba60847c5c736f1",
-      "balance_wei": "340716687237205",
-      "balance_eth": "0.000340716687237205"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 107,
@@ -880,5 +890,6 @@
       "balance_wei": "8163103020471",
       "balance_eth": "0.000008163103020471"
     }
-  ]
+  ],
+  "last_event_refresh": "2026-10-10 00:23:06 UTC"
 }

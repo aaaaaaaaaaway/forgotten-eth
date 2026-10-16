@@ -1,9 +1,9 @@
 {
   "contract": "0x0f90ef4e2526e3d1791862574f9fb26a0f39ec86",
   "balance_source": "eth",
-  "contract_eth_balance": 35.109469,
-  "total_eth_in_balances": 35.017939,
-  "addresses_with_balance": 674,
+  "contract_eth_balance": 35.09817563,
+  "total_eth_in_balances": 35.0066454,
+  "addresses_with_balance": 671,
   "coverage_pct": 99.74,
   "scan_date": "2026-05-08 10:54:10 UTC",
   "description": "ETH balances in defunct F3DPLUS contract",
@@ -25,16 +25,17 @@
       "total_eth": 8.054022
     },
     "0.01-0.1 ETH": {
-      "count": 125,
-      "total_eth": 3.98481
+      "count": 124,
+      "total_eth": 3.974363
     },
     "<0.01 ETH": {
-      "count": 514,
-      "total_eth": 0.65314
+      "count": 512,
+      "total_eth": 0.652294
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 1554,
+  "last_event_refresh": "2026-10-14 16:36:38 UTC",
   "balances": [
     {
       "rank": 1,
@@ -963,8 +964,9 @@
     {
       "rank": 155,
       "address": "0xbb66754cdd06adb6c1594f835960983002c31aba",
-      "balance_wei": "10447343567830806",
-      "balance_eth": 0.010447343567830806
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 156,
@@ -2201,8 +2203,9 @@
     {
       "rank": 361,
       "address": "0x2e0ab768b3d60d6c2bd0778a905ec82898df2b3e",
-      "balance_wei": "435703938691118",
-      "balance_eth": 0.000435703938691118
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 362,
@@ -2237,8 +2240,9 @@
     {
       "rank": 367,
       "address": "0x4c7b32b2a91fceed879a2d68289549847d983f2b",
-      "balance_wei": "410093997519840",
-      "balance_eth": 0.00041009399751984
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 368,
@@ -4101,6 +4105,5 @@
       "balance_wei": "5461522912691",
       "balance_eth": 0.000005461522912691
     }
-  ],
-  "last_event_refresh": "2026-08-17 17:23:06 UTC"
+  ]
 }

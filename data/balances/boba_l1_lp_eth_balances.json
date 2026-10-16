@@ -1,0 +1,1072 @@
+{
+  "contract": "0x1a26ef6575b7bbb864d984d9255c069f6c361a14",
+  "balance_source": "token",
+  "contract_eth_balance": 16.40111005,
+  "total_eth_in_balances": 16.39702133,
+  "addresses_with_balance": 145,
+  "coverage_pct": 99.98,
+  "scan_date": "2026-10-16 16:23:20 UTC",
+  "description": "Boba Network L1 liquidity pool (retired fast bridge), ETH pool. Each row is an LP's principal (withdrawLiquidity) plus accrued fee reward (withdrawReward), two separate calls. The pool holds less ETH than it owes in total; the operator's own position is not listed and absorbs that shortfall first, so the listed amounts can all be paid together. Positions under 0.0001 ETH are not listed.",
+  "distribution": {
+    ">0.001 ETH": 100,
+    ">0.01 ETH": 51,
+    ">0.1 ETH": 31,
+    ">1 ETH": 5
+  },
+  "meta": {
+    "block": 26206268,
+    "implementation": "0xd24484926f1d130778b9ebd7ec594548b2d53cb1",
+    "owner": "0x1f2414d0af8741bc822dbc2f88069c2b2907a840",
+    "proxy_owner": "0x1f2414d0af8741bc822dbc2f88069c2b2907a840",
+    "safe_gas_stipend": 2300,
+    "lp_addresses_scanned": 313,
+    "pool_eth_wei": "113916669565961269920",
+    "total_lp_principal_wei": "114529601813005800000",
+    "total_pending_reward_wei": "3589330799853677980",
+    "total_liabilities_wei": "118118932612859477980",
+    "pool_shortfall_wei": "4202263046898208060",
+    "acc_user_reward_per_share": "95375889622",
+    "operator_addresses": [
+      "0x1f2414d0af8741bc822dbc2f88069c2b2907a840"
+    ],
+    "operator_listed": false,
+    "operator_lp_amount_wei": "100000000000000000000",
+    "operator_reward_wei": "1717822565300000000",
+    "operator_payable_after_users_wei": "97515559518401791940",
+    "operator_unfunded_wei": "4202263046898208060",
+    "users_owed_wei": "16401110047559477980",
+    "users_unfunded_wei": "0",
+    "excluded_unpayable_count": 3,
+    "excluded_unpayable_wei": "2539403938230000",
+    "excluded_unpayable_addresses": [
+      "0x08a4a33464650dbba1fbbfe01ee917695cd3d9fe",
+      "0x1faf1711214836181ffa74b0c810344adb5aeaea",
+      "0x4ba67f6a888943997c6c8cd2e6942e880bf4f86a"
+    ],
+    "excluded_unpayable_reasons": {
+      "0x08a4a33464650dbba1fbbfe01ee917695cd3d9fe": "withdrawReward: execution reverted Failed to send Ether",
+      "0x1faf1711214836181ffa74b0c810344adb5aeaea": "withdrawReward: execution reverted Failed to send Ether",
+      "0x4ba67f6a888943997c6c8cd2e6942e880bf4f86a": "withdrawReward: execution reverted Failed to send Ether"
+    },
+    "min_listed_wei": "100000000000000",
+    "below_floor_holders": 54,
+    "below_floor_eth_wei": "1549314151487000"
+  },
+  "balances": [
+    {
+      "address": "0x005b661b34cb13e4023a26048eb6440a9e1d611b",
+      "balance_wei": "2023830426050000000",
+      "balance_eth": 2.02383042605,
+      "lp_amount_wei": "2000000000000000000",
+      "reward_wei": "23830426050000000"
+    },
+    {
+      "address": "0x69e2caf40907e97ab1a6d380e1c20aba509c7402",
+      "balance_wei": "2007234209164000000",
+      "balance_eth": 2.007234209164,
+      "lp_amount_wei": "2000000000000000000",
+      "reward_wei": "7234209164000000"
+    },
+    {
+      "address": "0x7b8d9f4aa83653ae16f23524cd7f7037e3f55f17",
+      "balance_wei": "1651276468336800000",
+      "balance_eth": 1.6512764683368,
+      "lp_amount_wei": "1614041813005800000",
+      "reward_wei": "37234655331000000"
+    },
+    {
+      "address": "0x81b5e32a14b195b56ac60e0b68395728017e876c",
+      "balance_wei": "1470636229486200000",
+      "balance_eth": 1.4706362294862,
+      "lp_amount_wei": "1400000000000000000",
+      "reward_wei": "70636229486200000"
+    },
+    {
+      "address": "0xaa0e2529f9c33e3ad86346fe26fefc4bc635fc67",
+      "balance_wei": "1012490400411000000",
+      "balance_eth": 1.012490400411,
+      "lp_amount_wei": "1000000000000000000",
+      "reward_wei": "12490400411000000"
+    },
+    {
+      "address": "0xf57d33e0187ab2f30b3f527376e4cec7e742754c",
+      "balance_wei": "794638856733284000",
+      "balance_eth": 0.7946388567332839,
+      "lp_amount_wei": "788000000000000000",
+      "reward_wei": "6638856733284000"
+    },
+    {
+      "address": "0xd71097d70ef998bba23c1c8cb111d0e9f8a9a049",
+      "balance_wei": "705146270784200000",
+      "balance_eth": 0.7051462707841999,
+      "lp_amount_wei": "700000000000000000",
+      "reward_wei": "5146270784200000"
+    },
+    {
+      "address": "0x4113c71cdd17a8ba369f86e988bfe20adf03e805",
+      "balance_wei": "703932486698000000",
+      "balance_eth": 0.703932486698,
+      "lp_amount_wei": "700000000000000000",
+      "reward_wei": "3932486698000000"
+    },
+    {
+      "address": "0x0ab1be92df4cdad6ffac8285ffb22545df8bd075",
+      "balance_wei": "502542689828500000",
+      "balance_eth": 0.5025426898284999,
+      "lp_amount_wei": "500000000000000000",
+      "reward_wei": "2542689828500000"
+    },
+    {
+      "address": "0x604eb5d4126e3318ec27721bd5059307684f5c89",
+      "balance_wei": "431282361670400000",
+      "balance_eth": 0.4312823616704,
+      "lp_amount_wei": "400000000000000000",
+      "reward_wei": "31282361670400000"
+    },
+    {
+      "address": "0x6272352499b5c0f063e7f788b6d6bc09a28c003d",
+      "balance_wei": "403398380588000000",
+      "balance_eth": 0.403398380588,
+      "lp_amount_wei": "400000000000000000",
+      "reward_wei": "3398380588000000"
+    },
+    {
+      "address": "0xa94cbc9a8c7a2b848104d3e87fb0c17bb4aa0290",
+      "balance_wei": "364358236085080000",
+      "balance_eth": 0.36435823608508,
+      "lp_amount_wei": "0",
+      "reward_wei": "364358236085080000"
+    },
+    {
+      "address": "0x9e1d36fc8851146cca62e0e90cf3a77e7f52b128",
+      "balance_wei": "321365739317120000",
+      "balance_eth": 0.32136573931712,
+      "lp_amount_wei": "320000000000000000",
+      "reward_wei": "1365739317120000"
+    },
+    {
+      "address": "0x1d5738b587e95c9eaeae9c7fb7eb7a928122b8d7",
+      "balance_wei": "257298456050000000",
+      "balance_eth": 0.25729845605,
+      "lp_amount_wei": "0",
+      "reward_wei": "257298456050000000"
+    },
+    {
+      "address": "0x1d7762eec78910084e19f62f4918b90faef8c475",
+      "balance_wei": "252602620858500000",
+      "balance_eth": 0.2526026208585,
+      "lp_amount_wei": "250000000000000000",
+      "reward_wei": "2602620858500000"
+    },
+    {
+      "address": "0x74a338036320abfdcba9cee88de0ae618ee59a7c",
+      "balance_wei": "251823468144000000",
+      "balance_eth": 0.251823468144,
+      "lp_amount_wei": "250000000000000000",
+      "reward_wei": "1823468144000000"
+    },
+    {
+      "address": "0x0d07e9d74c83945dce735abaae7931d032a02392",
+      "balance_wei": "233888116181000000",
+      "balance_eth": 0.233888116181,
+      "lp_amount_wei": "0",
+      "reward_wei": "233888116181000000"
+    },
+    {
+      "address": "0xb99f3c94abf08d095b8d8c54c434bdbf696c597f",
+      "balance_wei": "221711276876760000",
+      "balance_eth": 0.22171127687676,
+      "lp_amount_wei": "220000000000000000",
+      "reward_wei": "1711276876760000"
+    },
+    {
+      "address": "0x1fd9b8685edd8bac8625e6ed6a16e14a0d8a13b2",
+      "balance_wei": "217064022258800000",
+      "balance_eth": 0.2170640222588,
+      "lp_amount_wei": "200000000000000000",
+      "reward_wei": "17064022258800000"
+    },
+    {
+      "address": "0x76018d681f2aa6e4702ca91209995277f3649a3e",
+      "balance_wei": "217064022258800000",
+      "balance_eth": 0.2170640222588,
+      "lp_amount_wei": "200000000000000000",
+      "reward_wei": "17064022258800000"
+    },
+    {
+      "address": "0xd0b1e37eeb743fc7fadabbc0eb286f1b11ddcad6",
+      "balance_wei": "201208171215400000",
+      "balance_eth": 0.2012081712154,
+      "lp_amount_wei": "200000000000000000",
+      "reward_wei": "1208171215400000"
+    },
+    {
+      "address": "0xe085327c5ad2f77147f10973fed45fb19d734f7e",
+      "balance_wei": "184451779244000000",
+      "balance_eth": 0.184451779244,
+      "lp_amount_wei": "0",
+      "reward_wei": "184451779244000000"
+    },
+    {
+      "address": "0xff22ae6fd0894b384d99b110ed80c522b8ac2f67",
+      "balance_wei": "175437714992160000",
+      "balance_eth": 0.17543771499216,
+      "lp_amount_wei": "174000000000000000",
+      "reward_wei": "1437714992160000"
+    },
+    {
+      "address": "0x0819d7292acb5b5d2d17f82980067c6361bcc890",
+      "balance_wei": "151110281938050000",
+      "balance_eth": 0.15111028193804998,
+      "lp_amount_wei": "150000000000000000",
+      "reward_wei": "1110281938050000"
+    },
+    {
+      "address": "0xbb04aa427e10ca2c88737f8c014eb82c54fe231c",
+      "balance_wei": "141852007430772000",
+      "balance_eth": 0.141852007430772,
+      "lp_amount_wei": "141000000000000000",
+      "reward_wei": "852007430772000"
+    },
+    {
+      "address": "0x704c8c855765b4c053cc2dc02b3f318caf2ab732",
+      "balance_wei": "121422314308500000",
+      "balance_eth": 0.1214223143085,
+      "lp_amount_wei": "0",
+      "reward_wei": "121422314308500000"
+    },
+    {
+      "address": "0x81ed001627d17194130aea89376ea28b29db8bab",
+      "balance_wei": "101249040041100000",
+      "balance_eth": 0.1012490400411,
+      "lp_amount_wei": "100000000000000000",
+      "reward_wei": "1249040041100000"
+    },
+    {
+      "address": "0x34a13a9b5547c310999960d53f2d2b81b00ef0e5",
+      "balance_wei": "101165594885300000",
+      "balance_eth": 0.1011655948853,
+      "lp_amount_wei": "100000000000000000",
+      "reward_wei": "1165594885300000"
+    },
+    {
+      "address": "0xae5d8f2b3fe5f046c9db373b93e1231b74ac9c25",
+      "balance_wei": "100835047501700000",
+      "balance_eth": 0.1008350475017,
+      "lp_amount_wei": "100000000000000000",
+      "reward_wei": "835047501700000"
+    },
+    {
+      "address": "0x7233446857c7b6b0c4a3d73512a6d371e26a6e01",
+      "balance_wei": "100781682555700000",
+      "balance_eth": 0.1007816825557,
+      "lp_amount_wei": "100000000000000000",
+      "reward_wei": "781682555700000"
+    },
+    {
+      "address": "0x87ba3c38282409e6d13156303c43dd73b264010b",
+      "balance_wei": "100735784618100000",
+      "balance_eth": 0.1007357846181,
+      "lp_amount_wei": "100000000000000000",
+      "reward_wei": "735784618100000"
+    },
+    {
+      "address": "0x9fda5aea7e79d8a1ed9eafab158be18abc487e00",
+      "balance_wei": "70514627078420000",
+      "balance_eth": 0.07051462707842,
+      "lp_amount_wei": "70000000000000000",
+      "reward_wei": "514627078420000"
+    },
+    {
+      "address": "0xeb423dcc9b346ee4ddd3a9273854d22599566a3f",
+      "balance_wei": "66311631141000000",
+      "balance_eth": 0.066311631141,
+      "lp_amount_wei": "0",
+      "reward_wei": "66311631141000000"
+    },
+    {
+      "address": "0x71a786abb769237ff22b2ed0a4ab19631b920f1d",
+      "balance_wei": "52321964018000000",
+      "balance_eth": 0.052321964018,
+      "lp_amount_wei": "0",
+      "reward_wei": "52321964018000000"
+    },
+    {
+      "address": "0x499700b6cd2c7f683ec6588b77c8a9d19c04091c",
+      "balance_wei": "50548411875400000",
+      "balance_eth": 0.0505484118754,
+      "lp_amount_wei": "50000000000000000",
+      "reward_wei": "548411875400000"
+    },
+    {
+      "address": "0xf5a6ecae40156ad4fe6d10bc230e6de2936a8998",
+      "balance_wei": "50419505624450000",
+      "balance_eth": 0.05041950562445,
+      "lp_amount_wei": "50000000000000000",
+      "reward_wei": "419505624450000"
+    },
+    {
+      "address": "0x5275817b74021e97c980e95ede6bbac0d0d6f3a2",
+      "balance_wei": "47239482216000000",
+      "balance_eth": 0.047239482216,
+      "lp_amount_wei": "0",
+      "reward_wei": "47239482216000000"
+    },
+    {
+      "address": "0xb4db2084c7f3137eea1b52e55d55321994cdfd6e",
+      "balance_wei": "40367390728960000",
+      "balance_eth": 0.04036739072896,
+      "lp_amount_wei": "40000000000000000",
+      "reward_wei": "367390728960000"
+    },
+    {
+      "address": "0xa3df4b810c7e393079b174764816fff37c151bd2",
+      "balance_wei": "40312845389360000",
+      "balance_eth": 0.04031284538936,
+      "lp_amount_wei": "40000000000000000",
+      "reward_wei": "312845389360000"
+    },
+    {
+      "address": "0x607595d84db098c5997ce3feded98ae4752b8645",
+      "balance_wei": "32358531624510000",
+      "balance_eth": 0.03235853162451,
+      "lp_amount_wei": "30000000000000000",
+      "reward_wei": "2358531624510000"
+    },
+    {
+      "address": "0x3c102aa385afe70e52127fc2f8d04b191298e9ce",
+      "balance_wei": "27026954722450000",
+      "balance_eth": 0.02702695472245,
+      "lp_amount_wei": "25000000000000000",
+      "reward_wei": "2026954722450000"
+    },
+    {
+      "address": "0x4db593064b2f7e1febcbb187902b186648d70544",
+      "balance_wei": "26381471262075000",
+      "balance_eth": 0.026381471262075,
+      "lp_amount_wei": "25000000000000000",
+      "reward_wei": "1381471262075000"
+    },
+    {
+      "address": "0x10e9087d4e2495f3115ad27d438cdad885682c1c",
+      "balance_wei": "25151396409875000",
+      "balance_eth": 0.025151396409875,
+      "lp_amount_wei": "25000000000000000",
+      "reward_wei": "151396409875000"
+    },
+    {
+      "address": "0x34e4ce06b03a8b1c4eab0ea25e17a735402615a8",
+      "balance_wei": "21844355688000000",
+      "balance_eth": 0.021844355688,
+      "lp_amount_wei": "0",
+      "reward_wei": "21844355688000000"
+    },
+    {
+      "address": "0xf119f37754c80200e6838424af3d4b56a00d669b",
+      "balance_wei": "21676499757120000",
+      "balance_eth": 0.02167649975712,
+      "lp_amount_wei": "20000000000000000",
+      "reward_wei": "1676499757120000"
+    },
+    {
+      "address": "0xdcfccdee8859783a8ef8f2286f9275a26a935204",
+      "balance_wei": "21574473066760000",
+      "balance_eth": 0.02157447306676,
+      "lp_amount_wei": "20000000000000000",
+      "reward_wei": "1574473066760000"
+    },
+    {
+      "address": "0x0a6263aa866b69cc07a4b8964f7bb6a67f7c237d",
+      "balance_wei": "21072474900000000",
+      "balance_eth": 0.0210724749,
+      "lp_amount_wei": "0",
+      "reward_wei": "21072474900000000"
+    },
+    {
+      "address": "0x2a303cf157291637c9b0719c68d1a4bf203c1e65",
+      "balance_wei": "20661289929500000",
+      "balance_eth": 0.0206612899295,
+      "lp_amount_wei": "20000000000000000",
+      "reward_wei": "661289929500000"
+    },
+    {
+      "address": "0x006d0f31a00e1f9c017ab039e9d0ba699433a28c",
+      "balance_wei": "17237447448000000",
+      "balance_eth": 0.017237447448,
+      "lp_amount_wei": "0",
+      "reward_wei": "17237447448000000"
+    },
+    {
+      "address": "0x40d8a5c7c61cc5d1cd12c04097d47de832099c13",
+      "balance_wei": "14049355644000000",
+      "balance_eth": 0.014049355644,
+      "lp_amount_wei": "0",
+      "reward_wei": "14049355644000000"
+    },
+    {
+      "address": "0x01c8a1cc6b9722088eace967e2a74f18c1192abb",
+      "balance_wei": "11211047364570000",
+      "balance_eth": 0.01121104736457,
+      "lp_amount_wei": "0",
+      "reward_wei": "11211047364570000"
+    },
+    {
+      "address": "0x773cd2a5ec1328fc984b26dd2994f34be6b60687",
+      "balance_wei": "9411769024000000",
+      "balance_eth": 0.009411769024,
+      "lp_amount_wei": "0",
+      "reward_wei": "9411769024000000"
+    },
+    {
+      "address": "0xe5c6497fc067593bc5f93351e82376ac4641a7ae",
+      "balance_wei": "9153818128000000",
+      "balance_eth": 0.009153818128,
+      "lp_amount_wei": "0",
+      "reward_wei": "9153818128000000"
+    },
+    {
+      "address": "0x3a72ba29ae5e57fa4423fa5caf71a33fb114e78b",
+      "balance_wei": "8978432659200000",
+      "balance_eth": 0.0089784326592,
+      "lp_amount_wei": "0",
+      "reward_wei": "8978432659200000"
+    },
+    {
+      "address": "0x020a1bbeb60e58dcbfa6901f082bdd10269ed51b",
+      "balance_wei": "8481000258000000",
+      "balance_eth": 0.008481000258,
+      "lp_amount_wei": "0",
+      "reward_wei": "8481000258000000"
+    },
+    {
+      "address": "0xb9ccfc18b941a2cc51a956aa6c83360eb9d58de7",
+      "balance_wei": "8070695299000000",
+      "balance_eth": 0.008070695299,
+      "lp_amount_wei": "0",
+      "reward_wei": "8070695299000000"
+    },
+    {
+      "address": "0x625722492d0b6043cc14030065e76b3b5c678802",
+      "balance_wei": "7598144458800000",
+      "balance_eth": 0.0075981444588,
+      "lp_amount_wei": "0",
+      "reward_wei": "7598144458800000"
+    },
+    {
+      "address": "0xfb760965bfcab3aec2c9f99ccb3d6b0bb8ac902d",
+      "balance_wei": "6826066210000000",
+      "balance_eth": 0.00682606621,
+      "lp_amount_wei": "0",
+      "reward_wei": "6826066210000000"
+    },
+    {
+      "address": "0x2196e34154759cfa97aa46b6485ebd4b1253e105",
+      "balance_wei": "6628803771000000",
+      "balance_eth": 0.006628803771,
+      "lp_amount_wei": "0",
+      "reward_wei": "6628803771000000"
+    },
+    {
+      "address": "0x632fdf9378c4c549e29a1e902531f26fa72442ef",
+      "balance_wei": "5525245295200000",
+      "balance_eth": 0.0055252452952,
+      "lp_amount_wei": "0",
+      "reward_wei": "5525245295200000"
+    },
+    {
+      "address": "0xdfb1fefcc1912f7aa8b08040e39b7268c33625eb",
+      "balance_wei": "5394326078580000",
+      "balance_eth": 0.00539432607858,
+      "lp_amount_wei": "0",
+      "reward_wei": "5394326078580000"
+    },
+    {
+      "address": "0xf1fced5b0475a935b49b95786adbda2d40794d2d",
+      "balance_wei": "5348692888900000",
+      "balance_eth": 0.0053486928889,
+      "lp_amount_wei": "0",
+      "reward_wei": "5348692888900000"
+    },
+    {
+      "address": "0xa9cdf0542a1128c5caca1e81521a09aec8abe1a7",
+      "balance_wei": "5295838137000000",
+      "balance_eth": 0.005295838137,
+      "lp_amount_wei": "0",
+      "reward_wei": "5295838137000000"
+    },
+    {
+      "address": "0xbc6808a497a9a161f3e1932f3e040f742e43282a",
+      "balance_wei": "5056380481000000",
+      "balance_eth": 0.005056380481,
+      "lp_amount_wei": "0",
+      "reward_wei": "5056380481000000"
+    },
+    {
+      "address": "0x12406684de636690ec787306cf8d635e179c4f46",
+      "balance_wei": "4868423974500000",
+      "balance_eth": 0.0048684239745,
+      "lp_amount_wei": "0",
+      "reward_wei": "4868423974500000"
+    },
+    {
+      "address": "0x97883f6fb7483a6cb748a647f23b601fcd69b393",
+      "balance_wei": "4513820163850000",
+      "balance_eth": 0.00451382016385,
+      "lp_amount_wei": "0",
+      "reward_wei": "4513820163850000"
+    },
+    {
+      "address": "0x3217867112365cb25071b33f043f432a1c60807c",
+      "balance_wei": "4357314737600000",
+      "balance_eth": 0.0043573147376,
+      "lp_amount_wei": "0",
+      "reward_wei": "4357314737600000"
+    },
+    {
+      "address": "0xd84bc467a6642b11c3df7001bf94485c742844a1",
+      "balance_wei": "3747741825000000",
+      "balance_eth": 0.003747741825,
+      "lp_amount_wei": "0",
+      "reward_wei": "3747741825000000"
+    },
+    {
+      "address": "0x4d28dc86111aa8a9affd1721a104936aaa14e738",
+      "balance_wei": "3637996880000000",
+      "balance_eth": 0.00363799688,
+      "lp_amount_wei": "0",
+      "reward_wei": "3637996880000000"
+    },
+    {
+      "address": "0xb13cf7c7fe219d7b0c49f869c39c7dc639425233",
+      "balance_wei": "3611056131080000",
+      "balance_eth": 0.00361105613108,
+      "lp_amount_wei": "0",
+      "reward_wei": "3611056131080000"
+    },
+    {
+      "address": "0xb3a1a55c9d942dd052139a2d145b52cd428b4b16",
+      "balance_wei": "3357590497000000",
+      "balance_eth": 0.003357590497,
+      "lp_amount_wei": "0",
+      "reward_wei": "3357590497000000"
+    },
+    {
+      "address": "0x60cd13ef5ea5a485da1784ce24980dd57c4590b8",
+      "balance_wei": "3291832581450000",
+      "balance_eth": 0.00329183258145,
+      "lp_amount_wei": "0",
+      "reward_wei": "3291832581450000"
+    },
+    {
+      "address": "0x56cf0ff00fd6cfb23ce964c6338b228b0fa76640",
+      "balance_wei": "3163829929000000",
+      "balance_eth": 0.003163829929,
+      "lp_amount_wei": "0",
+      "reward_wei": "3163829929000000"
+    },
+    {
+      "address": "0xdf697c5ef49ed5dec1fd456e1133e77a0d601ab8",
+      "balance_wei": "2828648130000000",
+      "balance_eth": 0.00282864813,
+      "lp_amount_wei": "0",
+      "reward_wei": "2828648130000000"
+    },
+    {
+      "address": "0xa4019370c66c9aef6fe8db4b303e1f5da7696dac",
+      "balance_wei": "2722609428218100",
+      "balance_eth": 0.0027226094282181,
+      "lp_amount_wei": "2700000000000000",
+      "reward_wei": "22609428218100"
+    },
+    {
+      "address": "0xd4a870b8a784eb228eb8cc56606a479c342ac3fd",
+      "balance_wei": "2705032132450000",
+      "balance_eth": 0.00270503213245,
+      "lp_amount_wei": "0",
+      "reward_wei": "2705032132450000"
+    },
+    {
+      "address": "0xfd82e8b45e2ab41fb4fe897f26fe18bcc59e305c",
+      "balance_wei": "2654117167500000",
+      "balance_eth": 0.0026541171675,
+      "lp_amount_wei": "0",
+      "reward_wei": "2654117167500000"
+    },
+    {
+      "address": "0x1a444cda2f7bbe5679ab96a6f5afc546b1b1d4d0",
+      "balance_wei": "2614134613000000",
+      "balance_eth": 0.002614134613,
+      "lp_amount_wei": "0",
+      "reward_wei": "2614134613000000"
+    },
+    {
+      "address": "0x90a6691757faa0564888a5efdd5e979bb2fe6a5b",
+      "balance_wei": "2197043484250000",
+      "balance_eth": 0.00219704348425,
+      "lp_amount_wei": "0",
+      "reward_wei": "2197043484250000"
+    },
+    {
+      "address": "0x72efccdb51e386a6107ca199bd687f61953ef6fa",
+      "balance_wei": "2054912480000000",
+      "balance_eth": 0.00205491248,
+      "lp_amount_wei": "0",
+      "reward_wei": "2054912480000000"
+    },
+    {
+      "address": "0xdfb7009edd56ada61ce83ef03111815efa604c7e",
+      "balance_wei": "2040287556300000",
+      "balance_eth": 0.0020402875563,
+      "lp_amount_wei": "0",
+      "reward_wei": "2040287556300000"
+    },
+    {
+      "address": "0x945fa1bf02dc0ab4b501c898453d4c36822b0c8a",
+      "balance_wei": "2014703630812000",
+      "balance_eth": 0.002014703630812,
+      "lp_amount_wei": "2000000000000000",
+      "reward_wei": "14703630812000"
+    },
+    {
+      "address": "0x43126fb5e1fe86bb44b084d09f651358b97ebf0c",
+      "balance_wei": "1998821847000000",
+      "balance_eth": 0.001998821847,
+      "lp_amount_wei": "0",
+      "reward_wei": "1998821847000000"
+    },
+    {
+      "address": "0xa19f272b65e85d49c8a7fa5b676349f90b549767",
+      "balance_wei": "1973650614000000",
+      "balance_eth": 0.001973650614,
+      "lp_amount_wei": "0",
+      "reward_wei": "1973650614000000"
+    },
+    {
+      "address": "0x19831b174e9deabf9e4b355aadfd157f09e2af1f",
+      "balance_wei": "1893908720250000",
+      "balance_eth": 0.00189390872025,
+      "lp_amount_wei": "0",
+      "reward_wei": "1893908720250000"
+    },
+    {
+      "address": "0x2c268f9c3eaa127b871d9b9d068892e41cf102f2",
+      "balance_wei": "1870431147000000",
+      "balance_eth": 0.001870431147,
+      "lp_amount_wei": "0",
+      "reward_wei": "1870431147000000"
+    },
+    {
+      "address": "0x112369b5b5429899469b895e16237ae473c40d68",
+      "balance_wei": "1827972298620000",
+      "balance_eth": 0.00182797229862,
+      "lp_amount_wei": "0",
+      "reward_wei": "1827972298620000"
+    },
+    {
+      "address": "0x839377bb58f4512767afc63b05e12c927712fe49",
+      "balance_wei": "1800682420000000",
+      "balance_eth": 0.00180068242,
+      "lp_amount_wei": "0",
+      "reward_wei": "1800682420000000"
+    },
+    {
+      "address": "0x55e8bfe955675af6bbb82801653b48b1a872a52c",
+      "balance_wei": "1675683429400000",
+      "balance_eth": 0.0016756834294,
+      "lp_amount_wei": "0",
+      "reward_wei": "1675683429400000"
+    },
+    {
+      "address": "0x4161aef7ac9f8772b83cda1e5f054ade308d9049",
+      "balance_wei": "1658244669165000",
+      "balance_eth": 0.001658244669165,
+      "lp_amount_wei": "0",
+      "reward_wei": "1658244669165000"
+    },
+    {
+      "address": "0xe5f33c3d6f158dc9a29dd90926b8f69d3dc4f10b",
+      "balance_wei": "1652387730000000",
+      "balance_eth": 0.00165238773,
+      "lp_amount_wei": "0",
+      "reward_wei": "1652387730000000"
+    },
+    {
+      "address": "0x2b32f96bfcfa27429dc0b4497af4745b7771b791",
+      "balance_wei": "1623124666900000",
+      "balance_eth": 0.0016231246669,
+      "lp_amount_wei": "0",
+      "reward_wei": "1623124666900000"
+    },
+    {
+      "address": "0x6c202a0c21af7327fa1bc46c16dcfe58fbed5e5e",
+      "balance_wei": "1529845654400000",
+      "balance_eth": 0.0015298456544,
+      "lp_amount_wei": "0",
+      "reward_wei": "1529845654400000"
+    },
+    {
+      "address": "0xf5b5ff17b0adab8006751bd58546a0b25f673c3e",
+      "balance_wei": "1506978450000000",
+      "balance_eth": 0.00150697845,
+      "lp_amount_wei": "0",
+      "reward_wei": "1506978450000000"
+    },
+    {
+      "address": "0x81248e854427131ec8ee1d287f67525c8f7298ec",
+      "balance_wei": "1419184992720000",
+      "balance_eth": 0.00141918499272,
+      "lp_amount_wei": "0",
+      "reward_wei": "1419184992720000"
+    },
+    {
+      "address": "0xf4c353457ff3d639b0b7256b175655612d28829d",
+      "balance_wei": "1215798100000000",
+      "balance_eth": 0.0012157981,
+      "lp_amount_wei": "0",
+      "reward_wei": "1215798100000000"
+    },
+    {
+      "address": "0x267662aeb1cb1afcc958012d866a8af243518684",
+      "balance_wei": "1092225889622000",
+      "balance_eth": 0.001092225889622,
+      "lp_amount_wei": "1000000000000000",
+      "reward_wei": "92225889622000"
+    },
+    {
+      "address": "0xd647892759aae36e62a3cc78d83f35fee0bd3364",
+      "balance_wei": "1080161484320000",
+      "balance_eth": 0.00108016148432,
+      "lp_amount_wei": "1000000000000000",
+      "reward_wei": "80161484320000"
+    },
+    {
+      "address": "0x10211c82dffa3810483866fb9435b94ca1582c3c",
+      "balance_wei": "1045685647200000",
+      "balance_eth": 0.0010456856472,
+      "lp_amount_wei": "0",
+      "reward_wei": "1045685647200000"
+    },
+    {
+      "address": "0x7f9a2b4d826b8d0ffbb4859c882d2e0f88adfcbe",
+      "balance_wei": "1020972396000000",
+      "balance_eth": 0.001020972396,
+      "lp_amount_wei": "0",
+      "reward_wei": "1020972396000000"
+    },
+    {
+      "address": "0xbaf8f28cb2e6f2b12fb1d9d4979d4e18b2f96dd0",
+      "balance_wei": "966174386623840",
+      "balance_eth": 0.00096617438662384,
+      "lp_amount_wei": "860000000000000",
+      "reward_wei": "106174386623840"
+    },
+    {
+      "address": "0xff3ebe23539f33d69d634dd44bfad29399cac119",
+      "balance_wei": "926330032000000",
+      "balance_eth": 0.000926330032,
+      "lp_amount_wei": "0",
+      "reward_wei": "926330032000000"
+    },
+    {
+      "address": "0x18eac56a3e878c73bc84327a94de7b36465a427b",
+      "balance_wei": "910914434000000",
+      "balance_eth": 0.000910914434,
+      "lp_amount_wei": "0",
+      "reward_wei": "910914434000000"
+    },
+    {
+      "address": "0xa7b5a9ca133824902f7e8a680128a4cbbb3dd6c0",
+      "balance_wei": "891994938600000",
+      "balance_eth": 0.0008919949386,
+      "lp_amount_wei": "0",
+      "reward_wei": "891994938600000"
+    },
+    {
+      "address": "0x216d5609afb295931b47b7ececc36e3fc1908262",
+      "balance_wei": "862565920000000",
+      "balance_eth": 0.00086256592,
+      "lp_amount_wei": "0",
+      "reward_wei": "862565920000000"
+    },
+    {
+      "address": "0x18ff3cf2e0603821d672c6ccc53b09531fc11857",
+      "balance_wei": "831631539000000",
+      "balance_eth": 0.000831631539,
+      "lp_amount_wei": "0",
+      "reward_wei": "831631539000000"
+    },
+    {
+      "address": "0xf79d4d09d45ace417e7075bdf1816d198e57f186",
+      "balance_wei": "811105132000000",
+      "balance_eth": 0.000811105132,
+      "lp_amount_wei": "0",
+      "reward_wei": "811105132000000"
+    },
+    {
+      "address": "0x8c36ba0c0272ae14589f1e871ee29782fcd3fd4c",
+      "balance_wei": "782910128000000",
+      "balance_eth": 0.000782910128,
+      "lp_amount_wei": "0",
+      "reward_wei": "782910128000000"
+    },
+    {
+      "address": "0xd0cb8aaa31ebb48e03f28e0f35ab51c8b4c200aa",
+      "balance_wei": "704890779600000",
+      "balance_eth": 0.0007048907796,
+      "lp_amount_wei": "0",
+      "reward_wei": "704890779600000"
+    },
+    {
+      "address": "0x07d9e4432c8d12061610fbf008ca5c9108c49088",
+      "balance_wei": "686887337000000",
+      "balance_eth": 0.000686887337,
+      "lp_amount_wei": "0",
+      "reward_wei": "686887337000000"
+    },
+    {
+      "address": "0xd52b6038fd972999b5fcb100056928143d7111dc",
+      "balance_wei": "680951957800000",
+      "balance_eth": 0.0006809519578,
+      "lp_amount_wei": "0",
+      "reward_wei": "680951957800000"
+    },
+    {
+      "address": "0xb167e0f2c405b20d44fd0cd3dd12df1b40ca6c1c",
+      "balance_wei": "625682026800000",
+      "balance_eth": 0.0006256820268,
+      "lp_amount_wei": "0",
+      "reward_wei": "625682026800000"
+    },
+    {
+      "address": "0xda399382f2bcaf1199d72d0e76592eb3147ac8f6",
+      "balance_wei": "593435510000000",
+      "balance_eth": 0.00059343551,
+      "lp_amount_wei": "0",
+      "reward_wei": "593435510000000"
+    },
+    {
+      "address": "0x17e1392f56112537d5295d1bc0400eae5eedf8ac",
+      "balance_wei": "523742400000000",
+      "balance_eth": 0.0005237424,
+      "lp_amount_wei": "0",
+      "reward_wei": "523742400000000"
+    },
+    {
+      "address": "0xa01dffb9b41793576ab0057792f0355df1ab190d",
+      "balance_wei": "510071394300000",
+      "balance_eth": 0.0005100713943,
+      "lp_amount_wei": "0",
+      "reward_wei": "510071394300000"
+    },
+    {
+      "address": "0x4b54b4c8d27a56affe14335a5eb1df6d638d36a0",
+      "balance_wei": "467915261520000",
+      "balance_eth": 0.00046791526152,
+      "lp_amount_wei": "0",
+      "reward_wei": "467915261520000"
+    },
+    {
+      "address": "0xa973d0968d6bbe4859bad50379d87c91be615b9c",
+      "balance_wei": "463409089000000",
+      "balance_eth": 0.000463409089,
+      "lp_amount_wei": "0",
+      "reward_wei": "463409089000000"
+    },
+    {
+      "address": "0xef04b0862ac7ac7775f6a883359d46dc70705c47",
+      "balance_wei": "458565068500000",
+      "balance_eth": 0.0004585650685,
+      "lp_amount_wei": "0",
+      "reward_wei": "458565068500000"
+    },
+    {
+      "address": "0xe262ae584d91f7473c4a9a67d37626005f800d2f",
+      "balance_wei": "458233166000000",
+      "balance_eth": 0.000458233166,
+      "lp_amount_wei": "0",
+      "reward_wei": "458233166000000"
+    },
+    {
+      "address": "0xe84eaa1529b2776341085561b11dc06d7551bd29",
+      "balance_wei": "446363034000000",
+      "balance_eth": 0.000446363034,
+      "lp_amount_wei": "0",
+      "reward_wei": "446363034000000"
+    },
+    {
+      "address": "0x97d2c785b72f6c058659e8688148decb641be3a1",
+      "balance_wei": "442133642440000",
+      "balance_eth": 0.00044213364244,
+      "lp_amount_wei": "0",
+      "reward_wei": "442133642440000"
+    },
+    {
+      "address": "0x7305ff2c5654ec602d2f7d8412a67c6384631c06",
+      "balance_wei": "341769300000000",
+      "balance_eth": 0.0003417693,
+      "lp_amount_wei": "0",
+      "reward_wei": "341769300000000"
+    },
+    {
+      "address": "0x2c362fd5bd900b73c4bf140b7cd6875a56b0e7b6",
+      "balance_wei": "337161343100000",
+      "balance_eth": 0.0003371613431,
+      "lp_amount_wei": "0",
+      "reward_wei": "337161343100000"
+    },
+    {
+      "address": "0x1fc444e3e4c60e864bfbaa25953b42fa73695cf8",
+      "balance_wei": "309786627000000",
+      "balance_eth": 0.000309786627,
+      "lp_amount_wei": "0",
+      "reward_wei": "309786627000000"
+    },
+    {
+      "address": "0xfca32b89d0981e69c8dadcdcc0668b0e01c810cf",
+      "balance_wei": "303096780000000",
+      "balance_eth": 0.00030309678,
+      "lp_amount_wei": "0",
+      "reward_wei": "303096780000000"
+    },
+    {
+      "address": "0xf6aef1044028907c86eb8581b1671e924392d3b4",
+      "balance_wei": "286500380000000",
+      "balance_eth": 0.00028650038,
+      "lp_amount_wei": "0",
+      "reward_wei": "286500380000000"
+    },
+    {
+      "address": "0x25fb4d768bc6ce624e0462c0859d738c2b91379f",
+      "balance_wei": "258316047978040",
+      "balance_eth": 0.00025831604797804,
+      "lp_amount_wei": "0",
+      "reward_wei": "258316047978040"
+    },
+    {
+      "address": "0xa4f036e730d772dfcd7bf8bc65634b8977f76505",
+      "balance_wei": "256326413100000",
+      "balance_eth": 0.0002563264131,
+      "lp_amount_wei": "0",
+      "reward_wei": "256326413100000"
+    },
+    {
+      "address": "0x27bab37f2328d29544fd36f351bf115e398106f0",
+      "balance_wei": "240073105400000",
+      "balance_eth": 0.0002400731054,
+      "lp_amount_wei": "0",
+      "reward_wei": "240073105400000"
+    },
+    {
+      "address": "0xa409e568b62ce8bab3364a0e494257d5b4722733",
+      "balance_wei": "222562788380000",
+      "balance_eth": 0.00022256278838,
+      "lp_amount_wei": "0",
+      "reward_wei": "222562788380000"
+    },
+    {
+      "address": "0xa8fe5f933d2f84452b7a1b96fac2133eb640be4d",
+      "balance_wei": "216449197950000",
+      "balance_eth": 0.00021644919795,
+      "lp_amount_wei": "0",
+      "reward_wei": "216449197950000"
+    },
+    {
+      "address": "0x49dd42f17436fd6961e0e544592f702f7355fd7e",
+      "balance_wei": "191508271500000",
+      "balance_eth": 0.0001915082715,
+      "lp_amount_wei": "0",
+      "reward_wei": "191508271500000"
+    },
+    {
+      "address": "0xe8f3e9aad9ba7c5d911a9e6d956d6539240ed8d2",
+      "balance_wei": "168512026000000",
+      "balance_eth": 0.000168512026,
+      "lp_amount_wei": "0",
+      "reward_wei": "168512026000000"
+    },
+    {
+      "address": "0x867b9a75b8e468ca6d482811993300e3d35489c4",
+      "balance_wei": "165239850066000",
+      "balance_eth": 0.000165239850066,
+      "lp_amount_wei": "0",
+      "reward_wei": "165239850066000"
+    },
+    {
+      "address": "0x9a9b3c5c6fad47961a8620f65e09031c172d8b71",
+      "balance_wei": "164014219200000",
+      "balance_eth": 0.0001640142192,
+      "lp_amount_wei": "0",
+      "reward_wei": "164014219200000"
+    },
+    {
+      "address": "0xb1d92eeec6f9f224abd294de643c94a01cb14e51",
+      "balance_wei": "159645704000000",
+      "balance_eth": 0.000159645704,
+      "lp_amount_wei": "0",
+      "reward_wei": "159645704000000"
+    },
+    {
+      "address": "0xe70ec129a9ab52d8b725f434527b0ed0962e46e7",
+      "balance_wei": "158185484040000",
+      "balance_eth": 0.00015818548404,
+      "lp_amount_wei": "0",
+      "reward_wei": "158185484040000"
+    },
+    {
+      "address": "0xef40ac1299d7f7565a8b474430faa282b84db9b8",
+      "balance_wei": "145741460000000",
+      "balance_eth": 0.00014574146,
+      "lp_amount_wei": "0",
+      "reward_wei": "145741460000000"
+    },
+    {
+      "address": "0x8fbce39ab5f2664506d6c3e3cd39f8a419784f62",
+      "balance_wei": "142057499500000",
+      "balance_eth": 0.0001420574995,
+      "lp_amount_wei": "0",
+      "reward_wei": "142057499500000"
+    },
+    {
+      "address": "0xc0928406be9e0572e65839b16daf280cf599d322",
+      "balance_wei": "140092800000000",
+      "balance_eth": 0.0001400928,
+      "lp_amount_wei": "0",
+      "reward_wei": "140092800000000"
+    },
+    {
+      "address": "0xd0b0fd6ea26b83864b244bc32c931407f7d89ccc",
+      "balance_wei": "130685522400000",
+      "balance_eth": 0.0001306855224,
+      "lp_amount_wei": "0",
+      "reward_wei": "130685522400000"
+    },
+    {
+      "address": "0xa984cad1178972511e18b6b8f4a6bfce48b9af62",
+      "balance_wei": "128662425000000",
+      "balance_eth": 0.000128662425,
+      "lp_amount_wei": "0",
+      "reward_wei": "128662425000000"
+    },
+    {
+      "address": "0x3875c41d110266f109878b46b075496892e73e29",
+      "balance_wei": "127873417000000",
+      "balance_eth": 0.000127873417,
+      "lp_amount_wei": "0",
+      "reward_wei": "127873417000000"
+    },
+    {
+      "address": "0xf09fe3ca8a08940199bb9039781611014e78c415",
+      "balance_wei": "118662160000000",
+      "balance_eth": 0.00011866216,
+      "lp_amount_wei": "0",
+      "reward_wei": "118662160000000"
+    },
+    {
+      "address": "0xda59a5ec18a3bc48f1346a1a439aee253405f2a1",
+      "balance_wei": "111118884000000",
+      "balance_eth": 0.000111118884,
+      "lp_amount_wei": "0",
+      "reward_wei": "111118884000000"
+    }
+  ]
+}

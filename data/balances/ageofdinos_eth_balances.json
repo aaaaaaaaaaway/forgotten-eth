@@ -1,10 +1,10 @@
 {
   "contract": "0x19c10FFf96B80208f454034C046CCc4445Cd20ba",
   "balance_source": "eth",
-  "contract_eth_balance": 24.98524223,
-  "total_eth_in_balances": 24.3029,
-  "addresses_with_balance": 76,
-  "coverage_pct": 97.27,
+  "contract_eth_balance": 23.805242,
+  "total_eth_in_balances": 23.1229,
+  "addresses_with_balance": 74,
+  "coverage_pct": 97.13,
   "scan_date": "2026-09-06 01:43:47 UTC",
   "description": "ETH balances in defunct Age of Dinos contract",
   "distribution": {
@@ -21,8 +21,8 @@
       "total_eth": 0
     },
     "0.1-1 ETH": {
-      "count": 76,
-      "total_eth": 24.3029
+      "count": 74,
+      "total_eth": 23.1229
     },
     "0.01-0.1 ETH": {
       "count": 0,
@@ -35,7 +35,7 @@
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 25118,
-  "last_event_refresh": "2026-10-02 16:32:14 UTC",
+  "last_event_refresh": "2026-10-12 02:23:06 UTC",
   "balances": [
     {
       "rank": 1,
@@ -48,18 +48,20 @@
     {
       "rank": 2,
       "address": "0x11346940db751280306b4f0dd690633f653c1bc8",
-      "balance_wei": "590000000000000000",
-      "balance_eth": 0.59,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "last_tx_date": "2024-01",
-      "last_tx_hash": "0xa5ceb5ebd660bb9d6b3a735fd2464e6e8e2b06ccd64612c0aabf574e7b9b3f9c"
+      "last_tx_hash": "0xa5ceb5ebd660bb9d6b3a735fd2464e6e8e2b06ccd64612c0aabf574e7b9b3f9c",
+      "claimed": true
     },
     {
       "rank": 3,
       "address": "0x1c4f03f25662b75011c4daac72f2941678abd66c",
-      "balance_wei": "590000000000000000",
-      "balance_eth": 0.59,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "last_tx_date": "2024-01",
-      "last_tx_hash": "0x5cbab95d2834fd86d61c5315bdd044affb8da4ad95c744128a1a9950ccc88547"
+      "last_tx_hash": "0x5cbab95d2834fd86d61c5315bdd044affb8da4ad95c744128a1a9950ccc88547",
+      "claimed": true
     },
     {
       "rank": 4,

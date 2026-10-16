@@ -1,9 +1,9 @@
 {
   "contract": "0x4e8ecf79ade5e2c49b9e30d795517a81e0bf00b8",
   "balance_source": "eth",
-  "contract_eth_balance": 84.120535,
-  "total_eth_in_balances": 76.006549,
-  "addresses_with_balance": 1808,
+  "contract_eth_balance": 84.109473,
+  "total_eth_in_balances": 75.995488,
+  "addresses_with_balance": 1804,
   "coverage_pct": 90.35,
   "scan_date": "2026-09-20 01:43:10 UTC",
   "description": "ETH balances in defunct Fomo3D Quick contract",
@@ -29,13 +29,13 @@
       "total_eth": 18.199027
     },
     "<0.01 ETH": {
-      "count": 1207,
-      "total_eth": 2.84309
+      "count": 1203,
+      "total_eth": 2.832028
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 5329,
-  "last_event_refresh": "2026-10-03 15:23:10 UTC",
+  "last_event_refresh": "2026-10-13 19:23:06 UTC",
   "balances": [
     {
       "rank": 1,
@@ -3744,8 +3744,9 @@
     {
       "rank": 618,
       "address": "0xa1b0ff5def280355e161fffc0ba60847c5c736f1",
-      "balance_wei": "9655896186909815",
-      "balance_eth": 0.009655896186909815
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 619,
@@ -8417,8 +8418,9 @@
     {
       "rank": 1396,
       "address": "0x1188c274fcffe973f01dee1b01ecb39ffbf06b02",
-      "balance_wei": "501806575607544",
-      "balance_eth": 0.000501806575607544
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 1397,
@@ -8471,8 +8473,9 @@
     {
       "rank": 1405,
       "address": "0xd3e733fefc097fc049f0c63d748371e6319d4396",
-      "balance_wei": "488703421715132",
-      "balance_eth": 0.000488703421715132
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 1406,
@@ -8712,8 +8715,9 @@
     {
       "rank": 1445,
       "address": "0xf46b26a1bce6407f0fce6b036d54b589cd876b33",
-      "balance_wei": "414642010250751",
-      "balance_eth": 0.000414642010250751
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 1446,

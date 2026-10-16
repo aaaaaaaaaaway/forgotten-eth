@@ -4,10 +4,10 @@
   "token_checked": "0x0000000000000000000000000000000000000000",
   "description": "ETH balances in defunct FoMo3D Lightning contract",
   "scan_date": "2026-04-03 13:29:11 UTC",
-  "contract_eth_balance": 7.351671,
+  "contract_eth_balance": 7.350896,
   "total_addresses_scanned": 893,
-  "addresses_with_balance": 358,
-  "total_eth_in_balances": 4.723368,
+  "addresses_with_balance": 356,
+  "total_eth_in_balances": 4.722593,
   "coverage_pct": 64.25,
   "distribution": {
     ">=100 ETH": {
@@ -31,8 +31,8 @@
       "total_eth": 2.021869
     },
     "<0.01 ETH": {
-      "count": 296,
-      "total_eth": 0.235104
+      "count": 294,
+      "total_eth": 0.234329
     }
   },
   "balances": [
@@ -792,8 +792,9 @@
     {
       "rank": 125,
       "address": "0x674D341C86cc18694c89675C9794592Bf049ea04",
-      "balance_wei": "666313254971649",
-      "balance_eth": "0.000666313254971649"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 126,
@@ -1459,8 +1460,9 @@
     {
       "rank": 237,
       "address": "0x3CE5B9FD99903eBe8F096a4Cc2350282ECc6C0c0",
-      "balance_wei": "108568494700819",
-      "balance_eth": "0.000108568494700819"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 238,
@@ -2219,5 +2221,5 @@
       "balance_eth": "0.000007500000000010"
     }
   ],
-  "last_event_refresh": "2026-09-22 02:23:05 UTC"
+  "last_event_refresh": "2026-10-11 16:33:31 UTC"
 }
