@@ -1,9 +1,9 @@
 {
   "contract": "0x2a0c0DBEcC7E4D658f48E01e3fA353F44050c208",
   "balance_source": "eth",
-  "contract_eth_balance": 15701.444558,
-  "total_eth_in_balances": 15701.442322,
-  "addresses_with_balance": 119352,
+  "contract_eth_balance": 15701.28844,
+  "total_eth_in_balances": 15701.286205,
+  "addresses_with_balance": 119350,
   "coverage_pct": 100,
   "scan_date": "2026-09-20 01:42:00 UTC",
   "description": "ETH balances in defunct IDEX v1 contract",
@@ -21,21 +21,21 @@
       "total_eth": 5598.608339
     },
     "0.1-1 ETH": {
-      "count": 7870,
-      "total_eth": 2505.729761
+      "count": 7869,
+      "total_eth": 2505.579033
     },
     "0.01-0.1 ETH": {
       "count": 16976,
       "total_eth": 561.665591
     },
     "<0.01 ETH": {
-      "count": 92132,
-      "total_eth": 68.0277
+      "count": 92131,
+      "total_eth": 68.022319
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 291204,
-  "last_event_refresh": "2026-10-16 18:23:05 UTC",
+  "last_event_refresh": "2026-10-17 07:23:05 UTC",
   "balances": [
     {
       "rank": 1,
@@ -49126,8 +49126,9 @@
     {
       "rank": 8179,
       "address": "0xf2398a92af4619843a08e3c34e5a23918eb4cd5a",
-      "balance_wei": "150731565601950000",
-      "balance_eth": 0.15073156560195
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 8180,
@@ -194117,7 +194118,8 @@
       "rank": 32339,
       "address": "0x3a70e8c00f3bcf3eb845b6b6928aba92b465c183",
       "balance_wei": "5386037857702394",
-      "balance_eth": 0.005386037857702394
+      "balance_eth": 0.005386037857702394,
+      "claimed": true
     },
     {
       "rank": 32340,

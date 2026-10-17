@@ -1,29 +1,29 @@
 {
   "contract": "0x1a26ef6575b7bbb864d984d9255c069f6c361a14",
   "balance_source": "token",
-  "contract_eth_balance": 16.40111005,
-  "total_eth_in_balances": 16.39702133,
+  "contract_eth_balance": 14.40111005,
+  "total_eth_in_balances": 14.39702133,
   "addresses_with_balance": 145,
-  "coverage_pct": 99.98,
-  "scan_date": "2026-10-16 16:23:20 UTC",
+  "coverage_pct": 99.97,
+  "scan_date": "2026-10-17 04:21:21 UTC",
   "description": "Boba Network L1 liquidity pool (retired fast bridge), ETH pool. Each row is an LP's principal (withdrawLiquidity) plus accrued fee reward (withdrawReward), two separate calls. The pool holds less ETH than it owes in total; the operator's own position is not listed and absorbs that shortfall first, so the listed amounts can all be paid together. Positions under 0.0001 ETH are not listed.",
   "distribution": {
     ">0.001 ETH": 100,
     ">0.01 ETH": 51,
-    ">0.1 ETH": 31,
-    ">1 ETH": 5
+    ">0.1 ETH": 30,
+    ">1 ETH": 4
   },
   "meta": {
-    "block": 26206268,
+    "block": 26209847,
     "implementation": "0xd24484926f1d130778b9ebd7ec594548b2d53cb1",
     "owner": "0x1f2414d0af8741bc822dbc2f88069c2b2907a840",
     "proxy_owner": "0x1f2414d0af8741bc822dbc2f88069c2b2907a840",
     "safe_gas_stipend": 2300,
     "lp_addresses_scanned": 313,
-    "pool_eth_wei": "113916669565961269920",
-    "total_lp_principal_wei": "114529601813005800000",
+    "pool_eth_wei": "111916669565961269920",
+    "total_lp_principal_wei": "112529601813005800000",
     "total_pending_reward_wei": "3589330799853677980",
-    "total_liabilities_wei": "118118932612859477980",
+    "total_liabilities_wei": "116118932612859477980",
     "pool_shortfall_wei": "4202263046898208060",
     "acc_user_reward_per_share": "95375889622",
     "operator_addresses": [
@@ -34,7 +34,7 @@
     "operator_reward_wei": "1717822565300000000",
     "operator_payable_after_users_wei": "97515559518401791940",
     "operator_unfunded_wei": "4202263046898208060",
-    "users_owed_wei": "16401110047559477980",
+    "users_owed_wei": "14401110047559477980",
     "users_unfunded_wei": "0",
     "excluded_unpayable_count": 3,
     "excluded_unpayable_wei": "2539403938230000",
@@ -53,13 +53,6 @@
     "below_floor_eth_wei": "1549314151487000"
   },
   "balances": [
-    {
-      "address": "0x005b661b34cb13e4023a26048eb6440a9e1d611b",
-      "balance_wei": "2023830426050000000",
-      "balance_eth": 2.02383042605,
-      "lp_amount_wei": "2000000000000000000",
-      "reward_wei": "23830426050000000"
-    },
     {
       "address": "0x69e2caf40907e97ab1a6d380e1c20aba509c7402",
       "balance_wei": "2007234209164000000",
@@ -353,6 +346,13 @@
       "balance_eth": 0.025151396409875,
       "lp_amount_wei": "25000000000000000",
       "reward_wei": "151396409875000"
+    },
+    {
+      "address": "0x005b661b34cb13e4023a26048eb6440a9e1d611b",
+      "balance_wei": "23830426050000000",
+      "balance_eth": 0.02383042605,
+      "lp_amount_wei": "0",
+      "reward_wei": "23830426050000000"
     },
     {
       "address": "0x34e4ce06b03a8b1c4eab0ea25e17a735402615a8",

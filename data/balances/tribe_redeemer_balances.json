@@ -3,9 +3,9 @@
   "balance_source": "token",
   "contract_eth_balance": 0.0,
   "total_eth_in_balances": 0.0,
-  "addresses_with_balance": 7468,
+  "addresses_with_balance": 7466,
   "coverage_pct": 0.0,
-  "scan_date": "2026-10-16 17:57:11 UTC",
+  "scan_date": "2026-10-17 04:21:24 UTC",
   "description": "Tribe DAO post-shutdown redemption. Each TRIBE token entitles the holder to a proportional share of the 4-token basket [stETH, LQTY, FOX, DAI]. Only DAI is tracked here for the v2 hero counter; other basket items still pay out on claim.",
   "meta": {
     "tribe_token": "0xc7283b66eb1eb5fb86327f08e1b5816b0720212b",
@@ -13,15 +13,15 @@
     "dai_balance": "1785111229159047996454377",
     "min_dai_threshold": 1.0,
     "rate_dai_per_tribe": 0.07155552661141436,
-    "dai_coverage_pct": 68.59,
-    "scanned_to_block": 26206697,
+    "dai_coverage_pct": 68.6,
+    "scanned_to_block": 26209847,
     "note": "Per-entry DAI is the holder's THEORETICAL claim (TRIBE x rate). Sum across entries exceeds the contract's actual DAI cap; first-come-first-served on redemption. contract_token_balances is the actual cap."
   },
   "contract_token_balances": {
     "DAI": "1785111229159047996454377"
   },
   "token_totals": {
-    "DAI": "1224482090380143785488455"
+    "DAI": "1224662473190321950279931"
   },
   "balances": [
     {
@@ -1846,9 +1846,9 @@
       "address": "0x7ce01885a13c652241ae02ea7369ee8d466802eb",
       "balance_eth": 0.0,
       "balance_wei": "0",
-      "tribe_balance_raw": "4771307966860177163463",
+      "tribe_balance_raw": "4772061863273481037901",
       "token_balances": {
-        "DAI": "341413454193916762196"
+        "DAI": "341467399648781177423"
       }
     },
     {
@@ -3100,6 +3100,15 @@
       "tribe_balance_raw": "2997472824840000000000",
       "token_balances": {
         "DAI": "214485746484830000870"
+      }
+    },
+    {
+      "address": "0x2ef3d49f6cb7a04e4164902748c09bbd3ffa786f",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "tribe_balance_raw": "2995934151033469534208",
+      "token_balances": {
+        "DAI": "214375645870320523891"
       }
     },
     {
@@ -27475,15 +27484,6 @@
       }
     },
     {
-      "address": "0x35a3d6e81e864016e537366552208b934d53f576",
-      "balance_eth": 0.0,
-      "balance_wei": "0",
-      "tribe_balance_raw": "196542404140688129334",
-      "token_balances": {
-        "DAI": "14063695229760365744"
-      }
-    },
-    {
       "address": "0x37823d07488e47dd7bd865d2da1a8ada7c49a05b",
       "balance_eth": 0.0,
       "balance_wei": "0",
@@ -30541,15 +30541,6 @@
       "tribe_balance_raw": "165013791960000000000",
       "token_balances": {
         "DAI": "11807648781844173304"
-      }
-    },
-    {
-      "address": "0xb9773b5b1e892b8ce5954f5d292fb09ed0d8766c",
-      "balance_eth": 0.0,
-      "balance_wei": "0",
-      "tribe_balance_raw": "164874075980000000000",
-      "token_balances": {
-        "DAI": "11797651331319243467"
       }
     },
     {
@@ -36625,15 +36616,6 @@
       "tribe_balance_raw": "114509492000000000000",
       "token_balances": {
         "DAI": "8193787002065540002"
-      }
-    },
-    {
-      "address": "0x43369518656d88d77e8c8dcf8e13ff23e1269158",
-      "balance_eth": 0.0,
-      "balance_wei": "0",
-      "tribe_balance_raw": "114400000000000000000",
-      "token_balances": {
-        "DAI": "8185952244345803021"
       }
     },
     {
@@ -56482,21 +56464,21 @@
       }
     },
     {
+      "address": "0x5aafc1f252d544f744d17a4e734afd6efc47ede4",
+      "balance_eth": 0.0,
+      "balance_wei": "0",
+      "tribe_balance_raw": "34081338372364273466",
+      "token_balances": {
+        "DAI": "2438708114856329210"
+      }
+    },
+    {
       "address": "0x2da9d4a65442c1df90e0376de3060f9f2c61bcb9",
       "balance_eth": 0.0,
       "balance_wei": "0",
       "tribe_balance_raw": "34077404410000000000",
       "token_balances": {
         "DAI": "2438426618107684138"
-      }
-    },
-    {
-      "address": "0x5aafc1f252d544f744d17a4e734afd6efc47ede4",
-      "balance_eth": 0.0,
-      "balance_wei": "0",
-      "tribe_balance_raw": "34074104012842670631",
-      "token_balances": {
-        "DAI": "2438190456451064620"
       }
     },
     {

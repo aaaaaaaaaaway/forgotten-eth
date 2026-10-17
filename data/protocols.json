@@ -4611,6 +4611,19 @@
     "hide_addresses": true
   },
   {
+    "key": "synapse_rfq_optimism",
+    "name": "Synapse Optimism",
+    "contract": "0x5523d3c98809dddb82c686e152f5c58b1b0fb59e",
+    "balance_source": "token",
+    "category": "other",
+    "balance_file": "synapse_rfq_optimism_eth_balances.json",
+    "payout_tokens": [
+      "ETH"
+    ],
+    "hide_addresses": true,
+    "payout_chain_id": 10
+  },
+  {
     "key": "rhinofi_arbitrum",
     "name": "Rhino.fi Arbitrum",
     "contract": "0xca8e436347a46502e353cc36b58fe3bb9214d7fd",

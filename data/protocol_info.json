@@ -3227,6 +3227,13 @@
     "slug": "rhinofi",
     "category": "other"
   },
+  "synapse_rfq_optimism": {
+    "name": "Synapse Optimism",
+    "desc": "Native ETH refunds from expired Synapse RFQ transfers on OP Mainnet.",
+    "contract": "0x5523d3c98809dddb82c686e152f5c58b1b0fb59e",
+    "slug": "synapse-rfq-optimism",
+    "category": "other"
+  },
   "rhinofi_arbitrum": {
     "name": "Rhino.fi Arbitrum",
     "desc": "WETH and ARB balances in Rhino.fi\u2019s legacy Arbitrum bridge, with verified emergency settlement paths.",
