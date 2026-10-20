@@ -4,11 +4,11 @@
   "token_checked": "0x0000000000000000000000000000000000000000",
   "description": "ETH balances in defunct FamilyOnlyToken contract",
   "scan_date": "2026-03-19 21:23:40 UTC",
-  "contract_eth_balance": 7.55319,
+  "contract_eth_balance": 7.01733,
   "total_addresses_scanned": 261,
-  "addresses_with_balance": 235,
-  "total_eth_in_balances": 5.835953,
-  "coverage_pct": 77.26,
+  "addresses_with_balance": 234,
+  "total_eth_in_balances": 5.372557,
+  "coverage_pct": 76.56,
   "distribution": {
     ">=100 ETH": {
       "count": 0,
@@ -23,8 +23,8 @@
       "total_eth": 2.233791
     },
     "0.1-1 ETH": {
-      "count": 14,
-      "total_eth": 2.637217
+      "count": 13,
+      "total_eth": 2.173821
     },
     "0.01-0.1 ETH": {
       "count": 25,
@@ -51,8 +51,9 @@
     {
       "rank": 3,
       "address": "0x6dcad7ef152064528af7dcb012fbb76f49deb604",
-      "balance_wei": "463396132632311132",
-      "balance_eth": "0.463396132632311109"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 4,
@@ -1461,5 +1462,5 @@
       "balance_eth": "0.000000000000000003"
     }
   ],
-  "last_event_refresh": "2026-09-21 08:23:06 UTC"
+  "last_event_refresh": "2026-10-20 12:23:06 UTC"
 }

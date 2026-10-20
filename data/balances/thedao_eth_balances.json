@@ -2,20 +2,38 @@
   "contract": "0xbb9bc244d798123fde783fcc1c72d3bb8c189413",
   "balance_source": "token",
   "contract_eth_balance": 81294.99063817,
-  "total_eth_in_balances": 81294.9699066,
-  "addresses_with_balance": 4840,
+  "total_eth_in_balances": 81294.969907,
+  "addresses_with_balance": 4836,
   "coverage_pct": 100.0,
-  "scan_date": "2026-10-17 04:21:20 UTC",
+  "scan_date": "2026-10-17 16:21:32 UTC",
   "distribution": {
-    ">0 ETH": 945,
-    ">0.01 ETH": 814,
-    ">0.1 ETH": 924,
-    ">1 ETH": 1422,
-    ">10 ETH": 603,
-    ">100 ETH": 132
+    ">=100 ETH": {
+      "count": 132,
+      "total_eth": 58592.506271
+    },
+    "10-100 ETH": {
+      "count": 603,
+      "total_eth": 17560.837742
+    },
+    "1-10 ETH": {
+      "count": 1422,
+      "total_eth": 4688.221063
+    },
+    "0.1-1 ETH": {
+      "count": 924,
+      "total_eth": 423.327885
+    },
+    "0.01-0.1 ETH": {
+      "count": 814,
+      "total_eth": 27.10616
+    },
+    "<0.01 ETH": {
+      "count": 941,
+      "total_eth": 2.970766
+    }
   },
   "token": "0xbb9bc244d798123fde783fcc1c72d3bb8c189413",
-  "last_event_refresh": "2026-10-14T16:19:54Z",
+  "last_event_refresh": "2026-10-18 20:23:06 UTC",
   "balances": [
     {
       "address": "0x1ba9228d388727f389150ea03b73c82de8eb2e09",
@@ -22758,11 +22776,6 @@
       "balance_eth": 0.00021569
     },
     {
-      "address": "0x2de361134127481d6f3144a3a12d36cdd3e70024",
-      "balance_wei": "210703634996518",
-      "balance_eth": 0.0002107
-    },
-    {
       "address": "0x1c78e6d8fb6e83d289a3cd89940f1108724b055e",
       "balance_wei": "209844586095329",
       "balance_eth": 0.00020984
@@ -22786,6 +22799,11 @@
       "address": "0xd8163d144fab2d50bedb90a0fcb0064a1f2f3483",
       "balance_wei": "200000000000000",
       "balance_eth": 0.0002
+    },
+    {
+      "address": "0x000000000004444c5dc75cb358380d2e3de08a90",
+      "balance_wei": "199819066510000",
+      "balance_eth": 0.00019982
     },
     {
       "address": "0xaea5c7e5d0d3ea4f3ea4d279adafbf3071805c83",
@@ -23891,6 +23909,11 @@
       "address": "0xdc3f031aac1048bab530d0a21ad5a995ae7b3b43",
       "balance_wei": "13370000000000",
       "balance_eth": 1.337e-05
+    },
+    {
+      "address": "0x2de361134127481d6f3144a3a12d36cdd3e70024",
+      "balance_wei": "10884568486518",
+      "balance_eth": 1.088e-05
     },
     {
       "address": "0x50112df4fd18b0a2816b3fd6a468aac6003ac390",

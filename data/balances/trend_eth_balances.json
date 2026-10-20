@@ -1,24 +1,36 @@
 {
   "contract": "0x5113309c84f7292b5f780748df5869cb9d0e3ad5",
   "balance_source": "vault",
-  "contract_eth_balance": 27.22707236,
-  "total_eth_in_balances": 27.22707236,
-  "addresses_with_balance": 33,
-  "coverage_pct": 100.0,
+  "contract_eth_balance": 27.127072,
+  "total_eth_in_balances": 27.127072,
+  "addresses_with_balance": 32,
+  "coverage_pct": 100,
   "scan_date": "2026-08-23 01:47:30 UTC",
-  "description": "OZ RefundableCrowdsale \u2014 Trend (TND). ETH stored in sibling RefundVault.",
+  "description": "OZ RefundableCrowdsale — Trend (TND). ETH stored in sibling RefundVault.",
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
     "1-10 ETH": {
       "count": 8,
-      "total_eth": 21.509999999999998
+      "total_eth": 21.51
     },
     "0.1-1 ETH": {
-      "count": 20,
-      "total_eth": 5.47457236
+      "count": 19,
+      "total_eth": 5.374572
     },
     "0.01-0.1 ETH": {
       "count": 5,
       "total_eth": 0.2425
+    },
+    "<0.01 ETH": {
+      "count": 0,
+      "total_eth": 0
     }
   },
   "vault": "0x7192911827361f7326ec0ec945b6b3c53b141f32",
@@ -29,13 +41,13 @@
       "rank": 1,
       "address": "0xd0d0652500bdbbb11071f11f252a74000fb4f90d",
       "balance_wei": "6000000000000000000",
-      "balance_eth": 6.0
+      "balance_eth": 6
     },
     {
       "rank": 2,
       "address": "0x31ce3bf27af01296f2174f3115d428ca40b9b5b9",
       "balance_wei": "5000000000000000000",
-      "balance_eth": 5.0
+      "balance_eth": 5
     },
     {
       "rank": 3,
@@ -53,25 +65,25 @@
       "rank": 5,
       "address": "0x6a861e31d1481516f4011903cc705ad361b08005",
       "balance_wei": "2000000000000000000",
-      "balance_eth": 2.0
+      "balance_eth": 2
     },
     {
       "rank": 6,
       "address": "0x91114056f851a28224caab6be781f4879cf8028a",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0
+      "balance_eth": 1
     },
     {
       "rank": 7,
       "address": "0x95f85e4103ddd6e47196a7414292f46ce76931e1",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0
+      "balance_eth": 1
     },
     {
       "rank": 8,
       "address": "0xe858ea06c83a063ca4b17eabeac9e53833e4fcc2",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0
+      "balance_eth": 1
     },
     {
       "rank": 9,
@@ -172,8 +184,9 @@
     {
       "rank": 25,
       "address": "0x79e7462f26556a48221e87b623cb3cc058a48b64",
-      "balance_wei": "100000000000000000",
-      "balance_eth": 0.1
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 26,
@@ -223,5 +236,6 @@
       "balance_wei": "15000000000000000",
       "balance_eth": 0.015
     }
-  ]
+  ],
+  "last_event_refresh": "2026-10-17 19:23:05 UTC"
 }

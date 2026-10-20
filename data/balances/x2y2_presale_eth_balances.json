@@ -1,30 +1,42 @@
 {
   "contract": "0xc2f44bc508b6b50047a2f3afb1984ed105070be1",
   "balance_source": "token",
-  "contract_eth_balance": 24.9698452,
-  "total_eth_in_balances": 24.9698452,
-  "addresses_with_balance": 195,
-  "coverage_pct": 100.0,
-  "scan_date": "2026-10-17 04:33:06 UTC",
+  "contract_eth_balance": 24.520582,
+  "total_eth_in_balances": 24.520582,
+  "addresses_with_balance": 194,
+  "coverage_pct": 100,
+  "scan_date": "2026-10-17 16:33:01 UTC",
   "description": "Pending WETH rewards in the X2Y2 Presale staking contract",
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "1-10 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
     "0.1-1 ETH": {
-      "count": 62,
-      "total_eth": 23.76665102680816
+      "count": 61,
+      "total_eth": 23.3174
     },
     "0.01-0.1 ETH": {
       "count": 29,
-      "total_eth": 1.1084970394734373
+      "total_eth": 1.108498
     },
     "<0.01 ETH": {
       "count": 104,
-      "total_eth": 0.09469713367963555
+      "total_eth": 0.0947
     }
   },
   "meta": {
     "weth_in_contract": 145.77177771,
     "stranded_eth_balance": 120.80193251,
-    "stranded_reason": "WETH share forfeited by users who fully-claimed their X2Y2 presale tokens via withdraw() \u2014 their userTokensLeft is 0 so future harvests return 0. Owner can drain via treasuryWithdraw() after stakingEndBlock + safetyBuffer.",
+    "stranded_reason": "WETH share forfeited by users who fully-claimed their X2Y2 presale tokens via withdraw() — their userTokensLeft is 0 so future harvests return 0. Owner can drain via treasuryWithdraw() after stakingEndBlock + safetyBuffer.",
     "total_reward_distributed_wei": "303491839679500059503",
     "total_share_sold": 1000,
     "theoretical_reward_per_share_wei": "449263617389401295",
@@ -153,11 +165,12 @@
     },
     {
       "address": "0x7ba6527419152e17d78daccbb89a51ab71c8d200",
-      "balance_wei": "449263617389401295",
-      "balance_eth": 0.4492636173894013,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "tokens_claimed": "0",
       "reward_debt": "0",
-      "rank": 16
+      "rank": 16,
+      "claimed": true
     },
     {
       "address": "0x7e135c7e603c706baf1aed64a9f0fcaa88d6de85",
@@ -1186,7 +1199,7 @@
     {
       "address": "0xeeb39f37785506c7b81f5ac0e4fe257efddeb7c8",
       "balance_wei": "88197253354081",
-      "balance_eth": 8.8197253354081e-05,
+      "balance_eth": 0.000088197253354081,
       "tokens_claimed": "14737698717948717948717",
       "reward_debt": "444219956184373079",
       "rank": 145
@@ -1194,7 +1207,7 @@
     {
       "address": "0xbe35abf3ba9ff7740de1bc1c4aef9a8e4d16cda2",
       "balance_wei": "87574339641152",
-      "balance_eth": 8.7574339641152e-05,
+      "balance_eth": 0.000087574339641152,
       "tokens_claimed": "14739551282051282051282",
       "reward_debt": "444219956184373079",
       "rank": 146
@@ -1202,7 +1215,7 @@
     {
       "address": "0xaf16bca7baaa31e705307bf97e30c149210d9a0f",
       "balance_wei": "59267071724482",
-      "balance_eth": 5.9267071724482e-05,
+      "balance_eth": 0.000059267071724482,
       "tokens_claimed": "14763557692307692307692",
       "reward_debt": "445503689293012826",
       "rank": 147
@@ -1210,7 +1223,7 @@
     {
       "address": "0xee8bec90d574f2a4581169b8a5614f266c145ced",
       "balance_wei": "58899112949237",
-      "balance_eth": 5.8899112949237e-05,
+      "balance_eth": 0.000058899112949237,
       "tokens_claimed": "14765025641025641025641",
       "reward_debt": "445503689293012826",
       "rank": 148
@@ -1218,7 +1231,7 @@
     {
       "address": "0x40feb63d11e020d206eb1e910aebb8dc6b1b6eb4",
       "balance_wei": "58852515549752",
-      "balance_eth": 5.8852515549752e-05,
+      "balance_eth": 0.000058852515549752,
       "tokens_claimed": "14765211538461538461538",
       "reward_debt": "445503689293012826",
       "rank": 149
@@ -1226,7 +1239,7 @@
     {
       "address": "0xa3cecf7a2f10c0c00b2e901b9cb7ce0383622642",
       "balance_wei": "56622267601980",
-      "balance_eth": 5.662226760198e-05,
+      "balance_eth": 0.00005662226760198,
       "tokens_claimed": "14774108974358974358974",
       "reward_debt": "445503689293012826",
       "rank": 150
@@ -1234,7 +1247,7 @@
     {
       "address": "0xf195f7333d61303078331952c77bc2dc48b416c7",
       "balance_wei": "54771226077604",
-      "balance_eth": 5.4771226077604e-05,
+      "balance_eth": 0.000054771226077604,
       "tokens_claimed": "14781493589743589743589",
       "reward_debt": "445503689293012826",
       "rank": 151
@@ -1242,7 +1255,7 @@
     {
       "address": "0xaeb9defd05c3cd12ec4c541d871c31732d522bc9",
       "balance_wei": "39154969741769",
-      "balance_eth": 3.9154969741769e-05,
+      "balance_eth": 0.000039154969741769,
       "tokens_claimed": "14810423076923076923076",
       "reward_debt": "446165537008129245",
       "rank": 152
@@ -1250,7 +1263,7 @@
     {
       "address": "0x4c55c41bd839b3552fb2abecacfdf4a5d2879cb9",
       "balance_wei": "37837623596740",
-      "balance_eth": 3.783762359674e-05,
+      "balance_eth": 0.00003783762359674,
       "tokens_claimed": "14816801282051282051282",
       "reward_debt": "446165537008129245",
       "rank": 153
@@ -1258,7 +1271,7 @@
     {
       "address": "0xef4c6bc422dea43e28ddcd8b4d49abe184c05f48",
       "balance_wei": "35712658207022",
-      "balance_eth": 3.5712658207022e-05,
+      "balance_eth": 0.000035712658207022,
       "tokens_claimed": "14827089743589743589743",
       "reward_debt": "446165537008129245",
       "rank": 154
@@ -1266,7 +1279,7 @@
     {
       "address": "0xdaf1cf9cae3879065bf967185787904ddb9a42fe",
       "balance_wei": "33555917633906",
-      "balance_eth": 3.3555917633906e-05,
+      "balance_eth": 0.000033555917633906,
       "tokens_claimed": "14837532051282051282051",
       "reward_debt": "446165537008129245",
       "rank": 155
@@ -1274,7 +1287,7 @@
     {
       "address": "0x3a647b4e245ee3ec5dfe76fd97ff8f8f367b454b",
       "balance_wei": "20612096235359",
-      "balance_eth": 2.0612096235359e-05,
+      "balance_eth": 0.000020612096235359,
       "tokens_claimed": "14859532051282051282051",
       "reward_debt": "447062535602756775",
       "rank": 156
@@ -1282,7 +1295,7 @@
     {
       "address": "0xbd13e19597d672f67292e7c2c855d7d6a6ce30a3",
       "balance_wei": "19671462993203",
-      "balance_eth": 1.9671462993203e-05,
+      "balance_eth": 0.000019671462993203,
       "tokens_claimed": "14865942307692307692307",
       "reward_debt": "447062535602756775",
       "rank": 157
@@ -1290,7 +1303,7 @@
     {
       "address": "0x69b5c9c57fb5fbcea6de2eb8d7fca1d2dc22ecb1",
       "balance_wei": "19229365369390",
-      "balance_eth": 1.922936536939e-05,
+      "balance_eth": 0.00001922936536939,
       "tokens_claimed": "14868955128205128205128",
       "reward_debt": "447062535602756775",
       "rank": 158
@@ -1298,7 +1311,7 @@
     {
       "address": "0x892dae4ba73a7984dff8d888c93a119a4cf2c892",
       "balance_wei": "19111786214121",
-      "balance_eth": 1.9111786214121e-05,
+      "balance_eth": 0.000019111786214121,
       "tokens_claimed": "14869756410256410256410",
       "reward_debt": "447062535602756775",
       "rank": 159
@@ -1306,7 +1319,7 @@
     {
       "address": "0x6846abbed13909446f0006cc3d73afbb8e4506ae",
       "balance_wei": "18046989384000",
-      "balance_eth": 1.8046989384e-05,
+      "balance_eth": 0.000018046989384,
       "tokens_claimed": "14877012820512820512820",
       "reward_debt": "447062535602756775",
       "rank": 160
@@ -1314,7 +1327,7 @@
     {
       "address": "0xed02db3e52d241e923f40989fd5cc20b6b9cea2f",
       "balance_wei": "17793018408618",
-      "balance_eth": 1.7793018408618e-05,
+      "balance_eth": 0.000017793018408618,
       "tokens_claimed": "14878743589743589743589",
       "reward_debt": "447062535602756775",
       "rank": 161
@@ -1322,7 +1335,7 @@
     {
       "address": "0xd1965b3fb2ca85c6144971762aa8504bd65db1f5",
       "balance_wei": "17784552709439",
-      "balance_eth": 1.7784552709439e-05,
+      "balance_eth": 0.000017784552709439,
       "tokens_claimed": "14878801282051282051282",
       "reward_debt": "447062535602756775",
       "rank": 162
@@ -1330,7 +1343,7 @@
     {
       "address": "0x12e1615cbcc64713a7e6503967811fc515f1133d",
       "balance_wei": "14462455858230",
-      "balance_eth": 1.446245585823e-05,
+      "balance_eth": 0.00001446245585823,
       "tokens_claimed": "14880250000000000000000",
       "reward_debt": "447452036279810822",
       "rank": 163
@@ -1338,7 +1351,7 @@
     {
       "address": "0x73fe13b905f2e6f080d5ecd645dbbb3babc34462",
       "balance_wei": "12218882330199",
-      "balance_eth": 1.2218882330199e-05,
+      "balance_eth": 0.000012218882330199,
       "tokens_claimed": "14898826923076923076923",
       "reward_debt": "447452036279810822",
       "rank": 164
@@ -1346,7 +1359,7 @@
     {
       "address": "0x9078667932ebac1989107c9b06a0f7261203f273",
       "balance_wei": "12171657352556",
-      "balance_eth": 1.2171657352556e-05,
+      "balance_eth": 0.000012171657352556,
       "tokens_claimed": "14899217948717948717948",
       "reward_debt": "447452036279810822",
       "rank": 165
@@ -1354,7 +1367,7 @@
     {
       "address": "0x2b0cce65a195af0de256a0fb74f3e3d25841b5ac",
       "balance_wei": "11171416842474",
-      "balance_eth": 1.1171416842474e-05,
+      "balance_eth": 0.000011171416842474,
       "tokens_claimed": "14907500000000000000000",
       "reward_debt": "447452036279810822",
       "rank": 166
@@ -1362,7 +1375,7 @@
     {
       "address": "0x05d987577901933e6e6e11ddc8c3b3592addffc8",
       "balance_wei": "10932195234413",
-      "balance_eth": 1.0932195234413e-05,
+      "balance_eth": 0.000010932195234413,
       "tokens_claimed": "14909480769230769230769",
       "reward_debt": "447452036279810822",
       "rank": 167
@@ -1370,7 +1383,7 @@
     {
       "address": "0xa03dd4de24d491cf612da60228b1a679b6b4c4ed",
       "balance_wei": "10509492975508",
-      "balance_eth": 1.0509492975508e-05,
+      "balance_eth": 0.000010509492975508,
       "tokens_claimed": "14912980769230769230769",
       "reward_debt": "447452036279810822",
       "rank": 168
@@ -1378,7 +1391,7 @@
     {
       "address": "0x2d96e1fe38ff45cc8910c617b3c5e0b6298a81f3",
       "balance_wei": "10459171278020",
-      "balance_eth": 1.045917127802e-05,
+      "balance_eth": 0.00001045917127802,
       "tokens_claimed": "14913397435897435897435",
       "reward_debt": "447452036279810822",
       "rank": 169
@@ -1386,7 +1399,7 @@
     {
       "address": "0x67ddba10220cffc8689a688e43d7ee4365749a8c",
       "balance_wei": "10052726798304",
-      "balance_eth": 1.0052726798304e-05,
+      "balance_eth": 0.000010052726798304,
       "tokens_claimed": "14916762820512820512820",
       "reward_debt": "447452036279810822",
       "rank": 170
@@ -1394,7 +1407,7 @@
     {
       "address": "0x79d6dca2d492aac2b97badbfd26042cda21e62d4",
       "balance_wei": "9547961463495",
-      "balance_eth": 9.547961463495e-06,
+      "balance_eth": 0.000009547961463495,
       "tokens_claimed": "14920942307692307692307",
       "reward_debt": "447452036279810822",
       "rank": 171
@@ -1402,7 +1415,7 @@
     {
       "address": "0xeb2d7eb34b55af777678911f4f24dcd61b37f48e",
       "balance_wei": "903960837086",
-      "balance_eth": 9.03960837086e-07,
+      "balance_eth": 9.03960837086e-7,
       "tokens_claimed": "14922750000000000000000",
       "reward_debt": "449088091013267968",
       "rank": 172
@@ -1410,7 +1423,7 @@
     {
       "address": "0xb173da24a210b9cad26135a14a97efbf27cff4ad",
       "balance_wei": "902010544018",
-      "balance_eth": 9.02010544018e-07,
+      "balance_eth": 9.02010544018e-7,
       "tokens_claimed": "14922916666666666666666",
       "reward_debt": "449088091013267968",
       "rank": 173
@@ -1418,7 +1431,7 @@
     {
       "address": "0x12a14175fab56acbdcfb1d64d5f7903bdc27e536",
       "balance_wei": "857903916169",
-      "balance_eth": 8.57903916169e-07,
+      "balance_eth": 8.57903916169e-7,
       "tokens_claimed": "14926685897435897435897",
       "reward_debt": "449088091013267968",
       "rank": 174
@@ -1426,7 +1439,7 @@
     {
       "address": "0x2316f0194eed607570696ebb3587a5eacd687733",
       "balance_wei": "804045822979",
-      "balance_eth": 8.04045822979e-07,
+      "balance_eth": 8.04045822979e-7,
       "tokens_claimed": "14931288461538461538461",
       "reward_debt": "449088091013267968",
       "rank": 175
@@ -1434,7 +1447,7 @@
     {
       "address": "0x9f4efd13feea901ce3cd38cdd051acda703da093",
       "balance_wei": "795944605619",
-      "balance_eth": 7.95944605619e-07,
+      "balance_eth": 7.95944605619e-7,
       "tokens_claimed": "14931980769230769230769",
       "reward_debt": "449088091013267968",
       "rank": 176
@@ -1442,7 +1455,7 @@
     {
       "address": "0x375dd45c30dad3b3fa160e8a4abb9532dd921e81",
       "balance_wei": "770290750646",
-      "balance_eth": 7.70290750646e-07,
+      "balance_eth": 7.70290750646e-7,
       "tokens_claimed": "14934173076923076923076",
       "reward_debt": "449088091013267968",
       "rank": 177
@@ -1450,7 +1463,7 @@
     {
       "address": "0xa9d3837ca91c4736c7f556fab9642d0bb198f1e2",
       "balance_wei": "714257330573",
-      "balance_eth": 7.14257330573e-07,
+      "balance_eth": 7.14257330573e-7,
       "tokens_claimed": "14938961538461538461538",
       "reward_debt": "449088091013267968",
       "rank": 178
@@ -1458,7 +1471,7 @@
     {
       "address": "0x299e8f01824d97aa05aa0c5e71e8cf97ee9156f1",
       "balance_wei": "661224361374",
-      "balance_eth": 6.61224361374e-07,
+      "balance_eth": 6.61224361374e-7,
       "tokens_claimed": "14943493589743589743589",
       "reward_debt": "449088091013267968",
       "rank": 179
@@ -1466,7 +1479,7 @@
     {
       "address": "0x3620b14ad754e30dd9275286c3f7f946614dc337",
       "balance_wei": "629419582108",
-      "balance_eth": 6.29419582108e-07,
+      "balance_eth": 6.29419582108e-7,
       "tokens_claimed": "14946211538461538461538",
       "reward_debt": "449088091013267968",
       "rank": 180
@@ -1474,7 +1487,7 @@
     {
       "address": "0xbb178c89094305df5f3be63355730cdf7c0e9788",
       "balance_wei": "628519446846",
-      "balance_eth": 6.28519446846e-07,
+      "balance_eth": 6.28519446846e-7,
       "tokens_claimed": "14946288461538461538461",
       "reward_debt": "449088091013267968",
       "rank": 181
@@ -1482,7 +1495,7 @@
     {
       "address": "0x4883838aef41b116da7fcd73c5657f0829dd63c3",
       "balance_wei": "627769334128",
-      "balance_eth": 6.27769334128e-07,
+      "balance_eth": 6.27769334128e-7,
       "tokens_claimed": "14946352564102564102564",
       "reward_debt": "449088091013267968",
       "rank": 182
@@ -1490,7 +1503,7 @@
     {
       "address": "0xf6aa90d1cf9cd2b405b8b775e3fb2029e310d675",
       "balance_wei": "627169243953",
-      "balance_eth": 6.27169243953e-07,
+      "balance_eth": 6.27169243953e-7,
       "tokens_claimed": "14946403846153846153846",
       "reward_debt": "449088091013267968",
       "rank": 183
@@ -1498,7 +1511,7 @@
     {
       "address": "0xdc62532f4385d9d202354974fc8c945723b3ad72",
       "balance_wei": "624018770535",
-      "balance_eth": 6.24018770535e-07,
+      "balance_eth": 6.24018770535e-7,
       "tokens_claimed": "14946673076923076923076",
       "reward_debt": "449088091013267968",
       "rank": 184
@@ -1506,7 +1519,7 @@
     {
       "address": "0xbf08b0583f806d8bb6676711ddc2a7d16053137c",
       "balance_wei": "623568702904",
-      "balance_eth": 6.23568702904e-07,
+      "balance_eth": 6.23568702904e-7,
       "tokens_claimed": "14946711538461538461538",
       "reward_debt": "449088091013267968",
       "rank": 185
@@ -1514,7 +1527,7 @@
     {
       "address": "0x86e915a1fc251a77a491846b4e1f252a4351e863",
       "balance_wei": "612392023398",
-      "balance_eth": 6.12392023398e-07,
+      "balance_eth": 6.12392023398e-7,
       "tokens_claimed": "14947666666666666666666",
       "reward_debt": "449088091013267968",
       "rank": 186
@@ -1522,7 +1535,7 @@
     {
       "address": "0x81957acf8606238063700c3098bf1090f9d771bd",
       "balance_wei": "569785620986",
-      "balance_eth": 5.69785620986e-07,
+      "balance_eth": 5.69785620986e-7,
       "tokens_claimed": "14951307692307692307692",
       "reward_debt": "449088091013267968",
       "rank": 187
@@ -1530,7 +1543,7 @@
     {
       "address": "0x871e1b6044b8b01414b61d9d132f3ac277a25010",
       "balance_wei": "555833524422",
-      "balance_eth": 5.55833524422e-07,
+      "balance_eth": 5.55833524422e-7,
       "tokens_claimed": "14952500000000000000000",
       "reward_debt": "449088091013267968",
       "rank": 188
@@ -1538,7 +1551,7 @@
     {
       "address": "0x746c7757501193af295797d4f338121cf22a4acd",
       "balance_wei": "555158422975",
-      "balance_eth": 5.55158422975e-07,
+      "balance_eth": 5.55158422975e-7,
       "tokens_claimed": "14952557692307692307692",
       "reward_debt": "449088091013267968",
       "rank": 189
@@ -1546,7 +1559,7 @@
     {
       "address": "0xec867eb9f70c0dff94eaad77a6aa51ba19975a21",
       "balance_wei": "552908084819",
-      "balance_eth": 5.52908084819e-07,
+      "balance_eth": 5.52908084819e-7,
       "tokens_claimed": "14952750000000000000000",
       "reward_debt": "449088091013267968",
       "rank": 190
@@ -1554,7 +1567,7 @@
     {
       "address": "0x04db57e22d9b51a65e9562fe06d611d19647b87a",
       "balance_wei": "481422342745",
-      "balance_eth": 4.81422342745e-07,
+      "balance_eth": 4.81422342745e-7,
       "tokens_claimed": "14958858974358974358974",
       "reward_debt": "449088091013267968",
       "rank": 191
@@ -1562,7 +1575,7 @@
     {
       "address": "0x220a424c95ab5a4a30ae5ad8ea2b8c69a70ccf96",
       "balance_wei": "480597218754",
-      "balance_eth": 4.80597218754e-07,
+      "balance_eth": 4.80597218754e-7,
       "tokens_claimed": "14958929487179487179487",
       "reward_debt": "449088091013267968",
       "rank": 192
@@ -1570,7 +1583,7 @@
     {
       "address": "0x2c81fc79d0f0fe91311bc4cdd3252e5062a58c24",
       "balance_wei": "446992168965",
-      "balance_eth": 4.46992168965e-07,
+      "balance_eth": 4.46992168965e-7,
       "tokens_claimed": "14961801282051282051282",
       "reward_debt": "449088091013267968",
       "rank": 193
@@ -1578,7 +1591,7 @@
     {
       "address": "0x9b932a1dbc201a23ebceb97b98169df416a4e788",
       "balance_wei": "445942011159",
-      "balance_eth": 4.45942011159e-07,
+      "balance_eth": 4.45942011159e-7,
       "tokens_claimed": "14961891025641025641025",
       "reward_debt": "449088091013267968",
       "rank": 194
@@ -1586,10 +1599,11 @@
     {
       "address": "0xac145f637ff9c6996e3199b735d857bb14ccb715",
       "balance_wei": "444966864625",
-      "balance_eth": 4.44966864625e-07,
+      "balance_eth": 4.44966864625e-7,
       "tokens_claimed": "14961974358974358974358",
       "reward_debt": "449088091013267968",
       "rank": 195
     }
-  ]
+  ],
+  "last_event_refresh": "2026-10-20 20:23:05 UTC"
 }

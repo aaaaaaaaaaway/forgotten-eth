@@ -5,7 +5,7 @@
   "total_eth_in_balances": 14.39702133,
   "addresses_with_balance": 145,
   "coverage_pct": 99.97,
-  "scan_date": "2026-10-17 04:21:21 UTC",
+  "scan_date": "2026-10-17 16:21:33 UTC",
   "description": "Boba Network L1 liquidity pool (retired fast bridge), ETH pool. Each row is an LP's principal (withdrawLiquidity) plus accrued fee reward (withdrawReward), two separate calls. The pool holds less ETH than it owes in total; the operator's own position is not listed and absorbs that shortfall first, so the listed amounts can all be paid together. Positions under 0.0001 ETH are not listed.",
   "distribution": {
     ">0.001 ETH": 100,
@@ -14,7 +14,7 @@
     ">1 ETH": 4
   },
   "meta": {
-    "block": 26209847,
+    "block": 26213436,
     "implementation": "0xd24484926f1d130778b9ebd7ec594548b2d53cb1",
     "owner": "0x1f2414d0af8741bc822dbc2f88069c2b2907a840",
     "proxy_owner": "0x1f2414d0af8741bc822dbc2f88069c2b2907a840",

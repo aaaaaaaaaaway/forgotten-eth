@@ -1,21 +1,41 @@
 {
   "contract": "0x6f400810b62df8e13fded51be75ff5393eaa841f",
   "balance_source": "token",
-  "contract_eth_balance": 113.269957,
-  "total_eth_in_balances": 113.269957,
-  "addresses_with_balance": 109,
-  "coverage_pct": 100.0,
-  "scan_date": "2026-10-17 04:21:02 UTC",
-  "description": "Mesa was the precursor to CowSwap (Gnosis Protocol v1), a batch-auction DEX deployed in 2020. Users deposited tokens to trade; the contract has been dormant since early 2022 but the 2-step withdraw path (requestWithdraw \u2192 wait one batch \u2192 withdraw) is still permissionless.",
+  "contract_eth_balance": 113.219957,
+  "total_eth_in_balances": 113.219957,
+  "addresses_with_balance": 108,
+  "coverage_pct": 100,
+  "scan_date": "2026-10-17 16:21:16 UTC",
+  "description": "Mesa was the precursor to CowSwap (Gnosis Protocol v1), a batch-auction DEX deployed in 2020. Users deposited tokens to trade; the contract has been dormant since early 2022 but the 2-step withdraw path (requestWithdraw → wait one batch → withdraw) is still permissionless.",
   "distribution": {
-    "1_plus": 17,
-    "0.1_to_1": 36,
-    "0.01_to_0.1": 41,
-    "under_0.01": 15
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 3,
+      "total_eth": 56.183486
+    },
+    "1-10 ETH": {
+      "count": 14,
+      "total_eth": 44.481582
+    },
+    "0.1-1 ETH": {
+      "count": 36,
+      "total_eth": 11.227956
+    },
+    "0.01-0.1 ETH": {
+      "count": 40,
+      "total_eth": 1.290029
+    },
+    "<0.01 ETH": {
+      "count": 15,
+      "total_eth": 0.036904
+    }
   },
   "meta": {
     "weth_in_contract": null,
-    "stranded_reason": "Stranded WETH lives in uncleared order commitments from 2020-2022. Mesa is a batch-auction DEX: users deposit WETH, place orders, and call requestWithdraw \u2192 withdraw to exit. For orders that never cleared, committed WETH sits in reservedBalance with no user-callable unlock path. Solver software ceased early 2022."
+    "stranded_reason": "Stranded WETH lives in uncleared order commitments from 2020-2022. Mesa is a batch-auction DEX: users deposit WETH, place orders, and call requestWithdraw → withdraw to exit. For orders that never cleared, committed WETH sits in reservedBalance with no user-callable unlock path. Solver software ceased early 2022."
   },
   "balances": [
     {
@@ -33,13 +53,13 @@
     {
       "address": "0x2b024504d23c516186384a79cc338541a2bafa06",
       "balance_wei": "10000000000000000000",
-      "balance_eth": 10.0,
+      "balance_eth": 10,
       "rank": 3
     },
     {
       "address": "0xe3c8ef7bc8fb5795a9ae8c2397851f9a31f28a95",
       "balance_wei": "9000000028813492458",
-      "balance_eth": 9.0,
+      "balance_eth": 9,
       "rank": 4
     },
     {
@@ -51,13 +71,13 @@
     {
       "address": "0xd93b7f4bbae6d2d7ca5a5379835a4de1cb95404e",
       "balance_wei": "6000000000000000000",
-      "balance_eth": 6.0,
+      "balance_eth": 6,
       "rank": 6
     },
     {
       "address": "0xd30391e21741c54c32987bcfca3d880e6d261cb0",
       "balance_wei": "5000000000000000000",
-      "balance_eth": 5.0,
+      "balance_eth": 5,
       "rank": 7
     },
     {
@@ -81,43 +101,43 @@
     {
       "address": "0xb97661ad8466d0c232684ea6bf95286b0fed9c89",
       "balance_wei": "1000000038116898062",
-      "balance_eth": 1.0,
+      "balance_eth": 1,
       "rank": 11
     },
     {
       "address": "0x3111413a49f62be9b9547620e660780a1ac9bae1",
       "balance_wei": "1000000034172778754",
-      "balance_eth": 1.0,
+      "balance_eth": 1,
       "rank": 12
     },
     {
       "address": "0x477028badabed2965966c7e5d47f174b912e8817",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0,
+      "balance_eth": 1,
       "rank": 13
     },
     {
       "address": "0x9810b49b431ee594b19357c8222884e36442e280",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0,
+      "balance_eth": 1,
       "rank": 14
     },
     {
       "address": "0xd391f6952f8edbc03ca1b6db9b94acb958d81548",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0,
+      "balance_eth": 1,
       "rank": 15
     },
     {
       "address": "0xdaabcf8712f80c670048867de53f5ff5351b9106",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0,
+      "balance_eth": 1,
       "rank": 16
     },
     {
       "address": "0xe77884cddf148dd5f0e9191b33d8dbaddb16dfb5",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0,
+      "balance_eth": 1,
       "rank": 17
     },
     {
@@ -404,9 +424,10 @@
     },
     {
       "address": "0x5b02da8420dd9f77a33c6e2b22dc87fe22c17a30",
-      "balance_wei": "50000000000000000",
-      "balance_eth": 0.05,
-      "rank": 65
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 65,
+      "claimed": true
     },
     {
       "address": "0x5806960bc1d1ade1f47740ac2516eb5f5d05d7f7",
@@ -672,5 +693,6 @@
       "balance_eth": 0.0001,
       "rank": 109
     }
-  ]
+  ],
+  "last_event_refresh": "2026-10-19 15:23:07 UTC"
 }

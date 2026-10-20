@@ -3,33 +3,37 @@
   "vault": "0x93519cc1a51ac56cf2daa8aaafcd4073f49a19d8",
   "balance_source": "vault",
   "name": "VLB Token",
-  "description": "OZ RefundableCrowdsale \u2014 VLB Token. ETH stored in sibling RefundVault.",
+  "description": "OZ RefundableCrowdsale — VLB Token. ETH stored in sibling RefundVault.",
   "scan_date": "2026-04-07 11:31:58 UTC",
-  "contract_eth_balance": "81.144246025919054912",
+  "contract_eth_balance": 80.906082,
   "total_addresses_scanned": 283,
-  "addresses_with_balance": 55,
-  "total_eth_in_balances": 81.14424602591906,
-  "coverage_pct": 100.0,
+  "addresses_with_balance": 54,
+  "total_eth_in_balances": 80.906082,
+  "coverage_pct": 100,
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
     "10-100 ETH": {
       "count": 2,
-      "total_eth": 30.0
+      "total_eth": 30
     },
     "1-10 ETH": {
       "count": 28,
-      "total_eth": 46.375918105
+      "total_eth": 46.375918
     },
     "0.1-1 ETH": {
-      "count": 14,
-      "total_eth": 4.416904969919055
+      "count": 13,
+      "total_eth": 4.178741
     },
     "0.01-0.1 ETH": {
       "count": 8,
-      "total_eth": 0.34303215
+      "total_eth": 0.343032
     },
     "<0.01 ETH": {
       "count": 3,
-      "total_eth": 0.008390801
+      "total_eth": 0.008391
     }
   },
   "balances": [
@@ -252,8 +256,9 @@
     {
       "rank": 37,
       "address": "0xa95350d70b18fa29f6b5eb8d627ceeeee499340d",
-      "balance_wei": "238163810919054912",
-      "balance_eth": "0.238163810919054919"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 38,
@@ -363,5 +368,6 @@
       "balance_wei": "1000000000000000",
       "balance_eth": "0.001000000000000000"
     }
-  ]
+  ],
+  "last_event_refresh": "2026-10-17 19:23:05 UTC"
 }

@@ -1,11 +1,11 @@
 {
   "contract": "0x35fFd6E268610E764fF6944d07760D0EFe5E40E5",
   "balance_source": "token",
-  "contract_eth_balance": 364.38615579,
-  "total_eth_in_balances": 364.38615554,
-  "addresses_with_balance": 424,
-  "coverage_pct": 100.0,
-  "scan_date": "2026-10-17 04:21:16 UTC",
+  "contract_eth_balance": 360.792198,
+  "total_eth_in_balances": 360.792186,
+  "addresses_with_balance": 292,
+  "coverage_pct": 100,
+  "scan_date": "2026-10-17 16:21:29 UTC",
   "distribution": {
     ">=100 ETH": {
       "count": 1,
@@ -13,23 +13,23 @@
     },
     "10-100 ETH": {
       "count": 8,
-      "total_eth": 171.882346
+      "total_eth": 171.882345
     },
     "1-10 ETH": {
-      "count": 26,
-      "total_eth": 59.061275
+      "count": 25,
+      "total_eth": 55.467305
     },
     "0.1-1 ETH": {
       "count": 89,
-      "total_eth": 29.217026
+      "total_eth": 29.217025
     },
     "0.01-0.1 ETH": {
       "count": 89,
-      "total_eth": 3.778023
+      "total_eth": 3.778027
     },
     "<0.01 ETH": {
       "count": 80,
-      "total_eth": 0.226672
+      "total_eth": 0.22667
     }
   },
   "meta": {
@@ -53,12 +53,12 @@
     "note": "ETH+WETH bundled as the ETH bucket; DAI and USDC ride in token_balances. Per-item amounts come from LP.underlyingBalance() - authoritative. Each kToken redeems separately (2-step approve + withdraw per item)."
   },
   "contract_token_balances": {
-    "DAI": "77117206491199988219195",
+    "DAI": "75977531687797721565506",
     "USDC": "64031828534"
   },
   "token_totals": {
     "USDC": "64031800858",
-    "DAI": "77117203999685273031490"
+    "DAI": "75977529196283006377801"
   },
   "balances": [
     {
@@ -415,25 +415,11 @@
     },
     {
       "address": "0x8ec37eb03bb34e5de150ed8828672bd991d759d2",
-      "balance_wei": "3593969956412517439",
-      "balance_eth": 3.59396996,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-          "k_token": "keth",
-          "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
-          "k_amount_wei": "3323911174888819467",
-          "k_amount": 3.3239111748888193,
-          "eth_eq_wei": "3593969956412517439",
-          "eth_eq": 3.5939699564125176,
-          "amount_raw": "3593969956412517439",
-          "amount": 3.5939699564125176,
-          "decimals": 18,
-          "underlying": "ETH",
-          "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
-        }
-      ],
-      "rank": 14
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "keeperdao_items": [],
+      "rank": 14,
+      "claimed": true
     },
     {
       "address": "0x841d4d014a52e17b6e2ce4b46991f7e972e93935",
@@ -6340,7 +6326,7 @@
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "97441925036312",
-          "k_amount": 9.7441925036312e-05,
+          "k_amount": 0.000097441925036312,
           "eth_eq_wei": "105358817564437",
           "eth_eq": 0.000105358817564437,
           "amount_raw": "105358817564437",
@@ -6362,7 +6348,7 @@
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "97225149127333",
-          "k_amount": 9.7225149127333e-05,
+          "k_amount": 0.000097225149127333,
           "eth_eq_wei": "105124429199901",
           "eth_eq": 0.000105124429199901,
           "amount_raw": "105124429199901",
@@ -6384,7 +6370,7 @@
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "97121885759207",
-          "k_amount": 9.7121885759207e-05,
+          "k_amount": 0.000097121885759207,
           "eth_eq_wei": "105012775962761",
           "eth_eq": 0.000105012775962761,
           "amount_raw": "105012775962761",
@@ -6406,7 +6392,7 @@
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "95140996833609",
-          "k_amount": 9.5140996833609e-05,
+          "k_amount": 0.000095140996833609,
           "eth_eq_wei": "102870945176375",
           "eth_eq": 0.000102870945176375,
           "amount_raw": "102870945176375",
@@ -6428,7 +6414,7 @@
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "94145838629508",
-          "k_amount": 9.4145838629508e-05,
+          "k_amount": 0.000094145838629508,
           "eth_eq_wei": "101794933063164",
           "eth_eq": 0.000101794933063164,
           "amount_raw": "101794933063164",
@@ -6482,7 +6468,7 @@
           "k_token": "kweth",
           "k_address": "0xac19815455c2c438af8a8b4623f65f091364be10",
           "k_amount_wei": "96546106316018",
-          "k_amount": 9.6546106316018e-05,
+          "k_amount": 0.000096546106316018,
           "eth_eq_wei": "101617651611835",
           "eth_eq": 0.000101617651611835,
           "amount_raw": "101617651611835",
@@ -6536,7 +6522,7 @@
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "93692328301365",
-          "k_amount": 9.3692328301365e-05,
+          "k_amount": 0.000093692328301365,
           "eth_eq_wei": "101304576249004",
           "eth_eq": 0.000101304576249004,
           "amount_raw": "101304576249004",
@@ -6551,18 +6537,18 @@
     {
       "address": "0x099173acced65d93c5bb4506e0e3f81264047674",
       "balance_wei": "75219469818742",
-      "balance_eth": 7.522e-05,
+      "balance_eth": 0.00007522,
       "keeperdao_items": [
         {
           "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "69567313954205",
-          "k_amount": 6.9567313954205e-05,
+          "k_amount": 0.000069567313954205,
           "eth_eq_wei": "75219469818742",
-          "eth_eq": 7.5219469818742e-05,
+          "eth_eq": 0.000075219469818742,
           "amount_raw": "75219469818742",
-          "amount": 7.5219469818742e-05,
+          "amount": 0.000075219469818742,
           "decimals": 18,
           "underlying": "ETH",
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
@@ -6573,18 +6559,18 @@
     {
       "address": "0xf7801b408c5e3d352e9d67ee2774ae82800bc2d7",
       "balance_wei": "50294986304944",
-      "balance_eth": 5.029e-05,
+      "balance_eth": 0.00005029,
       "keeperdao_items": [
         {
           "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "46515710773153",
-          "k_amount": 4.6515710773153e-05,
+          "k_amount": 0.000046515710773153,
           "eth_eq_wei": "50294986304944",
-          "eth_eq": 5.0294986304944e-05,
+          "eth_eq": 0.000050294986304944,
           "amount_raw": "50294986304944",
-          "amount": 5.0294986304944e-05,
+          "amount": 0.000050294986304944,
           "decimals": 18,
           "underlying": "ETH",
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
@@ -6595,18 +6581,18 @@
     {
       "address": "0xa512e549d68f15a9f23c1df98970e684301ac1e7",
       "balance_wei": "50225173513866",
-      "balance_eth": 5.023e-05,
+      "balance_eth": 0.00005023,
       "keeperdao_items": [
         {
           "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "46451143868246",
-          "k_amount": 4.6451143868246e-05,
+          "k_amount": 0.000046451143868246,
           "eth_eq_wei": "50225173513866",
-          "eth_eq": 5.0225173513866e-05,
+          "eth_eq": 0.000050225173513866,
           "amount_raw": "50225173513866",
-          "amount": 5.0225173513866e-05,
+          "amount": 0.000050225173513866,
           "decimals": 18,
           "underlying": "ETH",
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
@@ -6617,18 +6603,18 @@
     {
       "address": "0x17080b589cdcbd10ebeaa24cb0096f4bb29eb52b",
       "balance_wei": "40258476020115",
-      "balance_eth": 4.026e-05,
+      "balance_eth": 0.00004026,
       "keeperdao_items": [
         {
           "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "37233365873996",
-          "k_amount": 3.7233365873996e-05,
+          "k_amount": 0.000037233365873996,
           "eth_eq_wei": "40258476020115",
-          "eth_eq": 4.0258476020115e-05,
+          "eth_eq": 0.000040258476020115,
           "amount_raw": "40258476020115",
-          "amount": 4.0258476020115e-05,
+          "amount": 0.000040258476020115,
           "decimals": 18,
           "underlying": "ETH",
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
@@ -6639,18 +6625,18 @@
     {
       "address": "0xe8c85e71cfd86556997a498095dca847029defd0",
       "balance_wei": "37268838488698",
-      "balance_eth": 3.727e-05,
+      "balance_eth": 0.00003727,
       "keeperdao_items": [
         {
           "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "34468376260821",
-          "k_amount": 3.4468376260821e-05,
+          "k_amount": 0.000034468376260821,
           "eth_eq_wei": "37268838488698",
-          "eth_eq": 3.7268838488698e-05,
+          "eth_eq": 0.000037268838488698,
           "amount_raw": "37268838488698",
-          "amount": 3.7268838488698e-05,
+          "amount": 0.000037268838488698,
           "decimals": 18,
           "underlying": "ETH",
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
@@ -6661,18 +6647,18 @@
     {
       "address": "0x8275a90029f67ea2f64ea9ba81b1c6903f0776b2",
       "balance_wei": "36802455725897",
-      "balance_eth": 3.68e-05,
+      "balance_eth": 0.0000368,
       "keeperdao_items": [
         {
           "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "34037038521259",
-          "k_amount": 3.4037038521259e-05,
+          "k_amount": 0.000034037038521259,
           "eth_eq_wei": "36802455725897",
-          "eth_eq": 3.6802455725897e-05,
+          "eth_eq": 0.000036802455725897,
           "amount_raw": "36802455725897",
-          "amount": 3.6802455725897e-05,
+          "amount": 0.000036802455725897,
           "decimals": 18,
           "underlying": "ETH",
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
@@ -6683,18 +6669,18 @@
     {
       "address": "0xc706c813aa7a67817983d0f5562057ef5bf38d54",
       "balance_wei": "21622892192371",
-      "balance_eth": 2.162e-05,
+      "balance_eth": 0.00002162,
       "keeperdao_items": [
         {
           "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "19998100669540",
-          "k_amount": 1.999810066954e-05,
+          "k_amount": 0.00001999810066954,
           "eth_eq_wei": "21622892192371",
-          "eth_eq": 2.1622892192371e-05,
+          "eth_eq": 0.000021622892192371,
           "amount_raw": "21622892192371",
-          "amount": 2.1622892192371e-05,
+          "amount": 0.000021622892192371,
           "decimals": 18,
           "underlying": "ETH",
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
@@ -6705,18 +6691,18 @@
     {
       "address": "0x18960c91688c5ca0767c7bf2c80df5e679648256",
       "balance_wei": "15215626938513",
-      "balance_eth": 1.522e-05,
+      "balance_eth": 0.00001522,
       "keeperdao_items": [
         {
           "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "14072291373395",
-          "k_amount": 1.4072291373395e-05,
+          "k_amount": 0.000014072291373395,
           "eth_eq_wei": "15215626938513",
-          "eth_eq": 1.5215626938513e-05,
+          "eth_eq": 0.000015215626938513,
           "amount_raw": "15215626938513",
-          "amount": 1.5215626938513e-05,
+          "amount": 0.000015215626938513,
           "decimals": 18,
           "underlying": "ETH",
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
@@ -6727,18 +6713,18 @@
     {
       "address": "0x82e4d78c6c62d461251fa5a1d4deb9f0fe378e30",
       "balance_wei": "13417487712234",
-      "balance_eth": 1.342e-05,
+      "balance_eth": 0.00001342,
       "keeperdao_items": [
         {
           "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "12409268270608",
-          "k_amount": 1.2409268270608e-05,
+          "k_amount": 0.000012409268270608,
           "eth_eq_wei": "13417487712234",
-          "eth_eq": 1.3417487712234e-05,
+          "eth_eq": 0.000013417487712234,
           "amount_raw": "13417487712234",
-          "amount": 1.3417487712234e-05,
+          "amount": 0.000013417487712234,
           "decimals": 18,
           "underlying": "ETH",
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
@@ -6749,18 +6735,18 @@
     {
       "address": "0xd97edc1d2fbb60a996461f9ce3c3777d35815e4e",
       "balance_wei": "12724879046342",
-      "balance_eth": 1.272e-05,
+      "balance_eth": 0.00001272,
       "keeperdao_items": [
         {
           "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "11768703738266",
-          "k_amount": 1.1768703738266e-05,
+          "k_amount": 0.000011768703738266,
           "eth_eq_wei": "12724879046342",
-          "eth_eq": 1.2724879046342e-05,
+          "eth_eq": 0.000012724879046342,
           "amount_raw": "12724879046342",
-          "amount": 1.2724879046342e-05,
+          "amount": 0.000012724879046342,
           "decimals": 18,
           "underlying": "ETH",
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
@@ -6771,18 +6757,18 @@
     {
       "address": "0x0383143d0d61112615c124b64994bfc7e94d8e4d",
       "balance_wei": "8601728875639",
-      "balance_eth": 8.6e-06,
+      "balance_eth": 0.0000086,
       "keeperdao_items": [
         {
           "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "7955376110501",
-          "k_amount": 7.955376110501e-06,
+          "k_amount": 0.000007955376110501,
           "eth_eq_wei": "8601728875639",
-          "eth_eq": 8.601728875639e-06,
+          "eth_eq": 0.000008601728875639,
           "amount_raw": "8601728875639",
-          "amount": 8.601728875639e-06,
+          "amount": 0.000008601728875639,
           "decimals": 18,
           "underlying": "ETH",
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
@@ -6793,18 +6779,18 @@
     {
       "address": "0xc85c1a16b06a8db1880ba0f54a265752df429692",
       "balance_wei": "6592113120921",
-      "balance_eth": 6.59e-06,
+      "balance_eth": 0.00000659,
       "keeperdao_items": [
         {
           "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "6096767289239",
-          "k_amount": 6.096767289239e-06,
+          "k_amount": 0.000006096767289239,
           "eth_eq_wei": "6592113120921",
-          "eth_eq": 6.592113120921e-06,
+          "eth_eq": 0.000006592113120921,
           "amount_raw": "6592113120921",
-          "amount": 6.592113120921e-06,
+          "amount": 0.000006592113120921,
           "decimals": 18,
           "underlying": "ETH",
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
@@ -6815,18 +6801,18 @@
     {
       "address": "0x7eca0c387b3d07d97f95e9ac3551f1760b8b6c54",
       "balance_wei": "3182102083161",
-      "balance_eth": 3.18e-06,
+      "balance_eth": 0.00000318,
       "keeperdao_items": [
         {
           "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "2942991956565",
-          "k_amount": 2.942991956565e-06,
+          "k_amount": 0.000002942991956565,
           "eth_eq_wei": "3182102083161",
-          "eth_eq": 3.182102083161e-06,
+          "eth_eq": 0.000003182102083161,
           "amount_raw": "3182102083161",
-          "amount": 3.182102083161e-06,
+          "amount": 0.000003182102083161,
           "decimals": 18,
           "underlying": "ETH",
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
@@ -6837,18 +6823,18 @@
     {
       "address": "0xdd10664a1f77c915048908587e6961fbf9d0813e",
       "balance_wei": "2928989417132",
-      "balance_eth": 2.93e-06,
+      "balance_eth": 0.00000293,
       "keeperdao_items": [
         {
           "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "2708898731156",
-          "k_amount": 2.708898731156e-06,
+          "k_amount": 0.000002708898731156,
           "eth_eq_wei": "2928989417132",
-          "eth_eq": 2.928989417132e-06,
+          "eth_eq": 0.000002928989417132,
           "amount_raw": "2928989417132",
-          "amount": 2.928989417132e-06,
+          "amount": 0.000002928989417132,
           "decimals": 18,
           "underlying": "ETH",
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
@@ -6859,18 +6845,18 @@
     {
       "address": "0x15b8a4acd82326c4a4cd98fbb6f7ad2fc3101b1f",
       "balance_wei": "1286039214360",
-      "balance_eth": 1.29e-06,
+      "balance_eth": 0.00000129,
       "keeperdao_items": [
         {
           "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "1189403408432",
-          "k_amount": 1.189403408432e-06,
+          "k_amount": 0.000001189403408432,
           "eth_eq_wei": "1286039214360",
-          "eth_eq": 1.28603921436e-06,
+          "eth_eq": 0.00000128603921436,
           "amount_raw": "1286039214360",
-          "amount": 1.28603921436e-06,
+          "amount": 0.00000128603921436,
           "decimals": 18,
           "underlying": "ETH",
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
@@ -6881,18 +6867,18 @@
     {
       "address": "0x544d2d796e165f0d4c626d1d15667a469a7bffe0",
       "balance_wei": "1142226773733",
-      "balance_eth": 1.14e-06,
+      "balance_eth": 0.00000114,
       "keeperdao_items": [
         {
           "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
           "k_amount_wei": "1056397349871",
-          "k_amount": 1.056397349871e-06,
+          "k_amount": 0.000001056397349871,
           "eth_eq_wei": "1142226773733",
-          "eth_eq": 1.142226773733e-06,
+          "eth_eq": 0.000001142226773733,
           "amount_raw": "1142226773733",
-          "amount": 1.142226773733e-06,
+          "amount": 0.000001142226773733,
           "decimals": 18,
           "underlying": "ETH",
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
@@ -6903,7 +6889,7 @@
     {
       "address": "0xe5df267e2525c4fba22f103238d2ff2ec02d9665",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -6928,7 +6914,7 @@
     {
       "address": "0x0fa092aeac994af3b06e2fbe2e7ac0a17d6940b7",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -6953,7 +6939,7 @@
     {
       "address": "0xe41b78ae5c2b19caf9949f38f3d49aa3f50a8afd",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -6978,7 +6964,7 @@
     {
       "address": "0x4d25033be62e2b72198eec2710234d18c175170d",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7003,7 +6989,7 @@
     {
       "address": "0x6445563a4581ea750b374d7ca30ced59fc0d7872",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7028,7 +7014,7 @@
     {
       "address": "0x314b401dbc98b5aa2e597825578847fe0c2c4b21",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7053,7 +7039,7 @@
     {
       "address": "0x8c0e7049bd05d1521d5a568295f530057c516e75",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7078,7 +7064,7 @@
     {
       "address": "0x49db9fbef8c543fa2de4c8b2cbbb21d0b6a05a83",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -7103,7 +7089,7 @@
     {
       "address": "0x2f5f5c84ff5805e78974c6bfcbadaca47e663c9d",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -7126,34 +7112,9 @@
       "rank": 302
     },
     {
-      "address": "0x34cb05ee246246391de4582e775f2a11d8079870",
-      "balance_wei": "0",
-      "balance_eth": 0.0,
-      "keeperdao_items": [
-        {
-          "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
-          "k_token": "kdai",
-          "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
-          "k_amount_wei": "1033552337958377361245",
-          "k_amount": 1033.5523379583774,
-          "eth_eq_wei": "0",
-          "eth_eq": 0,
-          "amount_raw": "1139674803402266653689",
-          "amount": 1139.6748034022667,
-          "decimals": 18,
-          "underlying": "DAI",
-          "underlying_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-        }
-      ],
-      "token_balances": {
-        "DAI": "1139674803402266653689"
-      },
-      "rank": 303
-    },
-    {
       "address": "0x93e4ced6f7f593e0d017c2fd276450a1bb145135",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7173,12 +7134,12 @@
       "token_balances": {
         "DAI": "1066218922068456240572"
       },
-      "rank": 304
+      "rank": 303
     },
     {
       "address": "0xa8a8ef5426f9e14554efb3a983d4afe7eb622d44",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7198,12 +7159,12 @@
       "token_balances": {
         "DAI": "1054883596765783631140"
       },
-      "rank": 305
+      "rank": 304
     },
     {
       "address": "0x1406a3103fcf8d7854533ee691e29935bdb49288",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7223,12 +7184,12 @@
       "token_balances": {
         "DAI": "1045556191545602307904"
       },
-      "rank": 306
+      "rank": 305
     },
     {
       "address": "0x18151700a42c66c9d93f08319c6637d0da01a11c",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -7248,12 +7209,12 @@
       "token_balances": {
         "USDC": "1040423892"
       },
-      "rank": 307
+      "rank": 306
     },
     {
       "address": "0x8bd5531922b7a95e1b862d044cfb4b9c6beb8195",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7273,12 +7234,12 @@
       "token_balances": {
         "DAI": "1010974633175148934408"
       },
-      "rank": 308
+      "rank": 307
     },
     {
       "address": "0x383dbcdce4f4cb11bc083d34945d702aec2d8fc6",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -7298,12 +7259,12 @@
       "token_balances": {
         "USDC": "994178828"
       },
-      "rank": 309
+      "rank": 308
     },
     {
       "address": "0x817fecba20073b56299e9487600545524d19de7e",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7323,12 +7284,12 @@
       "token_balances": {
         "DAI": "989026511750664967424"
       },
-      "rank": 310
+      "rank": 309
     },
     {
       "address": "0x7490718661ced3aaa1321c8907f1de6dbc6f9cf4",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -7348,12 +7309,12 @@
       "token_balances": {
         "USDC": "986841183"
       },
-      "rank": 311
+      "rank": 310
     },
     {
       "address": "0xeacaf5b2717060bda76a5883a01cb5f693f40801",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7373,12 +7334,12 @@
       "token_balances": {
         "DAI": "983217938677446243720"
       },
-      "rank": 312
+      "rank": 311
     },
     {
       "address": "0xdc4b8b3bbf30260dc1605772b62c21c3bed0fa40",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -7398,12 +7359,12 @@
       "token_balances": {
         "USDC": "883988436"
       },
-      "rank": 313
+      "rank": 312
     },
     {
       "address": "0x2322921e64e265250bbf4d51052e0f5db38a31b9",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7423,12 +7384,12 @@
       "token_balances": {
         "DAI": "835696225300907176218"
       },
-      "rank": 314
+      "rank": 313
     },
     {
       "address": "0xe3968a2412cf4a04201754b4e13290f7b1a6e8ba",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -7448,12 +7409,12 @@
       "token_balances": {
         "USDC": "711088400"
       },
-      "rank": 315
+      "rank": 314
     },
     {
       "address": "0xe5d0affbcd5328bc9f90c6ee83ed7030760ca1a8",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7473,12 +7434,12 @@
       "token_balances": {
         "DAI": "679053372176945896626"
       },
-      "rank": 316
+      "rank": 315
     },
     {
       "address": "0x6e26619fdfab161b4c1af279eeebff705b7bd040",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -7498,12 +7459,12 @@
       "token_balances": {
         "USDC": "605992410"
       },
-      "rank": 317
+      "rank": 316
     },
     {
       "address": "0xa65ab3aca9a72aadb2f18aa5f634f1abd5c8c6bb",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -7523,12 +7484,12 @@
       "token_balances": {
         "USDC": "602871164"
       },
-      "rank": 318
+      "rank": 317
     },
     {
       "address": "0xd6681d7a5ee9e56d5225b26b994ab817975610ba",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7548,19 +7509,19 @@
       "token_balances": {
         "DAI": "600841482248266810666"
       },
-      "rank": 319
+      "rank": 318
     },
     {
       "address": "0xdef0ed0724d9a1d3aac2dafb767fbf8d09a3f2b6",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
           "k_token": "kdai",
           "k_address": "0x0314b6cc36ea9b48f34a350828ce98f17b76bc44",
           "k_amount_wei": "500000000000000000000",
-          "k_amount": 500.0,
+          "k_amount": 500,
           "eth_eq_wei": "0",
           "eth_eq": 0,
           "amount_raw": "551338699331626395448",
@@ -7573,12 +7534,12 @@
       "token_balances": {
         "DAI": "551338699331626395448"
       },
-      "rank": 320
+      "rank": 319
     },
     {
       "address": "0x296b39cf35a9eb6550f3ef76b87573e0349047f1",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -7598,12 +7559,12 @@
       "token_balances": {
         "USDC": "531117353"
       },
-      "rank": 321
+      "rank": 320
     },
     {
       "address": "0x0a7e465c1a354de9a6a51ccce84a50fe1a210eb3",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -7623,12 +7584,12 @@
       "token_balances": {
         "USDC": "507260125"
       },
-      "rank": 322
+      "rank": 321
     },
     {
       "address": "0xa6df57ca95f282f363b97875cd2f104218f1880e",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7648,12 +7609,12 @@
       "token_balances": {
         "DAI": "506998948972593254490"
       },
-      "rank": 323
+      "rank": 322
     },
     {
       "address": "0x644c298de50810d08d6ec4ff430a89d7f7d186e2",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -7673,12 +7634,12 @@
       "token_balances": {
         "USDC": "502275008"
       },
-      "rank": 324
+      "rank": 323
     },
     {
       "address": "0x0aeeeae3491820ceae297232ec9ebc483494ad0e",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -7698,12 +7659,12 @@
       "token_balances": {
         "USDC": "499199583"
       },
-      "rank": 325
+      "rank": 324
     },
     {
       "address": "0xbe06f318d8bec0a366820df5097a9007c37547a9",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -7723,12 +7684,12 @@
       "token_balances": {
         "USDC": "497378159"
       },
-      "rank": 326
+      "rank": 325
     },
     {
       "address": "0xd23df138e3c7a74b2832f5ecc1ed9eea6c04c80f",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7763,12 +7724,12 @@
         "DAI": "238328114587045474747",
         "USDC": "243677120"
       },
-      "rank": 327
+      "rank": 326
     },
     {
       "address": "0x426e47d2b73b68664a8702d4658a9c97ee00c590",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7788,12 +7749,12 @@
       "token_balances": {
         "DAI": "481848318631188964312"
       },
-      "rank": 328
+      "rank": 327
     },
     {
       "address": "0x1084c4ee87d1488d1ed45d11408b09ae1ff90576",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -7813,12 +7774,12 @@
       "token_balances": {
         "USDC": "471798755"
       },
-      "rank": 329
+      "rank": 328
     },
     {
       "address": "0x152b8c153e4f18bfe1cb3f2eaa563813c758e279",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -7838,12 +7799,12 @@
       "token_balances": {
         "USDC": "469071983"
       },
-      "rank": 330
+      "rank": 329
     },
     {
       "address": "0x7131c6f207b2c020a25a6fb0e7fc575f819cc02a",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -7863,12 +7824,12 @@
       "token_balances": {
         "USDC": "405847274"
       },
-      "rank": 331
+      "rank": 330
     },
     {
       "address": "0x9e49a6ee617b04300204e78f4b931145088810e7",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7888,12 +7849,12 @@
       "token_balances": {
         "DAI": "399471262110568119284"
       },
-      "rank": 332
+      "rank": 331
     },
     {
       "address": "0x710d02e8ae5d66104757e32f8b3f20389274ebc1",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7913,12 +7874,12 @@
       "token_balances": {
         "DAI": "382574838989792558019"
       },
-      "rank": 333
+      "rank": 332
     },
     {
       "address": "0xbafd29b1dc3e66400204126e1ec81d54bf58d613",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7938,12 +7899,12 @@
       "token_balances": {
         "DAI": "381659708519425933730"
       },
-      "rank": 334
+      "rank": 333
     },
     {
       "address": "0x2ee572633049ecdce2e6e57d854cba491b3c6a67",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -7963,12 +7924,12 @@
       "token_balances": {
         "DAI": "304762876164130054601"
       },
-      "rank": 335
+      "rank": 334
     },
     {
       "address": "0xaba97cf46c93d4ef66189f84b6047ffd05f86526",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -7988,12 +7949,12 @@
       "token_balances": {
         "USDC": "265448259"
       },
-      "rank": 336
+      "rank": 335
     },
     {
       "address": "0xbbf68ff787fa681eee4024c63cbb3ac75a6efc0c",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8028,12 +7989,12 @@
         "DAI": "113241603319109327051",
         "USDC": "112628250"
       },
-      "rank": 337
+      "rank": 336
     },
     {
       "address": "0xc761198054e770ef8ea548adf273bcffcbe98f60",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8053,12 +8014,12 @@
       "token_balances": {
         "DAI": "222535810469439455064"
       },
-      "rank": 338
+      "rank": 337
     },
     {
       "address": "0xc0020d88852f4eca40eed7d0b1bdd9493b589131",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8078,12 +8039,12 @@
       "token_balances": {
         "DAI": "201655262472824885617"
       },
-      "rank": 339
+      "rank": 338
     },
     {
       "address": "0xb4fea5fccfe492e0199e81be75cea97fdba77463",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -8103,12 +8064,12 @@
       "token_balances": {
         "USDC": "199689468"
       },
-      "rank": 340
+      "rank": 339
     },
     {
       "address": "0xc78e04d823cc8c247c7b88a3007951447db1fead",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8128,12 +8089,12 @@
       "token_balances": {
         "DAI": "194040595035627129640"
       },
-      "rank": 341
+      "rank": 340
     },
     {
       "address": "0x7e52ab67587f63245005d845c3e30e9b9d7159e2",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8153,12 +8114,12 @@
       "token_balances": {
         "DAI": "193909319213345351258"
       },
-      "rank": 342
+      "rank": 341
     },
     {
       "address": "0xa31dbf0435af02f3b68ec7f985c9388e8ab1e47b",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8178,12 +8139,12 @@
       "token_balances": {
         "DAI": "187541083770333599398"
       },
-      "rank": 343
+      "rank": 342
     },
     {
       "address": "0x40d3b71616bb9555d69f87465b7a6502a579ef60",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -8203,12 +8164,12 @@
       "token_balances": {
         "USDC": "164976317"
       },
-      "rank": 344
+      "rank": 343
     },
     {
       "address": "0x58a3505ee61f90bd5fbcf2abd889afad46b69d3a",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -8228,12 +8189,12 @@
       "token_balances": {
         "USDC": "164654840"
       },
-      "rank": 345
+      "rank": 344
     },
     {
       "address": "0xd99a71e68b961cbbbb4050bfac148dee9ecdf619",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8253,12 +8214,12 @@
       "token_balances": {
         "DAI": "158291693594272571325"
       },
-      "rank": 346
+      "rank": 345
     },
     {
       "address": "0x5d5f630ba4e689c3100f52874176f66d92500727",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -8278,12 +8239,12 @@
       "token_balances": {
         "USDC": "155146165"
       },
-      "rank": 347
+      "rank": 346
     },
     {
       "address": "0x3c5e235d1031d88d10cad08aef957715e71ad77f",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8303,12 +8264,12 @@
       "token_balances": {
         "DAI": "149550503926144011669"
       },
-      "rank": 348
+      "rank": 347
     },
     {
       "address": "0x962b26a2d007de555e560c2f6da3cd2719da9aa7",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8328,12 +8289,12 @@
       "token_balances": {
         "DAI": "143349090856837276478"
       },
-      "rank": 349
+      "rank": 348
     },
     {
       "address": "0x133fd7b616ad0f7f8885407da0b4e298448c9b3d",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8353,12 +8314,12 @@
       "token_balances": {
         "DAI": "119617628209091311198"
       },
-      "rank": 350
+      "rank": 349
     },
     {
       "address": "0x1fc58e176bc835d1ad7f97cff3e05287e00f6c77",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8378,12 +8339,12 @@
       "token_balances": {
         "DAI": "107812809321271738364"
       },
-      "rank": 351
+      "rank": 350
     },
     {
       "address": "0xa7bba3d285e9f045038af84f9e2064dd1a785ebd",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -8403,12 +8364,12 @@
       "token_balances": {
         "USDC": "102750603"
       },
-      "rank": 352
+      "rank": 351
     },
     {
       "address": "0x807ac157e1ec0e964fbd2d89a06a3d2035c1eff7",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -8428,12 +8389,12 @@
       "token_balances": {
         "USDC": "102080848"
       },
-      "rank": 353
+      "rank": 352
     },
     {
       "address": "0x8c6ad7dd2e2ecdd633bc1141024536cd93aee4fb",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -8453,12 +8414,12 @@
       "token_balances": {
         "USDC": "101714716"
       },
-      "rank": 354
+      "rank": 353
     },
     {
       "address": "0xfe75f92172d2b6f5c25bd5f843c32f839a6653fb",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8478,12 +8439,12 @@
       "token_balances": {
         "DAI": "100346930541970728716"
       },
-      "rank": 355
+      "rank": 354
     },
     {
       "address": "0xe41ab63fe5483b206ea22e2803e0d383a786043a",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8503,12 +8464,12 @@
       "token_balances": {
         "DAI": "95615741223772341285"
       },
-      "rank": 356
+      "rank": 355
     },
     {
       "address": "0x5acf39076c95e63b0965b5e6ef4c85087608c601",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -8528,12 +8489,12 @@
       "token_balances": {
         "USDC": "95234791"
       },
-      "rank": 357
+      "rank": 356
     },
     {
       "address": "0xc0d2b7f7b86e6da8bd9367948f1dca08a0e833e4",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8553,12 +8514,12 @@
       "token_balances": {
         "DAI": "93116833410383614454"
       },
-      "rank": 358
+      "rank": 357
     },
     {
       "address": "0xbde61412ca9f899239671118fd1ec99e70195de7",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -8578,12 +8539,12 @@
       "token_balances": {
         "USDC": "91845674"
       },
-      "rank": 359
+      "rank": 358
     },
     {
       "address": "0x29c7ec478b00bf8f9e4954592f82a5e40fad5a0e",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -8603,12 +8564,12 @@
       "token_balances": {
         "USDC": "89530129"
       },
-      "rank": 360
+      "rank": 359
     },
     {
       "address": "0x63595188d9a2a0e47b27a380d6506ffd2d69d1f9",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8628,12 +8589,12 @@
       "token_balances": {
         "DAI": "85540032217164765968"
       },
-      "rank": 361
+      "rank": 360
     },
     {
       "address": "0x4c19e33651b7bb4823ac412bc29c0a8e666eccbd",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -8653,12 +8614,12 @@
       "token_balances": {
         "USDC": "77820776"
       },
-      "rank": 362
+      "rank": 361
     },
     {
       "address": "0x9b43b558d65871e4af214dd26b17702b121dfeb2",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8678,12 +8639,12 @@
       "token_balances": {
         "DAI": "76525246938358558174"
       },
-      "rank": 363
+      "rank": 362
     },
     {
       "address": "0x192ddbe212d251ab0aeaab0a544c54437d2ffe54",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8703,12 +8664,12 @@
       "token_balances": {
         "DAI": "76497411845022829513"
       },
-      "rank": 364
+      "rank": 363
     },
     {
       "address": "0xebcb3c3d96e806b4a70639153336c8eb71aae910",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -8728,12 +8689,12 @@
       "token_balances": {
         "USDC": "74907043"
       },
-      "rank": 365
+      "rank": 364
     },
     {
       "address": "0x4322d56325ce754081a63129e3a3250f38eaf3c4",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8753,12 +8714,12 @@
       "token_balances": {
         "DAI": "73576630015239889081"
       },
-      "rank": 366
+      "rank": 365
     },
     {
       "address": "0x9ec5d1d6d86f706a53f7868c247c6a0330a4b850",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -8778,12 +8739,12 @@
       "token_balances": {
         "USDC": "61915750"
       },
-      "rank": 367
+      "rank": 366
     },
     {
       "address": "0x7e16b04b6685de8348916126b0a09c9a2266eeb3",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -8803,12 +8764,12 @@
       "token_balances": {
         "USDC": "60402871"
       },
-      "rank": 368
+      "rank": 367
     },
     {
       "address": "0x0897b4e707acff63e9a993aea6a11cee23c9b492",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8828,12 +8789,12 @@
       "token_balances": {
         "DAI": "51296868637024823164"
       },
-      "rank": 369
+      "rank": 368
     },
     {
       "address": "0x2f33c529431951a6dc7469f506dd9f8e5c14eed4",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -8853,12 +8814,12 @@
       "token_balances": {
         "USDC": "51120084"
       },
-      "rank": 370
+      "rank": 369
     },
     {
       "address": "0xbcc34be4cce3c236ccc2e4b9940c874c13d05ed3",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8878,12 +8839,12 @@
       "token_balances": {
         "DAI": "50722892984292636339"
       },
-      "rank": 371
+      "rank": 370
     },
     {
       "address": "0xcabbfb122e2c047a0f2243d4baa8b4de854cb95f",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8903,12 +8864,12 @@
       "token_balances": {
         "DAI": "50165364319078836016"
       },
-      "rank": 372
+      "rank": 371
     },
     {
       "address": "0xbc12a11ed5d9f4ed450390cfdffd69dd01e113e1",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -8928,12 +8889,12 @@
       "token_balances": {
         "USDC": "48429859"
       },
-      "rank": 373
+      "rank": 372
     },
     {
       "address": "0x20910ecb203eb636b291a5f1dff70c74cdccc365",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8953,12 +8914,12 @@
       "token_balances": {
         "DAI": "47217506064798874394"
       },
-      "rank": 374
+      "rank": 373
     },
     {
       "address": "0x23e9731e62555c09d296ae0f99c1ac962158620e",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -8978,12 +8939,12 @@
       "token_balances": {
         "DAI": "45833930403441220079"
       },
-      "rank": 375
+      "rank": 374
     },
     {
       "address": "0x5540b6626006c9a2e3b5e1eccb5391c298130596",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9003,12 +8964,12 @@
       "token_balances": {
         "DAI": "45542372909458286597"
       },
-      "rank": 376
+      "rank": 375
     },
     {
       "address": "0x63be84b1d75751e52716ae153dbc5abb5b2a98f5",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9028,12 +8989,12 @@
       "token_balances": {
         "DAI": "44862103631398472952"
       },
-      "rank": 377
+      "rank": 376
     },
     {
       "address": "0x237e15061293ed81b1ff85eb42ee912b6a19c8e4",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9053,12 +9014,12 @@
       "token_balances": {
         "DAI": "43851860692624421075"
       },
-      "rank": 378
+      "rank": 377
     },
     {
       "address": "0x59100385262480ec2d7b5807528d84b361881cb5",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9078,12 +9039,12 @@
       "token_balances": {
         "DAI": "42921807273273636940"
       },
-      "rank": 379
+      "rank": 378
     },
     {
       "address": "0x9dcda7fcc169c5d6e51aed0c3176c3f12ff8ce8b",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9103,12 +9064,12 @@
       "token_balances": {
         "DAI": "42876678362409674190"
       },
-      "rank": 380
+      "rank": 379
     },
     {
       "address": "0x50348e7c42056737f280895dc81a135ee3898a1c",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -9128,12 +9089,12 @@
       "token_balances": {
         "USDC": "42388606"
       },
-      "rank": 381
+      "rank": 380
     },
     {
       "address": "0x432d126da5035175354ec628e23966c679cdfadf",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9153,12 +9114,12 @@
       "token_balances": {
         "DAI": "31375239053783199135"
       },
-      "rank": 382
+      "rank": 381
     },
     {
       "address": "0x83084d760e0b2a156f5db3fa20f9fc965b3c0046",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9178,12 +9139,12 @@
       "token_balances": {
         "DAI": "30716372348280747493"
       },
-      "rank": 383
+      "rank": 382
     },
     {
       "address": "0x843da1d606d2a6d751c9ba2e8816dd6d725092f4",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9203,19 +9164,19 @@
       "token_balances": {
         "DAI": "26785817346133035795"
       },
-      "rank": 384
+      "rank": 383
     },
     {
       "address": "0x1eea392d763c97d3cdb183728b757d2f47f07227",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           "k_token": "kusdc",
           "k_address": "0xac826952bc30504359a099c3a486d44e97415c77",
           "k_amount_wei": "20000000",
-          "k_amount": 20.0,
+          "k_amount": 20,
           "eth_eq_wei": "0",
           "eth_eq": 0,
           "amount_raw": "26670437",
@@ -9228,12 +9189,12 @@
       "token_balances": {
         "USDC": "26670437"
       },
-      "rank": 385
+      "rank": 384
     },
     {
       "address": "0xf2795bdae0db5cb7363d934b066ba67e1ca8c049",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -9253,12 +9214,12 @@
       "token_balances": {
         "USDC": "25616642"
       },
-      "rank": 386
+      "rank": 385
     },
     {
       "address": "0x74be9eb35b07f6fc8d767b9f980c1d7854bf0364",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9278,12 +9239,12 @@
       "token_balances": {
         "DAI": "22707331540741312354"
       },
-      "rank": 387
+      "rank": 386
     },
     {
       "address": "0xb61fd6f023e4cb04882433b812b195245deb57e5",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9303,12 +9264,12 @@
       "token_balances": {
         "DAI": "22681869945313234049"
       },
-      "rank": 388
+      "rank": 387
     },
     {
       "address": "0xef93b3fe19749650f933e75e3dc07ef3c657cd16",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -9328,12 +9289,12 @@
       "token_balances": {
         "USDC": "20666594"
       },
-      "rank": 389
+      "rank": 388
     },
     {
       "address": "0xc1b5bcbc94e6127ac3ee4054d0664e4f6afe45d3",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9353,12 +9314,12 @@
       "token_balances": {
         "DAI": "20507025857107298130"
       },
-      "rank": 390
+      "rank": 389
     },
     {
       "address": "0xc9712b324e971eb34a0222c76cfe1ed10789a5bd",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9378,12 +9339,12 @@
       "token_balances": {
         "DAI": "19212446746822926586"
       },
-      "rank": 391
+      "rank": 390
     },
     {
       "address": "0x25ba562c31aaca514319f615ed56fa587a9c7ea4",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9403,12 +9364,12 @@
       "token_balances": {
         "DAI": "15918029224270610842"
       },
-      "rank": 392
+      "rank": 391
     },
     {
       "address": "0x0c27fffbd8e5f8cef5bf419494251abd423bf7ea",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9428,12 +9389,12 @@
       "token_balances": {
         "DAI": "15164991340374290780"
       },
-      "rank": 393
+      "rank": 392
     },
     {
       "address": "0x1487bc8feabe99b2e2ff68a44c8e27acb96ec035",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9453,12 +9414,12 @@
       "token_balances": {
         "DAI": "15164991286812911818"
       },
-      "rank": 394
+      "rank": 393
     },
     {
       "address": "0x36a87d1e3200225f881488e4aeedf25303febcae",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -9478,12 +9439,12 @@
       "token_balances": {
         "USDC": "15119600"
       },
-      "rank": 395
+      "rank": 394
     },
     {
       "address": "0x3ed843f917af9c3cccbab7b6a1dea661524fa7ed",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9503,12 +9464,12 @@
       "token_balances": {
         "DAI": "14931807078220353389"
       },
-      "rank": 396
+      "rank": 395
     },
     {
       "address": "0xc8d46eb7881975f9ae15216feeba2ff58e55803c",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -9528,12 +9489,12 @@
       "token_balances": {
         "USDC": "14623135"
       },
-      "rank": 397
+      "rank": 396
     },
     {
       "address": "0x5853ed4f26a3fcea565b3fbc698bb19cdf6deb85",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9553,12 +9514,12 @@
       "token_balances": {
         "DAI": "10422580209385616085"
       },
-      "rank": 398
+      "rank": 397
     },
     {
       "address": "0xf627e5f4bad95a956468d8bb6ee20b119f992e96",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9578,12 +9539,12 @@
       "token_balances": {
         "DAI": "10422533809293460981"
       },
-      "rank": 399
+      "rank": 398
     },
     {
       "address": "0x03c2bfd2509de9b13d0124015077e100a292336d",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -9603,12 +9564,12 @@
       "token_balances": {
         "USDC": "10143254"
       },
-      "rank": 400
+      "rank": 399
     },
     {
       "address": "0x4e76df25208db51ffcad92015489a9f80826c954",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9628,12 +9589,12 @@
       "token_balances": {
         "DAI": "8723447051835722889"
       },
-      "rank": 401
+      "rank": 400
     },
     {
       "address": "0xe826f1c06d5ae90e4c098459d1b7464a8dc604ca",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9653,12 +9614,12 @@
       "token_balances": {
         "DAI": "5639513136025204868"
       },
-      "rank": 402
+      "rank": 401
     },
     {
       "address": "0xbe3b173c6ee409e37e2d479c935bb0babefe7e97",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9678,12 +9639,12 @@
       "token_balances": {
         "DAI": "4766947423996651420"
       },
-      "rank": 403
+      "rank": 402
     },
     {
       "address": "0x7ba605bc00ea26512a639d5e0335eaeb3e81ad94",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9703,12 +9664,12 @@
       "token_balances": {
         "DAI": "4519655257817032688"
       },
-      "rank": 404
+      "rank": 403
     },
     {
       "address": "0x0a2dc66bde44a7a3401efc88f385387370716a3c",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -9728,12 +9689,12 @@
       "token_balances": {
         "USDC": "2967238"
       },
-      "rank": 405
+      "rank": 404
     },
     {
       "address": "0x47db9dccc3e0ff823a2e7ef546fdf8a9b833084a",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9753,12 +9714,12 @@
       "token_balances": {
         "DAI": "1488035784278785209"
       },
-      "rank": 406
+      "rank": 405
     },
     {
       "address": "0x7bfee91193d9df2ac0bfe90191d40f23c773c060",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9793,12 +9754,12 @@
         "DAI": "438124170189641122",
         "USDC": "911632"
       },
-      "rank": 407
+      "rank": 406
     },
     {
       "address": "0x137d2ff1b6df76d019319efffd39f2b9b8531859",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9818,12 +9779,12 @@
       "token_balances": {
         "DAI": "1017147013605687690"
       },
-      "rank": 408
+      "rank": 407
     },
     {
       "address": "0xb512f6eda8d66092c5ab1d6c5ec718970e064683",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -9834,7 +9795,7 @@
           "eth_eq_wei": "0",
           "eth_eq": 0,
           "amount_raw": "1000000",
-          "amount": 1.0,
+          "amount": 1,
           "decimals": 6,
           "underlying": "USDC",
           "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
@@ -9843,12 +9804,12 @@
       "token_balances": {
         "USDC": "1000000"
       },
-      "rank": 409
+      "rank": 408
     },
     {
       "address": "0x781d8a73f053b6c6d9472648912737b02bad9438",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -9868,12 +9829,12 @@
       "token_balances": {
         "USDC": "994280"
       },
-      "rank": 410
+      "rank": 409
     },
     {
       "address": "0x57fd2605aa93a46d6363f1e2f0501e1ccfcda8a7",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -9893,12 +9854,12 @@
       "token_balances": {
         "USDC": "860559"
       },
-      "rank": 411
+      "rank": 410
     },
     {
       "address": "0x0370049eba9c196d14ca2886dd329a700d545c72",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -9918,12 +9879,12 @@
       "token_balances": {
         "USDC": "808830"
       },
-      "rank": 412
+      "rank": 411
     },
     {
       "address": "0x439d8cd77ffb644c7cb4beaed13f2318febdf2df",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9943,12 +9904,12 @@
       "token_balances": {
         "DAI": "578716209447858626"
       },
-      "rank": 413
+      "rank": 412
     },
     {
       "address": "0x430ada0b220d0588d416594c94ee131c798f3972",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9968,12 +9929,12 @@
       "token_balances": {
         "DAI": "535647044260682263"
       },
-      "rank": 414
+      "rank": 413
     },
     {
       "address": "0x1e4bda16734c1f9e86a66e310fcf8bd3c4f9c0f0",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -9993,12 +9954,12 @@
       "token_balances": {
         "DAI": "518213466763015067"
       },
-      "rank": 415
+      "rank": 414
     },
     {
       "address": "0xdd713a96cb3d6f1454ec644e8b017b419a0aa1c6",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -10018,12 +9979,12 @@
       "token_balances": {
         "DAI": "371799848174450829"
       },
-      "rank": 416
+      "rank": 415
     },
     {
       "address": "0xb5d1c94469c78a52d5b8250773484d71f6849bf8",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -10043,12 +10004,12 @@
       "token_balances": {
         "USDC": "347014"
       },
-      "rank": 417
+      "rank": 416
     },
     {
       "address": "0xaa5f7d4df2a987d9cc32866b05765f4d94fc2421",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -10068,12 +10029,12 @@
       "token_balances": {
         "USDC": "284914"
       },
-      "rank": 418
+      "rank": 417
     },
     {
       "address": "0xfc143f933badbefe4e769047745cc23e02de0e90",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -10093,12 +10054,12 @@
       "token_balances": {
         "USDC": "269742"
       },
-      "rank": 419
+      "rank": 418
     },
     {
       "address": "0x53673e863f303c48af05104d96dac655ca7ef720",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -10118,12 +10079,12 @@
       "token_balances": {
         "DAI": "171096625260037378"
       },
-      "rank": 420
+      "rank": 419
     },
     {
       "address": "0x47dad379d23093a9b6d711249e1d25864c3f3128",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -10143,12 +10104,12 @@
       "token_balances": {
         "USDC": "94378"
       },
-      "rank": 421
+      "rank": 420
     },
     {
       "address": "0xbd72d16a2c0ac11365a7223224f5096b5d9084a8",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -10168,12 +10129,12 @@
       "token_balances": {
         "DAI": "43584852653813475"
       },
-      "rank": 422
+      "rank": 421
     },
     {
       "address": "0xfd8702d67398eaf1402a20457adcd422792e5a7b",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -10193,12 +10154,12 @@
       "token_balances": {
         "DAI": "37391236643135815"
       },
-      "rank": 423
+      "rank": 422
     },
     {
       "address": "0x8473b904ba551e3ff5ec8aceacfdddb2a665a303",
       "balance_wei": "0",
-      "balance_eth": 0.0,
+      "balance_eth": 0,
       "keeperdao_items": [
         {
           "item_id": "kd:0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -10218,7 +10179,8 @@
       "token_balances": {
         "DAI": "12390118607144844"
       },
-      "rank": 424
+      "rank": 423
     }
-  ]
+  ],
+  "last_event_refresh": "2026-10-18 12:23:06 UTC"
 }

@@ -1,17 +1,37 @@
 {
   "contract": "0x0286f920F893513C7ec9FE35ba0A4760229a243e",
   "balance_source": "token",
-  "contract_eth_balance": 385.38475707,
-  "total_eth_in_balances": 385.27439032,
-  "addresses_with_balance": 10089,
+  "contract_eth_balance": 385.384139,
+  "total_eth_in_balances": 385.273772,
+  "addresses_with_balance": 10088,
   "coverage_pct": 99.97,
-  "scan_date": "2026-10-17 04:32:59 UTC",
+  "scan_date": "2026-10-17 16:32:55 UTC",
   "description": "SingularX was a decentralized exchange launched in 2017 on ConsenSys's Tokit platform. Its SingularDTVFund contract distributed ETH trading-fee rewards pro-rata to SNGX token holders, who claim their share by calling withdrawReward(). The exchange and its UI are long defunct, but the reward pool still holds ETH and the claim path remains permissionless.",
   "distribution": {
-    "1_plus": 51,
-    "0.1_to_1": 380,
-    "0.01_to_0.1": 1539,
-    "under_0.01": 8119
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 5,
+      "total_eth": 117.401326
+    },
+    "1-10 ETH": {
+      "count": 46,
+      "total_eth": 98.88354
+    },
+    "0.1-1 ETH": {
+      "count": 380,
+      "total_eth": 107.779414
+    },
+    "0.01-0.1 ETH": {
+      "count": 1539,
+      "total_eth": 47.23953
+    },
+    "<0.01 ETH": {
+      "count": 8118,
+      "total_eth": 13.969925
+    }
   },
   "meta": {
     "token": "0x78774D1C3277B83459C730921bfF11019017B233",
@@ -38667,9 +38687,10 @@
     },
     {
       "address": "0x46e7585cf2248d04ff523715147e8cc165ac70fb",
-      "balance_wei": "618540496639190",
-      "balance_eth": 0.00061854,
-      "rank": 6442
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 6442,
+      "claimed": true
     },
     {
       "address": "0x112763a028d6de3750dfb97d81e1f965015de822",
@@ -60553,5 +60574,6 @@
       "balance_eth": 0.00010021,
       "rank": 10089
     }
-  ]
+  ],
+  "last_event_refresh": "2026-10-20 07:23:06 UTC"
 }

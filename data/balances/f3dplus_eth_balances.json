@@ -1,9 +1,9 @@
 {
   "contract": "0x0f90ef4e2526e3d1791862574f9fb26a0f39ec86",
   "balance_source": "eth",
-  "contract_eth_balance": 35.09817563,
-  "total_eth_in_balances": 35.0066454,
-  "addresses_with_balance": 671,
+  "contract_eth_balance": 35.098014,
+  "total_eth_in_balances": 35.006484,
+  "addresses_with_balance": 670,
   "coverage_pct": 99.74,
   "scan_date": "2026-05-08 10:54:10 UTC",
   "description": "ETH balances in defunct F3DPLUS contract",
@@ -29,13 +29,13 @@
       "total_eth": 3.974363
     },
     "<0.01 ETH": {
-      "count": 512,
-      "total_eth": 0.652294
+      "count": 511,
+      "total_eth": 0.652131
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 1554,
-  "last_event_refresh": "2026-10-14 16:36:38 UTC",
+  "last_event_refresh": "2026-10-19 04:53:27 UTC",
   "balances": [
     {
       "rank": 1,
@@ -2649,8 +2649,9 @@
     {
       "rank": 435,
       "address": "0x5a0727d72115541d0edb9da8adbe9cf843b9106c",
-      "balance_wei": "161536214865822",
-      "balance_eth": 0.000161536214865822
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 436,

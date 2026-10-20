@@ -1,10 +1,10 @@
 {
   "contract": "0xd6770aac65a48f5715889a4cdbf30a4faf73a073",
   "balance_source": "eth",
-  "contract_eth_balance": 36.91881783,
-  "total_eth_in_balances": 36.91881783,
-  "addresses_with_balance": 23,
-  "coverage_pct": 100.0,
+  "contract_eth_balance": 36.698853,
+  "total_eth_in_balances": 36.698853,
+  "addresses_with_balance": 22,
+  "coverage_pct": 100,
   "scan_date": "2026-05-08 22:20:59 UTC",
   "description": "Presale Pool 0xd6770a",
   "balances": [
@@ -88,9 +88,10 @@
     },
     {
       "address": "0x3058a0d5e8e1a7b15dbf13eb3d411ee3efea70d9",
-      "balance_wei": "219965125187416867",
-      "balance_eth": 0.21996512518741687,
-      "rank": 14
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 14,
+      "claimed": true
     },
     {
       "address": "0xb0588a4112da7ffcc9e219885cb29e6a08641dad",
@@ -146,5 +147,6 @@
       "balance_eth": 0.019270449001461736,
       "rank": 23
     }
-  ]
+  ],
+  "last_event_refresh": "2026-10-20 10:54:14 UTC"
 }

@@ -3273,7 +3273,7 @@
   },
   "superseed": {
     "name": "Superseed Bridge",
-    "desc": "Superseed is an OP Stack rollup that settles on Ethereum. These ETH withdrawals were started but never completed on Ethereum.",
+    "desc": "Superseed is an OP Stack rollup that settles on Ethereum. Its withdrawals are proven on Ethereum and then, after a waiting period, finalized to release the funds. The ETH withdrawals listed here were proven on Ethereum but never finalized, so the funds are still waiting in the bridge.",
     "category": "other",
     "color": "#acd55b",
     "contract": "0x2c2150aa5c75a24fb93d4fd2f2a895d618054f07",

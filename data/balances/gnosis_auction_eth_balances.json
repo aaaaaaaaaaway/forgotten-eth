@@ -1,38 +1,27 @@
 {
   "contract": "0x0b7ffc1f4ad541a4ed16b40d8c37f0929158d101",
   "balance_source": "weth",
-  "contract_eth_balance": 57.87469384,
-  "total_eth_in_balances": 55.97436936,
-  "addresses_with_balance": 79,
-  "coverage_pct": 96.72,
-  "scan_date": "2026-10-17 04:33:19 UTC",
+  "contract_eth_balance": 48.220325,
+  "total_eth_in_balances": 45.870492,
+  "addresses_with_balance": 75,
+  "coverage_pct": 95.13,
+  "scan_date": "2026-10-17 16:33:13 UTC",
   "description": "Gnosis EasyAuction unclaimed WETH refunds. Users placed bids (sellAmount WETH) that cleared below the auction price and were not filled; the WETH is refundable via claimFromParticipantOrder. The gnosis-auction UI is dead; the contract is immutable with no deadline. Per-user balance is the exact WETH refund from simulating claimFromParticipantOrder via eth_call.",
   "meta": {
     "claim_function": "claimFromParticipantOrder(uint256,bytes32[])",
     "weth_in_contract": 57.874694,
-    "eth_in_contract": 0.0,
+    "eth_in_contract": 0,
     "verified_via": "eth_call simulation of claimFromParticipantOrder",
     "refreshed_from_stored_orders": true
   },
   "balances": [
     {
       "address": "0x57bfaa4781e2f5ad8955fe01e2bb2e5c40f6c354",
-      "balance_wei": "33100000000000000000",
-      "balance_eth": 33.1,
+      "balance_wei": "25000000000000000000",
+      "balance_eth": 25,
       "user_id": 12496,
-      "unclaimed_auctions": 3,
+      "unclaimed_auctions": 2,
       "auction_refunds": [
-        {
-          "auction_id": 146,
-          "weth_refund_wei": "8100000000000000000",
-          "tokens_owed_wei": "0",
-          "orders": [
-            {
-              "buy": "300000000000",
-              "sell": "8100000000000000000"
-            }
-          ]
-        },
         {
           "auction_id": 164,
           "weth_refund_wei": "15000000000000000000",
@@ -60,7 +49,7 @@
     {
       "address": "0xf632f067bb26b08e95e23225a016ed9e02265137",
       "balance_wei": "5000000000000000000",
-      "balance_eth": 5.0,
+      "balance_eth": 5,
       "user_id": 8073,
       "unclaimed_auctions": 1,
       "auction_refunds": [
@@ -99,47 +88,12 @@
     },
     {
       "address": "0x01ef276360ac939c653b128122d0179136089cfe",
-      "balance_wei": "1396790000000000000",
-      "balance_eth": 1.39679,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "user_id": 8279,
-      "unclaimed_auctions": 1,
-      "auction_refunds": [
-        {
-          "auction_id": 30,
-          "weth_refund_wei": "1396790000000000000",
-          "tokens_owed_wei": "1089296963500000000000",
-          "orders": [
-            {
-              "buy": "9990009990009990009990",
-              "sell": "1000000000000000000"
-            },
-            {
-              "buy": "999500249875062468765",
-              "sell": "200000000000000000"
-            },
-            {
-              "buy": "499875031242189452636",
-              "sell": "200000000000000000"
-            },
-            {
-              "buy": "99900099900099900099",
-              "sell": "100000000000000000"
-            },
-            {
-              "buy": "5094905094905094905",
-              "sell": "51000000000000000"
-            },
-            {
-              "buy": "84634151248751248751",
-              "sell": "84718785400000000"
-            },
-            {
-              "buy": "655529646902065289806",
-              "sell": "196790000000000000"
-            }
-          ]
-        }
-      ]
+      "unclaimed_auctions": 0,
+      "auction_refunds": [],
+      "claimed": true
     },
     {
       "address": "0x5c3bcd428758006927830806c19c6fa75a6ea9e8",
@@ -184,7 +138,7 @@
     {
       "address": "0xf4b0400eb76fb71e111322360cea2efdc6be0bfb",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0,
+      "balance_eth": 1,
       "user_id": 8305,
       "unclaimed_auctions": 1,
       "auction_refunds": [
@@ -283,23 +237,12 @@
     },
     {
       "address": "0x0508c3a6cb083b03d760a2cd7bd28a0a32a63e84",
-      "balance_wei": "350000000000000000",
-      "balance_eth": 0.35,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "user_id": 11553,
-      "unclaimed_auctions": 1,
-      "auction_refunds": [
-        {
-          "auction_id": 98,
-          "weth_refund_wei": "350000000000000000",
-          "tokens_owed_wei": "0",
-          "orders": [
-            {
-              "buy": "7000000000000000000000",
-              "sell": "350000000000000000"
-            }
-          ]
-        }
-      ]
+      "unclaimed_auctions": 0,
+      "auction_refunds": [],
+      "claimed": true
     },
     {
       "address": "0x846c243f92427a68ccb90c7b3c77f9bf5740ef90",
@@ -751,27 +694,12 @@
     },
     {
       "address": "0xbbca66808712cce5fd8d376cf5d6bd4d064cd0b8",
-      "balance_wei": "189387013677342973",
-      "balance_eth": 0.18938701,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "user_id": 8246,
-      "unclaimed_auctions": 1,
-      "auction_refunds": [
-        {
-          "auction_id": 30,
-          "weth_refund_wei": "189387013677342973",
-          "tokens_owed_wei": "0",
-          "orders": [
-            {
-              "buy": "650803532254427314285",
-              "sell": "136668741773429736"
-            },
-            {
-              "buy": "170058941625526570967",
-              "sell": "52718271903913237"
-            }
-          ]
-        }
-      ]
+      "unclaimed_auctions": 0,
+      "auction_refunds": [],
+      "claimed": true
     },
     {
       "address": "0x4e209fc427ba76f073a91e837a1e3377ecfb9b6a",
@@ -1183,23 +1111,12 @@
     },
     {
       "address": "0x051f86354fb19b89ddfb97762af05327d164abbb",
-      "balance_wei": "67700000000000000",
-      "balance_eth": 0.0677,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "user_id": 11577,
-      "unclaimed_auctions": 1,
-      "auction_refunds": [
-        {
-          "auction_id": 98,
-          "weth_refund_wei": "67700000000000000",
-          "tokens_owed_wei": "0",
-          "orders": [
-            {
-              "buy": "2358885017421602787456",
-              "sell": "67700000000000000"
-            }
-          ]
-        }
-      ]
+      "unclaimed_auctions": 0,
+      "auction_refunds": [],
+      "claimed": true
     },
     {
       "address": "0x444dafedc3b86c9c72d65ba4781cc4d4c5d9d1ee",
@@ -1732,5 +1649,6 @@
         }
       ]
     }
-  ]
+  ],
+  "last_event_refresh": "2026-10-18 13:23:05 UTC"
 }

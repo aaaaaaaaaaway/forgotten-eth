@@ -1,17 +1,37 @@
 {
   "contract": "0x4ccc2339f87f6c59c6893e1a678c2266ca58dc72",
   "balance_source": "weth",
-  "contract_eth_balance": 367.690127,
-  "total_eth_in_balances": 367.690127,
-  "addresses_with_balance": 2366,
-  "coverage_pct": 100.0,
-  "scan_date": "2026-10-17 04:21:07 UTC",
-  "description": "Opyn v2 Gamma Protocol expired oToken redemption pool. Holders of expired in-the-money WETH-collateralized oTokens can call Controller.operate([Redeem]) to claim their share of the underlying collateral. The protocol went silent in early 2022 \u2014 these are forgotten redemption claims.",
+  "contract_eth_balance": 367.514012,
+  "total_eth_in_balances": 367.514011,
+  "addresses_with_balance": 2344,
+  "coverage_pct": 100,
+  "scan_date": "2026-10-17 16:21:22 UTC",
+  "description": "Opyn v2 Gamma Protocol expired oToken redemption pool. Holders of expired in-the-money WETH-collateralized oTokens can call Controller.operate([Redeem]) to claim their share of the underlying collateral. The protocol went silent in early 2022 — these are forgotten redemption claims.",
   "distribution": {
-    "1_plus": 3,
-    "0.1_to_1": 85,
-    "0.01_to_0.1": 961,
-    "under_0.01": 1317
+    ">=100 ETH": {
+      "count": 1,
+      "total_eth": 324.292557
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "1-10 ETH": {
+      "count": 2,
+      "total_eth": 3.78594
+    },
+    "0.1-1 ETH": {
+      "count": 85,
+      "total_eth": 16.36028
+    },
+    "0.01-0.1 ETH": {
+      "count": 956,
+      "total_eth": 19.680189
+    },
+    "<0.01 ETH": {
+      "count": 1300,
+      "total_eth": 3.395045
+    }
   },
   "pool_contract": "0x5934807cc0654d46755ebd2848840b616256c6ef",
   "opyn_redeem": true,
@@ -1195,7 +1215,7 @@
         {
           "otoken": "0x93e2aad69f4156df5b575a537a6af169cc99b48a",
           "amount": "1",
-          "payout_eth": 0.0
+          "payout_eth": 0
         }
       ],
       "rank": 88
@@ -4942,8 +4962,8 @@
     },
     {
       "address": "0xa22f00f8afd919dcc53b0ee70a6c4ba118006a46",
-      "balance_wei": "21298631611307507",
-      "balance_eth": 0.021299,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -4951,7 +4971,8 @@
           "payout_eth": 0.021299
         }
       ],
-      "rank": 374
+      "rank": 374,
+      "claimed": true
     },
     {
       "address": "0xdc3f9ee2eb11fd8866486e94fe54ce27a2f60462",
@@ -5124,8 +5145,8 @@
     },
     {
       "address": "0xbd2f6be3b2e186bce86b84f25a7a54df7e0720f4",
-      "balance_wei": "20115374299568201",
-      "balance_eth": 0.020115,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -5133,7 +5154,8 @@
           "payout_eth": 0.020115
         }
       ],
-      "rank": 388
+      "rank": 388,
+      "claimed": true
     },
     {
       "address": "0xe31b7439693889cae4490eb6e7ca88fb23b1d11b",
@@ -5566,8 +5588,8 @@
     },
     {
       "address": "0xd7018846e545e48ae44876b55a40c7c2667e7a0b",
-      "balance_wei": "18932116987828895",
-      "balance_eth": 0.018932,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -5575,7 +5597,8 @@
           "payout_eth": 0.018932
         }
       ],
-      "rank": 422
+      "rank": 422,
+      "claimed": true
     },
     {
       "address": "0xabb596ca37fa210216c6b793144505eb0c927ca2",
@@ -5813,8 +5836,8 @@
     },
     {
       "address": "0x90795c9eed0c18f031c3329143aa089eadfb70ea",
-      "balance_wei": "17748859676089589",
-      "balance_eth": 0.017749,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -5822,7 +5845,8 @@
           "payout_eth": 0.017749
         }
       ],
-      "rank": 441
+      "rank": 441,
+      "claimed": true
     },
     {
       "address": "0x9174a5dc4b57fc2d4e199fb864ee4d691f60f60f",
@@ -5891,8 +5915,8 @@
     },
     {
       "address": "0xb3922c95685575ec2433536106c9285348ae0f74",
-      "balance_wei": "17748859676089589",
-      "balance_eth": 0.017749,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -5900,7 +5924,8 @@
           "payout_eth": 0.017749
         }
       ],
-      "rank": 447
+      "rank": 447,
+      "claimed": true
     },
     {
       "address": "0xee1785454f8b5b9826768e51428fdfaa4f371945",
@@ -7618,7 +7643,7 @@
         {
           "otoken": "0x090e2e96f1e5760819e0611618dfe53b32abb9e7",
           "amount": "10000",
-          "payout_eth": 2.3e-05
+          "payout_eth": 0.000023
         }
       ],
       "rank": 579
@@ -13956,8 +13981,8 @@
     },
     {
       "address": "0x8c9bf54b263ddc5c0fc9f7f84d51ecc4e67a56d6",
-      "balance_wei": "9466058493914447",
-      "balance_eth": 0.009466,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -13965,7 +13990,8 @@
           "payout_eth": 0.009466
         }
       ],
-      "rank": 1067
+      "rank": 1067,
+      "claimed": true
     },
     {
       "address": "0x8ad9fa01d4321bbb60bb9c42dc107ab66b8ea905",
@@ -14632,8 +14658,8 @@
     },
     {
       "address": "0xd7cd82eaad326ce3effe829f94ebe9dd424fba1f",
-      "balance_wei": "7099543870435835",
-      "balance_eth": 0.0071,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -14641,7 +14667,8 @@
           "payout_eth": 0.0071
         }
       ],
-      "rank": 1119
+      "rank": 1119,
+      "claimed": true
     },
     {
       "address": "0xa7722fbf1b13e119a0c31692ff21d9529fbe9294",
@@ -14827,8 +14854,8 @@
     },
     {
       "address": "0x50ab08d3fbf8cb8a341eb88f3d1280ed92282efb",
-      "balance_wei": "6317174135913806",
-      "balance_eth": 0.006317,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -14836,7 +14863,8 @@
           "payout_eth": 0.006317
         }
       ],
-      "rank": 1134
+      "rank": 1134,
+      "claimed": true
     },
     {
       "address": "0x4ecb3d30decb32ee9e5e8884d11ab1bb643c9a06",
@@ -15386,8 +15414,8 @@
     },
     {
       "address": "0x5e611e445b62ee4ece67b58996d64ab9942cbad3",
-      "balance_wei": "5916286558696529",
-      "balance_eth": 0.005916,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -15395,7 +15423,8 @@
           "payout_eth": 0.005916
         }
       ],
-      "rank": 1177
+      "rank": 1177,
+      "claimed": true
     },
     {
       "address": "0x60613f286032d55dc9909e609ef198110315e85a",
@@ -15958,8 +15987,8 @@
     },
     {
       "address": "0xc476c074a61e99665f3d71fb48e726c3016d861a",
-      "balance_wei": "5916286558696529",
-      "balance_eth": 0.005916,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -15967,7 +15996,8 @@
           "payout_eth": 0.005916
         }
       ],
-      "rank": 1221
+      "rank": 1221,
+      "claimed": true
     },
     {
       "address": "0xc8d928cbfc7b6a6ce8fc6084929c02ae8ff2096d",
@@ -16062,8 +16092,8 @@
     },
     {
       "address": "0xde5cef34e94f1f255d686b6eb45cde8726f15b2e",
-      "balance_wei": "5916286558696529",
-      "balance_eth": 0.005916,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -16071,7 +16101,8 @@
           "payout_eth": 0.005916
         }
       ],
-      "rank": 1229
+      "rank": 1229,
+      "claimed": true
     },
     {
       "address": "0xdf29f1119e97b35739bd70a6ac03d07c63db6f7f",
@@ -16413,8 +16444,8 @@
     },
     {
       "address": "0xd95409077d9cb394508b59507ae021d76ba4bc10",
-      "balance_wei": "5916286558696529",
-      "balance_eth": 0.005916,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -16422,7 +16453,8 @@
           "payout_eth": 0.005916
         }
       ],
-      "rank": 1256
+      "rank": 1256,
+      "claimed": true
     },
     {
       "address": "0xda800ea1c982da53a97d2b3648ca06f7073332f1",
@@ -16868,8 +16900,8 @@
     },
     {
       "address": "0x16a31cd4a44bfdc014201522a4e52a1c8296d31a",
-      "balance_wei": "4733029246957223",
-      "balance_eth": 0.004733,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -16877,7 +16909,8 @@
           "payout_eth": 0.004733
         }
       ],
-      "rank": 1291
+      "rank": 1291,
+      "claimed": true
     },
     {
       "address": "0x17555104c12a1b28600e8205029a12dddf5ffa4e",
@@ -17856,8 +17889,8 @@
     },
     {
       "address": "0xa0f7ac16ff72a33313ebaeb69a86642f8f31aa45",
-      "balance_wei": "4141400591087570",
-      "balance_eth": 0.004141,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -17865,7 +17898,8 @@
           "payout_eth": 0.004141
         }
       ],
-      "rank": 1367
+      "rank": 1367,
+      "claimed": true
     },
     {
       "address": "0xd265252142325565809316b381e783872f04b233",
@@ -18376,8 +18410,8 @@
     },
     {
       "address": "0x0d1707b02b657ae5d4a78d6754f48ef06de35590",
-      "balance_wei": "3549771935217917",
-      "balance_eth": 0.00355,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -18385,7 +18419,8 @@
           "payout_eth": 0.00355
         }
       ],
-      "rank": 1407
+      "rank": 1407,
+      "claimed": true
     },
     {
       "address": "0x1255f07567c7f4b4155e8bed36c733e1babbcb28",
@@ -18415,8 +18450,8 @@
     },
     {
       "address": "0x179fa7f8033e7d1e4a762b5b8343dff6b6b5348e",
-      "balance_wei": "3549771935217917",
-      "balance_eth": 0.00355,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -18424,7 +18459,8 @@
           "payout_eth": 0.00355
         }
       ],
-      "rank": 1410
+      "rank": 1410,
+      "claimed": true
     },
     {
       "address": "0x20bc4d08256d3239837f271a25dd654de973073e",
@@ -18519,8 +18555,8 @@
     },
     {
       "address": "0x35a901098cf337b41a13bc0f245547497b384871",
-      "balance_wei": "3549771935217917",
-      "balance_eth": 0.00355,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -18528,7 +18564,8 @@
           "payout_eth": 0.00355
         }
       ],
-      "rank": 1418
+      "rank": 1418,
+      "claimed": true
     },
     {
       "address": "0x4a5b3d5a62c90f8f7b291a03f3bb6bfd80cf8791",
@@ -18805,8 +18842,8 @@
     },
     {
       "address": "0xd778dc79b4b743b24ee1543c2ccdb11086c0dd1d",
-      "balance_wei": "3549771935217917",
-      "balance_eth": 0.00355,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -18814,7 +18851,8 @@
           "payout_eth": 0.00355
         }
       ],
-      "rank": 1440
+      "rank": 1440,
+      "claimed": true
     },
     {
       "address": "0xdeb6bb6a39d5f1796094ed62f2133e6d0c9b595d",
@@ -18961,8 +18999,8 @@
     },
     {
       "address": "0xcf4a907e647f5472d3a8a5021d0a7e4f04d7b00c",
-      "balance_wei": "3549771935217917",
-      "balance_eth": 0.00355,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -18970,7 +19008,8 @@
           "payout_eth": 0.00355
         }
       ],
-      "rank": 1452
+      "rank": 1452,
+      "claimed": true
     },
     {
       "address": "0xe292babb03689c7d55d83a903f9da81b55ec8959",
@@ -20050,8 +20089,8 @@
     },
     {
       "address": "0x1773b51ff957ce7e2e821f6153eab9af1f56272f",
-      "balance_wei": "2366514623478611",
-      "balance_eth": 0.002367,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -20059,7 +20098,8 @@
           "payout_eth": 0.002367
         }
       ],
-      "rank": 1535
+      "rank": 1535,
+      "claimed": true
     },
     {
       "address": "0x18083ac4276c967d761daa0eb065c03ef55a6dca",
@@ -20375,8 +20415,8 @@
     },
     {
       "address": "0x6079654b6d8a4b0dcf50974d0ed5aec65c16b7b2",
-      "balance_wei": "2366514623478611",
-      "balance_eth": 0.002367,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -20384,7 +20424,8 @@
           "payout_eth": 0.002367
         }
       ],
-      "rank": 1560
+      "rank": 1560,
+      "claimed": true
     },
     {
       "address": "0x608f27b669ce6962b5aa4cce37b95421714fc4e0",
@@ -21324,8 +21365,8 @@
     },
     {
       "address": "0xa8381f0d51e4f6bb655022c3d6882271b6df8434",
-      "balance_wei": "2366514623478611",
-      "balance_eth": 0.002367,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "positions": [
         {
           "otoken": "0x796091d1840a6bd9e6a6b65bf8ef3985d254c3df",
@@ -21333,7 +21374,8 @@
           "payout_eth": 0.002367
         }
       ],
-      "rank": 1633
+      "rank": 1633,
+      "claimed": true
     },
     {
       "address": "0xaf7b3c54e066c54e4bfc08762678fd1bc2ade9b4",
@@ -30107,7 +30149,7 @@
         {
           "otoken": "0x090e2e96f1e5760819e0611618dfe53b32abb9e7",
           "amount": "10000",
-          "payout_eth": 2.3e-05
+          "payout_eth": 0.000023
         }
       ],
       "rank": 2307
@@ -30879,5 +30921,6 @@
       ],
       "rank": 2366
     }
-  ]
+  ],
+  "last_event_refresh": "2026-10-20 15:23:06 UTC"
 }

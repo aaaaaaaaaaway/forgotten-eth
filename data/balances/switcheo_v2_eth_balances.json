@@ -1,9 +1,9 @@
 {
   "contract": "0x7ee7ca6e75de79e618e88bdf80d0b1db136b22d0",
   "balance_source": "eth",
-  "contract_eth_balance": 406.842707,
-  "total_eth_in_balances": 406.56797,
-  "addresses_with_balance": 2872,
+  "contract_eth_balance": 406.689239,
+  "total_eth_in_balances": 406.414502,
+  "addresses_with_balance": 2868,
   "coverage_pct": 99.93,
   "scan_date": "2026-09-20 01:43:41 UTC",
   "description": "ETH balances in defunct Switcheo BrokerV2 contract",
@@ -21,21 +21,21 @@
       "total_eth": 128.10539
     },
     "0.1-1 ETH": {
-      "count": 202,
-      "total_eth": 57.679561
+      "count": 201,
+      "total_eth": 57.567561
     },
     "0.01-0.1 ETH": {
-      "count": 542,
-      "total_eth": 19.092696
+      "count": 540,
+      "total_eth": 19.059256
     },
     "<0.01 ETH": {
-      "count": 2076,
-      "total_eth": 2.715273
+      "count": 2075,
+      "total_eth": 2.707244
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 10106,
-  "last_event_refresh": "2026-10-12 17:23:06 UTC",
+  "last_event_refresh": "2026-10-20 19:23:06 UTC",
   "balances": [
     {
       "rank": 1,
@@ -1417,8 +1417,9 @@
     {
       "rank": 230,
       "address": "0xe94bc3c9813519afd3e512a1f48ad7cac17f6e8b",
-      "balance_wei": "112000000000000000",
-      "balance_eth": 0.112
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 231,
@@ -3537,8 +3538,9 @@
     {
       "rank": 583,
       "address": "0x16027fca7230f8c5cd7dd8cf4a3ab6ec61238c20",
-      "balance_wei": "20835074878400000",
-      "balance_eth": 0.0208350748784
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 584,
@@ -4467,8 +4469,9 @@
     {
       "rank": 738,
       "address": "0xc518478c0d29221764001007807327e80f1edb6c",
-      "balance_wei": "12604190907720684",
-      "balance_eth": 0.012604190907720685
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 739,
@@ -5470,8 +5473,9 @@
     {
       "rank": 905,
       "address": "0x8ed623111f2cbc8842eef8d55523de173ae3b42c",
-      "balance_wei": "8028748656933935",
-      "balance_eth": 0.008028748656933935
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 906,

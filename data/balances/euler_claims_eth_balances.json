@@ -1,17 +1,36 @@
 {
   "contract": "0xbc8021015db2ca0599e0692d63ae6b91564cf026",
   "balance_source": "weth",
-  "contract_eth_balance": 137.568733,
-  "total_eth_in_balances": 137.48305716,
-  "addresses_with_balance": 1631,
+  "contract_eth_balance": 137.565817,
+  "total_eth_in_balances": 137.48014,
+  "addresses_with_balance": 1600,
   "coverage_pct": 99.94,
-  "scan_date": "2026-10-17 04:20:32 UTC",
+  "scan_date": "2026-10-17 16:20:46 UTC",
   "distribution": {
-    ">=10 ETH": 5,
-    "1-10 ETH": 8,
-    "0.1-1 ETH": 52,
-    "0.01-0.1 ETH": 198,
-    "<0.01 ETH": 1374
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 5,
+      "total_eth": 88.275486
+    },
+    "1-10 ETH": {
+      "count": 8,
+      "total_eth": 22.888941
+    },
+    "0.1-1 ETH": {
+      "count": 52,
+      "total_eth": 17.197048
+    },
+    "0.01-0.1 ETH": {
+      "count": 198,
+      "total_eth": 6.652055
+    },
+    "<0.01 ETH": {
+      "count": 1337,
+      "total_eth": 2.466599
+    }
   },
   "meta": {
     "terms_hash": "0x427a506ff6e15bd1b7e4e93da52c8ec95f6af1279618a2f076946e83d8294996",
@@ -24965,8 +24984,8 @@
     },
     {
       "address": "0x7bbee3e3f5fc2f58ba6817676065a43d79519bab",
-      "balance_wei": "2216263314437338",
-      "balance_eth": 0.00221626,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "merkle_index": 1682,
       "merkle_proof": [
         "0x3a1cc05ec22133876c275dff79f2f266976fa9635624c0f1d21fb265328de958",
@@ -24996,7 +25015,8 @@
           "78785"
         ]
       ],
-      "rank": 702
+      "rank": 702,
+      "claimed": true
     },
     {
       "address": "0xd52138880a2cd4f55978d1aad2c39fb0761d0a7b",
@@ -40186,8 +40206,8 @@
     },
     {
       "address": "0xb58b3e8b334ebfda6eb27f0c13974e058085f422",
-      "balance_wei": "700446781549037",
-      "balance_eth": 0.00070045,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "merkle_index": 2212,
       "merkle_proof": [
         "0xb96c6f45270855bd140460321af8461e210e003bf0030c466a94d124a1453511",
@@ -40216,7 +40236,8 @@
           "24896"
         ]
       ],
-      "rank": 1140
+      "rank": 1140,
+      "claimed": true
     },
     {
       "address": "0x41f11935971811d262b2203aa3453fb55122eeee",
@@ -57214,5 +57235,6 @@
       ],
       "rank": 1637
     }
-  ]
+  ],
+  "last_event_refresh": "2026-10-19 10:52:35 UTC"
 }

@@ -1,10 +1,10 @@
 {
   "contract": "0xa46ed7080f0094306d354b9d22e084f1dfb1b074",
   "balance_source": "token",
-  "contract_eth_balance": 13.0,
-  "total_eth_in_balances": 13.0,
-  "addresses_with_balance": 4,
-  "coverage_pct": 100.0,
+  "contract_eth_balance": 0.26,
+  "total_eth_in_balances": 0.26,
+  "addresses_with_balance": 2,
+  "coverage_pct": 100,
   "scan_date": "2026-09-09 16:12:38 UTC",
   "description": "Foundation Futurists OpenZeppelin PaymentSplitter. 4 hardcoded payees (97/1/1/1 shares); release(account) is permissionless and pays the registered shareholder.",
   "meta": {
@@ -13,9 +13,10 @@
   "balances": [
     {
       "address": "0x2c2c46cc75e9cd8f877cee6fcf2b632b4a41cd53",
-      "balance_wei": "12610000000000000000",
-      "balance_eth": 12.61,
-      "rank": 1
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 1,
+      "claimed": true
     },
     {
       "address": "0x3c073a4763501e1cc330ad45c3e140f744e3035f",
@@ -25,9 +26,10 @@
     },
     {
       "address": "0xa2ee77df4fa9937af91998207cb2576bd8192cbe",
-      "balance_wei": "130000000000000000",
-      "balance_eth": 0.13,
-      "rank": 3
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 3,
+      "claimed": true
     },
     {
       "address": "0xeb264f44a80e7f0225dab0fb904223e20cd7fc71",
@@ -35,5 +37,6 @@
       "balance_eth": 0.13,
       "rank": 4
     }
-  ]
+  ],
+  "last_event_refresh": "2026-10-20 13:23:06 UTC"
 }

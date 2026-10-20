@@ -1,9 +1,9 @@
 {
   "contract": "0xe14ab3ee81abe340b45bb26b1b166a7d2df22585",
   "balance_source": "eth",
-  "contract_eth_balance": 85.745569,
-  "total_eth_in_balances": 85.744654,
-  "addresses_with_balance": 1762,
+  "contract_eth_balance": 85.638281,
+  "total_eth_in_balances": 85.637366,
+  "addresses_with_balance": 1760,
   "coverage_pct": 100,
   "scan_date": "2026-09-09 16:11:49 UTC",
   "description": "Current TweetMarket high bidders can cancel each bid by tweet ID after the lockup.",
@@ -4241,25 +4241,11 @@
     },
     {
       "address": "0x4f6e38fdc828cf4bebb7ce8c01980d05ec4591e4",
-      "balance_wei": "78267960000000000",
-      "balance_eth": 0.07826796,
-      "tweetmarket_bids": [
-        {
-          "tweet_id": "532335238777946112",
-          "wei": "71745630000000000",
-          "eth": "0.071745630000000005",
-          "last_tx_hash": "0xb5d4291ca69c2161771321987bfb2bdcc2f29e947ed23901047e4065b85aa92c",
-          "last_tx_date": "2021-03-06 13:02:45.000 UTC"
-        },
-        {
-          "tweet_id": "1037973950150541312",
-          "wei": "6522330000000000",
-          "eth": "0.006522330000000000",
-          "last_tx_hash": "0xb641494506d42fe15d82e2df82099ae6545d63a48d02d7ab8ede9938bf8b5c52",
-          "last_tx_date": "2021-03-06 13:03:52.000 UTC"
-        }
-      ],
-      "rank": 126
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "tweetmarket_bids": [],
+      "rank": 126,
+      "claimed": true
     },
     {
       "address": "0xb520f068a908a1782a543aacc3847adb77a04778",
@@ -9438,18 +9424,11 @@
     },
     {
       "address": "0x35f8d97034cb67fa7cb4b70fd451d3ce1b0748f4",
-      "balance_wei": "29019770000000000",
-      "balance_eth": 0.02901977,
-      "tweetmarket_bids": [
-        {
-          "tweet_id": "1336504411892301824",
-          "wei": "29019770000000000",
-          "eth": "0.029019770000000000",
-          "last_tx_hash": "0x0590133127233383ba3fcf1cff6511737fc1962f35ecece8768bdf17d92854d2",
-          "last_tx_date": "2021-03-08 15:24:48.000 UTC"
-        }
-      ],
-      "rank": 325
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "tweetmarket_bids": [],
+      "rank": 325,
+      "claimed": true
     },
     {
       "address": "0xb6092f68adb09359ff988098ef19551623ec6993",
@@ -35288,5 +35267,5 @@
       "rank": 1780
     }
   ],
-  "last_event_refresh": "2026-10-11 23:23:05 UTC"
+  "last_event_refresh": "2026-10-20 03:23:05 UTC"
 }

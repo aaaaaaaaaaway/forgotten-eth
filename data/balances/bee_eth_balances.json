@@ -1,24 +1,49 @@
 {
   "contract": "0x3e63e6f0d6e90e120eb31e005aa149b476a89492",
-  "contract_eth_balance": 30.41,
-  "total_eth_in_balances": 30.41,
-  "addresses_with_balance": 6,
-  "coverage_pct": 100.0,
+  "contract_eth_balance": 30.31,
+  "total_eth_in_balances": 30.31,
+  "addresses_with_balance": 5,
+  "coverage_pct": 100,
   "scan_date": "2026-04-10 16:49:02 UTC",
   "balance_source": "weth",
-  "description": "Bee2 Finance WETH staking pool \u2014 Synthetix StakingRewards fork. Defunct yield farm, exit()/withdraw() fully permissionless.",
-  "distribution": {},
+  "description": "Bee2 Finance WETH staking pool — Synthetix StakingRewards fork. Defunct yield farm, exit()/withdraw() fully permissionless.",
+  "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 2,
+      "total_eth": 30
+    },
+    "1-10 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "0.1-1 ETH": {
+      "count": 2,
+      "total_eth": 0.3
+    },
+    "0.01-0.1 ETH": {
+      "count": 1,
+      "total_eth": 0.01
+    },
+    "<0.01 ETH": {
+      "count": 0,
+      "total_eth": 0
+    }
+  },
   "balances": [
     {
       "address": "0x5b990a6c30786a381ffed01b35139cab8620e4a7",
       "balance_wei": "20000000000000000000",
-      "balance_eth": 20.0,
+      "balance_eth": 20,
       "rank": 1
     },
     {
       "address": "0x0c18cc3a37e6969df5cce67d1579d645115b4861",
       "balance_wei": "10000000000000000000",
-      "balance_eth": 10.0,
+      "balance_eth": 10,
       "rank": 2
     },
     {
@@ -29,9 +54,10 @@
     },
     {
       "address": "0x3f240c6144408906c356bca4ef30ed6f4d656328",
-      "balance_wei": "100000000000000000",
-      "balance_eth": 0.1,
-      "rank": 4
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 4,
+      "claimed": true
     },
     {
       "address": "0xfb71f273284e52e6191b061052c298f10c2a6817",
@@ -45,5 +71,6 @@
       "balance_eth": 0.01,
       "rank": 6
     }
-  ]
+  ],
+  "last_event_refresh": "2026-10-19 18:23:06 UTC"
 }

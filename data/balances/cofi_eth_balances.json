@@ -1,9 +1,9 @@
 {
   "contract": "0x0061c52768378b84306b2665f098c3e0b2c03308",
   "balance_source": "weth",
-  "contract_eth_balance": 49.020001,
-  "total_eth_in_balances": 48.673848,
-  "addresses_with_balance": 331,
+  "contract_eth_balance": 49.017471,
+  "total_eth_in_balances": 48.671318,
+  "addresses_with_balance": 330,
   "coverage_pct": 99.29,
   "scan_date": "2026-09-20 01:47:29 UTC",
   "description": "WETH reward pool — CoFiX Staking. Claim via getReward().",
@@ -29,8 +29,8 @@
       "total_eth": 3.452106
     },
     "<0.01 ETH": {
-      "count": 187,
-      "total_eth": 0.501302
+      "count": 186,
+      "total_eth": 0.498772
     }
   },
   "name": "CoFiX Staking",
@@ -1335,8 +1335,9 @@
     {
       "rank": 217,
       "address": "0x7ff3c36212f5b10846b7a2569b7b8a822a900050",
-      "balance_wei": "2530017072285348",
-      "balance_eth": 0.00253
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 218,
@@ -2426,5 +2427,5 @@
       "balance_eth": 0
     }
   ],
-  "last_event_refresh": "2026-10-11 16:33:31 UTC"
+  "last_event_refresh": "2026-10-20 06:23:05 UTC"
 }
