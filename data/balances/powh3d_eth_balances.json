@@ -1,10 +1,10 @@
 {
   "contract": "0xB3775fB83F7D12A36E0475aBdD1FCA35c091efBe",
   "balance_source": "eth",
-  "contract_eth_balance": 2029.906872,
-  "total_eth_in_balances": 2440.034608,
-  "addresses_with_balance": 17197,
-  "coverage_pct": 120.2,
+  "contract_eth_balance": 2026.718925,
+  "total_eth_in_balances": 2485.91853573,
+  "addresses_with_balance": 17196,
+  "coverage_pct": 122.66,
   "scan_date": "2026-09-20 01:43:38 UTC",
   "description": "ETH balances in defunct PoWH3D contract",
   "distribution": {
@@ -17,8 +17,8 @@
       "total_eth": 483.517876
     },
     "1-10 ETH": {
-      "count": 392,
-      "total_eth": 902.211571
+      "count": 391,
+      "total_eth": 899.018952
     },
     "0.1-1 ETH": {
       "count": 1704,
@@ -29,13 +29,13 @@
       "total_eth": 89.151663
     },
     "<0.01 ETH": {
-      "count": 12459,
-      "total_eth": 15.36919
+      "count": 12460,
+      "total_eth": 15.373863
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 19187,
-  "last_event_refresh": "2026-10-27 09:23:06 UTC",
+  "last_event_refresh": "2026-10-27T11:17:04Z",
   "balances": [
     {
       "rank": 1,
@@ -620,8 +620,9 @@
     {
       "rank": 97,
       "address": "0x2ce0c7ebda7d0681589bc12cb650232f7b88b19b",
-      "balance_wei": "3192619409440522761",
-      "balance_eth": 3.192619409440523
+      "balance_wei": "4673000000000000",
+      "balance_eth": 0.004673,
+      "claimed": true
     },
     {
       "rank": 98,

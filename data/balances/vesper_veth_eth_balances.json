@@ -5,7 +5,7 @@
   "total_eth_in_balances": 451.09391639,
   "addresses_with_balance": 253,
   "coverage_pct": 99.04,
-  "scan_date": "2026-10-27 05:24:40 UTC",
+  "scan_date": "2026-10-27 17:24:58 UTC",
   "description": "Vesper vETH pool (2020). Holders exit pro-rata with withdrawETH(shares) on the 2020 pool, which pulls WETH back from the 2022 pool behind it and pays native ETH. Amounts are per holder at the scan block. Contract holders, holders whose claim reverts and dust are not listed.",
   "distribution": {
     ">0.01 ETH": 175,
@@ -14,7 +14,7 @@
     ">10 ETH": 9
   },
   "meta": {
-    "scan_block": 26281930,
+    "scan_block": 26285526,
     "claim_contract": "0x103cc17c2b1586e5cd9bad308690bcd0bbe54d5e",
     "v5_pool": "0x951397286e4b78ae5827502ed494d7902d3cca8c",
     "bridge_strategy": "0x99bfef73a7935492a19b63526d983e21eb37b12e",

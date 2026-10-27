@@ -2,19 +2,19 @@
   "contract": "0x717170b66654292dfbd89c39f5ae6753d2ac1381",
   "balance_source": "weth",
   "contract_eth_balance": 62.37022817,
-  "total_eth_in_balances": 26.4524457,
-  "addresses_with_balance": 63,
-  "coverage_pct": 42.41,
-  "scan_date": "2026-10-27 05:24:38 UTC",
+  "total_eth_in_balances": 27.09364526,
+  "addresses_with_balance": 65,
+  "coverage_pct": 43.44,
+  "scan_date": "2026-10-27 17:24:57 UTC",
   "description": "Cryptex TCAP ETH vault handler: ETH collateral locked in per-user vaults to mint TCAP. Listed per vault owner is the collateral removeCollateralETH(amount) pays out in native ETH without burning TCAP: all of it for a vault with no debt, and for a vault with debt the part above the minimum collateral ratio, less a price buffer. Collateral that needs TCAP burned first is counted in meta only.",
   "distribution": {
-    ">0.01 ETH": 24,
+    ">0.01 ETH": 25,
     ">0.1 ETH": 7,
     ">1 ETH": 2,
     ">10 ETH": 1
   },
   "meta": {
-    "snapshot_block": 26281930,
+    "snapshot_block": 26285526,
     "claim_call": "removeCollateralETH(uint256)",
     "vault_counter": 625,
     "vaults_total": 624,
@@ -28,7 +28,7 @@
     "safety_buffer_bps": 500,
     "min_list_wei": "100000000000000",
     "tcap_price_wei": "269440227346626660000",
-    "collateral_price_wei": "2308320000000000000000",
+    "collateral_price_wei": "2350273599520000000000",
     "zero_debt_vaults": {
       "addresses": 41,
       "collateral_wei": "412052027804360167"
@@ -37,26 +37,26 @@
       "addresses": 72,
       "collateral_wei": "61958176145617899216",
       "debt_tcap_wei": "195371266248024721147",
-      "removable_wei": "27751379701734486218",
-      "listed_wei": "26040503232409216668"
+      "removable_wei": "28361961888173689900",
+      "listed_wei": "26681702790626501029"
     },
     "token_gated": {
       "addresses": 72,
-      "weth_wei": "34206796443883412998",
+      "weth_wei": "33596214257444209316",
       "tcap_debt_wei": "195371266248024721147"
     },
-    "safety_buffer_held_back_wei": "1710264684727651441",
+    "safety_buffer_held_back_wei": "1679735575405691248",
     "below_min_ratio": {
       "addresses": 7,
       "collateral_wei": "1502749330384175",
       "debt_tcap_wei": "11267932120759148"
     },
     "dust_unlisted": {
-      "addresses": 43,
-      "wei": "721341334210573"
+      "addresses": 41,
+      "wei": "633078878090087"
     },
     "listed_owner_kinds": {
-      "eoa": 57,
+      "eoa": 59,
       "eip7702": 6,
       "contract": 0
     }
@@ -64,53 +64,53 @@
   "balances": [
     {
       "address": "0x42703d57290c883d30ccfba2fd95cfdd6ad43389",
-      "balance_wei": "21342772267152793599",
-      "balance_eth": 21.342772267152792,
+      "balance_wei": "21818617571650837994",
+      "balance_eth": 21.81861757165084,
       "vault_id": 83,
       "collateral_wei": "48000000000000000000",
       "debt_wei": "145000000000000000000",
-      "removable_wei": "22612164063955041523",
-      "vault_ratio_pct": 283
+      "removable_wei": "23065350068238893328",
+      "vault_ratio_pct": 288
     },
     {
       "address": "0x40d5bdc556148def83e819aee4104819da7dcdc5",
-      "balance_wei": "3378016462097271934",
-      "balance_eth": 3.3780164620972717,
+      "balance_wei": "3500788764286959670",
+      "balance_eth": 3.5007887642869595,
       "vault_id": 436,
       "collateral_wei": "10255817267988994200",
       "debt_wei": "37411283980796081126",
-      "removable_wei": "3705530786187353947",
-      "vault_ratio_pct": 234
+      "removable_wei": "3822456788272770838",
+      "vault_ratio_pct": 239
     },
     {
       "address": "0xdc822485f112d3a4339c05694aad9c381c9af2c1",
-      "balance_wei": "294382160252955090",
-      "balance_eth": 0.29438216025295505,
+      "balance_wei": "305211743044979548",
+      "balance_eth": 0.3052117430449795,
       "vault_id": 69,
       "collateral_wei": "901063894862581167",
       "debt_wei": "3300000000000000000",
-      "removable_wei": "323271766662937284",
-      "vault_ratio_pct": 233
+      "removable_wei": "333585655036293911",
+      "vault_ratio_pct": 238
     },
     {
       "address": "0xd27e8256196d6f794c4329644c225b7b81a260f7",
-      "balance_wei": "271405002374399136",
-      "balance_eth": 0.27140500237439913,
+      "balance_wei": "281269080107938361",
+      "balance_eth": 0.2812690801079384,
       "vault_id": 498,
       "collateral_wei": "823998385206745839",
       "debt_wei": "3005790448792934780",
-      "removable_wei": "297718972985463265",
-      "vault_ratio_pct": 234
+      "removable_wei": "307113332731691098",
+      "vault_ratio_pct": 239
     },
     {
       "address": "0x429fc000c964502ee09322f5a5cb250b9d494501",
-      "balance_wei": "192249734307601533",
-      "balance_eth": 0.19224973430760153,
+      "balance_wei": "193459111596617153",
+      "balance_eth": 0.19345911159661716,
       "vault_id": 151,
       "collateral_wei": "260000000000000000",
       "debt_wei": "368522511937460120",
-      "removable_wei": "195475937435810984",
-      "vault_ratio_pct": 604
+      "removable_wei": "196627725330111575",
+      "vault_ratio_pct": 615
     },
     {
       "address": "0x3229a9a0e4ee9e23a47edeb23404d7e8eeb2b940",
@@ -141,83 +141,93 @@
     },
     {
       "address": "0xe8342f3f61e8fdb281061a79506ba4f39ad32c0b",
-      "balance_wei": "83141573010144520",
-      "balance_eth": 0.0831415730101445,
+      "balance_wei": "86163311489118670",
+      "balance_eth": 0.08616331148911867,
       "vault_id": 429,
       "collateral_wei": "252421736167564693",
       "debt_wei": "920786808884130537",
-      "removable_wei": "91202533160497862",
-      "vault_ratio_pct": 234
+      "removable_wei": "94080379330949433",
+      "vault_ratio_pct": 239
     },
     {
       "address": "0x9ba7ec4c0d21974c6d5582d3b58a81b9102f2bcc",
-      "balance_wei": "63565462983171537",
-      "balance_eth": 0.06356546298317153,
+      "balance_wei": "65997923889295261",
+      "balance_eth": 0.06599792388929526,
       "vault_id": 441,
       "collateral_wei": "199833833633983472",
       "debt_wei": "741221628234832186",
-      "removable_wei": "70054433014162582",
-      "vault_ratio_pct": 230
+      "removable_wei": "72371062448566128",
+      "vault_ratio_pct": 235
     },
     {
       "address": "0x23cf923e6587977ddaf1c9b61f032fb91b3c4262",
-      "balance_wei": "60148003614059597",
-      "balance_eth": 0.0601480036140596,
+      "balance_wei": "62334052426630219",
+      "balance_eth": 0.06233405242663022,
       "vault_id": 581,
       "collateral_wei": "182612175228166135",
       "debt_wei": "666134718208704926",
-      "removable_wei": "65979630833778956",
-      "vault_ratio_pct": 234
+      "removable_wei": "68061582083846215",
+      "vault_ratio_pct": 239
     },
     {
       "address": "0xac7c15ba75ea3ae015e9034f5f2d1ecfc5faf307",
-      "balance_wei": "53623823854347562",
-      "balance_eth": 0.05362382385434756,
+      "balance_wei": "55572754648700502",
+      "balance_eth": 0.055572754648700505,
       "vault_id": 26,
       "collateral_wei": "162804457832503471",
       "debt_wei": "593879906998930384",
-      "removable_wei": "58822901662831176",
-      "vault_ratio_pct": 234
+      "removable_wei": "60679026228881595",
+      "vault_ratio_pct": 239
     },
     {
       "address": "0x28f00731408efd5851adbe89748c047fb94abd35",
-      "balance_wei": "40966891970013179",
-      "balance_eth": 0.04096689197001318,
+      "balance_wei": "42681162593096939",
+      "balance_eth": 0.042681162593096934,
       "vault_id": 494,
       "collateral_wei": "137001678828903953",
       "debt_wei": "522374053074567610",
-      "removable_wei": "45539977058531787",
-      "vault_ratio_pct": 224
+      "removable_wei": "47172615747182987",
+      "vault_ratio_pct": 228
     },
     {
       "address": "0x3954a503bf87f49443af1e37a23393b77ffaf1cd",
-      "balance_wei": "40476762342696816",
-      "balance_eth": 0.040476762342696815,
+      "balance_wei": "42170523359578904",
+      "balance_eth": 0.0421705233595789,
       "vault_id": 417,
       "collateral_wei": "135362584951944043",
       "debt_wei": "516124347821345459",
-      "removable_wei": "44995134847899065",
-      "vault_ratio_pct": 224
+      "removable_wei": "46608240578262958",
+      "vault_ratio_pct": 228
     },
     {
       "address": "0x5eb2b16e1de28e6a8f8291ccbf9b9ae1b1384654",
-      "balance_wei": "38332314100236590",
-      "balance_eth": 0.03833231410023659,
+      "balance_wei": "38338877483746908",
+      "balance_eth": 0.03833887748374691,
       "vault_id": 525,
       "collateral_wei": "38700000000000000",
       "debt_wei": "2000000000000000",
-      "removable_wei": "38349822952606276",
-      "vault_ratio_pct": 16577
+      "removable_wei": "38356073794044674",
+      "vault_ratio_pct": 16878
     },
     {
       "address": "0x6239b06fe8aa9694ac99fc621fc787a1b60e436a",
-      "balance_wei": "37564628085724353",
-      "balance_eth": 0.037564628085724354,
+      "balance_wei": "37695825821831151",
+      "balance_eth": 0.037695825821831154,
       "vault_id": 465,
       "collateral_wei": "44914428317802227",
       "debt_wei": "39978689619630002",
-      "removable_wei": "37914618572966157",
-      "vault_ratio_pct": 962
+      "removable_wei": "38039568797829773",
+      "vault_ratio_pct": 979
+    },
+    {
+      "address": "0xe31ce47f1a20388a47e75f064a58864cd2fb8e9b",
+      "balance_wei": "35464179419674267",
+      "balance_eth": 0.035464179419674266,
+      "vault_id": 575,
+      "collateral_wei": "113835983454927162",
+      "debt_wei": "434045513685589159",
+      "removable_wei": "39196170088019643",
+      "vault_ratio_pct": 228
     },
     {
       "address": "0x427f2de3579131f8c81e3cde10374e3f9760ff02",
@@ -229,34 +239,24 @@
       "removable_wei": "35000000000000000"
     },
     {
-      "address": "0xe31ce47f1a20388a47e75f064a58864cd2fb8e9b",
-      "balance_wei": "34039775836048548",
-      "balance_eth": 0.03403977583604855,
-      "vault_id": 575,
-      "collateral_wei": "113835983454927162",
-      "debt_wei": "434045513685589159",
-      "removable_wei": "37839595246471339",
-      "vault_ratio_pct": 224
-    },
-    {
       "address": "0x320408feb1e086b1fbd27c598a735699ea10bd9a",
-      "balance_wei": "28132462888781525",
-      "balance_eth": 0.028132462888781525,
+      "balance_wei": "29154923043690683",
+      "balance_eth": 0.029154923043690682,
       "vault_id": 25,
       "collateral_wei": "85411483905763444",
       "debt_wei": "311564958318165233",
-      "removable_wei": "30860035318161617",
-      "vault_ratio_pct": 234
+      "removable_wei": "31833806894265576",
+      "vault_ratio_pct": 239
     },
     {
       "address": "0x06355362cd8ab65f6349535d0aac83dd911c3d54",
-      "balance_wei": "21464188732208091",
-      "balance_eth": 0.02146418873220809,
+      "balance_wei": "22411288376669553",
+      "balance_eth": 0.02241128837666955,
       "vault_id": 508,
       "collateral_wei": "74521454758485671",
       "debt_wei": "288601037246289161",
-      "removable_wei": "23990725209649881",
-      "vault_ratio_pct": 221
+      "removable_wei": "24892724871041749",
+      "vault_ratio_pct": 225
     },
     {
       "address": "0x76e6f90f36d1545e28c749abef10494759c956d8",
@@ -278,23 +278,33 @@
     },
     {
       "address": "0x5ea81d079e26f14731e0e430d6a4fa959b48ece2",
-      "balance_wei": "12566178750159047",
-      "balance_eth": 0.012566178750159048,
+      "balance_wei": "13149065664536461",
+      "balance_eth": 0.01314906566453646,
       "vault_id": 536,
       "collateral_wei": "45219961549268670",
       "debt_wei": "177617813574689398",
-      "removable_wei": "14121120788211886",
-      "vault_ratio_pct": 218
+      "removable_wei": "14676251182857042",
+      "vault_ratio_pct": 222
     },
     {
       "address": "0x6ce19d042ffb0390078525a6aabddeff4e9d54db",
-      "balance_wei": "10805850906920678",
-      "balance_eth": 0.010805850906920678,
+      "balance_wei": "11416319258047375",
+      "balance_eth": 0.011416319258047376,
       "vault_id": 461,
       "collateral_wei": "45004767457849837",
       "debt_wei": "186022453256623159",
-      "removable_wei": "12434370742679209",
-      "vault_ratio_pct": 207
+      "removable_wei": "13015769172323683",
+      "vault_ratio_pct": 211
+    },
+    {
+      "address": "0x275ce75e597a67d13f0ddb772e734a679a922cec",
+      "balance_wei": "10145171602352520",
+      "balance_eth": 0.01014517160235252,
+      "vault_id": 606,
+      "collateral_wei": "37532848570215427",
+      "debt_wei": "151680804908150983",
+      "removable_wei": "11449346696060277",
+      "vault_ratio_pct": 215
     },
     {
       "address": "0x8a9d46d28003673cd4fe7a56ecfcfa2be6372e64",
@@ -304,16 +314,6 @@
       "collateral_wei": "9916039689889172",
       "debt_wei": "0",
       "removable_wei": "9916039689889172"
-    },
-    {
-      "address": "0x275ce75e597a67d13f0ddb772e734a679a922cec",
-      "balance_wei": "9647401955469571",
-      "balance_eth": 0.009647401955469571,
-      "vault_id": 606,
-      "collateral_wei": "37532848570215427",
-      "debt_wei": "151680804908150983",
-      "removable_wei": "10975280365695564",
-      "vault_ratio_pct": 211
     },
     {
       "address": "0x9103e518b3e39cb8fa4096331e74e24d8d8e2622",
@@ -335,13 +335,13 @@
     },
     {
       "address": "0x4dce05a53e15edb22729f585f2a8f0ea199408b9",
-      "balance_wei": "6690459293698958",
-      "balance_eth": 0.006690459293698958,
+      "balance_wei": "7107592247532890",
+      "balance_eth": 0.00710759224753289,
       "vault_id": 427,
       "collateral_wei": "30058575023991014",
       "debt_wei": "127109120830189276",
-      "removable_wei": "7803226709427151",
-      "vault_ratio_pct": 202
+      "removable_wei": "8200496189268991",
+      "vault_ratio_pct": 206
     },
     {
       "address": "0x622a13dac538a0505bbdccb4f634a3acb949ac6e",
@@ -372,13 +372,33 @@
     },
     {
       "address": "0xe41a1881858348b0709d73c2cfcf96f2facf5aaf",
-      "balance_wei": "3033968783228868",
-      "balance_eth": 0.003033968783228868,
+      "balance_wei": "3262911728877825",
+      "balance_eth": 0.003262911728877825,
       "vault_id": 540,
       "collateral_wei": "15859532432387863",
       "debt_wei": "69763695901375061",
-      "removable_wei": "3644709909379296",
-      "vault_ratio_pct": 194
+      "removable_wei": "3862750809997350",
+      "vault_ratio_pct": 198
+    },
+    {
+      "address": "0x1a415341ea3ba72ef77f7851cdc6242d660c796b",
+      "balance_wei": "3113806424767183",
+      "balance_eth": 0.003113806424767183,
+      "vault_id": 509,
+      "collateral_wei": "14889337012886917",
+      "debt_wei": "65216263501370157",
+      "removable_wei": "3674545976582408",
+      "vault_ratio_pct": 199
+    },
+    {
+      "address": "0xe53eca73fc23b395d4a6a5c652202923a7d0b240",
+      "balance_wei": "3113806424767183",
+      "balance_eth": 0.003113806424767183,
+      "vault_id": 529,
+      "collateral_wei": "14889337012886917",
+      "debt_wei": "65216263501370157",
+      "removable_wei": "3674545976582408",
+      "vault_ratio_pct": 199
     },
     {
       "address": "0xdc51db13fc0c4546965ac28fadd062a23092f32c",
@@ -390,54 +410,34 @@
       "removable_wei": "2999999999999974"
     },
     {
-      "address": "0x1a415341ea3ba72ef77f7851cdc6242d660c796b",
-      "balance_wei": "2899786750532464",
-      "balance_eth": 0.002899786750532464,
-      "vault_id": 509,
-      "collateral_wei": "14889337012886917",
-      "debt_wei": "65216263501370157",
-      "removable_wei": "3470717715406486",
-      "vault_ratio_pct": 195
-    },
-    {
-      "address": "0xe53eca73fc23b395d4a6a5c652202923a7d0b240",
-      "balance_wei": "2899786750532464",
-      "balance_eth": 0.002899786750532464,
-      "vault_id": 529,
-      "collateral_wei": "14889337012886917",
-      "debt_wei": "65216263501370157",
-      "removable_wei": "3470717715406486",
-      "vault_ratio_pct": 195
-    },
-    {
       "address": "0x6b1ef382f3639b3a7e1a21786702c48406bd8e75",
-      "balance_wei": "2665698652870817",
-      "balance_eth": 0.002665698652870817,
+      "balance_wei": "2725217656711486",
+      "balance_eth": 0.002725217656711486,
       "vault_id": 622,
       "collateral_wei": "6000000000000000",
       "debt_wei": "18136683235743680",
-      "removable_wei": "2824474907496016",
-      "vault_ratio_pct": 283
+      "removable_wei": "2881159673058558",
+      "vault_ratio_pct": 288
     },
     {
       "address": "0x10271d0d0e9b1f3b79ad0dfd1612190fba1a1c38",
-      "balance_wei": "1615705011829512",
-      "balance_eth": 0.001615705011829512,
+      "balance_wei": "1943874187345405",
+      "balance_eth": 0.001943874187345405,
       "vault_id": 295,
       "collateral_wei": "20000000000000000",
       "debt_wei": "100000000000000000",
-      "removable_wei": "2491147630313821",
-      "vault_ratio_pct": 171
+      "removable_wei": "2803689702233719",
+      "vault_ratio_pct": 174
     },
     {
       "address": "0xbf6d989ad2ac8ff6ac21875611e205401bb57bc7",
-      "balance_wei": "1488848762366318",
-      "balance_eth": 0.001488848762366318,
+      "balance_wei": "1590699759014828",
+      "balance_eth": 0.001590699759014828,
       "vault_id": 323,
       "collateral_wei": "7194621598227000",
       "debt_wei": "31036125342484464",
-      "removable_wei": "1760552230740636",
-      "vault_ratio_pct": 198
+      "removable_wei": "1857553179929693",
+      "vault_ratio_pct": 202
     },
     {
       "address": "0x4a7982854f0deff87334e7e519edb3478624680f",
@@ -458,6 +458,16 @@
       "removable_wei": "1148768669031187"
     },
     {
+      "address": "0x72866e0fb4a66bc5e15e15e763b447b77ac30d59",
+      "balance_wei": "1105163834953475",
+      "balance_eth": 0.001105163834953475,
+      "vault_id": 456,
+      "collateral_wei": "9784030087122463",
+      "debt_wei": "48066048842473308",
+      "removable_wei": "1518443180294855",
+      "vault_ratio_pct": 177
+    },
+    {
       "address": "0x71f2a07aff9ccff1a3d4752511d5b63436db21ce",
       "balance_wei": "1000000000000000",
       "balance_eth": 0.001,
@@ -465,16 +475,6 @@
       "collateral_wei": "1000000000000000",
       "debt_wei": "0",
       "removable_wei": "1000000000000000"
-    },
-    {
-      "address": "0x72866e0fb4a66bc5e15e15e763b447b77ac30d59",
-      "balance_wei": "947425878764064",
-      "balance_eth": 0.000947425878764064,
-      "vault_id": 456,
-      "collateral_wei": "9784030087122463",
-      "debt_wei": "48066048842473308",
-      "removable_wei": "1368216555352559",
-      "vault_ratio_pct": 174
     },
     {
       "address": "0x8ab18be31c2a400c561bd5bc212a4ae8986d6013",
@@ -486,6 +486,16 @@
       "removable_wei": "861882189486302"
     },
     {
+      "address": "0xa0e2c637b6a865ef258e4404d90d3fec78ad34f5",
+      "balance_wei": "586481272798354",
+      "balance_eth": 0.000586481272798354,
+      "vault_id": 573,
+      "collateral_wei": "6289691215104901",
+      "debt_wei": "31586011315392278",
+      "removable_wei": "858062698622476",
+      "vault_ratio_pct": 173
+    },
+    {
       "address": "0xf0177f327dca75588b96c96b4418064894ee234f",
       "balance_wei": "540900653886000",
       "balance_eth": 0.000540900653886,
@@ -495,184 +505,194 @@
       "removable_wei": "540900653886000"
     },
     {
-      "address": "0x0dc6794f2ec9dc2e9b23ab2b1aed26d48beb78b9",
-      "balance_wei": "506634770554294",
-      "balance_eth": 0.000506634770554294,
-      "vault_id": 275,
-      "collateral_wei": "1000000000000000",
-      "debt_wei": "2683623330474000",
-      "removable_wei": "530128352908851",
-      "vault_ratio_pct": 319
-    },
-    {
       "address": "0x3213977900a71e183818472e795c76af8cbc3a3e",
-      "balance_wei": "496978172815722",
-      "balance_eth": 0.000496978172815722,
+      "balance_wei": "528409554338494",
+      "balance_eth": 0.000528409554338494,
       "vault_id": 64,
       "collateral_wei": "2257788854964600",
       "debt_wei": "9577798241824800",
-      "removable_wei": "580826300537097",
-      "vault_ratio_pct": 201
+      "removable_wei": "610760949606404",
+      "vault_ratio_pct": 205
     },
     {
-      "address": "0xa0e2c637b6a865ef258e4404d90d3fec78ad34f5",
-      "balance_wei": "482825719886275",
-      "balance_eth": 0.000482825719886275,
-      "vault_id": 573,
-      "collateral_wei": "6289691215104901",
-      "debt_wei": "31586011315392278",
-      "removable_wei": "759343124420495",
-      "vault_ratio_pct": 170
+      "address": "0x0dc6794f2ec9dc2e9b23ab2b1aed26d48beb78b9",
+      "balance_wei": "515441595111863",
+      "balance_eth": 0.000515441595111863,
+      "vault_id": 275,
+      "collateral_wei": "1000000000000000",
+      "debt_wei": "2683623330474000",
+      "removable_wei": "538515804868441",
+      "vault_ratio_pct": 325
     },
     {
       "address": "0xa28fc9673715cb19ad0b2cc5559a91b5fd14efb4",
-      "balance_wei": "420489751699582",
-      "balance_eth": 0.000420489751699582,
+      "balance_wei": "448914518425629",
+      "balance_eth": 0.000448914518425629,
       "vault_id": 35,
       "collateral_wei": "2012867511250200",
       "debt_wei": "8661619934706470",
-      "removable_wei": "496317264059135",
-      "vault_ratio_pct": 199
+      "removable_wei": "523388470464894",
+      "vault_ratio_pct": 202
     },
     {
       "address": "0xd4d3eab4c0f333512491b78dc0907debf7609ca9",
-      "balance_wei": "374714697547872",
-      "balance_eth": 0.000374714697547872,
+      "balance_wei": "397347693916423",
+      "balance_eth": 0.000397347693916423,
       "vault_id": 50,
       "collateral_wei": "1642632932255700",
       "debt_wei": "6896746573766790",
-      "removable_wei": "435091756343483",
-      "vault_ratio_pct": 204
+      "removable_wei": "456646990980198",
+      "vault_ratio_pct": 207
     },
     {
       "address": "0x2da80ff7e1008a386dd3a77846500089a05add0c",
-      "balance_wei": "329172519025169",
-      "balance_eth": 0.000329172519025169,
+      "balance_wei": "341136127974904",
+      "balance_eth": 0.000341136127974904,
       "vault_id": 500,
       "collateral_wei": "999383289763422",
       "debt_wei": "3645561448886153",
-      "removable_wei": "361087317631753",
-      "vault_ratio_pct": 234
+      "removable_wei": "372481230917214",
+      "vault_ratio_pct": 239
     },
     {
       "address": "0x3b66c992860abd1ec94b917e222dca78ad55032f",
-      "balance_wei": "311288204575712",
-      "balance_eth": 0.000311288204575712,
+      "balance_wei": "330180928272037",
+      "balance_eth": 0.000330180928272037,
       "vault_id": 59,
       "collateral_wei": "1369673426214000",
       "debt_wei": "5757007393100000",
-      "removable_wei": "361687500844202",
-      "vault_ratio_pct": 203
+      "removable_wei": "379680571031178",
+      "vault_ratio_pct": 207
     },
     {
       "address": "0x6bcbc6fa460241ac1dfa7588160b51ff94f88733",
-      "balance_wei": "267098350895046",
-      "balance_eth": 0.000267098350895046,
+      "balance_wei": "324440423000177",
+      "balance_eth": 0.000324440423000177,
       "vault_id": 568,
       "collateral_wei": "3479446272226910",
       "debt_wei": "17473326681272648",
-      "removable_wei": "420067299529896",
-      "vault_ratio_pct": 170
-    },
-    {
-      "address": "0x922bf6407b136be55e827f7aea11f5f47a90c88d",
-      "balance_wei": "264916863031838",
-      "balance_eth": 0.000264916863031838,
-      "vault_id": 28,
-      "collateral_wei": "1120701524837500",
-      "debt_wei": "4654976774232153",
-      "removable_wei": "305668513594012",
-      "vault_ratio_pct": 206
+      "removable_wei": "474678796772878",
+      "vault_ratio_pct": 173
     },
     {
       "address": "0xb45e2b252969394a48e46616378f19b1f1f32bdd",
-      "balance_wei": "238820103071368",
-      "balance_eth": 0.000238820103071368,
+      "balance_wei": "286501704131204",
+      "balance_eth": 0.000286501704131204,
       "vault_id": 154,
       "collateral_wei": "2909980848178651",
       "debt_wei": "14529579441724910",
-      "removable_wei": "366018233790763",
-      "vault_ratio_pct": 171
+      "removable_wei": "411429282419177",
+      "vault_ratio_pct": 174
     },
     {
       "address": "0xcf83d441d8838acb8c4d77f7dbc661ad9aaea7da",
-      "balance_wei": "238746718317505",
-      "balance_eth": 0.000238746718317505,
+      "balance_wei": "286413667752487",
+      "balance_eth": 0.000286413667752487,
       "vault_id": 546,
       "collateral_wei": "2909086667891721",
       "debt_wei": "14525114785704135",
-      "removable_wei": "365905763535325",
-      "vault_ratio_pct": 171
+      "removable_wei": "411302858235308",
+      "vault_ratio_pct": 174
+    },
+    {
+      "address": "0x922bf6407b136be55e827f7aea11f5f47a90c88d",
+      "balance_wei": "280193061932292",
+      "balance_eth": 0.000280193061932292,
+      "vault_id": 28,
+      "collateral_wei": "1120701524837500",
+      "debt_wei": "4654976774232153",
+      "removable_wei": "320217274451587",
+      "vault_ratio_pct": 210
     },
     {
       "address": "0xb75e6a898f4d7dd32efea8d27094432b0f90618d",
-      "balance_wei": "191422010787662",
-      "balance_eth": 0.000191422010787662,
+      "balance_wei": "211070676325550",
+      "balance_eth": 0.00021107067632555,
       "vault_id": 156,
       "collateral_wei": "1292155688180000",
       "debt_wei": "5987358656400000",
-      "removable_wei": "243837900187298",
-      "vault_ratio_pct": 184
+      "removable_wei": "262550914985285",
+      "vault_ratio_pct": 188
     },
     {
       "address": "0x53819902e74a6a484097851735b412a3ebf467f7",
-      "balance_wei": "165201060930345",
-      "balance_eth": 0.000165201060930345,
+      "balance_wei": "196561109738719",
+      "balance_eth": 0.000196561109738719,
       "vault_id": 237,
       "collateral_wei": "1922015628387000",
       "debt_wei": "9556061674310000",
-      "removable_wei": "248858897475900",
-      "vault_ratio_pct": 172
+      "removable_wei": "278725610626732",
+      "vault_ratio_pct": 175
     },
     {
       "address": "0xc1165124be8dc53a3826a1aa1b6643e9138d167c",
-      "balance_wei": "154119640140389",
-      "balance_eth": 0.000154119640140389,
+      "balance_wei": "163398951251337",
+      "balance_eth": 0.000163398951251337,
       "vault_id": 37,
       "collateral_wei": "673953937443000",
       "debt_wei": "2827599848877000",
-      "removable_wei": "178873654297656",
-      "vault_ratio_pct": 204
-    },
-    {
-      "address": "0x127bbc2904dbb53cf601782fc12fa4fd633394e4",
-      "balance_wei": "136460640779130",
-      "balance_eth": 0.00013646064077913,
-      "vault_id": 221,
-      "collateral_wei": "1224360778243670",
-      "debt_wei": "5917551574126489",
-      "removable_wei": "188265409229822",
-      "vault_ratio_pct": 177
+      "removable_wei": "187711093450940",
+      "vault_ratio_pct": 207
     },
     {
       "address": "0x9d576ac210f3d07a3302d1eaf171663ad8fc8ee2",
-      "balance_wei": "133086565592406",
-      "balance_eth": 0.000133086565592406,
+      "balance_wei": "160018401661097",
+      "balance_eth": 0.000160018401661097,
       "vault_id": 77,
       "collateral_wei": "1641829177026000",
       "debt_wei": "8206692790800000",
-      "removable_wei": "204931451851149",
-      "vault_ratio_pct": 171
+      "removable_wei": "230580819535616",
+      "vault_ratio_pct": 174
+    },
+    {
+      "address": "0x127bbc2904dbb53cf601782fc12fa4fd633394e4",
+      "balance_wei": "155880220990668",
+      "balance_eth": 0.000155880220990668,
+      "vault_id": 221,
+      "collateral_wei": "1224360778243670",
+      "debt_wei": "5917551574126489",
+      "removable_wei": "206760247526525",
+      "vault_ratio_pct": 180
     },
     {
       "address": "0xdd23abb2227b4a3add86051810e03791f41c34e4",
-      "balance_wei": "126229647267404",
-      "balance_eth": 0.000126229647267404,
+      "balance_wei": "150500498922424",
+      "balance_eth": 0.000150500498922424,
       "vault_id": 196,
       "collateral_wei": "1485901821653000",
       "debt_wei": "7395835278211577",
-      "removable_wei": "190975941285765",
-      "vault_ratio_pct": 172
+      "removable_wei": "214091038100071",
+      "vault_ratio_pct": 175
     },
     {
       "address": "0x8540f80fab2afcae8d8fd6b1557b1cf943a0999b",
-      "balance_wei": "122401873472578",
-      "balance_eth": 0.000122401873472578,
+      "balance_wei": "130650129671262",
+      "balance_eth": 0.000130650129671262,
       "vault_id": 173,
       "collateral_wei": "584475664700000",
       "debt_wei": "2513415888532827",
-      "removable_wei": "144405387340551",
-      "vault_ratio_pct": 199
+      "removable_wei": "152260869434535",
+      "vault_ratio_pct": 202
+    },
+    {
+      "address": "0x121b7935d05638b7e61dccb597778c4398c77c52",
+      "balance_wei": "103140883651304",
+      "balance_eth": 0.000103140883651304,
+      "vault_id": 593,
+      "collateral_wei": "1106129624095955",
+      "debt_wei": "5554839121367378",
+      "removable_wei": "150902252243906",
+      "vault_ratio_pct": 173
+    },
+    {
+      "address": "0x7b4860e56231abbaca6e2f7a2a86b476b610ff39",
+      "balance_wei": "101387178362390",
+      "balance_eth": 0.00010138717836239,
+      "vault_id": 434,
+      "collateral_wei": "1087322093043971",
+      "debt_wei": "5460390146321367",
+      "removable_wei": "148336460013894",
+      "vault_ratio_pct": 173
     }
   ]
 }

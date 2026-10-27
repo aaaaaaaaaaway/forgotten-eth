@@ -5,7 +5,7 @@
   "total_eth_in_balances": 0.0,
   "addresses_with_balance": 7454,
   "coverage_pct": 0.0,
-  "scan_date": "2026-10-27 05:24:40 UTC",
+  "scan_date": "2026-10-27 17:24:59 UTC",
   "description": "Tribe DAO post-shutdown redemption. Each TRIBE token entitles the holder to a proportional share of the 4-token basket [stETH, LQTY, FOX, DAI]. Only DAI is tracked here for the v2 hero counter; other basket items still pay out on claim.",
   "meta": {
     "tribe_token": "0xc7283b66eb1eb5fb86327f08e1b5816b0720212b",
@@ -14,7 +14,7 @@
     "min_dai_threshold": 1.0,
     "rate_dai_per_tribe": 0.07155552661141436,
     "dai_coverage_pct": 68.6,
-    "scanned_to_block": 26281930,
+    "scanned_to_block": 26285526,
     "note": "Per-entry DAI is the holder's THEORETICAL claim (TRIBE x rate). Sum across entries exceeds the contract's actual DAI cap; first-come-first-served on redemption. contract_token_balances is the actual cap."
   },
   "contract_token_balances": {
