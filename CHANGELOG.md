@@ -7,6 +7,14 @@ RSS: https://forgotteneth.com/feed.xml
 
 ## October 2026
 
+### Oct 26 — tBTC v1 Deposits (+70.5 ETH)
+
+Added ETH still held by tBTC v1 deposit contracts from 2020. 170 deposits whose signing group never formed owe a refunded setup fee to whoever owned the deposit when it failed, usually the person who opened it (17.79 ETH), and two liquidated deposits owe 52.75 ETH: 70.54 ETH across 75 addresses. Each deposit pays out through its own contract, one transaction per deposit. Every listed claim was replayed against an archive node and matched to the wei. Four deposits still in a liquidation auction hold 59.45 ETH that only a buyer paying v1 TBTC can unlock; they are not listed.
+
+### Oct 26 — Keep Random Beacon (+38.0 ETH)
+
+Added the unwithdrawn rewards of Keep Network's random beacon, which paid its signing groups in ETH for every random number they produced. 69 addresses are owed 38.01 ETH across 927 rewards in expired groups. Anyone can send a reward's withdrawal and the ETH always goes to the operator's beneficiary, so all of an address's rewards can be claimed in one transaction. Every reward was replayed against an archive node and matched to the wei. Another 16.49 ETH sits in groups that never expired and cannot be withdrawn.
+
 ### Oct 14 — Bridge withdrawals
 
 Expanded verified bridge withdrawals, including native fee credits held by Safe accounts. Coverage varies; per-address data stays private.

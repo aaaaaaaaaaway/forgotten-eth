@@ -1,9 +1,9 @@
 {
   "contract": "0x05215fce25902366480696f38c3093e31dbce69a",
   "balance_source": "eth",
-  "contract_eth_balance": 30.278672,
-  "total_eth_in_balances": 26.559749,
-  "addresses_with_balance": 323,
+  "contract_eth_balance": 30.277343,
+  "total_eth_in_balances": 26.55842,
+  "addresses_with_balance": 322,
   "coverage_pct": 87.72,
   "scan_date": "2026-03-30 13:15:15 UTC",
   "description": "ETH balances in defunct REV1 contract",
@@ -29,8 +29,8 @@
       "total_eth": 1.914495
     },
     "<0.01 ETH": {
-      "count": 251,
-      "total_eth": 0.36147
+      "count": 250,
+      "total_eth": 0.360141
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
@@ -843,8 +843,9 @@
     {
       "rank": 135,
       "address": "0x4620e6599670b74293a58336be87258291889c59",
-      "balance_wei": "1328922873074307",
-      "balance_eth": 0.001328922873074307
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 136,
@@ -1982,5 +1983,5 @@
       "balance_eth": 1.3937947382e-8
     }
   ],
-  "last_event_refresh": "2026-10-17 22:33:46 UTC"
+  "last_event_refresh": "2026-10-25 14:23:06 UTC"
 }

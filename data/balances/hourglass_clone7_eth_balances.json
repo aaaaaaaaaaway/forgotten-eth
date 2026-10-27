@@ -4,23 +4,35 @@
   "token_checked": "0x0000000000000000000000000000000000000000",
   "description": "ETH balances in defunct Hourglass Clone G contract",
   "scan_date": "2026-03-19 21:24:04 UTC",
-  "contract_eth_balance": "2.282021979600686753",
+  "contract_eth_balance": 2.27805,
   "total_addresses_scanned": 74,
-  "addresses_with_balance": 68,
-  "total_eth_in_balances": 2.141468111276642,
-  "coverage_pct": 93.84,
+  "addresses_with_balance": 67,
+  "total_eth_in_balances": 2.139424,
+  "coverage_pct": 93.91,
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "1-10 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
     "0.1-1 ETH": {
       "count": 3,
-      "total_eth": 2.031439494616247
+      "total_eth": 2.031439
     },
     "0.01-0.1 ETH": {
       "count": 2,
-      "total_eth": 0.07138418974841376
+      "total_eth": 0.071384
     },
     "<0.01 ETH": {
-      "count": 63,
-      "total_eth": 0.038644426911980986
+      "count": 62,
+      "total_eth": 0.036599
     }
   },
   "balances": [
@@ -87,8 +99,9 @@
     {
       "rank": 11,
       "address": "0x4620e6599670b74293a58336be87258291889c59",
-      "balance_wei": "2043869991917418",
-      "balance_eth": "0.002043869991917418"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 12,
@@ -432,5 +445,6 @@
       "balance_wei": "245555373",
       "balance_eth": "0.000000000245555373"
     }
-  ]
+  ],
+  "last_event_refresh": "2026-10-25 14:23:06 UTC"
 }

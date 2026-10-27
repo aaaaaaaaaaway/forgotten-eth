@@ -1,13 +1,13 @@
 {
   "contract": "0x02c133b9fbffb8d2e8cb7b7a94c7c880b331c720",
   "balance_source": "token",
-  "scan_date": "2026-10-17 16:20:46 UTC",
+  "scan_date": "2026-10-27 05:23:47 UTC",
   "contract_eth_balance": 0,
   "total_eth_in_balances": 0,
   "contract_token_balances": {
-    "USDC": "952209434047"
+    "USDC": "949237914462"
   },
-  "addresses_with_balance": 122,
+  "addresses_with_balance": 121,
   "coverage_pct": 100.0,
   "balances": [
     {
@@ -864,26 +864,6 @@
       "unclaimed_pwrd_raw": "3130157858000000000000",
       "token_balances": {
         "USDC": "3130157858"
-      }
-    },
-    {
-      "address": "0xf70c1cb0a9833ba9613f054db71ab3eaf45060b6",
-      "balance_eth": 0,
-      "balance_wei": "0",
-      "merkle_proof": [
-        "0xa405da299292ec5fa3c441a62f93f659dba71f96d46ddd8cc90a8ca656d84e56",
-        "0xd61c1b451a284cf676c2e7527e6b05ec0567b37f1e5fd7bd93dc0305200f6b38",
-        "0x34ed84e8fc4ab5f5edce2dbb48b12bb1675369334c2afd4aeea171bd1f3f2b43",
-        "0x049cbad65ba397a8a0f5b35a37787de6e8bd42bd6f399e9bc10788ff936aae61",
-        "0x54daf9a37ded61c3a49ec458d0d08c71387f20274ea8d04a76a0af7e14c9a8cf",
-        "0xceb3821e9398748720fa2380d56b14b998934a5eb2ac58c636a40244e61457a0",
-        "0xadba2758751277c49147ddb0f29788d4db8e9af9ded76b60d3a17cd6c834580b"
-      ],
-      "alloc_amount": "2971519585000000000000",
-      "needs_initial": true,
-      "unclaimed_pwrd_raw": "2971519585000000000000",
-      "token_balances": {
-        "USDC": "2971519585"
       }
     },
     {
@@ -2548,7 +2528,7 @@
     }
   ],
   "token_totals": {
-    "USDC": "952209434047"
+    "USDC": "949237914462"
   },
   "meta": {
     "vested_token": "0xf0a93d4994b3d98fb5e3a2f90dbc2d69073cb86b",
@@ -2557,7 +2537,7 @@
     "vesting_start": "2022-07-01",
     "vesting_end": "2024-05-31",
     "vesting_complete": true,
-    "contract_pwrd_balance_raw": "996759093702560061263482",
+    "contract_pwrd_balance_raw": "993787574117560061263483",
     "redeem_handler": "0xd4139e090e43ff77172d9dd8ba449d2a9683790d",
     "denomination": "USDC at 1:1 (PWRD is a USD stablecoin redeemable ~1.0 USDC via Gro's withdraw handler). USDC_raw = unclaimed_PWRD_raw / 1e12.",
     "note": "2-step recovery: (1) claim PWRD from the vestor \u2014 initialClaim(proof, amount) for never-claimed, claim() for partial; vesting ended 2024-05-31 so the full remaining allocation pays out in one tx. (2) optionally redeem PWRD \u2192 USDC via the Gro withdraw handler (still live)."

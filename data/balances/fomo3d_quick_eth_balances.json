@@ -1,10 +1,10 @@
 {
   "contract": "0x4e8ecf79ade5e2c49b9e30d795517a81e0bf00b8",
   "balance_source": "eth",
-  "contract_eth_balance": 84.109473,
-  "total_eth_in_balances": 75.995488,
-  "addresses_with_balance": 1804,
-  "coverage_pct": 90.35,
+  "contract_eth_balance": 83.81344525,
+  "total_eth_in_balances": 75.69946,
+  "addresses_with_balance": 1801,
+  "coverage_pct": 90.32,
   "scan_date": "2026-09-20 01:43:10 UTC",
   "description": "ETH balances in defunct Fomo3D Quick contract",
   "distribution": {
@@ -21,21 +21,21 @@
       "total_eth": 20.724077
     },
     "0.1-1 ETH": {
-      "count": 136,
-      "total_eth": 34.240342
+      "count": 134,
+      "total_eth": 33.949988
     },
     "0.01-0.1 ETH": {
       "count": 457,
       "total_eth": 18.199027
     },
     "<0.01 ETH": {
-      "count": 1203,
-      "total_eth": 2.832028
+      "count": 1202,
+      "total_eth": 2.826354
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 5329,
-  "last_event_refresh": "2026-10-13 19:23:06 UTC",
+  "last_event_refresh": "2026-10-27 05:55:09 UTC",
   "balances": [
     {
       "rank": 1,
@@ -592,8 +592,9 @@
     {
       "rank": 93,
       "address": "0x231dd21555c6d905ce4f2aafdba0c01af89db0a0",
-      "balance_wei": "155213964959341271",
-      "balance_eth": 0.15521396495934128
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 94,
@@ -622,8 +623,9 @@
     {
       "rank": 98,
       "address": "0x32a31aacc550ee60588ed3d952b89e13389344fb",
-      "balance_wei": "135140349777152622",
-      "balance_eth": 0.1351403497771526
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 99,
@@ -4711,8 +4713,9 @@
     {
       "rank": 779,
       "address": "0xd11f8de1b9bc2c9a18405577213c06b3149668ed",
-      "balance_wei": "5674033366547244",
-      "balance_eth": 0.005674033366547244
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 780,

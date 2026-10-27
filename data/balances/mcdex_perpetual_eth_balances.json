@@ -1,10 +1,10 @@
 {
   "contract": "0x220a9f0dd581cbc58fcfb907de0454cbf3777f76",
   "balance_source": "token",
-  "contract_eth_balance": 552.929807,
-  "total_eth_in_balances": 451.218801,
-  "addresses_with_balance": 148,
-  "coverage_pct": 81.61,
+  "contract_eth_balance": 551.902657,
+  "total_eth_in_balances": 450.19165,
+  "addresses_with_balance": 147,
+  "coverage_pct": 81.57,
   "scan_date": "2026-09-09 16:11:35 UTC",
   "description": "Settled MCDEX ETH-PERP traders can call settle() to withdraw positive remaining margin.",
   "meta": {
@@ -86,9 +86,10 @@
     },
     {
       "address": "0xf59bd099bf29579d2930d9cd96f3fbf7c589afcd",
-      "balance_wei": "1027150443037479161",
-      "balance_eth": 1.0271504430374792,
-      "rank": 13
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 13,
+      "claimed": true
     },
     {
       "address": "0x51430536709c685c22600a2672bcec0cab662f67",
@@ -935,5 +936,5 @@
       "rank": 153
     }
   ],
-  "last_event_refresh": "2026-10-17 10:35:18 UTC"
+  "last_event_refresh": "2026-10-27 08:23:06 UTC"
 }

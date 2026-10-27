@@ -1,10 +1,10 @@
 {
   "contract": "0x344285b2082d9c7981241dcc160beca6057637e6",
   "balance_source": "eth",
-  "contract_eth_balance": 18.16903385,
-  "total_eth_in_balances": 14.69529878,
-  "addresses_with_balance": 6,
-  "coverage_pct": 80.88,
+  "contract_eth_balance": 15.26657767,
+  "total_eth_in_balances": 11.84489653,
+  "addresses_with_balance": 4,
+  "coverage_pct": 77.59,
   "scan_date": "2026-09-09 17:05:30 UTC",
   "description": "Just HODL It (dividend contract)",
   "meta": {
@@ -12,6 +12,7 @@
     "why": "balances(address) reverts for real depositors, so no accessor can verify this protocol; the simulated payout is the amount the user actually receives",
     "unattributed_eth": 3.473735
   },
+  "last_event_refresh": "2026-10-21T22:21:43Z",
   "balances": [
     {
       "address": "0x47999bc379229106aa418aca8f8d2d679fc22114",
@@ -25,13 +26,15 @@
     },
     {
       "address": "0x4e1cf0b8e675d8aa54f3fcc24b750111cc01069e",
-      "balance_wei": "1448099256667895460",
-      "balance_eth": 1.4480992566678956
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "address": "0x99de5626d5b7e10b137857b9a529451d6cae6343",
-      "balance_wei": "1402302996583053596",
-      "balance_eth": 1.4023029965830536
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "address": "0x0550a7da83fb0dc9a7d2006f1e7b648f53c37811",

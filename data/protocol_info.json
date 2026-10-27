@@ -2231,6 +2231,24 @@
     "deployed": "August 2020",
     "slug": "keep-bonding"
   },
+  "tbtc_v1_deposits": {
+    "name": "tBTC v1 Deposits",
+    "desc": "tBTC v1 (2020) deposit contracts still hold ETH nobody withdrew: setup fees refunded to users whose signing group never formed, and payouts from liquidated deposits.",
+    "category": "defi",
+    "color": "#2fb5a0",
+    "contract": "0xe20A5C79b39bC8C363f0f49ADcFa82C2a01ab64a",
+    "deployed": "September 2020",
+    "slug": "tbtc-v1-deposits"
+  },
+  "keep_random_beacon": {
+    "name": "Keep Random Beacon",
+    "desc": "Keep Network's random beacon (2020) paid its signing groups in ETH for every relay entry. Rewards in expired groups were never withdrawn by many operators.",
+    "category": "defi",
+    "color": "#48cfb0",
+    "contract": "0xdF708431162Ba247dDaE362D2c919e0fbAfcf9DE",
+    "deployed": "September 2020",
+    "slug": "keep-random-beacon"
+  },
   "relayhub_v1": {
     "name": "OpenGSN RelayHub v1",
     "desc": "OpenZeppelin's original meta-transaction relay hub (2019). dApps deposited ETH via depositFor() so users could call them without paying gas; relay operators accumulated fees from successful TransactionRelayed events. Both kinds of balance are recoverable via withdraw(amount, dest) \u2014 the caller must be the balance holder. Contract recipients without a withdraw forwarder cannot directly recover; their addresses are marked pending in the table.",

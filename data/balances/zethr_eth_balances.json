@@ -1,10 +1,10 @@
 {
   "contract": "0xd48b633045af65ff636f3c6edd744748351e020d",
   "balance_source": "eth",
-  "contract_eth_balance": 276.16116106,
-  "total_eth_in_balances": 139.73311283,
-  "addresses_with_balance": 1956,
-  "coverage_pct": 50.6,
+  "contract_eth_balance": 275.941027,
+  "total_eth_in_balances": 139.152249,
+  "addresses_with_balance": 1953,
+  "coverage_pct": 50.43,
   "scan_date": "2026-09-20 01:43:18 UTC",
   "description": "ETH balances in defunct Zethr contract",
   "distribution": {
@@ -21,21 +21,21 @@
       "total_eth": 46.396323
     },
     "0.1-1 ETH": {
-      "count": 130,
-      "total_eth": 37.082872
+      "count": 128,
+      "total_eth": 36.529099
     },
     "0.01-0.1 ETH": {
-      "count": 175,
-      "total_eth": 6.627807
+      "count": 174,
+      "total_eth": 6.603222
     },
     "<0.01 ETH": {
-      "count": 1626,
-      "total_eth": 0.960127
+      "count": 1625,
+      "total_eth": 0.957621
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 2498,
-  "last_event_refresh": "2026-10-14T16:20:09Z",
+  "last_event_refresh": "2026-10-27 06:23:07 UTC",
   "balances": [
     {
       "rank": 1,
@@ -917,8 +917,9 @@
     {
       "rank": 147,
       "address": "0x6c5d0d9eb1243903775ffdbc8f5d29b04ce3670d",
-      "balance_wei": "109717211583049218",
-      "balance_eth": 0.10971721158304922
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 148,
@@ -1547,8 +1548,9 @@
     {
       "rank": 252,
       "address": "0x60256530d074465406df460b6f38424ab5df6bed",
-      "balance_wei": "24584666517766347",
-      "balance_eth": 0.02458466651776635
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 253,
@@ -2732,8 +2734,9 @@
     {
       "rank": 449,
       "address": "0xcd2b61614dbc0c3e2e910a8100fafbab0e46ae3e",
-      "balance_wei": "2505654427452255",
-      "balance_eth": 0.002505654427452255
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 450,

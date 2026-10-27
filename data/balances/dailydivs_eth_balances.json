@@ -1,9 +1,9 @@
 {
   "contract": "0xd2bfceeab8ffa24cdf94faa2683df63df4bcbdc8",
   "balance_source": "eth",
-  "contract_eth_balance": 109.683913,
-  "total_eth_in_balances": 102.55986222,
-  "addresses_with_balance": 405,
+  "contract_eth_balance": 109.68037,
+  "total_eth_in_balances": 102.556272,
+  "addresses_with_balance": 404,
   "coverage_pct": 93.5,
   "scan_date": "2026-08-23 01:43:43 UTC",
   "description": "ETH balances in defunct DailyDivs contract",
@@ -29,13 +29,13 @@
       "total_eth": 0.954877
     },
     "<0.01 ETH": {
-      "count": 362,
-      "total_eth": 0.149842
+      "count": 360,
+      "total_eth": 0.146292
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 575,
-  "last_event_refresh": "2026-10-17T04:17:05Z",
+  "last_event_refresh": "2026-10-25 14:23:06 UTC",
   "balances": [
     {
       "rank": 1,
@@ -364,8 +364,9 @@
     {
       "rank": 55,
       "address": "0x4620e6599670b74293a58336be87258291889c59",
-      "balance_wei": "3542836903358976",
-      "balance_eth": 0.003542836903358976
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 56,

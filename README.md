@@ -6,9 +6,9 @@ Forgotten ETH indexes old Ethereum contracts that still owe users withdrawable E
 
 Current repository index (publication follows deployment):
 
-- 383 tracked recovery integrations, including 80 bridges with verified withdrawal paths
-- 195,903.77 ETH mapped to claimable balances
-- 786,949 addresses with at least one mapped balance
+- 385 tracked recovery integrations, including 80 bridges with verified withdrawal paths
+- 196,012.32 ETH mapped to claimable balances
+- 787,076 addresses with at least one mapped balance
 - 22,415.20 ETH already claimed by 29,075 wallets since launch
 
 Totals are generated from [`data/total.json`](data/total.json).

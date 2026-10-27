@@ -1,10 +1,10 @@
 {
   "contract": "0x53b04999c1ff2d77fcdde98935bb936a67209e4c",
   "balance_source": "eth",
-  "contract_eth_balance": 54.58759062,
-  "total_eth_in_balances": 55.59884893,
-  "addresses_with_balance": 358,
-  "coverage_pct": 101.85,
+  "contract_eth_balance": 54.489189,
+  "total_eth_in_balances": 54.488932,
+  "addresses_with_balance": 356,
+  "coverage_pct": 100,
   "scan_date": "2026-04-13",
   "distribution": {
     ">=100 ETH": {
@@ -24,15 +24,15 @@
       "total_eth": 18.298372
     },
     "0.01-0.1 ETH": {
-      "count": 109,
-      "total_eth": 3.921309
+      "count": 107,
+      "total_eth": 3.821897
     },
     "<0.01 ETH": {
-      "count": 151,
-      "total_eth": 0.303388
+      "count": 149,
+      "total_eth": 0.293793
     }
   },
-  "last_event_refresh": "2026-09-20T11:07:11Z",
+  "last_event_refresh": "2026-10-27 02:23:05 UTC",
   "balances": [
     {
       "address": "0x58a800ed9a0243b8b61d7e6ff33cf013cfa1900c",
@@ -741,8 +741,9 @@
     {
       "address": "0xde6f889d24471f618bc371d68232fb99f3ce4d2a",
       "rank": 117,
-      "balance_eth": 0.08941184562697184,
-      "balance_wei": "89411845626971847"
+      "balance_eth": 0,
+      "balance_wei": "0",
+      "claimed": true
     },
     {
       "address": "0x7d6105d75c5e6a40791a50a52a92365545e9b112",
@@ -1443,8 +1444,9 @@
     {
       "address": "0x1b20935dc9db5601cf7574edc68bd8f613b8fe7a",
       "rank": 234,
-      "balance_eth": 0.00899,
-      "balance_wei": "8990000000000000"
+      "balance_eth": 0,
+      "balance_wei": "0",
+      "claimed": true
     },
     {
       "address": "0xd4f1231e0dcc86785a9b71a996bf5e6f4a331b43",

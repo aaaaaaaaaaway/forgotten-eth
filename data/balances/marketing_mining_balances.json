@@ -5,7 +5,7 @@
   "total_eth_in_balances": 0.0,
   "addresses_with_balance": 22,
   "coverage_pct": 0.0,
-  "scan_date": "2026-10-17 16:28:28 UTC",
+  "scan_date": "2026-10-27 05:32:22 UTC",
   "description": "Current userInfo(pid,user) balances for MarketingMining per-pool token withdrawals. Candidate set from corrected Dune Deposit/Withdraw log reconstruction; current RPC state filters already-withdrawn positions.",
   "meta": {
     "candidate_source": "Dune query 7675864 / execution 01KTK9D5KJF1XDEQQK706ZA801",
@@ -37,7 +37,7 @@
       },
       "3": {
         "pid": 3,
-        "token_amount_raw": "8195255591542600257644",
+        "token_amount_raw": "8195245591542600257644",
         "token_address": "0xc4De189Abf94c57f396bD4c52ab13b954FebEfD8",
         "symbol": "B20",
         "decimals": 18,
@@ -53,7 +53,7 @@
       },
       "5": {
         "pid": 5,
-        "token_amount_raw": "316538722165780302112",
+        "token_amount_raw": "316528722165780302112",
         "token_address": "0xB6Ca7399B4F9CA56FC27cBfF44F4d2e4Eef1fc81",
         "symbol": "MUSE",
         "decimals": 18,
@@ -85,7 +85,7 @@
       },
       "9": {
         "pid": 9,
-        "token_amount_raw": "81000000000000000000",
+        "token_amount_raw": "0",
         "token_address": "0x0F5D2fB29fb7d3CFeE444a200298f468908cC942",
         "symbol": "MANA",
         "decimals": 18,
@@ -93,7 +93,7 @@
       },
       "10": {
         "pid": 10,
-        "token_amount_raw": "71000000000000000000",
+        "token_amount_raw": "0",
         "token_address": "0x3845badAde8e6dFF049820680d1F14bD3903a5d0",
         "symbol": "SAND",
         "decimals": 18,
@@ -101,30 +101,28 @@
       }
     },
     "token_totals_raw": {
-      "B20": "8195255591542600257644",
-      "MUSE": "316538722165780302112",
+      "B20": "8195245591542600257644",
+      "MUSE": "316528722165780302112",
       "RARI": "1000410000000000000004",
       "MEME": "2000000",
       "USDT": "2123211003",
       "WHALE": "12807282",
       "WETH": "23415898938311367990",
-      "MANA": "81000000000000000000",
-      "NFTX": "10000000000000000",
-      "SAND": "71000000000000000000"
+      "NFTX": "10000000000000000"
     }
   },
   "contract_token_balances": {
     "WBTC": "0",
     "WETH": "100000000000",
     "USDT": "2123211003",
-    "B20": "8195255591542600257644",
+    "B20": "8195245591542600257644",
     "MEME": "2000000",
-    "MUSE": "316538722165780302112",
+    "MUSE": "316528722165780302112",
     "RARI": "1000410000000000000004",
     "WHALE": "12807282",
     "NFTX": "10000000000000000",
-    "MANA": "81000000000000000000",
-    "SAND": "71000000000000000000"
+    "MANA": "0",
+    "SAND": "0"
   },
   "balances": [
     {
@@ -304,13 +302,9 @@
       "balance_eth": 0.0,
       "balance_wei": "0",
       "token_balances": {
-        "B20": "10000000000000000",
-        "MANA": "81000000000000000000",
         "MEME": "1000000",
-        "MUSE": "10000000000000000",
         "NFTX": "10000000000000000",
         "RARI": "10000000000000000",
-        "SAND": "71000000000000000000",
         "USDT": "1000000",
         "WHALE": "100"
       },
@@ -325,15 +319,6 @@
           "item_id": "pid:2"
         },
         {
-          "pid": 3,
-          "token_address": "0xc4De189Abf94c57f396bD4c52ab13b954FebEfD8",
-          "symbol": "B20",
-          "decimals": 18,
-          "amount_raw": "10000000000000000",
-          "amount": "0.01",
-          "item_id": "pid:3"
-        },
-        {
           "pid": 4,
           "token_address": "0xD5525D397898e5502075Ea5E830d8914f6F0affe",
           "symbol": "MEME",
@@ -341,15 +326,6 @@
           "amount_raw": "1000000",
           "amount": "0.01",
           "item_id": "pid:4"
-        },
-        {
-          "pid": 5,
-          "token_address": "0xB6Ca7399B4F9CA56FC27cBfF44F4d2e4Eef1fc81",
-          "symbol": "MUSE",
-          "decimals": 18,
-          "amount_raw": "10000000000000000",
-          "amount": "0.01",
-          "item_id": "pid:5"
         },
         {
           "pid": 6,
@@ -377,24 +353,6 @@
           "amount_raw": "10000000000000000",
           "amount": "0.01",
           "item_id": "pid:8"
-        },
-        {
-          "pid": 9,
-          "token_address": "0x0F5D2fB29fb7d3CFeE444a200298f468908cC942",
-          "symbol": "MANA",
-          "decimals": 18,
-          "amount_raw": "81000000000000000000",
-          "amount": "81",
-          "item_id": "pid:9"
-        },
-        {
-          "pid": 10,
-          "token_address": "0x3845badAde8e6dFF049820680d1F14bD3903a5d0",
-          "symbol": "SAND",
-          "decimals": 18,
-          "amount_raw": "71000000000000000000",
-          "amount": "71",
-          "item_id": "pid:10"
         }
       ]
     },

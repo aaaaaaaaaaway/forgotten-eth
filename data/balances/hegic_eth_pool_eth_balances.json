@@ -1,9 +1,9 @@
 {
   "contract": "0x878F15ffC8b894A1BA7647c7176E4C01f74e140b",
   "balance_source": "eth",
-  "contract_eth_balance": 60.148657,
-  "total_eth_in_balances": 58.26826,
-  "addresses_with_balance": 394,
+  "contract_eth_balance": 60.101758,
+  "total_eth_in_balances": 58.22136,
+  "addresses_with_balance": 392,
   "coverage_pct": 96.87,
   "scan_date": "2026-04-10 12:57:53 UTC",
   "description": "Hegic ETH Pool v1.1 — writeETH LP token holders. Direct holders call withdraw(amount, maxBurn). Stakers in StakingRewards call exit() first to unstake writeETH, then withdraw from pool.",
@@ -25,12 +25,12 @@
       "total_eth": 16.448867
     },
     "0.01-0.1 ETH": {
-      "count": 44,
-      "total_eth": 2.430156
+      "count": 43,
+      "total_eth": 2.386318
     },
     "<0.01 ETH": {
-      "count": 304,
-      "total_eth": 0.24233
+      "count": 303,
+      "total_eth": 0.239269
     }
   },
   "staking_contracts": [
@@ -38,7 +38,7 @@
     "0x4f439c4f249f382c91e5b5c2b98ef746e4e5789a",
     "0x9b18975e64763bda591618cdf02d2f14a9875981"
   ],
-  "last_event_refresh": "2026-10-05 17:23:07 UTC",
+  "last_event_refresh": "2026-10-25 19:23:06 UTC",
   "balances": [
     {
       "address": "0xc6e028b261dbf755df997e3af86af104674c183b",
@@ -585,9 +585,10 @@
     },
     {
       "address": "0xde930080e0ba5d8ca2b7163b39d3407fd34dc6c2",
-      "balance_wei": "43838362202255614",
-      "balance_eth": 0.043838362202255614,
-      "writeETH_balance": "52308152004637146921"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "writeETH_balance": "52308152004637146921",
+      "claimed": true
     },
     {
       "address": "0x355b9e38d761c896f197499c0b1b4f2473704a7e",
@@ -909,9 +910,10 @@
     },
     {
       "address": "0x1975d9b8dfdedfcfe5d7c2d1229d01155f628825",
-      "balance_wei": "3061266918910355",
-      "balance_eth": 0.003061266918910355,
-      "writeETH_balance": "3652718926458684520"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "writeETH_balance": "3652718926458684520",
+      "claimed": true
     },
     {
       "address": "0xaf519e476c65947d63a590862bbad3c78aab35b7",

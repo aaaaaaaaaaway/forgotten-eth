@@ -2,20 +2,20 @@
   "contract": "0xaaa1f5fc9617195b5aa7fd1bd989d47f9e8d3f82",
   "balance_source": "token",
   "contract_eth_balance": 69.33527614,
-  "total_eth_in_balances": 68.1073673,
-  "addresses_with_balance": 257,
-  "coverage_pct": 98.23,
-  "scan_date": "2026-10-17 16:21:33 UTC",
+  "total_eth_in_balances": 68.09155209,
+  "addresses_with_balance": 256,
+  "coverage_pct": 98.21,
+  "scan_date": "2026-10-27 05:24:37 UTC",
   "description": "ElasticDAO treasury. EGT holders exit pro-rata: exit(shares) burns the caller's shares and pays shares / total shares of the DAO's ETH. Amounts are per holder at the scan block. Liquidity pools, other contract holders and dust are not listed.",
   "distribution": {
-    ">0.01 ETH": 199,
+    ">0.01 ETH": 198,
     ">0.1 ETH": 85,
     ">1 ETH": 18,
     ">10 ETH": 1
   },
   "meta": {
     "egt_token": "0x2aA5cE395b00CC486159aDbDD97c55b535CF2cf9",
-    "scan_block": 26213436,
+    "scan_block": 26281930,
     "total_shares_wei": "6132103111772398922",
     "holders": 307,
     "number_of_token_holders": 515,
@@ -39,6 +39,11 @@
         "address": "0xd1742b3c4fbb096990c8950fa635aec75b30781a",
         "egt_shares_wei": "5721280245409053",
         "eth_wei": "64690129711165989"
+      },
+      {
+        "address": "0x069e85d4f1010dd961897dc8c095fbb5ff297434",
+        "egt_shares_wei": "1398718009445718",
+        "eth_wei": "15815210159123746"
       },
       {
         "address": "0xca226bd9c754f1283123d32b2a7cf62a722f8ada",
@@ -1234,12 +1239,6 @@
       "balance_wei": "15861291425634451",
       "balance_eth": 0.01586129142563445,
       "egt_shares_wei": "1402793497328463"
-    },
-    {
-      "address": "0x069e85d4f1010dd961897dc8c095fbb5ff297434",
-      "balance_wei": "15815210159123746",
-      "balance_eth": 0.015815210159123745,
-      "egt_shares_wei": "1398718009445718"
     },
     {
       "address": "0x388e07d4fc7f3e2c825e6cb1ff46447764798b24",

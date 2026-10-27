@@ -4871,5 +4871,23 @@
     "payout_tokens": [
       "ETH"
     ]
+    },
+  {
+    "key": "tbtc_v1_deposits",
+    "name": "tBTC v1 Deposits",
+    "contract": "0xe20A5C79b39bC8C363f0f49ADcFa82C2a01ab64a",
+    "balance_source": "eth",
+    "category": "defi",
+    "balance_file": "tbtc_v1_deposits_eth_balances.json",
+    "multi_step": true
+  },
+  {
+    "key": "keep_random_beacon",
+    "name": "Keep Random Beacon",
+    "contract": "0xdF708431162Ba247dDaE362D2c919e0fbAfcf9DE",
+    "balance_source": "eth",
+    "category": "defi",
+    "balance_file": "keep_random_beacon_eth_balances.json",
+    "multi_step": true
   }
 ]

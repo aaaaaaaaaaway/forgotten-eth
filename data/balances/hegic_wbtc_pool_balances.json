@@ -1,11 +1,11 @@
 {
   "contract": "0x20dd9e22d22dd0a6ef74a520cb08303b5fad5de7",
   "balance_source": "token",
-  "contract_eth_balance": 125.924078,
-  "total_eth_in_balances": 125.923702,
+  "contract_eth_balance": 125.92301162,
+  "total_eth_in_balances": 125.92301162,
   "addresses_with_balance": 108,
-  "coverage_pct": 100,
-  "scan_date": "2026-10-17 16:21:42 UTC",
+  "coverage_pct": 100.0,
+  "scan_date": "2026-10-27 05:24:46 UTC",
   "description": "Hegic WBTC Pool writeWBTC holders with currently available WBTC withdrawable via withdraw(amount,maxBurn). Amounts use availableBalance(), not totalBalance(), because full pro-rata total pool withdrawals can revert while part of the pool remains unavailable.",
   "meta": {
     "candidate_source": "Dune query 7676670 / execution 01KTKJ2AC4CPYGZCEQ5EB6P33Z",
@@ -13,15 +13,15 @@
     "pool_symbol": "writeWBTC",
     "pool_decimals": 18,
     "holder_seed_count": 408,
-    "total_supply_raw": "12354469641050143891980",
-    "live_seed_supply_sum_raw": "12354422170194258121380",
-    "available_wbtc_raw": "334650227",
-    "available_wbtc": "3.34650227",
-    "claimable_wbtc_raw_sum_floor": "334648838",
-    "claimable_wbtc": "3.34648838",
-    "rounding_dust_wbtc_raw": "1389",
-    "total_wbtc_raw": "950650227",
-    "total_wbtc": "9.50650227",
+    "total_supply_raw": "12354432797929048863663",
+    "live_seed_supply_sum_raw": "12354385327073163093063",
+    "available_wbtc_raw": "334647392",
+    "available_wbtc": "3.34647392",
+    "claimable_wbtc_raw_sum_floor": "334646005",
+    "claimable_wbtc": "3.34646005",
+    "rounding_dust_wbtc_raw": "1387",
+    "total_wbtc_raw": "950647392",
+    "total_wbtc": "9.50647392",
     "btc_usd": "62887",
     "eth_usd": "1671.25",
     "wbtc_to_eth": "37.628721017202692595362752430815258040388930441286462228870605833956619296933433"
@@ -29,118 +29,118 @@
   "token_symbol": "WBTC",
   "token_decimals": 8,
   "contract_token_balances": {
-    "WBTC": "334650227"
+    "WBTC": "334647392"
   },
   "balances": [
     {
       "address": "0xa67ec8737021a7e91e883a3277384e6018bb5776",
-      "balance_eth": 123.11093752216006,
-      "balance_wei": "123110937522160059835",
+      "balance_eth": 123.11026171033059,
+      "balance_wei": "123110261710330590875",
       "token_balances": {
-        "WBTC": "327172793"
+        "WBTC": "327170997"
       },
       "write_wbtc_balance_raw": "12078421037845939594234",
       "dune_write_wbtc_balance_raw": "12078421037845939594234",
-      "available_wbtc_raw": "327172793",
-      "available_wbtc": "3.27172793",
+      "available_wbtc_raw": "327170997",
+      "available_wbtc": "3.27170997",
       "nominal_total_wbtc_raw": "929408872",
       "nominal_total_wbtc": "9.29408872"
     },
     {
       "address": "0x5957e7a43b48cf33d19169ea36bab26b00fa07f9",
-      "balance_eth": 1.3556224631204188,
-      "balance_wei": "1355622463120418848",
+      "balance_eth": 1.3556153136634255,
+      "balance_wei": "1355615313663425579",
       "token_balances": {
-        "WBTC": "3602627"
+        "WBTC": "3602608"
       },
       "write_wbtc_balance_raw": "133000230000047866491",
       "dune_write_wbtc_balance_raw": "133000230000047866491",
-      "available_wbtc_raw": "3602627",
-      "available_wbtc": "0.03602627",
+      "available_wbtc_raw": "3602608",
+      "available_wbtc": "0.03602608",
       "nominal_total_wbtc_raw": "10234085",
       "nominal_total_wbtc": "0.10234085"
     },
     {
       "address": "0x202ec7190f75046348de5ab3a97cc45d7b440680",
-      "balance_eth": 0.7604087200598355,
-      "balance_wei": "760408720059835452",
+      "balance_eth": 0.7604045809005235,
+      "balance_wei": "760404580900523560",
       "token_balances": {
-        "WBTC": "2020820"
+        "WBTC": "2020809"
       },
       "write_wbtc_balance_raw": "74603768010228239262",
       "dune_write_wbtc_balance_raw": "74603768010228239262",
-      "available_wbtc_raw": "2020820",
-      "available_wbtc": "0.0202082",
+      "available_wbtc_raw": "2020809",
+      "available_wbtc": "0.02020809",
       "nominal_total_wbtc_raw": "5740601",
       "nominal_total_wbtc": "0.05740601"
     },
     {
       "address": "0x588d91abf5192a0f0dc026bf05f510253bd1cf51",
-      "balance_eth": 0.19365997558713538,
-      "balance_wei": "193659975587135377",
+      "balance_eth": 0.19365884672550487,
+      "balance_wei": "193658846725504861",
       "token_balances": {
-        "WBTC": "514660"
+        "WBTC": "514657"
       },
       "write_wbtc_balance_raw": "19000000000000000000",
       "dune_write_wbtc_balance_raw": "19000000000000000000",
-      "available_wbtc_raw": "514660",
-      "available_wbtc": "0.0051466",
+      "available_wbtc_raw": "514657",
+      "available_wbtc": "0.00514657",
       "nominal_total_wbtc_raw": "1462009",
       "nominal_total_wbtc": "0.01462009"
     },
     {
       "address": "0x493134a9eabc8d2b5e08c5ab08e9d413fb4d1a55",
-      "balance_eth": 0.18071531927000747,
-      "balance_wei": "180715319270007479",
+      "balance_eth": 0.18071456669558714,
+      "balance_wei": "180714566695587135",
       "token_balances": {
-        "WBTC": "480259"
+        "WBTC": "480257"
       },
       "write_wbtc_balance_raw": "17730023805896710545",
       "dune_write_wbtc_balance_raw": "17730023805896710545",
-      "available_wbtc_raw": "480259",
-      "available_wbtc": "0.00480259",
+      "available_wbtc_raw": "480257",
+      "available_wbtc": "0.00480257",
       "nominal_total_wbtc_raw": "1364287",
       "nominal_total_wbtc": "0.01364287"
     },
     {
       "address": "0xf97791aeb8837208a5c38d50c22459707e011261",
-      "balance_eth": 0.12915193028571428,
-      "balance_wei": "129151930285714285",
+      "balance_eth": 0.12915117771129395,
+      "balance_wei": "129151177711293941",
       "token_balances": {
-        "WBTC": "343227"
+        "WBTC": "343225"
       },
       "write_wbtc_balance_raw": "12671111101667756480",
       "dune_write_wbtc_balance_raw": "12671111101667756480",
-      "available_wbtc_raw": "343227",
-      "available_wbtc": "0.00343227",
+      "available_wbtc_raw": "343225",
+      "available_wbtc": "0.00343225",
       "nominal_total_wbtc_raw": "975015",
       "nominal_total_wbtc": "0.00975015"
     },
     {
       "address": "0xe05a29e9dadf816e3cdc6b3edb0f55132b780f5d",
-      "balance_eth": 0.07432575490201945,
-      "balance_wei": "74325754902019446",
+      "balance_eth": 0.07432537861480927,
+      "balance_wei": "74325378614809274",
       "token_balances": {
-        "WBTC": "197524"
+        "WBTC": "197523"
       },
       "write_wbtc_balance_raw": "7292117467080907237",
       "dune_write_wbtc_balance_raw": "7292117467080907237",
-      "available_wbtc_raw": "197524",
-      "available_wbtc": "0.00197524",
+      "available_wbtc_raw": "197523",
+      "available_wbtc": "0.00197523",
       "nominal_total_wbtc_raw": "561112",
       "nominal_total_wbtc": "0.00561112"
     },
     {
       "address": "0x9c1e062720f5ef26bd7814b6f67c9dca61321fc9",
-      "balance_eth": 0.07422792022737472,
-      "balance_wei": "74227920227374719",
+      "balance_eth": 0.07422754394016455,
+      "balance_wei": "74227543940164547",
       "token_balances": {
-        "WBTC": "197264"
+        "WBTC": "197263"
       },
       "write_wbtc_balance_raw": "7282523447044317732",
       "dune_write_wbtc_balance_raw": "7282523447044317732",
-      "available_wbtc_raw": "197264",
-      "available_wbtc": "0.00197264",
+      "available_wbtc_raw": "197263",
+      "available_wbtc": "0.00197263",
       "nominal_total_wbtc_raw": "560374",
       "nominal_total_wbtc": "0.00560374"
     },
@@ -493,21 +493,6 @@
       "available_wbtc": "0.00001004",
       "nominal_total_wbtc_raw": "2853",
       "nominal_total_wbtc": "0.00002853"
-    },
-    {
-      "address": "0x2c2f838f0dac3f4915f4a57f3cb63abcd806ee40",
-      "balance_eth": 0,
-      "balance_wei": "0",
-      "token_balances": {
-        "WBTC": "998"
-      },
-      "write_wbtc_balance_raw": "36845071766226746",
-      "dune_write_wbtc_balance_raw": "36845071766226746",
-      "available_wbtc_raw": "998",
-      "available_wbtc": "0.00000998",
-      "nominal_total_wbtc_raw": "2835",
-      "nominal_total_wbtc": "0.00002835",
-      "claimed": true
     },
     {
       "address": "0x53f170963e5e5db4e1a9390d847d8174432012d7",
@@ -903,7 +888,7 @@
     },
     {
       "address": "0x9ffe41641bc3ad18e66d8ec73a4736ffd70c9ff2",
-      "balance_eth": 0.00009745838743455498,
+      "balance_eth": 9.745838743455498e-05,
       "balance_wei": "97458387434554",
       "token_balances": {
         "WBTC": "259"
@@ -917,7 +902,7 @@
     },
     {
       "address": "0x0aa80985eba2010a76f3bd17ebb070970317e5d2",
-      "balance_eth": 0.00009407180254300673,
+      "balance_eth": 9.407180254300673e-05,
       "balance_wei": "94071802543006",
       "token_balances": {
         "WBTC": "250"
@@ -931,7 +916,7 @@
     },
     {
       "address": "0x46ba0af6bc60e6fabd9957744c057d031c720ace",
-      "balance_eth": 0.00008918006881077038,
+      "balance_eth": 8.918006881077038e-05,
       "balance_wei": "89180068810770",
       "token_balances": {
         "WBTC": "237"
@@ -945,7 +930,7 @@
     },
     {
       "address": "0x2e800c331b153d2ef0b60f1b58074d39f092706d",
-      "balance_eth": 0.00008880378160059835,
+      "balance_eth": 8.880378160059835e-05,
       "balance_wei": "88803781600598",
       "token_balances": {
         "WBTC": "236"
@@ -959,7 +944,7 @@
     },
     {
       "address": "0x621091d1c013e57a37767521bd87208d497b09b6",
-      "balance_eth": 0.00008090175018698579,
+      "balance_eth": 8.090175018698579e-05,
       "balance_wei": "80901750186985",
       "token_balances": {
         "WBTC": "215"
@@ -973,7 +958,7 @@
     },
     {
       "address": "0x83e55a333fe1585a4dafa468e83336d3d38c39e6",
-      "balance_eth": 0.00007939660134629768,
+      "balance_eth": 7.939660134629768e-05,
       "balance_wei": "79396601346297",
       "token_balances": {
         "WBTC": "211"
@@ -987,7 +972,7 @@
     },
     {
       "address": "0xea0e065560333d66a3f9aa648e63848b86d3362a",
-      "balance_eth": 0.00007638630366492147,
+      "balance_eth": 7.638630366492147e-05,
       "balance_wei": "76386303664921",
       "token_balances": {
         "WBTC": "203"
@@ -1001,7 +986,7 @@
     },
     {
       "address": "0x1b976af94caa1d9b2fe5ed038ef9818dd6d48870",
-      "balance_eth": 0.000059829666417352284,
+      "balance_eth": 5.9829666417352284e-05,
       "balance_wei": "59829666417352",
       "token_balances": {
         "WBTC": "159"
@@ -1015,7 +1000,7 @@
     },
     {
       "address": "0x08aedc72bafc4f420a8bd32c8cf05bbccacdb756",
-      "balance_eth": 0.00005757194315632012,
+      "balance_eth": 5.757194315632012e-05,
       "balance_wei": "57571943156320",
       "token_balances": {
         "WBTC": "153"
@@ -1029,7 +1014,7 @@
     },
     {
       "address": "0xeb9d7174317679e7c49c4c7c1b0ad08033c43997",
-      "balance_eth": 0.000051927635003739715,
+      "balance_eth": 5.1927635003739715e-05,
       "balance_wei": "51927635003739",
       "token_balances": {
         "WBTC": "138"
@@ -1043,7 +1028,7 @@
     },
     {
       "address": "0x1975d9b8dfdedfcfe5d7c2d1229d01155f628825",
-      "balance_eth": 0.000029726689603590126,
+      "balance_eth": 2.9726689603590126e-05,
       "balance_wei": "29726689603590",
       "token_balances": {
         "WBTC": "79"
@@ -1057,7 +1042,7 @@
     },
     {
       "address": "0x719043a8fe188afe5768096eca23043666b9c681",
-      "balance_eth": 0.00002822154076290202,
+      "balance_eth": 2.822154076290202e-05,
       "balance_wei": "28221540762902",
       "token_balances": {
         "WBTC": "75"
@@ -1071,7 +1056,7 @@
     },
     {
       "address": "0x4063c9ada6758eb625d01baa49c008a8555f989a",
-      "balance_eth": 0.00002671639192221391,
+      "balance_eth": 2.671639192221391e-05,
       "balance_wei": "26716391922213",
       "token_balances": {
         "WBTC": "71"
@@ -1085,7 +1070,7 @@
     },
     {
       "address": "0xa505b105060eafbf4521e337256ba0433b6fc6bd",
-      "balance_eth": 0.00002332980703066567,
+      "balance_eth": 2.332980703066567e-05,
       "balance_wei": "23329807030665",
       "token_balances": {
         "WBTC": "62"
@@ -1099,7 +1084,7 @@
     },
     {
       "address": "0x909fdf2feea01276081253e2486dfbc81ab491d4",
-      "balance_eth": 0.000018814360508601348,
+      "balance_eth": 1.8814360508601348e-05,
       "balance_wei": "18814360508601",
       "token_balances": {
         "WBTC": "50"
@@ -1113,7 +1098,7 @@
     },
     {
       "address": "0xefe5aeab6d61a1b47a788ce0b3758173c49f6f72",
-      "balance_eth": 0.000011664903515332835,
+      "balance_eth": 1.1664903515332835e-05,
       "balance_wei": "11664903515332",
       "token_balances": {
         "WBTC": "31"
@@ -1127,7 +1112,7 @@
     },
     {
       "address": "0x9389e143dff86096766cd9ff82198857745a8d7b",
-      "balance_eth": 0.000011288616305160808,
+      "balance_eth": 1.1288616305160808e-05,
       "balance_wei": "11288616305160",
       "token_balances": {
         "WBTC": "30"
@@ -1141,7 +1126,7 @@
     },
     {
       "address": "0x92777f593cd44d66897668b0f8f2f7e2d8ea6127",
-      "balance_eth": 0.000011288616305160808,
+      "balance_eth": 1.1288616305160808e-05,
       "balance_wei": "11288616305160",
       "token_balances": {
         "WBTC": "30"
@@ -1155,7 +1140,7 @@
     },
     {
       "address": "0x16f037a3ddf53da1b047a926e1833219f0a8e1fc",
-      "balance_eth": 0.000010159754674644727,
+      "balance_eth": 1.0159754674644727e-05,
       "balance_wei": "10159754674644",
       "token_balances": {
         "WBTC": "27"
@@ -1169,7 +1154,7 @@
     },
     {
       "address": "0x6287814bef5fe12141daa98009ddb0f1b2f1062b",
-      "balance_eth": 0.000010159754674644727,
+      "balance_eth": 1.0159754674644727e-05,
       "balance_wei": "10159754674644",
       "token_balances": {
         "WBTC": "27"
@@ -1183,7 +1168,7 @@
     },
     {
       "address": "0x03dc54da70469dc3d53d4af0ae43236b6ff4f2b7",
-      "balance_eth": 0.000010159754674644727,
+      "balance_eth": 1.0159754674644727e-05,
       "balance_wei": "10159754674644",
       "token_balances": {
         "WBTC": "27"
@@ -1197,7 +1182,7 @@
     },
     {
       "address": "0x330e75e1f48b1ee968197cc870511665a4a5a832",
-      "balance_eth": 0.000008654605833956619,
+      "balance_eth": 8.654605833956619e-06,
       "balance_wei": "8654605833956",
       "token_balances": {
         "WBTC": "23"
@@ -1211,7 +1196,7 @@
     },
     {
       "address": "0x0883b18403dd527c108fc78e9755f378c648cc8a",
-      "balance_eth": 0.000007525744203440539,
+      "balance_eth": 7.525744203440539e-06,
       "balance_wei": "7525744203440",
       "token_balances": {
         "WBTC": "20"
@@ -1225,7 +1210,7 @@
     },
     {
       "address": "0xc0981a84e375d8410e94a2685d6d6595b9d7a05a",
-      "balance_eth": 0.000007525744203440539,
+      "balance_eth": 7.525744203440539e-06,
       "balance_wei": "7525744203440",
       "token_balances": {
         "WBTC": "20"
@@ -1239,7 +1224,7 @@
     },
     {
       "address": "0x996ebc864b11444c26f2fbb779cb1d26086ff20b",
-      "balance_eth": 0.000007525744203440539,
+      "balance_eth": 7.525744203440539e-06,
       "balance_wei": "7525744203440",
       "token_balances": {
         "WBTC": "20"
@@ -1253,7 +1238,7 @@
     },
     {
       "address": "0x8e6e6e6ea346be5bac353cad8f48d65b2a1ca01e",
-      "balance_eth": 0.000006773169783096485,
+      "balance_eth": 6.773169783096485e-06,
       "balance_wei": "6773169783096",
       "token_balances": {
         "WBTC": "18"
@@ -1267,7 +1252,7 @@
     },
     {
       "address": "0x2d9f9f7862a8e435d890f487a01ea15eceb6c6ef",
-      "balance_eth": 0.000006020595362752431,
+      "balance_eth": 6.020595362752431e-06,
       "balance_wei": "6020595362752",
       "token_balances": {
         "WBTC": "16"
@@ -1281,7 +1266,7 @@
     },
     {
       "address": "0x3c3698258060eb0e633dab458d96a7a8b34db9b6",
-      "balance_eth": 0.000005644308152580404,
+      "balance_eth": 5.644308152580404e-06,
       "balance_wei": "5644308152580",
       "token_balances": {
         "WBTC": "15"
@@ -1295,7 +1280,7 @@
     },
     {
       "address": "0x14d2397db48da0a6e22dee659fe495d1ec3bc230",
-      "balance_eth": 0.000005268020942408377,
+      "balance_eth": 5.268020942408377e-06,
       "balance_wei": "5268020942408",
       "token_balances": {
         "WBTC": "14"
@@ -1309,7 +1294,7 @@
     },
     {
       "address": "0x128f19a6fdd737b0937627738313e8bf5527aceb",
-      "balance_eth": 0.000005268020942408377,
+      "balance_eth": 5.268020942408377e-06,
       "balance_wei": "5268020942408",
       "token_balances": {
         "WBTC": "14"
@@ -1323,7 +1308,7 @@
     },
     {
       "address": "0x3dca07e16b2becd3eb76a9f9ce240b525451f887",
-      "balance_eth": 0.000005268020942408377,
+      "balance_eth": 5.268020942408377e-06,
       "balance_wei": "5268020942408",
       "token_balances": {
         "WBTC": "14"
@@ -1337,7 +1322,7 @@
     },
     {
       "address": "0x787b4b7ffef8eddad54f311039acf4c36fec9593",
-      "balance_eth": 0.0000037628721017202693,
+      "balance_eth": 3.7628721017202693e-06,
       "balance_wei": "3762872101720",
       "token_balances": {
         "WBTC": "10"
@@ -1351,7 +1336,7 @@
     },
     {
       "address": "0x72c2c890625f7e2ec82a49a5b0d6438c36fc1bb5",
-      "balance_eth": 0.0000037628721017202693,
+      "balance_eth": 3.7628721017202693e-06,
       "balance_wei": "3762872101720",
       "token_balances": {
         "WBTC": "10"
@@ -1365,7 +1350,7 @@
     },
     {
       "address": "0xe88f42474046183f2367066cd940e74ded8085fe",
-      "balance_eth": 0.0000030102976813762154,
+      "balance_eth": 3.0102976813762154e-06,
       "balance_wei": "3010297681376",
       "token_balances": {
         "WBTC": "8"
@@ -1379,7 +1364,7 @@
     },
     {
       "address": "0x2fb8f7fc5b95d67e9d4b9e785dc4587d55b3083f",
-      "balance_eth": 0.0000022577232610321614,
+      "balance_eth": 2.2577232610321614e-06,
       "balance_wei": "2257723261032",
       "token_balances": {
         "WBTC": "6"
@@ -1393,7 +1378,7 @@
     },
     {
       "address": "0x6bf97f2534be2242ddb3a29bfb24d498212dcded",
-      "balance_eth": 0.0000018814360508601347,
+      "balance_eth": 1.8814360508601347e-06,
       "balance_wei": "1881436050860",
       "token_balances": {
         "WBTC": "5"
@@ -1407,7 +1392,7 @@
     },
     {
       "address": "0xe229f68271345c696ba5980cd5486e76f31c2eb9",
-      "balance_eth": 0.0000018814360508601347,
+      "balance_eth": 1.8814360508601347e-06,
       "balance_wei": "1881436050860",
       "token_balances": {
         "WBTC": "5"
@@ -1421,7 +1406,7 @@
     },
     {
       "address": "0x297946c26171008ba8c0e5642814b5fe6b842ab7",
-      "balance_eth": 0.0000015051488406881077,
+      "balance_eth": 1.5051488406881077e-06,
       "balance_wei": "1505148840688",
       "token_balances": {
         "WBTC": "4"
@@ -1435,7 +1420,7 @@
     },
     {
       "address": "0x6777529d538c57d6cc6d46da4610758245470dab",
-      "balance_eth": 0.0000011288616305160807,
+      "balance_eth": 1.1288616305160807e-06,
       "balance_wei": "1128861630516",
       "token_balances": {
         "WBTC": "3"
@@ -1449,7 +1434,7 @@
     },
     {
       "address": "0x5d47e5d242a8f66a6286b0a2353868875f5d6068",
-      "balance_eth": 0.0000011288616305160807,
+      "balance_eth": 1.1288616305160807e-06,
       "balance_wei": "1128861630516",
       "token_balances": {
         "WBTC": "3"
@@ -1463,7 +1448,7 @@
     },
     {
       "address": "0xdf51a1e4808d1442d761813dc4d4d2ba05a9fd09",
-      "balance_eth": 0.0000011288616305160807,
+      "balance_eth": 1.1288616305160807e-06,
       "balance_wei": "1128861630516",
       "token_balances": {
         "WBTC": "3"
@@ -1477,7 +1462,7 @@
     },
     {
       "address": "0x55f2e85fd0c6fb9f6ccfbd9294c08c9171df13f7",
-      "balance_eth": 7.525744203440538e-7,
+      "balance_eth": 7.525744203440538e-07,
       "balance_wei": "752574420344",
       "token_balances": {
         "WBTC": "2"
@@ -1491,7 +1476,7 @@
     },
     {
       "address": "0xd1d1740aea8145ccc64112b14c06a1b379028c8e",
-      "balance_eth": 7.525744203440538e-7,
+      "balance_eth": 7.525744203440538e-07,
       "balance_wei": "752574420344",
       "token_balances": {
         "WBTC": "2"
@@ -1505,7 +1490,7 @@
     },
     {
       "address": "0xe9d88d7360eaebec2a7432c4163c06f3c509c538",
-      "balance_eth": 7.525744203440538e-7,
+      "balance_eth": 7.525744203440538e-07,
       "balance_wei": "752574420344",
       "token_balances": {
         "WBTC": "2"
@@ -1519,7 +1504,7 @@
     },
     {
       "address": "0xc394577274a0c3356133027e3c52417ba510daf5",
-      "balance_eth": 3.762872101720269e-7,
+      "balance_eth": 3.762872101720269e-07,
       "balance_wei": "376287210172",
       "token_balances": {
         "WBTC": "1"
@@ -1533,7 +1518,7 @@
     },
     {
       "address": "0xc2c28f19d7a896fe2634392fe732f716671c54eb",
-      "balance_eth": 3.762872101720269e-7,
+      "balance_eth": 3.762872101720269e-07,
       "balance_wei": "376287210172",
       "token_balances": {
         "WBTC": "1"
@@ -1547,7 +1532,7 @@
     },
     {
       "address": "0x68924bc68ff1357a0a08a20c64d538d9b9241574",
-      "balance_eth": 3.762872101720269e-7,
+      "balance_eth": 3.762872101720269e-07,
       "balance_wei": "376287210172",
       "token_balances": {
         "WBTC": "1"
@@ -1559,6 +1544,5 @@
       "nominal_total_wbtc_raw": "3",
       "nominal_total_wbtc": "0.00000003"
     }
-  ],
-  "last_event_refresh": "2026-10-20 12:23:07 UTC"
+  ]
 }

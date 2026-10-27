@@ -1,10 +1,10 @@
 {
   "contract": "0xa146240bf2c04005a743032dc0d241ec0bb2ba2b",
   "balance_source": "eth",
-  "contract_eth_balance": 25.338618,
-  "total_eth_in_balances": 23.52843536,
-  "addresses_with_balance": 1714,
-  "coverage_pct": 92.86,
+  "contract_eth_balance": 25.338193,
+  "total_eth_in_balances": 23.527645,
+  "addresses_with_balance": 1713,
+  "coverage_pct": 92.85,
   "scan_date": "2026-08-30 01:43:41 UTC",
   "description": "ETH balances in defunct POWM contract",
   "distribution": {
@@ -29,13 +29,13 @@
       "total_eth": 6.336262
     },
     "<0.01 ETH": {
-      "count": 1487,
-      "total_eth": 0.690434
+      "count": 1485,
+      "total_eth": 0.689644
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 1823,
-  "last_event_refresh": "2026-10-02T16:18:21Z",
+  "last_event_refresh": "2026-10-24 21:23:06 UTC",
   "balances": [
     {
       "rank": 1,
@@ -2939,8 +2939,9 @@
     {
       "rank": 484,
       "address": "0x9325eafe32eba5aa10787143ea5bc3438a7f6d2b",
-      "balance_wei": "425005976008812",
-      "balance_eth": 0.000425005976008812
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 485,

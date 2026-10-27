@@ -1,16 +1,16 @@
 {
   "contract": "0xb529964f86fbf99a6aa67f72a27e59fa3fa4feac",
   "balance_source": "eth",
-  "contract_eth_balance": 21.63338273,
-  "total_eth_in_balances": 21.632517,
-  "addresses_with_balance": 96,
+  "contract_eth_balance": 21.62329752,
+  "total_eth_in_balances": 21.622432,
+  "addresses_with_balance": 95,
   "coverage_pct": 100.0,
-  "scan_date": "2026-10-17 16:20:48 UTC",
+  "scan_date": "2026-10-27 05:23:48 UTC",
   "description": "Opyn v1 ETH-collateralized oToken vaults. Vault owners deposited ETH as collateral to write options. After option expiry, vault owners can call redeemVaultBalance() on each oToken contract to reclaim their ETH collateral. The Opyn v1 protocol was superseded by Gamma (v2) in late 2020 and the frontend no longer supports v1.",
   "distribution": {
     "1_plus": 6,
     "0.1_to_1": 14,
-    "0.01_to_0.1": 48,
+    "0.01_to_0.1": 47,
     "under_0.01": 28
   },
   "otoken_contracts": [
@@ -743,18 +743,6 @@
       "rank": 58
     },
     {
-      "address": "0xe0e8c1d735698060477e79a8e4c20276fc2ec7a7",
-      "balance_wei": "10085210806296623",
-      "balance_eth": 0.010085,
-      "positions": [
-        {
-          "otoken": "0x98cc3bd6af1880fcfda17ac477b2f612980e5e33",
-          "collateral_eth": 0.010085
-        }
-      ],
-      "rank": 59
-    },
-    {
       "address": "0x108a62856c9d3d8ec98a491dc7b507bb7d4618cf",
       "balance_wei": "10000000000000000",
       "balance_eth": 0.01,
@@ -764,7 +752,7 @@
           "collateral_eth": 0.01
         }
       ],
-      "rank": 60
+      "rank": 59
     },
     {
       "address": "0x2527fedd0eb265b82126c7fec1ede54199302ecd",
@@ -776,7 +764,7 @@
           "collateral_eth": 0.01
         }
       ],
-      "rank": 61
+      "rank": 60
     },
     {
       "address": "0x521e0a5aab17fe8ebdc80b46679c4a15f3a74eab",
@@ -788,7 +776,7 @@
           "collateral_eth": 0.01
         }
       ],
-      "rank": 62
+      "rank": 61
     },
     {
       "address": "0x5853ed4f26a3fcea565b3fbc698bb19cdf6deb85",
@@ -800,7 +788,7 @@
           "collateral_eth": 0.01
         }
       ],
-      "rank": 63
+      "rank": 62
     },
     {
       "address": "0x5c2e7837a5dc5d07c6977bfedb46a1f3ec6a5a77",
@@ -812,7 +800,7 @@
           "collateral_eth": 0.01
         }
       ],
-      "rank": 64
+      "rank": 63
     },
     {
       "address": "0xad8c540a8b291529a12bdde08bf352cdcfc76bc4",
@@ -824,7 +812,7 @@
           "collateral_eth": 0.01
         }
       ],
-      "rank": 65
+      "rank": 64
     },
     {
       "address": "0xe38ef7739775ec8c9ad62b759eb6aa9f047d84ed",
@@ -836,7 +824,7 @@
           "collateral_eth": 0.01
         }
       ],
-      "rank": 66
+      "rank": 65
     },
     {
       "address": "0x2577a8539cb2194acd72f035dbb691ce5f406d3f",
@@ -848,7 +836,7 @@
           "collateral_eth": 0.01
         }
       ],
-      "rank": 67
+      "rank": 66
     },
     {
       "address": "0xffa22a4d4e77c1a09743a524ffd1a720ce46d208",
@@ -860,7 +848,7 @@
           "collateral_eth": 0.01
         }
       ],
-      "rank": 68
+      "rank": 67
     },
     {
       "address": "0xb529fbc84ea5a268bda69d4888c6610ae03e8f48",
@@ -872,7 +860,7 @@
           "collateral_eth": 0.00988
         }
       ],
-      "rank": 69
+      "rank": 68
     },
     {
       "address": "0x47dbb61b56c37dd47f4f208ad693062b78e4c958",
@@ -892,7 +880,7 @@
           "collateral_eth": 0.0001
         }
       ],
-      "rank": 70
+      "rank": 69
     },
     {
       "address": "0xfb338c5fe584c026270e5ded1c2e0aca786a22fe",
@@ -912,7 +900,7 @@
           "collateral_eth": 0.002
         }
       ],
-      "rank": 71
+      "rank": 70
     },
     {
       "address": "0x1f7cf870b1bc69884cef24df4bdececdbd092553",
@@ -924,7 +912,7 @@
           "collateral_eth": 0.005501
         }
       ],
-      "rank": 72
+      "rank": 71
     },
     {
       "address": "0x08c2828ec23eaa2434861cedf8469572c2fd2ea7",
@@ -936,7 +924,7 @@
           "collateral_eth": 0.00535
         }
       ],
-      "rank": 73
+      "rank": 72
     },
     {
       "address": "0x3782ba5cce541df13616d644a607a7202a145dbb",
@@ -948,7 +936,7 @@
           "collateral_eth": 0.005
         }
       ],
-      "rank": 74
+      "rank": 73
     },
     {
       "address": "0x764cc3ced132f1a7cf4fb06a49df1b846a585a4d",
@@ -960,7 +948,7 @@
           "collateral_eth": 0.005
         }
       ],
-      "rank": 75
+      "rank": 74
     },
     {
       "address": "0xddf48f62e07c2e9f689ae903255d090e9bb9d725",
@@ -972,7 +960,7 @@
           "collateral_eth": 0.005
         }
       ],
-      "rank": 76
+      "rank": 75
     },
     {
       "address": "0x9bbe56603d98cb53c787caec314257a8197479de",
@@ -984,7 +972,7 @@
           "collateral_eth": 0.005
         }
       ],
-      "rank": 77
+      "rank": 76
     },
     {
       "address": "0xd986005d25bfdb3fd216e58f5b9a09677832e6cd",
@@ -996,7 +984,7 @@
           "collateral_eth": 0.005
         }
       ],
-      "rank": 78
+      "rank": 77
     },
     {
       "address": "0x7dac5dcc33e665640546d2db1d3fe88b27e0082f",
@@ -1008,7 +996,7 @@
           "collateral_eth": 0.00351
         }
       ],
-      "rank": 79
+      "rank": 78
     },
     {
       "address": "0x313638c16b16183be9ae577a0fab9fc5b5f60f69",
@@ -1020,7 +1008,7 @@
           "collateral_eth": 0.002512
         }
       ],
-      "rank": 80
+      "rank": 79
     },
     {
       "address": "0x962ccada98a5c4e58e8a09855bf8ccb8dac7789d",
@@ -1032,7 +1020,7 @@
           "collateral_eth": 0.002
         }
       ],
-      "rank": 81
+      "rank": 80
     },
     {
       "address": "0xf196bba501bd8b6bfbe230dd6db39a93c72cb4f8",
@@ -1044,7 +1032,7 @@
           "collateral_eth": 0.002
         }
       ],
-      "rank": 82
+      "rank": 81
     },
     {
       "address": "0xf4d9a2d0075e0f003410ae774456fbeeedd18c72",
@@ -1056,7 +1044,7 @@
           "collateral_eth": 0.00119
         }
       ],
-      "rank": 83
+      "rank": 82
     },
     {
       "address": "0xfe32a37f15ee4a4b59715530e5817d1322b9df80",
@@ -1068,7 +1056,7 @@
           "collateral_eth": 0.000893
         }
       ],
-      "rank": 84
+      "rank": 83
     },
     {
       "address": "0xfc778fcf3a159f2ef4b9c32f2a05557597955520",
@@ -1080,7 +1068,7 @@
           "collateral_eth": 0.00075
         }
       ],
-      "rank": 85
+      "rank": 84
     },
     {
       "address": "0xabc04058e20c9cba4f360244648fedf30cebc3b4",
@@ -1096,7 +1084,7 @@
           "collateral_eth": 5e-05
         }
       ],
-      "rank": 86
+      "rank": 85
     },
     {
       "address": "0xab1b90932ab0243817b0eb2cea53919d8f249a1e",
@@ -1108,7 +1096,7 @@
           "collateral_eth": 0.0006
         }
       ],
-      "rank": 87
+      "rank": 86
     },
     {
       "address": "0x30904bfe0b4ed1946d86555a461b31ac30e43e19",
@@ -1120,7 +1108,7 @@
           "collateral_eth": 0.00045
         }
       ],
-      "rank": 88
+      "rank": 87
     },
     {
       "address": "0x2da2515c6a37d555121a263db04e1b452ee58c3f",
@@ -1132,7 +1120,7 @@
           "collateral_eth": 0.00045
         }
       ],
-      "rank": 89
+      "rank": 88
     },
     {
       "address": "0x4d8c0dc9f27b5956a4ff3729bb999a716884c1e4",
@@ -1144,7 +1132,7 @@
           "collateral_eth": 0.00025
         }
       ],
-      "rank": 90
+      "rank": 89
     },
     {
       "address": "0x855328ee5e94924cb83b267f25a513c2a2fc3e5e",
@@ -1156,7 +1144,7 @@
           "collateral_eth": 0.00022
         }
       ],
-      "rank": 91
+      "rank": 90
     },
     {
       "address": "0xa00c99f5f955552742f1089ded88abdc74e67bac",
@@ -1168,7 +1156,7 @@
           "collateral_eth": 0.0001
         }
       ],
-      "rank": 92
+      "rank": 91
     },
     {
       "address": "0x3586a4eb36cf07e76ee05b020596bbc2bf06ce63",
@@ -1180,7 +1168,7 @@
           "collateral_eth": 0.0001
         }
       ],
-      "rank": 93
+      "rank": 92
     },
     {
       "address": "0x3e33c96a17462d452cc01e22e7799cc7386ed699",
@@ -1192,7 +1180,7 @@
           "collateral_eth": 0.0001
         }
       ],
-      "rank": 94
+      "rank": 93
     },
     {
       "address": "0xe7be0540916eb95f63004694d97747c0ac29c409",
@@ -1204,7 +1192,7 @@
           "collateral_eth": 0.0001
         }
       ],
-      "rank": 95
+      "rank": 94
     },
     {
       "address": "0x78353498a7c2741d52de5ef45e58bd17148a6297",
@@ -1216,7 +1204,7 @@
           "collateral_eth": 0.0001
         }
       ],
-      "rank": 96
+      "rank": 95
     }
   ]
 }
