@@ -2,10 +2,10 @@
   "contract": "0x60cd862c9c687a9de49aecdc3a99b74a4fc54ab6",
   "balance_source": "token",
   "contract_eth_balance": 233.04257909,
-  "total_eth_in_balances": 233.04257908,
-  "addresses_with_balance": 592,
+  "total_eth_in_balances": 233.042579,
+  "addresses_with_balance": 576,
   "coverage_pct": 100.0,
-  "scan_date": "2026-10-27 17:24:08 UTC",
+  "scan_date": "2026-10-28 05:24:29 UTC",
   "description": "ETH balances in defunct MoonCatRescue contract",
   "distribution": {
     ">=100 ETH": {
@@ -22,20 +22,20 @@
     },
     "0.1-1 ETH": {
       "count": 88,
-      "total_eth": 22.778010000000027
+      "total_eth": 22.77801
     },
     "0.01-0.1 ETH": {
       "count": 177,
-      "total_eth": 3.948375249999987
+      "total_eth": 3.948375
     },
     "<0.01 ETH": {
-      "count": 288,
-      "total_eth": 0.5008738299999996
+      "count": 272,
+      "total_eth": 0.500873
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 6521,
-  "last_event_refresh": "2026-10-18 20:23:06 UTC",
+  "last_event_refresh": "2026-10-28 08:23:06 UTC",
   "balances": [
     {
       "rank": 1,

@@ -1,11 +1,11 @@
 {
   "contract": "0x5b67871c3a857de81a1ca0f9f7945e5670d986dc",
   "balance_source": "token",
-  "contract_eth_balance": 380.47194559,
+  "contract_eth_balance": 380.47189321,
   "total_eth_in_balances": 376.84510581,
   "addresses_with_balance": 1071,
   "coverage_pct": 99.05,
-  "scan_date": "2026-10-27 17:24:59 UTC",
+  "scan_date": "2026-10-28 05:25:33 UTC",
   "description": "Set Protocol powered TokenSets, an automated portfolio product from 2019-2021 where each strategy was an ERC-20 token backed by real collateral held in a shared vault. The TokenSets front end is gone, but the vault still holds the collateral and redemption is still open: burning a Set token returns its underlying share, unwrapped straight back to ETH.",
   "meta": {
     "issuance_module": "0xceda8318522d348f1d1aca48b24629b8fbf09020",
@@ -81,7 +81,7 @@
       "0xf43b2f981efc5a611a97951ce4fd7d3bd87f4902",
       "0xffee21b4bb7084a9416205544101ae9f472c7159"
     ],
-    "scanned_to_block": 26285526,
+    "scanned_to_block": 26289118,
     "min_weth": 0.001,
     "note": "Three-level structure: user -> RebalancingSetToken -> collateral Set -> WETH in the Vault. Redeem with redeemRebalancingSetUnwrappingEther(rebalancingSet, quantity, false) on the RebalancingSetIssuanceModule; quantity must be a multiple of the RST's naturalUnit. Coverage is below 100% because some collateral Sets are held directly rather than through a RebalancingSetToken, and because holders below min_weth are dropped."
   },
@@ -100,8 +100,8 @@
     },
     {
       "address": "0x34e9e52ab9997a477e4cc43775766bfff41a2de1",
-      "balance_eth": 11.463870852747345,
-      "balance_wei": "11463870852747343071",
+      "balance_eth": 11.463870852763952,
+      "balance_wei": "11463870852763950571",
       "set_positions": [
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
@@ -111,7 +111,7 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "8332769586063000000",
-          "weth_share": 5.3803469885595
+          "weth_share": 5.3803469885761075
         }
       ]
     },
@@ -151,13 +151,13 @@
     },
     {
       "address": "0x1ec592ebf9b1bbdcf09b13bf4ae274ee871650e2",
-      "balance_eth": 9.15167109863744,
-      "balance_wei": "9151671098637439940",
+      "balance_eth": 9.151671098665688,
+      "balance_wei": "9151671098665688374",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "14173577792386000000",
-          "weth_share": 9.15167109863744
+          "weth_share": 9.151671098665688
         }
       ]
     },
@@ -809,8 +809,8 @@
     },
     {
       "address": "0x53b6cb6b85c8a5acbf2c83d8ecc621f3a3e37e63",
-      "balance_eth": 1.8520714484589444,
-      "balance_wei": "1852071448458944584",
+      "balance_eth": 1.8520714484606187,
+      "balance_wei": "1852071448460618734",
       "set_positions": [
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
@@ -820,7 +820,7 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "840000000000000000",
-          "weth_share": 0.5423756679830761
+          "weth_share": 0.5423756679847502
         }
       ]
     },
@@ -1336,13 +1336,13 @@
     },
     {
       "address": "0x736e108bcdd0c48771878caa148c1254689a941d",
-      "balance_eth": 0.9814066891537484,
-      "balance_wei": "981406689153748398",
+      "balance_eth": 0.9814066891943154,
+      "balance_wei": "981406689194315406",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "2987691717686000000",
-          "weth_share": 0.9814066891537484
+          "weth_share": 0.9814066891943154
         }
       ]
     },
@@ -1435,8 +1435,8 @@
     },
     {
       "address": "0xa44a31581871f4eec50cb9b5a9051f27f7931681",
-      "balance_eth": 0.8558102251603125,
-      "balance_wei": "855810225160312436",
+      "balance_eth": 0.8558102251946339,
+      "balance_wei": "855810225194633878",
       "set_positions": [
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
@@ -1446,7 +1446,7 @@
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "1261082313363000000",
-          "weth_share": 0.29513980635675086
+          "weth_share": 0.29513980639107223
         },
         {
           "rebalancing_set": "0xa35fc5019c4dc509394bd4d74591a0bf8852c195",
@@ -1563,13 +1563,13 @@
     },
     {
       "address": "0xb31f85a1e7674e4c2393456ce1dec93cdd698b3a",
-      "balance_eth": 0.8029399612911071,
-      "balance_wei": "802939961291107037",
+      "balance_eth": 0.8029399612935854,
+      "balance_wei": "802939961293585470",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "1243546875900000000",
-          "weth_share": 0.8029399612911071
+          "weth_share": 0.8029399612935854
         }
       ]
     },
@@ -1689,13 +1689,13 @@
     },
     {
       "address": "0x9d6c471ef150ee4840247c0ef8d109ffe8d4f653",
-      "balance_eth": 0.7339944196420995,
-      "balance_wei": "733994419642099570",
+      "balance_eth": 0.7339944196724397,
+      "balance_wei": "733994419672439649",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "2234495721935000000",
-          "weth_share": 0.7339944196420995
+          "weth_share": 0.7339944196724397
         }
       ]
     },
@@ -1814,13 +1814,13 @@
     },
     {
       "address": "0xf667d5acf5d3ed42284aec901bace3d618581358",
-      "balance_eth": 0.6891390609145275,
-      "balance_wei": "689139060914527544",
+      "balance_eth": 0.6891390609165206,
+      "balance_wei": "689139060916520579",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "1000000000000000000",
-          "weth_share": 0.6456853190274715
+          "weth_share": 0.6456853190294646
         },
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
@@ -1867,13 +1867,13 @@
     },
     {
       "address": "0x2b08b02513e96c010879abf7475703096be5ae76",
-      "balance_eth": 0.6775946769237822,
-      "balance_wei": "677594676923782103",
+      "balance_eth": 0.6775946769255192,
+      "balance_wei": "677594676925519203",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "871585452474000000",
-          "weth_share": 0.5627699309403777
+          "weth_share": 0.5627699309421149
         },
         {
           "rebalancing_set": "0x8933ea1ce67b946bdf2436ce860ffbb53ce814d2",
@@ -2007,25 +2007,25 @@
     },
     {
       "address": "0xa7628d01356b8c0c810a609f1a4dafcb6ca0de31",
-      "balance_eth": 0.6456853190274715,
-      "balance_wei": "645685319027471522",
+      "balance_eth": 0.6456853190294646,
+      "balance_wei": "645685319029464557",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "1000000000000000000",
-          "weth_share": 0.6456853190274715
+          "weth_share": 0.6456853190294646
         }
       ]
     },
     {
       "address": "0xe049dbc31d140cbebbf53d5e9a7d3cee62fcb469",
-      "balance_eth": 0.6434597734009342,
-      "balance_wei": "643459773400934084",
+      "balance_eth": 0.6434597734029202,
+      "balance_wei": "643459773402920249",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "996553203920000000",
-          "weth_share": 0.6434597734009342
+          "weth_share": 0.6434597734029202
         }
       ]
     },
@@ -2082,8 +2082,8 @@
     },
     {
       "address": "0x0d2a87097fe2df2a786a70bfe0131605ab721259",
-      "balance_eth": 0.6272508290861459,
-      "balance_wei": "627250829086145866",
+      "balance_eth": 0.627250829092572,
+      "balance_wei": "627250829092572034",
       "set_positions": [
         {
           "rebalancing_set": "0xb9ffe0b8ee2d1af94202ffed366520300748a4d8",
@@ -2093,7 +2093,7 @@
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "473276454425000000",
-          "weth_share": 0.15546338848889216
+          "weth_share": 0.15546338849531835
         }
       ]
     },
@@ -2148,8 +2148,8 @@
     },
     {
       "address": "0xd2dcbcb3bde595f8882188353e949fbbc23cdc86",
-      "balance_eth": 0.6171547031678052,
-      "balance_wei": "617154703167805141",
+      "balance_eth": 0.6171547032011167,
+      "balance_wei": "617154703201116686",
       "set_positions": [
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
@@ -2159,7 +2159,7 @@
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "1223975391317000000",
-          "weth_share": 0.2864554170261719
+          "weth_share": 0.2864554170594834
         }
       ]
     },
@@ -2213,8 +2213,8 @@
     },
     {
       "address": "0x7cdd96f3b15f50e839a5abd682d307a20a1fdc57",
-      "balance_eth": 0.5950063097218357,
-      "balance_wei": "595006309721835677",
+      "balance_eth": 0.5950063097226351,
+      "balance_wei": "595006309722635163",
       "set_positions": [
         {
           "rebalancing_set": "0x8933ea1ce67b946bdf2436ce860ffbb53ce814d2",
@@ -2224,7 +2224,7 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "401140241135000000",
-          "weth_share": 0.2590103645720093
+          "weth_share": 0.25901036457280885
         }
       ]
     },
@@ -2302,13 +2302,13 @@
     },
     {
       "address": "0xcf2e7de055eca47160b92177787dbc9b6710b4c6",
-      "balance_eth": 0.5518280399444321,
-      "balance_wei": "551828039944432061",
+      "balance_eth": 0.5518280399801236,
+      "balance_wei": "551828039980123642",
       "set_positions": [
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "1311425730258000000",
-          "weth_share": 0.30692202402508356
+          "weth_share": 0.3069220240607752
         },
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
@@ -2924,8 +2924,8 @@
     },
     {
       "address": "0x508c72b7951aec52e26fdf1cedb3637800e634a5",
-      "balance_eth": 0.4159199620117596,
-      "balance_wei": "415919962011759647",
+      "balance_eth": 0.41591996201177744,
+      "balance_wei": "415919962011777473",
       "set_positions": [
         {
           "rebalancing_set": "0xb9ffe0b8ee2d1af94202ffed366520300748a4d8",
@@ -2940,7 +2940,7 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "8943851014000000",
-          "weth_share": 0.005774913295308764
+          "weth_share": 0.00577491329532659
         },
         {
           "rebalancing_set": "0x5cd487ce4db7091292f2e914f7b31445bd4a5e1b",
@@ -3289,13 +3289,13 @@
     },
     {
       "address": "0xb69e57858ef36f9f6d27638ee22e73216a8b185a",
-      "balance_eth": 0.3188280266709818,
-      "balance_wei": "318828026670981819",
+      "balance_eth": 0.31882802667196597,
+      "balance_wei": "318828026671965945",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "493782369330000000",
-          "weth_share": 0.3188280266709818
+          "weth_share": 0.31882802667196597
         }
       ]
     },
@@ -3313,13 +3313,13 @@
     },
     {
       "address": "0x97b1a097a0139b8f2ec015cd26ed8c0195a1bef0",
-      "balance_eth": 0.31616979523462013,
-      "balance_wei": "316169795234620180",
+      "balance_eth": 0.3161697952355961,
+      "balance_wei": "316169795235596100",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "489665454545000000",
-          "weth_share": 0.31616979523462013
+          "weth_share": 0.3161697952355961
         }
       ]
     },
@@ -3337,13 +3337,13 @@
     },
     {
       "address": "0xe62dbb656e696d529fd4659cde27bbcd423de1f2",
-      "balance_eth": 0.3135333538690196,
-      "balance_wei": "313533353869019584",
+      "balance_eth": 0.31353335388197967,
+      "balance_wei": "313533353881979665",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "954488098487000000",
-          "weth_share": 0.3135333538690196
+          "weth_share": 0.31353335388197967
         }
       ]
     },
@@ -3426,8 +3426,8 @@
     },
     {
       "address": "0x802df9932e347fcbe56bfa2721d70e16d8efc190",
-      "balance_eth": 0.2988037543581608,
-      "balance_wei": "298803754358160852",
+      "balance_eth": 0.29880375435864703,
+      "balance_wei": "298803754358647057",
       "set_positions": [
         {
           "rebalancing_set": "0xb9ffe0b8ee2d1af94202ffed366520300748a4d8",
@@ -3442,7 +3442,7 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "61280368959000000",
-          "weth_share": 0.03956783458141308
+          "weth_share": 0.039567834581535205
         },
         {
           "rebalancing_set": "0x8933ea1ce67b946bdf2436ce860ffbb53ce814d2",
@@ -3467,7 +3467,7 @@
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "26813256113000000",
-          "weth_share": 0.008807705544557277
+          "weth_share": 0.008807705544921347
         },
         {
           "rebalancing_set": "0x54e8371c1ec43e58fb53d4ef4ed463c17ba8a6be",
@@ -3645,13 +3645,13 @@
     },
     {
       "address": "0x9128427d6cdf0f7fe06dcf71234a8db05836c660",
-      "balance_eth": 0.2660223514393183,
-      "balance_wei": "266022351439318267",
+      "balance_eth": 0.2660223514401394,
+      "balance_wei": "266022351440139397",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "412000000000000000",
-          "weth_share": 0.2660223514393183
+          "weth_share": 0.2660223514401394
         }
       ]
     },
@@ -3977,13 +3977,13 @@
     },
     {
       "address": "0xf3ff26744e97f3e78e84f9dd59df955b5b6e76e7",
-      "balance_eth": 0.2075199509427499,
-      "balance_wei": "207519950942749884",
+      "balance_eth": 0.20751995095132783,
+      "balance_wei": "207519950951327840",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "631752000000000000",
-          "weth_share": 0.2075199509427499
+          "weth_share": 0.20751995095132783
         }
       ]
     },
@@ -4282,13 +4282,13 @@
     },
     {
       "address": "0xba7ef679c51c2ba8f27591122e858cf27d45e092",
-      "balance_eth": 0.17295327560022392,
-      "balance_wei": "172953275600223907",
+      "balance_eth": 0.1729532756203364,
+      "balance_wei": "172953275620336429",
       "set_positions": [
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "739000000000000000",
-          "weth_share": 0.17295327560022392
+          "weth_share": 0.1729532756203364
         }
       ]
     },
@@ -4388,20 +4388,20 @@
     },
     {
       "address": "0x397d5af6d2176ce787233e9b721603d299e20bb4",
-      "balance_eth": 0.16245729439224368,
-      "balance_wei": "162457294392243681",
+      "balance_eth": 0.16245729439895895,
+      "balance_wei": "162457294398958946",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "494567968914000000",
-          "weth_share": 0.16245729439224368
+          "weth_share": 0.16245729439895895
         }
       ]
     },
     {
       "address": "0x87cd102a21a049846b728478aaf823997bfa7dac",
-      "balance_eth": 0.16106741295857385,
-      "balance_wei": "161067412958573871",
+      "balance_eth": 0.1610674129587627,
+      "balance_wei": "161067412958762681",
       "set_positions": [
         {
           "rebalancing_set": "0xbf70a33a13fbe8d0106df321da0cf654d2e9ab50",
@@ -4411,7 +4411,7 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "94734729838000000",
-          "weth_share": 0.06116882425843035
+          "weth_share": 0.06116882425861917
         },
         {
           "rebalancing_set": "0x8933ea1ce67b946bdf2436ce860ffbb53ce814d2",
@@ -4517,7 +4517,7 @@
     {
       "address": "0x421f223e19877d9765ecd6e8ec4812457229b36a",
       "balance_eth": 0.152825997611353,
-      "balance_wei": "152825997611352981",
+      "balance_wei": "152825997611352982",
       "set_positions": [
         {
           "rebalancing_set": "0x09e4bdfb273245063ef5e800d891eff7d04f9b83",
@@ -4547,7 +4547,7 @@
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "12874000000",
-          "weth_share": 3.012991163e-09
+          "weth_share": 3.012991164e-09
         },
         {
           "rebalancing_set": "0xc06aec5191be16b94ffc97b6fc01393527367365",
@@ -4618,13 +4618,13 @@
     },
     {
       "address": "0xbe006bea2f43ff9ff34ea3ca13df9dbd79625c66",
-      "balance_eth": 0.14520602758763673,
-      "balance_wei": "145206027587636722",
+      "balance_eth": 0.1452060275936389,
+      "balance_wei": "145206027593638896",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "442050019402000000",
-          "weth_share": 0.14520602758763673
+          "weth_share": 0.1452060275936389
         }
       ]
     },
@@ -4678,13 +4678,13 @@
     },
     {
       "address": "0xfd57356ee705da5f58814e0b80b06828479d7c90",
-      "balance_eth": 0.14225301169034207,
-      "balance_wei": "142253011690342073",
+      "balance_eth": 0.14225301169622218,
+      "balance_wei": "142253011696222182",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "433060167146000000",
-          "weth_share": 0.14225301169034207
+          "weth_share": 0.14225301169622218
         }
       ]
     },
@@ -4828,8 +4828,8 @@
     },
     {
       "address": "0x141fef8cd8397a390afe94846c8bd6f4ab981c48",
-      "balance_eth": 0.13001800375683575,
-      "balance_wei": "130018003756835758",
+      "balance_eth": 0.13001800375683595,
+      "balance_wei": "130018003756835957",
       "set_positions": [
         {
           "rebalancing_set": "0x93e01899c10532d76c0e864537a1d26433dbbddb",
@@ -4839,7 +4839,7 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "100000000000000",
-          "weth_share": 6.4568531902747e-05
+          "weth_share": 6.4568531902946e-05
         }
       ]
     },
@@ -4886,13 +4886,13 @@
     },
     {
       "address": "0x24e8bb6a37774d8a0187e196beb29601ed5920bf",
-      "balance_eth": 0.12726749159169048,
-      "balance_wei": "127267491591690502",
+      "balance_eth": 0.12726749160362402,
+      "balance_wei": "127267491603624019",
       "set_positions": [
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "438476557967000000",
-          "weth_share": 0.10261969820609486
+          "weth_share": 0.10261969821802838
         },
         {
           "rebalancing_set": "0xa6c040045d962e4b8efa00954c7d23ccd0a2b8ad",
@@ -4951,8 +4951,8 @@
     },
     {
       "address": "0x0501d583649d986cd1cfbdf311a8df5168a82bab",
-      "balance_eth": 0.12418889659705389,
-      "balance_wei": "124188896597053891",
+      "balance_eth": 0.12418889660177503,
+      "balance_wei": "124188896601775023",
       "set_positions": [
         {
           "rebalancing_set": "0x8ddc86dba7ad728012efc460b8a168aba60b403b",
@@ -4967,7 +4967,7 @@
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "173469885257000000",
-          "weth_share": 0.040598355714740374
+          "weth_share": 0.040598355719461514
         }
       ]
     },
@@ -5086,13 +5086,13 @@
     },
     {
       "address": "0x4c670cfae444cae2faec87abf9a68f7ca6d5ba0f",
-      "balance_eth": 0.11334030897039903,
-      "balance_wei": "113340308970399031",
+      "balance_eth": 0.11334030897074888,
+      "balance_wei": "113340308970748878",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "175534901647000000",
-          "weth_share": 0.11334030897039903
+          "weth_share": 0.11334030897074888
         }
       ]
     },
@@ -5212,13 +5212,13 @@
     },
     {
       "address": "0xce97d2d6fedccbbae469307c5ecf8a909f2a37c9",
-      "balance_eth": 0.10870923834829814,
-      "balance_wei": "108709238348298143",
+      "balance_eth": 0.1087092383609398,
+      "balance_wei": "108709238360939805",
       "set_positions": [
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "464496129724000000",
-          "weth_share": 0.10870923834829814
+          "weth_share": 0.1087092383609398
         }
       ]
     },
@@ -5320,13 +5320,13 @@
     },
     {
       "address": "0x5e79f4817ca4c16a8cc9826d139da36917f4a1a5",
-      "balance_eth": 0.10238074062869143,
-      "balance_wei": "102380740628691432",
+      "balance_eth": 0.10238074063292339,
+      "balance_wei": "102380740632923399",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "311677201926000000",
-          "weth_share": 0.10238074062869143
+          "weth_share": 0.10238074063292339
         }
       ]
     },
@@ -5655,8 +5655,8 @@
     },
     {
       "address": "0xd5679891c8620e315f6d6ec10ab9a5820ac1a4f4",
-      "balance_eth": 0.09063325778741232,
-      "balance_wei": "90633257787412328",
+      "balance_eth": 0.09063325778752955,
+      "balance_wei": "90633257787529553",
       "set_positions": [
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
@@ -5666,12 +5666,12 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "40000000000000000",
-          "weth_share": 0.02582741276109886
+          "weth_share": 0.025827412761178583
         },
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "2762044388000000",
-          "weth_share": 0.000907285320662946
+          "weth_share": 0.000907285320700449
         }
       ]
     },
@@ -5913,8 +5913,8 @@
     },
     {
       "address": "0x52ecfc3cf25e10a654b102250f1ac3ebcbd91f69",
-      "balance_eth": 0.08528260171310474,
-      "balance_wei": "85282601713104741",
+      "balance_eth": 0.0852826017171942,
+      "balance_wei": "85282601717194205",
       "set_positions": [
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
@@ -5924,7 +5924,7 @@
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "150260304766000000",
-          "weth_share": 0.03516645724217542
+          "weth_share": 0.03516645724626488
         }
       ]
     },
@@ -6048,8 +6048,8 @@
     },
     {
       "address": "0xf62ff63768819731092a4ad392519c7e3f14666c",
-      "balance_eth": 0.081643834290697,
-      "balance_wei": "81643834290697008",
+      "balance_eth": 0.08164383429078084,
+      "balance_wei": "81643834290780841",
       "set_positions": [
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
@@ -6069,7 +6069,7 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "4451307529000000",
-          "weth_share": 0.00287414392195175
+          "weth_share": 0.002874143921960622
         },
         {
           "rebalancing_set": "0x585c2cf94c41b528ec7329cbc3cde3c4f8d268db",
@@ -6079,7 +6079,7 @@
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "5520774504000000",
-          "weth_share": 0.00181348195848381
+          "weth_share": 0.001813481958558771
         },
         {
           "rebalancing_set": "0x6ad29bde4ecc382e8d535206f1f0dd92a6c034df",
@@ -6141,13 +6141,13 @@
     },
     {
       "address": "0x7e62a91ab0ae4b5ad63d3ceb128ad148a1db9c79",
-      "balance_eth": 0.08025868515511471,
-      "balance_wei": "80258685155114710",
+      "balance_eth": 0.08025868515536244,
+      "balance_wei": "80258685155362444",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "124300000000000000",
-          "weth_share": 0.08025868515511471
+          "weth_share": 0.08025868515536244
         }
       ]
     },
@@ -6281,20 +6281,20 @@
     },
     {
       "address": "0xa8dbe920eb44a68f847e35283c5245474499e486",
-      "balance_eth": 0.07761020472596146,
-      "balance_wei": "77610204725961457",
+      "balance_eth": 0.07761020472916952,
+      "balance_wei": "77610204729169520",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "236268377249000000",
-          "weth_share": 0.07761020472596146
+          "weth_share": 0.07761020472916952
         }
       ]
     },
     {
       "address": "0x4d37f28d2db99e8d35a6c725a5f1749a085850a3",
-      "balance_eth": 0.07613419455952392,
-      "balance_wei": "76134194559523927",
+      "balance_eth": 0.07613419455954386,
+      "balance_wei": "76134194559543857",
       "set_positions": [
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
@@ -6304,7 +6304,7 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "10000000000000000",
-          "weth_share": 0.006456853190274715
+          "weth_share": 0.006456853190294645
         },
         {
           "rebalancing_set": "0xbf70a33a13fbe8d0106df321da0cf654d2e9ab50",
@@ -6361,13 +6361,13 @@
     },
     {
       "address": "0xa736eba2ad4eb8ebf5d30aab262f2acbe0bfe327",
-      "balance_eth": 0.07540938794840484,
-      "balance_wei": "75409387948404825",
+      "balance_eth": 0.0754093879571741,
+      "balance_wei": "75409387957174090",
       "set_positions": [
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "322211519270000000",
-          "weth_share": 0.07540938794840484
+          "weth_share": 0.0754093879571741
         }
       ]
     },
@@ -6549,13 +6549,13 @@
     },
     {
       "address": "0x394344139caea03f7b09e34f4c9d56469a497fe8",
-      "balance_eth": 0.07016082607867842,
-      "balance_wei": "70160826078678426",
+      "balance_eth": 0.070160826078895,
+      "balance_wei": "70160826078894991",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "108661021106000000",
-          "weth_share": 0.07016082607867842
+          "weth_share": 0.070160826078895
         }
       ]
     },
@@ -6655,13 +6655,13 @@
     },
     {
       "address": "0x91d9ae7437010a60a893caca1e51d75fdbe44ec6",
-      "balance_eth": 0.06827000660487113,
-      "balance_wei": "68270006604871131",
+      "balance_eth": 0.06827000660769311,
+      "balance_wei": "68270006607693111",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "207834056517000000",
-          "weth_share": 0.06827000660487113
+          "weth_share": 0.06827000660769311
         }
       ]
     },
@@ -6751,25 +6751,25 @@
     },
     {
       "address": "0x88856d6ce40d223177c0b345ca1f74a089bb672d",
-      "balance_eth": 0.0647214526819254,
-      "balance_wei": "64721452681925402",
+      "balance_eth": 0.06472145268460071,
+      "balance_wei": "64721452684600701",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "197031210681000000",
-          "weth_share": 0.0647214526819254
+          "weth_share": 0.06472145268460071
         }
       ]
     },
     {
       "address": "0xe3e7b89d1616c832b4a5969d2f4301e42ec39ee4",
-      "balance_eth": 0.06456853190274715,
-      "balance_wei": "64568531902747152",
+      "balance_eth": 0.06456853190294645,
+      "balance_wei": "64568531902946455",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "100000000000000000",
-          "weth_share": 0.06456853190274715
+          "weth_share": 0.06456853190294645
         }
       ]
     },
@@ -6811,25 +6811,25 @@
     },
     {
       "address": "0xefd7502791bcbf534a9946f691b7b38ea07e4dd4",
-      "balance_eth": 0.06285855495891524,
-      "balance_wei": "62858554958915235",
+      "balance_eth": 0.06285855496151353,
+      "balance_wei": "62858554961513530",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "191360000000000000",
-          "weth_share": 0.06285855495891524
+          "weth_share": 0.06285855496151353
         }
       ]
     },
     {
       "address": "0x83c69d3cf4d5897278dd150d0564cb2de3602eb9",
-      "balance_eth": 0.06232938772673405,
-      "balance_wei": "62329387726734047",
+      "balance_eth": 0.062329387729310466,
+      "balance_wei": "62329387729310467",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "189749058711000000",
-          "weth_share": 0.06232938772673405
+          "weth_share": 0.062329387729310466
         }
       ]
     },
@@ -7088,8 +7088,8 @@
     },
     {
       "address": "0xcb14fe6347a2dfb7d24fe83aebf9cb2c226f4a3a",
-      "balance_eth": 0.054775879306484504,
-      "balance_wei": "54775879306484503",
+      "balance_eth": 0.05477587930656844,
+      "balance_wei": "54775879306568440",
       "set_positions": [
         {
           "rebalancing_set": "0xbf70a33a13fbe8d0106df321da0cf654d2e9ab50",
@@ -7099,7 +7099,7 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "42115112807000000",
-          "weth_share": 0.027193110048665745
+          "weth_share": 0.027193110048749684
         },
         {
           "rebalancing_set": "0x15822a64c8cb27d7828c45e0aafc3e6c5decd172",
@@ -7110,13 +7110,13 @@
     },
     {
       "address": "0xad45be1fda226bc941a2c7a88c49b747090eb5d5",
-      "balance_eth": 0.05459152344586638,
-      "balance_wei": "54591523445866386",
+      "balance_eth": 0.054591523447128,
+      "balance_wei": "54591523447127998",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "92915646530000000",
-          "weth_share": 0.03052123366403191
+          "weth_share": 0.030521233665293523
         },
         {
           "rebalancing_set": "0xa35fc5019c4dc509394bd4d74591a0bf8852c195",
@@ -7390,13 +7390,13 @@
     },
     {
       "address": "0x42faf50392fba9224dfe3bbaa85ebfeff2d3ed8a",
-      "balance_eth": 0.04927248768727678,
-      "balance_wei": "49272487687276783",
+      "balance_eth": 0.049272487689313485,
+      "balance_wei": "49272487689313490",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "150000000000000000",
-          "weth_share": 0.04927248768727678
+          "weth_share": 0.049272487689313485
         }
       ]
     },
@@ -7479,8 +7479,8 @@
     },
     {
       "address": "0x401df62e125681ad217432f733301c8628c329f5",
-      "balance_eth": 0.0469554875474559,
-      "balance_wei": "46955487547455894",
+      "balance_eth": 0.046955487549774674,
+      "balance_wei": "46955487549774674",
       "set_positions": [
         {
           "rebalancing_set": "0xa6c040045d962e4b8efa00954c7d23ccd0a2b8ad",
@@ -7490,7 +7490,7 @@
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "85199587563000000",
-          "weth_share": 0.019939848103936328
+          "weth_share": 0.019939848106255112
         }
       ]
     },
@@ -7520,25 +7520,25 @@
     },
     {
       "address": "0x0ce1508cb12c6a7baf6f84a2056d9f1f64f3f3c0",
-      "balance_eth": 0.04658401964130906,
-      "balance_wei": "46584019641309057",
+      "balance_eth": 0.04658401964323463,
+      "balance_wei": "46584019643234634",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "141815509510000000",
-          "weth_share": 0.04658401964130906
+          "weth_share": 0.04658401964323463
         }
       ]
     },
     {
       "address": "0xc4b258a1f6774bbd42667ea2969cb4175ca1fcd6",
-      "balance_eth": 0.04652350520984163,
-      "balance_wei": "46523505209841635",
+      "balance_eth": 0.04652350521176471,
+      "balance_wei": "46523505211764710",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "141631285714000000",
-          "weth_share": 0.04652350520984163
+          "weth_share": 0.04652350521176471
         }
       ]
     },
@@ -7797,13 +7797,13 @@
     },
     {
       "address": "0x9f27b64dddf8d5b7fa434ffd1d8797cb950e6054",
-      "balance_eth": 0.043217671527678685,
-      "balance_wei": "43217671527678690",
+      "balance_eth": 0.04321767152946512,
+      "balance_wei": "43217671529465117",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "131567351953000000",
-          "weth_share": 0.043217671527678685
+          "weth_share": 0.04321767152946512
         }
       ]
     },
@@ -7857,8 +7857,8 @@
     },
     {
       "address": "0x22097863f8cda859bbc71e8d025c4965b8051f4f",
-      "balance_eth": 0.042370136448141554,
-      "balance_wei": "42370136448141551",
+      "balance_eth": 0.04237013644823176,
+      "balance_wei": "42370136448231757",
       "set_positions": [
         {
           "rebalancing_set": "0xa360f2af3f957906468c0fd7526391aed08ae3db",
@@ -7868,12 +7868,12 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "30476712771000000",
-          "weth_share": 0.019678366008451752
+          "weth_share": 0.019678366008512492
         },
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "2170061855000000",
-          "weth_share": 0.000712828973540776
+          "weth_share": 0.000712828973570241
         }
       ]
     },
@@ -7966,13 +7966,13 @@
     },
     {
       "address": "0x74cb5f0ea12c8017a021a05dec9736e420e74bb8",
-      "balance_eth": 0.039208777111124575,
-      "balance_wei": "39208777111124580",
+      "balance_eth": 0.0392087771127453,
+      "balance_wei": "39208777112745297",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "119363093741000000",
-          "weth_share": 0.039208777111124575
+          "weth_share": 0.0392087771127453
         }
       ]
     },
@@ -8226,13 +8226,13 @@
     },
     {
       "address": "0x492c83645e686b70b8d81464efd7826e808b8330",
-      "balance_eth": 0.034432114349661154,
-      "balance_wei": "34432114349661153",
+      "balance_eth": 0.03443211434976743,
+      "balance_wei": "34432114349767434",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "53326463116000000",
-          "weth_share": 0.034432114349661154
+          "weth_share": 0.03443211434976743
         }
       ]
     },
@@ -8713,8 +8713,8 @@
     },
     {
       "address": "0xe022bdf73d5c61b9d9392ad51a41cac0c666beb1",
-      "balance_eth": 0.029089509577320392,
-      "balance_wei": "29089509577320393",
+      "balance_eth": 0.029089509577449994,
+      "balance_wei": "29089509577449994",
       "set_positions": [
         {
           "rebalancing_set": "0xa6c040045d962e4b8efa00954c7d23ccd0a2b8ad",
@@ -8739,7 +8739,7 @@
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "9544880984000000",
-          "weth_share": 0.003135333538404415
+          "weth_share": 0.003135333538534016
         },
         {
           "rebalancing_set": "0xa35fc5019c4dc509394bd4d74591a0bf8852c195",
@@ -8750,13 +8750,13 @@
     },
     {
       "address": "0x502e31fb699f1a0b547dc65f2f0c7ab36f3010e2",
-      "balance_eth": 0.029066461323354265,
-      "balance_wei": "29066461323354266",
+      "balance_eth": 0.029066461324555745,
+      "balance_wei": "29066461324555745",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "88486890010000000",
-          "weth_share": 0.029066461323354265
+          "weth_share": 0.029066461324555745
         }
       ]
     },
@@ -8827,8 +8827,8 @@
     },
     {
       "address": "0x71da29334682c7c38c277605ff251b08731777a1",
-      "balance_eth": 0.028233571100056365,
-      "balance_wei": "28233571100056365",
+      "balance_eth": 0.028233571100076297,
+      "balance_wei": "28233571100076295",
       "set_positions": [
         {
           "rebalancing_set": "0x542156d51d10db5accb99f9db7e7c91b74e80a2c",
@@ -8838,19 +8838,19 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "10000000000000000",
-          "weth_share": 0.006456853190274715
+          "weth_share": 0.006456853190294645
         }
       ]
     },
     {
       "address": "0x3ae42e7fb544a1d0728772a5976a901fa32c08f9",
-      "balance_eth": 0.028149282577589207,
-      "balance_wei": "28149282577589209",
+      "balance_eth": 0.028149282578752776,
+      "balance_wei": "28149282578752776",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "85694727115000000",
-          "weth_share": 0.028149282577589207
+          "weth_share": 0.028149282578752776
         }
       ]
     },
@@ -8940,13 +8940,13 @@
     },
     {
       "address": "0xf3862af14cbb4d9b781e41a3d4d74e7c2cdb73e2",
-      "balance_eth": 0.02571573791670916,
-      "balance_wei": "25715737916709160",
+      "balance_eth": 0.025715737919430742,
+      "balance_wei": "25715737919430746",
       "set_positions": [
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "100000000000000000",
-          "weth_share": 0.02340369087959728
+          "weth_share": 0.02340369088231887
         },
         {
           "rebalancing_set": "0xa35fc5019c4dc509394bd4d74591a0bf8852c195",
@@ -8998,13 +8998,13 @@
     },
     {
       "address": "0x738e0ef6f0b111d6b78689f4cb1ada9a5e915cd9",
-      "balance_eth": 0.02512896872051116,
-      "balance_wei": "25128968720511159",
+      "balance_eth": 0.02512896872154988,
+      "balance_wei": "25128968721549880",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "76500000000000000",
-          "weth_share": 0.02512896872051116
+          "weth_share": 0.02512896872154988
         }
       ]
     },
@@ -9044,13 +9044,13 @@
     },
     {
       "address": "0xef389829fe229b3afdbb7b1f20501523dae213c3",
-      "balance_eth": 0.024929083975835233,
-      "balance_wei": "24929083975835231",
+      "balance_eth": 0.02492908397591218,
+      "balance_wei": "24929083975912179",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "38608720442000000",
-          "weth_share": 0.024929083975835233
+          "weth_share": 0.02492908397591218
         }
       ]
     },
@@ -9092,13 +9092,13 @@
     },
     {
       "address": "0x50af5f78a48bfbb09d4a53263be9a405b4d39fec",
-      "balance_eth": 0.02445653543072742,
-      "balance_wei": "24456535430727421",
+      "balance_eth": 0.024456535431738344,
+      "balance_wei": "24456535431738346",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "74452914533000000",
-          "weth_share": 0.02445653543072742
+          "weth_share": 0.024456535431738344
         }
       ]
     },
@@ -9299,13 +9299,13 @@
     },
     {
       "address": "0xc897d51841da95fb634fb4f039349fb73a377caa",
-      "balance_eth": 0.02158905485734484,
-      "balance_wei": "21589054857344842",
+      "balance_eth": 0.02158905485741148,
+      "balance_wei": "21589054857411481",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "33435876922000000",
-          "weth_share": 0.02158905485734484
+          "weth_share": 0.02158905485741148
         }
       ]
     },
@@ -9482,13 +9482,13 @@
     },
     {
       "address": "0x115baf02491983a700230729e4fc43022aac4d64",
-      "balance_eth": 0.019496097018395355,
-      "balance_wei": "19496097018395356",
+      "balance_eth": 0.019496097018455536,
+      "balance_wei": "19496097018455534",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "30194425123000000",
-          "weth_share": 0.019496097018395355
+          "weth_share": 0.019496097018455536
         }
       ]
     },
@@ -9528,8 +9528,8 @@
     },
     {
       "address": "0x531d77ebc966e3b9eacca41fb80c98790515eae0",
-      "balance_eth": 0.019189845697626808,
-      "balance_wei": "19189845697626807",
+      "balance_eth": 0.019189845697762588,
+      "balance_wei": "19189845697762588",
       "set_positions": [
         {
           "rebalancing_set": "0xbf70a33a13fbe8d0106df321da0cf654d2e9ab50",
@@ -9539,7 +9539,7 @@
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "10000000000000000",
-          "weth_share": 0.003284832512485118
+          "weth_share": 0.003284832512620899
         }
       ]
     },
@@ -9593,8 +9593,8 @@
     },
     {
       "address": "0xd87080c972dbf597f4c5e7894b51712c4329a5c1",
-      "balance_eth": 0.018058769339332054,
-      "balance_wei": "18058769339332054",
+      "balance_eth": 0.018058769339603615,
+      "balance_wei": "18058769339603615",
       "set_positions": [
         {
           "rebalancing_set": "0x93e01899c10532d76c0e864537a1d26433dbbddb",
@@ -9604,7 +9604,7 @@
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "20000000000000000",
-          "weth_share": 0.006569665024970237
+          "weth_share": 0.006569665025241798
         },
         {
           "rebalancing_set": "0x585c2cf94c41b528ec7329cbc3cde3c4f8d268db",
@@ -9709,8 +9709,8 @@
     },
     {
       "address": "0x5ce15b68596077bda41e205e1dd9f1ac603abe9b",
-      "balance_eth": 0.016908217917174357,
-      "balance_wei": "16908217917174357",
+      "balance_eth": 0.016908217917183777,
+      "balance_wei": "16908217917183777",
       "set_positions": [
         {
           "rebalancing_set": "0x93e01899c10532d76c0e864537a1d26433dbbddb",
@@ -9720,24 +9720,24 @@
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "688440173000000",
-          "weth_share": 0.000226141066317127
+          "weth_share": 0.000226141066326475
         },
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "36504402000000",
-          "weth_share": 2.3570356451277e-05
+          "weth_share": 2.3570356451349e-05
         }
       ]
     },
     {
       "address": "0xaaf47c4b70e40dcae83357ff0ad224655c49b291",
-      "balance_eth": 0.016707612418980528,
-      "balance_wei": "16707612418980527",
+      "balance_eth": 0.016707612419637665,
+      "balance_wei": "16707612419637664",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "48397026574000000",
-          "weth_share": 0.015897612639788148
+          "weth_share": 0.015897612640445286
         },
         {
           "rebalancing_set": "0xffee21b4bb7084a9416205544101ae9f472c7159",
@@ -9830,13 +9830,13 @@
     },
     {
       "address": "0x26940959bd9215e210f14bf10cb57a60168e9510",
-      "balance_eth": 0.016345461359172524,
-      "balance_wei": "16345461359172524",
+      "balance_eth": 0.016345461359222976,
+      "balance_wei": "16345461359222978",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "25314903216000000",
-          "weth_share": 0.016345461359172524
+          "weth_share": 0.016345461359222976
         }
       ]
     },
@@ -9854,13 +9854,13 @@
     },
     {
       "address": "0x156637f779403cc77c809f37e15304cdd7f679e0",
-      "balance_eth": 0.016247367246866058,
-      "balance_wei": "16247367246866058",
+      "balance_eth": 0.01624736724690726,
+      "balance_wei": "16247367246907259",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "20672698560000000",
-          "weth_share": 0.013348057964872352
+          "weth_share": 0.013348057964913552
         },
         {
           "rebalancing_set": "0x8ddc86dba7ad728012efc460b8a168aba60b403b",
@@ -9871,8 +9871,8 @@
     },
     {
       "address": "0xd1779967d1c0ed254ff7ae1603a9f94263eb4a78",
-      "balance_eth": 0.016173091672411256,
-      "balance_wei": "16173091672411254",
+      "balance_eth": 0.016173091672433332,
+      "balance_wei": "16173091672433332",
       "set_positions": [
         {
           "rebalancing_set": "0xa360f2af3f957906468c0fd7526391aed08ae3db",
@@ -9882,7 +9882,7 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "11078016019000000",
-          "weth_share": 0.007152912307419455
+          "weth_share": 0.007152912307441533
         }
       ]
     },
@@ -9924,8 +9924,8 @@
     },
     {
       "address": "0x0b5df7e727019e988810a61a0ac52274098cf33c",
-      "balance_eth": 0.016005687063577138,
-      "balance_wei": "16005687063577135",
+      "balance_eth": 0.016005687063595713,
+      "balance_wei": "16005687063595711",
       "set_positions": [
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
@@ -9935,7 +9935,7 @@
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "682547354000000",
-          "weth_share": 0.00015974127283703
+          "weth_share": 0.000159741272855606
         }
       ]
     },
@@ -9953,8 +9953,8 @@
     },
     {
       "address": "0xecf5b730638351a02368f1b1c64b587b1253097f",
-      "balance_eth": 0.01574341982089611,
-      "balance_wei": "15743419820896110",
+      "balance_eth": 0.01574341982097363,
+      "balance_wei": "15743419820973633",
       "set_positions": [
         {
           "rebalancing_set": "0x5cd487ce4db7091292f2e914f7b31445bd4a5e1b",
@@ -9969,19 +9969,19 @@
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "5709428571000000",
-          "weth_share": 0.001875451659773225
+          "weth_share": 0.001875451659850748
         }
       ]
     },
     {
       "address": "0x409661461423819da5f445e9b20def6aa87ba1d0",
-      "balance_eth": 0.015660439003272804,
-      "balance_wei": "15660439003272804",
+      "balance_eth": 0.015660439003920137,
+      "balance_wei": "15660439003920137",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "47675000000000000",
-          "weth_share": 0.015660439003272804
+          "weth_share": 0.015660439003920137
         }
       ]
     },
@@ -10076,13 +10076,13 @@
     },
     {
       "address": "0xe2e77ff0ae2206725c59b63c41bbdf7b98f29dbb",
-      "balance_eth": 0.01460963924469626,
-      "balance_wei": "14609639244696259",
+      "balance_eth": 0.014609639245300156,
+      "balance_wei": "14609639245300157",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "44476055291000000",
-          "weth_share": 0.01460963924469626
+          "weth_share": 0.014609639245300156
         }
       ]
     },
@@ -10100,13 +10100,13 @@
     },
     {
       "address": "0x4374d60bba6d1cedce3e0b97f3a2fea9bc1a6e5b",
-      "balance_eth": 0.014415357616501496,
-      "balance_wei": "14415357616501496",
+      "balance_eth": 0.014415357617097365,
+      "balance_wei": "14415357617097363",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "43884604654000000",
-          "weth_share": 0.014415357616501496
+          "weth_share": 0.014415357617097365
         }
       ]
     },
@@ -10124,13 +10124,13 @@
     },
     {
       "address": "0xfd19c92e4b173e1d346a539a5281bf49e6660395",
-      "balance_eth": 0.014205077018604371,
-      "balance_wei": "14205077018604373",
+      "balance_eth": 0.01420507701864822,
+      "balance_wei": "14205077018648220",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "22000000000000000",
-          "weth_share": 0.014205077018604371
+          "weth_share": 0.01420507701864822
         }
       ]
     },
@@ -10271,8 +10271,8 @@
     },
     {
       "address": "0x52fb91492000f2a900a6b75b37d588ab37378e59",
-      "balance_eth": 0.013180501170917782,
-      "balance_wei": "13180501170917782",
+      "balance_eth": 0.01318050117099063,
+      "balance_wei": "13180501170990630",
       "set_positions": [
         {
           "rebalancing_set": "0xbf70a33a13fbe8d0106df321da0cf654d2e9ab50",
@@ -10287,7 +10287,7 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "3666408685483629",
-          "weth_share": 0.002367346261771589
+          "weth_share": 0.002367346261778896
         },
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
@@ -10297,7 +10297,7 @@
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "4826969094000000",
-          "weth_share": 0.001585578501673203
+          "weth_share": 0.001585578501738744
         }
       ]
     },
@@ -10315,13 +10315,13 @@
     },
     {
       "address": "0x81efb6435b5828669e5caf61b98aebb02f98e3cf",
-      "balance_eth": 0.013036562530113628,
-      "balance_wei": "13036562530113628",
+      "balance_eth": 0.013036562530652503,
+      "balance_wei": "13036562530652502",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "39687145328000000",
-          "weth_share": 0.013036562530113628
+          "weth_share": 0.013036562530652503
         }
       ]
     },
@@ -10361,25 +10361,25 @@
     },
     {
       "address": "0x415dd9ba521d75172c5339962b7787df0c88ce46",
-      "balance_eth": 0.01291370638054943,
-      "balance_wei": "12913706380549430",
+      "balance_eth": 0.012913706380589291,
+      "balance_wei": "12913706380589291",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "20000000000000000",
-          "weth_share": 0.01291370638054943
+          "weth_share": 0.012913706380589291
         }
       ]
     },
     {
       "address": "0xb669b4d0a979cb16017401749a636375350f409b",
-      "balance_eth": 0.01291370638054943,
-      "balance_wei": "12913706380549430",
+      "balance_eth": 0.012913706380589291,
+      "balance_wei": "12913706380589291",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "20000000000000000",
-          "weth_share": 0.01291370638054943
+          "weth_share": 0.012913706380589291
         }
       ]
     },
@@ -10450,8 +10450,8 @@
     },
     {
       "address": "0x96c97c17daf85a97a849d34e0aef5f15532119d0",
-      "balance_eth": 0.012674766499483653,
-      "balance_wei": "12674766499483652",
+      "balance_eth": 0.01267476649981884,
+      "balance_wei": "12674766499818841",
       "set_positions": [
         {
           "rebalancing_set": "0xb8243b4eeca27a4191e879760b88fe2270561796",
@@ -10461,7 +10461,7 @@
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "12242701541000000",
-          "weth_share": 0.002865244023967332
+          "weth_share": 0.002865244024300528
         },
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
@@ -10471,7 +10471,7 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "1000000000000000",
-          "weth_share": 0.000645685319027471
+          "weth_share": 0.000645685319029464
         },
         {
           "rebalancing_set": "0x15822a64c8cb27d7828c45e0aafc3e6c5decd172",
@@ -10482,13 +10482,13 @@
     },
     {
       "address": "0x1c70f050a23b28960d0562f77220ae5667d0f563",
-      "balance_eth": 0.012623974219614031,
-      "balance_wei": "12623974219614033",
+      "balance_eth": 0.012623974220135852,
+      "balance_wei": "12623974220135852",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "38431104696000000",
-          "weth_share": 0.012623974219614031
+          "weth_share": 0.012623974220135852
         }
       ]
     },
@@ -10542,8 +10542,8 @@
     },
     {
       "address": "0xd3d555bb655acba9452bfc6d7cea8cc7b3628c55",
-      "balance_eth": 0.01212727024204087,
-      "balance_wei": "12127270242040870",
+      "balance_eth": 0.01212727024204208,
+      "balance_wei": "12127270242042080",
       "set_positions": [
         {
           "rebalancing_set": "0x33319fae07128119166476a4bcdd96e5c9401ca4",
@@ -10573,7 +10573,7 @@
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "32636432000000",
-          "weth_share": 1.072052129251e-05
+          "weth_share": 1.0720521292954e-05
         },
         {
           "rebalancing_set": "0xbd0844314e6ddd20bcf796ad5b979da06d82c45c",
@@ -10588,7 +10588,7 @@
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "28115975000000",
-          "weth_share": 6.580175876784e-06
+          "weth_share": 6.58017587755e-06
         },
         {
           "rebalancing_set": "0x585c2cf94c41b528ec7329cbc3cde3c4f8d268db",
@@ -10668,13 +10668,13 @@
     },
     {
       "address": "0x9980c46c5ffd0ea4713efb63b24443efdddccb99",
-      "balance_eth": 0.01186616813414474,
-      "balance_wei": "11866168134144739",
+      "balance_eth": 0.011866168134635233,
+      "balance_wei": "11866168134635234",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "36124119233000000",
-          "weth_share": 0.01186616813414474
+          "weth_share": 0.011866168134635233
         }
       ]
     },
@@ -10704,8 +10704,8 @@
     },
     {
       "address": "0xf41f0d91b6c49abe748fa75ee22a232750b778a7",
-      "balance_eth": 0.011788782313761416,
-      "balance_wei": "11788782313761415",
+      "balance_eth": 0.011788782313762156,
+      "balance_wei": "11788782313762155",
       "set_positions": [
         {
           "rebalancing_set": "0x8ddc86dba7ad728012efc460b8a168aba60b403b",
@@ -10720,12 +10720,12 @@
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "16581881000000",
-          "weth_share": 5.446870182695e-06
+          "weth_share": 5.446870182921e-06
         },
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "18886912000000",
-          "weth_share": 4.420234501181e-06
+          "weth_share": 4.420234501695e-06
         },
         {
           "rebalancing_set": "0x33319fae07128119166476a4bcdd96e5c9401ca4",
@@ -10736,13 +10736,13 @@
     },
     {
       "address": "0x5055e93177a5ba508285d8d04f64bb89133a795d",
-      "balance_eth": 0.011751616225450515,
-      "balance_wei": "11751616225450515",
+      "balance_eth": 0.011751616225936276,
+      "balance_wei": "11751616225936275",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "35775389402000000",
-          "weth_share": 0.011751616225450515
+          "weth_share": 0.011751616225936276
         }
       ]
     },
@@ -10868,13 +10868,13 @@
     },
     {
       "address": "0xd1da77f7c38061d0a4e0d84d69b08f22a2d3d4d6",
-      "balance_eth": 0.010901397309978455,
-      "balance_wei": "10901397309978454",
+      "balance_eth": 0.010901397310429068,
+      "balance_wei": "10901397310429069",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "33187072000000000",
-          "weth_share": 0.010901397309978455
+          "weth_share": 0.010901397310429068
         }
       ]
     },
@@ -10916,13 +10916,13 @@
     },
     {
       "address": "0xafb5b9515ce5a781ebf41fadd5a2a1c04c73d55e",
-      "balance_eth": 0.010497718621114817,
-      "balance_wei": "10497718621114818",
+      "balance_eth": 0.01049771862196721,
+      "balance_wei": "10497718621967210",
       "set_positions": [
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "31319693164000000",
-          "weth_share": 0.007329964172540921
+          "weth_share": 0.007329964173393313
         },
         {
           "rebalancing_set": "0xc06aec5191be16b94ffc97b6fc01393527367365",
@@ -11088,13 +11088,13 @@
     },
     {
       "address": "0x2c20af405571774269760451d9cabc97cd5b30c0",
-      "balance_eth": 0.0101017315871469,
-      "balance_wei": "10101731587146900",
+      "balance_eth": 0.01010173158756446,
+      "balance_wei": "10101731587564460",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "30752653442000000",
-          "weth_share": 0.0101017315871469
+          "weth_share": 0.01010173158756446
         }
       ]
     },
@@ -11148,8 +11148,8 @@
     },
     {
       "address": "0x82cd1c542862497b065edc896343c26ff5134792",
-      "balance_eth": 0.0096240508924155,
-      "balance_wei": "9624050892415501",
+      "balance_eth": 0.0096240508924223,
+      "balance_wei": "9624050892422299",
       "set_positions": [
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
@@ -11159,7 +11159,7 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "3410680863000000",
-          "weth_share": 0.002202226561127046
+          "weth_share": 0.002202226561133844
         }
       ]
     },
@@ -11324,13 +11324,13 @@
     },
     {
       "address": "0xf363a864aa8b48c9ab8a3e1bd8abaa8afbbda3e4",
-      "balance_eth": 0.009009002182886689,
-      "balance_wei": "9009002182886689",
+      "balance_eth": 0.00900900218325908,
+      "balance_wei": "9009002183259081",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "27426062512000000",
-          "weth_share": 0.009009002182886689
+          "weth_share": 0.00900900218325908
         }
       ]
     },
@@ -11596,13 +11596,13 @@
     },
     {
       "address": "0x5bceded13916f3e6a1b4811ae50ab2dcd5afc691",
-      "balance_eth": 0.008194232777901078,
-      "balance_wei": "8194232777901077",
+      "balance_eth": 0.00819423277792637,
+      "balance_wei": "8194232777926370",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "12690752776000000",
-          "weth_share": 0.008194232754870329
+          "weth_share": 0.008194232754895623
         },
         {
           "rebalancing_set": "0x07509c281b55a1675d3f71f1c4ab67829eb731d3",
@@ -11765,13 +11765,13 @@
     },
     {
       "address": "0x59cc9acd22c3f6271e3c48a23c6e8254abb6b54d",
-      "balance_eth": 0.007290447059568478,
-      "balance_wei": "7290447059568478",
+      "balance_eth": 0.007290447059590982,
+      "balance_wei": "7290447059590982",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "11291021872000000",
-          "weth_share": 0.007290447059568478
+          "weth_share": 0.007290447059590982
         }
       ]
     },
@@ -11823,13 +11823,13 @@
     },
     {
       "address": "0xb21090c8f6bac1ba614a3f529aae728ea92b6487",
-      "balance_eth": 0.007102875532993122,
-      "balance_wei": "7102875532993122",
+      "balance_eth": 0.007102875533012956,
+      "balance_wei": "7102875533012956",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "9951492139000000",
-          "weth_share": 0.006425532376569589
+          "weth_share": 0.006425532376589423
         },
         {
           "rebalancing_set": "0xa360f2af3f957906468c0fd7526391aed08ae3db",
@@ -12044,25 +12044,25 @@
     },
     {
       "address": "0x8d8b34e64af12b3890dc3de7c456d5757af339be",
-      "balance_eth": 0.006456853190274715,
-      "balance_wei": "6456853190274715",
+      "balance_eth": 0.006456853190294645,
+      "balance_wei": "6456853190294645",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "10000000000000000",
-          "weth_share": 0.006456853190274715
+          "weth_share": 0.006456853190294645
         }
       ]
     },
     {
       "address": "0x8302213591970708d63a25f4605a8648e6e71d39",
-      "balance_eth": 0.006393070198335617,
-      "balance_wei": "6393070198335617",
+      "balance_eth": 0.006393070199079059,
+      "balance_wei": "6393070199079059",
       "set_positions": [
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "27316504184000000",
-          "weth_share": 0.006393070198335617
+          "weth_share": 0.006393070199079059
         }
       ]
     },
@@ -12227,8 +12227,8 @@
     },
     {
       "address": "0xb86dfbc509bcef052f6feaa0ad0ff46aec5cd15f",
-      "balance_eth": 0.005795530112762986,
-      "balance_wei": "5795530112762986",
+      "balance_eth": 0.005795530112776564,
+      "balance_wei": "5795530112776564",
       "set_positions": [
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
@@ -12238,7 +12238,7 @@
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "1000000000000000",
-          "weth_share": 0.000328483251248511
+          "weth_share": 0.000328483251262089
         },
         {
           "rebalancing_set": "0x8ddc86dba7ad728012efc460b8a168aba60b403b",
@@ -12381,8 +12381,8 @@
     },
     {
       "address": "0x5a6d3b6bf795a3160dc7c139dee9f60ce0f00cae",
-      "balance_eth": 0.005465090022664926,
-      "balance_wei": "5465090022664926",
+      "balance_eth": 0.0054650900227016,
+      "balance_wei": "5465090022701600",
       "set_positions": [
         {
           "rebalancing_set": "0x8ddc86dba7ad728012efc460b8a168aba60b403b",
@@ -12392,7 +12392,7 @@
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "2701000000000000",
-          "weth_share": 0.00088723326162223
+          "weth_share": 0.000887233261658904
         }
       ]
     },
@@ -12446,25 +12446,25 @@
     },
     {
       "address": "0xb5c49c4d15701aff92e6941149b3bd2751d1949f",
-      "balance_eth": 0.00525573201997619,
-      "balance_wei": "5255732019976190",
+      "balance_eth": 0.005255732020193438,
+      "balance_wei": "5255732020193438",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "16000000000000000",
-          "weth_share": 0.00525573201997619
+          "weth_share": 0.005255732020193438
         }
       ]
     },
     {
       "address": "0x9b8ca9e85b4156c36c7c36fcc974912e27bffb2f",
-      "balance_eth": 0.005157187044601636,
-      "balance_wei": "5157187044601636",
+      "balance_eth": 0.005157187044814811,
+      "balance_wei": "5157187044814811",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "15700000000000000",
-          "weth_share": 0.005157187044601636
+          "weth_share": 0.005157187044814811
         }
       ]
     },
@@ -12590,13 +12590,13 @@
     },
     {
       "address": "0x691981fbd658f4eab12f09d4330dd79d61d46654",
-      "balance_eth": 0.004901429338986298,
-      "balance_wei": "4901429338986298",
+      "balance_eth": 0.004901429339556279,
+      "balance_wei": "4901429339556279",
       "set_positions": [
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "20942975893000000",
-          "weth_share": 0.004901429338986298
+          "weth_share": 0.004901429339556279
         }
       ]
     },
@@ -12614,13 +12614,13 @@
     },
     {
       "address": "0xa9cbd03bb2d2bedade3b030b88d91db681e6c2d1",
-      "balance_eth": 0.004891662790850604,
-      "balance_wei": "4891662790850604",
+      "balance_eth": 0.004891662791419449,
+      "balance_wei": "4891662791419449",
       "set_positions": [
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "20901245090000000",
-          "weth_share": 0.004891662790850604
+          "weth_share": 0.004891662791419449
         }
       ]
     },
@@ -12770,8 +12770,8 @@
     },
     {
       "address": "0xf72fe1df1dc02650168bf6a8f1966fc002c6a694",
-      "balance_eth": 0.004498848064577854,
-      "balance_wei": "4498848064577854",
+      "balance_eth": 0.004498848064578294,
+      "balance_wei": "4498848064578294",
       "set_positions": [
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
@@ -12781,7 +12781,7 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "220682579000000",
-          "weth_share": 0.00014249150142542
+          "weth_share": 0.00014249150142586
         }
       ]
     },
@@ -12876,13 +12876,13 @@
     },
     {
       "address": "0xa30654cf1ca371f49163cd2b01b60394166cadaa",
-      "balance_eth": 0.00430031530931671,
-      "balance_wei": "4300315309316710",
+      "balance_eth": 0.004300315309816788,
+      "balance_wei": "4300315309816788",
       "set_positions": [
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "18374517641000000",
-          "weth_share": 0.00430031530931671
+          "weth_share": 0.004300315309816788
         }
       ]
     },
@@ -13117,13 +13117,13 @@
     },
     {
       "address": "0x5004f633b93153440ce7e39ac116467287d6f4f1",
-      "balance_eth": 0.004007068124654848,
-      "balance_wei": "4007068124654848",
+      "balance_eth": 0.004007068125120825,
+      "balance_wei": "4007068125120825",
       "set_positions": [
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "17121522179000000",
-          "weth_share": 0.004007068124654848
+          "weth_share": 0.004007068125120825
         }
       ]
     },
@@ -13165,8 +13165,8 @@
     },
     {
       "address": "0x9373aa152dbd856f559a5c96293658ac0c986703",
-      "balance_eth": 0.003889376960520992,
-      "balance_wei": "3889376960520992",
+      "balance_eth": 0.003889376960521945,
+      "balance_wei": "3889376960521945",
       "set_positions": [
         {
           "rebalancing_set": "0x8933ea1ce67b946bdf2436ce860ffbb53ce814d2",
@@ -13176,7 +13176,7 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "478222280000000",
-          "weth_share": 0.000308781105427844
+          "weth_share": 0.000308781105428797
         }
       ]
     },
@@ -13194,13 +13194,13 @@
     },
     {
       "address": "0xc0b8a7a7a647e8eb3fa92919cf26c7447d5fc5a4",
-      "balance_eth": 0.003872510469690003,
-      "balance_wei": "3872510469690003",
+      "balance_eth": 0.003872510469850076,
+      "balance_wei": "3872510469850076",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "11789065211000000",
-          "weth_share": 0.003872510469690003
+          "weth_share": 0.003872510469850076
         }
       ]
     },
@@ -13391,13 +13391,13 @@
     },
     {
       "address": "0xe6b343ad2ee3db9d57ff236d243b62f74ae1a219",
-      "balance_eth": 0.003324508467758777,
-      "balance_wei": "3324508467758777",
+      "balance_eth": 0.003324508467896197,
+      "balance_wei": "3324508467896197",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "10120785322000000",
-          "weth_share": 0.003324508467758777
+          "weth_share": 0.003324508467896197
         }
       ]
     },
@@ -13427,37 +13427,37 @@
     },
     {
       "address": "0x5bc147aa2a9734249cfc0c2ef42101e53232afd5",
-      "balance_eth": 0.003284832512485118,
-      "balance_wei": "3284832512485118",
+      "balance_eth": 0.003284832512620899,
+      "balance_wei": "3284832512620899",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "10000000000000000",
-          "weth_share": 0.003284832512485118
+          "weth_share": 0.003284832512620899
         }
       ]
     },
     {
       "address": "0x8729e29601474803dee0b78f4bf1daa483d03392",
-      "balance_eth": 0.003284832512485118,
-      "balance_wei": "3284832512485118",
+      "balance_eth": 0.003284832512620899,
+      "balance_wei": "3284832512620899",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "10000000000000000",
-          "weth_share": 0.003284832512485118
+          "weth_share": 0.003284832512620899
         }
       ]
     },
     {
       "address": "0xc32692824940359d2eddceaf06ff3a64a16734fc",
-      "balance_eth": 0.003284832512485118,
-      "balance_wei": "3284832512485118",
+      "balance_eth": 0.003284832512620899,
+      "balance_wei": "3284832512620899",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "10000000000000000",
-          "weth_share": 0.003284832512485118
+          "weth_share": 0.003284832512620899
         }
       ]
     },
@@ -13639,37 +13639,37 @@
     },
     {
       "address": "0x77fd00aa38e6f0322ef98d72c04f7f6500bb2f3e",
-      "balance_eth": 0.002913715484768263,
-      "balance_wei": "2913715484768263",
+      "balance_eth": 0.002913715484888703,
+      "balance_wei": "2913715484888703",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "8870210197000000",
-          "weth_share": 0.002913715484768263
+          "weth_share": 0.002913715484888703
         }
       ]
     },
     {
       "address": "0x414be473bcb52b14f1ac2560982c33834d3581f1",
-      "balance_eth": 0.002913484194192464,
-      "balance_wei": "2913484194192464",
+      "balance_eth": 0.00291348419453127,
+      "balance_wei": "2913484194531270",
       "set_positions": [
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "12448823603000000",
-          "weth_share": 0.002913484194192464
+          "weth_share": 0.00291348419453127
         }
       ]
     },
     {
       "address": "0xc43eb50d107b5c5b9d5680ad2df58ea8ea9b60b9",
-      "balance_eth": 0.002890197855604229,
-      "balance_wei": "2890197855604229",
+      "balance_eth": 0.00289019785561315,
+      "balance_wei": "2890197855613150",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "4476170931000000",
-          "weth_share": 0.002890197855604229
+          "weth_share": 0.00289019785561315
         }
       ]
     },
@@ -13699,13 +13699,13 @@
     },
     {
       "address": "0x01da73c4ec1355f953ad0aaca3ef20e342aea92a",
-      "balance_eth": 0.002862005757893165,
-      "balance_wei": "2862005757893165",
+      "balance_eth": 0.002862005757901999,
+      "balance_wei": "2862005757901999",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "4432508644000000",
-          "weth_share": 0.002862005757893165
+          "weth_share": 0.002862005757901999
         }
       ]
     },
@@ -13723,13 +13723,13 @@
     },
     {
       "address": "0x4d9eae5c6d810ab9d683aa3c1411920b2dd92980",
-      "balance_eth": 0.002848606754827095,
-      "balance_wei": "2848606754827095",
+      "balance_eth": 0.002848606754944843,
+      "balance_wei": "2848606754944843",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "8672000000000000",
-          "weth_share": 0.002848606754827095
+          "weth_share": 0.002848606754944843
         }
       ]
     },
@@ -13824,8 +13824,8 @@
     },
     {
       "address": "0x7b81c6fa422ff0e6b06a63bb01018eb9387e3b93",
-      "balance_eth": 0.002720413936009928,
-      "balance_wei": "2720413936009928",
+      "balance_eth": 0.002720413936009984,
+      "balance_wei": "2720413936009984",
       "set_positions": [
         {
           "rebalancing_set": "0x542156d51d10db5accb99f9db7e7c91b74e80a2c",
@@ -13840,7 +13840,7 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "28506028000000",
-          "weth_share": 1.8405923783386e-05
+          "weth_share": 1.8405923783442e-05
         }
       ]
     },
@@ -13890,13 +13890,13 @@
     },
     {
       "address": "0xc638226516461922befc82548fba741826ed8989",
-      "balance_eth": 0.002671542116581665,
-      "balance_wei": "2671542116581665",
+      "balance_eth": 0.002671542116892336,
+      "balance_wei": "2671542116892336",
       "set_positions": [
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "11415046158000000",
-          "weth_share": 0.002671542116581665
+          "weth_share": 0.002671542116892336
         }
       ]
     },
@@ -13926,8 +13926,8 @@
     },
     {
       "address": "0xb62af3e65f7a088fc969911f9989877df5731096",
-      "balance_eth": 0.002583951710237233,
-      "balance_wei": "2583951710237233",
+      "balance_eth": 0.002583951710250811,
+      "balance_wei": "2583951710250811",
       "set_positions": [
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
@@ -13937,7 +13937,7 @@
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "1000000000000000",
-          "weth_share": 0.000328483251248511
+          "weth_share": 0.000328483251262089
         },
         {
           "rebalancing_set": "0x585c2cf94c41b528ec7329cbc3cde3c4f8d268db",
@@ -13948,13 +13948,13 @@
     },
     {
       "address": "0xdf0635793e91d4f8e7426dbd9ed08471186f428d",
-      "balance_eth": 0.00255058003454319,
-      "balance_wei": "2550580034543190",
+      "balance_eth": 0.002550580034636198,
+      "balance_wei": "2550580034636198",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "6849920986000000",
-          "weth_share": 0.002250084316276692
+          "weth_share": 0.0022500843163697
         },
         {
           "rebalancing_set": "0x585c2cf94c41b528ec7329cbc3cde3c4f8d268db",
@@ -13989,13 +13989,13 @@
     },
     {
       "address": "0x039a9b1d1d97680972a6a9b35dcf9e118f385386",
-      "balance_eth": 0.002463871952335807,
-      "balance_wei": "2463871952335807",
+      "balance_eth": 0.002463871952437653,
+      "balance_wei": "2463871952437653",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "7500753670000000",
-          "weth_share": 0.002463871952335807
+          "weth_share": 0.002463871952437653
         }
       ]
     },
@@ -14037,13 +14037,13 @@
     },
     {
       "address": "0xce1c359f10251ab8487c92e391e500dbf2e55948",
-      "balance_eth": 0.002380360398680286,
-      "balance_wei": "2380360398680286",
+      "balance_eth": 0.002380360398957095,
+      "balance_wei": "2380360398957095",
       "set_positions": [
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "10170876085000000",
-          "weth_share": 0.002380360398680286
+          "weth_share": 0.002380360398957095
         }
       ]
     },
@@ -14071,13 +14071,13 @@
     },
     {
       "address": "0x0029ab135b5be72168bf80f140d60a9264dbd0c5",
-      "balance_eth": 0.002340369087959728,
-      "balance_wei": "2340369087959728",
+      "balance_eth": 0.002340369088231886,
+      "balance_wei": "2340369088231886",
       "set_positions": [
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "10000000000000000",
-          "weth_share": 0.002340369087959728
+          "weth_share": 0.002340369088231886
         }
       ]
     },
@@ -14353,13 +14353,13 @@
     },
     {
       "address": "0x57ce34535d005fae8a345d35dbd818f2ee3803a8",
-      "balance_eth": 0.001934742787350854,
-      "balance_wei": "1934742787350854",
+      "balance_eth": 0.001934742787575843,
+      "balance_wei": "1934742787575843",
       "set_positions": [
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "8266827644000000",
-          "weth_share": 0.001934742787350854
+          "weth_share": 0.001934742787575843
         }
       ]
     },
@@ -14425,13 +14425,13 @@
     },
     {
       "address": "0xe0184667f02f5d9210123be7f279ed7c67c3c54a",
-      "balance_eth": 0.001734965001446263,
-      "balance_wei": "1734965001446263",
+      "balance_eth": 0.001734965001517979,
+      "balance_wei": "1734965001517979",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "5281745705000000",
-          "weth_share": 0.001734965001446263
+          "weth_share": 0.001734965001517979
         }
       ]
     },
@@ -14550,13 +14550,13 @@
     },
     {
       "address": "0x0951ff0835302929d6c0162b3d2495a85e38ec3a",
-      "balance_eth": 0.001576956174374674,
-      "balance_wei": "1576956174374674",
+      "balance_eth": 0.001576956174439858,
+      "balance_wei": "1576956174439858",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "4800720184000000",
-          "weth_share": 0.001576956174374674
+          "weth_share": 0.001576956174439858
         }
       ]
     },
@@ -14608,13 +14608,13 @@
     },
     {
       "address": "0x25854e5f4d06524ee8cbd368c034d1dfd02aac3d",
-      "balance_eth": 0.001491018542869549,
-      "balance_wei": "1491018542869549",
+      "balance_eth": 0.001491018542931181,
+      "balance_wei": "1491018542931181",
       "set_positions": [
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "4539100661000000",
-          "weth_share": 0.001491018542869549
+          "weth_share": 0.001491018542931181
         }
       ]
     },
@@ -14763,8 +14763,8 @@
     },
     {
       "address": "0x5bdaaa781aee389dd5a403bf9df9b009ab1d20c7",
-      "balance_eth": 0.001273664809341684,
-      "balance_wei": "1273664809341684",
+      "balance_eth": 0.00127366480934342,
+      "balance_wei": "1273664809343420",
       "set_positions": [
         {
           "rebalancing_set": "0x93e01899c10532d76c0e864537a1d26433dbbddb",
@@ -14774,7 +14774,7 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "871354049000000",
-          "weth_share": 0.000562620517114444
+          "weth_share": 0.00056262051711618
         }
       ]
     },
@@ -14804,8 +14804,8 @@
     },
     {
       "address": "0x19360799a15730fac556088793895aa7650ee442",
-      "balance_eth": 0.001191617447098161,
-      "balance_wei": "1191617447098161",
+      "balance_eth": 0.001191617447101339,
+      "balance_wei": "1191617447101339",
       "set_positions": [
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
@@ -14820,12 +14820,12 @@
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "404404123000000",
-          "weth_share": 0.000261117805175279
+          "weth_share": 0.000261117805176085
         },
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "174718146000000",
-          "weth_share": 5.7391984650192e-05
+          "weth_share": 5.7391984652564e-05
         }
       ]
     },
@@ -14843,13 +14843,13 @@
     },
     {
       "address": "0x061ff9170dd762280152fdb96463890215c66c80",
-      "balance_eth": 0.001152355050221059,
-      "balance_wei": "1152355050221059",
+      "balance_eth": 0.001152355050224616,
+      "balance_wei": "1152355050224616",
       "set_positions": [
         {
           "rebalancing_set": "0x614857c755739354d68ae0abd53849cf45d6a41d",
           "balance_raw": "1784700714516371",
-          "weth_share": 0.001152355050221059
+          "weth_share": 0.001152355050224616
         }
       ]
     },
@@ -14879,8 +14879,8 @@
     },
     {
       "address": "0x1d31a643a886abcf4337181fd47cda769406abc0",
-      "balance_eth": 0.001083591838756256,
-      "balance_wei": "1083591838756256",
+      "balance_eth": 0.001083591838757939,
+      "balance_wei": "1083591838757939",
       "set_positions": [
         {
           "rebalancing_set": "0x9ea463ec4ce9e9e5bc9cfd0187c4ac3a70dd951d",
@@ -14890,7 +14890,7 @@
         {
           "rebalancing_set": "0x2c5a9980b41861d91d30d0e0271d1c093452dca5",
           "balance_raw": "123941380000000",
-          "weth_share": 4.0712667466627e-05
+          "weth_share": 4.071266746831e-05
         }
       ]
     },
@@ -14957,8 +14957,8 @@
     },
     {
       "address": "0x1a34f499ab38795803ef8fd151d54bc3947ddfe7",
-      "balance_eth": 0.001041340558905624,
-      "balance_wei": "1041340558905624",
+      "balance_eth": 0.001041340558920891,
+      "balance_wei": "1041340558920891",
       "set_positions": [
         {
           "rebalancing_set": "0xc06aec5191be16b94ffc97b6fc01393527367365",
@@ -14973,7 +14973,7 @@
         {
           "rebalancing_set": "0xf1e5f03086e1c0ce55e54cd8146bc9c28435346f",
           "balance_raw": "560967995000000",
-          "weth_share": 0.000131287215483274
+          "weth_share": 0.000131287215498541
         }
       ]
     },

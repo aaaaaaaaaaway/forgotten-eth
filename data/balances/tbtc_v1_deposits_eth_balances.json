@@ -5,10 +5,10 @@
   "total_eth_in_balances": 70.53840307,
   "addresses_with_balance": 75,
   "coverage_pct": 100.0,
-  "scan_date": "2026-10-27 17:37:31 UTC",
+  "scan_date": "2026-10-28 05:42:36 UTC",
   "description": "tBTC v1 deposit contracts holding withdrawFunds() credits: keep setup fees refunded after a failed signer setup, and liquidation payouts. contract_eth_balance is the ETH held by ended deposits; deposits still in a liquidation auction are not claimable and not counted.",
   "meta": {
-    "scanned_to_block": 26285589,
+    "scanned_to_block": 26289202,
     "open_auction_eth": 59.450053812354,
     "deposits": {
       "0x0035cd5321a325ca26c5335c88a6b3b543f46ed4": [
