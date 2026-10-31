@@ -1,27 +1,27 @@
 {
   "contract": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
   "balance_source": "weth",
-  "contract_eth_balance": 214.25143706,
-  "total_eth_in_balances": 213.279583,
-  "addresses_with_balance": 180,
+  "contract_eth_balance": 214.25036918,
+  "total_eth_in_balances": 213.278515,
+  "addresses_with_balance": 179,
   "coverage_pct": 99.55,
-  "scan_date": "2026-10-28 05:24:37 UTC",
+  "scan_date": "2026-10-31 05:25:11 UTC",
   "description": "UMA ExpiringMultiParty (EMP) contracts held WETH as collateral for synthetic tokens. After expiry, sponsors call settleExpired() to reclaim excess collateral. The UMA v1 frontend no longer supports these contracts \u2014 remaining WETH is claimable directly onchain.",
   "distribution": {
     "1_plus": 12,
     "0.1_to_1": 28,
     "0.01_to_0.1": 37,
-    "under_0.01": 103
+    "under_0.01": 102
   },
-  "canonical_emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
+  "canonical_emp": "0xeaa081a9fad4607cdf046fea7d4bf3dfef533282",
   "factory_contract": "0xddfc7e3b4531158acf4c7a5d2c3cd3bb8c189413",
   "emp_contracts": [
-    "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
-    "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
-    "0xfa3aa7ee08399a4ce0b4921c85ab7d645ccac669",
-    "0x516f595978d87b67401dab7afd8555c3d28a3af4",
     "0xeaa081a9fad4607cdf046fea7d4bf3dfef533282",
-    "0xe4256c47a3b27a969f25de8bef44eca5f2552bd5"
+    "0xe4256c47a3b27a969f25de8bef44eca5f2552bd5",
+    "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
+    "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
+    "0x516f595978d87b67401dab7afd8555c3d28a3af4",
+    "0xfa3aa7ee08399a4ce0b4921c85ab7d645ccac669"
   ],
   "uma_emp_multi": true,
   "balances": [
@@ -59,14 +59,14 @@
       "balance_eth": 19.019373,
       "positions": [
         {
-          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
-          "claimable_eth": 15.176732,
+          "emp": "0xe4256c47a3b27a969f25de8bef44eca5f2552bd5",
+          "claimable_eth": 3.84264,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         },
         {
-          "emp": "0xe4256c47a3b27a969f25de8bef44eca5f2552bd5",
-          "claimable_eth": 3.84264,
+          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
+          "claimable_eth": 15.176732,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         }
@@ -93,14 +93,14 @@
       "balance_eth": 2.516828,
       "positions": [
         {
-          "emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
-          "claimable_eth": 1.667097,
+          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
+          "claimable_eth": 0.849731,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         },
         {
-          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
-          "claimable_eth": 0.849731,
+          "emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
+          "claimable_eth": 1.667097,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         }
@@ -275,14 +275,14 @@
           "tokens_outstanding": "100000000000000000000"
         },
         {
-          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
-          "claimable_eth": 0.54,
+          "emp": "0xe4256c47a3b27a969f25de8bef44eca5f2552bd5",
+          "claimable_eth": 0.208,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         },
         {
-          "emp": "0xe4256c47a3b27a969f25de8bef44eca5f2552bd5",
-          "claimable_eth": 0.208,
+          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
+          "claimable_eth": 0.54,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         }
@@ -809,14 +809,14 @@
       "balance_eth": 0.03278,
       "positions": [
         {
-          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
-          "claimable_eth": 0.03242,
+          "emp": "0xe4256c47a3b27a969f25de8bef44eca5f2552bd5",
+          "claimable_eth": 0.00036,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         },
         {
-          "emp": "0xe4256c47a3b27a969f25de8bef44eca5f2552bd5",
-          "claimable_eth": 0.00036,
+          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
+          "claimable_eth": 0.03242,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         }
@@ -829,14 +829,14 @@
       "balance_eth": 0.031743,
       "positions": [
         {
-          "emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
-          "claimable_eth": 0.009813,
+          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
+          "claimable_eth": 0.021931,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         },
         {
-          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
-          "claimable_eth": 0.021931,
+          "emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
+          "claimable_eth": 0.009813,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         }
@@ -863,14 +863,14 @@
       "balance_eth": 0.028987,
       "positions": [
         {
-          "emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
-          "claimable_eth": 0.008153,
+          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
+          "claimable_eth": 0.020834,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         },
         {
-          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
-          "claimable_eth": 0.020834,
+          "emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
+          "claimable_eth": 0.008153,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         }
@@ -1121,14 +1121,14 @@
       "balance_eth": 0.011712,
       "positions": [
         {
-          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
-          "claimable_eth": 0.006213,
+          "emp": "0xe4256c47a3b27a969f25de8bef44eca5f2552bd5",
+          "claimable_eth": 0.005499,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         },
         {
-          "emp": "0xe4256c47a3b27a969f25de8bef44eca5f2552bd5",
-          "claimable_eth": 0.005499,
+          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
+          "claimable_eth": 0.006213,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         }
@@ -1197,14 +1197,14 @@
       "balance_eth": 0.01015,
       "positions": [
         {
-          "emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
-          "claimable_eth": 0.00641,
+          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
+          "claimable_eth": 0.00374,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         },
         {
-          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
-          "claimable_eth": 0.00374,
+          "emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
+          "claimable_eth": 0.00641,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         }
@@ -1399,14 +1399,14 @@
       "balance_eth": 0.005082,
       "positions": [
         {
-          "emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
-          "claimable_eth": 0.001117,
+          "emp": "0xe4256c47a3b27a969f25de8bef44eca5f2552bd5",
+          "claimable_eth": 0.003965,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         },
         {
-          "emp": "0xe4256c47a3b27a969f25de8bef44eca5f2552bd5",
-          "claimable_eth": 0.003965,
+          "emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
+          "claimable_eth": 0.001117,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         }
@@ -1475,14 +1475,14 @@
       "balance_eth": 0.004666,
       "positions": [
         {
-          "emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
-          "claimable_eth": 0.003068,
+          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
+          "claimable_eth": 0.001598,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         },
         {
-          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
-          "claimable_eth": 0.001598,
+          "emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
+          "claimable_eth": 0.003068,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         }
@@ -1551,14 +1551,14 @@
       "balance_eth": 0.003,
       "positions": [
         {
-          "emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
-          "claimable_eth": 0.001843,
+          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
+          "claimable_eth": 0.001158,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         },
         {
-          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
-          "claimable_eth": 0.001158,
+          "emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
+          "claimable_eth": 0.001843,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         }
@@ -1669,14 +1669,14 @@
       "balance_eth": 0.002335,
       "positions": [
         {
-          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
-          "claimable_eth": 0.001815,
+          "emp": "0xe4256c47a3b27a969f25de8bef44eca5f2552bd5",
+          "claimable_eth": 0.00052,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         },
         {
-          "emp": "0xe4256c47a3b27a969f25de8bef44eca5f2552bd5",
-          "claimable_eth": 0.00052,
+          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
+          "claimable_eth": 0.001815,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         }
@@ -1689,14 +1689,14 @@
       "balance_eth": 0.002326,
       "positions": [
         {
-          "emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
-          "claimable_eth": 0.001969,
+          "emp": "0xe4256c47a3b27a969f25de8bef44eca5f2552bd5",
+          "claimable_eth": 0.000357,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         },
         {
-          "emp": "0xe4256c47a3b27a969f25de8bef44eca5f2552bd5",
-          "claimable_eth": 0.000357,
+          "emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
+          "claimable_eth": 0.001969,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         }
@@ -1737,14 +1737,14 @@
       "balance_eth": 0.002135,
       "positions": [
         {
-          "emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
-          "claimable_eth": 0.001958,
+          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
+          "claimable_eth": 0.000177,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         },
         {
-          "emp": "0x3605ec11ba7bd208501cbb24cd890bc58d2dba56",
-          "claimable_eth": 0.000177,
+          "emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
+          "claimable_eth": 0.001958,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
         }
@@ -2018,38 +2018,24 @@
       "rank": 132
     },
     {
-      "address": "0x952c23f8f067a5e7e165ff0e42491f51d87dbc95",
-      "balance_wei": "1067880584245131",
-      "balance_eth": 0.001068,
-      "positions": [
-        {
-          "emp": "0xe1ee8d4c5dba1c221840c08f6cf42154435b9d52",
-          "claimable_eth": 0.001068,
-          "raw_collateral": "0",
-          "tokens_outstanding": "0"
-        }
-      ],
-      "rank": 133
-    },
-    {
       "address": "0x653d63e4f2d7112a19f5eb993890a3f27b48ada5",
       "balance_wei": "1028802632683025",
       "balance_eth": 0.001029,
       "positions": [
         {
-          "emp": "0x516f595978d87b67401dab7afd8555c3d28a3af4",
-          "claimable_eth": 0.00049,
-          "raw_collateral": "0",
-          "tokens_outstanding": "0"
-        },
-        {
           "emp": "0xeaa081a9fad4607cdf046fea7d4bf3dfef533282",
           "claimable_eth": 0.000539,
           "raw_collateral": "0",
           "tokens_outstanding": "0"
+        },
+        {
+          "emp": "0x516f595978d87b67401dab7afd8555c3d28a3af4",
+          "claimable_eth": 0.00049,
+          "raw_collateral": "0",
+          "tokens_outstanding": "0"
         }
       ],
-      "rank": 134
+      "rank": 133
     },
     {
       "address": "0x238b6d6e0bf4679edfd99a32aa8c0f2ee13f34be",
@@ -2063,7 +2049,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 135
+      "rank": 134
     },
     {
       "address": "0x34cef9d824e2e6bd5bbbdf75cd19d820884a4342",
@@ -2077,7 +2063,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 136
+      "rank": 135
     },
     {
       "address": "0xb4a134bde4261a45bf60d19f7a51cc1c2c451523",
@@ -2091,7 +2077,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 137
+      "rank": 136
     },
     {
       "address": "0xc5cdc90702049718b307de20042e8ba53795e3be",
@@ -2105,7 +2091,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 138
+      "rank": 137
     },
     {
       "address": "0x557c57e399921477f794043b1ed7ef7e9183575d",
@@ -2119,7 +2105,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 139
+      "rank": 138
     },
     {
       "address": "0x85ecd18097bde42cf4456d58f830dda9480aa762",
@@ -2133,7 +2119,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 140
+      "rank": 139
     },
     {
       "address": "0x10c195f57da35f2ba763e72103cb668cdca17f50",
@@ -2147,7 +2133,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 141
+      "rank": 140
     },
     {
       "address": "0x07d28c64e033dd7f172764a389663580d32e4388",
@@ -2161,7 +2147,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 142
+      "rank": 141
     },
     {
       "address": "0x9830ba8a332f2eb7cd000fe553d0ded070d454fd",
@@ -2175,7 +2161,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 143
+      "rank": 142
     },
     {
       "address": "0xe079c28a1064be7e9dd6384ae0d0ca281e0c98d6",
@@ -2189,7 +2175,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 144
+      "rank": 143
     },
     {
       "address": "0xe5e058f75ea95316831bab969734c32c93977b61",
@@ -2203,7 +2189,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 145
+      "rank": 144
     },
     {
       "address": "0xe381fa0100662d0707ec8211e75c5656a59ace79",
@@ -2217,7 +2203,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 146
+      "rank": 145
     },
     {
       "address": "0xb61fd6f023e4cb04882433b812b195245deb57e5",
@@ -2231,7 +2217,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 147
+      "rank": 146
     },
     {
       "address": "0x584c7c9b0a8fb3f648c3912316a2c5e873cf39bb",
@@ -2245,7 +2231,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 148
+      "rank": 147
     },
     {
       "address": "0xfdc6a17917115498a3ed417d4a89224685f26ea3",
@@ -2259,7 +2245,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 149
+      "rank": 148
     },
     {
       "address": "0xc7777c1a0cf7e22c51b44f7ced65cf2a6b06dc5c",
@@ -2273,7 +2259,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 150
+      "rank": 149
     },
     {
       "address": "0x9db4d30af39e163ac3d26345bf2453373220828f",
@@ -2287,7 +2273,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 151
+      "rank": 150
     },
     {
       "address": "0x74f8744020f5900a2c3a3289c6c2182f56a6901f",
@@ -2301,7 +2287,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 152
+      "rank": 151
     },
     {
       "address": "0x7a759a170c3aea65b3b373299d33bf5221785c48",
@@ -2315,7 +2301,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 153
+      "rank": 152
     },
     {
       "address": "0x7b2483d0f917a4f7a04d1e13743c99ad9d249462",
@@ -2329,7 +2315,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 154
+      "rank": 153
     },
     {
       "address": "0x315c2235d75880afe04310d71ec381dbfb29d307",
@@ -2343,7 +2329,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 155
+      "rank": 154
     },
     {
       "address": "0xd53c9fedcc95187307908d659846a443cb1e7350",
@@ -2357,7 +2343,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 156
+      "rank": 155
     },
     {
       "address": "0x994b93cc59b769caff5a8f4429c18831cc042f8e",
@@ -2371,7 +2357,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 157
+      "rank": 156
     },
     {
       "address": "0x1c99f36e53135ddc55d1947a99f23765a89f6cd0",
@@ -2385,7 +2371,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 158
+      "rank": 157
     },
     {
       "address": "0xd2a78bb82389d30075144d17e782964918999f7f",
@@ -2399,7 +2385,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 159
+      "rank": 158
     },
     {
       "address": "0xdac071edbe067499281f1272cf39f4ccb1e50ac8",
@@ -2413,7 +2399,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 160
+      "rank": 159
     },
     {
       "address": "0xe92a405afa5f6a1b55f87f4bff1dd03bfcb144c3",
@@ -2427,7 +2413,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 161
+      "rank": 160
     },
     {
       "address": "0x228c1334fc57eb6e02ecc448e749a041124321c1",
@@ -2441,7 +2427,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 162
+      "rank": 161
     },
     {
       "address": "0xd4c8d9f75e8d6070b37383c1dc000ebcf71b9747",
@@ -2455,7 +2441,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 163
+      "rank": 162
     },
     {
       "address": "0xf0ff3f79a9a9c459d59ea5bc447e9857c109137f",
@@ -2469,7 +2455,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 164
+      "rank": 163
     },
     {
       "address": "0x2ef46b73484b81e36076b18511da096d1a0677cf",
@@ -2483,7 +2469,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 165
+      "rank": 164
     },
     {
       "address": "0x8f9be4310f9abb0e5843cc6363908c9b01dfeb3f",
@@ -2497,7 +2483,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 166
+      "rank": 165
     },
     {
       "address": "0xaabd5fbcb8ad62d4fbbb02a2e9769a9f2ee7e883",
@@ -2511,7 +2497,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 167
+      "rank": 166
     },
     {
       "address": "0x97f0978c18de9b61840d4627040aea796090343f",
@@ -2525,7 +2511,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 168
+      "rank": 167
     },
     {
       "address": "0x043bd8f57401e46a5da19545ffb50370202cc179",
@@ -2539,7 +2525,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 169
+      "rank": 168
     },
     {
       "address": "0xb7c2fc9d44db04ff888037037aadfd10d7564d95",
@@ -2553,7 +2539,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 170
+      "rank": 169
     },
     {
       "address": "0xa59ab1d1a1cdd67b40da69aabe4392aa3df979dd",
@@ -2567,7 +2553,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 171
+      "rank": 170
     },
     {
       "address": "0x40dfc27ca78b6fbcfb78e91d3d2426cf6a281e39",
@@ -2581,7 +2567,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 172
+      "rank": 171
     },
     {
       "address": "0xc442c69f8593c782d0c8bd1f1871cc57175f9d52",
@@ -2595,7 +2581,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 173
+      "rank": 172
     },
     {
       "address": "0x1ad015a04c3a21330a388f6a0995c7c092e66f93",
@@ -2609,7 +2595,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 174
+      "rank": 173
     },
     {
       "address": "0x19fa0403a2f37bffe366aab068776aa966aef24c",
@@ -2623,7 +2609,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 175
+      "rank": 174
     },
     {
       "address": "0xa9fc04a6baac104b5eaf9e91fca2df1f8d09c38c",
@@ -2637,7 +2623,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 176
+      "rank": 175
     },
     {
       "address": "0x3fe9b3a4180c2e8c876f050be94c92632392263d",
@@ -2651,7 +2637,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 177
+      "rank": 176
     },
     {
       "address": "0x3caba50e426de2003f937ac961bd6834b206fb1c",
@@ -2665,7 +2651,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 178
+      "rank": 177
     },
     {
       "address": "0x28ad8e41f950568c6eb15e8426c9760b80becafe",
@@ -2679,7 +2665,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 179
+      "rank": 178
     },
     {
       "address": "0x4cf638d84829ac0c081f9ab6706a3926076c0e30",
@@ -2693,7 +2679,7 @@
           "tokens_outstanding": "0"
         }
       ],
-      "rank": 180
+      "rank": 179
     }
   ]
 }

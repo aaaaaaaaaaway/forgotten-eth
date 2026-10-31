@@ -1,11 +1,11 @@
 {
   "contract": "0xd3d2b5643e506c6d9b7099e9116d7aaa941114fe",
   "balance_source": "token",
-  "contract_eth_balance": 31.80385546,
-  "total_eth_in_balances": 8.000003,
-  "addresses_with_balance": 1460,
-  "coverage_pct": 25.15,
-  "scan_date": "2026-10-28 05:24:30 UTC",
+  "contract_eth_balance": 31.79425279,
+  "total_eth_in_balances": 7.9904,
+  "addresses_with_balance": 1459,
+  "coverage_pct": 25.13,
+  "scan_date": "2026-10-29 11:25:00 UTC",
   "distribution": {
     ">0 ETH": 1260,
     ">0.01 ETH": 227,
@@ -14,7 +14,7 @@
     ">10 ETH": 0,
     ">100 ETH": 0
   },
-  "last_event_refresh": "2026-10-19 02:23:05 UTC",
+  "last_event_refresh": "2026-10-29 10:23:09 UTC",
   "balances": [
     {
       "address": "0x82d8d99955e38239d865a9dd0d44ef5dd06ba99c",
@@ -3877,18 +3877,6 @@
       ],
       "balance_wei": "9604000000000000",
       "rank": 352
-    },
-    {
-      "address": "0x8bebdb7f971d126bed0084c4cc651be40bee0519",
-      "balance_eth": 0.009603,
-      "epoch_details": [
-        {
-          "epoch": 2,
-          "eth": 0.009603
-        }
-      ],
-      "balance_wei": "9603000000000000",
-      "rank": 353
     },
     {
       "address": "0x5f7df439b3d998f60352cfe8018ac78c93cd0640",
@@ -19873,6 +19861,14 @@
       ],
       "pending_integration": true,
       "pending_reason": "kyber_platform_fee"
+    },
+    {
+      "address": "0x8bebdb7f971d126bed0084c4cc651be40bee0519",
+      "balance_eth": 0,
+      "epoch_details": [],
+      "balance_wei": "0",
+      "rank": 353,
+      "claimed": true
     },
     {
       "address": "0xde70f564cf4af8a17d6a9bf15e5b1842515368b5",

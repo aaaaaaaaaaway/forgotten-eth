@@ -1,9 +1,9 @@
 {
   "contract": "0x2956356cd2a2bf3202f771f50d3d14a367b48070",
   "balance_source": "eth",
-  "contract_eth_balance": 162.037497,
-  "total_eth_in_balances": 161.828562,
-  "addresses_with_balance": 1497,
+  "contract_eth_balance": 162.027497,
+  "total_eth_in_balances": 161.818562,
+  "addresses_with_balance": 1496,
   "coverage_pct": 99.87,
   "scan_date": "2026-09-20 01:43:40 UTC",
   "description": "ETH balances in defunct Maker W-ETH contract",
@@ -25,8 +25,8 @@
       "total_eth": 35.592021
     },
     "0.01-0.1 ETH": {
-      "count": 277,
-      "total_eth": 9.762335
+      "count": 276,
+      "total_eth": 9.752335
     },
     "<0.01 ETH": {
       "count": 1037,
@@ -2460,8 +2460,9 @@
     {
       "rank": 404,
       "address": "0x0e64cbca254788df4a8d29e3721d077d91d0d92a",
-      "balance_wei": "10000000000000000",
-      "balance_eth": 0.01
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 405,
@@ -9054,5 +9055,5 @@
       "balance_eth": 1e-18
     }
   ],
-  "last_event_refresh": "2026-10-24 09:23:05 UTC"
+  "last_event_refresh": "2026-10-29 10:23:11 UTC"
 }

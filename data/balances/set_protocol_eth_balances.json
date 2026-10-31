@@ -5,7 +5,7 @@
   "total_eth_in_balances": 376.84510581,
   "addresses_with_balance": 1071,
   "coverage_pct": 99.05,
-  "scan_date": "2026-10-28 05:25:33 UTC",
+  "scan_date": "2026-10-31 05:26:01 UTC",
   "description": "Set Protocol powered TokenSets, an automated portfolio product from 2019-2021 where each strategy was an ERC-20 token backed by real collateral held in a shared vault. The TokenSets front end is gone, but the vault still holds the collateral and redemption is still open: burning a Set token returns its underlying share, unwrapped straight back to ETH.",
   "meta": {
     "issuance_module": "0xceda8318522d348f1d1aca48b24629b8fbf09020",
@@ -81,7 +81,7 @@
       "0xf43b2f981efc5a611a97951ce4fd7d3bd87f4902",
       "0xffee21b4bb7084a9416205544101ae9f472c7159"
     ],
-    "scanned_to_block": 26289118,
+    "scanned_to_block": 26310642,
     "min_weth": 0.001,
     "note": "Three-level structure: user -> RebalancingSetToken -> collateral Set -> WETH in the Vault. Redeem with redeemRebalancingSetUnwrappingEther(rebalancingSet, quantity, false) on the RebalancingSetIssuanceModule; quantity must be a multiple of the RST's naturalUnit. Coverage is below 100% because some collateral Sets are held directly rather than through a RebalancingSetToken, and because holders below min_weth are dropped."
   },

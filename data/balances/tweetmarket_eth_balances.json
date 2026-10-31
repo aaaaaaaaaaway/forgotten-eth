@@ -1,9 +1,9 @@
 {
   "contract": "0xe14ab3ee81abe340b45bb26b1b166a7d2df22585",
   "balance_source": "eth",
-  "contract_eth_balance": 85.586109,
-  "total_eth_in_balances": 85.585195,
-  "addresses_with_balance": 1755,
+  "contract_eth_balance": 85.349728,
+  "total_eth_in_balances": 85.348813,
+  "addresses_with_balance": 1753,
   "coverage_pct": 100,
   "scan_date": "2026-09-09 16:11:49 UTC",
   "description": "Current TweetMarket high bidders can cancel each bid by tweet ID after the lockup.",
@@ -1908,18 +1908,11 @@
     },
     {
       "address": "0xe9bb12bb63113acfb834dfd4db0f2a6eba51dc36",
-      "balance_wei": "235846130000000000",
-      "balance_eth": 0.23584613,
-      "tweetmarket_bids": [
-        {
-          "tweet_id": "1411946838102577152",
-          "wei": "235846130000000000",
-          "eth": "0.235846129999999987",
-          "last_tx_hash": "0xbc41d10c4e7235d53a896909cfdb4f5f2845648c2ca18062b071bb4fc8a51b85",
-          "last_tx_date": "2021-07-09 04:49:32.000 UTC"
-        }
-      ],
-      "rank": 47
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "tweetmarket_bids": [],
+      "rank": 47,
+      "claimed": true
     },
     {
       "address": "0x5fae9d4b591f213b3ba75287f2cfac0883d17f7a",
@@ -34562,18 +34555,11 @@
     },
     {
       "address": "0x5aa4b3ee5212a10893efc6cb261f7e209df70bf2",
-      "balance_wei": "535440000000000",
-      "balance_eth": 0.00053544,
-      "tweetmarket_bids": [
-        {
-          "tweet_id": "1359835689513271301",
-          "wei": "535440000000000",
-          "eth": "0.000535440000000000",
-          "last_tx_hash": "0xef8899ce36d7a4501504e582c738e4b5b2da52ee556eba5ee7d3e552fb329e30",
-          "last_tx_date": "2021-03-10 18:42:49.000 UTC"
-        }
-      ],
-      "rank": 1740
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "tweetmarket_bids": [],
+      "rank": 1740,
+      "claimed": true
     },
     {
       "address": "0x462cc75caee4d0be283eeddbc2cd5698b9880b91",
@@ -35176,5 +35162,5 @@
       "rank": 1780
     }
   ],
-  "last_event_refresh": "2026-10-28 08:23:06 UTC"
+  "last_event_refresh": "2026-10-29 13:23:07 UTC"
 }

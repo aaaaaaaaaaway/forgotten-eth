@@ -1,10 +1,10 @@
 {
   "contract": "0xae384c6e68f5d697d65ed43fd53ef5ea3288f536",
   "balance_source": "eth",
-  "contract_eth_balance": 2.172376,
-  "total_eth_in_balances": 2.293209,
-  "addresses_with_balance": 246,
-  "coverage_pct": 105.56,
+  "contract_eth_balance": 2.167593,
+  "total_eth_in_balances": 2.288425,
+  "addresses_with_balance": 245,
+  "coverage_pct": 105.57,
   "scan_date": "2026-08-30 01:43:42 UTC",
   "description": "ETH balances in defunct RedChip v2 contract",
   "distribution": {
@@ -29,8 +29,8 @@
       "total_eth": 0.569758
     },
     "<0.01 ETH": {
-      "count": 228,
-      "total_eth": 0.136481
+      "count": 227,
+      "total_eth": 0.131698
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
@@ -165,8 +165,9 @@
     {
       "rank": 22,
       "address": "0x0bff3366a7cf7cb98ca95e5481b557e2ff8028e1",
-      "balance_wei": "4783454463264164",
-      "balance_eth": 0.004783454463264164
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 23,
@@ -1527,5 +1528,5 @@
       "balance_eth": 3.114576161e-9
     }
   ],
-  "last_event_refresh": "2026-09-24 09:23:05 UTC"
+  "last_event_refresh": "2026-10-29 19:23:07 UTC"
 }

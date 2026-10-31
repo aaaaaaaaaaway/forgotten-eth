@@ -1,29 +1,41 @@
 {
   "contract": "0x702392282255f8c0993dbbbb148d80d2ef6795b1",
   "balance_source": "eth",
-  "contract_eth_balance": 4.61242351,
-  "total_eth_in_balances": 3.35333734,
-  "addresses_with_balance": 363,
-  "coverage_pct": 72.7,
+  "contract_eth_balance": 4.589913,
+  "total_eth_in_balances": 3.35048308,
+  "addresses_with_balance": 361,
+  "coverage_pct": 73,
   "scan_date": "2026-03-19 09:29:50 UTC",
   "description": "ETH balances in defunct PoWTF contract",
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "1-10 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
     "0.1-1 ETH": {
       "count": 6,
-      "total_eth": 2.865225627740852
+      "total_eth": 2.865226
     },
     "0.01-0.1 ETH": {
       "count": 10,
-      "total_eth": 0.30222116419282585
+      "total_eth": 0.302222
     },
     "<0.01 ETH": {
-      "count": 348,
-      "total_eth": 0.1858905506314253
+      "count": 346,
+      "total_eth": 0.183009
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 383,
-  "last_event_refresh": "2026-08-03T16:34:01Z",
+  "last_event_refresh": "2026-10-29T23:17:05Z",
   "balances": [
     {
       "rank": 1,
@@ -220,14 +232,16 @@
     {
       "rank": 33,
       "address": "0xefd8db062b1eb51a6d905d49d64efaaa353961a5",
-      "balance_wei": "2854258916847807",
-      "balance_eth": 0.002854258916847807
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 34,
       "address": "0xefd8db062b1eb51a6d905d49d64efaaa353961a5",
       "balance_wei": "2854258916847807",
-      "balance_eth": 0.002854258916847807
+      "balance_eth": 0.002854258916847807,
+      "claimed": true
     },
     {
       "rank": 35,
