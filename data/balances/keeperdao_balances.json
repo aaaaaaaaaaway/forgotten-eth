@@ -2,10 +2,10 @@
   "contract": "0x35fFd6E268610E764fF6944d07760D0EFe5E40E5",
   "balance_source": "token",
   "contract_eth_balance": 360.79219791,
-  "total_eth_in_balances": 360.79219766,
-  "addresses_with_balance": 423,
+  "total_eth_in_balances": 360.79219765,
+  "addresses_with_balance": 424,
   "coverage_pct": 100.0,
-  "scan_date": "2026-10-31 05:25:51 UTC",
+  "scan_date": "2026-11-02 17:27:11 UTC",
   "distribution": {
     ">=100 ETH": {
       "count": 1,
@@ -25,11 +25,11 @@
     },
     "0.01-0.1 ETH": {
       "count": 89,
-      "total_eth": 3.778023
+      "total_eth": 3.777495
     },
     "<0.01 ETH": {
-      "count": 81,
-      "total_eth": 0.226684
+      "count": 82,
+      "total_eth": 0.227212
     }
   },
   "meta": {
@@ -4006,19 +4006,19 @@
     },
     {
       "address": "0x000000000004444c5dc75cb358380d2e3de08a90",
-      "balance_wei": "37697375889936153",
-      "balance_eth": 0.03769738,
+      "balance_wei": "37169363754531195",
+      "balance_eth": 0.03716936,
       "keeperdao_items": [
         {
           "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
           "k_token": "keth",
           "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
-          "k_amount_wei": "34864712422253992",
-          "k_amount": 0.034864712422253995,
-          "eth_eq_wei": "37697375889936153",
-          "eth_eq": 0.03769737588993615,
-          "amount_raw": "37697375889936153",
-          "amount": 0.03769737588993615,
+          "k_amount_wei": "34376376276255336",
+          "k_amount": 0.03437637627625534,
+          "eth_eq_wei": "37169363754531195",
+          "eth_eq": 0.03716936375453119,
+          "amount_raw": "37169363754531195",
+          "amount": 0.0371693637545312,
           "decimals": 18,
           "underlying": "ETH",
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
@@ -6199,6 +6199,28 @@
       "rank": 264
     },
     {
+      "address": "0xc4f58fbcb8d764826e54e5e1c2dd3cefd946626b",
+      "balance_wei": "528012135404957",
+      "balance_eth": 0.00052801,
+      "keeperdao_items": [
+        {
+          "item_id": "kd:0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "k_token": "keth",
+          "k_address": "0xc4c43c78fb32f2c7f8417af5af3b85f090f1d327",
+          "k_amount_wei": "488336145998656",
+          "k_amount": 0.000488336145998656,
+          "eth_eq_wei": "528012135404957",
+          "eth_eq": 0.000528012135404957,
+          "amount_raw": "528012135404957",
+          "amount": 0.000528012135404957,
+          "decimals": 18,
+          "underlying": "ETH",
+          "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+        }
+      ],
+      "rank": 265
+    },
+    {
       "address": "0xad970b7c19fc4b05728109136655015de7feeb7e",
       "balance_wei": "353534998003292",
       "balance_eth": 0.00035353,
@@ -6218,7 +6240,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 265
+      "rank": 266
     },
     {
       "address": "0x34e2f73d877a299bb0abbf71f6bb9eb47da1fe50",
@@ -6240,7 +6262,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 266
+      "rank": 267
     },
     {
       "address": "0xcd1e8ae6d43ca88662ed69afe205fa2efc6a415f",
@@ -6262,7 +6284,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 267
+      "rank": 268
     },
     {
       "address": "0x3a0cca1a832644b60730e5d4c27947c5de609d62",
@@ -6284,7 +6306,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 268
+      "rank": 269
     },
     {
       "address": "0x9749fc1cc2c0a1a192a0bae614d9d4881c0e0bc8",
@@ -6306,7 +6328,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 269
+      "rank": 270
     },
     {
       "address": "0x9aa51865ade30ff5a6b366e73d6b2077454e646a",
@@ -6328,7 +6350,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 270
+      "rank": 271
     },
     {
       "address": "0x42b9df65b219b3dd36ff330a4dd8f327a6ada990",
@@ -6350,7 +6372,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 271
+      "rank": 272
     },
     {
       "address": "0xedf7b675a2fe3c27efb263fb4c204a3f0fb17d46",
@@ -6372,7 +6394,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 272
+      "rank": 273
     },
     {
       "address": "0xa46208360297bb909ee0f36bb6b83239ebf4c21d",
@@ -6394,7 +6416,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 273
+      "rank": 274
     },
     {
       "address": "0x4c09d894399e3f8d6276c63fccf4d8e7e9a86268",
@@ -6448,7 +6470,7 @@
         "DAI": "509266014730229917",
         "USDC": "510498"
       },
-      "rank": 274
+      "rank": 275
     },
     {
       "address": "0x5290d046f674c2fc9c6cf9905a0d19b39eba0a76",
@@ -6502,7 +6524,7 @@
         "DAI": "10311253692252856",
         "USDC": "10278"
       },
-      "rank": 275
+      "rank": 276
     },
     {
       "address": "0xc19355f5a4aaaf31aa865ce1264e1cffeb68c171",
@@ -6524,7 +6546,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 276
+      "rank": 277
     },
     {
       "address": "0x099173acced65d93c5bb4506e0e3f81264047674",
@@ -6546,7 +6568,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 277
+      "rank": 278
     },
     {
       "address": "0xf7801b408c5e3d352e9d67ee2774ae82800bc2d7",
@@ -6568,7 +6590,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 278
+      "rank": 279
     },
     {
       "address": "0xa512e549d68f15a9f23c1df98970e684301ac1e7",
@@ -6590,7 +6612,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 279
+      "rank": 280
     },
     {
       "address": "0x17080b589cdcbd10ebeaa24cb0096f4bb29eb52b",
@@ -6612,7 +6634,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 280
+      "rank": 281
     },
     {
       "address": "0xe8c85e71cfd86556997a498095dca847029defd0",
@@ -6634,7 +6656,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 281
+      "rank": 282
     },
     {
       "address": "0x8275a90029f67ea2f64ea9ba81b1c6903f0776b2",
@@ -6656,7 +6678,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 282
+      "rank": 283
     },
     {
       "address": "0xc706c813aa7a67817983d0f5562057ef5bf38d54",
@@ -6678,7 +6700,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 283
+      "rank": 284
     },
     {
       "address": "0x18960c91688c5ca0767c7bf2c80df5e679648256",
@@ -6700,7 +6722,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 284
+      "rank": 285
     },
     {
       "address": "0x82e4d78c6c62d461251fa5a1d4deb9f0fe378e30",
@@ -6722,7 +6744,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 285
+      "rank": 286
     },
     {
       "address": "0xd97edc1d2fbb60a996461f9ce3c3777d35815e4e",
@@ -6744,7 +6766,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 286
+      "rank": 287
     },
     {
       "address": "0x8ec37eb03bb34e5de150ed8828672bd991d759d2",
@@ -6766,7 +6788,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 287
+      "rank": 288
     },
     {
       "address": "0x0383143d0d61112615c124b64994bfc7e94d8e4d",
@@ -6788,7 +6810,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 288
+      "rank": 289
     },
     {
       "address": "0xc85c1a16b06a8db1880ba0f54a265752df429692",
@@ -6810,7 +6832,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 289
+      "rank": 290
     },
     {
       "address": "0x7eca0c387b3d07d97f95e9ac3551f1760b8b6c54",
@@ -6832,7 +6854,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 290
+      "rank": 291
     },
     {
       "address": "0xdd10664a1f77c915048908587e6961fbf9d0813e",
@@ -6854,7 +6876,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 291
+      "rank": 292
     },
     {
       "address": "0x15b8a4acd82326c4a4cd98fbb6f7ad2fc3101b1f",
@@ -6876,7 +6898,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 292
+      "rank": 293
     },
     {
       "address": "0x544d2d796e165f0d4c626d1d15667a469a7bffe0",
@@ -6898,7 +6920,7 @@
           "underlying_address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
-      "rank": 293
+      "rank": 294
     },
     {
       "address": "0xe5df267e2525c4fba22f103238d2ff2ec02d9665",
@@ -6923,7 +6945,7 @@
       "token_balances": {
         "DAI": "24685876320502761036761"
       },
-      "rank": 294
+      "rank": 295
     },
     {
       "address": "0x0fa092aeac994af3b06e2fbe2e7ac0a17d6940b7",
@@ -6948,7 +6970,7 @@
       "token_balances": {
         "USDC": "14078439690"
       },
-      "rank": 295
+      "rank": 296
     },
     {
       "address": "0xe41b78ae5c2b19caf9949f38f3d49aa3f50a8afd",
@@ -6973,7 +6995,7 @@
       "token_balances": {
         "DAI": "8826882518443297460122"
       },
-      "rank": 296
+      "rank": 297
     },
     {
       "address": "0x4d25033be62e2b72198eec2710234d18c175170d",
@@ -6998,7 +7020,7 @@
       "token_balances": {
         "DAI": "6196486781287625542540"
       },
-      "rank": 297
+      "rank": 298
     },
     {
       "address": "0x6445563a4581ea750b374d7ca30ced59fc0d7872",
@@ -7023,7 +7045,7 @@
       "token_balances": {
         "DAI": "3073181010955498246647"
       },
-      "rank": 298
+      "rank": 299
     },
     {
       "address": "0x314b401dbc98b5aa2e597825578847fe0c2c4b21",
@@ -7048,7 +7070,7 @@
       "token_balances": {
         "DAI": "2968958895900808139492"
       },
-      "rank": 299
+      "rank": 300
     },
     {
       "address": "0x8c0e7049bd05d1521d5a568295f530057c516e75",
@@ -7073,7 +7095,7 @@
       "token_balances": {
         "DAI": "2533304949424180118794"
       },
-      "rank": 300
+      "rank": 301
     },
     {
       "address": "0x49db9fbef8c543fa2de4c8b2cbbb21d0b6a05a83",
@@ -7098,7 +7120,7 @@
       "token_balances": {
         "USDC": "2000630667"
       },
-      "rank": 301
+      "rank": 302
     },
     {
       "address": "0x2f5f5c84ff5805e78974c6bfcbadaca47e663c9d",
@@ -7123,7 +7145,7 @@
       "token_balances": {
         "USDC": "1989504901"
       },
-      "rank": 302
+      "rank": 303
     },
     {
       "address": "0x93e4ced6f7f593e0d017c2fd276450a1bb145135",
@@ -7148,7 +7170,7 @@
       "token_balances": {
         "DAI": "1066218922068456240572"
       },
-      "rank": 303
+      "rank": 304
     },
     {
       "address": "0xa8a8ef5426f9e14554efb3a983d4afe7eb622d44",
@@ -7173,7 +7195,7 @@
       "token_balances": {
         "DAI": "1054883596765783631140"
       },
-      "rank": 304
+      "rank": 305
     },
     {
       "address": "0x1406a3103fcf8d7854533ee691e29935bdb49288",
@@ -7198,7 +7220,7 @@
       "token_balances": {
         "DAI": "1045556191545602307904"
       },
-      "rank": 305
+      "rank": 306
     },
     {
       "address": "0x18151700a42c66c9d93f08319c6637d0da01a11c",
@@ -7223,7 +7245,7 @@
       "token_balances": {
         "USDC": "1040423892"
       },
-      "rank": 306
+      "rank": 307
     },
     {
       "address": "0x8bd5531922b7a95e1b862d044cfb4b9c6beb8195",
@@ -7248,7 +7270,7 @@
       "token_balances": {
         "DAI": "1010974633175148934408"
       },
-      "rank": 307
+      "rank": 308
     },
     {
       "address": "0x383dbcdce4f4cb11bc083d34945d702aec2d8fc6",
@@ -7273,7 +7295,7 @@
       "token_balances": {
         "USDC": "994178828"
       },
-      "rank": 308
+      "rank": 309
     },
     {
       "address": "0x817fecba20073b56299e9487600545524d19de7e",
@@ -7298,7 +7320,7 @@
       "token_balances": {
         "DAI": "989026511750664967424"
       },
-      "rank": 309
+      "rank": 310
     },
     {
       "address": "0x7490718661ced3aaa1321c8907f1de6dbc6f9cf4",
@@ -7323,7 +7345,7 @@
       "token_balances": {
         "USDC": "986841183"
       },
-      "rank": 310
+      "rank": 311
     },
     {
       "address": "0xeacaf5b2717060bda76a5883a01cb5f693f40801",
@@ -7348,7 +7370,7 @@
       "token_balances": {
         "DAI": "983217938677446243720"
       },
-      "rank": 311
+      "rank": 312
     },
     {
       "address": "0xdc4b8b3bbf30260dc1605772b62c21c3bed0fa40",
@@ -7373,7 +7395,7 @@
       "token_balances": {
         "USDC": "883988436"
       },
-      "rank": 312
+      "rank": 313
     },
     {
       "address": "0x2322921e64e265250bbf4d51052e0f5db38a31b9",
@@ -7398,7 +7420,7 @@
       "token_balances": {
         "DAI": "835696225300907176218"
       },
-      "rank": 313
+      "rank": 314
     },
     {
       "address": "0xe3968a2412cf4a04201754b4e13290f7b1a6e8ba",
@@ -7423,7 +7445,7 @@
       "token_balances": {
         "USDC": "711088400"
       },
-      "rank": 314
+      "rank": 315
     },
     {
       "address": "0xe5d0affbcd5328bc9f90c6ee83ed7030760ca1a8",
@@ -7448,7 +7470,7 @@
       "token_balances": {
         "DAI": "679053372176945896626"
       },
-      "rank": 315
+      "rank": 316
     },
     {
       "address": "0x6e26619fdfab161b4c1af279eeebff705b7bd040",
@@ -7473,7 +7495,7 @@
       "token_balances": {
         "USDC": "605992410"
       },
-      "rank": 316
+      "rank": 317
     },
     {
       "address": "0xa65ab3aca9a72aadb2f18aa5f634f1abd5c8c6bb",
@@ -7498,7 +7520,7 @@
       "token_balances": {
         "USDC": "602871164"
       },
-      "rank": 317
+      "rank": 318
     },
     {
       "address": "0xd6681d7a5ee9e56d5225b26b994ab817975610ba",
@@ -7523,7 +7545,7 @@
       "token_balances": {
         "DAI": "600841482248266810666"
       },
-      "rank": 318
+      "rank": 319
     },
     {
       "address": "0xdef0ed0724d9a1d3aac2dafb767fbf8d09a3f2b6",
@@ -7548,7 +7570,7 @@
       "token_balances": {
         "DAI": "551338699331626395448"
       },
-      "rank": 319
+      "rank": 320
     },
     {
       "address": "0x296b39cf35a9eb6550f3ef76b87573e0349047f1",
@@ -7573,7 +7595,7 @@
       "token_balances": {
         "USDC": "531117353"
       },
-      "rank": 320
+      "rank": 321
     },
     {
       "address": "0x0a7e465c1a354de9a6a51ccce84a50fe1a210eb3",
@@ -7598,7 +7620,7 @@
       "token_balances": {
         "USDC": "507260125"
       },
-      "rank": 321
+      "rank": 322
     },
     {
       "address": "0xa6df57ca95f282f363b97875cd2f104218f1880e",
@@ -7623,7 +7645,7 @@
       "token_balances": {
         "DAI": "506998948972593254490"
       },
-      "rank": 322
+      "rank": 323
     },
     {
       "address": "0x644c298de50810d08d6ec4ff430a89d7f7d186e2",
@@ -7648,7 +7670,7 @@
       "token_balances": {
         "USDC": "502275008"
       },
-      "rank": 323
+      "rank": 324
     },
     {
       "address": "0x0aeeeae3491820ceae297232ec9ebc483494ad0e",
@@ -7673,7 +7695,7 @@
       "token_balances": {
         "USDC": "499199583"
       },
-      "rank": 324
+      "rank": 325
     },
     {
       "address": "0xbe06f318d8bec0a366820df5097a9007c37547a9",
@@ -7698,7 +7720,7 @@
       "token_balances": {
         "USDC": "497378159"
       },
-      "rank": 325
+      "rank": 326
     },
     {
       "address": "0xd23df138e3c7a74b2832f5ecc1ed9eea6c04c80f",
@@ -7738,7 +7760,7 @@
         "DAI": "238328114587045474747",
         "USDC": "243677120"
       },
-      "rank": 326
+      "rank": 327
     },
     {
       "address": "0x426e47d2b73b68664a8702d4658a9c97ee00c590",
@@ -7763,7 +7785,7 @@
       "token_balances": {
         "DAI": "481848318631188964312"
       },
-      "rank": 327
+      "rank": 328
     },
     {
       "address": "0x1084c4ee87d1488d1ed45d11408b09ae1ff90576",
@@ -7788,7 +7810,7 @@
       "token_balances": {
         "USDC": "471798755"
       },
-      "rank": 328
+      "rank": 329
     },
     {
       "address": "0x152b8c153e4f18bfe1cb3f2eaa563813c758e279",
@@ -7813,7 +7835,7 @@
       "token_balances": {
         "USDC": "469071983"
       },
-      "rank": 329
+      "rank": 330
     },
     {
       "address": "0x7131c6f207b2c020a25a6fb0e7fc575f819cc02a",
@@ -7838,7 +7860,7 @@
       "token_balances": {
         "USDC": "405847274"
       },
-      "rank": 330
+      "rank": 331
     },
     {
       "address": "0x9e49a6ee617b04300204e78f4b931145088810e7",
@@ -7863,7 +7885,7 @@
       "token_balances": {
         "DAI": "399471262110568119284"
       },
-      "rank": 331
+      "rank": 332
     },
     {
       "address": "0x710d02e8ae5d66104757e32f8b3f20389274ebc1",
@@ -7888,7 +7910,7 @@
       "token_balances": {
         "DAI": "382574838989792558019"
       },
-      "rank": 332
+      "rank": 333
     },
     {
       "address": "0xbafd29b1dc3e66400204126e1ec81d54bf58d613",
@@ -7913,7 +7935,7 @@
       "token_balances": {
         "DAI": "381659708519425933730"
       },
-      "rank": 333
+      "rank": 334
     },
     {
       "address": "0x2ee572633049ecdce2e6e57d854cba491b3c6a67",
@@ -7938,7 +7960,7 @@
       "token_balances": {
         "DAI": "304762876164130054601"
       },
-      "rank": 334
+      "rank": 335
     },
     {
       "address": "0xaba97cf46c93d4ef66189f84b6047ffd05f86526",
@@ -7963,7 +7985,7 @@
       "token_balances": {
         "USDC": "265448259"
       },
-      "rank": 335
+      "rank": 336
     },
     {
       "address": "0xbbf68ff787fa681eee4024c63cbb3ac75a6efc0c",
@@ -8003,7 +8025,7 @@
         "DAI": "113241603319109327051",
         "USDC": "112628250"
       },
-      "rank": 336
+      "rank": 337
     },
     {
       "address": "0xc761198054e770ef8ea548adf273bcffcbe98f60",
@@ -8028,7 +8050,7 @@
       "token_balances": {
         "DAI": "222535810469439455064"
       },
-      "rank": 337
+      "rank": 338
     },
     {
       "address": "0xc0020d88852f4eca40eed7d0b1bdd9493b589131",
@@ -8053,7 +8075,7 @@
       "token_balances": {
         "DAI": "201655262472824885617"
       },
-      "rank": 338
+      "rank": 339
     },
     {
       "address": "0xb4fea5fccfe492e0199e81be75cea97fdba77463",
@@ -8078,7 +8100,7 @@
       "token_balances": {
         "USDC": "199689468"
       },
-      "rank": 339
+      "rank": 340
     },
     {
       "address": "0xc78e04d823cc8c247c7b88a3007951447db1fead",
@@ -8103,7 +8125,7 @@
       "token_balances": {
         "DAI": "194040595035627129640"
       },
-      "rank": 340
+      "rank": 341
     },
     {
       "address": "0x7e52ab67587f63245005d845c3e30e9b9d7159e2",
@@ -8128,7 +8150,7 @@
       "token_balances": {
         "DAI": "193909319213345351258"
       },
-      "rank": 341
+      "rank": 342
     },
     {
       "address": "0xa31dbf0435af02f3b68ec7f985c9388e8ab1e47b",
@@ -8153,7 +8175,7 @@
       "token_balances": {
         "DAI": "187541083770333599398"
       },
-      "rank": 342
+      "rank": 343
     },
     {
       "address": "0x40d3b71616bb9555d69f87465b7a6502a579ef60",
@@ -8178,7 +8200,7 @@
       "token_balances": {
         "USDC": "164976317"
       },
-      "rank": 343
+      "rank": 344
     },
     {
       "address": "0x58a3505ee61f90bd5fbcf2abd889afad46b69d3a",
@@ -8203,7 +8225,7 @@
       "token_balances": {
         "USDC": "164654840"
       },
-      "rank": 344
+      "rank": 345
     },
     {
       "address": "0xd99a71e68b961cbbbb4050bfac148dee9ecdf619",
@@ -8228,7 +8250,7 @@
       "token_balances": {
         "DAI": "158291693594272571325"
       },
-      "rank": 345
+      "rank": 346
     },
     {
       "address": "0x5d5f630ba4e689c3100f52874176f66d92500727",
@@ -8253,7 +8275,7 @@
       "token_balances": {
         "USDC": "155146165"
       },
-      "rank": 346
+      "rank": 347
     },
     {
       "address": "0x3c5e235d1031d88d10cad08aef957715e71ad77f",
@@ -8278,7 +8300,7 @@
       "token_balances": {
         "DAI": "149550503926144011669"
       },
-      "rank": 347
+      "rank": 348
     },
     {
       "address": "0x962b26a2d007de555e560c2f6da3cd2719da9aa7",
@@ -8303,7 +8325,7 @@
       "token_balances": {
         "DAI": "143349090856837276478"
       },
-      "rank": 348
+      "rank": 349
     },
     {
       "address": "0x133fd7b616ad0f7f8885407da0b4e298448c9b3d",
@@ -8328,7 +8350,7 @@
       "token_balances": {
         "DAI": "119617628209091311198"
       },
-      "rank": 349
+      "rank": 350
     },
     {
       "address": "0x1fc58e176bc835d1ad7f97cff3e05287e00f6c77",
@@ -8353,7 +8375,7 @@
       "token_balances": {
         "DAI": "107812809321271738364"
       },
-      "rank": 350
+      "rank": 351
     },
     {
       "address": "0xa7bba3d285e9f045038af84f9e2064dd1a785ebd",
@@ -8378,7 +8400,7 @@
       "token_balances": {
         "USDC": "102750603"
       },
-      "rank": 351
+      "rank": 352
     },
     {
       "address": "0x807ac157e1ec0e964fbd2d89a06a3d2035c1eff7",
@@ -8403,7 +8425,7 @@
       "token_balances": {
         "USDC": "102080848"
       },
-      "rank": 352
+      "rank": 353
     },
     {
       "address": "0x8c6ad7dd2e2ecdd633bc1141024536cd93aee4fb",
@@ -8428,7 +8450,7 @@
       "token_balances": {
         "USDC": "101714716"
       },
-      "rank": 353
+      "rank": 354
     },
     {
       "address": "0xfe75f92172d2b6f5c25bd5f843c32f839a6653fb",
@@ -8453,7 +8475,7 @@
       "token_balances": {
         "DAI": "100346930541970728716"
       },
-      "rank": 354
+      "rank": 355
     },
     {
       "address": "0xe41ab63fe5483b206ea22e2803e0d383a786043a",
@@ -8478,7 +8500,7 @@
       "token_balances": {
         "DAI": "95615741223772341285"
       },
-      "rank": 355
+      "rank": 356
     },
     {
       "address": "0x5acf39076c95e63b0965b5e6ef4c85087608c601",
@@ -8503,7 +8525,7 @@
       "token_balances": {
         "USDC": "95234791"
       },
-      "rank": 356
+      "rank": 357
     },
     {
       "address": "0xc0d2b7f7b86e6da8bd9367948f1dca08a0e833e4",
@@ -8528,7 +8550,7 @@
       "token_balances": {
         "DAI": "93116833410383614454"
       },
-      "rank": 357
+      "rank": 358
     },
     {
       "address": "0xbde61412ca9f899239671118fd1ec99e70195de7",
@@ -8553,7 +8575,7 @@
       "token_balances": {
         "USDC": "91845674"
       },
-      "rank": 358
+      "rank": 359
     },
     {
       "address": "0x29c7ec478b00bf8f9e4954592f82a5e40fad5a0e",
@@ -8578,7 +8600,7 @@
       "token_balances": {
         "USDC": "89530129"
       },
-      "rank": 359
+      "rank": 360
     },
     {
       "address": "0x63595188d9a2a0e47b27a380d6506ffd2d69d1f9",
@@ -8603,7 +8625,7 @@
       "token_balances": {
         "DAI": "85540032217164765968"
       },
-      "rank": 360
+      "rank": 361
     },
     {
       "address": "0x4c19e33651b7bb4823ac412bc29c0a8e666eccbd",
@@ -8628,7 +8650,7 @@
       "token_balances": {
         "USDC": "77820776"
       },
-      "rank": 361
+      "rank": 362
     },
     {
       "address": "0x9b43b558d65871e4af214dd26b17702b121dfeb2",
@@ -8653,7 +8675,7 @@
       "token_balances": {
         "DAI": "76525246938358558174"
       },
-      "rank": 362
+      "rank": 363
     },
     {
       "address": "0x192ddbe212d251ab0aeaab0a544c54437d2ffe54",
@@ -8678,7 +8700,7 @@
       "token_balances": {
         "DAI": "76497411845022829513"
       },
-      "rank": 363
+      "rank": 364
     },
     {
       "address": "0xebcb3c3d96e806b4a70639153336c8eb71aae910",
@@ -8703,7 +8725,7 @@
       "token_balances": {
         "USDC": "74907043"
       },
-      "rank": 364
+      "rank": 365
     },
     {
       "address": "0x4322d56325ce754081a63129e3a3250f38eaf3c4",
@@ -8728,7 +8750,7 @@
       "token_balances": {
         "DAI": "73576630015239889081"
       },
-      "rank": 365
+      "rank": 366
     },
     {
       "address": "0x9ec5d1d6d86f706a53f7868c247c6a0330a4b850",
@@ -8753,7 +8775,7 @@
       "token_balances": {
         "USDC": "61915750"
       },
-      "rank": 366
+      "rank": 367
     },
     {
       "address": "0x7e16b04b6685de8348916126b0a09c9a2266eeb3",
@@ -8778,7 +8800,7 @@
       "token_balances": {
         "USDC": "60402871"
       },
-      "rank": 367
+      "rank": 368
     },
     {
       "address": "0x0897b4e707acff63e9a993aea6a11cee23c9b492",
@@ -8803,7 +8825,7 @@
       "token_balances": {
         "DAI": "51296868637024823164"
       },
-      "rank": 368
+      "rank": 369
     },
     {
       "address": "0x2f33c529431951a6dc7469f506dd9f8e5c14eed4",
@@ -8828,7 +8850,7 @@
       "token_balances": {
         "USDC": "51120084"
       },
-      "rank": 369
+      "rank": 370
     },
     {
       "address": "0xbcc34be4cce3c236ccc2e4b9940c874c13d05ed3",
@@ -8853,7 +8875,7 @@
       "token_balances": {
         "DAI": "50722892984292636339"
       },
-      "rank": 370
+      "rank": 371
     },
     {
       "address": "0xcabbfb122e2c047a0f2243d4baa8b4de854cb95f",
@@ -8878,7 +8900,7 @@
       "token_balances": {
         "DAI": "50165364319078836016"
       },
-      "rank": 371
+      "rank": 372
     },
     {
       "address": "0xbc12a11ed5d9f4ed450390cfdffd69dd01e113e1",
@@ -8903,7 +8925,7 @@
       "token_balances": {
         "USDC": "48429859"
       },
-      "rank": 372
+      "rank": 373
     },
     {
       "address": "0x20910ecb203eb636b291a5f1dff70c74cdccc365",
@@ -8928,7 +8950,7 @@
       "token_balances": {
         "DAI": "47217506064798874394"
       },
-      "rank": 373
+      "rank": 374
     },
     {
       "address": "0x23e9731e62555c09d296ae0f99c1ac962158620e",
@@ -8953,7 +8975,7 @@
       "token_balances": {
         "DAI": "45833930403441220079"
       },
-      "rank": 374
+      "rank": 375
     },
     {
       "address": "0x5540b6626006c9a2e3b5e1eccb5391c298130596",
@@ -8978,7 +9000,7 @@
       "token_balances": {
         "DAI": "45542372909458286597"
       },
-      "rank": 375
+      "rank": 376
     },
     {
       "address": "0x63be84b1d75751e52716ae153dbc5abb5b2a98f5",
@@ -9003,7 +9025,7 @@
       "token_balances": {
         "DAI": "44862103631398472952"
       },
-      "rank": 376
+      "rank": 377
     },
     {
       "address": "0x237e15061293ed81b1ff85eb42ee912b6a19c8e4",
@@ -9028,7 +9050,7 @@
       "token_balances": {
         "DAI": "43851860692624421075"
       },
-      "rank": 377
+      "rank": 378
     },
     {
       "address": "0x59100385262480ec2d7b5807528d84b361881cb5",
@@ -9053,7 +9075,7 @@
       "token_balances": {
         "DAI": "42921807273273636940"
       },
-      "rank": 378
+      "rank": 379
     },
     {
       "address": "0x9dcda7fcc169c5d6e51aed0c3176c3f12ff8ce8b",
@@ -9078,7 +9100,7 @@
       "token_balances": {
         "DAI": "42876678362409674190"
       },
-      "rank": 379
+      "rank": 380
     },
     {
       "address": "0x50348e7c42056737f280895dc81a135ee3898a1c",
@@ -9103,7 +9125,7 @@
       "token_balances": {
         "USDC": "42388606"
       },
-      "rank": 380
+      "rank": 381
     },
     {
       "address": "0x432d126da5035175354ec628e23966c679cdfadf",
@@ -9128,7 +9150,7 @@
       "token_balances": {
         "DAI": "31375239053783199135"
       },
-      "rank": 381
+      "rank": 382
     },
     {
       "address": "0x83084d760e0b2a156f5db3fa20f9fc965b3c0046",
@@ -9153,7 +9175,7 @@
       "token_balances": {
         "DAI": "30716372348280747493"
       },
-      "rank": 382
+      "rank": 383
     },
     {
       "address": "0x843da1d606d2a6d751c9ba2e8816dd6d725092f4",
@@ -9178,7 +9200,7 @@
       "token_balances": {
         "DAI": "26785817346133035795"
       },
-      "rank": 383
+      "rank": 384
     },
     {
       "address": "0x1eea392d763c97d3cdb183728b757d2f47f07227",
@@ -9203,7 +9225,7 @@
       "token_balances": {
         "USDC": "26670437"
       },
-      "rank": 384
+      "rank": 385
     },
     {
       "address": "0xf2795bdae0db5cb7363d934b066ba67e1ca8c049",
@@ -9228,7 +9250,7 @@
       "token_balances": {
         "USDC": "25616642"
       },
-      "rank": 385
+      "rank": 386
     },
     {
       "address": "0x74be9eb35b07f6fc8d767b9f980c1d7854bf0364",
@@ -9253,7 +9275,7 @@
       "token_balances": {
         "DAI": "22707331540741312354"
       },
-      "rank": 386
+      "rank": 387
     },
     {
       "address": "0xb61fd6f023e4cb04882433b812b195245deb57e5",
@@ -9278,7 +9300,7 @@
       "token_balances": {
         "DAI": "22681869945313234049"
       },
-      "rank": 387
+      "rank": 388
     },
     {
       "address": "0xef93b3fe19749650f933e75e3dc07ef3c657cd16",
@@ -9303,7 +9325,7 @@
       "token_balances": {
         "USDC": "20666594"
       },
-      "rank": 388
+      "rank": 389
     },
     {
       "address": "0xc1b5bcbc94e6127ac3ee4054d0664e4f6afe45d3",
@@ -9328,7 +9350,7 @@
       "token_balances": {
         "DAI": "20507025857107298130"
       },
-      "rank": 389
+      "rank": 390
     },
     {
       "address": "0xc9712b324e971eb34a0222c76cfe1ed10789a5bd",
@@ -9353,7 +9375,7 @@
       "token_balances": {
         "DAI": "19212446746822926586"
       },
-      "rank": 390
+      "rank": 391
     },
     {
       "address": "0x25ba562c31aaca514319f615ed56fa587a9c7ea4",
@@ -9378,7 +9400,7 @@
       "token_balances": {
         "DAI": "15918029224270610842"
       },
-      "rank": 391
+      "rank": 392
     },
     {
       "address": "0x0c27fffbd8e5f8cef5bf419494251abd423bf7ea",
@@ -9403,7 +9425,7 @@
       "token_balances": {
         "DAI": "15164991340374290780"
       },
-      "rank": 392
+      "rank": 393
     },
     {
       "address": "0x1487bc8feabe99b2e2ff68a44c8e27acb96ec035",
@@ -9428,7 +9450,7 @@
       "token_balances": {
         "DAI": "15164991286812911818"
       },
-      "rank": 393
+      "rank": 394
     },
     {
       "address": "0x36a87d1e3200225f881488e4aeedf25303febcae",
@@ -9453,7 +9475,7 @@
       "token_balances": {
         "USDC": "15119600"
       },
-      "rank": 394
+      "rank": 395
     },
     {
       "address": "0x3ed843f917af9c3cccbab7b6a1dea661524fa7ed",
@@ -9478,7 +9500,7 @@
       "token_balances": {
         "DAI": "14931807078220353389"
       },
-      "rank": 395
+      "rank": 396
     },
     {
       "address": "0xc8d46eb7881975f9ae15216feeba2ff58e55803c",
@@ -9503,7 +9525,7 @@
       "token_balances": {
         "USDC": "14623135"
       },
-      "rank": 396
+      "rank": 397
     },
     {
       "address": "0x5853ed4f26a3fcea565b3fbc698bb19cdf6deb85",
@@ -9528,7 +9550,7 @@
       "token_balances": {
         "DAI": "10422580209385616085"
       },
-      "rank": 397
+      "rank": 398
     },
     {
       "address": "0xf627e5f4bad95a956468d8bb6ee20b119f992e96",
@@ -9553,7 +9575,7 @@
       "token_balances": {
         "DAI": "10422533809293460981"
       },
-      "rank": 398
+      "rank": 399
     },
     {
       "address": "0x03c2bfd2509de9b13d0124015077e100a292336d",
@@ -9578,7 +9600,7 @@
       "token_balances": {
         "USDC": "10143254"
       },
-      "rank": 399
+      "rank": 400
     },
     {
       "address": "0x4e76df25208db51ffcad92015489a9f80826c954",
@@ -9603,7 +9625,7 @@
       "token_balances": {
         "DAI": "8723447051835722889"
       },
-      "rank": 400
+      "rank": 401
     },
     {
       "address": "0xe826f1c06d5ae90e4c098459d1b7464a8dc604ca",
@@ -9628,7 +9650,7 @@
       "token_balances": {
         "DAI": "5639513136025204868"
       },
-      "rank": 401
+      "rank": 402
     },
     {
       "address": "0xbe3b173c6ee409e37e2d479c935bb0babefe7e97",
@@ -9653,7 +9675,7 @@
       "token_balances": {
         "DAI": "4766947423996651420"
       },
-      "rank": 402
+      "rank": 403
     },
     {
       "address": "0x7ba605bc00ea26512a639d5e0335eaeb3e81ad94",
@@ -9678,7 +9700,7 @@
       "token_balances": {
         "DAI": "4519655257817032688"
       },
-      "rank": 403
+      "rank": 404
     },
     {
       "address": "0x0a2dc66bde44a7a3401efc88f385387370716a3c",
@@ -9703,7 +9725,7 @@
       "token_balances": {
         "USDC": "2967238"
       },
-      "rank": 404
+      "rank": 405
     },
     {
       "address": "0x47db9dccc3e0ff823a2e7ef546fdf8a9b833084a",
@@ -9728,7 +9750,7 @@
       "token_balances": {
         "DAI": "1488035784278785209"
       },
-      "rank": 405
+      "rank": 406
     },
     {
       "address": "0x7bfee91193d9df2ac0bfe90191d40f23c773c060",
@@ -9768,7 +9790,7 @@
         "DAI": "438124170189641122",
         "USDC": "911632"
       },
-      "rank": 406
+      "rank": 407
     },
     {
       "address": "0x137d2ff1b6df76d019319efffd39f2b9b8531859",
@@ -9793,7 +9815,7 @@
       "token_balances": {
         "DAI": "1017147013605687690"
       },
-      "rank": 407
+      "rank": 408
     },
     {
       "address": "0xb512f6eda8d66092c5ab1d6c5ec718970e064683",
@@ -9818,7 +9840,7 @@
       "token_balances": {
         "USDC": "1000000"
       },
-      "rank": 408
+      "rank": 409
     },
     {
       "address": "0x781d8a73f053b6c6d9472648912737b02bad9438",
@@ -9843,7 +9865,7 @@
       "token_balances": {
         "USDC": "994280"
       },
-      "rank": 409
+      "rank": 410
     },
     {
       "address": "0x57fd2605aa93a46d6363f1e2f0501e1ccfcda8a7",
@@ -9868,7 +9890,7 @@
       "token_balances": {
         "USDC": "860559"
       },
-      "rank": 410
+      "rank": 411
     },
     {
       "address": "0x0370049eba9c196d14ca2886dd329a700d545c72",
@@ -9893,7 +9915,7 @@
       "token_balances": {
         "USDC": "808830"
       },
-      "rank": 411
+      "rank": 412
     },
     {
       "address": "0x439d8cd77ffb644c7cb4beaed13f2318febdf2df",
@@ -9918,7 +9940,7 @@
       "token_balances": {
         "DAI": "578716209447858626"
       },
-      "rank": 412
+      "rank": 413
     },
     {
       "address": "0x430ada0b220d0588d416594c94ee131c798f3972",
@@ -9943,7 +9965,7 @@
       "token_balances": {
         "DAI": "535647044260682263"
       },
-      "rank": 413
+      "rank": 414
     },
     {
       "address": "0x1e4bda16734c1f9e86a66e310fcf8bd3c4f9c0f0",
@@ -9968,7 +9990,7 @@
       "token_balances": {
         "DAI": "518213466763015067"
       },
-      "rank": 414
+      "rank": 415
     },
     {
       "address": "0xdd713a96cb3d6f1454ec644e8b017b419a0aa1c6",
@@ -9993,7 +10015,7 @@
       "token_balances": {
         "DAI": "371799848174450829"
       },
-      "rank": 415
+      "rank": 416
     },
     {
       "address": "0xb5d1c94469c78a52d5b8250773484d71f6849bf8",
@@ -10018,7 +10040,7 @@
       "token_balances": {
         "USDC": "347014"
       },
-      "rank": 416
+      "rank": 417
     },
     {
       "address": "0xaa5f7d4df2a987d9cc32866b05765f4d94fc2421",
@@ -10043,7 +10065,7 @@
       "token_balances": {
         "USDC": "284914"
       },
-      "rank": 417
+      "rank": 418
     },
     {
       "address": "0xfc143f933badbefe4e769047745cc23e02de0e90",
@@ -10068,7 +10090,7 @@
       "token_balances": {
         "USDC": "269742"
       },
-      "rank": 418
+      "rank": 419
     },
     {
       "address": "0x53673e863f303c48af05104d96dac655ca7ef720",
@@ -10093,7 +10115,7 @@
       "token_balances": {
         "DAI": "171096625260037378"
       },
-      "rank": 419
+      "rank": 420
     },
     {
       "address": "0x47dad379d23093a9b6d711249e1d25864c3f3128",
@@ -10118,7 +10140,7 @@
       "token_balances": {
         "USDC": "94378"
       },
-      "rank": 420
+      "rank": 421
     },
     {
       "address": "0xbd72d16a2c0ac11365a7223224f5096b5d9084a8",
@@ -10143,7 +10165,7 @@
       "token_balances": {
         "DAI": "43584852653813475"
       },
-      "rank": 421
+      "rank": 422
     },
     {
       "address": "0xfd8702d67398eaf1402a20457adcd422792e5a7b",
@@ -10168,7 +10190,7 @@
       "token_balances": {
         "DAI": "37391236643135815"
       },
-      "rank": 422
+      "rank": 423
     },
     {
       "address": "0x8473b904ba551e3ff5ec8aceacfdddb2a665a303",
@@ -10193,7 +10215,7 @@
       "token_balances": {
         "DAI": "12390118607144844"
       },
-      "rank": 423
+      "rank": 424
     }
   ]
 }
