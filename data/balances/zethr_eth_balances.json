@@ -1,9 +1,9 @@
 {
   "contract": "0xd48b633045af65ff636f3c6edd744748351e020d",
   "balance_source": "eth",
-  "contract_eth_balance": 275.941027,
-  "total_eth_in_balances": 139.152249,
-  "addresses_with_balance": 1953,
+  "contract_eth_balance": 275.940988,
+  "total_eth_in_balances": 139.15221,
+  "addresses_with_balance": 1952,
   "coverage_pct": 50.43,
   "scan_date": "2026-09-20 01:43:18 UTC",
   "description": "ETH balances in defunct Zethr contract",
@@ -29,13 +29,13 @@
       "total_eth": 6.603222
     },
     "<0.01 ETH": {
-      "count": 1625,
-      "total_eth": 0.957621
+      "count": 1624,
+      "total_eth": 0.957582
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 2498,
-  "last_event_refresh": "2026-10-27 06:23:07 UTC",
+  "last_event_refresh": "2026-11-04 15:23:22 UTC",
   "balances": [
     {
       "rank": 1,
@@ -6759,8 +6759,9 @@
     {
       "rank": 1119,
       "address": "0x32373645359c9ccf1bd2d63afd153ff65d41a404",
-      "balance_wei": "39127327348146",
-      "balance_eth": 0.000039127327348146
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 1120,

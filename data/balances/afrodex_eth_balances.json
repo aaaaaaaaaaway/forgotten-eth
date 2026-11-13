@@ -4,23 +4,35 @@
   "token_checked": "0x0000000000000000000000000000000000000000",
   "description": "ETH balances in defunct Afrodex contract",
   "scan_date": "2026-03-17 21:59:55 UTC",
-  "contract_eth_balance": "0.451707659050523255",
+  "contract_eth_balance": 0.356708,
   "total_addresses_scanned": 52,
-  "addresses_with_balance": 29,
-  "total_eth_in_balances": 0.4517076590505233,
-  "coverage_pct": 100.0,
+  "addresses_with_balance": 28,
+  "total_eth_in_balances": 0.356708,
+  "coverage_pct": 100,
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "1-10 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
     "0.1-1 ETH": {
       "count": 1,
-      "total_eth": 0.13162124395773103
+      "total_eth": 0.131621
     },
     "0.01-0.1 ETH": {
-      "count": 5,
-      "total_eth": 0.2889929852766424
+      "count": 4,
+      "total_eth": 0.193993
     },
     "<0.01 ETH": {
       "count": 23,
-      "total_eth": 0.031093429816149806
+      "total_eth": 0.031093
     }
   },
   "balances": [
@@ -33,8 +45,9 @@
     {
       "rank": 2,
       "address": "0xAc60eD616137a8b5cb53917c1f58e0D8cdfa9fc8",
-      "balance_wei": "95000000000000000",
-      "balance_eth": "0.095000000000000001"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 3,
@@ -198,5 +211,6 @@
       "balance_wei": "1",
       "balance_eth": "0.000000000000000001"
     }
-  ]
+  ],
+  "last_event_refresh": "2026-11-05 06:23:06 UTC"
 }

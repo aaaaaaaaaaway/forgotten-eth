@@ -1,32 +1,32 @@
 {
   "contract": "0x575cb87ab3c2329a0248c7d70e0ead8e57f3e3f7",
   "balance_source": "token",
-  "contract_eth_balance": 191.50951843,
-  "total_eth_in_balances": 191.50951843,
-  "addresses_with_balance": 107,
-  "coverage_pct": 100.0,
+  "contract_eth_balance": 191.109518,
+  "total_eth_in_balances": 191.109518,
+  "addresses_with_balance": 106,
+  "coverage_pct": 100,
   "scan_date": "2026-05-07 14:15:57 UTC",
   "description": "Ahoolee Token Sale (September 2017). Soft cap missed, refund mode active. Eligible contributors call refund() on the contract to claim their original ETH deposit.",
   "balances": [
     {
       "address": "0xef58321032cf693fa7e39f31e45cbc32f2092cb3",
       "balance_wei": "100000000000000000000",
-      "balance_eth": 100.0
+      "balance_eth": 100
     },
     {
       "address": "0x1f807d6dafd5cafa9193209006355ecaad8c60d8",
       "balance_wei": "15000000000000000000",
-      "balance_eth": 15.0
+      "balance_eth": 15
     },
     {
       "address": "0x0f7f8d42a34443d6ad1089095bfa37b135f346f0",
       "balance_wei": "10000000000000000000",
-      "balance_eth": 10.0
+      "balance_eth": 10
     },
     {
       "address": "0x7661887908752196db694e2d0bdafd9eadd7df86",
       "balance_wei": "5000000000000000000",
-      "balance_eth": 5.0
+      "balance_eth": 5
     },
     {
       "address": "0x964f961fbcef6fcb2f645032f1b04d04c939d0d2",
@@ -41,22 +41,22 @@
     {
       "address": "0x27c839a65cfb663fd12564b499836e0b295a5954",
       "balance_wei": "3000000000000000000",
-      "balance_eth": 3.0
+      "balance_eth": 3
     },
     {
       "address": "0x418537d27866668baf8086aa3578b4ebb30a611a",
       "balance_wei": "3000000000000000000",
-      "balance_eth": 3.0
+      "balance_eth": 3
     },
     {
       "address": "0xbc63489e8733e858cbb311199a63feb984f2f1ee",
       "balance_wei": "2000000000000000000",
-      "balance_eth": 2.0
+      "balance_eth": 2
     },
     {
       "address": "0xc42b666cef451fa11e51b0f0fcdb64276a3cf139",
       "balance_wei": "2000000000000000000",
-      "balance_eth": 2.0
+      "balance_eth": 2
     },
     {
       "address": "0x52cd84f301db795dac40e7e69f1e08b36528b527",
@@ -116,52 +116,52 @@
     {
       "address": "0x0d1faf9cbea4b2422c0c7ae8668b519df359ed63",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0
+      "balance_eth": 1
     },
     {
       "address": "0x534271943e99366bcd7c7fab1fcef51ac0db4e84",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0
+      "balance_eth": 1
     },
     {
       "address": "0x657f95d08aae23ae39b4615ab95cddc4994d6299",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0
+      "balance_eth": 1
     },
     {
       "address": "0x701a6c15ec5ceed7e5000a13e73ba9ef1d19c1b1",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0
+      "balance_eth": 1
     },
     {
       "address": "0x7fc32f4241479b26a9d20a683236c440f72756fb",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0
+      "balance_eth": 1
     },
     {
       "address": "0xa73d6d9f8575c632d67b3952c583e4af148039db",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0
+      "balance_eth": 1
     },
     {
       "address": "0xc9932dd426628deed25651d6690915107b4f3feb",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0
+      "balance_eth": 1
     },
     {
       "address": "0xcd256f3f523cbcfc6a25f049e6df07b503a9bebd",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0
+      "balance_eth": 1
     },
     {
       "address": "0xe8ddee82e2ee2661c6adf11faa6c99555e301dc0",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0
+      "balance_eth": 1
     },
     {
       "address": "0xf2787ca2de0b2d20c6cc9bc1ef3519d7eeba47ae",
       "balance_wei": "1000000000000000000",
-      "balance_eth": 1.0
+      "balance_eth": 1
     },
     {
       "address": "0xed100fd3228afa519fa0fb8e0c61077735e670bb",
@@ -235,8 +235,9 @@
     },
     {
       "address": "0xfe2d6f325f7d0e82bc5261700af55525e2d3f93c",
-      "balance_wei": "400000000000000000",
-      "balance_eth": 0.4
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "address": "0x14128502fd9848090812dbef5857e8d6034158ce",
@@ -543,5 +544,6 @@
       "balance_wei": "10034560000000000",
       "balance_eth": 0.01003456
     }
-  ]
+  ],
+  "last_event_refresh": "2026-11-13 03:23:07 UTC"
 }

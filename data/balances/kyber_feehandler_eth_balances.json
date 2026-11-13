@@ -1,35 +1,31 @@
 {
   "contract": "0xd3d2b5643e506c6d9b7099e9116d7aaa941114fe",
   "balance_source": "token",
-  "contract_eth_balance": 14.14023546,
-  "total_eth_in_balances": 7.987732,
-  "addresses_with_balance": 1458,
-  "coverage_pct": 56.49,
-  "scan_date": "2026-11-04 13:20:14 UTC",
+  "contract_eth_balance": 14.07376115,
+  "total_eth_in_balances": 7.921258,
+  "addresses_with_balance": 1457,
+  "coverage_pct": 56.28,
+  "scan_date": "2026-11-13 17:31:04 UTC",
   "distribution": {
     ">0 ETH": 1259,
-    ">0.01 ETH": 227,
-    ">0.1 ETH": 1,
+    ">0.01 ETH": 228,
+    ">0.1 ETH": 0,
     ">1 ETH": 0,
     ">10 ETH": 0,
     ">100 ETH": 0
   },
-  "last_event_refresh": "2026-10-29 10:23:09 UTC",
+  "last_event_refresh": "2026-11-10 14:23:06 UTC",
   "balances": [
     {
       "address": "0x82d8d99955e38239d865a9dd0d44ef5dd06ba99c",
-      "balance_eth": 0.135699,
+      "balance_eth": 0.072547,
       "epoch_details": [
-        {
-          "epoch": 2,
-          "eth": 0.063152
-        },
         {
           "epoch": 3,
           "eth": 0.072547
         }
       ],
-      "balance_wei": "135699000000000016",
+      "balance_wei": "72547000000000000",
       "rank": 12
     },
     {
@@ -8781,18 +8777,6 @@
       ],
       "balance_wei": "3326000000000000",
       "rank": 727
-    },
-    {
-      "address": "0xbe4aa0296b2b217d03ddfff792675cfca96a95b4",
-      "balance_eth": 0.003322,
-      "epoch_details": [
-        {
-          "epoch": 1,
-          "eth": 0.003322
-        }
-      ],
-      "balance_wei": "3322000000000000",
-      "rank": 728
     },
     {
       "address": "0x52be28d7fcba67ba2d9d36dd633af71bf58f96e5",
@@ -19845,6 +19829,14 @@
       ],
       "pending_integration": true,
       "pending_reason": "kyber_platform_fee"
+    },
+    {
+      "address": "0xbe4aa0296b2b217d03ddfff792675cfca96a95b4",
+      "balance_eth": 0,
+      "epoch_details": [],
+      "balance_wei": "0",
+      "rank": 728,
+      "claimed": true
     },
     {
       "address": "0x8bebdb7f971d126bed0084c4cc651be40bee0519",

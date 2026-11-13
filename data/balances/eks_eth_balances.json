@@ -1,9 +1,9 @@
 {
   "contract": "0xe01e2a3ceafa8233021fc759e5a69863558326b6",
   "balance_source": "eth",
-  "contract_eth_balance": 82.851412,
-  "total_eth_in_balances": 74.672213,
-  "addresses_with_balance": 346,
+  "contract_eth_balance": 82.850437,
+  "total_eth_in_balances": 74.671238,
+  "addresses_with_balance": 344,
   "coverage_pct": 90.13,
   "scan_date": "2026-09-09 16:11:49 UTC",
   "description": "EKS holders can call exit() to sell remaining tokens and withdraw accrued dividends.",
@@ -2030,12 +2030,13 @@
     },
     {
       "address": "0xf5be442a0cfc371cba7e000798bac106e5609f16",
-      "balance_wei": "714875001094704",
-      "balance_eth": 0.000714875001094704,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "token_balance_wei": "612670831718801",
       "dividend_wei": "163471252547783",
       "sale_wei": "551403748546921",
-      "rank": 226
+      "rank": 226,
+      "claimed": true
     },
     {
       "address": "0xffe2f1a08401f93f191f2b068d7c9ea4b96b8163",
@@ -2607,12 +2608,13 @@
     },
     {
       "address": "0x91166f61c3d21cd53014cd45559fa0c3a5426a6b",
-      "balance_wei": "260240552851268",
-      "balance_eth": 0.000260240552851268,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "token_balance_wei": "172612870877310",
       "dividend_wei": "104888969061689",
       "sale_wei": "155351583789579",
-      "rank": 290
+      "rank": 290,
+      "claimed": true
     },
     {
       "address": "0x3a17bcdd140a63055317ab6df3eba37a3c6a87c7",
@@ -3183,5 +3185,5 @@
       "rank": 353
     }
   ],
-  "last_event_refresh": "2026-10-26 11:38:54 UTC"
+  "last_event_refresh": "2026-11-04 23:45:51 UTC"
 }

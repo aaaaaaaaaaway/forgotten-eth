@@ -1,33 +1,41 @@
 {
   "contract": "0xc5138d4bd0ec5c51b6b6bdfcb8528ad9c333af97",
   "balance_source": "eth",
-  "contract_eth_balance": 6.9163345,
-  "total_eth_in_balances": 6.9163345,
-  "addresses_with_balance": 217,
-  "coverage_pct": 100,
+  "contract_eth_balance": 6.915916,
+  "total_eth_in_balances": 6.915485,
+  "addresses_with_balance": 216,
+  "coverage_pct": 99.99,
   "scan_date": "2026-03-17 22:02:05 UTC",
   "description": "ETH balances in defunct ED Fork (0xc513) contract",
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
     "1-10 ETH": {
       "count": 1,
       "total_eth": 1.892
     },
     "0.1-1 ETH": {
       "count": 13,
-      "total_eth": 4.020178123972783
+      "total_eth": 4.020178
     },
     "0.01-0.1 ETH": {
       "count": 25,
-      "total_eth": 0.8847470026558657
+      "total_eth": 0.884746
     },
     "<0.01 ETH": {
-      "count": 179,
-      "total_eth": 0.11940936940529978
+      "count": 177,
+      "total_eth": 0.118556
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 459,
-  "last_event_refresh": "2026-09-20T11:02:04Z",
+  "last_event_refresh": "2026-11-13 12:23:06 UTC",
   "balances": [
     {
       "rank": 1,
@@ -561,8 +569,9 @@
     {
       "rank": 89,
       "address": "0xd926943e7a6b546fb4244d661de98615082c203a",
-      "balance_wei": "418014156116040",
-      "balance_eth": 0.00041801415611604
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 90,

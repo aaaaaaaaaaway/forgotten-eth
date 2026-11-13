@@ -4,11 +4,11 @@
   "token_checked": "0x0000000000000000000000000000000000000000",
   "description": "ETH balances in defunct ReadyPlayerONE contract",
   "scan_date": "2026-03-29 19:44:58 UTC",
-  "contract_eth_balance": 24.486026,
+  "contract_eth_balance": 24.370648,
   "total_addresses_scanned": 309,
-  "addresses_with_balance": 140,
-  "total_eth_in_balances": 6.762677,
-  "coverage_pct": 27.62,
+  "addresses_with_balance": 139,
+  "total_eth_in_balances": 6.647299,
+  "coverage_pct": 27.28,
   "distribution": {
     ">=100 ETH": {
       "count": 0,
@@ -23,8 +23,8 @@
       "total_eth": 1.513044
     },
     "0.1-1 ETH": {
-      "count": 7,
-      "total_eth": 2.277054
+      "count": 6,
+      "total_eth": 2.161676
     },
     "0.01-0.1 ETH": {
       "count": 71,
@@ -75,8 +75,9 @@
     {
       "rank": 7,
       "address": "0x983a98577d8cc00c9bf413d150024ea3abfa236c",
-      "balance_wei": "115378095888623779",
-      "balance_eth": "0.115378095888623786"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 8,
@@ -891,5 +892,5 @@
       "balance_eth": "0.000008163103020471"
     }
   ],
-  "last_event_refresh": "2026-10-10 00:23:06 UTC"
+  "last_event_refresh": "2026-11-06 16:23:06 UTC"
 }

@@ -1,27 +1,15 @@
 {
   "contract": "0x65320b9aeac77e45369e4892da896b7a987a97f3",
   "balance_source": "vault",
-  "contract_eth_balance": 0.19,
-  "total_eth_in_balances": 0.19,
-  "addresses_with_balance": 1,
-  "coverage_pct": 100.0,
-  "scan_date": "2026-10-25 03:58:11 UTC",
+  "contract_eth_balance": 0.0,
+  "total_eth_in_balances": 0.0,
+  "addresses_with_balance": 0,
+  "coverage_pct": 0.0,
+  "scan_date": "2026-11-08 03:48:07 UTC",
   "description": "OZ RefundableCrowdsale \u2014 Monoreto (MNR). ETH stored in sibling RefundVault.",
-  "distribution": {
-    "0.1-1 ETH": {
-      "count": 1,
-      "total_eth": 0.19
-    }
-  },
+  "distribution": {},
   "vault": "0xf671ab8f66212917d122e7cf52094440d6aedc82",
   "name": "Monoreto (MNR)",
   "total_addresses_scanned": 15,
-  "balances": [
-    {
-      "rank": 1,
-      "address": "0x15d9a525af549d9417efc93d01aa5fa74c3f9265",
-      "balance_wei": "190000000000000000",
-      "balance_eth": 0.19
-    }
-  ]
+  "balances": []
 }

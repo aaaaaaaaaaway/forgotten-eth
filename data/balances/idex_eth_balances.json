@@ -1,10 +1,10 @@
 {
   "contract": "0x2a0c0DBEcC7E4D658f48E01e3fA353F44050c208",
   "balance_source": "eth",
-  "contract_eth_balance": 15625.42139407,
-  "total_eth_in_balances": 15665.75443612,
-  "addresses_with_balance": 119269,
-  "coverage_pct": 100.26,
+  "contract_eth_balance": 15612.927969,
+  "total_eth_in_balances": 15612.923905,
+  "addresses_with_balance": 119237,
+  "coverage_pct": 100,
   "scan_date": "2026-09-20 01:42:00 UTC",
   "description": "ETH balances in defunct IDEX v1 contract",
   "distribution": {
@@ -17,25 +17,25 @@
       "total_eth": 4480.169592
     },
     "1-10 ETH": {
-      "count": 2141,
-      "total_eth": 5578.379219
+      "count": 2136,
+      "total_eth": 5566.728552
     },
     "0.1-1 ETH": {
-      "count": 7852,
-      "total_eth": 2498.165329
+      "count": 7840,
+      "total_eth": 2495.772343
     },
     "0.01-0.1 ETH": {
-      "count": 16948,
-      "total_eth": 560.583633
+      "count": 16933,
+      "total_eth": 560.093078
     },
     "<0.01 ETH": {
-      "count": 92117,
-      "total_eth": 67.981488
+      "count": 92104,
+      "total_eth": 67.920206
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 291204,
-  "last_event_refresh": "2026-11-02T17:26:09Z",
+  "last_event_refresh": "2026-11-13 09:23:06 UTC",
   "balances": [
     {
       "rank": 1,
@@ -4103,8 +4103,9 @@
     {
       "rank": 677,
       "address": "0x668d80960fdff152000656555649b0f7b0689eaf",
-      "balance_wei": "3640004049819416479",
-      "balance_eth": 3.6400040498194164
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 678,
@@ -5232,7 +5233,8 @@
       "rank": 865,
       "address": "0xd21883dbd5606c1cc71dfd2da38f6107080ea991",
       "balance_wei": "2844408268763608437",
-      "balance_eth": 2.8444082687636083
+      "balance_eth": 2.8444082687636083,
+      "claimed": true
     },
     {
       "rank": 866,
@@ -5562,8 +5564,9 @@
     {
       "rank": 920,
       "address": "0x2fc3e601b78040d2fb18accaf84d3555635e1829",
-      "balance_wei": "2664105201264780899",
-      "balance_eth": 2.664105201264781
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 921,
@@ -9681,8 +9684,9 @@
     {
       "rank": 1606,
       "address": "0xf4775496624c382f74adbae79c5780f353b1f83b",
-      "balance_wei": "1500853724758670577",
-      "balance_eth": 1.5008537247586706
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 1607,
@@ -31922,8 +31926,9 @@
     {
       "rank": 5309,
       "address": "0x19ac2f67cc0e07087fec590026834eedd149a641",
-      "balance_wei": "310000154200000001",
-      "balance_eth": 0.3100001542
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 5310,
@@ -32932,8 +32937,9 @@
     {
       "rank": 5477,
       "address": "0x92ccccb2dad050257c1374042373b7bc2e310b26",
-      "balance_wei": "298392289274666523",
-      "balance_eth": 0.29839228927466654
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 5478,
@@ -46280,8 +46286,9 @@
     {
       "rank": 7700,
       "address": "0xac86e2f1642b8b9880517f1ca2b2e14c961b6639",
-      "balance_wei": "162335719928443726",
-      "balance_eth": 0.16233571992844373
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 7701,
@@ -47931,8 +47938,9 @@
     {
       "rank": 7975,
       "address": "0xdcb1c1376363d1b4b4c0632ec13820cbf043f2b2",
-      "balance_wei": "155000000000000001",
-      "balance_eth": 0.155
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 7976,
@@ -48033,8 +48041,9 @@
     {
       "rank": 7992,
       "address": "0x5b506d6fc909e8477160dab22bdc70b54eb81ea7",
-      "balance_wei": "154634760244655235",
-      "balance_eth": 0.15463476024465522
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 7993,
@@ -48435,8 +48444,9 @@
     {
       "rank": 8059,
       "address": "0xcd58c7dec2ccc83f5793a3cd0ed5a7bf4b43bff3",
-      "balance_wei": "152802045000000000",
-      "balance_eth": 0.152802045
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 8060,
@@ -49780,8 +49790,9 @@
     {
       "rank": 8283,
       "address": "0xf17fad1fc969136311150d06791e6ce891e25277",
-      "balance_wei": "150000000000000001",
-      "balance_eth": 0.15
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 8284,
@@ -59427,7 +59438,8 @@
       "rank": 9890,
       "address": "0xd6ac305f7efe48b3211ad7632b9cde1225f25ba3",
       "balance_wei": "102873816278978633",
-      "balance_eth": 0.10287381627897864
+      "balance_eth": 0.10287381627897864,
+      "claimed": true
     },
     {
       "rank": 9891,
@@ -74802,7 +74814,8 @@
       "rank": 12451,
       "address": "0xd9b04f8edff8a2b5e1c55bb24bf7236c3df9d562",
       "balance_wei": "62702446602485333",
-      "balance_eth": 0.06270244660248533
+      "balance_eth": 0.06270244660248533,
+      "claimed": true
     },
     {
       "rank": 12452,
@@ -84358,8 +84371,9 @@
     {
       "rank": 14042,
       "address": "0x0128282ce73c72decabaeace9358344adff449fe",
-      "balance_wei": "48580000000000000",
-      "balance_eth": 0.04858
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 14043,
@@ -88945,7 +88959,8 @@
       "rank": 14806,
       "address": "0x96fa4cbb4869efdfec0c97f1178ca02da4cfe084",
       "balance_wei": "42248292669376022",
-      "balance_eth": 0.04224829266937602
+      "balance_eth": 0.04224829266937602,
+      "claimed": true
     },
     {
       "rank": 14807,
@@ -92205,8 +92220,9 @@
     {
       "rank": 15349,
       "address": "0x0207f7931235e02482307604cfe56dd10f282cc9",
-      "balance_wei": "39579343070046611",
-      "balance_eth": 0.03957934307004661
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 15350,
@@ -107693,8 +107709,9 @@
     {
       "rank": 17929,
       "address": "0xee7598992a2a3a6fd931fddfa552e37598908787",
-      "balance_wei": "28453000000104061",
-      "balance_eth": 0.02845300000010406
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 17930,
@@ -113150,8 +113167,9 @@
     {
       "rank": 18838,
       "address": "0x4be8575962a68af00a91b3a1c756bacc868156ba",
-      "balance_wei": "25058983944805455",
-      "balance_eth": 0.025058983944805456
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 18839,
@@ -131276,8 +131294,9 @@
     {
       "rank": 21857,
       "address": "0x8b58f7c312406d7c6a5d01898f0c5aef31ee51a7",
-      "balance_wei": "17773932555997207",
-      "balance_eth": 0.017773932555997206
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 21858,
@@ -139282,8 +139301,9 @@
     {
       "rank": 23191,
       "address": "0xebd82795f60f45800dec570b36695893de3c9c6b",
-      "balance_wei": "15000000000000000",
-      "balance_eth": 0.015
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 23192,
@@ -140951,8 +140971,9 @@
     {
       "rank": 23469,
       "address": "0xa0dca5d67da4b6381bff3cf6111276dde88a4503",
-      "balance_wei": "14429360000000002",
-      "balance_eth": 0.014429360000000002
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 23470,
@@ -141000,7 +141021,8 @@
       "rank": 23477,
       "address": "0x2e42e23b855480402d6ce33869a588f7ff566464",
       "balance_wei": "14419400056448980",
-      "balance_eth": 0.014419371218448836
+      "balance_eth": 0.014419371218448836,
+      "claimed": true
     },
     {
       "rank": 23478,
@@ -152448,8 +152470,9 @@
     {
       "rank": 25385,
       "address": "0xa2f3dee310133fec376f2061b6bbf2bc9fd8e9d1",
-      "balance_wei": "11202346498801808",
-      "balance_eth": 0.011202346498801807
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 25386,
@@ -165100,8 +165123,9 @@
     {
       "rank": 27493,
       "address": "0x24e9fb39c5f69a9dfc6558a3df26468731cd76c1",
-      "balance_wei": "9790000004720005",
-      "balance_eth": 0.009790000004720006
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 27494,
@@ -166474,8 +166498,9 @@
     {
       "rank": 27722,
       "address": "0x8358fc2dd62c00c1a9cd0fcb577309a4cead2471",
-      "balance_wei": "9514900163625718",
-      "balance_eth": 0.009514900163625719
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 27723,
@@ -184874,8 +184899,9 @@
     {
       "rank": 30788,
       "address": "0x835e380b746f701f38b1c50b317d1a35384a732f",
-      "balance_wei": "6669849140939010",
-      "balance_eth": 0.00666984914093901
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 30789,
@@ -188033,8 +188059,9 @@
     {
       "rank": 31314,
       "address": "0x6bf285b93200c923d5f18959b841f1a4a97ed223",
-      "balance_wei": "6200891355315396",
-      "balance_eth": 0.006200891355315396
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 31315,
@@ -223675,8 +223702,9 @@
     {
       "rank": 37252,
       "address": "0xffad2255f185aa8549d928fd2f074c81f9e00e25",
-      "balance_wei": "2426375000000000",
-      "balance_eth": 0.002426375
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 37253,
@@ -230397,8 +230425,9 @@
     {
       "rank": 38372,
       "address": "0xcab2a313e1b494e0823de723abf13c91a3f73229",
-      "balance_wei": "2000000000000000",
-      "balance_eth": 0.002
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 38373,
@@ -230463,8 +230492,9 @@
     {
       "rank": 38383,
       "address": "0xf22ad58f303bf58ee81d9504644c72a2d4842e8f",
-      "balance_wei": "2000000000000000",
-      "balance_eth": 0.002
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 38384,
@@ -254620,8 +254650,9 @@
     {
       "rank": 42408,
       "address": "0x5cab96176c407dcba2c30d0e619852d36d0a8cc2",
-      "balance_wei": "864000000000001",
-      "balance_eth": 0.000864000000000001
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 42409,
@@ -278875,7 +278906,8 @@
       "rank": 46449,
       "address": "0x0f8b6c67f0bf4386c33b0dc4b7f05e3919d67aa5",
       "balance_wei": "297619680000358",
-      "balance_eth": 0.000297619680000358
+      "balance_eth": 0.000297619680000358,
+      "claimed": true
     },
     {
       "rank": 46450,

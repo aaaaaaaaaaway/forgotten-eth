@@ -1,10 +1,10 @@
 {
   "contract": "0xd18475521245a127a933a4fcaf99e8c45a416f7e",
   "balance_source": "token",
-  "contract_eth_balance": 247.324886,
-  "total_eth_in_balances": 240.897773,
-  "addresses_with_balance": 935,
-  "coverage_pct": 97.4,
+  "contract_eth_balance": 246.581932,
+  "total_eth_in_balances": 240.406367,
+  "addresses_with_balance": 930,
+  "coverage_pct": 97.5,
   "scan_date": "2026-09-09 16:11:37 UTC",
   "description": "QDT holders can call sellTokens(tokenAmount) to redeem ETH from the payout pool.",
   "meta": {
@@ -778,15 +778,15 @@
     },
     {
       "address": "0x2c49697df359ddb4eccf8adc487eae42fc6c692c",
-      "balance_wei": "15375000000000000",
-      "balance_eth": 0.015375,
+      "balance_wei": "6474000000000000",
+      "balance_eth": 0.006474,
       "token_balance_wei": "46980855931",
       "rank": 109
     },
     {
       "address": "0x134dbb5c597a249ed0d50d56a8bde401bcb4b316",
-      "balance_wei": "241630916181878160",
-      "balance_eth": 0.24163091618187815,
+      "balance_wei": "2824000000000000",
+      "balance_eth": 0.002824,
       "token_balance_wei": "46494396984",
       "rank": 110
     },
@@ -1408,10 +1408,11 @@
     },
     {
       "address": "0x0ca7f90e2d77ed0c8d0b85f84d889d8449be6a31",
-      "balance_wei": "109950074568296370",
-      "balance_eth": 0.10995007456829636,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "token_balance_wei": "21156491463",
-      "rank": 198
+      "rank": 198,
+      "claimed": true
     },
     {
       "address": "0xf0f5c0db7227fae1a904d62742ef242f6fd5c7c1",
@@ -1598,10 +1599,11 @@
     },
     {
       "address": "0x36d46c88ba600429972f50ee9d3a976304c701cc",
-      "balance_wei": "85545949393543890",
-      "balance_eth": 0.08554594939354389,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "token_balance_wei": "16460672311",
-      "rank": 225
+      "rank": 225,
+      "claimed": true
     },
     {
       "address": "0xbceab479e392974f044099a8bc5b2a371159eb5e",
@@ -2034,8 +2036,8 @@
     },
     {
       "address": "0x818e9dfdc2dc2713abe4d1eedc13b09e44a277d7",
-      "balance_wei": "47084388077287770",
-      "balance_eth": 0.04708438807728777,
+      "balance_wei": "4099000000000000",
+      "balance_eth": 0.004099,
       "token_balance_wei": "9059934323",
       "rank": 287
     },
@@ -4365,10 +4367,11 @@
     },
     {
       "address": "0x2737c375b129c8a8bbfafddc4e8b4a40866ce850",
-      "balance_wei": "5088738033926430",
-      "balance_eth": 0.00508873803392643,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "token_balance_wei": "979170257",
-      "rank": 619
+      "rank": 619,
+      "claimed": true
     },
     {
       "address": "0xd536bc9394fb8e385b34468d98ddf25bdfc5a72f",
@@ -6217,10 +6220,11 @@
     },
     {
       "address": "0x814317ee290216f1536582c2257616ab516df803",
-      "balance_wei": "101756414576250",
-      "balance_eth": 0.00010175641457625,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "token_balance_wei": "19579875",
-      "rank": 882
+      "rank": 882,
+      "claimed": true
     },
     {
       "address": "0x2bf3a93200a22a23c40d198a854d2c57694cf5c8",
@@ -6336,10 +6340,11 @@
     },
     {
       "address": "0xd0ce021bceff33ca74c7b26a108fbbef75bc060d",
-      "balance_wei": "26370109322880",
-      "balance_eth": 0.00002637010932288,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "token_balance_wei": "5074112",
-      "rank": 899
+      "rank": 899,
+      "claimed": true
     },
     {
       "address": "0xcb4896e0c5398b424ba23219c0a69324216ad3cb",
@@ -6847,5 +6852,5 @@
       "rank": 971
     }
   ],
-  "last_event_refresh": "2026-10-27 22:23:05 UTC"
+  "last_event_refresh": "2026-11-09 09:23:05 UTC"
 }

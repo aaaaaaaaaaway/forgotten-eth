@@ -1,17 +1,13 @@
 {
   "contract": "0xb8f1437c742dc042af73d5bd18c8fc985ec8e3b4",
   "balance_source": "vault",
-  "contract_eth_balance": 0.71265,
-  "total_eth_in_balances": 0.71265,
-  "addresses_with_balance": 6,
+  "contract_eth_balance": 0.01,
+  "total_eth_in_balances": 0.01,
+  "addresses_with_balance": 1,
   "coverage_pct": 100.0,
-  "scan_date": "2026-10-25 03:05:14 UTC",
+  "scan_date": "2026-11-08 02:55:35 UTC",
   "description": "OZ RefundableCrowdsale \u2014 CryptoHunt (CH). ETH stored in sibling RefundVault.",
   "distribution": {
-    "0.1-1 ETH": {
-      "count": 5,
-      "total_eth": 0.70265
-    },
     "0.01-0.1 ETH": {
       "count": 1,
       "total_eth": 0.01
@@ -23,36 +19,6 @@
   "balances": [
     {
       "rank": 1,
-      "address": "0xedde3331375d14ba6760d81678ad015169d8ab88",
-      "balance_wei": "200000000000000000",
-      "balance_eth": 0.2
-    },
-    {
-      "rank": 2,
-      "address": "0x0fd9cf35b6213db9444d90b29e696cda9331c605",
-      "balance_wei": "150000000000000000",
-      "balance_eth": 0.15
-    },
-    {
-      "rank": 3,
-      "address": "0xa05d25f1989dd6599d558302cdce40c2d8e1623e",
-      "balance_wei": "135650000000000000",
-      "balance_eth": 0.13565
-    },
-    {
-      "rank": 4,
-      "address": "0xec61b976d513e7a387a65c435670e5e17882a895",
-      "balance_wei": "117000000000000000",
-      "balance_eth": 0.117
-    },
-    {
-      "rank": 5,
-      "address": "0x97f3a9e805615cab4385376c238c0a395fcbd91a",
-      "balance_wei": "100000000000000000",
-      "balance_eth": 0.1
-    },
-    {
-      "rank": 6,
       "address": "0x728884f16859ec73efc5f1b6b84d4761e3238f54",
       "balance_wei": "10000000000000000",
       "balance_eth": 0.01

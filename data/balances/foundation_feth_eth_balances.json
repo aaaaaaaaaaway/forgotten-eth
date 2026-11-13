@@ -1,9 +1,9 @@
 {
   "contract": "0x49128CF8ABE9071ee24540a296b5DED3F9D50443",
   "balance_source": "token",
-  "contract_eth_balance": 270.232441,
-  "total_eth_in_balances": 270.232441,
-  "addresses_with_balance": 1224,
+  "contract_eth_balance": 269.734841,
+  "total_eth_in_balances": 269.734841,
+  "addresses_with_balance": 1219,
   "coverage_pct": 100,
   "scan_date": "2026-09-09 16:12:29 UTC",
   "description": "Foundation NFT marketplace bid escrow (FETH). Single-call withdrawAvailableBalance() returns the holder's full balance, including auto-collected expired lockups.",
@@ -812,9 +812,10 @@
     },
     {
       "address": "0x8bf7aca815e43447fa0c26c15b9866ea508199f6",
-      "balance_wei": "467000000000000000",
-      "balance_eth": 0.467,
-      "rank": 134
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 134,
+      "claimed": true
     },
     {
       "address": "0xa7ad15b135aeaa6570c4d73c0786eb1b72557a2d",
@@ -6230,15 +6231,17 @@
     },
     {
       "address": "0x0aed1878803e2f86b6ddb83f5523f0a793e973fc",
-      "balance_wei": "10000000000000000",
-      "balance_eth": 0.01,
-      "rank": 1035
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 1035,
+      "claimed": true
     },
     {
       "address": "0x0cbecf33aa32a2241181dceca21fc636f6660f8a",
-      "balance_wei": "10000000000000000",
-      "balance_eth": 0.01,
-      "rank": 1036
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 1036,
+      "claimed": true
     },
     {
       "address": "0x1291cf56314bb8fdbfb63ebb2eb1e15e76d75044",
@@ -6266,9 +6269,10 @@
     },
     {
       "address": "0x1eb0ae3c6927086479c4498d0036b8bfe88fa0ee",
-      "balance_wei": "10000000000000000",
-      "balance_eth": 0.01,
-      "rank": 1041
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 1041,
+      "claimed": true
     },
     {
       "address": "0x1f9913e90b1bdea4d68693794eaf7cde89dd7b09",
@@ -7077,9 +7081,10 @@
     },
     {
       "address": "0xa78af4e15b612d3d2575a2618771344787774ae0",
-      "balance_wei": "600000000000000",
-      "balance_eth": 0.0006,
-      "rank": 1176
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "rank": 1176,
+      "claimed": true
     },
     {
       "address": "0x31e9dfda35ad83ff4365b81e2f88ff12432a6b35",
@@ -7454,5 +7459,5 @@
       "rank": 1238
     }
   ],
-  "last_event_refresh": "2026-10-28 02:23:06 UTC"
+  "last_event_refresh": "2026-11-13 10:23:06 UTC"
 }

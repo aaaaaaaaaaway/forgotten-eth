@@ -1,9 +1,9 @@
 {
   "contract": "0xD76b5c2A23ef78368d8E34288B5b65D616B746aE",
   "balance_source": "eth",
-  "contract_eth_balance": 94.42426154,
-  "total_eth_in_balances": 94.51830658,
-  "addresses_with_balance": 302,
+  "contract_eth_balance": 94.424253,
+  "total_eth_in_balances": 94.518298,
+  "addresses_with_balance": 301,
   "coverage_pct": 100.1,
   "scan_date": "2026-04-03 13:28:46 UTC",
   "description": "ETH balances in defunct Bancor Old ETH Token contract",
@@ -29,13 +29,13 @@
       "total_eth": 3.511036
     },
     "<0.01 ETH": {
-      "count": 91,
-      "total_eth": 0.231106
+      "count": 90,
+      "total_eth": 0.231097
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 1790,
-  "last_event_refresh": "2026-08-08 13:23:05 UTC",
+  "last_event_refresh": "2026-11-07 12:23:07 UTC",
   "balances": [
     {
       "rank": 1,
@@ -1745,8 +1745,9 @@
     {
       "rank": 285,
       "address": "0xa7c0b5c271b35ae5223e6f33a655e02bf67a0546",
-      "balance_wei": "8999990000000",
-      "balance_eth": 0.00000899999
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 286,

@@ -1,10 +1,10 @@
 {
   "contract": "0xfcd3a0f5f416e407647a7518b90354946d316059",
   "balance_source": "eth",
-  "contract_eth_balance": 14.611549,
-  "total_eth_in_balances": 19.056263,
-  "addresses_with_balance": 210,
-  "coverage_pct": 130.42,
+  "contract_eth_balance": 14.604333,
+  "total_eth_in_balances": 19.049016,
+  "addresses_with_balance": 209,
+  "coverage_pct": 130.43,
   "scan_date": "2026-04-03 13:31:44 UTC",
   "description": "ETH balances in defunct BitConnect Token contract",
   "distribution": {
@@ -29,13 +29,13 @@
       "total_eth": 2.244855
     },
     "<0.01 ETH": {
-      "count": 92,
-      "total_eth": 0.094228
+      "count": 91,
+      "total_eth": 0.086981
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 253,
-  "last_event_refresh": "2026-10-29 13:23:07 UTC",
+  "last_event_refresh": "2026-11-12 07:23:07 UTC",
   "balances": [
     {
       "rank": 1,
@@ -780,8 +780,9 @@
     {
       "rank": 123,
       "address": "0x056a0bff75f3ca8e454145aa8458a86e3d8fb38c",
-      "balance_wei": "7246798034679680",
-      "balance_eth": 0.00724679803467968
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 124,

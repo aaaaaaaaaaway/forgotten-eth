@@ -1,9 +1,9 @@
 {
   "contract": "0xf786c34106762ab4eeb45a51b42a62470e9d5332",
   "balance_source": "token",
-  "contract_eth_balance": 386.721734,
-  "total_eth_in_balances": 34.434815,
-  "addresses_with_balance": 3958,
+  "contract_eth_balance": 386.692247,
+  "total_eth_in_balances": 34.405328,
+  "addresses_with_balance": 3956,
   "coverage_pct": 8.9,
   "scan_date": "2026-09-09 16:12:38 UTC",
   "description": "FEG Wrapped ETH. Holders call withdraw(amt) for 99% of their balance as ETH (1% reflection fee). Contract eth_getBalance over-states user-claimable by ~7× because feesAccrued (0.9% of every deposit + 7/8 of every withdraw fee + voluntary burns) is permanently stranded by design — no function exists to redeem it.",
@@ -1714,10 +1714,11 @@
     },
     {
       "address": "0x6b27a28d13b4b82d38e57100b5dc82f8ef3c074d",
-      "balance_wei": "18183062917300253",
-      "balance_eth": 0.018183062917300253,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "fETH_balance_wei": "18366730219495206",
-      "rank": 243
+      "rank": 243,
+      "claimed": true
     },
     {
       "address": "0xc43ba1a0132cecf69f10213f140c64f78fa05f01",
@@ -2204,10 +2205,11 @@
     },
     {
       "address": "0xfe074dc6e00f976b557c5211b2c6fc8eccce8429",
-      "balance_wei": "11304398335386684",
-      "balance_eth": 0.011304398335386684,
+      "balance_wei": "0",
+      "balance_eth": 0,
       "fETH_balance_wei": "11418584177158267",
-      "rank": 313
+      "rank": 313,
+      "claimed": true
     },
     {
       "address": "0x1ae24e00c5a386076206ca0621bbf57b014954ca",
@@ -27943,5 +27945,5 @@
       "rank": 3989
     }
   ],
-  "last_event_refresh": "2026-10-09 20:23:05 UTC"
+  "last_event_refresh": "2026-11-13 06:23:06 UTC"
 }

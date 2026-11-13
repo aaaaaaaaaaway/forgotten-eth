@@ -4,27 +4,35 @@
   "token_checked": "0x0000000000000000000000000000000000000000",
   "description": "ETH balances in defunct LSCX contract",
   "scan_date": "2026-03-17 21:58:34 UTC",
-  "contract_eth_balance": "6.450809094030042744",
+  "contract_eth_balance": 6.440809,
   "total_addresses_scanned": 249,
-  "addresses_with_balance": 242,
-  "total_eth_in_balances": 6.450809094030045,
-  "coverage_pct": 100.0,
+  "addresses_with_balance": 241,
+  "total_eth_in_balances": 6.440809,
+  "coverage_pct": 100,
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
     "1-10 ETH": {
       "count": 1,
-      "total_eth": 2.004951045638
+      "total_eth": 2.004951
     },
     "0.1-1 ETH": {
       "count": 4,
-      "total_eth": 1.8624971124999998
+      "total_eth": 1.862498
     },
     "0.01-0.1 ETH": {
       "count": 121,
-      "total_eth": 1.9463840889868351
+      "total_eth": 1.946386
     },
     "<0.01 ETH": {
-      "count": 116,
-      "total_eth": 0.6369768469052075
+      "count": 115,
+      "total_eth": 0.626978
     }
   },
   "balances": [
@@ -787,8 +795,9 @@
     {
       "rank": 127,
       "address": "0x18166C13948291451b5b263D4d99B171d6DF3300",
-      "balance_wei": "9999970000000000",
-      "balance_eth": "0.009999970000000000"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 128,
@@ -1480,5 +1489,6 @@
       "balance_wei": "500000000000000",
       "balance_eth": "0.000500000000000000"
     }
-  ]
+  ],
+  "last_event_refresh": "2026-11-05 18:01:19 UTC"
 }

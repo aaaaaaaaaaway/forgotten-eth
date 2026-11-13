@@ -1,9 +1,9 @@
 {
   "contract": "0xe65f525ec48c7e95654b9824ecc358454ea9185e",
   "balance_source": "eth",
-  "contract_eth_balance": 92.73143,
-  "total_eth_in_balances": 27.16213,
-  "addresses_with_balance": 466,
+  "contract_eth_balance": 92.728958,
+  "total_eth_in_balances": 27.159658,
+  "addresses_with_balance": 465,
   "coverage_pct": 29.29,
   "scan_date": "2026-09-06 01:43:43 UTC",
   "description": "ETH balances in defunct AceDapp contract",
@@ -29,8 +29,8 @@
       "total_eth": 1.719313
     },
     "<0.01 ETH": {
-      "count": 376,
-      "total_eth": 0.505734
+      "count": 375,
+      "total_eth": 0.503262
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
@@ -1012,8 +1012,9 @@
     {
       "rank": 163,
       "address": "0x0419f7fb03488a5d70698bed92471308c1565b14",
-      "balance_wei": "2471767692571588",
-      "balance_eth": 0.002471767692571588
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 164,
@@ -2882,5 +2883,5 @@
       "balance_eth": 3.78181788e-10
     }
   ],
-  "last_event_refresh": "2026-09-27 09:23:06 UTC"
+  "last_event_refresh": "2026-11-04 15:23:22 UTC"
 }

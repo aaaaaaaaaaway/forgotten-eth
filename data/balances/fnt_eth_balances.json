@@ -1,17 +1,13 @@
 {
   "contract": "0x7c33f3d417ef65a5299998bf7bbd35921963336c",
   "balance_source": "vault",
-  "contract_eth_balance": 0.58770077,
-  "total_eth_in_balances": 0.58770077,
-  "addresses_with_balance": 7,
+  "contract_eth_balance": 0.02770077,
+  "total_eth_in_balances": 0.02770077,
+  "addresses_with_balance": 2,
   "coverage_pct": 100.0,
-  "scan_date": "2026-10-25 02:50:41 UTC",
+  "scan_date": "2026-11-08 02:50:49 UTC",
   "description": "OZ RefundableCrowdsale \u2014 Friend Network Token. ETH stored in sibling RefundVault.",
   "distribution": {
-    "0.1-1 ETH": {
-      "count": 5,
-      "total_eth": 0.56
-    },
     "0.01-0.1 ETH": {
       "count": 1,
       "total_eth": 0.02
@@ -27,42 +23,12 @@
   "balances": [
     {
       "rank": 1,
-      "address": "0x55e3a572d7db422b5ff277efd3d8136bf1b28de9",
-      "balance_wei": "150000000000000000",
-      "balance_eth": 0.15
-    },
-    {
-      "rank": 2,
-      "address": "0xa8c41713abcc82acb9cb10a26a8bff8d55dde5aa",
-      "balance_wei": "107000000000000000",
-      "balance_eth": 0.107
-    },
-    {
-      "rank": 3,
-      "address": "0xe95106d0d4cd327b4a4d5d27aef6b3ebb55aec0e",
-      "balance_wei": "103000000000000000",
-      "balance_eth": 0.103
-    },
-    {
-      "rank": 4,
-      "address": "0x21a3f03387c402c2ed0138c9daa1c11ae59507dc",
-      "balance_wei": "100000000000000000",
-      "balance_eth": 0.1
-    },
-    {
-      "rank": 5,
-      "address": "0x4cda6d207ba05447a861c6126cf882f52df6c504",
-      "balance_wei": "100000000000000000",
-      "balance_eth": 0.1
-    },
-    {
-      "rank": 6,
       "address": "0x4521f32e3aaf27dada7427bdbdd8fd9126d9585b",
       "balance_wei": "20000000000000000",
       "balance_eth": 0.02
     },
     {
-      "rank": 7,
+      "rank": 2,
       "address": "0x3a5e9b90adc407fddf7680e93005ef460d0f5476",
       "balance_wei": "7700769000000000",
       "balance_eth": 0.007700769

@@ -1,10 +1,10 @@
 {
   "contract": "0x1739e311ddbf1efdfbc39b74526fd8b600755ada",
   "balance_source": "eth",
-  "contract_eth_balance": 6.597784,
-  "total_eth_in_balances": 3.680137,
-  "addresses_with_balance": 207,
-  "coverage_pct": 55.78,
+  "contract_eth_balance": 6.550175,
+  "total_eth_in_balances": 3.675119,
+  "addresses_with_balance": 205,
+  "coverage_pct": 56.11,
   "scan_date": "2026-03-19 17:00:35 UTC",
   "description": "ETH balances in defunct ProofOfCommunity contract",
   "distribution": {
@@ -29,8 +29,8 @@
       "total_eth": 1.089552
     },
     "<0.01 ETH": {
-      "count": 170,
-      "total_eth": 0.096879
+      "count": 168,
+      "total_eth": 0.091861
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
@@ -303,8 +303,9 @@
     {
       "rank": 45,
       "address": "0x4906e4f95ad546ce865916f65c825e00630bffa8",
-      "balance_wei": "4976556302429094",
-      "balance_eth": 0.004976556302429094
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 46,
@@ -706,8 +707,9 @@
     {
       "rank": 112,
       "address": "0xb74d5f0a81ce99ac1857133e489bc2b4954935ff",
-      "balance_wei": "41320702318812",
-      "balance_eth": 0.000041320702318812
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 113,
@@ -1293,5 +1295,5 @@
       "balance_eth": 2.58e-16
     }
   ],
-  "last_event_refresh": "2026-09-30 23:23:05 UTC"
+  "last_event_refresh": "2026-11-12 14:23:06 UTC"
 }

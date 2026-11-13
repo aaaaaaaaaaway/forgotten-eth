@@ -1,21 +1,13 @@
 {
   "contract": "0x8519f68a987048b879bed6afab25a0414828c236",
   "balance_source": "vault",
-  "contract_eth_balance": 0.50133333,
-  "total_eth_in_balances": 0.50133333,
-  "addresses_with_balance": 5,
+  "contract_eth_balance": 0.003,
+  "total_eth_in_balances": 0.003,
+  "addresses_with_balance": 1,
   "coverage_pct": 100.0,
-  "scan_date": "2026-10-25 03:49:53 UTC",
+  "scan_date": "2026-11-08 03:43:56 UTC",
   "description": "OZ RefundableCrowdsale \u2014 LINDA Token (Presale). ETH stored in sibling RefundVault.",
   "distribution": {
-    "0.1-1 ETH": {
-      "count": 2,
-      "total_eth": 0.4
-    },
-    "0.01-0.1 ETH": {
-      "count": 2,
-      "total_eth": 0.09833333
-    },
     "<0.01 ETH": {
       "count": 1,
       "total_eth": 0.003
@@ -27,30 +19,6 @@
   "balances": [
     {
       "rank": 1,
-      "address": "0x7d1a2bac244587c9dec8f2d9802d6f722165ad7e",
-      "balance_wei": "200000000000000000",
-      "balance_eth": 0.2
-    },
-    {
-      "rank": 2,
-      "address": "0xcb5b951a6bef3ded18a4bad476cd62f35a149eff",
-      "balance_wei": "200000000000000000",
-      "balance_eth": 0.2
-    },
-    {
-      "rank": 3,
-      "address": "0xf59b3bd1ce3bdbea173eaee9a0e03ed9359c63b5",
-      "balance_wei": "63333330000000000",
-      "balance_eth": 0.06333333
-    },
-    {
-      "rank": 4,
-      "address": "0x7f3443b56f1f7f4527d853258999cf1c836eb378",
-      "balance_wei": "35000000000000000",
-      "balance_eth": 0.035
-    },
-    {
-      "rank": 5,
       "address": "0x8ffc9f43c4ac1fbf44a141c5bff1878c9be7d384",
       "balance_wei": "3000000000000000",
       "balance_eth": 0.003

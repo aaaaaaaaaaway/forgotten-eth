@@ -1,11 +1,11 @@
 {
   "contract": "0xf5644345a5a9dc14076b58802dc908b83e62b0e1",
   "balance_source": "weth",
-  "contract_eth_balance": 29.18071343,
-  "total_eth_in_balances": 29.13028917,
-  "addresses_with_balance": 6435,
+  "contract_eth_balance": 28.96706,
+  "total_eth_in_balances": 28.916636,
+  "addresses_with_balance": 6432,
   "coverage_pct": 99.83,
-  "scan_date": "2026-11-02 17:26:20 UTC",
+  "scan_date": "2026-11-13 17:31:02 UTC",
   "distribution": {
     ">=100 ETH": {
       "count": 0,
@@ -20,16 +20,16 @@
       "total_eth": 0
     },
     "0.1-1 ETH": {
-      "count": 6,
-      "total_eth": 1.4564
+      "count": 3,
+      "total_eth": 0.945559
     },
     "0.01-0.1 ETH": {
-      "count": 830,
-      "total_eth": 17.299455
+      "count": 829,
+      "total_eth": 17.223968
     },
     "<0.01 ETH": {
-      "count": 5603,
-      "total_eth": 10.757495
+      "count": 5600,
+      "total_eth": 10.74712
     }
   },
   "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
@@ -2995,8 +2995,8 @@
     },
     {
       "address": "0x2b48a28bb5d42eb2343542388d872580c8f61b0f",
-      "balance_eth": 0.20908741,
-      "balance_wei": "209087405569507830",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "merkle_proof": [
         "0xdf9511d74f936db452f4f558d7be4a99d6a2fcb7e4e4889572424b21ec1b8dcb",
         "0xf25918c0e3f04f4e3c3f2a10edee3408e9ba3fc354ba4bfcc41652bd09c9b914",
@@ -3011,7 +3011,8 @@
         "0x061cd9630fc806b94da3df105cd3617db22addf632443eda718ba6938ddf42dc",
         "0x1a12a16c3207ba4d1f5ce97df99e4cab0937678c8b0b9b8a8573263bff30e7e2",
         "0x83f9f7b5f4cd54d48c39acf53dc5f25add6163f19f3dfec1c6beefc5e1640503"
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0xd23c85224940fb5b5148ba212277c8516f31947e",
@@ -44699,8 +44700,8 @@
     },
     {
       "address": "0x7d8f40f5a43a1b725210cee0647aac9b86b6a799",
-      "balance_eth": 0.00418232,
-      "balance_wei": "4182318878829491",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "merkle_proof": [
         "0xdee6266f25fbf59d92d420617fc18ee2542c3d0a5816cc8cdb86b06679d83cfa",
         "0xa31bf057f9eeb2dd093e7c47c32a2dbd0674f874d28cfa113c7c53d816403176",
@@ -44715,7 +44716,8 @@
         "0x5f8d7cf67680e48420552a7c84d09acf754ba9f40f245f2c972da12b0c47c1f3",
         "0x5a2c44f3bf65f94306a634666c3dcaa5c75c81e1df6eb613c80e066d96376195",
         "0x83f9f7b5f4cd54d48c39acf53dc5f25add6163f19f3dfec1c6beefc5e1640503"
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0x518d7d46ee2fafeac7692a4d676b82c968c39bed",
@@ -111559,8 +111561,8 @@
     },
     {
       "address": "0xe23696614fab51731d1731f5a8e105b22f8d26a6",
-      "balance_eth": 0.00038345,
-      "balance_wei": "383448757884480",
+      "balance_eth": 0,
+      "balance_wei": "0",
       "merkle_proof": [
         "0x4452b7c81667c6b76251c940748379d06c0b486a09c3584e25e98affc3913640",
         "0x9c7793189cfcdedb03aa596e800d475dcf987991e8caf031dbb317c7863c697f",
@@ -111575,7 +111577,8 @@
         "0x205e58dac181c206a245dcb31463f8236c8ba811f7dfce7504533d0543d01402",
         "0x8a9312858b8e9f98caa5a18ce35210142b6140ea6fb537d912deb52adbcbad02",
         "0x7c88558f8d37ef6f014de0021d54070b793018685ffa805cee26035d9579c041"
-      ]
+      ],
+      "claimed": true
     },
     {
       "address": "0x8031391eea8071382f61d1c15106b47d36e25413",
@@ -140833,5 +140836,6 @@
         "0x7c88558f8d37ef6f014de0021d54070b793018685ffa805cee26035d9579c041"
       ]
     }
-  ]
+  ],
+  "last_event_refresh": "2026-11-13 18:23:06 UTC"
 }

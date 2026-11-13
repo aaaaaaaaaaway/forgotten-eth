@@ -1,37 +1,15 @@
 {
   "contract": "0xc86554bee96fdb3c85f85b576ed52d5e1eacc3a6",
   "balance_source": "vault",
-  "contract_eth_balance": 0.229,
-  "total_eth_in_balances": 0.229,
-  "addresses_with_balance": 2,
-  "coverage_pct": 100.0,
-  "scan_date": "2026-10-25 03:19:28 UTC",
+  "contract_eth_balance": 0.0,
+  "total_eth_in_balances": 0.0,
+  "addresses_with_balance": 0,
+  "coverage_pct": 0.0,
+  "scan_date": "2026-11-08 03:14:54 UTC",
   "description": "OZ RefundableCrowdsale \u2014 Quintessence (QST). ETH stored in sibling RefundVault.",
-  "distribution": {
-    "0.1-1 ETH": {
-      "count": 1,
-      "total_eth": 0.2
-    },
-    "0.01-0.1 ETH": {
-      "count": 1,
-      "total_eth": 0.029
-    }
-  },
+  "distribution": {},
   "vault": "0xc178d4fe4451d863cd01fd3e240d17194fd178bc",
   "name": "Quintessence (QST)",
   "total_addresses_scanned": 17,
-  "balances": [
-    {
-      "rank": 1,
-      "address": "0x1f3f9ce3f408f91002a0af66bf474b838004fbc3",
-      "balance_wei": "200000000000000000",
-      "balance_eth": 0.2
-    },
-    {
-      "rank": 2,
-      "address": "0x18fd7a7ce76ad539fbd485cdd4ab83b1f1ba6c37",
-      "balance_wei": "29000000000000000",
-      "balance_eth": 0.029
-    }
-  ]
+  "balances": []
 }

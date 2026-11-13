@@ -5,7 +5,7 @@
   "total_eth_in_balances": 125.92301162,
   "addresses_with_balance": 108,
   "coverage_pct": 100.0,
-  "scan_date": "2026-11-02 17:27:29 UTC",
+  "scan_date": "2026-11-13 17:32:12 UTC",
   "description": "Hegic WBTC Pool writeWBTC holders with currently available WBTC withdrawable via withdraw(amount,maxBurn). Amounts use availableBalance(), not totalBalance(), because full pro-rata total pool withdrawals can revert while part of the pool remains unavailable.",
   "meta": {
     "candidate_source": "Dune query 7676670 / execution 01KTKJ2AC4CPYGZCEQ5EB6P33Z",
@@ -14,7 +14,7 @@
     "pool_decimals": 18,
     "holder_seed_count": 408,
     "total_supply_raw": "12354432797929048863663",
-    "live_seed_supply_sum_raw": "12354385327073163093063",
+    "live_seed_supply_sum_raw": "12354385325533473652094",
     "available_wbtc_raw": "334647392",
     "available_wbtc": "3.34647392",
     "claimable_wbtc_raw_sum_floor": "334646005",

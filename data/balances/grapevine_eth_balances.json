@@ -1,27 +1,15 @@
 {
   "contract": "0xea864a114c648eff4f92e55b870fe1e71fd60083",
   "balance_source": "vault",
-  "contract_eth_balance": 0.045,
-  "total_eth_in_balances": 0.045,
-  "addresses_with_balance": 1,
-  "coverage_pct": 100.0,
-  "scan_date": "2026-10-25 03:35:25 UTC",
+  "contract_eth_balance": 0.0,
+  "total_eth_in_balances": 0.0,
+  "addresses_with_balance": 0,
+  "coverage_pct": 0.0,
+  "scan_date": "2026-11-08 03:29:45 UTC",
   "description": "OZ RefundableCrowdsale \u2014 Grapevine (GVINE). ETH stored in sibling RefundVault.",
-  "distribution": {
-    "0.01-0.1 ETH": {
-      "count": 1,
-      "total_eth": 0.045
-    }
-  },
+  "distribution": {},
   "vault": "0x57d1fbc0404ec7b431914cdea7a040953eaf925d",
   "name": "Grapevine (GVINE)",
   "total_addresses_scanned": 65,
-  "balances": [
-    {
-      "rank": 1,
-      "address": "0x8c0fd6696b38469353922021f247a6f74280f6bc",
-      "balance_wei": "45000000000000000",
-      "balance_eth": 0.045
-    }
-  ]
+  "balances": []
 }

@@ -2,9 +2,9 @@
   "contract": "0x2fa0ac498d01632f959d3c18e38f4390b005e200",
   "balance_source": "eth",
   "contract_eth_balance": 27.75610236,
-  "total_eth_in_balances": 20.0337034,
-  "addresses_with_balance": 414,
-  "coverage_pct": 72.18,
+  "total_eth_in_balances": 20.030717,
+  "addresses_with_balance": 413,
+  "coverage_pct": 72.17,
   "scan_date": "2026-04-03 13:29:37 UTC",
   "description": "ETH balances in defunct EthPyramid contract",
   "distribution": {
@@ -29,13 +29,13 @@
       "total_eth": 6.400593
     },
     "<0.01 ETH": {
-      "count": 208,
-      "total_eth": 0.528532
+      "count": 207,
+      "total_eth": 0.525546
     }
   },
   "token_checked": "0x0000000000000000000000000000000000000000",
   "total_addresses_scanned": 1616,
-  "last_event_refresh": "2026-10-30T05:24:10Z",
+  "last_event_refresh": "2026-11-04 15:23:20 UTC",
   "balances": [
     {
       "rank": 1,
@@ -1747,8 +1747,9 @@
     {
       "rank": 285,
       "address": "0x1e0dcc50c15581c4ad9cac663a8283dacca53271",
-      "balance_wei": "2986289609257043",
-      "balance_eth": 0.002986289609257043
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 286,

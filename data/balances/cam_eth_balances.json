@@ -1,33 +1,15 @@
 {
   "contract": "0xa785ecdc8f166d0644b853f29732ae128c5d775b",
   "balance_source": "vault",
-  "contract_eth_balance": 0.2,
-  "total_eth_in_balances": 0.2,
-  "addresses_with_balance": 2,
-  "coverage_pct": 100.0,
-  "scan_date": "2026-10-25 03:44:16 UTC",
+  "contract_eth_balance": 0.0,
+  "total_eth_in_balances": 0.0,
+  "addresses_with_balance": 0,
+  "coverage_pct": 0.0,
+  "scan_date": "2026-11-08 03:38:22 UTC",
   "description": "OZ RefundableCrowdsale \u2014 CamToken (CAM). ETH stored in sibling RefundVault.",
-  "distribution": {
-    "0.1-1 ETH": {
-      "count": 2,
-      "total_eth": 0.2
-    }
-  },
+  "distribution": {},
   "vault": "0x59450e7a13bb0ff6d6d58f60e3e6b3e07b7a32e1",
   "name": "CamToken (CAM)",
   "total_addresses_scanned": 20,
-  "balances": [
-    {
-      "rank": 1,
-      "address": "0x6b3de9b20455f4cc16d3f82798c0f3d1f5382ff7",
-      "balance_wei": "100000000000000000",
-      "balance_eth": 0.1
-    },
-    {
-      "rank": 2,
-      "address": "0xb79290b01ebe7e5ea1c35df58228be38b55714cd",
-      "balance_wei": "100000000000000000",
-      "balance_eth": 0.1
-    }
-  ]
+  "balances": []
 }

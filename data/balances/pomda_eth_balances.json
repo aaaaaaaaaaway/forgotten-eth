@@ -4,23 +4,35 @@
   "token_checked": "0x0000000000000000000000000000000000000000",
   "description": "ETH balances in defunct POMDA contract",
   "scan_date": "2026-03-19 21:23:56 UTC",
-  "contract_eth_balance": "3.752175642773165163",
+  "contract_eth_balance": 3.75216,
   "total_addresses_scanned": 73,
-  "addresses_with_balance": 65,
-  "total_eth_in_balances": 2.886650738009043,
+  "addresses_with_balance": 64,
+  "total_eth_in_balances": 2.886636,
   "coverage_pct": 76.93,
   "distribution": {
+    ">=100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "10-100 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
+    "1-10 ETH": {
+      "count": 0,
+      "total_eth": 0
+    },
     "0.1-1 ETH": {
       "count": 6,
-      "total_eth": 2.6064098987247757
+      "total_eth": 2.60641
     },
     "0.01-0.1 ETH": {
       "count": 8,
-      "total_eth": 0.25531744430912284
+      "total_eth": 0.255319
     },
     "<0.01 ETH": {
-      "count": 51,
-      "total_eth": 0.024923394975144765
+      "count": 50,
+      "total_eth": 0.024908
     }
   },
   "balances": [
@@ -183,8 +195,9 @@
     {
       "rank": 27,
       "address": "0x892f81e0407f265495254e9a8512ecf73e33e2af",
-      "balance_wei": "15216577652444",
-      "balance_eth": "0.000015216577652444"
+      "balance_wei": "0",
+      "balance_eth": 0,
+      "claimed": true
     },
     {
       "rank": 28,
@@ -414,5 +427,6 @@
       "balance_wei": "1",
       "balance_eth": "0.000000000000000001"
     }
-  ]
+  ],
+  "last_event_refresh": "2026-11-04 15:23:22 UTC"
 }

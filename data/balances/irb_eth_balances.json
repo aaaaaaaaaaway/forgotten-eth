@@ -1,45 +1,15 @@
 {
   "contract": "0x269b4c23ddab676e2869ae72cd6ae4f24bdfea45",
   "balance_source": "vault",
-  "contract_eth_balance": 0.5481,
-  "total_eth_in_balances": 0.5481,
-  "addresses_with_balance": 4,
-  "coverage_pct": 100.0,
-  "scan_date": "2026-10-25 03:39:28 UTC",
+  "contract_eth_balance": 0.0,
+  "total_eth_in_balances": 0.0,
+  "addresses_with_balance": 0,
+  "coverage_pct": 0.0,
+  "scan_date": "2026-11-08 03:33:55 UTC",
   "description": "OZ RefundableCrowdsale \u2014 IRB Tokens (IRB). ETH stored in sibling RefundVault.",
-  "distribution": {
-    "0.1-1 ETH": {
-      "count": 4,
-      "total_eth": 0.5481
-    }
-  },
+  "distribution": {},
   "vault": "0xcbe98a2b1f756bebe53d41eb3b94e566a0777ede",
   "name": "IRB Tokens (IRB)",
   "total_addresses_scanned": 20,
-  "balances": [
-    {
-      "rank": 1,
-      "address": "0x57d89d6d6719d2fa57d3084f163c8b7f28608818",
-      "balance_wei": "200100000000000000",
-      "balance_eth": 0.2001
-    },
-    {
-      "rank": 2,
-      "address": "0x4e19548dac3b994b90fcbb1ada79952f3cdde6db",
-      "balance_wei": "130000000000000000",
-      "balance_eth": 0.13
-    },
-    {
-      "rank": 3,
-      "address": "0xbd8d40b9862e9d4c2eeee817bf56aaa6924da9c2",
-      "balance_wei": "109000000000000000",
-      "balance_eth": 0.109
-    },
-    {
-      "rank": 4,
-      "address": "0xf83e9a2a83d53eac4c282e42b01ccd9cf854a28e",
-      "balance_wei": "109000000000000000",
-      "balance_eth": 0.109
-    }
-  ]
+  "balances": []
 }

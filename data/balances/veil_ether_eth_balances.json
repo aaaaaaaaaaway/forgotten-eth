@@ -1,10 +1,10 @@
 {
   "contract": "0x53b04999c1ff2d77fcdde98935bb936a67209e4c",
   "balance_source": "eth",
-  "contract_eth_balance": 54.489189,
-  "total_eth_in_balances": 54.488932,
-  "addresses_with_balance": 356,
-  "coverage_pct": 100,
+  "contract_eth_balance": 54.09177331,
+  "total_eth_in_balances": 55.49254175,
+  "addresses_with_balance": 353,
+  "coverage_pct": 102.59,
   "scan_date": "2026-04-13",
   "distribution": {
     ">=100 ETH": {
@@ -20,19 +20,19 @@
       "total_eth": 32.074869
     },
     "0.1-1 ETH": {
-      "count": 86,
-      "total_eth": 18.298372
+      "count": 85,
+      "total_eth": 18.008862
     },
     "0.01-0.1 ETH": {
       "count": 107,
       "total_eth": 3.821897
     },
     "<0.01 ETH": {
-      "count": 149,
-      "total_eth": 0.293793
+      "count": 148,
+      "total_eth": 0.285888
     }
   },
-  "last_event_refresh": "2026-10-27 02:23:05 UTC",
+  "last_event_refresh": "2026-11-13T05:32:13Z",
   "balances": [
     {
       "address": "0x58a800ed9a0243b8b61d7e6ff33cf013cfa1900c",
@@ -253,7 +253,8 @@
       "address": "0x0cbecf33aa32a2241181dceca21fc636f6660f8a",
       "rank": 36,
       "balance_eth": 0.28951013530075254,
-      "balance_wei": "289510135300752500"
+      "balance_wei": "289510135300752500",
+      "claimed": true
     },
     {
       "address": "0x0111011001100001011011000111010101100101",
@@ -668,7 +669,8 @@
       "address": "0xf17fad1fc969136311150d06791e6ce891e25277",
       "rank": 105,
       "balance_eth": 0.1,
-      "balance_wei": "100000000000000000"
+      "balance_wei": "100000000000000000",
+      "claimed": true
     },
     {
       "address": "0xb2df2d124cc5a4c9e3eaeb9719ce2dcec88e9194",
@@ -1457,8 +1459,9 @@
     {
       "address": "0x1edad6dad44367a6e0e342e76e9df595049b8224",
       "rank": 236,
-      "balance_eth": 0.007905337087031741,
-      "balance_wei": "7905337087031741"
+      "balance_eth": 0,
+      "balance_wei": "0",
+      "claimed": true
     },
     {
       "address": "0x874b3b0c4520b937080f8d89952568fec32cce95",
